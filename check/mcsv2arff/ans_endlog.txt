@@ -1,0 +1,15 @@
+#END# kgcsv2arff d=商品 i=./indat/dat0.csv n=数量,金額 o=./outdat/out0.csv; IN=0 OUT=5; 2014/05/26 18:08:31
+#END# kgcsv2arff i=./indat/dat1.csv o=./outdat/out1.csv s=顧客; IN=5 OUT=8; 2014/05/26 18:08:31
+#END# kgcsv2arff d=商品 i=./indat/dat1.csv o=./outdat/out2.csv; IN=5 OUT=8; 2014/05/26 18:08:31
+#END# kgcsv2arff D=日付 i=./indat/dat1.csv o=./outdat/out3.csv; IN=5 OUT=8; 2014/05/26 18:08:31
+#END# kgcsv2arff i=./indat/dat1.csv n=数量,金額 o=./outdat/out4.csv; IN=5 OUT=9; 2014/05/26 18:08:31
+#END# kgcsv2arff D=日付 d=商品 i=./indat/dat1.csv n=数量,金額 o=./outdat/out5.csv s=顧客; IN=5 OUT=12; 2014/05/26 18:08:31
+#END# kgcsv2arff D=日付 T=顧客購買データ d=商品 i=./indat/dat1.csv n=数量,金額 o=./outdat/out6.csv s=顧客; IN=5 OUT=12; 2014/05/26 18:08:31
+#END# kgcsv2arff D=日付 T=顧客 購買データ d=商品 i=./indat/dat1.csv n=数量,金額 o=./outdat/out12.csv s=顧客; IN=5 OUT=12; 2014/05/26 18:08:31
+#END# kgcsv2arff D=日付 T=顧客　購買データ d=商品 i=./indat/dat1.csv n=数量,金額 o=./outdat/out13.csv s=顧客; IN=5 OUT=12; 2014/05/26 18:08:31
+#END# kgcsv2arff D=日付%t T=顧客購買データ d=商品 i=./indat/dat2.csv n=数量,金額 o=./outdat/out7.csv s=顧客; IN=5 OUT=12; 2014/05/26 18:08:31
+#END# kgcsv2arff D=日付,日時%t T=顧客購買データ d=商品 i=./indat/dat3.csv n=数量,金額 o=./outdat/out8.csv s=顧客; IN=5 OUT=13; 2014/05/26 18:08:31
+#END# kgcsv2arff D=日付,日時%t T=顧客購買データ d=商品 i=./indat/dat4.csv n=数量,金額 o=./outdat/out9.csv s=顧客; IN=5 OUT=13; 2014/05/26 18:08:31
+#END# kgcsv2arff D=日付 i=./indat/dat1.csv n=数量,金額 o=./outdat/out10.csv s=顧客,商品; IN=5 OUT=12; 2014/05/26 18:08:31
+#END# kgcsv2arff D=日付 i=./indat/dat5.csv n=数量,金額 o=./outdat/out11.csv; IN=5 OUT=10; 2014/05/26 18:08:31
+#END# kgcsv2arff D=日付 d=商品 i=./indat/dat1s.csv n=数量,金額 o=./outdat/out14.csv s=顧客; IN=5 OUT=12; 2014/05/26 18:08:31

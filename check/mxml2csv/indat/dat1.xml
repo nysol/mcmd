@@ -1,0 +1,14 @@
+<a att="aa">
+  <b att="bb1">
+    <c p="pp1" q="qq1"/>
+    <d>text1</d>
+  </b>
+  <b att="bb2">
+    <c q="qq2"></c>
+    <d>text2</d>
+  </b>
+  <b>
+    <c p="pp3"/>
+    <d>text3</d>
+  </b>
+</a>

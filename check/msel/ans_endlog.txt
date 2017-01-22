@@ -1,0 +1,73 @@
+#END# kgsel c=${金額}==500 i=./indat/dat.csv o=./outdat/out01m.csv u=./outdat/out01u.csv; IN=26 OUT=1; 2014/06/09 13:13:54
+#END# kgsel -x c=${6}==500 i=./indat/dat.csv o=./outdat/out01mx.csv u=./outdat/out01ux.csv; IN=26 OUT=1; 2014/06/09 13:13:54
+#END# kgsel -nfn c=${6}==500 i=./indat/datnfn.csv o=./outdat/out01mnfn.csv u=./outdat/out01unfn.csv; IN=26 OUT=1; 2014/06/09 13:13:54
+#END# kgsel -nfno c=${金額}==500 i=./indat/dat.csv o=./outdat/out01mnfno.csv u=./outdat/out01unfno.csv; IN=26 OUT=1; 2014/06/09 13:13:54
+#END# kgsel c=${金額}==500 i=./indat/dat.csv o=./outdat/out18m.csv; IN=26 OUT=1; 2014/06/09 13:13:54
+#END# kgsel -r c=${金額}==500 i=./indat/dat.csv o=./outdat/out02m.csv u=./outdat/out02u.csv; IN=26 OUT=17; 2014/06/09 13:13:54
+#END# kgsel -r -x c=${6}==500 i=./indat/dat.csv o=./outdat/out02mx.csv u=./outdat/out02ux.csv; IN=26 OUT=17; 2014/06/09 13:13:54
+#END# kgsel -nfn -r c=${6}==500 i=./indat/datnfn.csv o=./outdat/out02mnfn.csv u=./outdat/out02unfn.csv; IN=26 OUT=17; 2014/06/09 13:13:54
+#END# kgsel -nfno -r c=${金額}==500 i=./indat/dat.csv o=./outdat/out02mnfno.csv u=./outdat/out02unfno.csv; IN=26 OUT=17; 2014/06/09 13:13:54
+#END# kgsel c=${金額}<500 i=./indat/dat.csv o=./outdat/out03m.csv u=./outdat/out03u.csv; IN=26 OUT=13; 2014/06/09 13:13:54
+#END# kgsel -x c=${6}<500 i=./indat/dat.csv o=./outdat/out03mx.csv u=./outdat/out03ux.csv; IN=26 OUT=13; 2014/06/09 13:13:54
+#END# kgsel -nfn c=${6}<500 i=./indat/datnfn.csv o=./outdat/out03mnfn.csv u=./outdat/out03unfn.csv; IN=26 OUT=13; 2014/06/09 13:13:54
+#END# kgsel -nfno c=${金額}<500 i=./indat/dat.csv o=./outdat/out03mnfno.csv u=./outdat/out03unfno.csv; IN=26 OUT=13; 2014/06/09 13:13:54
+#END# kgsel c=${金額}<=500 i=./indat/dat.csv o=./outdat/out04m.csv u=./outdat/out04u.csv; IN=26 OUT=14; 2014/06/09 13:13:54
+#END# kgsel -x c=${6}<=500 i=./indat/dat.csv o=./outdat/out04mx.csv u=./outdat/out04ux.csv; IN=26 OUT=14; 2014/06/09 13:13:54
+#END# kgsel -nfn c=${6}<=500 i=./indat/datnfn.csv o=./outdat/out04mnfn.csv u=./outdat/out04unfn.csv; IN=26 OUT=14; 2014/06/09 13:13:54
+#END# kgsel -nfno c=${金額}<=500 i=./indat/dat.csv o=./outdat/out04mnfno.csv u=./outdat/out04unfno.csv; IN=26 OUT=14; 2014/06/09 13:13:54
+#END# kgsel c=${金額}>500 i=./indat/dat.csv o=./outdat/out05m.csv u=./outdat/out05u.csv; IN=26 OUT=4; 2014/06/09 13:13:54
+#END# kgsel -x c=${6}>500 i=./indat/dat.csv o=./outdat/out05mx.csv u=./outdat/out05ux.csv; IN=26 OUT=4; 2014/06/09 13:13:54
+#END# kgsel -nfn c=${6}>500 i=./indat/datnfn.csv o=./outdat/out05mnfn.csv u=./outdat/out05unfn.csv; IN=26 OUT=4; 2014/06/09 13:13:54
+#END# kgsel -nfno c=${金額}>500 i=./indat/dat.csv o=./outdat/out05mnfno.csv u=./outdat/out05unfno.csv; IN=26 OUT=4; 2014/06/09 13:13:54
+#END# kgsel c=${金額}>=500 i=./indat/dat.csv o=./outdat/out06m.csv u=./outdat/out06u.csv; IN=26 OUT=5; 2014/06/09 13:13:54
+#END# kgsel -x c=${6}>=500 i=./indat/dat.csv o=./outdat/out06mx.csv u=./outdat/out06ux.csv; IN=26 OUT=5; 2014/06/09 13:13:54
+#END# kgsel -nfn c=${6}>=500 i=./indat/datnfn.csv o=./outdat/out06mnfn.csv u=./outdat/out06unfn.csv; IN=26 OUT=5; 2014/06/09 13:13:54
+#END# kgsel -nfno c=${金額}>=500 i=./indat/dat.csv o=./outdat/out06mnfno.csv u=./outdat/out06unfno.csv; IN=26 OUT=5; 2014/06/09 13:13:54
+#END# kgsel c=${金額}!=500 i=./indat/dat.csv o=./outdat/out07m.csv u=./outdat/out07u.csv; IN=26 OUT=17; 2014/06/09 13:13:54
+#END# kgsel -x c=${6}!=500 i=./indat/dat.csv o=./outdat/out07mx.csv u=./outdat/out07ux.csv; IN=26 OUT=17; 2014/06/09 13:13:54
+#END# kgsel -nfn c=${6}!=500 i=./indat/datnfn.csv o=./outdat/out07mnfn.csv u=./outdat/out07unfn.csv; IN=26 OUT=17; 2014/06/09 13:13:54
+#END# kgsel -nfno c=${金額}!=500 i=./indat/dat.csv o=./outdat/out07mnfno.csv u=./outdat/out07unfno.csv; IN=26 OUT=17; 2014/06/09 13:13:54
+#END# kgsel c=$s{金額}=="500" i=./indat/dat.csv o=./outdat/out08m.csv u=./outdat/out08u.csv; IN=26 OUT=1; 2014/06/09 13:13:54
+#END# kgsel -x c=$s{6}=="500" i=./indat/dat.csv o=./outdat/out08mx.csv u=./outdat/out08ux.csv; IN=26 OUT=1; 2014/06/09 13:13:54
+#END# kgsel -nfn c=$s{6}=="500" i=./indat/datnfn.csv o=./outdat/out08mnfn.csv u=./outdat/out08unfn.csv; IN=26 OUT=1; 2014/06/09 13:13:54
+#END# kgsel -nfno c=$s{金額}=="500" i=./indat/dat.csv o=./outdat/out08mnfno.csv u=./outdat/out08unfno.csv; IN=26 OUT=1; 2014/06/09 13:13:54
+#END# kgsel c=$s{金額}>"500" i=./indat/dat.csv o=./outdat/out09m.csv u=./outdat/out09u.csv; IN=26 OUT=3; 2014/06/09 13:13:54
+#END# kgsel -x c=$s{6}>"500" i=./indat/dat.csv o=./outdat/out09mx.csv u=./outdat/out09ux.csv; IN=26 OUT=3; 2014/06/09 13:13:54
+#END# kgsel -nfn c=$s{6}>"500" i=./indat/datnfn.csv o=./outdat/out09mnfn.csv u=./outdat/out09unfn.csv; IN=26 OUT=3; 2014/06/09 13:13:54
+#END# kgsel -nfno c=$s{金額}>"500" i=./indat/dat.csv o=./outdat/out09mnfno.csv u=./outdat/out09unfno.csv; IN=26 OUT=3; 2014/06/09 13:13:55
+#END# kgsel c=$s{金額}>="500" i=./indat/dat.csv o=./outdat/out10m.csv u=./outdat/out10u.csv; IN=26 OUT=4; 2014/06/09 13:13:55
+#END# kgsel -x c=$s{6}>="500" i=./indat/dat.csv o=./outdat/out10mx.csv u=./outdat/out10ux.csv; IN=26 OUT=4; 2014/06/09 13:13:55
+#END# kgsel -nfn c=$s{6}>="500" i=./indat/datnfn.csv o=./outdat/out10mnfn.csv u=./outdat/out10unfn.csv; IN=26 OUT=4; 2014/06/09 13:13:55
+#END# kgsel -nfno c=$s{金額}>="500" i=./indat/dat.csv o=./outdat/out10mnfno.csv u=./outdat/out10unfno.csv; IN=26 OUT=4; 2014/06/09 13:13:55
+#END# kgsel c=$s{金額}<"500" i=./indat/dat.csv o=./outdat/out11m.csv u=./outdat/out11u.csv; IN=26 OUT=22; 2014/06/09 13:13:55
+#END# kgsel -x c=$s{6}<"500" i=./indat/dat.csv o=./outdat/out11mx.csv u=./outdat/out11ux.csv; IN=26 OUT=22; 2014/06/09 13:13:55
+#END# kgsel -nfn c=$s{6}<"500" i=./indat/datnfn.csv o=./outdat/out11mnfn.csv u=./outdat/out11unfn.csv; IN=26 OUT=22; 2014/06/09 13:13:55
+#END# kgsel -nfno c=$s{金額}<"500" i=./indat/dat.csv o=./outdat/out11mnfno.csv u=./outdat/out11unfno.csv; IN=26 OUT=22; 2014/06/09 13:13:55
+#END# kgsel c=$s{金額}<"500" i=./indat/dat.csv o=./outdat/out12m.csv u=./outdat/out12u.csv; IN=26 OUT=22; 2014/06/09 13:13:55
+#END# kgsel -x c=$s{6}<"500" i=./indat/dat.csv o=./outdat/out12mx.csv u=./outdat/out12ux.csv; IN=26 OUT=22; 2014/06/09 13:13:55
+#END# kgsel -nfn c=$s{6}<"500" i=./indat/datnfn.csv o=./outdat/out12mnfn.csv u=./outdat/out12unfn.csv; IN=26 OUT=22; 2014/06/09 13:13:55
+#END# kgsel -nfno c=$s{金額}<"500" i=./indat/dat.csv o=./outdat/out12mnfno.csv u=./outdat/out12unfno.csv; IN=26 OUT=22; 2014/06/09 13:13:55
+#END# kgsel c=$s{金額}!="500" i=./indat/dat.csv o=./outdat/out13m.csv u=./outdat/out13u.csv; IN=26 OUT=25; 2014/06/09 13:13:55
+#END# kgsel -x c=$s{6}!="500" i=./indat/dat.csv o=./outdat/out13mx.csv u=./outdat/out13ux.csv; IN=26 OUT=25; 2014/06/09 13:13:55
+#END# kgsel -nfn c=$s{6}!="500" i=./indat/datnfn.csv o=./outdat/out13mnfn.csv u=./outdat/out13unfn.csv; IN=26 OUT=25; 2014/06/09 13:13:55
+#END# kgsel -nfno c=$s{金額}!="500" i=./indat/dat.csv o=./outdat/out13mnfno.csv u=./outdat/out13unfno.csv; IN=26 OUT=25; 2014/06/09 13:13:55
+#END# kgsel c=$s{金額}<"300" || $s{金額}>="500" i=./indat/dat.csv o=./outdat/out14m.csv u=./outdat/out14u.csv; IN=26 OUT=19; 2014/06/09 13:13:55
+#END# kgsel -x c=$s{6}<"300" || $s{6}>="500" i=./indat/dat.csv o=./outdat/out14mx.csv u=./outdat/out14ux.csv; IN=26 OUT=19; 2014/06/09 13:13:55
+#END# kgsel -nfn c=$s{6}<"300" || $s{6}>="500" i=./indat/datnfn.csv o=./outdat/out14mnfn.csv u=./outdat/out14unfn.csv; IN=26 OUT=19; 2014/06/09 13:13:55
+#END# kgsel -nfno c=$s{金額}<"300" || $s{金額}>="500" i=./indat/dat.csv o=./outdat/out14mnfno.csv u=./outdat/out14unfno.csv; IN=26 OUT=19; 2014/06/09 13:13:55
+#END# kgsel -r c=$s{金額}<"300" || $s{金額}>="500" i=./indat/dat.csv o=./outdat/out15m.csv u=./outdat/out15u.csv; IN=26 OUT=7; 2014/06/09 13:13:55
+#END# kgsel -r -x c=$s{6}<"300" || $s{6}>="500" i=./indat/dat.csv o=./outdat/out15mx.csv u=./outdat/out15ux.csv; IN=26 OUT=7; 2014/06/09 13:13:55
+#END# kgsel -nfn -r c=$s{6}<"300" || $s{6}>="500" i=./indat/datnfn.csv o=./outdat/out15mnfn.csv u=./outdat/out15unfn.csv; IN=26 OUT=7; 2014/06/09 13:13:55
+#END# kgsel -nfno -r c=$s{金額}<"300" || $s{金額}>="500" i=./indat/dat.csv o=./outdat/out15mnfno.csv u=./outdat/out15unfno.csv; IN=26 OUT=7; 2014/06/09 13:13:55
+#END# kgsel c=$s{金額}>"300" && $s{金額}<="500" i=./indat/dat.csv o=./outdat/out16m.csv u=./outdat/out16u.csv; IN=26 OUT=8; 2014/06/09 13:13:55
+#END# kgsel -x c=$s{6}>"300" && $s{6}<="500" i=./indat/dat.csv o=./outdat/out16mx.csv u=./outdat/out16ux.csv; IN=26 OUT=8; 2014/06/09 13:13:55
+#END# kgsel -nfn c=$s{6}>"300" && $s{6}<="500" i=./indat/datnfn.csv o=./outdat/out16mnfn.csv u=./outdat/out16unfn.csv; IN=26 OUT=8; 2014/06/09 13:13:55
+#END# kgsel -nfno c=$s{金額}>"300" && $s{金額}<="500" i=./indat/dat.csv o=./outdat/out16mnfno.csv u=./outdat/out16unfno.csv; IN=26 OUT=8; 2014/06/09 13:13:55
+#END# kgsel -r c=$s{金額}>"300" && $s{金額}<="500" i=./indat/dat.csv o=./outdat/out17m.csv u=./outdat/out17u.csv; IN=26 OUT=18; 2014/06/09 13:13:55
+#END# kgsel -r -x c=$s{6}>"300" && $s{6}<="500" i=./indat/dat.csv o=./outdat/out17mx.csv u=./outdat/out17ux.csv; IN=26 OUT=18; 2014/06/09 13:13:55
+#END# kgsel -nfn -r c=$s{6}>"300" && $s{6}<="500" i=./indat/datnfn.csv o=./outdat/out17mnfn.csv u=./outdat/out17unfn.csv; IN=26 OUT=18; 2014/06/09 13:13:55
+#END# kgsel -nfno -r c=$s{金額}>"300" && $s{金額}<="500" i=./indat/dat.csv o=./outdat/out17mnfno.csv u=./outdat/out17unfno.csv; IN=26 OUT=18; 2014/06/09 13:13:55
+#END# kgsel c=${金額}<500 i=./indat/dats.csv o=./outdat/out19.csv u=./outdat/out19u.csv; IN=26 OUT=13; 2014/06/09 13:13:55
+#END# kgsel -x c=${6}<500 i=./indat/dats.csv o=./outdat/out19x.csv u=./outdat/out19ux.csv; IN=26 OUT=13; 2014/06/09 13:13:55
+#END# kgsel -r c=${金額}<500 i=./indat/dats.csv o=./outdat/out20.csv u=./outdat/out20u.csv; IN=26 OUT=5; 2014/06/09 13:13:55
+#END# kgsel -r -x c=${6}<500 i=./indat/dats.csv o=./outdat/out20x.csv u=./outdat/out20ux.csv; IN=26 OUT=5; 2014/06/09 13:13:55

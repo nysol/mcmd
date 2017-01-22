@@ -1,0 +1,21 @@
+#END# kgtonull f=数量,金額 i=./indat/dat0.csv o=./outdat/out01.csv v=0; IN=0 OUT=0; 2014/06/12 09:59:14
+#END# kgtonull -x f=1,2 i=./indat/dat0.csv o=./outdat/out01x.csv v=0; IN=0 OUT=0; 2014/06/12 09:59:14
+#END# kgtonull -nfn f=1,2 i=./indat/dat0nfn.csv o=./outdat/out01nfn.csv v=0; IN=0 OUT=0; 2014/06/12 09:59:14
+#END# kgtonull f=数量,金額 i=./indat/dat1.csv o=./outdat/out02.csv v=0; IN=5 OUT=5; 2014/06/12 09:59:14
+#END# kgtonull -x f=1,2 i=./indat/dat1.csv o=./outdat/out02x.csv v=0; IN=5 OUT=5; 2014/06/12 09:59:14
+#END# kgtonull -nfn f=1,2 i=./indat/dat1nfn.csv o=./outdat/out02nfn.csv v=0; IN=5 OUT=5; 2014/06/12 09:59:14
+#END# kgtonull f=数量,金額 i=./indat/dat1.csv o=./outdat/out03.csv v=0,1; IN=5 OUT=5; 2014/06/12 09:59:14
+#END# kgtonull -x f=1,2 i=./indat/dat1.csv o=./outdat/out03x.csv v=0,1; IN=5 OUT=5; 2014/06/12 09:59:14
+#END# kgtonull -nfn f=1,2 i=./indat/dat1nfn.csv o=./outdat/out03nfn.csv v=0,1; IN=5 OUT=5; 2014/06/12 09:59:14
+#END# kgtonull -sub f=数量,金額 i=./indat/dat1.csv o=./outdat/out04.csv v=0; IN=5 OUT=5; 2014/06/12 09:59:14
+#END# kgtonull -sub -x f=1,2 i=./indat/dat1.csv o=./outdat/out04x.csv v=0; IN=5 OUT=5; 2014/06/12 09:59:14
+#END# kgtonull -nfn -sub f=1,2 i=./indat/dat1nfn.csv o=./outdat/out04nfn.csv v=0; IN=5 OUT=5; 2014/06/12 09:59:14
+#END# kgtonull -W -sub f=商品 i=./indat/dat2.csv o=./outdat/out05.csv v=柿,苺,梨; IN=5 OUT=5; 2014/06/12 09:59:14
+#END# kgtonull -W -sub -x f=0 i=./indat/dat2.csv o=./outdat/out05x.csv v=柿,苺,梨; IN=5 OUT=5; 2014/06/12 09:59:14
+#END# kgtonull -W -nfn -sub f=0 i=./indat/dat2nfn.csv o=./outdat/out05nfn.csv v=柿,苺,梨; IN=5 OUT=5; 2014/06/12 09:59:14
+#END# kgtonull -sub f=商品 i=./indat/dat2.csv o=./outdat/out06.csv v=柿,苺,梨; IN=5 OUT=5; 2014/06/12 09:59:14
+#END# kgtonull -sub -x f=0 i=./indat/dat2.csv o=./outdat/out06x.csv v=柿,苺,梨; IN=5 OUT=5; 2014/06/12 09:59:14
+#END# kgtonull -nfn -sub f=0 i=./indat/dat2nfn.csv o=./outdat/out06nfn.csv v=柿,苺,梨; IN=5 OUT=5; 2014/06/12 09:59:14
+#END# kgtonull f=数量,金額 i=./indat/dat1s.csv o=./outdat/out12.csv v=0; IN=5 OUT=5; 2014/06/12 09:59:14
+#END# kgtonull -x f=1,2 i=./indat/dat1s.csv o=./outdat/out12x.csv v=0; IN=5 OUT=5; 2014/06/12 09:59:14
+#END# kgtonull -nfn f=1,2 i=./indat/dat1snfn.csv o=./outdat/out12nfn.csv v=0; IN=5 OUT=5; 2014/06/12 09:59:14

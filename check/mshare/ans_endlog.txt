@@ -1,0 +1,32 @@
+#END# kgshare f=数量:数量シェア,金額:金額シェア i=./indat/dat0s.csv k=顧客 o=./outdat/out01.csv; IN=0 OUT=0; 2015/07/06 01:34:52
+#END# kgshare -x f=1:数量シェア,2:金額シェア i=./indat/dat0s.csv k=0 o=./outdat/out01x.csv; IN=0 OUT=0; 2015/07/06 01:34:52
+#END# kgshare -nfn f=1,2 i=./indat/dat0snfn.csv k=0 o=./outdat/out01nfn.csv; IN=0 OUT=0; 2015/07/06 01:34:52
+#END# kgshare f=数量:数量シェア,金額:金額シェア i=./indat/dat1s.csv k=顧客 o=./outdat/out02.csv; IN=5 OUT=5; 2015/07/06 01:34:52
+#END# kgshare -x f=1:数量シェア,2:金額シェア i=./indat/dat1s.csv k=0 o=./outdat/out02x.csv; IN=5 OUT=5; 2015/07/06 01:34:52
+#END# kgshare -nfn f=1,2 i=./indat/dat1snfn.csv k=0 o=./outdat/out02nfn.csv; IN=5 OUT=5; 2015/07/06 01:34:52
+#END# kgshare f=数量:数量シェア,金額:金額シェア i=./indat/dat2s.csv k=顧客 o=./outdat/out03.csv; IN=5 OUT=5; 2015/07/06 01:34:52
+#END# kgshare -x f=1:数量シェア,2:金額シェア i=./indat/dat2s.csv k=0 o=./outdat/out03x.csv; IN=5 OUT=5; 2015/07/06 01:34:52
+#END# kgshare -nfn f=1,2 i=./indat/dat2snfn.csv k=0 o=./outdat/out03nfn.csv; IN=5 OUT=5; 2015/07/06 01:34:52
+#END# kgshare f=数量:数量シェア,金額:金額シェア i=./indat/dat1s.csv o=./outdat/out04.csv; IN=5 OUT=5; 2015/07/06 01:34:52
+#END# kgshare -x f=1:数量シェア,2:金額シェア i=./indat/dat1s.csv o=./outdat/out04x.csv; IN=5 OUT=5; 2015/07/06 01:34:52
+#END# kgshare -nfn f=1,2 i=./indat/dat1snfn.csv o=./outdat/out04nfn.csv; IN=5 OUT=5; 2015/07/06 01:34:52
+#END# kgshare f=数量:数量シェア,金額:金額シェア i=./indat/dat2s.csv o=./outdat/out05.csv; IN=5 OUT=5; 2015/07/06 01:34:52
+#END# kgshare -x f=1:数量シェア,2:金額シェア i=./indat/dat2s.csv o=./outdat/out05x.csv; IN=5 OUT=5; 2015/07/06 01:34:52
+#END# kgshare -nfn f=1,2 i=./indat/dat2snfn.csv o=./outdat/out05nfn.csv; IN=5 OUT=5; 2015/07/06 01:34:52
+#END# kgshare f=数量:数量シェア,金額:金額シェア i=./indat/dat1.csv k=顧客 o=./outdat/out06.csv; IN=5 OUT=5; 2015/07/06 01:34:52
+#END# kgshare -x f=1:数量シェア,2:金額シェア i=./indat/dat1.csv k=0 o=./outdat/out06x.csv; IN=5 OUT=5; 2015/07/06 01:34:52
+#END# kgshare -nfn f=1,2 i=./indat/dat1nfn.csv k=0 o=./outdat/out06nfn.csv; IN=5 OUT=5; 2015/07/06 01:34:52
+#END# kgshare f=数量:数量シェア,金額:金額シェア i=./indat/dat2.csv k=顧客 o=./outdat/out07.csv; IN=5 OUT=5; 2015/07/06 01:34:52
+#END# kgshare -x f=1:数量シェア,2:金額シェア i=./indat/dat2.csv k=0 o=./outdat/out07x.csv; IN=5 OUT=5; 2015/07/06 01:34:52
+#END# kgshare -nfn f=1,2 i=./indat/dat2nfn.csv k=0 o=./outdat/out07nfn.csv; IN=5 OUT=5; 2015/07/06 01:34:52
+#END# kgshare f=数量:数量シェア,金額:金額シェア i=./indat/dat1.csv o=./outdat/out08.csv; IN=5 OUT=5; 2015/07/06 01:34:52
+#END# kgshare -x f=1:数量シェア,2:金額シェア i=./indat/dat1.csv o=./outdat/out08x.csv; IN=5 OUT=5; 2015/07/06 01:34:52
+#END# kgshare -nfn f=1,2 i=./indat/dat1nfn.csv o=./outdat/out08nfn.csv; IN=5 OUT=5; 2015/07/06 01:34:52
+#END# kgshare f=数量:数量シェア,金額:金額シェア i=./indat/dat2.csv o=./outdat/out09.csv; IN=5 OUT=5; 2015/07/06 01:34:52
+#END# kgshare -x f=1:数量シェア,2:金額シェア i=./indat/dat2.csv o=./outdat/out09x.csv; IN=5 OUT=5; 2015/07/06 01:34:52
+#END# kgshare -nfn f=1,2 i=./indat/dat2nfn.csv o=./outdat/out09nfn.csv; IN=5 OUT=5; 2015/07/06 01:34:52
+#ERROR# parameter f= is mandatory (kgshare); kgshare i=./indat/dat1s.csv o=kgError; IN=0 OUT=0; 2015/07/06 01:34:52
+#ERROR# parameter f= is mandatory (kgshare); kgshare i=./indat/dat1s.csv k=顧客 o=kgError; IN=0 OUT=0; 2015/07/06 01:34:52
+#ERROR# 顧客 is not a numerical value. (kgshare); kgshare -x f=数量:数量シェア,金額:金額シェア i=./indat/dat1s.csv k=顧客 o=kgError; IN=0 OUT=0; 2015/07/06 01:34:52
+#ERROR# 数量 is not a numerical value. (kgshare); kgshare -nfn f=数量:数量シェア,金額:金額シェア i=./indat/dat1s.csv k=顧客 o=kgError; IN=0 OUT=0; 2015/07/06 01:34:52
+#ERROR# field name not found: `1' in ./indat/dat1s.csv (kgshare); kgshare f=2,3 i=./indat/dat1s.csv k=1 o=kgError; IN=0 OUT=0; 2015/07/06 01:34:52

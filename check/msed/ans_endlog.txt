@@ -1,0 +1,47 @@
+#END# kgsed c=00.. f=郵便番号 i=./indat/dat0.csv o=./outdat/out0.csv v=####; IN=0 OUT=0; 2014/06/09 12:57:59
+#END# kgsed -x c=00.. f=1 i=./indat/dat0.csv o=./outdat/out0x.csv v=####; IN=0 OUT=0; 2014/06/09 12:57:59
+#END# kgsed -nfn c=00.. f=1 i=./indat/dat0nfn.csv o=./outdat/out0nfn.csv v=####; IN=0 OUT=0; 2014/06/09 12:57:59
+#END# kgsed c=00.. f=郵便番号 i=./indat/dat1.csv o=./outdat/out1.csv v=####; IN=5 OUT=5; 2014/06/09 12:57:59
+#END# kgsed -x c=00.. f=1 i=./indat/dat1.csv o=./outdat/out1x.csv v=####; IN=5 OUT=5; 2014/06/09 12:57:59
+#END# kgsed -nfn c=00.. f=1 i=./indat/dat1nfn.csv o=./outdat/out1nfn.csv v=####; IN=5 OUT=5; 2014/06/09 12:57:59
+#END# kgsed -A c=00.. f=郵便番号:郵便番号下4桁隠 i=./indat/dat1.csv o=./outdat/out2.csv v=####; IN=5 OUT=5; 2014/06/09 12:57:59
+#END# kgsed -A -x c=00.. f=1:郵便番号下4桁隠 i=./indat/dat1.csv o=./outdat/out2x.csv v=####; IN=5 OUT=5; 2014/06/09 12:57:59
+#END# kgsed -A -nfn c=00.. f=1:郵便番号下4桁隠 i=./indat/dat1nfn.csv o=./outdat/out2nfn.csv v=####; IN=5 OUT=5; 2014/06/09 12:57:59
+#END# kgsed -g c=0 f=郵便番号 i=./indat/dat1.csv o=./outdat/out3.csv v=-; IN=5 OUT=5; 2014/06/09 12:57:59
+#END# kgsed -g -x c=0 f=1 i=./indat/dat1.csv o=./outdat/out3x.csv v=-; IN=5 OUT=5; 2014/06/09 12:57:59
+#END# kgsed -g -nfn c=0 f=1 i=./indat/dat1nfn.csv o=./outdat/out3nfn.csv v=-; IN=5 OUT=5; 2014/06/09 12:57:59
+#END# kgsed c=[0-9]* f=郵便番号 i=./indat/dat1.csv o=./outdat/out4.csv v=郵便番号; IN=5 OUT=5; 2014/06/09 12:57:59
+#END# kgsed -x c=[0-9]* f=1 i=./indat/dat1.csv o=./outdat/out4x.csv v=郵便番号; IN=5 OUT=5; 2014/06/09 12:57:59
+#END# kgsed -nfn c=[0-9]* f=1 i=./indat/dat1nfn.csv o=./outdat/out4nfn.csv v=郵便番号; IN=5 OUT=5; 2014/06/09 12:58:00
+#END# kgsed -g c=[01] f=郵便番号 i=./indat/dat1.csv o=./outdat/out5.csv v=@; IN=5 OUT=5; 2014/06/09 12:58:00
+#END# kgsed -g -x c=[01] f=1 i=./indat/dat1.csv o=./outdat/out5x.csv v=@; IN=5 OUT=5; 2014/06/09 12:58:00
+#END# kgsed -g -nfn c=[01] f=1 i=./indat/dat1nfn.csv o=./outdat/out5nfn.csv v=@; IN=5 OUT=5; 2014/06/09 12:58:00
+#END# kgsed c=^63 f=郵便番号 i=./indat/dat1.csv o=./outdat/out6.csv v=zz; IN=5 OUT=5; 2014/06/09 12:58:00
+#END# kgsed -x c=^63 f=1 i=./indat/dat1.csv o=./outdat/out6x.csv v=zz; IN=5 OUT=5; 2014/06/09 12:58:00
+#END# kgsed -nfn c=^63 f=1 i=./indat/dat1nfn.csv o=./outdat/out6nfn.csv v=zz; IN=5 OUT=5; 2014/06/09 12:58:00
+#END# kgsed c=1$ f=郵便番号 i=./indat/dat1.csv o=./outdat/out7.csv v=--; IN=5 OUT=5; 2014/06/09 12:58:00
+#END# kgsed -x c=1$ f=1 i=./indat/dat1.csv o=./outdat/out7x.csv v=--; IN=5 OUT=5; 2014/06/09 12:58:00
+#END# kgsed -nfn c=1$ f=1 i=./indat/dat1nfn.csv o=./outdat/out7nfn.csv v=--; IN=5 OUT=5; 2014/06/09 12:58:00
+#END# kgsed -W c=果物 f=商品 i=./indat/dat2.csv o=./outdat/out8.csv v=01; IN=5 OUT=5; 2014/06/09 12:58:00
+#END# kgsed -W -x c=果物 f=0 i=./indat/dat2.csv o=./outdat/out8x.csv v=01; IN=5 OUT=5; 2014/06/09 12:58:00
+#END# kgsed -W -nfn c=果物 f=0 i=./indat/dat2nfn.csv o=./outdat/out8nfn.csv v=01; IN=5 OUT=5; 2014/06/09 12:58:00
+#END# kgsed -W c=^果物 f=商品 i=./indat/dat2.csv o=./outdat/out9.csv v=F; IN=5 OUT=5; 2014/06/09 12:58:00
+#END# kgsed -W -x c=^果物 f=0 i=./indat/dat2.csv o=./outdat/out9x.csv v=F; IN=5 OUT=5; 2014/06/09 12:58:00
+#END# kgsed -W -nfn c=^果物 f=0 i=./indat/dat2nfn.csv o=./outdat/out9nfn.csv v=F; IN=5 OUT=5; 2014/06/09 12:58:00
+#END# kgsed -W c=葡萄$ f=商品 i=./indat/dat2.csv o=./outdat/out10.csv v=ぶどう; IN=5 OUT=5; 2014/06/09 12:58:00
+#END# kgsed -W -x c=葡萄$ f=0 i=./indat/dat2.csv o=./outdat/out10x.csv v=ぶどう; IN=5 OUT=5; 2014/06/09 12:58:00
+#END# kgsed -W -nfn c=葡萄$ f=0 i=./indat/dat2nfn.csv o=./outdat/out10nfn.csv v=ぶどう; IN=5 OUT=5; 2014/06/09 12:58:00
+#END# kgsed -W -g c=[物梨] f=商品 i=./indat/dat2.csv o=./outdat/out11.csv v=＠; IN=5 OUT=5; 2014/06/09 12:58:00
+#END# kgsed -W -g -x c=[物梨] f=0 i=./indat/dat2.csv o=./outdat/out11x.csv v=＠; IN=5 OUT=5; 2014/06/09 12:58:00
+#END# kgsed -W -g -nfn c=[物梨] f=0 i=./indat/dat2nfn.csv o=./outdat/out11nfn.csv v=＠; IN=5 OUT=5; 2014/06/09 12:58:00
+#END# kgsed c=00. f=郵便番号 i=./indat/dat1.csv o=./outdat/out12.csv v=#$&#; IN=5 OUT=5; 2014/06/09 12:58:00
+#END# kgsed -x c=00. f=1 i=./indat/dat1.csv o=./outdat/out12x.csv v=#$&#; IN=5 OUT=5; 2014/06/09 12:58:00
+#END# kgsed -nfn c=00. f=1 i=./indat/dat1nfn.csv o=./outdat/out12nfn.csv v=#$&#; IN=5 OUT=5; 2014/06/09 12:58:00
+#END# kgsed c=00. f=郵便番号 i=./indat/dat1.csv o=./outdat/out13.csv v=#$`#; IN=5 OUT=5; 2014/06/09 12:58:00
+#END# kgsed -x c=00. f=1 i=./indat/dat1.csv o=./outdat/out13x.csv v=#$`#; IN=5 OUT=5; 2014/06/09 12:58:00
+#END# kgsed -nfn c=00. f=1 i=./indat/dat1nfn.csv o=./outdat/out13nfn.csv v=#$`#; IN=5 OUT=5; 2014/06/09 12:58:00
+#END# kgsed c=00. f=郵便番号 i=./indat/dat1.csv o=./outdat/out14.csv v=#$'#; IN=5 OUT=5; 2014/06/09 12:58:00
+#END# kgsed -x c=00. f=1 i=./indat/dat1.csv o=./outdat/out14x.csv v=#$'#; IN=5 OUT=5; 2014/06/09 12:58:00
+#END# kgsed -nfn c=00. f=1 i=./indat/dat1nfn.csv o=./outdat/out14nfn.csv v=#$'#; IN=5 OUT=5; 2014/06/09 12:58:00
+#END# kgsed c=00.. f=郵便番号 i=./indat/dat1s.csv o=./outdat/out15.csv v=####; IN=5 OUT=5; 2014/06/09 12:58:00
+#END# kgsed -x c=00.. f=1 i=./indat/dat1s.csv o=./outdat/out15x.csv v=####; IN=5 OUT=5; 2014/06/09 12:58:00

@@ -1,0 +1,36 @@
+#END# kgkeybreak i=./indat/dat0s.csv k=顧客 o=./outdat/out0.csv s=seq%n; IN=0 OUT=0; 2014/06/23 13:58:37
+#END# kgkeybreak -x i=./indat/dat0s.csv k=0 o=./outdat/out0x.csv s=3%n; IN=0 OUT=0; 2014/06/23 13:58:37
+#END# kgkeybreak -nfn i=./indat/dat0snfn.csv k=0 o=./outdat/out0nfn.csv s=3%n; IN=0 OUT=0; 2014/06/23 13:58:37
+#END# kgkeybreak -nfno i=./indat/dat0s.csv k=顧客 o=./outdat/out0nfno.csv s=seq%n; IN=0 OUT=0; 2014/06/23 13:58:37
+#END# kgkeybreak i=./indat/dat1s.csv k=顧客 o=./outdat/out1.csv s=seq%n; IN=10 OUT=10; 2014/06/23 13:58:37
+#END# kgkeybreak -x i=./indat/dat1s.csv k=0 o=./outdat/out1x.csv s=3%n; IN=10 OUT=10; 2014/06/23 13:58:37
+#END# kgkeybreak -nfn i=./indat/dat1snfn.csv k=0 o=./outdat/out1nfn.csv s=3%n; IN=10 OUT=10; 2014/06/23 13:58:37
+#END# kgkeybreak -nfno i=./indat/dat1s.csv k=顧客 o=./outdat/out1nfno.csv s=seq%n; IN=10 OUT=10; 2014/06/23 13:58:37
+#END# kgkeybreak -q i=./indat/dat1s.csv k=顧客 o=./outdat/out1q.csv; IN=10 OUT=10; 2014/06/23 13:58:37
+#END# kgkeybreak -nfn -q i=./indat/dat1snfn.csv k=0 o=./outdat/out1qnfn.csv; IN=10 OUT=10; 2014/06/23 13:58:37
+#END# kgkeybreak i=./indat/dat2s.csv k=顧客 o=./outdat/out2.csv s=seq%n; IN=5 OUT=5; 2014/06/23 13:58:37
+#END# kgkeybreak -x i=./indat/dat2s.csv k=0 o=./outdat/out2x.csv s=3%n; IN=5 OUT=5; 2014/06/23 13:58:37
+#END# kgkeybreak -nfn i=./indat/dat2snfn.csv k=0 o=./outdat/out2nfn.csv s=3%n; IN=5 OUT=5; 2014/06/23 13:58:37
+#END# kgkeybreak -nfno i=./indat/dat2s.csv k=顧客 o=./outdat/out2nfno.csv s=seq%n; IN=5 OUT=5; 2014/06/23 13:58:37
+#END# kgkeybreak a=s,e i=./indat/dat1s.csv k=顧客 o=./outdat/out3.csv s=seq%n; IN=10 OUT=10; 2014/06/23 13:58:37
+#END# kgkeybreak -x a=s,e i=./indat/dat1s.csv k=0 o=./outdat/out3x.csv s=3%n; IN=10 OUT=10; 2014/06/23 13:58:37
+#END# kgkeybreak a=s i=./indat/dat1s.csv k=顧客 o=./outdat/out4.csv s=seq%n; IN=10 OUT=10; 2014/06/23 13:58:37
+#END# kgkeybreak a=,e i=./indat/dat1s.csv k=顧客 o=./outdat/out5.csv s=seq%n; IN=10 OUT=10; 2014/06/23 13:58:37
+#END# kgkeybreak i=./indat/dat0.csv k=顧客 o=./outdat/out6.csv s=seq%n; IN=0 OUT=0; 2014/06/23 13:58:37
+#END# kgkeybreak -x i=./indat/dat0.csv k=0 o=./outdat/out6x.csv s=3%n; IN=0 OUT=0; 2014/06/23 13:58:37
+#END# kgkeybreak -nfn i=./indat/dat0nfn.csv k=0 o=./outdat/out6nfn.csv s=3%n; IN=0 OUT=0; 2014/06/23 13:58:37
+#END# kgkeybreak -nfno i=./indat/dat0.csv k=顧客 o=./outdat/out6nfno.csv s=seq%n; IN=0 OUT=0; 2014/06/23 13:58:37
+#END# kgkeybreak i=./indat/dat1.csv k=顧客 o=./outdat/out7.csv s=seq%n; IN=10 OUT=10; 2014/06/23 13:58:38
+#END# kgkeybreak -x i=./indat/dat1.csv k=0 o=./outdat/out7x.csv s=3%n; IN=10 OUT=10; 2014/06/23 13:58:38
+#END# kgkeybreak -nfn i=./indat/dat1nfn.csv k=0 o=./outdat/out7nfn.csv s=3%n; IN=10 OUT=10; 2014/06/23 13:58:38
+#END# kgkeybreak -nfno i=./indat/dat1.csv k=顧客 o=./outdat/out7nfno.csv s=seq%n; IN=10 OUT=10; 2014/06/23 13:58:38
+#END# kgkeybreak -q i=./indat/dat1.csv k=顧客 o=./outdat/out7q.csv s=seq%n; IN=10 OUT=10; 2014/06/23 13:58:38
+#END# kgkeybreak -nfn -q i=./indat/dat1nfn.csv k=0 o=./outdat/out7qnfn.csv s=3%n; IN=10 OUT=10; 2014/06/23 13:58:38
+#END# kgkeybreak i=./indat/dat2.csv k=顧客 o=./outdat/out8.csv s=seq%n; IN=5 OUT=5; 2014/06/23 13:58:38
+#END# kgkeybreak -x i=./indat/dat2.csv k=0 o=./outdat/out8x.csv s=3%n; IN=5 OUT=5; 2014/06/23 13:58:38
+#END# kgkeybreak -nfn i=./indat/dat2nfn.csv k=0 o=./outdat/out8nfn.csv s=3%n; IN=5 OUT=5; 2014/06/23 13:58:38
+#END# kgkeybreak -nfno i=./indat/dat2.csv k=顧客 o=./outdat/out8nfno.csv s=seq%n; IN=5 OUT=5; 2014/06/23 13:58:38
+#END# kgkeybreak a=s,e i=./indat/dat1.csv k=顧客 o=./outdat/out9.csv s=seq%n; IN=10 OUT=10; 2014/06/23 13:58:38
+#END# kgkeybreak -x a=s,e i=./indat/dat1.csv k=0 o=./outdat/out9x.csv s=3%n; IN=10 OUT=10; 2014/06/23 13:58:38
+#END# kgkeybreak a=s i=./indat/dat1.csv k=顧客 o=./outdat/out10.csv s=seq%n; IN=10 OUT=10; 2014/06/23 13:58:38
+#END# kgkeybreak a=,e i=./indat/dat1.csv k=顧客 o=./outdat/out11.csv s=seq%n; IN=10 OUT=10; 2014/06/23 13:58:38

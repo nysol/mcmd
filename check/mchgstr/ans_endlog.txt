@@ -1,0 +1,85 @@
+#END# kgchgstr c=01:A,03:B,05:C f=商品 i=./indat/dat0.csv o=./outdat/out0.csv; IN=0 OUT=0; 2013/10/23 15:25:37
+#END# kgchgstr -x c=01:A,03:B,05:C f=1 i=./indat/dat0.csv o=./outdat/out0x.csv; IN=0 OUT=0; 2013/10/23 15:25:37
+#END# kgchgstr -nfn c=01:A,03:B,05:C f=1 i=./indat/dat0nfn.csv o=./outdat/out0nfn.csv; IN=0 OUT=0; 2013/10/23 15:25:37
+#END# kgchgstr c=01:A,03:B,05:C f=商品 i=./indat/dat1.csv o=./outdat/out1.csv; IN=5 OUT=5; 2013/10/23 15:25:37
+#END# kgchgstr -x c=01:A,03:B,05:C f=0 i=./indat/dat1.csv o=./outdat/out1x.csv; IN=5 OUT=5; 2013/10/23 15:25:37
+#END# kgchgstr -nfn c=01:A,03:B,05:C f=0 i=./indat/dat1nfn.csv o=./outdat/out1nfn.csv; IN=5 OUT=5; 2013/10/23 15:25:37
+#END# kgchgstr -nfno c=01:A,03:B,05:C f=商品 i=./indat/dat1.csv o=./outdat/out1nfno.csv; IN=5 OUT=5; 2013/10/23 15:25:37
+#END# kgchgstr O=対象外 c=01:A,03:B,05:C f=商品 i=./indat/dat1.csv o=./outdat/out2.csv; IN=5 OUT=5; 2013/10/23 15:25:37
+#END# kgchgstr -x O=対象外 c=01:A,03:B,05:C f=0 i=./indat/dat1.csv o=./outdat/out2x.csv; IN=5 OUT=5; 2013/10/23 15:25:37
+#END# kgchgstr -nfn O=対象外 c=01:A,03:B,05:C f=0 i=./indat/dat1nfn.csv o=./outdat/out2nfn.csv; IN=5 OUT=5; 2013/10/23 15:25:37
+#END# kgchgstr -nfno O=対象外 c=01:A,03:B,05:C f=商品 i=./indat/dat1.csv o=./outdat/out2nfno.csv; IN=5 OUT=5; 2013/10/23 15:25:37
+#END# kgchgstr -A O=対象外 c=01:A,03:B,05:C f=商品:商品情報 i=./indat/dat1.csv o=./outdat/out3.csv; IN=5 OUT=5; 2013/10/23 15:25:37
+#END# kgchgstr -A -x O=対象外 c=01:A,03:B,05:C f=0:商品情報 i=./indat/dat1.csv o=./outdat/out3x.csv; IN=5 OUT=5; 2013/10/23 15:25:37
+#END# kgchgstr -A -nfn O=対象外 c=01:A,03:B,05:C f=0 i=./indat/dat1nfn.csv o=./outdat/out3nfn.csv; IN=5 OUT=5; 2013/10/23 15:25:37
+#END# kgchgstr -A -nfno O=対象外 c=01:A,03:B,05:C f=商品:商品情報 i=./indat/dat1.csv o=./outdat/out3nfno.csv; IN=5 OUT=5; 2013/10/23 15:25:37
+#END# kgchgstr -F c=01:A,03:B,05:C f=商品 i=./indat/dat1.csv o=./outdat/out4.csv; IN=5 OUT=5; 2013/10/23 15:25:37
+#END# kgchgstr -F -x c=01:A,03:B,05:C f=0 i=./indat/dat1.csv o=./outdat/out4x.csv; IN=5 OUT=5; 2013/10/23 15:25:37
+#END# kgchgstr -F -nfn c=01:A,03:B,05:C f=0 i=./indat/dat1nfn.csv o=./outdat/out4nfn.csv; IN=5 OUT=5; 2013/10/23 15:25:37
+#END# kgchgstr -F -nfno c=01:A,03:B,05:C f=商品 i=./indat/dat1.csv o=./outdat/out4nfno.csv; IN=5 OUT=5; 2013/10/23 15:25:37
+#END# kgchgstr -sub O=対象外 c=01:A f=商品 i=./indat/dat2.csv o=./outdat/out5.csv; IN=5 OUT=5; 2013/10/23 15:25:37
+#END# kgchgstr -sub -x O=対象外 c=01:A f=0 i=./indat/dat2.csv o=./outdat/out5x.csv; IN=5 OUT=5; 2013/10/23 15:25:37
+#END# kgchgstr -nfn -sub O=対象外 c=01:A f=0 i=./indat/dat2nfn.csv o=./outdat/out5nfn.csv; IN=5 OUT=5; 2013/10/23 15:25:37
+#END# kgchgstr -nfno -sub O=対象外 c=01:A f=商品 i=./indat/dat2.csv o=./outdat/out5nfno.csv; IN=5 OUT=5; 2013/10/23 15:25:37
+#END# kgchgstr -W -sub O=対象外 c=柿:01,桃:02,葡萄:03 f=商品 i=./indat/dat3.csv o=./outdat/out6.csv; IN=5 OUT=5; 2013/10/23 15:25:37
+#END# kgchgstr -W -sub -x O=対象外 c=柿:01,桃:02,葡萄:03 f=0 i=./indat/dat3.csv o=./outdat/out6x.csv; IN=5 OUT=5; 2013/10/23 15:25:37
+#END# kgchgstr -W -nfn -sub O=対象外 c=柿:01,桃:02,葡萄:03 f=0 i=./indat/dat3nfn.csv o=./outdat/out6nfn.csv; IN=5 OUT=5; 2013/10/23 15:25:37
+#END# kgchgstr -W -nfno -sub O=対象外 c=柿:01,桃:02,葡萄:03 f=商品 i=./indat/dat3.csv o=./outdat/out6nfno.csv; IN=5 OUT=5; 2013/10/23 15:25:37
+#END# kgchgstr c=01:A,03:B,05:C f=商品1,商品2 i=./indat/dat4.csv o=./outdat/out7.csv; IN=5 OUT=5; 2013/10/23 15:25:37
+#END# kgchgstr -x c=01:A,03:B,05:C f=0,1 i=./indat/dat4.csv o=./outdat/out7x.csv; IN=5 OUT=5; 2013/10/23 15:25:37
+#END# kgchgstr -nfn c=01:A,03:B,05:C f=0,1 i=./indat/dat4nfn.csv o=./outdat/out7nfn.csv; IN=5 OUT=5; 2013/10/23 15:25:37
+#END# kgchgstr O=対象外 c=01:A,03:B,05:C f=商品1,商品2 i=./indat/dat4.csv o=./outdat/out8.csv; IN=5 OUT=5; 2013/10/23 15:25:37
+#END# kgchgstr -x O=対象外 c=01:A,03:B,05:C f=0,1 i=./indat/dat4.csv o=./outdat/out8x.csv; IN=5 OUT=5; 2013/10/23 15:25:37
+#END# kgchgstr -nfn O=対象外 c=01:A,03:B,05:C f=0,1 i=./indat/dat4nfn.csv o=./outdat/out8nfn.csv; IN=5 OUT=5; 2013/10/23 15:25:37
+#END# kgchgstr -A O=対象外 c=01:A,03:B,05:C f=商品1:商品情報1,商品2:商品情報2 i=./indat/dat4.csv o=./outdat/out9.csv; IN=5 OUT=5; 2013/10/23 15:25:37
+#END# kgchgstr -A -x O=対象外 c=01:A,03:B,05:C f=0:商品情報1,1:商品情報2 i=./indat/dat4.csv o=./outdat/out9x.csv; IN=5 OUT=5; 2013/10/23 15:25:37
+#END# kgchgstr -A -nfn O=対象外 c=01:A,03:B,05:C f=0,1 i=./indat/dat4nfn.csv o=./outdat/out9nfn.csv; IN=5 OUT=5; 2013/10/23 15:25:37
+#END# kgchgstr -F c=01:A,03:B,05:C f=商品1,商品2 i=./indat/dat4.csv o=./outdat/out10.csv; IN=5 OUT=5; 2013/10/23 15:25:37
+#END# kgchgstr -F -x c=01:A,03:B,05:C f=0,1 i=./indat/dat4.csv o=./outdat/out10x.csv; IN=5 OUT=5; 2013/10/23 15:25:37
+#END# kgchgstr -F -nfn c=01:A,03:B,05:C f=0,1 i=./indat/dat4nfn.csv o=./outdat/out10nfn.csv; IN=5 OUT=5; 2013/10/23 15:25:37
+#END# kgchgstr -sub O=対象外 c=01:A,00:000 f=商品,金額 i=./indat/dat2.csv o=./outdat/out11.csv; IN=5 OUT=5; 2013/10/23 15:25:37
+#END# kgchgstr -sub -x O=対象外 c=01:A,00:000 f=0,1 i=./indat/dat2.csv o=./outdat/out11x.csv; IN=5 OUT=5; 2013/10/23 15:25:37
+#END# kgchgstr -nfn -sub O=対象外 c=01:A,00:000 f=0,1 i=./indat/dat2nfn.csv o=./outdat/out11nfn.csv; IN=5 OUT=5; 2013/10/23 15:25:37
+#END# kgchgstr -W -sub O=対象外 c=柿:01,桃:02,葡萄:03 f=商品1,商品2 i=./indat/dat5.csv o=./outdat/out12.csv; IN=5 OUT=5; 2013/10/23 15:25:37
+#END# kgchgstr -W -sub -x O=対象外 c=柿:01,桃:02,葡萄:03 f=0,1 i=./indat/dat5.csv o=./outdat/out12x.csv; IN=5 OUT=5; 2013/10/23 15:25:37
+#END# kgchgstr -W -nfn -sub O=対象外 c=柿:01,桃:02,葡萄:03 f=0,1 i=./indat/dat5nfn.csv o=./outdat/out12nfn.csv; IN=5 OUT=5; 2013/10/23 15:25:37
+#END# kgchgstr c=01:A,03:B,05:C f=商品 i=./indat/dat6.csv o=./outdat/out13.csv; IN=5 OUT=5; 2013/10/23 15:25:37
+#END# kgchgstr -x c=01:A,03:B,05:C f=0 i=./indat/dat6.csv o=./outdat/out13x.csv; IN=5 OUT=5; 2013/10/23 15:25:38
+#END# kgchgstr -nfn c=01:A,03:B,05:C f=0 i=./indat/dat6nfn.csv o=./outdat/out13nfn.csv; IN=5 OUT=5; 2013/10/23 15:25:38
+#END# kgchgstr O=対象外 c=01:A,03:B,05:C f=商品 i=./indat/dat6.csv o=./outdat/out14.csv; IN=5 OUT=5; 2013/10/23 15:25:38
+#END# kgchgstr -x O=対象外 c=01:A,03:B,05:C f=0 i=./indat/dat6.csv o=./outdat/out14x.csv; IN=5 OUT=5; 2013/10/23 15:25:38
+#END# kgchgstr -nfn O=対象外 c=01:A,03:B,05:C f=0 i=./indat/dat6nfn.csv o=./outdat/out14nfn.csv; IN=5 OUT=5; 2013/10/23 15:25:38
+#END# kgchgstr -A O=対象外 c=01:A,03:B,05:C f=商品:商品情報 i=./indat/dat6.csv o=./outdat/out15.csv; IN=5 OUT=5; 2013/10/23 15:25:38
+#END# kgchgstr -A -x O=対象外 c=01:A,03:B,05:C f=0:商品情報 i=./indat/dat6.csv o=./outdat/out15x.csv; IN=5 OUT=5; 2013/10/23 15:25:38
+#END# kgchgstr -A -nfn O=対象外 c=01:A,03:B,05:C f=0 i=./indat/dat6nfn.csv o=./outdat/out15nfn.csv; IN=5 OUT=5; 2013/10/23 15:25:38
+#END# kgchgstr -F c=01:A,03:B,05:C f=商品 i=./indat/dat6.csv o=./outdat/out16.csv; IN=5 OUT=5; 2013/10/23 15:25:38
+#END# kgchgstr -F -x c=01:A,03:B,05:C f=0 i=./indat/dat6.csv o=./outdat/out16x.csv; IN=5 OUT=5; 2013/10/23 15:25:38
+#END# kgchgstr -F -nfn c=01:A,03:B,05:C f=0 i=./indat/dat6nfn.csv o=./outdat/out16nfn.csv; IN=5 OUT=5; 2013/10/23 15:25:38
+#END# kgchgstr -sub O=対象外 c=01:A f=商品 i=./indat/dat7.csv o=./outdat/out17.csv; IN=5 OUT=5; 2013/10/23 15:25:38
+#END# kgchgstr -sub -x O=対象外 c=01:A f=0 i=./indat/dat7.csv o=./outdat/out17x.csv; IN=5 OUT=5; 2013/10/23 15:25:38
+#END# kgchgstr -nfn -sub O=対象外 c=01:A f=0 i=./indat/dat7nfn.csv o=./outdat/out17nfn.csv; IN=5 OUT=5; 2013/10/23 15:25:38
+#END# kgchgstr -W -sub O=対象外 c=柿:01,桃:02,葡萄:03 f=商品 i=./indat/dat8.csv o=./outdat/out18.csv; IN=5 OUT=5; 2013/10/23 15:25:38
+#END# kgchgstr -W -sub -x O=対象外 c=柿:01,桃:02,葡萄:03 f=0 i=./indat/dat8.csv o=./outdat/out18x.csv; IN=5 OUT=5; 2013/10/23 15:25:38
+#END# kgchgstr -W -nfn -sub O=対象外 c=柿:01,桃:02,葡萄:03 f=0 i=./indat/dat8nfn.csv o=./outdat/out18nfn.csv; IN=5 OUT=5; 2013/10/23 15:25:38
+#END# kgchgstr c=01:A,03:B,05:C f=商品1,商品2 i=./indat/dat9.csv o=./outdat/out19.csv; IN=5 OUT=5; 2013/10/23 15:25:38
+#END# kgchgstr -x c=01:A,03:B,05:C f=0,1 i=./indat/dat9.csv o=./outdat/out19x.csv; IN=5 OUT=5; 2013/10/23 15:25:38
+#END# kgchgstr -nfn c=01:A,03:B,05:C f=0,1 i=./indat/dat9nfn.csv o=./outdat/out19nfn.csv; IN=5 OUT=5; 2013/10/23 15:25:38
+#END# kgchgstr O=対象外 c=01:A,03:B,05:C f=商品1,商品2 i=./indat/dat9.csv o=./outdat/out20.csv; IN=5 OUT=5; 2013/10/23 15:25:38
+#END# kgchgstr -x O=対象外 c=01:A,03:B,05:C f=0,1 i=./indat/dat9.csv o=./outdat/out20x.csv; IN=5 OUT=5; 2013/10/23 15:25:38
+#END# kgchgstr -nfn O=対象外 c=01:A,03:B,05:C f=0,1 i=./indat/dat9nfn.csv o=./outdat/out20nfn.csv; IN=5 OUT=5; 2013/10/23 15:25:38
+#END# kgchgstr -A O=対象外 c=01:A,03:B,05:C f=商品1:商品情報1,商品2:商品情報2 i=./indat/dat9.csv o=./outdat/out21.csv; IN=5 OUT=5; 2013/10/23 15:25:38
+#END# kgchgstr -A -x O=対象外 c=01:A,03:B,05:C f=0:商品情報1,1:商品情報2 i=./indat/dat9.csv o=./outdat/out21x.csv; IN=5 OUT=5; 2013/10/23 15:25:38
+#END# kgchgstr -A -nfn O=対象外 c=01:A,03:B,05:C f=0,1 i=./indat/dat9nfn.csv o=./outdat/out21nfn.csv; IN=5 OUT=5; 2013/10/23 15:25:38
+#END# kgchgstr -F c=01:A,03:B,05:C f=商品1,商品2 i=./indat/dat9.csv o=./outdat/out22.csv; IN=5 OUT=5; 2013/10/23 15:25:38
+#END# kgchgstr -F -x c=01:A,03:B,05:C f=0,1 i=./indat/dat9.csv o=./outdat/out22x.csv; IN=5 OUT=5; 2013/10/23 15:25:38
+#END# kgchgstr -F -nfn c=01:A,03:B,05:C f=0,1 i=./indat/dat9nfn.csv o=./outdat/out22nfn.csv; IN=5 OUT=5; 2013/10/23 15:25:38
+#END# kgchgstr -sub O=対象外 c=01:A,00:000 f=商品,金額 i=./indat/dat7.csv o=./outdat/out23.csv; IN=5 OUT=5; 2013/10/23 15:25:38
+#END# kgchgstr -sub -x O=対象外 c=01:A,00:000 f=0,1 i=./indat/dat7.csv o=./outdat/out23x.csv; IN=5 OUT=5; 2013/10/23 15:25:38
+#END# kgchgstr -nfn -sub O=対象外 c=01:A,00:000 f=0,1 i=./indat/dat7nfn.csv o=./outdat/out23nfn.csv; IN=5 OUT=5; 2013/10/23 15:25:38
+#END# kgchgstr -W -sub O=対象外 c=柿:01,桃:02,葡萄:03 f=商品1,商品2 i=./indat/dat10.csv o=./outdat/out24.csv; IN=5 OUT=5; 2013/10/23 15:25:38
+#END# kgchgstr -W -sub -x O=対象外 c=柿:01,桃:02,葡萄:03 f=0,1 i=./indat/dat10.csv o=./outdat/out24x.csv; IN=5 OUT=5; 2013/10/23 15:25:38
+#END# kgchgstr -W -nfn -sub O=対象外 c=柿:01,桃:02,葡萄:03 f=0,1 i=./indat/dat10nfn.csv o=./outdat/out24nfn.csv; IN=5 OUT=5; 2013/10/23 15:25:38
+#END# kgchgstr -sub O=not much c=abc:A,klm:B,no:C f=item i=./indat/dat11.csv o=./outdat/out25.csv; IN=3 OUT=3; 2013/10/23 15:25:38
+#END# kgchgstr -sub -x O=not much c=abc:A,klm:B,no:C f=0 i=./indat/dat11.csv o=./outdat/out25x.csv; IN=3 OUT=3; 2013/10/23 15:25:38
+#END# kgchgstr -nfn -sub O=not much c=abc:A,klm:B,no:C f=0 i=./indat/dat11nfn.csv o=./outdat/out25nfn.csv; IN=3 OUT=3; 2013/10/23 15:25:38
+#END# kgchgstr -nfno -sub O=not much c=abc:A,klm:B,no:C f=item i=./indat/dat11.csv o=./outdat/out25nfno.csv; IN=3 OUT=3; 2013/10/23 15:25:38

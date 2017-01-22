@@ -1,0 +1,6 @@
+顧客,日付,金額,fileName
+A,20081201,10,./indat/dat1.csv
+B,20081002,40,./indat/dat1.csv
+A,20081207,20,./indat/dat2.csv
+A,20081213,30,./indat/dat2.csv
+B,20081209,50,./indat/dat2.csv

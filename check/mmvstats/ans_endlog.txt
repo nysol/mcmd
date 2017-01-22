@@ -1,0 +1,72 @@
+#END# kgmvstats c=sum f=value2 i=./indat/dat2s.csv o=./outdat/out1.csv s=id t=5; IN=13 OUT=9; 2014/05/31 16:11:36
+#END# kgmvstats c=mean f=value2 i=./indat/dat2s.csv o=./outdat/out2.csv s=id t=5; IN=13 OUT=9; 2014/05/31 16:11:36
+#END# kgmvstats c=devsq f=value2 i=./indat/dat2s.csv o=./outdat/out3.csv s=id t=5; IN=13 OUT=9; 2014/05/31 16:11:36
+#END# kgmvstats c=var f=value2 i=./indat/dat2s.csv o=./outdat/out4.csv s=id t=5; IN=13 OUT=9; 2014/05/31 16:11:36
+#END# kgmvstats c=uvar f=value2 i=./indat/dat2s.csv o=./outdat/out5.csv s=id t=5; IN=13 OUT=9; 2014/05/31 16:11:36
+#END# kgmvstats c=sd f=value2 i=./indat/dat2s.csv o=./outdat/out6.csv s=id t=5; IN=13 OUT=9; 2014/05/31 16:11:36
+#END# kgmvstats c=usd f=value2 i=./indat/dat2s.csv o=./outdat/out7.csv s=id t=5; IN=13 OUT=9; 2014/05/31 16:11:36
+#END# kgmvstats c=cv f=value2 i=./indat/dat2s.csv o=./outdat/out8.csv s=id t=5; IN=13 OUT=9; 2014/05/31 16:11:36
+#END# kgmvstats c=min f=value2 i=./indat/dat2s.csv o=./outdat/out9.csv s=id t=5; IN=13 OUT=9; 2014/05/31 16:11:36
+#END# kgmvstats c=max f=value2 i=./indat/dat2s.csv o=./outdat/out10.csv s=id t=5; IN=13 OUT=9; 2014/05/31 16:11:36
+#END# kgmvstats c=range f=value2 i=./indat/dat2s.csv o=./outdat/out11.csv s=id t=5; IN=13 OUT=9; 2014/05/31 16:11:36
+#END# kgmvstats c=skew f=value2 i=./indat/dat2s.csv o=./outdat/out12.csv s=id t=5; IN=13 OUT=9; 2014/05/31 16:11:36
+#END# kgmvstats c=uskew f=value2 i=./indat/dat2s.csv o=./outdat/out13.csv s=id t=5; IN=13 OUT=9; 2014/05/31 16:11:36
+#END# kgmvstats c=kurt f=value2 i=./indat/dat2s.csv o=./outdat/out14.csv s=id t=5; IN=13 OUT=9; 2014/05/31 16:11:36
+#END# kgmvstats c=ukurt f=value2 i=./indat/dat2s.csv o=./outdat/out15.csv s=id t=5; IN=13 OUT=9; 2014/05/31 16:11:36
+#END# kgmvstats -x c=sum f=3 i=./indat/dat2s.csv o=./outdat/out1x.csv s=1 t=5; IN=13 OUT=9; 2014/05/31 16:11:36
+#END# kgmvstats -q c=sum f=value2 i=./indat/dat2s.csv o=./outdat/out1q.csv s=id t=5; IN=13 OUT=9; 2014/05/31 16:11:36
+#END# kgmvstats -nfn c=sum f=3 i=./indat/dat2snfn.csv o=./outdat/out1nfn.csv s=1 t=5; IN=13 OUT=9; 2014/05/31 16:11:36
+#END# kgmvstats c=sum f=value i=./indat/dat2s.csv k=key o=./outdat/out16.csv s=id skip=2 t=4; IN=13 OUT=7; 2014/05/31 16:11:36
+#END# kgmvstats c=mean f=value i=./indat/dat2s.csv k=key o=./outdat/out17.csv s=id skip=2 t=4; IN=13 OUT=7; 2014/05/31 16:11:36
+#END# kgmvstats c=devsq f=value i=./indat/dat2s.csv k=key o=./outdat/out18.csv s=id skip=2 t=4; IN=13 OUT=7; 2014/05/31 16:11:36
+#END# kgmvstats c=var f=value i=./indat/dat2s.csv k=key o=./outdat/out19.csv s=id skip=2 t=4; IN=13 OUT=7; 2014/05/31 16:11:36
+#END# kgmvstats c=uvar f=value i=./indat/dat2s.csv k=key o=./outdat/out20.csv s=id skip=2 t=4; IN=13 OUT=7; 2014/05/31 16:11:36
+#END# kgmvstats c=sd f=value i=./indat/dat2s.csv k=key o=./outdat/out21.csv s=id skip=2 t=4; IN=13 OUT=7; 2014/05/31 16:11:36
+#END# kgmvstats c=usd f=value i=./indat/dat2s.csv k=key o=./outdat/out22.csv s=id skip=2 t=4; IN=13 OUT=7; 2014/05/31 16:11:36
+#END# kgmvstats c=cv f=value i=./indat/dat2s.csv k=key o=./outdat/out23.csv s=id skip=2 t=4; IN=13 OUT=7; 2014/05/31 16:11:36
+#END# kgmvstats c=min f=value i=./indat/dat2s.csv k=key o=./outdat/out24.csv s=id skip=2 t=4; IN=13 OUT=7; 2014/05/31 16:11:36
+#END# kgmvstats c=max f=value i=./indat/dat2s.csv k=key o=./outdat/out25.csv s=id skip=2 t=4; IN=13 OUT=7; 2014/05/31 16:11:36
+#END# kgmvstats c=range f=value i=./indat/dat2s.csv k=key o=./outdat/out26.csv s=id skip=2 t=4; IN=13 OUT=7; 2014/05/31 16:11:36
+#END# kgmvstats c=skew f=value i=./indat/dat2s.csv k=key o=./outdat/out27.csv s=id skip=2 t=4; IN=13 OUT=7; 2014/05/31 16:11:36
+#END# kgmvstats c=uskew f=value i=./indat/dat2s.csv k=key o=./outdat/out28.csv s=id skip=2 t=4; IN=13 OUT=7; 2014/05/31 16:11:36
+#END# kgmvstats c=kurt f=value i=./indat/dat2s.csv k=key o=./outdat/out29.csv s=id skip=2 t=4; IN=13 OUT=7; 2014/05/31 16:11:36
+#END# kgmvstats c=ukurt f=value i=./indat/dat2s.csv k=key o=./outdat/out30.csv s=id skip=2 t=4; IN=13 OUT=7; 2014/05/31 16:11:36
+#END# kgmvstats -x c=sum f=2 i=./indat/dat2s.csv k=0 o=./outdat/out16x.csv s=1 skip=2 t=4; IN=13 OUT=7; 2014/05/31 16:11:36
+#END# kgmvstats -q c=sum f=value i=./indat/dat2s.csv k=key o=./outdat/out16q.csv s=id skip=2 t=4; IN=13 OUT=7; 2014/05/31 16:11:36
+#END# kgmvstats -nfn c=sum f=2 i=./indat/dat2snfn.csv k=0 o=./outdat/out16nfn.csv s=1 skip=2 t=4; IN=13 OUT=7; 2014/05/31 16:11:36
+#END# kgmvstats c=sum f=value2 i=./indat/dat2.csv o=./outdat/out31.csv s=id t=5; IN=13 OUT=9; 2014/05/31 16:11:36
+#END# kgmvstats c=mean f=value2 i=./indat/dat2.csv o=./outdat/out32.csv s=id t=5; IN=13 OUT=9; 2014/05/31 16:11:36
+#END# kgmvstats c=devsq f=value2 i=./indat/dat2.csv o=./outdat/out33.csv s=id t=5; IN=13 OUT=9; 2014/05/31 16:11:36
+#END# kgmvstats c=var f=value2 i=./indat/dat2.csv o=./outdat/out34.csv s=id t=5; IN=13 OUT=9; 2014/05/31 16:11:36
+#END# kgmvstats c=uvar f=value2 i=./indat/dat2.csv o=./outdat/out35.csv s=id t=5; IN=13 OUT=9; 2014/05/31 16:11:36
+#END# kgmvstats c=sd f=value2 i=./indat/dat2.csv o=./outdat/out36.csv s=id t=5; IN=13 OUT=9; 2014/05/31 16:11:37
+#END# kgmvstats c=usd f=value2 i=./indat/dat2.csv o=./outdat/out37.csv s=id t=5; IN=13 OUT=9; 2014/05/31 16:11:37
+#END# kgmvstats c=cv f=value2 i=./indat/dat2.csv o=./outdat/out38.csv s=id t=5; IN=13 OUT=9; 2014/05/31 16:11:37
+#END# kgmvstats c=min f=value2 i=./indat/dat2.csv o=./outdat/out39.csv s=id t=5; IN=13 OUT=9; 2014/05/31 16:11:37
+#END# kgmvstats c=max f=value2 i=./indat/dat2.csv o=./outdat/out40.csv s=id t=5; IN=13 OUT=9; 2014/05/31 16:11:37
+#END# kgmvstats c=range f=value2 i=./indat/dat2.csv o=./outdat/out41.csv s=id t=5; IN=13 OUT=9; 2014/05/31 16:11:37
+#END# kgmvstats c=skew f=value2 i=./indat/dat2.csv o=./outdat/out42.csv s=id t=5; IN=13 OUT=9; 2014/05/31 16:11:37
+#END# kgmvstats c=uskew f=value2 i=./indat/dat2.csv o=./outdat/out43.csv s=id t=5; IN=13 OUT=9; 2014/05/31 16:11:37
+#END# kgmvstats c=kurt f=value2 i=./indat/dat2.csv o=./outdat/out44.csv s=id t=5; IN=13 OUT=9; 2014/05/31 16:11:37
+#END# kgmvstats c=ukurt f=value2 i=./indat/dat2.csv o=./outdat/out45.csv s=id t=5; IN=13 OUT=9; 2014/05/31 16:11:37
+#END# kgmvstats -x c=sum f=3 i=./indat/dat2.csv o=./outdat/out31x.csv s=1 t=5; IN=13 OUT=9; 2014/05/31 16:11:37
+#END# kgmvstats -q c=sum f=value2 i=./indat/dat2.csv o=./outdat/out31q.csv s=id t=5; IN=13 OUT=9; 2014/05/31 16:11:37
+#END# kgmvstats -nfn c=sum f=3 i=./indat/dat2nfn.csv o=./outdat/out31nfn.csv s=1 t=5; IN=13 OUT=9; 2014/05/31 16:11:37
+#END# kgmvstats c=sum f=value i=./indat/dat2.csv k=key o=./outdat/out46.csv s=id skip=2 t=4; IN=13 OUT=7; 2014/05/31 16:11:37
+#END# kgmvstats c=mean f=value i=./indat/dat2.csv k=key o=./outdat/out47.csv s=id skip=2 t=4; IN=13 OUT=7; 2014/05/31 16:11:37
+#END# kgmvstats c=devsq f=value i=./indat/dat2.csv k=key o=./outdat/out48.csv s=id skip=2 t=4; IN=13 OUT=7; 2014/05/31 16:11:37
+#END# kgmvstats c=var f=value i=./indat/dat2.csv k=key o=./outdat/out49.csv s=id skip=2 t=4; IN=13 OUT=7; 2014/05/31 16:11:37
+#END# kgmvstats c=uvar f=value i=./indat/dat2.csv k=key o=./outdat/out50.csv s=id skip=2 t=4; IN=13 OUT=7; 2014/05/31 16:11:37
+#END# kgmvstats c=sd f=value i=./indat/dat2.csv k=key o=./outdat/out51.csv s=id skip=2 t=4; IN=13 OUT=7; 2014/05/31 16:11:37
+#END# kgmvstats c=usd f=value i=./indat/dat2.csv k=key o=./outdat/out52.csv s=id skip=2 t=4; IN=13 OUT=7; 2014/05/31 16:11:37
+#END# kgmvstats c=cv f=value i=./indat/dat2.csv k=key o=./outdat/out53.csv s=id skip=2 t=4; IN=13 OUT=7; 2014/05/31 16:11:37
+#END# kgmvstats c=min f=value i=./indat/dat2.csv k=key o=./outdat/out54.csv s=id skip=2 t=4; IN=13 OUT=7; 2014/05/31 16:11:37
+#END# kgmvstats c=max f=value i=./indat/dat2.csv k=key o=./outdat/out55.csv s=id skip=2 t=4; IN=13 OUT=7; 2014/05/31 16:11:37
+#END# kgmvstats c=range f=value i=./indat/dat2.csv k=key o=./outdat/out56.csv s=id skip=2 t=4; IN=13 OUT=7; 2014/05/31 16:11:37
+#END# kgmvstats c=skew f=value i=./indat/dat2.csv k=key o=./outdat/out57.csv s=id skip=2 t=4; IN=13 OUT=7; 2014/05/31 16:11:37
+#END# kgmvstats c=uskew f=value i=./indat/dat2.csv k=key o=./outdat/out58.csv s=id skip=2 t=4; IN=13 OUT=7; 2014/05/31 16:11:37
+#END# kgmvstats c=kurt f=value i=./indat/dat2.csv k=key o=./outdat/out59.csv s=id skip=2 t=4; IN=13 OUT=7; 2014/05/31 16:11:37
+#END# kgmvstats c=ukurt f=value i=./indat/dat2.csv k=key o=./outdat/out60.csv s=id skip=2 t=4; IN=13 OUT=7; 2014/05/31 16:11:37
+#END# kgmvstats -x c=sum f=2 i=./indat/dat2.csv k=0 o=./outdat/out46x.csv s=1 skip=2 t=4; IN=13 OUT=7; 2014/05/31 16:11:37
+#END# kgmvstats -q c=sum f=value i=./indat/dat2.csv k=key o=./outdat/out46q.csv s=id skip=2 t=4; IN=13 OUT=3; 2014/05/31 16:11:37
+#END# kgmvstats -nfn c=sum f=2 i=./indat/dat2nfn.csv k=0 o=./outdat/out46nfn.csv s=1 skip=2 t=4; IN=13 OUT=3; 2014/05/31 16:11:37

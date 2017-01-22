@@ -1,0 +1,637 @@
+#END# kgnrjoin R=金額F,金額T i=./indat/dat0s.csv k=日付 m=./indat/dat1s.csv o=./outdat/out0.csv r=金額%n; IN=0 OUT=0; 2014/06/04 01:46:31
+#END# kgnrjoin -x R=1,2 i=./indat/dat0s.csv k=0 m=./indat/dat1s.csv o=./outdat/out0x.csv r=2%n; IN=0 OUT=0; 2014/06/04 01:46:31
+#END# kgnrjoin -nfn R=1,2 i=./indat/dat0snfn.csv k=0 m=./indat/dat1snfn.csv o=./outdat/out0nfn.csv r=2%n; IN=0 OUT=0; 2014/06/04 01:46:31
+#END# kgnrjoin -nfno R=金額F,金額T i=./indat/dat0s.csv k=日付 m=./indat/dat1s.csv o=./outdat/out0nfno.csv r=金額%n; IN=0 OUT=0; 2014/06/04 01:46:31
+#END# kgnrjoin R=金額F,金額T i=./indat/dat2s.csv k=日付 m=./indat/dat1s.csv o=./outdat/out1.csv r=金額%n; IN=1 OUT=0; 2014/06/04 01:46:31
+#END# kgnrjoin -x R=1,2 i=./indat/dat2s.csv k=0 m=./indat/dat1s.csv o=./outdat/out1x.csv r=2%n; IN=1 OUT=0; 2014/06/04 01:46:31
+#END# kgnrjoin -nfn R=1,2 i=./indat/dat2snfn.csv k=0 m=./indat/dat1snfn.csv o=./outdat/out1nfn.csv r=2%n; IN=1 OUT=0; 2014/06/04 01:46:31
+#END# kgnrjoin R=金額F,金額T i=./indat/dat0s.csv k=日付 m=./indat/dat3s.csv o=./outdat/out2.csv r=金額%n; IN=0 OUT=0; 2014/06/04 01:46:31
+#END# kgnrjoin -x R=1,2 i=./indat/dat0s.csv k=0 m=./indat/dat3s.csv o=./outdat/out2x.csv r=2%n; IN=0 OUT=0; 2014/06/04 01:46:32
+#END# kgnrjoin -nfn R=1,2 i=./indat/dat0snfn.csv k=0 m=./indat/dat3snfn.csv o=./outdat/out2nfn.csv r=2%n; IN=0 OUT=0; 2014/06/04 01:46:32
+#END# kgnrjoin -n R=金額F,金額T i=./indat/dat0s.csv k=日付 m=./indat/dat1s.csv o=./outdat/out3.csv r=金額%n; IN=0 OUT=0; 2014/06/04 01:46:32
+#END# kgnrjoin -n -x R=1,2 i=./indat/dat0s.csv k=0 m=./indat/dat1s.csv o=./outdat/out3x.csv r=2%n; IN=0 OUT=0; 2014/06/04 01:46:32
+#END# kgnrjoin -n -nfn R=1,2 i=./indat/dat0snfn.csv k=0 m=./indat/dat1snfn.csv o=./outdat/out3nfn.csv r=2%n; IN=0 OUT=0; 2014/06/04 01:46:32
+#END# kgnrjoin -n R=金額F,金額T i=./indat/dat2s.csv k=日付 m=./indat/dat1s.csv o=./outdat/out4.csv r=金額%n; IN=5 OUT=5; 2014/06/04 01:46:32
+#END# kgnrjoin -n -x R=1,2 i=./indat/dat2s.csv k=0 m=./indat/dat1s.csv o=./outdat/out4x.csv r=2%n; IN=5 OUT=5; 2014/06/04 01:46:32
+#END# kgnrjoin -n -nfn R=1,2 i=./indat/dat2snfn.csv k=0 m=./indat/dat1snfn.csv o=./outdat/out4nfn.csv r=2%n; IN=5 OUT=5; 2014/06/04 01:46:32
+#END# kgnrjoin -n R=金額F,金額T i=./indat/dat0s.csv k=日付 m=./indat/dat3s.csv o=./outdat/out5.csv r=金額%n; IN=0 OUT=0; 2014/06/04 01:46:32
+#END# kgnrjoin -n -x R=1,2 i=./indat/dat0s.csv k=0 m=./indat/dat3s.csv o=./outdat/out5x.csv r=2%n; IN=0 OUT=0; 2014/06/04 01:46:32
+#END# kgnrjoin -n -nfn R=1,2 i=./indat/dat0snfn.csv k=0 m=./indat/dat3snfn.csv o=./outdat/out5nfn.csv r=2%n; IN=0 OUT=0; 2014/06/04 01:46:32
+#END# kgnrjoin -N R=金額F,金額T i=./indat/dat0s.csv k=日付 m=./indat/dat1s.csv o=./outdat/out6.csv r=金額%n; IN=0 OUT=0; 2014/06/04 01:46:32
+#END# kgnrjoin -N -x R=1,2 i=./indat/dat0s.csv k=0 m=./indat/dat1s.csv o=./outdat/out6x.csv r=2%n; IN=0 OUT=0; 2014/06/04 01:46:32
+#END# kgnrjoin -N -nfn R=1,2 i=./indat/dat0snfn.csv k=0 m=./indat/dat1snfn.csv o=./outdat/out6nfn.csv r=2%n; IN=0 OUT=0; 2014/06/04 01:46:32
+#END# kgnrjoin -N R=金額F,金額T i=./indat/dat2s.csv k=日付 m=./indat/dat1s.csv o=./outdat/out7.csv r=金額%n; IN=1 OUT=0; 2014/06/04 01:46:32
+#END# kgnrjoin -N -x R=1,2 i=./indat/dat2s.csv k=0 m=./indat/dat1s.csv o=./outdat/out7x.csv r=2%n; IN=1 OUT=0; 2014/06/04 01:46:32
+#END# kgnrjoin -N -nfn R=1,2 i=./indat/dat2snfn.csv k=0 m=./indat/dat1snfn.csv o=./outdat/out7nfn.csv r=2%n; IN=1 OUT=0; 2014/06/04 01:46:32
+#END# kgnrjoin -N R=金額F,金額T i=./indat/dat0s.csv k=日付 m=./indat/dat3s.csv o=./outdat/out8.csv r=金額%n; IN=0 OUT=2; 2014/06/04 01:46:32
+#END# kgnrjoin -N -x R=1,2 i=./indat/dat0s.csv k=0 m=./indat/dat3s.csv o=./outdat/out8x.csv r=2%n; IN=0 OUT=2; 2014/06/04 01:46:32
+#END# kgnrjoin -N -nfn R=1,2 i=./indat/dat0snfn.csv k=0 m=./indat/dat3snfn.csv o=./outdat/out8nfn.csv r=2%n; IN=0 OUT=2; 2014/06/04 01:46:32
+#END# kgnrjoin -N -n R=金額F,金額T i=./indat/dat0s.csv k=日付 m=./indat/dat1s.csv o=./outdat/out9.csv r=金額%n; IN=0 OUT=0; 2014/06/04 01:46:32
+#END# kgnrjoin -N -n -x R=1,2 i=./indat/dat0s.csv k=0 m=./indat/dat1s.csv o=./outdat/out9x.csv r=2%n; IN=0 OUT=0; 2014/06/04 01:46:32
+#END# kgnrjoin -N -n -nfn R=1,2 i=./indat/dat0snfn.csv k=0 m=./indat/dat1snfn.csv o=./outdat/out9nfn.csv r=2%n; IN=0 OUT=0; 2014/06/04 01:46:32
+#END# kgnrjoin -N -n R=金額F,金額T i=./indat/dat2s.csv k=日付 m=./indat/dat1s.csv o=./outdat/out10.csv r=金額%n; IN=5 OUT=5; 2014/06/04 01:46:32
+#END# kgnrjoin -N -n -x R=1,2 i=./indat/dat2s.csv k=0 m=./indat/dat1s.csv o=./outdat/out10x.csv r=2%n; IN=5 OUT=5; 2014/06/04 01:46:32
+#END# kgnrjoin -N -n -nfn R=1,2 i=./indat/dat2snfn.csv k=0 m=./indat/dat1snfn.csv o=./outdat/out10nfn.csv r=2%n; IN=5 OUT=5; 2014/06/04 01:46:32
+#END# kgnrjoin -N -n R=金額F,金額T i=./indat/dat0s.csv k=日付 m=./indat/dat3s.csv o=./outdat/out11.csv r=金額%n; IN=0 OUT=2; 2014/06/04 01:46:32
+#END# kgnrjoin -N -n -x R=1,2 i=./indat/dat0s.csv k=0 m=./indat/dat3s.csv o=./outdat/out11x.csv r=2%n; IN=0 OUT=2; 2014/06/04 01:46:32
+#END# kgnrjoin -N -n -nfn R=1,2 i=./indat/dat0snfn.csv k=0 m=./indat/dat3snfn.csv o=./outdat/out11nfn.csv r=2%n; IN=0 OUT=2; 2014/06/04 01:46:32
+#END# kgnrjoin R=金額F,金額T i=./indat/dat15s.csv k=日付 m=./indat/dat16s.csv o=./outdat/out174.csv r=金額%n; IN=1 OUT=0; 2014/06/04 01:46:32
+#END# kgnrjoin R=金額F,金額T i=./indat/dat4.csv m=./indat/dat5.csv o=./outdat/out12.csv r=金額%n; IN=5 OUT=7; 2014/06/04 01:46:32
+#END# kgnrjoin -x R=0,1 i=./indat/dat4.csv m=./indat/dat5.csv o=./outdat/out12x.csv r=1%n; IN=5 OUT=7; 2014/06/04 01:46:32
+#END# kgnrjoin -nfn R=0,1 i=./indat/dat4nfn.csv m=./indat/dat5nfn.csv o=./outdat/out12nfn.csv r=1%n; IN=5 OUT=7; 2014/06/04 01:46:32
+#END# kgnrjoin -nfno R=金額F,金額T i=./indat/dat4.csv m=./indat/dat5.csv o=./outdat/out12nfno.csv r=金額%n; IN=5 OUT=7; 2014/06/04 01:46:32
+#END# kgnrjoin -n R=金額F,金額T f=平均金額 i=./indat/dat4.csv m=./indat/dat5.csv o=./outdat/out13.csv r=金額%n; IN=5 OUT=8; 2014/06/04 01:46:32
+#END# kgnrjoin -n -x R=0,1 f=2 i=./indat/dat4.csv m=./indat/dat5.csv o=./outdat/out13x.csv r=1%n; IN=5 OUT=8; 2014/06/04 01:46:32
+#END# kgnrjoin -n -nfn R=0,1 f=2 i=./indat/dat4nfn.csv m=./indat/dat5nfn.csv o=./outdat/out13nfn.csv r=1%n; IN=5 OUT=8; 2014/06/04 01:46:32
+#END# kgnrjoin -N R=金額F,金額T f=平均金額,金額F i=./indat/dat4.csv m=./indat/dat5.csv o=./outdat/out14.csv r=金額%n; IN=5 OUT=7; 2014/06/04 01:46:32
+#END# kgnrjoin -N -x R=0,1 f=2,0 i=./indat/dat4.csv m=./indat/dat5.csv o=./outdat/out14x.csv r=1%n; IN=5 OUT=7; 2014/06/04 01:46:32
+#END# kgnrjoin -N -nfn R=0,1 f=2,0 i=./indat/dat4nfn.csv m=./indat/dat5nfn.csv o=./outdat/out14nfn.csv r=1%n; IN=5 OUT=7; 2014/06/04 01:46:32
+#END# kgnrjoin -N -n R=金額F,金額T f=平均金額,金額F,金額T i=./indat/dat4.csv m=./indat/dat5.csv o=./outdat/out15.csv r=金額%n; IN=5 OUT=8; 2014/06/04 01:46:32
+#END# kgnrjoin -N -n -x R=0,1 f=2,0,1 i=./indat/dat4.csv m=./indat/dat5.csv o=./outdat/out15x.csv r=1%n; IN=5 OUT=8; 2014/06/04 01:46:32
+#END# kgnrjoin -N -n -nfn R=0,1 f=2,0,1 i=./indat/dat4nfn.csv m=./indat/dat5nfn.csv o=./outdat/out15nfn.csv r=1%n; IN=5 OUT=8; 2014/06/04 01:46:32
+#END# kgnrjoin R=金額F,金額T f=平均金額,金額F,金額T i=./indat/dat4.csv m=./indat/dat5.csv o=./outdat/out16.csv r=金額; IN=5 OUT=3; 2014/06/04 01:46:32
+#END# kgnrjoin -x R=0,1 f=2,0,1 i=./indat/dat4.csv m=./indat/dat5.csv o=./outdat/out16x.csv r=1; IN=5 OUT=3; 2014/06/04 01:46:32
+#END# kgnrjoin -nfn R=0,1 f=2,0,1 i=./indat/dat4nfn.csv m=./indat/dat5nfn.csv o=./outdat/out16nfn.csv r=1; IN=5 OUT=3; 2014/06/04 01:46:32
+#END# kgnrjoin -n R=金額F,金額T i=./indat/dat4.csv m=./indat/dat5.csv o=./outdat/out17.csv r=金額; IN=5 OUT=5; 2014/06/04 01:46:32
+#END# kgnrjoin -n -x R=0,1 i=./indat/dat4.csv m=./indat/dat5.csv o=./outdat/out17x.csv r=1; IN=5 OUT=5; 2014/06/04 01:46:32
+#END# kgnrjoin -n -nfn R=0,1 i=./indat/dat4nfn.csv m=./indat/dat5nfn.csv o=./outdat/out17nfn.csv r=1; IN=5 OUT=5; 2014/06/04 01:46:32
+#END# kgnrjoin -N R=金額F,金額T f=平均金額 i=./indat/dat4.csv m=./indat/dat5.csv o=./outdat/out18.csv r=金額; IN=5 OUT=4; 2014/06/04 01:46:32
+#END# kgnrjoin -N -x R=0,1 f=2 i=./indat/dat4.csv m=./indat/dat5.csv o=./outdat/out18x.csv r=1; IN=5 OUT=4; 2014/06/04 01:46:32
+#END# kgnrjoin -N -nfn R=0,1 f=2 i=./indat/dat4nfn.csv m=./indat/dat5nfn.csv o=./outdat/out18nfn.csv r=1; IN=5 OUT=4; 2014/06/04 01:46:32
+#END# kgnrjoin -N -n R=金額F,金額T f=平均金額,金額F i=./indat/dat4.csv m=./indat/dat5.csv o=./outdat/out19.csv r=金額; IN=5 OUT=6; 2014/06/04 01:46:32
+#END# kgnrjoin -N -n -x R=0,1 f=2,0 i=./indat/dat4.csv m=./indat/dat5.csv o=./outdat/out19x.csv r=1; IN=5 OUT=6; 2014/06/04 01:46:32
+#END# kgnrjoin -N -n -nfn R=0,1 f=2,0 i=./indat/dat4nfn.csv m=./indat/dat5nfn.csv o=./outdat/out19nfn.csv r=1; IN=5 OUT=6; 2014/06/04 01:46:32
+#END# kgnrjoin R=金額F%n,金額T f=平均金額,金額F i=./indat/dat4.csv m=./indat/dat5.csv o=./outdat/out20.csv r=金額%n; IN=5 OUT=5; 2014/06/04 01:46:32
+#END# kgnrjoin -x R=0%n,1 f=2,0 i=./indat/dat4.csv m=./indat/dat5.csv o=./outdat/out20x.csv r=1%n; IN=5 OUT=5; 2014/06/04 01:46:32
+#END# kgnrjoin -nfn R=0%n,1 f=2,0 i=./indat/dat4nfn.csv m=./indat/dat5nfn.csv o=./outdat/out20nfn.csv r=1%n; IN=5 OUT=5; 2014/06/04 01:46:32
+#END# kgnrjoin -n R=金額F%n,金額T f=平均金額,金額F,金額T i=./indat/dat4.csv m=./indat/dat5.csv o=./outdat/out21.csv r=金額%n; IN=5 OUT=6; 2014/06/04 01:46:32
+#END# kgnrjoin -n -x R=0%n,1 f=2,0,1 i=./indat/dat4.csv m=./indat/dat5.csv o=./outdat/out21x.csv r=1%n; IN=5 OUT=6; 2014/06/04 01:46:32
+#END# kgnrjoin -n -nfn R=0%n,1 f=2,0,1 i=./indat/dat4nfn.csv m=./indat/dat5nfn.csv o=./outdat/out21nfn.csv r=1%n; IN=5 OUT=6; 2014/06/04 01:46:32
+#END# kgnrjoin -N R=金額F%n,金額T i=./indat/dat4.csv m=./indat/dat5.csv o=./outdat/out22.csv r=金額%n; IN=5 OUT=5; 2014/06/04 01:46:32
+#END# kgnrjoin -N -x R=0%n,1 i=./indat/dat4.csv m=./indat/dat5.csv o=./outdat/out22x.csv r=1%n; IN=5 OUT=5; 2014/06/04 01:46:32
+#END# kgnrjoin -N -nfn R=0%n,1 i=./indat/dat4nfn.csv m=./indat/dat5nfn.csv o=./outdat/out22nfn.csv r=1%n; IN=5 OUT=5; 2014/06/04 01:46:32
+#END# kgnrjoin -N -n R=金額F%n,金額T f=平均金額 i=./indat/dat4.csv m=./indat/dat5.csv o=./outdat/out23.csv r=金額%n; IN=5 OUT=6; 2014/06/04 01:46:32
+#END# kgnrjoin -N -n -x R=0%n,1 f=2 i=./indat/dat4.csv m=./indat/dat5.csv o=./outdat/out23x.csv r=1%n; IN=5 OUT=6; 2014/06/04 01:46:32
+#END# kgnrjoin -N -n -nfn R=0%n,1 f=2 i=./indat/dat4nfn.csv m=./indat/dat5nfn.csv o=./outdat/out23nfn.csv r=1%n; IN=5 OUT=6; 2014/06/04 01:46:32
+#END# kgnrjoin R=金額F%n,金額T f=平均金額 i=./indat/dat4.csv m=./indat/dat5.csv o=./outdat/out24.csv r=金額; IN=5 OUT=1; 2014/06/04 01:46:32
+#END# kgnrjoin -x R=0%n,1 f=2 i=./indat/dat4.csv m=./indat/dat5.csv o=./outdat/out24x.csv r=1; IN=5 OUT=1; 2014/06/04 01:46:32
+#END# kgnrjoin -nfn R=0%n,1 f=2 i=./indat/dat4nfn.csv m=./indat/dat5nfn.csv o=./outdat/out24nfn.csv r=1; IN=5 OUT=1; 2014/06/04 01:46:32
+#END# kgnrjoin -n R=金額F%n,金額T f=平均金額,金額F i=./indat/dat4.csv m=./indat/dat5.csv o=./outdat/out25.csv r=金額; IN=5 OUT=5; 2014/06/04 01:46:32
+#END# kgnrjoin -n -x R=0%n,1 f=2,0 i=./indat/dat4.csv m=./indat/dat5.csv o=./outdat/out25x.csv r=1; IN=5 OUT=5; 2014/06/04 01:46:32
+#END# kgnrjoin -n -nfn R=0%n,1 f=2,0 i=./indat/dat4nfn.csv m=./indat/dat5nfn.csv o=./outdat/out25nfn.csv r=1; IN=5 OUT=5; 2014/06/04 01:46:32
+#END# kgnrjoin -N R=金額F%n,金額T f=平均金額,金額F,金額T i=./indat/dat4.csv m=./indat/dat5.csv o=./outdat/out26.csv r=金額; IN=5 OUT=2; 2014/06/04 01:46:32
+#END# kgnrjoin -N -x R=0%n,1 f=2,0,1 i=./indat/dat4.csv m=./indat/dat5.csv o=./outdat/out26x.csv r=1; IN=5 OUT=2; 2014/06/04 01:46:32
+#END# kgnrjoin -N -nfn R=0%n,1 f=2,0,1 i=./indat/dat4nfn.csv m=./indat/dat5nfn.csv o=./outdat/out26nfn.csv r=1; IN=5 OUT=2; 2014/06/04 01:46:32
+#END# kgnrjoin -N -n R=金額F%n,金額T i=./indat/dat4.csv m=./indat/dat5.csv o=./outdat/out27.csv r=金額; IN=5 OUT=6; 2014/06/04 01:46:32
+#END# kgnrjoin -N -n -x R=0%n,1 i=./indat/dat4.csv m=./indat/dat5.csv o=./outdat/out27x.csv r=1; IN=5 OUT=6; 2014/06/04 01:46:32
+#END# kgnrjoin -N -n -nfn R=0%n,1 i=./indat/dat4nfn.csv m=./indat/dat5nfn.csv o=./outdat/out27nfn.csv r=1; IN=5 OUT=6; 2014/06/04 01:46:32
+#END# kgnrjoin R=金額F,金額T%e i=./indat/dat4.csv m=./indat/dat5.csv o=./outdat/out28.csv r=金額%n; IN=5 OUT=8; 2014/06/04 01:46:32
+#END# kgnrjoin -x R=0,1%e i=./indat/dat4.csv m=./indat/dat5.csv o=./outdat/out28x.csv r=1%n; IN=5 OUT=8; 2014/06/04 01:46:32
+#END# kgnrjoin -nfn R=0,1%e i=./indat/dat4nfn.csv m=./indat/dat5nfn.csv o=./outdat/out28nfn.csv r=1%n; IN=5 OUT=8; 2014/06/04 01:46:32
+#END# kgnrjoin -n R=金額F,金額T%e f=平均金額 i=./indat/dat4.csv m=./indat/dat5.csv o=./outdat/out29.csv r=金額%n; IN=5 OUT=9; 2014/06/04 01:46:32
+#END# kgnrjoin -n -x R=0,1%e f=2 i=./indat/dat4.csv m=./indat/dat5.csv o=./outdat/out29x.csv r=1%n; IN=5 OUT=9; 2014/06/04 01:46:32
+#END# kgnrjoin -n -nfn R=0,1%e f=2 i=./indat/dat4nfn.csv m=./indat/dat5nfn.csv o=./outdat/out29nfn.csv r=1%n; IN=5 OUT=9; 2014/06/04 01:46:32
+#END# kgnrjoin -N R=金額F,金額T%e f=平均金額,金額F i=./indat/dat4.csv m=./indat/dat5.csv o=./outdat/out30.csv r=金額%n; IN=5 OUT=8; 2014/06/04 01:46:32
+#END# kgnrjoin -N -x R=0,1%e f=2,0 i=./indat/dat4.csv m=./indat/dat5.csv o=./outdat/out30x.csv r=1%n; IN=5 OUT=8; 2014/06/04 01:46:32
+#END# kgnrjoin -N -nfn R=0,1%e f=2,0 i=./indat/dat4nfn.csv m=./indat/dat5nfn.csv o=./outdat/out30nfn.csv r=1%n; IN=5 OUT=8; 2014/06/04 01:46:32
+#END# kgnrjoin -N -n R=金額F,金額T%e f=平均金額,金額F,金額T i=./indat/dat4.csv m=./indat/dat5.csv o=./outdat/out31.csv r=金額%n; IN=5 OUT=9; 2014/06/04 01:46:32
+#END# kgnrjoin -N -n -x R=0,1%e f=2,0,1 i=./indat/dat4.csv m=./indat/dat5.csv o=./outdat/out31x.csv r=1%n; IN=5 OUT=9; 2014/06/04 01:46:32
+#END# kgnrjoin -N -n -nfn R=0,1%e f=2,0,1 i=./indat/dat4nfn.csv m=./indat/dat5nfn.csv o=./outdat/out31nfn.csv r=1%n; IN=5 OUT=9; 2014/06/04 01:46:32
+#END# kgnrjoin R=金額F,金額T%e f=平均金額,金額F,金額T i=./indat/dat4.csv m=./indat/dat5.csv o=./outdat/out32.csv r=金額; IN=5 OUT=4; 2014/06/04 01:46:32
+#END# kgnrjoin -x R=0,1%e f=2,0,1 i=./indat/dat4.csv m=./indat/dat5.csv o=./outdat/out32x.csv r=1; IN=5 OUT=4; 2014/06/04 01:46:32
+#END# kgnrjoin -nfn R=0,1%e f=2,0,1 i=./indat/dat4nfn.csv m=./indat/dat5nfn.csv o=./outdat/out32nfn.csv r=1; IN=5 OUT=4; 2014/06/04 01:46:32
+#END# kgnrjoin -n R=金額F,金額T%e i=./indat/dat4.csv m=./indat/dat5.csv o=./outdat/out33.csv r=金額; IN=5 OUT=5; 2014/06/04 01:46:32
+#END# kgnrjoin -n -x R=0,1%e i=./indat/dat4.csv m=./indat/dat5.csv o=./outdat/out33x.csv r=1; IN=5 OUT=5; 2014/06/04 01:46:32
+#END# kgnrjoin -n -nfn R=0,1%e i=./indat/dat4nfn.csv m=./indat/dat5nfn.csv o=./outdat/out33nfn.csv r=1; IN=5 OUT=5; 2014/06/04 01:46:32
+#END# kgnrjoin -N R=金額F,金額T%e f=平均金額 i=./indat/dat4.csv m=./indat/dat5.csv o=./outdat/out34.csv r=金額; IN=5 OUT=5; 2014/06/04 01:46:32
+#END# kgnrjoin -N -x R=0,1%e f=2 i=./indat/dat4.csv m=./indat/dat5.csv o=./outdat/out34x.csv r=1; IN=5 OUT=5; 2014/06/04 01:46:32
+#END# kgnrjoin -N -nfn R=0,1%e f=2 i=./indat/dat4nfn.csv m=./indat/dat5nfn.csv o=./outdat/out34nfn.csv r=1; IN=5 OUT=5; 2014/06/04 01:46:32
+#END# kgnrjoin -N -n R=金額F,金額T%e f=平均金額,金額F i=./indat/dat4.csv m=./indat/dat5.csv o=./outdat/out35.csv r=金額; IN=5 OUT=6; 2014/06/04 01:46:32
+#END# kgnrjoin -N -n -x R=0,1%e f=2,0 i=./indat/dat4.csv m=./indat/dat5.csv o=./outdat/out35x.csv r=1; IN=5 OUT=6; 2014/06/04 01:46:32
+#END# kgnrjoin -N -n -nfn R=0,1%e f=2,0 i=./indat/dat4nfn.csv m=./indat/dat5nfn.csv o=./outdat/out35nfn.csv r=1; IN=5 OUT=6; 2014/06/04 01:46:32
+#END# kgnrjoin R=金額F%n,金額T%e f=平均金額,金額F i=./indat/dat4.csv m=./indat/dat5.csv o=./outdat/out36.csv r=金額%n; IN=5 OUT=6; 2014/06/04 01:46:32
+#END# kgnrjoin -x R=0%n,1%e f=2,0 i=./indat/dat4.csv m=./indat/dat5.csv o=./outdat/out36x.csv r=1%n; IN=5 OUT=6; 2014/06/04 01:46:32
+#END# kgnrjoin -nfn R=0%n,1%e f=2,0 i=./indat/dat4nfn.csv m=./indat/dat5nfn.csv o=./outdat/out36nfn.csv r=1%n; IN=5 OUT=6; 2014/06/04 01:46:32
+#END# kgnrjoin -n R=金額F%n,金額T%e f=平均金額,金額F,金額T i=./indat/dat4.csv m=./indat/dat5.csv o=./outdat/out37.csv r=金額%n; IN=5 OUT=7; 2014/06/04 01:46:32
+#END# kgnrjoin -n -x R=0%n,1%e f=2,0,1 i=./indat/dat4.csv m=./indat/dat5.csv o=./outdat/out37x.csv r=1%n; IN=5 OUT=7; 2014/06/04 01:46:32
+#END# kgnrjoin -n -nfn R=0%n,1%e f=2,0,1 i=./indat/dat4nfn.csv m=./indat/dat5nfn.csv o=./outdat/out37nfn.csv r=1%n; IN=5 OUT=7; 2014/06/04 01:46:32
+#END# kgnrjoin -N R=金額F%n,金額T%e i=./indat/dat4.csv m=./indat/dat5.csv o=./outdat/out38.csv r=金額%n; IN=5 OUT=6; 2014/06/04 01:46:32
+#END# kgnrjoin -N -x R=0%n,1%e i=./indat/dat4.csv m=./indat/dat5.csv o=./outdat/out38x.csv r=1%n; IN=5 OUT=6; 2014/06/04 01:46:32
+#END# kgnrjoin -N -nfn R=0%n,1%e i=./indat/dat4nfn.csv m=./indat/dat5nfn.csv o=./outdat/out38nfn.csv r=1%n; IN=5 OUT=6; 2014/06/04 01:46:32
+#END# kgnrjoin -N -n R=金額F%n,金額T%e f=平均金額 i=./indat/dat4.csv m=./indat/dat5.csv o=./outdat/out39.csv r=金額%n; IN=5 OUT=7; 2014/06/04 01:46:32
+#END# kgnrjoin -N -n -x R=0%n,1%e f=2 i=./indat/dat4.csv m=./indat/dat5.csv o=./outdat/out39x.csv r=1%n; IN=5 OUT=7; 2014/06/04 01:46:32
+#END# kgnrjoin -N -n -nfn R=0%n,1%e f=2 i=./indat/dat4nfn.csv m=./indat/dat5nfn.csv o=./outdat/out39nfn.csv r=1%n; IN=5 OUT=7; 2014/06/04 01:46:32
+#END# kgnrjoin R=金額F%n,金額T%e f=平均金額 i=./indat/dat4.csv m=./indat/dat5.csv o=./outdat/out40.csv r=金額; IN=5 OUT=2; 2014/06/04 01:46:32
+#END# kgnrjoin -x R=0%n,1%e f=2 i=./indat/dat4.csv m=./indat/dat5.csv o=./outdat/out40x.csv r=1; IN=5 OUT=2; 2014/06/04 01:46:32
+#END# kgnrjoin -nfn R=0%n,1%e f=2 i=./indat/dat4nfn.csv m=./indat/dat5nfn.csv o=./outdat/out40nfn.csv r=1; IN=5 OUT=2; 2014/06/04 01:46:32
+#END# kgnrjoin -n R=金額F%n,金額T%e f=平均金額,金額F i=./indat/dat4.csv m=./indat/dat5.csv o=./outdat/out41.csv r=金額; IN=5 OUT=5; 2014/06/04 01:46:32
+#END# kgnrjoin -n -x R=0%n,1%e f=2,0 i=./indat/dat4.csv m=./indat/dat5.csv o=./outdat/out41x.csv r=1; IN=5 OUT=5; 2014/06/04 01:46:32
+#END# kgnrjoin -n -nfn R=0%n,1%e f=2,0 i=./indat/dat4nfn.csv m=./indat/dat5nfn.csv o=./outdat/out41nfn.csv r=1; IN=5 OUT=5; 2014/06/04 01:46:32
+#END# kgnrjoin -N R=金額F%n,金額T%e f=平均金額,金額F,金額T i=./indat/dat4.csv m=./indat/dat5.csv o=./outdat/out42.csv r=金額; IN=5 OUT=3; 2014/06/04 01:46:32
+#END# kgnrjoin -N -x R=0%n,1%e f=2,0,1 i=./indat/dat4.csv m=./indat/dat5.csv o=./outdat/out42x.csv r=1; IN=5 OUT=3; 2014/06/04 01:46:32
+#END# kgnrjoin -N -nfn R=0%n,1%e f=2,0,1 i=./indat/dat4nfn.csv m=./indat/dat5nfn.csv o=./outdat/out42nfn.csv r=1; IN=5 OUT=3; 2014/06/04 01:46:32
+#END# kgnrjoin -N -n R=金額F%n,金額T%e i=./indat/dat4.csv m=./indat/dat5.csv o=./outdat/out43.csv r=金額; IN=5 OUT=6; 2014/06/04 01:46:32
+#END# kgnrjoin -N -n -x R=0%n,1%e i=./indat/dat4.csv m=./indat/dat5.csv o=./outdat/out43x.csv r=1; IN=5 OUT=6; 2014/06/04 01:46:32
+#END# kgnrjoin -N -n -nfn R=0%n,1%e i=./indat/dat4nfn.csv m=./indat/dat5nfn.csv o=./outdat/out43nfn.csv r=1; IN=5 OUT=6; 2014/06/04 01:46:33
+#END# kgnrjoin R=金額F,金額T i=./indat/dat2s.csv k=日付 m=./indat/dat3s.csv o=./outdat/out44.csv r=金額%n; IN=5 OUT=3; 2014/06/04 01:46:33
+#END# kgnrjoin -x R=1,2 i=./indat/dat2s.csv k=0 m=./indat/dat3s.csv o=./outdat/out44x.csv r=2%n; IN=5 OUT=3; 2014/06/04 01:46:33
+#END# kgnrjoin -nfn R=1,2 i=./indat/dat2snfn.csv k=0 m=./indat/dat3snfn.csv o=./outdat/out44nfn.csv r=2%n; IN=5 OUT=3; 2014/06/04 01:46:33
+#END# kgnrjoin -q R=金額F,金額T i=./indat/dat2s.csv k=日付 m=./indat/dat3s.csv o=./outdat/out44q.csv r=金額%n; IN=5 OUT=3; 2014/06/04 01:46:33
+#END# kgnrjoin -q -x R=1,2 i=./indat/dat2s.csv k=0 m=./indat/dat3s.csv o=./outdat/out44qx.csv r=2%n; IN=5 OUT=3; 2014/06/04 01:46:33
+#END# kgnrjoin -n R=金額F,金額T f=平均金額 i=./indat/dat2s.csv k=日付 m=./indat/dat3s.csv o=./outdat/out45.csv r=金額%n; IN=5 OUT=6; 2014/06/04 01:46:33
+#END# kgnrjoin -n -x R=1,2 f=3 i=./indat/dat2s.csv k=0 m=./indat/dat3s.csv o=./outdat/out45x.csv r=2%n; IN=5 OUT=6; 2014/06/04 01:46:33
+#END# kgnrjoin -n -nfn R=1,2 f=3 i=./indat/dat2snfn.csv k=0 m=./indat/dat3snfn.csv o=./outdat/out45nfn.csv r=2%n; IN=5 OUT=6; 2014/06/04 01:46:33
+#END# kgnrjoin -N R=金額F,金額T f=平均金額,金額F i=./indat/dat2s.csv k=日付 m=./indat/dat3s.csv o=./outdat/out46.csv r=金額%n; IN=5 OUT=3; 2014/06/04 01:46:33
+#END# kgnrjoin -N -x R=1,2 f=3,1 i=./indat/dat2s.csv k=0 m=./indat/dat3s.csv o=./outdat/out46x.csv r=2%n; IN=5 OUT=3; 2014/06/04 01:46:33
+#END# kgnrjoin -N -nfn R=1,2 f=3,1 i=./indat/dat2snfn.csv k=0 m=./indat/dat3snfn.csv o=./outdat/out46nfn.csv r=2%n; IN=5 OUT=3; 2014/06/04 01:46:33
+#END# kgnrjoin -N -n R=金額F,金額T f=平均金額,金額F,金額T i=./indat/dat2s.csv k=日付 m=./indat/dat3s.csv o=./outdat/out47.csv r=金額%n; IN=5 OUT=6; 2014/06/04 01:46:33
+#END# kgnrjoin -N -n -x R=1,2 f=3,1,2 i=./indat/dat2s.csv k=0 m=./indat/dat3s.csv o=./outdat/out47x.csv r=2%n; IN=5 OUT=6; 2014/06/04 01:46:33
+#END# kgnrjoin -N -n -nfn R=1,2 f=3,1,2 i=./indat/dat2snfn.csv k=0 m=./indat/dat3snfn.csv o=./outdat/out47nfn.csv r=2%n; IN=5 OUT=6; 2014/06/04 01:46:33
+#END# kgnrjoin R=金額F,金額T f=平均金額,金額F,金額T i=./indat/dat2s.csv k=日付 m=./indat/dat3s.csv o=./outdat/out48.csv r=金額; IN=5 OUT=1; 2014/06/04 01:46:33
+#END# kgnrjoin -x R=1,2 f=3,1,2 i=./indat/dat2s.csv k=0 m=./indat/dat3s.csv o=./outdat/out48x.csv r=2; IN=5 OUT=1; 2014/06/04 01:46:33
+#END# kgnrjoin -nfn R=1,2 f=3,1,2 i=./indat/dat2snfn.csv k=0 m=./indat/dat3snfn.csv o=./outdat/out48nfn.csv r=2; IN=5 OUT=1; 2014/06/04 01:46:33
+#END# kgnrjoin -n R=金額F,金額T i=./indat/dat2s.csv k=日付 m=./indat/dat3s.csv o=./outdat/out49.csv r=金額; IN=5 OUT=5; 2014/06/04 01:46:33
+#END# kgnrjoin -n -x R=1,2 i=./indat/dat2s.csv k=0 m=./indat/dat3s.csv o=./outdat/out49x.csv r=2; IN=5 OUT=5; 2014/06/04 01:46:33
+#END# kgnrjoin -n -nfn R=1,2 i=./indat/dat2snfn.csv k=0 m=./indat/dat3snfn.csv o=./outdat/out49nfn.csv r=2; IN=5 OUT=5; 2014/06/04 01:46:33
+#END# kgnrjoin -N R=金額F,金額T f=平均金額 i=./indat/dat2s.csv k=日付 m=./indat/dat3s.csv o=./outdat/out50.csv r=金額; IN=5 OUT=2; 2014/06/04 01:46:33
+#END# kgnrjoin -N -x R=1,2 f=3 i=./indat/dat2s.csv k=0 m=./indat/dat3s.csv o=./outdat/out50x.csv r=2; IN=5 OUT=2; 2014/06/04 01:46:33
+#END# kgnrjoin -N -nfn R=1,2 f=3 i=./indat/dat2snfn.csv k=0 m=./indat/dat3snfn.csv o=./outdat/out50nfn.csv r=2; IN=5 OUT=2; 2014/06/04 01:46:33
+#END# kgnrjoin -N -n R=金額F,金額T f=平均金額,金額F i=./indat/dat2s.csv k=日付 m=./indat/dat3s.csv o=./outdat/out51.csv r=金額; IN=5 OUT=6; 2014/06/04 01:46:33
+#END# kgnrjoin -N -n -x R=1,2 f=3,1 i=./indat/dat2s.csv k=0 m=./indat/dat3s.csv o=./outdat/out51x.csv r=2; IN=5 OUT=6; 2014/06/04 01:46:33
+#END# kgnrjoin -N -n -nfn R=1,2 f=3,1 i=./indat/dat2snfn.csv k=0 m=./indat/dat3snfn.csv o=./outdat/out51nfn.csv r=2; IN=5 OUT=6; 2014/06/04 01:46:33
+#END# kgnrjoin R=金額F%n,金額T f=平均金額,金額F i=./indat/dat2s.csv k=日付 m=./indat/dat3s.csv o=./outdat/out52.csv r=金額%n; IN=5 OUT=2; 2014/06/04 01:46:33
+#END# kgnrjoin -x R=1%n,2 f=3,1 i=./indat/dat2s.csv k=0 m=./indat/dat3s.csv o=./outdat/out52x.csv r=2%n; IN=5 OUT=2; 2014/06/04 01:46:33
+#END# kgnrjoin -nfn R=1%n,2 f=3,1 i=./indat/dat2snfn.csv k=0 m=./indat/dat3snfn.csv o=./outdat/out52nfn.csv r=2%n; IN=5 OUT=2; 2014/06/04 01:46:33
+#END# kgnrjoin -n R=金額F%n,金額T f=平均金額,金額F,金額T i=./indat/dat2s.csv k=日付 m=./indat/dat3s.csv o=./outdat/out53.csv r=金額%n; IN=5 OUT=5; 2014/06/04 01:46:33
+#END# kgnrjoin -n -x R=1%n,2 f=3,1,2 i=./indat/dat2s.csv k=0 m=./indat/dat3s.csv o=./outdat/out53x.csv r=2%n; IN=5 OUT=5; 2014/06/04 01:46:33
+#END# kgnrjoin -n -nfn R=1%n,2 f=3,1,2 i=./indat/dat2snfn.csv k=0 m=./indat/dat3snfn.csv o=./outdat/out53nfn.csv r=2%n; IN=5 OUT=5; 2014/06/04 01:46:33
+#END# kgnrjoin -N R=金額F%n,金額T i=./indat/dat2s.csv k=日付 m=./indat/dat3s.csv o=./outdat/out54.csv r=金額%n; IN=5 OUT=3; 2014/06/04 01:46:33
+#END# kgnrjoin -N -x R=1%n,2 i=./indat/dat2s.csv k=0 m=./indat/dat3s.csv o=./outdat/out54x.csv r=2%n; IN=5 OUT=3; 2014/06/04 01:46:33
+#END# kgnrjoin -N -nfn R=1%n,2 i=./indat/dat2snfn.csv k=0 m=./indat/dat3snfn.csv o=./outdat/out54nfn.csv r=2%n; IN=5 OUT=3; 2014/06/04 01:46:33
+#END# kgnrjoin -N -n R=金額F%n,金額T f=平均金額 i=./indat/dat2s.csv k=日付 m=./indat/dat3s.csv o=./outdat/out55.csv r=金額%n; IN=5 OUT=6; 2014/06/04 01:46:33
+#END# kgnrjoin -N -n -x R=1%n,2 f=3 i=./indat/dat2s.csv k=0 m=./indat/dat3s.csv o=./outdat/out55x.csv r=2%n; IN=5 OUT=6; 2014/06/04 01:46:33
+#END# kgnrjoin -N -n -nfn R=1%n,2 f=3 i=./indat/dat2snfn.csv k=0 m=./indat/dat3snfn.csv o=./outdat/out55nfn.csv r=2%n; IN=5 OUT=6; 2014/06/04 01:46:33
+#END# kgnrjoin R=金額F%n,金額T f=平均金額 i=./indat/dat2s.csv k=日付 m=./indat/dat3s.csv o=./outdat/out56.csv r=金額; IN=5 OUT=0; 2014/06/04 01:46:33
+#END# kgnrjoin -x R=1%n,2 f=3 i=./indat/dat2s.csv k=0 m=./indat/dat3s.csv o=./outdat/out56x.csv r=2; IN=5 OUT=0; 2014/06/04 01:46:33
+#END# kgnrjoin -nfn R=1%n,2 f=3 i=./indat/dat2snfn.csv k=0 m=./indat/dat3snfn.csv o=./outdat/out56nfn.csv r=2; IN=5 OUT=0; 2014/06/04 01:46:33
+#END# kgnrjoin -n R=金額F%n,金額T f=平均金額,金額F i=./indat/dat2s.csv k=日付 m=./indat/dat3s.csv o=./outdat/out57.csv r=金額; IN=5 OUT=5; 2014/06/04 01:46:33
+#END# kgnrjoin -n -x R=1%n,2 f=3,1 i=./indat/dat2s.csv k=0 m=./indat/dat3s.csv o=./outdat/out57x.csv r=2; IN=5 OUT=5; 2014/06/04 01:46:33
+#END# kgnrjoin -n -nfn R=1%n,2 f=3,1 i=./indat/dat2snfn.csv k=0 m=./indat/dat3snfn.csv o=./outdat/out57nfn.csv r=2; IN=5 OUT=5; 2014/06/04 01:46:33
+#END# kgnrjoin -N R=金額F%n,金額T f=平均金額,金額F,金額T i=./indat/dat2s.csv k=日付 m=./indat/dat3s.csv o=./outdat/out58.csv r=金額; IN=5 OUT=2; 2014/06/04 01:46:33
+#END# kgnrjoin -N -x R=1%n,2 f=3,1,2 i=./indat/dat2s.csv k=0 m=./indat/dat3s.csv o=./outdat/out58x.csv r=2; IN=5 OUT=2; 2014/06/04 01:46:33
+#END# kgnrjoin -N -nfn R=1%n,2 f=3,1,2 i=./indat/dat2snfn.csv k=0 m=./indat/dat3snfn.csv o=./outdat/out58nfn.csv r=2; IN=5 OUT=2; 2014/06/04 01:46:33
+#END# kgnrjoin -N -n R=金額F%n,金額T i=./indat/dat2s.csv k=日付 m=./indat/dat3s.csv o=./outdat/out59.csv r=金額; IN=5 OUT=7; 2014/06/04 01:46:33
+#END# kgnrjoin -N -n -x R=1%n,2 i=./indat/dat2s.csv k=0 m=./indat/dat3s.csv o=./outdat/out59x.csv r=2; IN=5 OUT=7; 2014/06/04 01:46:33
+#END# kgnrjoin -N -n -nfn R=1%n,2 i=./indat/dat2snfn.csv k=0 m=./indat/dat3snfn.csv o=./outdat/out59nfn.csv r=2; IN=5 OUT=7; 2014/06/04 01:46:33
+#END# kgnrjoin R=金額F,金額T%e i=./indat/dat2s.csv k=日付 m=./indat/dat3s.csv o=./outdat/out60.csv r=金額%n; IN=5 OUT=4; 2014/06/04 01:46:33
+#END# kgnrjoin -x R=1,2%e i=./indat/dat2s.csv k=0 m=./indat/dat3s.csv o=./outdat/out60x.csv r=2%n; IN=5 OUT=4; 2014/06/04 01:46:33
+#END# kgnrjoin -nfn R=1,2%e i=./indat/dat2snfn.csv k=0 m=./indat/dat3snfn.csv o=./outdat/out60nfn.csv r=2%n; IN=5 OUT=4; 2014/06/04 01:46:33
+#END# kgnrjoin -n R=金額F,金額T%e f=平均金額 i=./indat/dat2s.csv k=日付 m=./indat/dat3s.csv o=./outdat/out61.csv r=金額%n; IN=5 OUT=7; 2014/06/04 01:46:33
+#END# kgnrjoin -n -x R=1,2%e f=3 i=./indat/dat2s.csv k=0 m=./indat/dat3s.csv o=./outdat/out61x.csv r=2%n; IN=5 OUT=7; 2014/06/04 01:46:33
+#END# kgnrjoin -n -nfn R=1,2%e f=3 i=./indat/dat2snfn.csv k=0 m=./indat/dat3snfn.csv o=./outdat/out61nfn.csv r=2%n; IN=5 OUT=7; 2014/06/04 01:46:33
+#END# kgnrjoin -N R=金額F,金額T%e f=平均金額,金額F i=./indat/dat2s.csv k=日付 m=./indat/dat3s.csv o=./outdat/out62.csv r=金額%n; IN=5 OUT=4; 2014/06/04 01:46:33
+#END# kgnrjoin -N -x R=1,2%e f=3,1 i=./indat/dat2s.csv k=0 m=./indat/dat3s.csv o=./outdat/out62x.csv r=2%n; IN=5 OUT=4; 2014/06/04 01:46:33
+#END# kgnrjoin -N -nfn R=1,2%e f=3,1 i=./indat/dat2snfn.csv k=0 m=./indat/dat3snfn.csv o=./outdat/out62nfn.csv r=2%n; IN=5 OUT=4; 2014/06/04 01:46:33
+#END# kgnrjoin -N -n R=金額F,金額T%e f=平均金額,金額F,金額T i=./indat/dat2s.csv k=日付 m=./indat/dat3s.csv o=./outdat/out63.csv r=金額%n; IN=5 OUT=7; 2014/06/04 01:46:33
+#END# kgnrjoin -N -n -x R=1,2%e f=3,1,2 i=./indat/dat2s.csv k=0 m=./indat/dat3s.csv o=./outdat/out63x.csv r=2%n; IN=5 OUT=7; 2014/06/04 01:46:33
+#END# kgnrjoin -N -n -nfn R=1,2%e f=3,1,2 i=./indat/dat2snfn.csv k=0 m=./indat/dat3snfn.csv o=./outdat/out63nfn.csv r=2%n; IN=5 OUT=7; 2014/06/04 01:46:33
+#END# kgnrjoin R=金額F,金額T%e f=平均金額,金額F,金額T i=./indat/dat2s.csv k=日付 m=./indat/dat3s.csv o=./outdat/out64.csv r=金額; IN=5 OUT=2; 2014/06/04 01:46:33
+#END# kgnrjoin -x R=1,2%e f=3,1,2 i=./indat/dat2s.csv k=0 m=./indat/dat3s.csv o=./outdat/out64x.csv r=2; IN=5 OUT=2; 2014/06/04 01:46:33
+#END# kgnrjoin -nfn R=1,2%e f=3,1,2 i=./indat/dat2snfn.csv k=0 m=./indat/dat3snfn.csv o=./outdat/out64nfn.csv r=2; IN=5 OUT=2; 2014/06/04 01:46:33
+#END# kgnrjoin -n R=金額F,金額T%e i=./indat/dat2s.csv k=日付 m=./indat/dat3s.csv o=./outdat/out65.csv r=金額; IN=5 OUT=5; 2014/06/04 01:46:33
+#END# kgnrjoin -n -x R=1,2%e i=./indat/dat2s.csv k=0 m=./indat/dat3s.csv o=./outdat/out65x.csv r=2; IN=5 OUT=5; 2014/06/04 01:46:33
+#END# kgnrjoin -n -nfn R=1,2%e i=./indat/dat2snfn.csv k=0 m=./indat/dat3snfn.csv o=./outdat/out65nfn.csv r=2; IN=5 OUT=5; 2014/06/04 01:46:33
+#END# kgnrjoin -N R=金額F,金額T%e f=平均金額 i=./indat/dat2s.csv k=日付 m=./indat/dat3s.csv o=./outdat/out66.csv r=金額; IN=5 OUT=3; 2014/06/04 01:46:33
+#END# kgnrjoin -N -x R=1,2%e f=3 i=./indat/dat2s.csv k=0 m=./indat/dat3s.csv o=./outdat/out66x.csv r=2; IN=5 OUT=3; 2014/06/04 01:46:33
+#END# kgnrjoin -N -nfn R=1,2%e f=3 i=./indat/dat2snfn.csv k=0 m=./indat/dat3snfn.csv o=./outdat/out66nfn.csv r=2; IN=5 OUT=3; 2014/06/04 01:46:33
+#END# kgnrjoin -N -n R=金額F,金額T%e f=平均金額,金額F i=./indat/dat2s.csv k=日付 m=./indat/dat3s.csv o=./outdat/out67.csv r=金額; IN=5 OUT=6; 2014/06/04 01:46:33
+#END# kgnrjoin -N -n -x R=1,2%e f=3,1 i=./indat/dat2s.csv k=0 m=./indat/dat3s.csv o=./outdat/out67x.csv r=2; IN=5 OUT=6; 2014/06/04 01:46:33
+#END# kgnrjoin -N -n -nfn R=1,2%e f=3,1 i=./indat/dat2snfn.csv k=0 m=./indat/dat3snfn.csv o=./outdat/out67nfn.csv r=2; IN=5 OUT=6; 2014/06/04 01:46:33
+#END# kgnrjoin R=金額F%n,金額T%e f=平均金額,金額F i=./indat/dat2s.csv k=日付 m=./indat/dat3s.csv o=./outdat/out68.csv r=金額%n; IN=5 OUT=3; 2014/06/04 01:46:33
+#END# kgnrjoin -x R=1%n,2%e f=3,1 i=./indat/dat2s.csv k=0 m=./indat/dat3s.csv o=./outdat/out68x.csv r=2%n; IN=5 OUT=3; 2014/06/04 01:46:33
+#END# kgnrjoin -nfn R=1%n,2%e f=3,1 i=./indat/dat2snfn.csv k=0 m=./indat/dat3snfn.csv o=./outdat/out68nfn.csv r=2%n; IN=5 OUT=3; 2014/06/04 01:46:33
+#END# kgnrjoin -n R=金額F%n,金額T%e f=平均金額,金額F,金額T i=./indat/dat2s.csv k=日付 m=./indat/dat3s.csv o=./outdat/out69.csv r=金額%n; IN=5 OUT=6; 2014/06/04 01:46:33
+#END# kgnrjoin -n -x R=1%n,2%e f=3,1,2 i=./indat/dat2s.csv k=0 m=./indat/dat3s.csv o=./outdat/out69x.csv r=2%n; IN=5 OUT=6; 2014/06/04 01:46:33
+#END# kgnrjoin -n -nfn R=1%n,2%e f=3,1,2 i=./indat/dat2snfn.csv k=0 m=./indat/dat3snfn.csv o=./outdat/out69nfn.csv r=2%n; IN=5 OUT=6; 2014/06/04 01:46:33
+#END# kgnrjoin -N R=金額F%n,金額T%e i=./indat/dat2s.csv k=日付 m=./indat/dat3s.csv o=./outdat/out70.csv r=金額%n; IN=5 OUT=3; 2014/06/04 01:46:33
+#END# kgnrjoin -N -x R=1%n,2%e i=./indat/dat2s.csv k=0 m=./indat/dat3s.csv o=./outdat/out70x.csv r=2%n; IN=5 OUT=3; 2014/06/04 01:46:33
+#END# kgnrjoin -N -nfn R=1%n,2%e i=./indat/dat2snfn.csv k=0 m=./indat/dat3snfn.csv o=./outdat/out70nfn.csv r=2%n; IN=5 OUT=3; 2014/06/04 01:46:33
+#END# kgnrjoin -N -n R=金額F%n,金額T%e f=平均金額 i=./indat/dat2s.csv k=日付 m=./indat/dat3s.csv o=./outdat/out71.csv r=金額%n; IN=5 OUT=6; 2014/06/04 01:46:33
+#END# kgnrjoin -N -n -x R=1%n,2%e f=3 i=./indat/dat2s.csv k=0 m=./indat/dat3s.csv o=./outdat/out71x.csv r=2%n; IN=5 OUT=6; 2014/06/04 01:46:33
+#END# kgnrjoin -N -n -nfn R=1%n,2%e f=3 i=./indat/dat2snfn.csv k=0 m=./indat/dat3snfn.csv o=./outdat/out71nfn.csv r=2%n; IN=5 OUT=6; 2014/06/04 01:46:33
+#END# kgnrjoin R=金額F%n,金額T%e f=平均金額 i=./indat/dat2s.csv k=日付 m=./indat/dat3s.csv o=./outdat/out72.csv r=金額; IN=5 OUT=1; 2014/06/04 01:46:33
+#END# kgnrjoin -x R=1%n,2%e f=3 i=./indat/dat2s.csv k=0 m=./indat/dat3s.csv o=./outdat/out72x.csv r=2; IN=5 OUT=1; 2014/06/04 01:46:33
+#END# kgnrjoin -nfn R=1%n,2%e f=3 i=./indat/dat2snfn.csv k=0 m=./indat/dat3snfn.csv o=./outdat/out72nfn.csv r=2; IN=5 OUT=1; 2014/06/04 01:46:33
+#END# kgnrjoin -n R=金額F%n,金額T%e f=平均金額,金額F i=./indat/dat2s.csv k=日付 m=./indat/dat3s.csv o=./outdat/out73.csv r=金額; IN=5 OUT=5; 2014/06/04 01:46:33
+#END# kgnrjoin -n -x R=1%n,2%e f=3,1 i=./indat/dat2s.csv k=0 m=./indat/dat3s.csv o=./outdat/out73x.csv r=2; IN=5 OUT=5; 2014/06/04 01:46:33
+#END# kgnrjoin -n -nfn R=1%n,2%e f=3,1 i=./indat/dat2snfn.csv k=0 m=./indat/dat3snfn.csv o=./outdat/out73nfn.csv r=2; IN=5 OUT=5; 2014/06/04 01:46:33
+#END# kgnrjoin -N R=金額F%n,金額T%e f=平均金額,金額F,金額T i=./indat/dat2s.csv k=日付 m=./indat/dat3s.csv o=./outdat/out74.csv r=金額; IN=5 OUT=2; 2014/06/04 01:46:33
+#END# kgnrjoin -N -x R=1%n,2%e f=3,1,2 i=./indat/dat2s.csv k=0 m=./indat/dat3s.csv o=./outdat/out74x.csv r=2; IN=5 OUT=2; 2014/06/04 01:46:33
+#END# kgnrjoin -N -nfn R=1%n,2%e f=3,1,2 i=./indat/dat2snfn.csv k=0 m=./indat/dat3snfn.csv o=./outdat/out74nfn.csv r=2; IN=5 OUT=2; 2014/06/04 01:46:33
+#END# kgnrjoin -N -n R=金額F%n,金額T%e i=./indat/dat2s.csv k=日付 m=./indat/dat3s.csv o=./outdat/out75.csv r=金額; IN=5 OUT=6; 2014/06/04 01:46:33
+#END# kgnrjoin -N -n -x R=1%n,2%e i=./indat/dat2s.csv k=0 m=./indat/dat3s.csv o=./outdat/out75x.csv r=2; IN=5 OUT=6; 2014/06/04 01:46:33
+#END# kgnrjoin -N -n -nfn R=1%n,2%e i=./indat/dat2snfn.csv k=0 m=./indat/dat3snfn.csv o=./outdat/out75nfn.csv r=2; IN=5 OUT=6; 2014/06/04 01:46:33
+#END# kgnrjoin R=金額F,金額T i=./indat/dat6s.csv k=顧客,日付 m=./indat/dat7s.csv o=./outdat/out76.csv r=金額%n; IN=11 OUT=7; 2014/06/04 01:46:33
+#END# kgnrjoin -x R=2,3 i=./indat/dat6s.csv k=0,1 m=./indat/dat7s.csv o=./outdat/out76x.csv r=3%n; IN=11 OUT=7; 2014/06/04 01:46:33
+#END# kgnrjoin -nfn R=2,3 i=./indat/dat6snfn.csv k=0,1 m=./indat/dat7snfn.csv o=./outdat/out76nfn.csv r=3%n; IN=11 OUT=7; 2014/06/04 01:46:33
+#END# kgnrjoin -n R=金額F,金額T f=平均金額 i=./indat/dat6s.csv k=顧客,日付 m=./indat/dat7s.csv o=./outdat/out77.csv r=金額%n; IN=11 OUT=12; 2014/06/04 01:46:33
+#END# kgnrjoin -n -x R=2,3 f=4 i=./indat/dat6s.csv k=0,1 m=./indat/dat7s.csv o=./outdat/out77x.csv r=3%n; IN=11 OUT=12; 2014/06/04 01:46:33
+#END# kgnrjoin -n -nfn R=2,3 f=4 i=./indat/dat6snfn.csv k=0,1 m=./indat/dat7snfn.csv o=./outdat/out77nfn.csv r=3%n; IN=11 OUT=12; 2014/06/04 01:46:33
+#END# kgnrjoin -N R=金額F,金額T f=平均金額,金額F i=./indat/dat6s.csv k=顧客,日付 m=./indat/dat7s.csv o=./outdat/out78.csv r=金額%n; IN=11 OUT=7; 2014/06/04 01:46:33
+#END# kgnrjoin -N -x R=2,3 f=4,2 i=./indat/dat6s.csv k=0,1 m=./indat/dat7s.csv o=./outdat/out78x.csv r=3%n; IN=11 OUT=7; 2014/06/04 01:46:33
+#END# kgnrjoin -N -nfn R=2,3 f=4,2 i=./indat/dat6snfn.csv k=0,1 m=./indat/dat7snfn.csv o=./outdat/out78nfn.csv r=3%n; IN=11 OUT=7; 2014/06/04 01:46:33
+#END# kgnrjoin -N -n R=金額F,金額T f=平均金額,金額F,金額T i=./indat/dat6s.csv k=顧客,日付 m=./indat/dat7s.csv o=./outdat/out79.csv r=金額%n; IN=11 OUT=12; 2014/06/04 01:46:33
+#END# kgnrjoin -N -n -x R=2,3 f=4,2,3 i=./indat/dat6s.csv k=0,1 m=./indat/dat7s.csv o=./outdat/out79x.csv r=3%n; IN=11 OUT=12; 2014/06/04 01:46:33
+#END# kgnrjoin -N -n -nfn R=2,3 f=4,2,3 i=./indat/dat6snfn.csv k=0,1 m=./indat/dat7snfn.csv o=./outdat/out79nfn.csv r=3%n; IN=11 OUT=12; 2014/06/04 01:46:33
+#END# kgnrjoin R=金額F,金額T f=平均金額,金額F,金額T i=./indat/dat6s.csv k=顧客,日付 m=./indat/dat7s.csv o=./outdat/out80.csv r=金額; IN=11 OUT=10; 2014/06/04 01:46:33
+#END# kgnrjoin -x R=2,3 f=4,2,3 i=./indat/dat6s.csv k=0,1 m=./indat/dat7s.csv o=./outdat/out80x.csv r=3; IN=11 OUT=10; 2014/06/04 01:46:33
+#END# kgnrjoin -nfn R=2,3 f=4,2,3 i=./indat/dat6snfn.csv k=0,1 m=./indat/dat7snfn.csv o=./outdat/out80nfn.csv r=3; IN=11 OUT=10; 2014/06/04 01:46:33
+#END# kgnrjoin -n R=金額F,金額T i=./indat/dat6s.csv k=顧客,日付 m=./indat/dat7s.csv o=./outdat/out81.csv r=金額; IN=11 OUT=13; 2014/06/04 01:46:33
+#END# kgnrjoin -n -x R=2,3 i=./indat/dat6s.csv k=0,1 m=./indat/dat7s.csv o=./outdat/out81x.csv r=3; IN=11 OUT=13; 2014/06/04 01:46:33
+#END# kgnrjoin -n -nfn R=2,3 i=./indat/dat6snfn.csv k=0,1 m=./indat/dat7snfn.csv o=./outdat/out81nfn.csv r=3; IN=11 OUT=13; 2014/06/04 01:46:33
+#END# kgnrjoin -N R=金額F,金額T f=平均金額 i=./indat/dat6s.csv k=顧客,日付 m=./indat/dat7s.csv o=./outdat/out82.csv r=金額; IN=11 OUT=11; 2014/06/04 01:46:33
+#END# kgnrjoin -N -x R=2,3 f=4 i=./indat/dat6s.csv k=0,1 m=./indat/dat7s.csv o=./outdat/out82x.csv r=3; IN=11 OUT=11; 2014/06/04 01:46:33
+#END# kgnrjoin -N -nfn R=2,3 f=4 i=./indat/dat6snfn.csv k=0,1 m=./indat/dat7snfn.csv o=./outdat/out82nfn.csv r=3; IN=11 OUT=11; 2014/06/04 01:46:33
+#END# kgnrjoin -N -n R=金額F,金額T f=平均金額,金額F i=./indat/dat6s.csv k=顧客,日付 m=./indat/dat7s.csv o=./outdat/out83.csv r=金額; IN=11 OUT=14; 2014/06/04 01:46:33
+#END# kgnrjoin -N -n -x R=2,3 f=4,2 i=./indat/dat6s.csv k=0,1 m=./indat/dat7s.csv o=./outdat/out83x.csv r=3; IN=11 OUT=14; 2014/06/04 01:46:33
+#END# kgnrjoin -N -n -nfn R=2,3 f=4,2 i=./indat/dat6snfn.csv k=0,1 m=./indat/dat7snfn.csv o=./outdat/out83nfn.csv r=3; IN=11 OUT=14; 2014/06/04 01:46:33
+#END# kgnrjoin R=金額F%n,金額T f=平均金額,金額F i=./indat/dat6s.csv k=顧客,日付 m=./indat/dat7s.csv o=./outdat/out84.csv r=金額%n; IN=11 OUT=3; 2014/06/04 01:46:33
+#END# kgnrjoin -x R=2%n,3 f=4,2 i=./indat/dat6s.csv k=0,1 m=./indat/dat7s.csv o=./outdat/out84x.csv r=3%n; IN=11 OUT=3; 2014/06/04 01:46:33
+#END# kgnrjoin -nfn R=2%n,3 f=4,2 i=./indat/dat6snfn.csv k=0,1 m=./indat/dat7snfn.csv o=./outdat/out84nfn.csv r=3%n; IN=11 OUT=3; 2014/06/04 01:46:34
+#END# kgnrjoin -n R=金額F%n,金額T f=平均金額,金額F,金額T i=./indat/dat6s.csv k=顧客,日付 m=./indat/dat7s.csv o=./outdat/out85.csv r=金額%n; IN=11 OUT=11; 2014/06/04 01:46:34
+#END# kgnrjoin -n -x R=2%n,3 f=4,2,3 i=./indat/dat6s.csv k=0,1 m=./indat/dat7s.csv o=./outdat/out85x.csv r=3%n; IN=11 OUT=11; 2014/06/04 01:46:34
+#END# kgnrjoin -n -nfn R=2%n,3 f=4,2,3 i=./indat/dat6snfn.csv k=0,1 m=./indat/dat7snfn.csv o=./outdat/out85nfn.csv r=3%n; IN=11 OUT=11; 2014/06/04 01:46:34
+#END# kgnrjoin -N R=金額F%n,金額T i=./indat/dat6s.csv k=顧客,日付 m=./indat/dat7s.csv o=./outdat/out86.csv r=金額%n; IN=11 OUT=4; 2014/06/04 01:46:34
+#END# kgnrjoin -N -x R=2%n,3 i=./indat/dat6s.csv k=0,1 m=./indat/dat7s.csv o=./outdat/out86x.csv r=3%n; IN=11 OUT=4; 2014/06/04 01:46:34
+#END# kgnrjoin -N -nfn R=2%n,3 i=./indat/dat6snfn.csv k=0,1 m=./indat/dat7snfn.csv o=./outdat/out86nfn.csv r=3%n; IN=11 OUT=4; 2014/06/04 01:46:34
+#END# kgnrjoin -N -n R=金額F%n,金額T f=平均金額 i=./indat/dat6s.csv k=顧客,日付 m=./indat/dat7s.csv o=./outdat/out87.csv r=金額%n; IN=11 OUT=12; 2014/06/04 01:46:34
+#END# kgnrjoin -N -n -x R=2%n,3 f=4 i=./indat/dat6s.csv k=0,1 m=./indat/dat7s.csv o=./outdat/out87x.csv r=3%n; IN=11 OUT=12; 2014/06/04 01:46:34
+#END# kgnrjoin -N -n -nfn R=2%n,3 f=4 i=./indat/dat6snfn.csv k=0,1 m=./indat/dat7snfn.csv o=./outdat/out87nfn.csv r=3%n; IN=11 OUT=12; 2014/06/04 01:46:34
+#END# kgnrjoin R=金額F%n,金額T f=平均金額 i=./indat/dat6s.csv k=顧客,日付 m=./indat/dat7s.csv o=./outdat/out88.csv r=金額; IN=11 OUT=7; 2014/06/04 01:46:34
+#END# kgnrjoin -x R=2%n,3 f=4 i=./indat/dat6s.csv k=0,1 m=./indat/dat7s.csv o=./outdat/out88x.csv r=3; IN=11 OUT=7; 2014/06/04 01:46:34
+#END# kgnrjoin -nfn R=2%n,3 f=4 i=./indat/dat6snfn.csv k=0,1 m=./indat/dat7snfn.csv o=./outdat/out88nfn.csv r=3; IN=11 OUT=7; 2014/06/04 01:46:34
+#END# kgnrjoin -n R=金額F%n,金額T f=平均金額,金額F i=./indat/dat6s.csv k=顧客,日付 m=./indat/dat7s.csv o=./outdat/out89.csv r=金額; IN=11 OUT=12; 2014/06/04 01:46:34
+#END# kgnrjoin -n -x R=2%n,3 f=4,2 i=./indat/dat6s.csv k=0,1 m=./indat/dat7s.csv o=./outdat/out89x.csv r=3; IN=11 OUT=12; 2014/06/04 01:46:34
+#END# kgnrjoin -n -nfn R=2%n,3 f=4,2 i=./indat/dat6snfn.csv k=0,1 m=./indat/dat7snfn.csv o=./outdat/out89nfn.csv r=3; IN=11 OUT=12; 2014/06/04 01:46:34
+#END# kgnrjoin -N R=金額F%n,金額T f=平均金額,金額F,金額T i=./indat/dat6s.csv k=顧客,日付 m=./indat/dat7s.csv o=./outdat/out90.csv r=金額; IN=11 OUT=8; 2014/06/04 01:46:34
+#END# kgnrjoin -N -x R=2%n,3 f=4,2,3 i=./indat/dat6s.csv k=0,1 m=./indat/dat7s.csv o=./outdat/out90x.csv r=3; IN=11 OUT=8; 2014/06/04 01:46:34
+#END# kgnrjoin -N -nfn R=2%n,3 f=4,2,3 i=./indat/dat6snfn.csv k=0,1 m=./indat/dat7snfn.csv o=./outdat/out90nfn.csv r=3; IN=11 OUT=8; 2014/06/04 01:46:34
+#END# kgnrjoin -N -n R=金額F%n,金額T i=./indat/dat6s.csv k=顧客,日付 m=./indat/dat7s.csv o=./outdat/out91.csv r=金額; IN=11 OUT=13; 2014/06/04 01:46:34
+#END# kgnrjoin -N -n -x R=2%n,3 i=./indat/dat6s.csv k=0,1 m=./indat/dat7s.csv o=./outdat/out91x.csv r=3; IN=11 OUT=13; 2014/06/04 01:46:34
+#END# kgnrjoin -N -n -nfn R=2%n,3 i=./indat/dat6snfn.csv k=0,1 m=./indat/dat7snfn.csv o=./outdat/out91nfn.csv r=3; IN=11 OUT=13; 2014/06/04 01:46:34
+#END# kgnrjoin R=金額F,金額T%e i=./indat/dat6s.csv k=顧客,日付 m=./indat/dat7s.csv o=./outdat/out92.csv r=金額%n; IN=11 OUT=9; 2014/06/04 01:46:34
+#END# kgnrjoin -x R=2,3%e i=./indat/dat6s.csv k=0,1 m=./indat/dat7s.csv o=./outdat/out92x.csv r=3%n; IN=11 OUT=9; 2014/06/04 01:46:34
+#END# kgnrjoin -nfn R=2,3%e i=./indat/dat6snfn.csv k=0,1 m=./indat/dat7snfn.csv o=./outdat/out92nfn.csv r=3%n; IN=11 OUT=9; 2014/06/04 01:46:34
+#END# kgnrjoin -n R=金額F,金額T%e f=平均金額 i=./indat/dat6s.csv k=顧客,日付 m=./indat/dat7s.csv o=./outdat/out93.csv r=金額%n; IN=11 OUT=12; 2014/06/04 01:46:34
+#END# kgnrjoin -n -x R=2,3%e f=4 i=./indat/dat6s.csv k=0,1 m=./indat/dat7s.csv o=./outdat/out93x.csv r=3%n; IN=11 OUT=12; 2014/06/04 01:46:34
+#END# kgnrjoin -n -nfn R=2,3%e f=4 i=./indat/dat6snfn.csv k=0,1 m=./indat/dat7snfn.csv o=./outdat/out93nfn.csv r=3%n; IN=11 OUT=12; 2014/06/04 01:46:34
+#END# kgnrjoin -N R=金額F,金額T%e f=平均金額,金額F i=./indat/dat6s.csv k=顧客,日付 m=./indat/dat7s.csv o=./outdat/out94.csv r=金額%n; IN=11 OUT=9; 2014/06/04 01:46:34
+#END# kgnrjoin -N -x R=2,3%e f=4,2 i=./indat/dat6s.csv k=0,1 m=./indat/dat7s.csv o=./outdat/out94x.csv r=3%n; IN=11 OUT=9; 2014/06/04 01:46:34
+#END# kgnrjoin -N -nfn R=2,3%e f=4,2 i=./indat/dat6snfn.csv k=0,1 m=./indat/dat7snfn.csv o=./outdat/out94nfn.csv r=3%n; IN=11 OUT=9; 2014/06/04 01:46:34
+#END# kgnrjoin -N -n R=金額F,金額T%e f=平均金額,金額F,金額T i=./indat/dat6s.csv k=顧客,日付 m=./indat/dat7s.csv o=./outdat/out95.csv r=金額%n; IN=11 OUT=12; 2014/06/04 01:46:34
+#END# kgnrjoin -N -n -x R=2,3%e f=4,2,3 i=./indat/dat6s.csv k=0,1 m=./indat/dat7s.csv o=./outdat/out95x.csv r=3%n; IN=11 OUT=12; 2014/06/04 01:46:34
+#END# kgnrjoin -N -n -nfn R=2,3%e f=4,2,3 i=./indat/dat6snfn.csv k=0,1 m=./indat/dat7snfn.csv o=./outdat/out95nfn.csv r=3%n; IN=11 OUT=12; 2014/06/04 01:46:34
+#END# kgnrjoin R=金額F,金額T%e f=平均金額,金額F,金額T i=./indat/dat6s.csv k=顧客,日付 m=./indat/dat7s.csv o=./outdat/out96.csv r=金額; IN=11 OUT=12; 2014/06/04 01:46:34
+#END# kgnrjoin -x R=2,3%e f=4,2,3 i=./indat/dat6s.csv k=0,1 m=./indat/dat7s.csv o=./outdat/out96x.csv r=3; IN=11 OUT=12; 2014/06/04 01:46:34
+#END# kgnrjoin -nfn R=2,3%e f=4,2,3 i=./indat/dat6snfn.csv k=0,1 m=./indat/dat7snfn.csv o=./outdat/out96nfn.csv r=3; IN=11 OUT=12; 2014/06/04 01:46:34
+#END# kgnrjoin -n R=金額F,金額T%e i=./indat/dat6s.csv k=顧客,日付 m=./indat/dat7s.csv o=./outdat/out97.csv r=金額; IN=11 OUT=14; 2014/06/04 01:46:34
+#END# kgnrjoin -n -x R=2,3%e i=./indat/dat6s.csv k=0,1 m=./indat/dat7s.csv o=./outdat/out97x.csv r=3; IN=11 OUT=14; 2014/06/04 01:46:34
+#END# kgnrjoin -n -nfn R=2,3%e i=./indat/dat6snfn.csv k=0,1 m=./indat/dat7snfn.csv o=./outdat/out97nfn.csv r=3; IN=11 OUT=14; 2014/06/04 01:46:34
+#END# kgnrjoin -N R=金額F,金額T%e f=平均金額 i=./indat/dat6s.csv k=顧客,日付 m=./indat/dat7s.csv o=./outdat/out98.csv r=金額; IN=11 OUT=13; 2014/06/04 01:46:34
+#END# kgnrjoin -N -x R=2,3%e f=4 i=./indat/dat6s.csv k=0,1 m=./indat/dat7s.csv o=./outdat/out98x.csv r=3; IN=11 OUT=13; 2014/06/04 01:46:34
+#END# kgnrjoin -N -nfn R=2,3%e f=4 i=./indat/dat6snfn.csv k=0,1 m=./indat/dat7snfn.csv o=./outdat/out98nfn.csv r=3; IN=11 OUT=13; 2014/06/04 01:46:34
+#END# kgnrjoin -N -n R=金額F,金額T%e f=平均金額,金額F i=./indat/dat6s.csv k=顧客,日付 m=./indat/dat7s.csv o=./outdat/out99.csv r=金額; IN=11 OUT=15; 2014/06/04 01:46:34
+#END# kgnrjoin -N -n -x R=2,3%e f=4,2 i=./indat/dat6s.csv k=0,1 m=./indat/dat7s.csv o=./outdat/out99x.csv r=3; IN=11 OUT=15; 2014/06/04 01:46:34
+#END# kgnrjoin -N -n -nfn R=2,3%e f=4,2 i=./indat/dat6snfn.csv k=0,1 m=./indat/dat7snfn.csv o=./outdat/out99nfn.csv r=3; IN=11 OUT=15; 2014/06/04 01:46:34
+#END# kgnrjoin R=金額F%n,金額T%e f=平均金額,金額F i=./indat/dat6s.csv k=顧客,日付 m=./indat/dat7s.csv o=./outdat/out100.csv r=金額%n; IN=11 OUT=5; 2014/06/04 01:46:34
+#END# kgnrjoin -x R=2%n,3%e f=4,2 i=./indat/dat6s.csv k=0,1 m=./indat/dat7s.csv o=./outdat/out100x.csv r=3%n; IN=11 OUT=5; 2014/06/04 01:46:34
+#END# kgnrjoin -nfn R=2%n,3%e f=4,2 i=./indat/dat6snfn.csv k=0,1 m=./indat/dat7snfn.csv o=./outdat/out100nfn.csv r=3%n; IN=11 OUT=5; 2014/06/04 01:46:34
+#END# kgnrjoin -n R=金額F%n,金額T%e f=平均金額,金額F,金額T i=./indat/dat6s.csv k=顧客,日付 m=./indat/dat7s.csv o=./outdat/out101.csv r=金額%n; IN=11 OUT=11; 2014/06/04 01:46:34
+#END# kgnrjoin -n -x R=2%n,3%e f=4,2,3 i=./indat/dat6s.csv k=0,1 m=./indat/dat7s.csv o=./outdat/out101x.csv r=3%n; IN=11 OUT=11; 2014/06/04 01:46:34
+#END# kgnrjoin -n -nfn R=2%n,3%e f=4,2,3 i=./indat/dat6snfn.csv k=0,1 m=./indat/dat7snfn.csv o=./outdat/out101nfn.csv r=3%n; IN=11 OUT=11; 2014/06/04 01:46:34
+#END# kgnrjoin -N R=金額F%n,金額T%e i=./indat/dat6s.csv k=顧客,日付 m=./indat/dat7s.csv o=./outdat/out102.csv r=金額%n; IN=11 OUT=6; 2014/06/04 01:46:34
+#END# kgnrjoin -N -x R=2%n,3%e i=./indat/dat6s.csv k=0,1 m=./indat/dat7s.csv o=./outdat/out102x.csv r=3%n; IN=11 OUT=6; 2014/06/04 01:46:34
+#END# kgnrjoin -N -nfn R=2%n,3%e i=./indat/dat6snfn.csv k=0,1 m=./indat/dat7snfn.csv o=./outdat/out102nfn.csv r=3%n; IN=11 OUT=6; 2014/06/04 01:46:34
+#END# kgnrjoin -N -n R=金額F%n,金額T%e f=平均金額 i=./indat/dat6s.csv k=顧客,日付 m=./indat/dat7s.csv o=./outdat/out103.csv r=金額%n; IN=11 OUT=12; 2014/06/04 01:46:34
+#END# kgnrjoin -N -n -x R=2%n,3%e f=4 i=./indat/dat6s.csv k=0,1 m=./indat/dat7s.csv o=./outdat/out103x.csv r=3%n; IN=11 OUT=12; 2014/06/04 01:46:34
+#END# kgnrjoin -N -n -nfn R=2%n,3%e f=4 i=./indat/dat6snfn.csv k=0,1 m=./indat/dat7snfn.csv o=./outdat/out103nfn.csv r=3%n; IN=11 OUT=12; 2014/06/04 01:46:34
+#END# kgnrjoin R=金額F%n,金額T%e f=平均金額 i=./indat/dat6s.csv k=顧客,日付 m=./indat/dat7s.csv o=./outdat/out104.csv r=金額; IN=11 OUT=9; 2014/06/04 01:46:34
+#END# kgnrjoin -x R=2%n,3%e f=4 i=./indat/dat6s.csv k=0,1 m=./indat/dat7s.csv o=./outdat/out104x.csv r=3; IN=11 OUT=9; 2014/06/04 01:46:34
+#END# kgnrjoin -nfn R=2%n,3%e f=4 i=./indat/dat6snfn.csv k=0,1 m=./indat/dat7snfn.csv o=./outdat/out104nfn.csv r=3; IN=11 OUT=9; 2014/06/04 01:46:34
+#END# kgnrjoin -n R=金額F%n,金額T%e f=平均金額,金額F i=./indat/dat6s.csv k=顧客,日付 m=./indat/dat7s.csv o=./outdat/out105.csv r=金額; IN=11 OUT=13; 2014/06/04 01:46:34
+#END# kgnrjoin -n -x R=2%n,3%e f=4,2 i=./indat/dat6s.csv k=0,1 m=./indat/dat7s.csv o=./outdat/out105x.csv r=3; IN=11 OUT=13; 2014/06/04 01:46:34
+#END# kgnrjoin -n -nfn R=2%n,3%e f=4,2 i=./indat/dat6snfn.csv k=0,1 m=./indat/dat7snfn.csv o=./outdat/out105nfn.csv r=3; IN=11 OUT=13; 2014/06/04 01:46:34
+#END# kgnrjoin -N R=金額F%n,金額T%e f=平均金額,金額F,金額T i=./indat/dat6s.csv k=顧客,日付 m=./indat/dat7s.csv o=./outdat/out106.csv r=金額; IN=11 OUT=10; 2014/06/04 01:46:34
+#END# kgnrjoin -N -x R=2%n,3%e f=4,2,3 i=./indat/dat6s.csv k=0,1 m=./indat/dat7s.csv o=./outdat/out106x.csv r=3; IN=11 OUT=10; 2014/06/04 01:46:34
+#END# kgnrjoin -N -nfn R=2%n,3%e f=4,2,3 i=./indat/dat6snfn.csv k=0,1 m=./indat/dat7snfn.csv o=./outdat/out106nfn.csv r=3; IN=11 OUT=10; 2014/06/04 01:46:34
+#END# kgnrjoin -N -n R=金額F%n,金額T%e i=./indat/dat6s.csv k=顧客,日付 m=./indat/dat7s.csv o=./outdat/out107.csv r=金額; IN=11 OUT=14; 2014/06/04 01:46:34
+#END# kgnrjoin -N -n -x R=2%n,3%e i=./indat/dat6s.csv k=0,1 m=./indat/dat7s.csv o=./outdat/out107x.csv r=3; IN=11 OUT=14; 2014/06/04 01:46:34
+#END# kgnrjoin -N -n -nfn R=2%n,3%e i=./indat/dat6snfn.csv k=0,1 m=./indat/dat7snfn.csv o=./outdat/out107nfn.csv r=3; IN=11 OUT=14; 2014/06/04 01:46:34
+#END# kgnrjoin R=金額F,金額T i=./indat/dat8s.csv k=日付 m=./indat/dat9s.csv o=./outdat/out108.csv r=金額%n; IN=5 OUT=5; 2014/06/04 01:46:34
+#END# kgnrjoin -x R=1,2 i=./indat/dat8s.csv k=0 m=./indat/dat9s.csv o=./outdat/out108x.csv r=2%n; IN=5 OUT=5; 2014/06/04 01:46:34
+#END# kgnrjoin -nfn R=1,2 i=./indat/dat8snfn.csv k=0 m=./indat/dat9snfn.csv o=./outdat/out108nfn.csv r=2%n; IN=5 OUT=5; 2014/06/04 01:46:34
+#END# kgnrjoin -n R=金額F,金額T f=平均金額 i=./indat/dat8s.csv k=日付 m=./indat/dat9s.csv o=./outdat/out109.csv r=金額%n; IN=5 OUT=8; 2014/06/04 01:46:34
+#END# kgnrjoin -n -x R=1,2 f=3 i=./indat/dat8s.csv k=0 m=./indat/dat9s.csv o=./outdat/out109x.csv r=2%n; IN=5 OUT=8; 2014/06/04 01:46:34
+#END# kgnrjoin -n -nfn R=1,2 f=3 i=./indat/dat8snfn.csv k=0 m=./indat/dat9snfn.csv o=./outdat/out109nfn.csv r=2%n; IN=5 OUT=8; 2014/06/04 01:46:34
+#END# kgnrjoin -N R=金額F,金額T f=平均金額,金額F i=./indat/dat8s.csv k=日付 m=./indat/dat9s.csv o=./outdat/out110.csv r=金額%n; IN=5 OUT=5; 2014/06/04 01:46:34
+#END# kgnrjoin -N -x R=1,2 f=3,1 i=./indat/dat8s.csv k=0 m=./indat/dat9s.csv o=./outdat/out110x.csv r=2%n; IN=5 OUT=5; 2014/06/04 01:46:34
+#END# kgnrjoin -N -nfn R=1,2 f=3,1 i=./indat/dat8snfn.csv k=0 m=./indat/dat9snfn.csv o=./outdat/out110nfn.csv r=2%n; IN=5 OUT=5; 2014/06/04 01:46:34
+#END# kgnrjoin -N -n R=金額F,金額T f=平均金額,金額F,金額T i=./indat/dat8s.csv k=日付 m=./indat/dat9s.csv o=./outdat/out111.csv r=金額%n; IN=5 OUT=8; 2014/06/04 01:46:34
+#END# kgnrjoin -N -n -x R=1,2 f=3,1,2 i=./indat/dat8s.csv k=0 m=./indat/dat9s.csv o=./outdat/out111x.csv r=2%n; IN=5 OUT=8; 2014/06/04 01:46:34
+#END# kgnrjoin -N -n -nfn R=1,2 f=3,1,2 i=./indat/dat8snfn.csv k=0 m=./indat/dat9snfn.csv o=./outdat/out111nfn.csv r=2%n; IN=5 OUT=8; 2014/06/04 01:46:34
+#END# kgnrjoin R=金額F,金額T f=平均金額,金額F,金額T i=./indat/dat8s.csv k=日付 m=./indat/dat9s.csv o=./outdat/out112.csv r=金額; IN=5 OUT=3; 2014/06/04 01:46:34
+#END# kgnrjoin -x R=1,2 f=3,1,2 i=./indat/dat8s.csv k=0 m=./indat/dat9s.csv o=./outdat/out112x.csv r=2; IN=5 OUT=3; 2014/06/04 01:46:34
+#END# kgnrjoin -nfn R=1,2 f=3,1,2 i=./indat/dat8snfn.csv k=0 m=./indat/dat9snfn.csv o=./outdat/out112nfn.csv r=2; IN=5 OUT=3; 2014/06/04 01:46:34
+#END# kgnrjoin -n R=金額F,金額T i=./indat/dat8s.csv k=日付 m=./indat/dat9s.csv o=./outdat/out113.csv r=金額; IN=5 OUT=6; 2014/06/04 01:46:34
+#END# kgnrjoin -n -x R=1,2 i=./indat/dat8s.csv k=0 m=./indat/dat9s.csv o=./outdat/out113x.csv r=2; IN=5 OUT=6; 2014/06/04 01:46:34
+#END# kgnrjoin -n -nfn R=1,2 i=./indat/dat8snfn.csv k=0 m=./indat/dat9snfn.csv o=./outdat/out113nfn.csv r=2; IN=5 OUT=6; 2014/06/04 01:46:34
+#END# kgnrjoin -N R=金額F,金額T f=平均金額,金額F,金額T i=./indat/dat8s.csv k=日付 m=./indat/dat9s.csv o=./outdat/out114.csv r=金額; IN=5 OUT=4; 2014/06/04 01:46:34
+#END# kgnrjoin -N -x R=1,2 f=3,1,2 i=./indat/dat8s.csv k=0 m=./indat/dat9s.csv o=./outdat/out114x.csv r=2; IN=5 OUT=4; 2014/06/04 01:46:34
+#END# kgnrjoin -N -nfn R=1,2 f=3,1,2 i=./indat/dat8snfn.csv k=0 m=./indat/dat9snfn.csv o=./outdat/out114nfn.csv r=2; IN=5 OUT=4; 2014/06/04 01:46:34
+#END# kgnrjoin -N -n R=金額F,金額T f=平均金額,金額F i=./indat/dat8s.csv k=日付 m=./indat/dat9s.csv o=./outdat/out115.csv r=金額; IN=5 OUT=7; 2014/06/04 01:46:34
+#END# kgnrjoin -N -n -x R=1,2 f=3,1 i=./indat/dat8s.csv k=0 m=./indat/dat9s.csv o=./outdat/out115x.csv r=2; IN=5 OUT=7; 2014/06/04 01:46:34
+#END# kgnrjoin -N -n -nfn R=1,2 f=3,1 i=./indat/dat8snfn.csv k=0 m=./indat/dat9snfn.csv o=./outdat/out115nfn.csv r=2; IN=5 OUT=7; 2014/06/04 01:46:34
+#END# kgnrjoin R=金額F%n,金額T f=平均金額,金額F i=./indat/dat8s.csv k=日付 m=./indat/dat9s.csv o=./outdat/out116.csv r=金額%n; IN=5 OUT=5; 2014/06/04 01:46:34
+#END# kgnrjoin -x R=1%n,2 f=3,1 i=./indat/dat8s.csv k=0 m=./indat/dat9s.csv o=./outdat/out116x.csv r=2%n; IN=5 OUT=5; 2014/06/04 01:46:34
+#END# kgnrjoin -nfn R=1%n,2 f=3,1 i=./indat/dat8snfn.csv k=0 m=./indat/dat9snfn.csv o=./outdat/out116nfn.csv r=2%n; IN=5 OUT=5; 2014/06/04 01:46:34
+#END# kgnrjoin -n R=金額F%n,金額T f=平均金額,金額F,金額T i=./indat/dat8s.csv k=日付 m=./indat/dat9s.csv o=./outdat/out117.csv r=金額%n; IN=5 OUT=8; 2014/06/04 01:46:34
+#END# kgnrjoin -n -x R=1%n,2 f=3,1,2 i=./indat/dat8s.csv k=0 m=./indat/dat9s.csv o=./outdat/out117x.csv r=2%n; IN=5 OUT=8; 2014/06/04 01:46:34
+#END# kgnrjoin -n -nfn R=1%n,2 f=3,1,2 i=./indat/dat8snfn.csv k=0 m=./indat/dat9snfn.csv o=./outdat/out117nfn.csv r=2%n; IN=5 OUT=8; 2014/06/04 01:46:34
+#END# kgnrjoin -N R=金額F%n,金額T i=./indat/dat8s.csv k=日付 m=./indat/dat9s.csv o=./outdat/out118.csv r=金額%n; IN=5 OUT=5; 2014/06/04 01:46:34
+#END# kgnrjoin -N -x R=1%n,2 i=./indat/dat8s.csv k=0 m=./indat/dat9s.csv o=./outdat/out118x.csv r=2%n; IN=5 OUT=5; 2014/06/04 01:46:34
+#END# kgnrjoin -N -nfn R=1%n,2 i=./indat/dat8snfn.csv k=0 m=./indat/dat9snfn.csv o=./outdat/out118nfn.csv r=2%n; IN=5 OUT=5; 2014/06/04 01:46:34
+#END# kgnrjoin -N -n R=金額F%n,金額T f=平均金額 i=./indat/dat8s.csv k=日付 m=./indat/dat9s.csv o=./outdat/out119.csv r=金額%n; IN=5 OUT=8; 2014/06/04 01:46:34
+#END# kgnrjoin -N -n -x R=1%n,2 f=3 i=./indat/dat8s.csv k=0 m=./indat/dat9s.csv o=./outdat/out119x.csv r=2%n; IN=5 OUT=8; 2014/06/04 01:46:34
+#END# kgnrjoin -N -n -nfn R=1%n,2 f=3 i=./indat/dat8snfn.csv k=0 m=./indat/dat9snfn.csv o=./outdat/out119nfn.csv r=2%n; IN=5 OUT=8; 2014/06/04 01:46:34
+#END# kgnrjoin R=金額F%n,金額T f=平均金額 i=./indat/dat8s.csv k=日付 m=./indat/dat9s.csv o=./outdat/out120.csv r=金額; IN=5 OUT=3; 2014/06/04 01:46:34
+#END# kgnrjoin -x R=1%n,2 f=3 i=./indat/dat8s.csv k=0 m=./indat/dat9s.csv o=./outdat/out120x.csv r=2; IN=5 OUT=3; 2014/06/04 01:46:34
+#END# kgnrjoin -nfn R=1%n,2 f=3 i=./indat/dat8snfn.csv k=0 m=./indat/dat9snfn.csv o=./outdat/out120nfn.csv r=2; IN=5 OUT=3; 2014/06/04 01:46:34
+#END# kgnrjoin -n R=金額F%n,金額T f=平均金額,金額F i=./indat/dat8s.csv k=日付 m=./indat/dat9s.csv o=./outdat/out121.csv r=金額; IN=5 OUT=6; 2014/06/04 01:46:34
+#END# kgnrjoin -n -x R=1%n,2 f=3,1 i=./indat/dat8s.csv k=0 m=./indat/dat9s.csv o=./outdat/out121x.csv r=2; IN=5 OUT=6; 2014/06/04 01:46:34
+#END# kgnrjoin -n -nfn R=1%n,2 f=3,1 i=./indat/dat8snfn.csv k=0 m=./indat/dat9snfn.csv o=./outdat/out121nfn.csv r=2; IN=5 OUT=6; 2014/06/04 01:46:34
+#END# kgnrjoin -N R=金額F%n,金額T f=平均金額,金額F,金額T i=./indat/dat8s.csv k=日付 m=./indat/dat9s.csv o=./outdat/out122.csv r=金額; IN=5 OUT=4; 2014/06/04 01:46:34
+#END# kgnrjoin -N -x R=1%n,2 f=3,1,2 i=./indat/dat8s.csv k=0 m=./indat/dat9s.csv o=./outdat/out122x.csv r=2; IN=5 OUT=4; 2014/06/04 01:46:34
+#END# kgnrjoin -N -nfn R=1%n,2 f=3,1,2 i=./indat/dat8snfn.csv k=0 m=./indat/dat9snfn.csv o=./outdat/out122nfn.csv r=2; IN=5 OUT=4; 2014/06/04 01:46:34
+#END# kgnrjoin -N -n R=金額F%n,金額T i=./indat/dat8s.csv k=日付 m=./indat/dat9s.csv o=./outdat/out123.csv r=金額; IN=5 OUT=7; 2014/06/04 01:46:34
+#END# kgnrjoin -N -n -x R=1%n,2 i=./indat/dat8s.csv k=0 m=./indat/dat9s.csv o=./outdat/out123x.csv r=2; IN=5 OUT=7; 2014/06/04 01:46:34
+#END# kgnrjoin -N -n -nfn R=1%n,2 i=./indat/dat8snfn.csv k=0 m=./indat/dat9snfn.csv o=./outdat/out123nfn.csv r=2; IN=5 OUT=7; 2014/06/04 01:46:34
+#END# kgnrjoin R=金額F,金額T%e i=./indat/dat8s.csv k=日付 m=./indat/dat9s.csv o=./outdat/out124.csv r=金額%n; IN=5 OUT=5; 2014/06/04 01:46:34
+#END# kgnrjoin -x R=1,2%e i=./indat/dat8s.csv k=0 m=./indat/dat9s.csv o=./outdat/out124x.csv r=2%n; IN=5 OUT=5; 2014/06/04 01:46:34
+#END# kgnrjoin -nfn R=1,2%e i=./indat/dat8snfn.csv k=0 m=./indat/dat9snfn.csv o=./outdat/out124nfn.csv r=2%n; IN=5 OUT=5; 2014/06/04 01:46:34
+#END# kgnrjoin -n R=金額F,金額T%e f=平均金額 i=./indat/dat8s.csv k=日付 m=./indat/dat9s.csv o=./outdat/out125.csv r=金額%n; IN=5 OUT=8; 2014/06/04 01:46:34
+#END# kgnrjoin -n -x R=1,2%e f=3 i=./indat/dat8s.csv k=0 m=./indat/dat9s.csv o=./outdat/out125x.csv r=2%n; IN=5 OUT=8; 2014/06/04 01:46:34
+#END# kgnrjoin -n -nfn R=1,2%e f=3 i=./indat/dat8snfn.csv k=0 m=./indat/dat9snfn.csv o=./outdat/out125nfn.csv r=2%n; IN=5 OUT=8; 2014/06/04 01:46:34
+#END# kgnrjoin -N R=金額F,金額T%e f=平均金額,金額F i=./indat/dat8s.csv k=日付 m=./indat/dat9s.csv o=./outdat/out126.csv r=金額%n; IN=5 OUT=5; 2014/06/04 01:46:34
+#END# kgnrjoin -N -x R=1,2%e f=3,1 i=./indat/dat8s.csv k=0 m=./indat/dat9s.csv o=./outdat/out126x.csv r=2%n; IN=5 OUT=5; 2014/06/04 01:46:34
+#END# kgnrjoin -N -nfn R=1,2%e f=3,1 i=./indat/dat8snfn.csv k=0 m=./indat/dat9snfn.csv o=./outdat/out126nfn.csv r=2%n; IN=5 OUT=5; 2014/06/04 01:46:35
+#END# kgnrjoin -N -n R=金額F,金額T%e f=平均金額,金額F,金額T i=./indat/dat8s.csv k=日付 m=./indat/dat9s.csv o=./outdat/out127.csv r=金額%n; IN=5 OUT=8; 2014/06/04 01:46:35
+#END# kgnrjoin -N -n -x R=1,2%e f=3,1,2 i=./indat/dat8s.csv k=0 m=./indat/dat9s.csv o=./outdat/out127x.csv r=2%n; IN=5 OUT=8; 2014/06/04 01:46:35
+#END# kgnrjoin -N -n -nfn R=1,2%e f=3,1,2 i=./indat/dat8snfn.csv k=0 m=./indat/dat9snfn.csv o=./outdat/out127nfn.csv r=2%n; IN=5 OUT=8; 2014/06/04 01:46:35
+#END# kgnrjoin R=金額F,金額T%e f=平均金額,金額F,金額T i=./indat/dat8s.csv k=日付 m=./indat/dat9s.csv o=./outdat/out128.csv r=金額; IN=5 OUT=3; 2014/06/04 01:46:35
+#END# kgnrjoin -x R=1,2%e f=3,1,2 i=./indat/dat8s.csv k=0 m=./indat/dat9s.csv o=./outdat/out128x.csv r=2; IN=5 OUT=3; 2014/06/04 01:46:35
+#END# kgnrjoin -nfn R=1,2%e f=3,1,2 i=./indat/dat8snfn.csv k=0 m=./indat/dat9snfn.csv o=./outdat/out128nfn.csv r=2; IN=5 OUT=3; 2014/06/04 01:46:35
+#END# kgnrjoin -n R=金額F,金額T%e i=./indat/dat8s.csv k=日付 m=./indat/dat9s.csv o=./outdat/out129.csv r=金額; IN=5 OUT=6; 2014/06/04 01:46:35
+#END# kgnrjoin -n -x R=1,2%e i=./indat/dat8s.csv k=0 m=./indat/dat9s.csv o=./outdat/out129x.csv r=2; IN=5 OUT=6; 2014/06/04 01:46:35
+#END# kgnrjoin -n -nfn R=1,2%e i=./indat/dat8snfn.csv k=0 m=./indat/dat9snfn.csv o=./outdat/out129nfn.csv r=2; IN=5 OUT=6; 2014/06/04 01:46:35
+#END# kgnrjoin -N R=金額F,金額T%e f=平均金額 i=./indat/dat8s.csv k=日付 m=./indat/dat9s.csv o=./outdat/out130.csv r=金額; IN=5 OUT=4; 2014/06/04 01:46:35
+#END# kgnrjoin -N -x R=1,2%e f=3 i=./indat/dat8s.csv k=0 m=./indat/dat9s.csv o=./outdat/out130x.csv r=2; IN=5 OUT=4; 2014/06/04 01:46:35
+#END# kgnrjoin -N -nfn R=1,2%e f=3 i=./indat/dat8snfn.csv k=0 m=./indat/dat9snfn.csv o=./outdat/out130nfn.csv r=2; IN=5 OUT=4; 2014/06/04 01:46:35
+#END# kgnrjoin -N -n R=金額F,金額T%e f=平均金額,金額F i=./indat/dat8s.csv k=日付 m=./indat/dat9s.csv o=./outdat/out131.csv r=金額; IN=5 OUT=7; 2014/06/04 01:46:35
+#END# kgnrjoin -N -n -x R=1,2%e f=3,1 i=./indat/dat8s.csv k=0 m=./indat/dat9s.csv o=./outdat/out131x.csv r=2; IN=5 OUT=7; 2014/06/04 01:46:35
+#END# kgnrjoin -N -n -nfn R=1,2%e f=3,1 i=./indat/dat8snfn.csv k=0 m=./indat/dat9snfn.csv o=./outdat/out131nfn.csv r=2; IN=5 OUT=7; 2014/06/04 01:46:35
+#END# kgnrjoin R=金額F%n,金額T%e f=平均金額,金額F i=./indat/dat8s.csv k=日付 m=./indat/dat9s.csv o=./outdat/out132.csv r=金額%n; IN=5 OUT=5; 2014/06/04 01:46:35
+#END# kgnrjoin -x R=1%n,2%e f=3,1 i=./indat/dat8s.csv k=0 m=./indat/dat9s.csv o=./outdat/out132x.csv r=2%n; IN=5 OUT=5; 2014/06/04 01:46:35
+#END# kgnrjoin -nfn R=1%n,2%e f=3,1 i=./indat/dat8snfn.csv k=0 m=./indat/dat9snfn.csv o=./outdat/out132nfn.csv r=2%n; IN=5 OUT=5; 2014/06/04 01:46:35
+#END# kgnrjoin -n R=金額F%n,金額T%e f=平均金額,金額F,金額T i=./indat/dat8s.csv k=日付 m=./indat/dat9s.csv o=./outdat/out133.csv r=金額%n; IN=5 OUT=8; 2014/06/04 01:46:35
+#END# kgnrjoin -n -x R=1%n,2%e f=3,1,2 i=./indat/dat8s.csv k=0 m=./indat/dat9s.csv o=./outdat/out133x.csv r=2%n; IN=5 OUT=8; 2014/06/04 01:46:35
+#END# kgnrjoin -n -nfn R=1%n,2%e f=3,1,2 i=./indat/dat8snfn.csv k=0 m=./indat/dat9snfn.csv o=./outdat/out133nfn.csv r=2%n; IN=5 OUT=8; 2014/06/04 01:46:35
+#END# kgnrjoin -N R=金額F%n,金額T%e i=./indat/dat8s.csv k=日付 m=./indat/dat9s.csv o=./outdat/out134.csv r=金額%n; IN=5 OUT=5; 2014/06/04 01:46:35
+#END# kgnrjoin -N -x R=1%n,2%e i=./indat/dat8s.csv k=0 m=./indat/dat9s.csv o=./outdat/out134x.csv r=2%n; IN=5 OUT=5; 2014/06/04 01:46:35
+#END# kgnrjoin -N -nfn R=1%n,2%e i=./indat/dat8snfn.csv k=0 m=./indat/dat9snfn.csv o=./outdat/out134nfn.csv r=2%n; IN=5 OUT=5; 2014/06/04 01:46:35
+#END# kgnrjoin -N -n R=金額F%n,金額T%e f=平均金額 i=./indat/dat8s.csv k=日付 m=./indat/dat9s.csv o=./outdat/out135.csv r=金額%n; IN=5 OUT=8; 2014/06/04 01:46:35
+#END# kgnrjoin -N -n -x R=1%n,2%e f=3 i=./indat/dat8s.csv k=0 m=./indat/dat9s.csv o=./outdat/out135x.csv r=2%n; IN=5 OUT=8; 2014/06/04 01:46:35
+#END# kgnrjoin -N -n -nfn R=1%n,2%e f=3 i=./indat/dat8snfn.csv k=0 m=./indat/dat9snfn.csv o=./outdat/out135nfn.csv r=2%n; IN=5 OUT=8; 2014/06/04 01:46:35
+#END# kgnrjoin R=金額F%n,金額T%e f=平均金額 i=./indat/dat8s.csv k=日付 m=./indat/dat9s.csv o=./outdat/out136.csv r=金額; IN=5 OUT=3; 2014/06/04 01:46:35
+#END# kgnrjoin -x R=1%n,2%e f=3 i=./indat/dat8s.csv k=0 m=./indat/dat9s.csv o=./outdat/out136x.csv r=2; IN=5 OUT=3; 2014/06/04 01:46:35
+#END# kgnrjoin -nfn R=1%n,2%e f=3 i=./indat/dat8snfn.csv k=0 m=./indat/dat9snfn.csv o=./outdat/out136nfn.csv r=2; IN=5 OUT=3; 2014/06/04 01:46:35
+#END# kgnrjoin -n R=金額F%n,金額T%e f=平均金額,金額F i=./indat/dat8s.csv k=日付 m=./indat/dat9s.csv o=./outdat/out137.csv r=金額; IN=5 OUT=6; 2014/06/04 01:46:35
+#END# kgnrjoin -n -x R=1%n,2%e f=3,1 i=./indat/dat8s.csv k=0 m=./indat/dat9s.csv o=./outdat/out137x.csv r=2; IN=5 OUT=6; 2014/06/04 01:46:35
+#END# kgnrjoin -n -nfn R=1%n,2%e f=3,1 i=./indat/dat8snfn.csv k=0 m=./indat/dat9snfn.csv o=./outdat/out137nfn.csv r=2; IN=5 OUT=6; 2014/06/04 01:46:35
+#END# kgnrjoin -N R=金額F%n,金額T%e f=平均金額,金額F,金額T i=./indat/dat8s.csv k=日付 m=./indat/dat9s.csv o=./outdat/out138.csv r=金額; IN=5 OUT=4; 2014/06/04 01:46:35
+#END# kgnrjoin -N -x R=1%n,2%e f=3,1,2 i=./indat/dat8s.csv k=0 m=./indat/dat9s.csv o=./outdat/out138x.csv r=2; IN=5 OUT=4; 2014/06/04 01:46:35
+#END# kgnrjoin -N -nfn R=1%n,2%e f=3,1,2 i=./indat/dat8snfn.csv k=0 m=./indat/dat9snfn.csv o=./outdat/out138nfn.csv r=2; IN=5 OUT=4; 2014/06/04 01:46:35
+#END# kgnrjoin -N -n R=金額F%n,金額T%e i=./indat/dat8s.csv k=日付 m=./indat/dat9s.csv o=./outdat/out139.csv r=金額; IN=5 OUT=7; 2014/06/04 01:46:35
+#END# kgnrjoin -N -n -x R=1%n,2%e i=./indat/dat8s.csv k=0 m=./indat/dat9s.csv o=./outdat/out139x.csv r=2; IN=5 OUT=7; 2014/06/04 01:46:35
+#END# kgnrjoin -N -n -nfn R=1%n,2%e i=./indat/dat8snfn.csv k=0 m=./indat/dat9snfn.csv o=./outdat/out139nfn.csv r=2; IN=5 OUT=7; 2014/06/04 01:46:35
+#END# kgnrjoin R=金額F,金額T i=./indat/dat10s.csv k=日付 m=./indat/dat11s.csv o=./outdat/out140.csv r=金額%n; IN=6 OUT=3; 2014/06/04 01:46:35
+#END# kgnrjoin -x R=1,2 i=./indat/dat10s.csv k=0 m=./indat/dat11s.csv o=./outdat/out140x.csv r=2%n; IN=6 OUT=3; 2014/06/04 01:46:35
+#END# kgnrjoin -nfn R=1,2 i=./indat/dat10snfn.csv k=0 m=./indat/dat11snfn.csv o=./outdat/out140nfn.csv r=2%n; IN=6 OUT=3; 2014/06/04 01:46:35
+#END# kgnrjoin -n R=金額F,金額T f=平均金額 i=./indat/dat10s.csv k=日付 m=./indat/dat11s.csv o=./outdat/out141.csv r=金額%n; IN=6 OUT=6; 2014/06/04 01:46:35
+#END# kgnrjoin -n -x R=1,2 f=3 i=./indat/dat10s.csv k=0 m=./indat/dat11s.csv o=./outdat/out141x.csv r=2%n; IN=6 OUT=6; 2014/06/04 01:46:35
+#END# kgnrjoin -n -nfn R=1,2 f=3 i=./indat/dat10snfn.csv k=0 m=./indat/dat11snfn.csv o=./outdat/out141nfn.csv r=2%n; IN=6 OUT=6; 2014/06/04 01:46:35
+#END# kgnrjoin -N R=金額F,金額T f=平均金額,金額F i=./indat/dat10s.csv k=日付 m=./indat/dat11s.csv o=./outdat/out142.csv r=金額%n; IN=6 OUT=4; 2014/06/04 01:46:35
+#END# kgnrjoin -N -x R=1,2 f=3,1 i=./indat/dat10s.csv k=0 m=./indat/dat11s.csv o=./outdat/out142x.csv r=2%n; IN=6 OUT=4; 2014/06/04 01:46:35
+#END# kgnrjoin -N -nfn R=1,2 f=3,1 i=./indat/dat10snfn.csv k=0 m=./indat/dat11snfn.csv o=./outdat/out142nfn.csv r=2%n; IN=6 OUT=4; 2014/06/04 01:46:35
+#END# kgnrjoin -N -n R=金額F,金額T f=平均金額,金額F,金額T i=./indat/dat10s.csv k=日付 m=./indat/dat11s.csv o=./outdat/out143.csv r=金額%n; IN=6 OUT=7; 2014/06/04 01:46:35
+#END# kgnrjoin -N -n -x R=1,2 f=3,1,2 i=./indat/dat10s.csv k=0 m=./indat/dat11s.csv o=./outdat/out143x.csv r=2%n; IN=6 OUT=7; 2014/06/04 01:46:35
+#END# kgnrjoin -N -n -nfn R=1,2 f=3,1,2 i=./indat/dat10snfn.csv k=0 m=./indat/dat11snfn.csv o=./outdat/out143nfn.csv r=2%n; IN=6 OUT=7; 2014/06/04 01:46:35
+#END# kgnrjoin R=金額F,金額T f=平均金額,金額F,金額T i=./indat/dat10s.csv k=日付 m=./indat/dat11s.csv o=./outdat/out144.csv r=金額; IN=6 OUT=7; 2014/06/04 01:46:35
+#END# kgnrjoin -x R=1,2 f=3,1,2 i=./indat/dat10s.csv k=0 m=./indat/dat11s.csv o=./outdat/out144x.csv r=2; IN=6 OUT=7; 2014/06/04 01:46:35
+#END# kgnrjoin -nfn R=1,2 f=3,1,2 i=./indat/dat10snfn.csv k=0 m=./indat/dat11snfn.csv o=./outdat/out144nfn.csv r=2; IN=6 OUT=7; 2014/06/04 01:46:35
+#END# kgnrjoin -n R=金額F,金額T i=./indat/dat10s.csv k=日付 m=./indat/dat11s.csv o=./outdat/out145.csv r=金額; IN=6 OUT=9; 2014/06/04 01:46:35
+#END# kgnrjoin -n -x R=1,2 i=./indat/dat10s.csv k=0 m=./indat/dat11s.csv o=./outdat/out145x.csv r=2; IN=6 OUT=9; 2014/06/04 01:46:35
+#END# kgnrjoin -n -nfn R=1,2 i=./indat/dat10snfn.csv k=0 m=./indat/dat11snfn.csv o=./outdat/out145nfn.csv r=2; IN=6 OUT=9; 2014/06/04 01:46:35
+#END# kgnrjoin -N R=金額F,金額T f=平均金額 i=./indat/dat10s.csv k=日付 m=./indat/dat11s.csv o=./outdat/out146.csv r=金額; IN=6 OUT=7; 2014/06/04 01:46:35
+#END# kgnrjoin -N -x R=1,2 f=3 i=./indat/dat10s.csv k=0 m=./indat/dat11s.csv o=./outdat/out146x.csv r=2; IN=6 OUT=7; 2014/06/04 01:46:35
+#END# kgnrjoin -N -nfn R=1,2 f=3 i=./indat/dat10snfn.csv k=0 m=./indat/dat11snfn.csv o=./outdat/out146nfn.csv r=2; IN=6 OUT=7; 2014/06/04 01:46:35
+#END# kgnrjoin -N -n R=金額F,金額T f=平均金額,金額F i=./indat/dat10s.csv k=日付 m=./indat/dat11s.csv o=./outdat/out147.csv r=金額; IN=6 OUT=9; 2014/06/04 01:46:35
+#END# kgnrjoin -N -n -x R=1,2 f=3,1 i=./indat/dat10s.csv k=0 m=./indat/dat11s.csv o=./outdat/out147x.csv r=2; IN=6 OUT=9; 2014/06/04 01:46:35
+#END# kgnrjoin -N -n -nfn R=1,2 f=3,1 i=./indat/dat10snfn.csv k=0 m=./indat/dat11snfn.csv o=./outdat/out147nfn.csv r=2; IN=6 OUT=9; 2014/06/04 01:46:35
+#END# kgnrjoin R=金額F%n,金額T f=平均金額,金額F i=./indat/dat10s.csv k=日付 m=./indat/dat11s.csv o=./outdat/out148.csv r=金額%n; IN=6 OUT=2; 2014/06/04 01:46:35
+#END# kgnrjoin -x R=1%n,2 f=3,1 i=./indat/dat10s.csv k=0 m=./indat/dat11s.csv o=./outdat/out148x.csv r=2%n; IN=6 OUT=2; 2014/06/04 01:46:35
+#END# kgnrjoin -nfn R=1%n,2 f=3,1 i=./indat/dat10snfn.csv k=0 m=./indat/dat11snfn.csv o=./outdat/out148nfn.csv r=2%n; IN=6 OUT=2; 2014/06/04 01:46:35
+#END# kgnrjoin -n R=金額F%n,金額T f=平均金額,金額F,金額T i=./indat/dat10s.csv k=日付 m=./indat/dat11s.csv o=./outdat/out149.csv r=金額%n; IN=6 OUT=6; 2014/06/04 01:46:35
+#END# kgnrjoin -n -x R=1%n,2 f=3,1,2 i=./indat/dat10s.csv k=0 m=./indat/dat11s.csv o=./outdat/out149x.csv r=2%n; IN=6 OUT=6; 2014/06/04 01:46:35
+#END# kgnrjoin -n -nfn R=1%n,2 f=3,1,2 i=./indat/dat10snfn.csv k=0 m=./indat/dat11snfn.csv o=./outdat/out149nfn.csv r=2%n; IN=6 OUT=6; 2014/06/04 01:46:35
+#END# kgnrjoin -N R=金額F%n,金額T i=./indat/dat10s.csv k=日付 m=./indat/dat11s.csv o=./outdat/out150.csv r=金額%n; IN=6 OUT=3; 2014/06/04 01:46:35
+#END# kgnrjoin -N -x R=1%n,2 i=./indat/dat10s.csv k=0 m=./indat/dat11s.csv o=./outdat/out150x.csv r=2%n; IN=6 OUT=3; 2014/06/04 01:46:35
+#END# kgnrjoin -N -nfn R=1%n,2 i=./indat/dat10snfn.csv k=0 m=./indat/dat11snfn.csv o=./outdat/out150nfn.csv r=2%n; IN=6 OUT=3; 2014/06/04 01:46:35
+#END# kgnrjoin -N -n R=金額F%n,金額T f=平均金額 i=./indat/dat10s.csv k=日付 m=./indat/dat11s.csv o=./outdat/out151.csv r=金額%n; IN=6 OUT=7; 2014/06/04 01:46:35
+#END# kgnrjoin -N -n -x R=1%n,2 f=3 i=./indat/dat10s.csv k=0 m=./indat/dat11s.csv o=./outdat/out151x.csv r=2%n; IN=6 OUT=7; 2014/06/04 01:46:35
+#END# kgnrjoin -N -n -nfn R=1%n,2 f=3 i=./indat/dat10snfn.csv k=0 m=./indat/dat11snfn.csv o=./outdat/out151nfn.csv r=2%n; IN=6 OUT=7; 2014/06/04 01:46:35
+#END# kgnrjoin R=金額F%n,金額T f=平均金額 i=./indat/dat10s.csv k=日付 m=./indat/dat11s.csv o=./outdat/out152.csv r=金額; IN=6 OUT=6; 2014/06/04 01:46:35
+#END# kgnrjoin -x R=1%n,2 f=3 i=./indat/dat10s.csv k=0 m=./indat/dat11s.csv o=./outdat/out152x.csv r=2; IN=6 OUT=6; 2014/06/04 01:46:35
+#END# kgnrjoin -nfn R=1%n,2 f=3 i=./indat/dat10snfn.csv k=0 m=./indat/dat11snfn.csv o=./outdat/out152nfn.csv r=2; IN=6 OUT=6; 2014/06/04 01:46:35
+#END# kgnrjoin -n R=金額F%n,金額T f=平均金額,金額F i=./indat/dat10s.csv k=日付 m=./indat/dat11s.csv o=./outdat/out153.csv r=金額; IN=6 OUT=8; 2014/06/04 01:46:35
+#END# kgnrjoin -n -x R=1%n,2 f=3,1 i=./indat/dat10s.csv k=0 m=./indat/dat11s.csv o=./outdat/out153x.csv r=2; IN=6 OUT=8; 2014/06/04 01:46:35
+#END# kgnrjoin -n -nfn R=1%n,2 f=3,1 i=./indat/dat10snfn.csv k=0 m=./indat/dat11snfn.csv o=./outdat/out153nfn.csv r=2; IN=6 OUT=8; 2014/06/04 01:46:35
+#END# kgnrjoin -N R=金額F%n,金額T f=平均金額,金額F,金額T i=./indat/dat10s.csv k=日付 m=./indat/dat11s.csv o=./outdat/out154.csv r=金額; IN=6 OUT=6; 2014/06/04 01:46:35
+#END# kgnrjoin -N -x R=1%n,2 f=3,1,2 i=./indat/dat10s.csv k=0 m=./indat/dat11s.csv o=./outdat/out154x.csv r=2; IN=6 OUT=6; 2014/06/04 01:46:35
+#END# kgnrjoin -N -nfn R=1%n,2 f=3,1,2 i=./indat/dat10snfn.csv k=0 m=./indat/dat11snfn.csv o=./outdat/out154nfn.csv r=2; IN=6 OUT=6; 2014/06/04 01:46:35
+#END# kgnrjoin -N -n R=金額F%n,金額T i=./indat/dat10s.csv k=日付 m=./indat/dat11s.csv o=./outdat/out155.csv r=金額; IN=6 OUT=8; 2014/06/04 01:46:35
+#END# kgnrjoin -N -n -x R=1%n,2 i=./indat/dat10s.csv k=0 m=./indat/dat11s.csv o=./outdat/out155x.csv r=2; IN=6 OUT=8; 2014/06/04 01:46:35
+#END# kgnrjoin -N -n -nfn R=1%n,2 i=./indat/dat10snfn.csv k=0 m=./indat/dat11snfn.csv o=./outdat/out155nfn.csv r=2; IN=6 OUT=8; 2014/06/04 01:46:35
+#END# kgnrjoin R=金額F,金額T%e i=./indat/dat10s.csv k=日付 m=./indat/dat11s.csv o=./outdat/out156.csv r=金額%n; IN=6 OUT=3; 2014/06/04 01:46:35
+#END# kgnrjoin -x R=1,2%e i=./indat/dat10s.csv k=0 m=./indat/dat11s.csv o=./outdat/out156x.csv r=2%n; IN=6 OUT=3; 2014/06/04 01:46:35
+#END# kgnrjoin -nfn R=1,2%e i=./indat/dat10snfn.csv k=0 m=./indat/dat11snfn.csv o=./outdat/out156nfn.csv r=2%n; IN=6 OUT=3; 2014/06/04 01:46:35
+#END# kgnrjoin -n R=金額F,金額T%e f=平均金額 i=./indat/dat10s.csv k=日付 m=./indat/dat11s.csv o=./outdat/out157.csv r=金額%n; IN=6 OUT=6; 2014/06/04 01:46:35
+#END# kgnrjoin -n -x R=1,2%e f=3 i=./indat/dat10s.csv k=0 m=./indat/dat11s.csv o=./outdat/out157x.csv r=2%n; IN=6 OUT=6; 2014/06/04 01:46:35
+#END# kgnrjoin -n -nfn R=1,2%e f=3 i=./indat/dat10snfn.csv k=0 m=./indat/dat11snfn.csv o=./outdat/out157nfn.csv r=2%n; IN=6 OUT=6; 2014/06/04 01:46:35
+#END# kgnrjoin -N R=金額F,金額T%e f=平均金額,金額F i=./indat/dat10s.csv k=日付 m=./indat/dat11s.csv o=./outdat/out158.csv r=金額%n; IN=6 OUT=4; 2014/06/04 01:46:35
+#END# kgnrjoin -N -x R=1,2%e f=3,1 i=./indat/dat10s.csv k=0 m=./indat/dat11s.csv o=./outdat/out158x.csv r=2%n; IN=6 OUT=4; 2014/06/04 01:46:35
+#END# kgnrjoin -N -nfn R=1,2%e f=3,1 i=./indat/dat10snfn.csv k=0 m=./indat/dat11snfn.csv o=./outdat/out158nfn.csv r=2%n; IN=6 OUT=4; 2014/06/04 01:46:35
+#END# kgnrjoin -N -n R=金額F,金額T%e f=平均金額,金額F,金額T i=./indat/dat10s.csv k=日付 m=./indat/dat11s.csv o=./outdat/out159.csv r=金額%n; IN=6 OUT=7; 2014/06/04 01:46:35
+#END# kgnrjoin -N -n -x R=1,2%e f=3,1,2 i=./indat/dat10s.csv k=0 m=./indat/dat11s.csv o=./outdat/out159x.csv r=2%n; IN=6 OUT=7; 2014/06/04 01:46:35
+#END# kgnrjoin -N -n -nfn R=1,2%e f=3,1,2 i=./indat/dat10snfn.csv k=0 m=./indat/dat11snfn.csv o=./outdat/out159nfn.csv r=2%n; IN=6 OUT=7; 2014/06/04 01:46:35
+#END# kgnrjoin R=金額F,金額T%e f=平均金額,金額F,金額T i=./indat/dat10s.csv k=日付 m=./indat/dat11s.csv o=./outdat/out160.csv r=金額; IN=6 OUT=7; 2014/06/04 01:46:35
+#END# kgnrjoin -x R=1,2%e f=3,1,2 i=./indat/dat10s.csv k=0 m=./indat/dat11s.csv o=./outdat/out160x.csv r=2; IN=6 OUT=7; 2014/06/04 01:46:35
+#END# kgnrjoin -nfn R=1,2%e f=3,1,2 i=./indat/dat10snfn.csv k=0 m=./indat/dat11snfn.csv o=./outdat/out160nfn.csv r=2; IN=6 OUT=7; 2014/06/04 01:46:35
+#END# kgnrjoin -n R=金額F,金額T%e i=./indat/dat10s.csv k=日付 m=./indat/dat11s.csv o=./outdat/out161.csv r=金額; IN=6 OUT=9; 2014/06/04 01:46:35
+#END# kgnrjoin -n -x R=1,2%e i=./indat/dat10s.csv k=0 m=./indat/dat11s.csv o=./outdat/out161x.csv r=2; IN=6 OUT=9; 2014/06/04 01:46:35
+#END# kgnrjoin -n -nfn R=1,2%e i=./indat/dat10snfn.csv k=0 m=./indat/dat11snfn.csv o=./outdat/out161nfn.csv r=2; IN=6 OUT=9; 2014/06/04 01:46:35
+#END# kgnrjoin -N R=金額F,金額T%e f=平均金額 i=./indat/dat10s.csv k=日付 m=./indat/dat11s.csv o=./outdat/out162.csv r=金額; IN=6 OUT=7; 2014/06/04 01:46:35
+#END# kgnrjoin -N -x R=1,2%e f=3 i=./indat/dat10s.csv k=0 m=./indat/dat11s.csv o=./outdat/out162x.csv r=2; IN=6 OUT=7; 2014/06/04 01:46:35
+#END# kgnrjoin -N -nfn R=1,2%e f=3 i=./indat/dat10snfn.csv k=0 m=./indat/dat11snfn.csv o=./outdat/out162nfn.csv r=2; IN=6 OUT=7; 2014/06/04 01:46:35
+#END# kgnrjoin -N -n R=金額F,金額T%e f=平均金額,金額F i=./indat/dat10s.csv k=日付 m=./indat/dat11s.csv o=./outdat/out163.csv r=金額; IN=6 OUT=9; 2014/06/04 01:46:35
+#END# kgnrjoin -N -n -x R=1,2%e f=3,1 i=./indat/dat10s.csv k=0 m=./indat/dat11s.csv o=./outdat/out163x.csv r=2; IN=6 OUT=9; 2014/06/04 01:46:35
+#END# kgnrjoin -N -n -nfn R=1,2%e f=3,1 i=./indat/dat10snfn.csv k=0 m=./indat/dat11snfn.csv o=./outdat/out163nfn.csv r=2; IN=6 OUT=9; 2014/06/04 01:46:35
+#END# kgnrjoin R=金額F%n,金額T%e f=平均金額,金額F i=./indat/dat10s.csv k=日付 m=./indat/dat11s.csv o=./outdat/out164.csv r=金額%n; IN=6 OUT=2; 2014/06/04 01:46:35
+#END# kgnrjoin -x R=1%n,2%e f=3,1 i=./indat/dat10s.csv k=0 m=./indat/dat11s.csv o=./outdat/out164x.csv r=2%n; IN=6 OUT=2; 2014/06/04 01:46:35
+#END# kgnrjoin -nfn R=1%n,2%e f=3,1 i=./indat/dat10snfn.csv k=0 m=./indat/dat11snfn.csv o=./outdat/out164nfn.csv r=2%n; IN=6 OUT=2; 2014/06/04 01:46:35
+#END# kgnrjoin -n R=金額F%n,金額T%e f=平均金額,金額F,金額T i=./indat/dat10s.csv k=日付 m=./indat/dat11s.csv o=./outdat/out165.csv r=金額%n; IN=6 OUT=6; 2014/06/04 01:46:35
+#END# kgnrjoin -n -x R=1%n,2%e f=3,1,2 i=./indat/dat10s.csv k=0 m=./indat/dat11s.csv o=./outdat/out165x.csv r=2%n; IN=6 OUT=6; 2014/06/04 01:46:35
+#END# kgnrjoin -n -nfn R=1%n,2%e f=3,1,2 i=./indat/dat10snfn.csv k=0 m=./indat/dat11snfn.csv o=./outdat/out165nfn.csv r=2%n; IN=6 OUT=6; 2014/06/04 01:46:35
+#END# kgnrjoin -N R=金額F%n,金額T%e i=./indat/dat10s.csv k=日付 m=./indat/dat11s.csv o=./outdat/out166.csv r=金額%n; IN=6 OUT=3; 2014/06/04 01:46:35
+#END# kgnrjoin -N -x R=1%n,2%e i=./indat/dat10s.csv k=0 m=./indat/dat11s.csv o=./outdat/out166x.csv r=2%n; IN=6 OUT=3; 2014/06/04 01:46:35
+#END# kgnrjoin -N -nfn R=1%n,2%e i=./indat/dat10snfn.csv k=0 m=./indat/dat11snfn.csv o=./outdat/out166nfn.csv r=2%n; IN=6 OUT=3; 2014/06/04 01:46:35
+#END# kgnrjoin -N -n R=金額F%n,金額T%e f=平均金額 i=./indat/dat10s.csv k=日付 m=./indat/dat11s.csv o=./outdat/out167.csv r=金額%n; IN=6 OUT=7; 2014/06/04 01:46:36
+#END# kgnrjoin -N -n -x R=1%n,2%e f=3 i=./indat/dat10s.csv k=0 m=./indat/dat11s.csv o=./outdat/out167x.csv r=2%n; IN=6 OUT=7; 2014/06/04 01:46:36
+#END# kgnrjoin -N -n -nfn R=1%n,2%e f=3 i=./indat/dat10snfn.csv k=0 m=./indat/dat11snfn.csv o=./outdat/out167nfn.csv r=2%n; IN=6 OUT=7; 2014/06/04 01:46:36
+#END# kgnrjoin R=金額F%n,金額T%e f=平均金額 i=./indat/dat10s.csv k=日付 m=./indat/dat11s.csv o=./outdat/out168.csv r=金額; IN=6 OUT=6; 2014/06/04 01:46:36
+#END# kgnrjoin -x R=1%n,2%e f=3 i=./indat/dat10s.csv k=0 m=./indat/dat11s.csv o=./outdat/out168x.csv r=2; IN=6 OUT=6; 2014/06/04 01:46:36
+#END# kgnrjoin -nfn R=1%n,2%e f=3 i=./indat/dat10snfn.csv k=0 m=./indat/dat11snfn.csv o=./outdat/out168nfn.csv r=2; IN=6 OUT=6; 2014/06/04 01:46:36
+#END# kgnrjoin -n R=金額F%n,金額T%e f=平均金額,金額F i=./indat/dat10s.csv k=日付 m=./indat/dat11s.csv o=./outdat/out169.csv r=金額; IN=6 OUT=8; 2014/06/04 01:46:36
+#END# kgnrjoin -n -x R=1%n,2%e f=3,1 i=./indat/dat10s.csv k=0 m=./indat/dat11s.csv o=./outdat/out169x.csv r=2; IN=6 OUT=8; 2014/06/04 01:46:36
+#END# kgnrjoin -n -nfn R=1%n,2%e f=3,1 i=./indat/dat10snfn.csv k=0 m=./indat/dat11snfn.csv o=./outdat/out169nfn.csv r=2; IN=6 OUT=8; 2014/06/04 01:46:36
+#END# kgnrjoin -N R=金額F%n,金額T%e f=平均金額,金額F,金額T i=./indat/dat10s.csv k=日付 m=./indat/dat11s.csv o=./outdat/out170.csv r=金額; IN=6 OUT=6; 2014/06/04 01:46:36
+#END# kgnrjoin -N -x R=1%n,2%e f=3,1,2 i=./indat/dat10s.csv k=0 m=./indat/dat11s.csv o=./outdat/out170x.csv r=2; IN=6 OUT=6; 2014/06/04 01:46:36
+#END# kgnrjoin -N -nfn R=1%n,2%e f=3,1,2 i=./indat/dat10snfn.csv k=0 m=./indat/dat11snfn.csv o=./outdat/out170nfn.csv r=2; IN=6 OUT=6; 2014/06/04 01:46:36
+#END# kgnrjoin -N -n R=金額F%n,金額T%e i=./indat/dat10s.csv k=日付 m=./indat/dat11s.csv o=./outdat/out171.csv r=金額; IN=6 OUT=8; 2014/06/04 01:46:36
+#END# kgnrjoin -N -n -x R=1%n,2%e i=./indat/dat10s.csv k=0 m=./indat/dat11s.csv o=./outdat/out171x.csv r=2; IN=6 OUT=8; 2014/06/04 01:46:36
+#END# kgnrjoin -N -n -nfn R=1%n,2%e i=./indat/dat10snfn.csv k=0 m=./indat/dat11snfn.csv o=./outdat/out171nfn.csv r=2; IN=6 OUT=8; 2014/06/04 01:46:36
+#END# kgnrjoin K=日付1 R=金額F,金額T i=./indat/dat8s.csv k=日付 m=./indat/dat12s.csv o=./outdat/out172.csv r=金額%n; IN=5 OUT=5; 2014/06/04 01:46:36
+#END# kgnrjoin R=金額F,金額T i=./indat/dat13.csv m=./indat/dat14.csv o=./outdat/out173.csv r=金額%n; IN=5 OUT=4; 2014/06/04 01:46:36
+#END# kgnrjoin -N R=金額F%n,金額T%e i=./indat/dat10s.csv k=日付 m=./indat/dat17s.csv o=./outdat/out176.csv r=金額%n; IN=6 OUT=2; 2014/06/04 01:46:36
+#END# kgnrjoin -N R=金額F,金額T f=平均金額 i=./indat/dat18s.csv k=日付 m=./indat/dat19s.csv o=./outdat/out177.csv r=金額; IN=5 OUT=3; 2014/06/04 01:46:36
+#END# kgnrjoin -N R=金額F,金額T f=平均金額 i=./indat/dat20s.csv k=日付 m=./indat/dat21s.csv o=./outdat/out178.csv r=金額; IN=6 OUT=4; 2014/06/04 01:46:36
+#END# kgnrjoin -N R=金額F,金額T f=平均金額 i=./indat/dat18s.csv k=日付 m=./indat/dat21s.csv o=./outdat/out179.csv r=金額; IN=5 OUT=4; 2014/06/04 01:46:36
+#END# kgnrjoin -N R=金額F,金額T f=平均金額 i=./indat/dat20s.csv k=日付 m=./indat/dat19s.csv o=./outdat/out180.csv r=金額; IN=6 OUT=3; 2014/06/04 01:46:36
+#END# kgnrjoin R=金額F,金額T i=./indat/dat0.csv k=日付 m=./indat/dat1.csv o=./outdat/out200.csv r=金額%n; IN=0 OUT=0; 2014/06/04 01:46:36
+#END# kgnrjoin -x R=1,2 i=./indat/dat0.csv k=0 m=./indat/dat1.csv o=./outdat/out200x.csv r=2%n; IN=0 OUT=0; 2014/06/04 01:46:36
+#END# kgnrjoin -nfn R=1,2 i=./indat/dat0nfn.csv k=0 m=./indat/dat1nfn.csv o=./outdat/out200nfn.csv r=2%n; IN=0 OUT=0; 2014/06/04 01:46:36
+#END# kgnrjoin -nfno R=金額F,金額T i=./indat/dat0.csv k=日付 m=./indat/dat1.csv o=./outdat/out200nfno.csv r=金額%n; IN=0 OUT=0; 2014/06/04 01:46:36
+#END# kgnrjoin -n R=金額F,金額T i=./indat/dat0.csv k=日付 m=./indat/dat1.csv o=./outdat/out203.csv r=金額%n; IN=0 OUT=0; 2014/06/04 01:46:36
+#END# kgnrjoin -n -x R=1,2 i=./indat/dat0.csv k=0 m=./indat/dat1.csv o=./outdat/out203x.csv r=2%n; IN=0 OUT=0; 2014/06/04 01:46:36
+#END# kgnrjoin -n -nfn R=1,2 i=./indat/dat0nfn.csv k=0 m=./indat/dat1nfn.csv o=./outdat/out203nfn.csv r=2%n; IN=0 OUT=0; 2014/06/04 01:46:36
+#END# kgnrjoin -N R=金額F,金額T i=./indat/dat2.csv k=日付 m=./indat/dat1.csv o=./outdat/out207.csv r=金額%n; IN=1 OUT=0; 2014/06/04 01:46:36
+#END# kgnrjoin -N -x R=1,2 i=./indat/dat2.csv k=0 m=./indat/dat1.csv o=./outdat/out207x.csv r=2%n; IN=1 OUT=0; 2014/06/04 01:46:36
+#END# kgnrjoin -N -nfn R=1,2 i=./indat/dat2nfn.csv k=0 m=./indat/dat1nfn.csv o=./outdat/out207nfn.csv r=2%n; IN=1 OUT=0; 2014/06/04 01:46:36
+#END# kgnrjoin -N -n R=金額F,金額T i=./indat/dat0.csv k=日付 m=./indat/dat3.csv o=./outdat/out211.csv r=金額%n; IN=0 OUT=2; 2014/06/04 01:46:36
+#END# kgnrjoin -N -n -x R=1,2 i=./indat/dat0.csv k=0 m=./indat/dat3.csv o=./outdat/out211x.csv r=2%n; IN=0 OUT=2; 2014/06/04 01:46:36
+#END# kgnrjoin -N -n -nfn R=1,2 i=./indat/dat0nfn.csv k=0 m=./indat/dat3nfn.csv o=./outdat/out211nfn.csv r=2%n; IN=0 OUT=2; 2014/06/04 01:46:36
+#END# kgnrjoin R=金額F,金額T i=./indat/dat15.csv k=日付 m=./indat/dat16.csv o=./outdat/out374.csv r=金額%n; IN=1 OUT=0; 2014/06/04 01:46:36
+#END# kgnrjoin R=金額F,金額T i=./indat/dat2.csv k=日付 m=./indat/dat3.csv o=./outdat/out244.csv r=金額%n; IN=5 OUT=3; 2014/06/04 01:46:36
+#END# kgnrjoin -x R=1,2 i=./indat/dat2.csv k=0 m=./indat/dat3.csv o=./outdat/out244x.csv r=2%n; IN=5 OUT=3; 2014/06/04 01:46:36
+#END# kgnrjoin -nfn R=1,2 i=./indat/dat2nfn.csv k=0 m=./indat/dat3nfn.csv o=./outdat/out244nfn.csv r=2%n; IN=2 OUT=0; 2014/06/04 01:46:36
+#END# kgnrjoin -q R=金額F,金額T i=./indat/dat2.csv k=日付 m=./indat/dat3.csv o=./outdat/out244q.csv r=金額%n; IN=2 OUT=0; 2014/06/04 01:46:36
+#END# kgnrjoin -q -x R=1,2 i=./indat/dat2.csv k=0 m=./indat/dat3.csv o=./outdat/out244qx.csv r=2%n; IN=2 OUT=0; 2014/06/04 01:46:36
+#END# kgnrjoin -n R=金額F,金額T f=平均金額 i=./indat/dat2.csv k=日付 m=./indat/dat3.csv o=./outdat/out245.csv r=金額%n; IN=5 OUT=6; 2014/06/04 01:46:36
+#END# kgnrjoin -n -x R=1,2 f=3 i=./indat/dat2.csv k=0 m=./indat/dat3.csv o=./outdat/out245x.csv r=2%n; IN=5 OUT=6; 2014/06/04 01:46:36
+#END# kgnrjoin -n -nfn R=1,2 f=3 i=./indat/dat2nfn.csv k=0 m=./indat/dat3nfn.csv o=./outdat/out245nfn.csv r=2%n; IN=5 OUT=5; 2014/06/04 01:46:36
+#END# kgnrjoin -N R=金額F,金額T f=平均金額 i=./indat/dat2.csv k=日付 m=./indat/dat3.csv o=./outdat/out250.csv r=金額; IN=5 OUT=2; 2014/06/04 01:46:37
+#END# kgnrjoin -N -x R=1,2 f=3 i=./indat/dat2.csv k=0 m=./indat/dat3.csv o=./outdat/out250x.csv r=2; IN=5 OUT=2; 2014/06/04 01:46:37
+#END# kgnrjoin -N -nfn R=1,2 f=3 i=./indat/dat2nfn.csv k=0 m=./indat/dat3nfn.csv o=./outdat/out250nfn.csv r=2; IN=2 OUT=2; 2014/06/04 01:46:37
+#END# kgnrjoin -N -n R=金額F%n,金額T f=平均金額 i=./indat/dat2.csv k=日付 m=./indat/dat3.csv o=./outdat/out255.csv r=金額%n; IN=5 OUT=6; 2014/06/04 01:46:37
+#END# kgnrjoin -N -n -x R=1%n,2 f=3 i=./indat/dat2.csv k=0 m=./indat/dat3.csv o=./outdat/out255x.csv r=2%n; IN=5 OUT=6; 2014/06/04 01:46:37
+#END# kgnrjoin -N -n -nfn R=1%n,2 f=3 i=./indat/dat2nfn.csv k=0 m=./indat/dat3nfn.csv o=./outdat/out255nfn.csv r=2%n; IN=5 OUT=7; 2014/06/04 01:46:37
+#END# kgnrjoin R=金額F%n,金額T f=平均金額 i=./indat/dat2.csv k=日付 m=./indat/dat3.csv o=./outdat/out256.csv r=金額; IN=5 OUT=0; 2014/06/04 01:46:37
+#END# kgnrjoin -x R=1%n,2 f=3 i=./indat/dat2.csv k=0 m=./indat/dat3.csv o=./outdat/out256x.csv r=2; IN=5 OUT=0; 2014/06/04 01:46:37
+#END# kgnrjoin -nfn R=1%n,2 f=3 i=./indat/dat2nfn.csv k=0 m=./indat/dat3nfn.csv o=./outdat/out256nfn.csv r=2; IN=2 OUT=0; 2014/06/04 01:46:37
+#END# kgnrjoin -n R=金額F,金額T%e f=平均金額 i=./indat/dat2.csv k=日付 m=./indat/dat3.csv o=./outdat/out261.csv r=金額%n; IN=5 OUT=7; 2014/06/04 01:46:37
+#END# kgnrjoin -n -x R=1,2%e f=3 i=./indat/dat2.csv k=0 m=./indat/dat3.csv o=./outdat/out261x.csv r=2%n; IN=5 OUT=7; 2014/06/04 01:46:37
+#END# kgnrjoin -n -nfn R=1,2%e f=3 i=./indat/dat2nfn.csv k=0 m=./indat/dat3nfn.csv o=./outdat/out261nfn.csv r=2%n; IN=5 OUT=5; 2014/06/04 01:46:37
+#END# kgnrjoin -N R=金額F,金額T%e f=平均金額 i=./indat/dat2.csv k=日付 m=./indat/dat3.csv o=./outdat/out266.csv r=金額; IN=5 OUT=3; 2014/06/04 01:46:37
+#END# kgnrjoin -N -x R=1,2%e f=3 i=./indat/dat2.csv k=0 m=./indat/dat3.csv o=./outdat/out266x.csv r=2; IN=5 OUT=3; 2014/06/04 01:46:37
+#END# kgnrjoin -N -nfn R=1,2%e f=3 i=./indat/dat2nfn.csv k=0 m=./indat/dat3nfn.csv o=./outdat/out266nfn.csv r=2; IN=2 OUT=2; 2014/06/04 01:46:37
+#END# kgnrjoin -N -n R=金額F%n,金額T%e f=平均金額 i=./indat/dat2.csv k=日付 m=./indat/dat3.csv o=./outdat/out271.csv r=金額%n; IN=5 OUT=6; 2014/06/04 01:46:37
+#END# kgnrjoin -N -n -x R=1%n,2%e f=3 i=./indat/dat2.csv k=0 m=./indat/dat3.csv o=./outdat/out271x.csv r=2%n; IN=5 OUT=6; 2014/06/04 01:46:37
+#END# kgnrjoin -N -n -nfn R=1%n,2%e f=3 i=./indat/dat2nfn.csv k=0 m=./indat/dat3nfn.csv o=./outdat/out271nfn.csv r=2%n; IN=5 OUT=7; 2014/06/04 01:46:37
+#END# kgnrjoin R=金額F%n,金額T%e f=平均金額 i=./indat/dat2.csv k=日付 m=./indat/dat3.csv o=./outdat/out272.csv r=金額; IN=5 OUT=1; 2014/06/04 01:46:37
+#END# kgnrjoin -x R=1%n,2%e f=3 i=./indat/dat2.csv k=0 m=./indat/dat3.csv o=./outdat/out272x.csv r=2; IN=5 OUT=1; 2014/06/04 01:46:37
+#END# kgnrjoin -nfn R=1%n,2%e f=3 i=./indat/dat2nfn.csv k=0 m=./indat/dat3nfn.csv o=./outdat/out272nfn.csv r=2; IN=2 OUT=0; 2014/06/04 01:46:37
+#END# kgnrjoin -n R=金額F,金額T f=平均金額 i=./indat/dat6.csv k=顧客,日付 m=./indat/dat7.csv o=./outdat/out277.csv r=金額%n; IN=11 OUT=12; 2014/06/04 01:46:37
+#END# kgnrjoin -n -x R=2,3 f=4 i=./indat/dat6.csv k=0,1 m=./indat/dat7.csv o=./outdat/out277x.csv r=3%n; IN=11 OUT=12; 2014/06/04 01:46:37
+#END# kgnrjoin -n -nfn R=2,3 f=4 i=./indat/dat6nfn.csv k=0,1 m=./indat/dat7nfn.csv o=./outdat/out277nfn.csv r=3%n; IN=11 OUT=11; 2014/06/04 01:46:37
+#END# kgnrjoin -N R=金額F,金額T f=平均金額 i=./indat/dat6.csv k=顧客,日付 m=./indat/dat7.csv o=./outdat/out282.csv r=金額; IN=11 OUT=11; 2014/06/04 01:46:37
+#END# kgnrjoin -N -x R=2,3 f=4 i=./indat/dat6.csv k=0,1 m=./indat/dat7.csv o=./outdat/out282x.csv r=3; IN=11 OUT=11; 2014/06/04 01:46:38
+#END# kgnrjoin -N -nfn R=2,3 f=4 i=./indat/dat6nfn.csv k=0,1 m=./indat/dat7nfn.csv o=./outdat/out282nfn.csv r=3; IN=5 OUT=6; 2014/06/04 01:46:38
+#END# kgnrjoin -N -n R=金額F%n,金額T f=平均金額 i=./indat/dat6.csv k=顧客,日付 m=./indat/dat7.csv o=./outdat/out287.csv r=金額%n; IN=11 OUT=12; 2014/06/04 01:46:38
+#END# kgnrjoin -N -n -x R=2%n,3 f=4 i=./indat/dat6.csv k=0,1 m=./indat/dat7.csv o=./outdat/out287x.csv r=3%n; IN=11 OUT=12; 2014/06/04 01:46:38
+#END# kgnrjoin -N -n -nfn R=2%n,3 f=4 i=./indat/dat6nfn.csv k=0,1 m=./indat/dat7nfn.csv o=./outdat/out287nfn.csv r=3%n; IN=11 OUT=14; 2014/06/04 01:46:38
+#END# kgnrjoin R=金額F,金額T%e i=./indat/dat6.csv k=顧客,日付 m=./indat/dat7.csv o=./outdat/out292.csv r=金額%n; IN=11 OUT=9; 2014/06/04 01:46:38
+#END# kgnrjoin -x R=2,3%e i=./indat/dat6.csv k=0,1 m=./indat/dat7.csv o=./outdat/out292x.csv r=3%n; IN=11 OUT=9; 2014/06/04 01:46:38
+#END# kgnrjoin -nfn R=2,3%e i=./indat/dat6nfn.csv k=0,1 m=./indat/dat7nfn.csv o=./outdat/out292nfn.csv r=3%n; IN=5 OUT=1; 2014/06/04 01:46:38
+#END# kgnrjoin -n R=金額F,金額T%e i=./indat/dat6.csv k=顧客,日付 m=./indat/dat7.csv o=./outdat/out297.csv r=金額; IN=11 OUT=14; 2014/06/04 01:46:38
+#END# kgnrjoin -n -x R=2,3%e i=./indat/dat6.csv k=0,1 m=./indat/dat7.csv o=./outdat/out297x.csv r=3; IN=11 OUT=14; 2014/06/04 01:46:38
+#END# kgnrjoin -n -nfn R=2,3%e i=./indat/dat6nfn.csv k=0,1 m=./indat/dat7nfn.csv o=./outdat/out297nfn.csv r=3; IN=11 OUT=11; 2014/06/04 01:46:38
+#END# kgnrjoin -N R=金額F%n,金額T%e i=./indat/dat6.csv k=顧客,日付 m=./indat/dat7.csv o=./outdat/out302.csv r=金額%n; IN=11 OUT=6; 2014/06/04 01:46:38
+#END# kgnrjoin -N -x R=2%n,3%e i=./indat/dat6.csv k=0,1 m=./indat/dat7.csv o=./outdat/out302x.csv r=3%n; IN=11 OUT=6; 2014/06/04 01:46:38
+#END# kgnrjoin -N -nfn R=2%n,3%e i=./indat/dat6nfn.csv k=0,1 m=./indat/dat7nfn.csv o=./outdat/out302nfn.csv r=3%n; IN=5 OUT=4; 2014/06/04 01:46:38
+#END# kgnrjoin -N -n R=金額F%n,金額T%e i=./indat/dat6.csv k=顧客,日付 m=./indat/dat7.csv o=./outdat/out307.csv r=金額; IN=11 OUT=14; 2014/06/04 01:46:38
+#END# kgnrjoin -N -n -x R=2%n,3%e i=./indat/dat6.csv k=0,1 m=./indat/dat7.csv o=./outdat/out307x.csv r=3; IN=11 OUT=14; 2014/06/04 01:46:38
+#END# kgnrjoin -N -n -nfn R=2%n,3%e i=./indat/dat6nfn.csv k=0,1 m=./indat/dat7nfn.csv o=./outdat/out307nfn.csv r=3; IN=11 OUT=13; 2014/06/04 01:46:38
+#END# kgnrjoin R=金額F,金額T i=./indat/dat8.csv k=日付 m=./indat/dat9.csv o=./outdat/out308.csv r=金額%n; IN=5 OUT=5; 2014/06/04 01:46:38
+#END# kgnrjoin -x R=1,2 i=./indat/dat8.csv k=0 m=./indat/dat9.csv o=./outdat/out308x.csv r=2%n; IN=5 OUT=5; 2014/06/04 01:46:38
+#END# kgnrjoin -nfn R=1,2 i=./indat/dat8nfn.csv k=0 m=./indat/dat9nfn.csv o=./outdat/out308nfn.csv r=2%n; IN=2 OUT=0; 2014/06/04 01:46:38
+#END# kgnrjoin -n R=金額F,金額T i=./indat/dat8.csv k=日付 m=./indat/dat9.csv o=./outdat/out313.csv r=金額; IN=5 OUT=6; 2014/06/04 01:46:38
+#END# kgnrjoin -n -x R=1,2 i=./indat/dat8.csv k=0 m=./indat/dat9.csv o=./outdat/out313x.csv r=2; IN=5 OUT=6; 2014/06/04 01:46:38
+#END# kgnrjoin -n -nfn R=1,2 i=./indat/dat8nfn.csv k=0 m=./indat/dat9nfn.csv o=./outdat/out313nfn.csv r=2; IN=5 OUT=5; 2014/06/04 01:46:38
+#END# kgnrjoin -N R=金額F%n,金額T i=./indat/dat8.csv k=日付 m=./indat/dat9.csv o=./outdat/out318.csv r=金額%n; IN=5 OUT=5; 2014/06/04 01:46:38
+#END# kgnrjoin -N -x R=1%n,2 i=./indat/dat8.csv k=0 m=./indat/dat9.csv o=./outdat/out318x.csv r=2%n; IN=5 OUT=5; 2014/06/04 01:46:38
+#END# kgnrjoin -N -nfn R=1%n,2 i=./indat/dat8nfn.csv k=0 m=./indat/dat9nfn.csv o=./outdat/out318nfn.csv r=2%n; IN=2 OUT=3; 2014/06/04 01:46:38
+#END# kgnrjoin -N -n R=金額F%n,金額T i=./indat/dat8.csv k=日付 m=./indat/dat9.csv o=./outdat/out323.csv r=金額; IN=5 OUT=7; 2014/06/04 01:46:39
+#END# kgnrjoin -N -n -x R=1%n,2 i=./indat/dat8.csv k=0 m=./indat/dat9.csv o=./outdat/out323x.csv r=2; IN=5 OUT=7; 2014/06/04 01:46:39
+#END# kgnrjoin -N -n -nfn R=1%n,2 i=./indat/dat8nfn.csv k=0 m=./indat/dat9nfn.csv o=./outdat/out323nfn.csv r=2; IN=5 OUT=8; 2014/06/04 01:46:39
+#END# kgnrjoin R=金額F,金額T%e f=平均金額,金額F,金額T i=./indat/dat8.csv k=日付 m=./indat/dat9.csv o=./outdat/out328.csv r=金額; IN=5 OUT=3; 2014/06/04 01:46:39
+#END# kgnrjoin -x R=1,2%e f=3,1,2 i=./indat/dat8.csv k=0 m=./indat/dat9.csv o=./outdat/out328x.csv r=2; IN=5 OUT=3; 2014/06/04 01:46:39
+#END# kgnrjoin -nfn R=1,2%e f=3,1,2 i=./indat/dat8nfn.csv k=0 m=./indat/dat9nfn.csv o=./outdat/out328nfn.csv r=2; IN=2 OUT=0; 2014/06/04 01:46:39
+#END# kgnrjoin -n R=金額F%n,金額T%e f=平均金額,金額F,金額T i=./indat/dat8.csv k=日付 m=./indat/dat9.csv o=./outdat/out333.csv r=金額%n; IN=5 OUT=8; 2014/06/04 01:46:39
+#END# kgnrjoin -n -x R=1%n,2%e f=3,1,2 i=./indat/dat8.csv k=0 m=./indat/dat9.csv o=./outdat/out333x.csv r=2%n; IN=5 OUT=8; 2014/06/04 01:46:39
+#END# kgnrjoin -n -nfn R=1%n,2%e f=3,1,2 i=./indat/dat8nfn.csv k=0 m=./indat/dat9nfn.csv o=./outdat/out333nfn.csv r=2%n; IN=5 OUT=5; 2014/06/04 01:46:39
+#END# kgnrjoin -N R=金額F%n,金額T%e f=平均金額,金額F,金額T i=./indat/dat8.csv k=日付 m=./indat/dat9.csv o=./outdat/out338.csv r=金額; IN=5 OUT=4; 2014/06/04 01:46:39
+#END# kgnrjoin -N -x R=1%n,2%e f=3,1,2 i=./indat/dat8.csv k=0 m=./indat/dat9.csv o=./outdat/out338x.csv r=2; IN=5 OUT=4; 2014/06/04 01:46:39
+#END# kgnrjoin -N -nfn R=1%n,2%e f=3,1,2 i=./indat/dat8nfn.csv k=0 m=./indat/dat9nfn.csv o=./outdat/out338nfn.csv r=2; IN=2 OUT=3; 2014/06/04 01:46:39
+#END# kgnrjoin -N -n R=金額F,金額T f=平均金額,金額F,金額T i=./indat/dat10.csv k=日付 m=./indat/dat11.csv o=./outdat/out343.csv r=金額%n; IN=6 OUT=7; 2014/06/04 01:46:39
+#END# kgnrjoin -N -n -x R=1,2 f=3,1,2 i=./indat/dat10.csv k=0 m=./indat/dat11.csv o=./outdat/out343x.csv r=2%n; IN=6 OUT=7; 2014/06/04 01:46:39
+#END# kgnrjoin -N -n -nfn R=1,2 f=3,1,2 i=./indat/dat10nfn.csv k=0 m=./indat/dat11nfn.csv o=./outdat/out343nfn.csv r=2%n; IN=6 OUT=7; 2014/06/04 01:46:39
+#END# kgnrjoin R=金額F%n,金額T f=平均金額,金額F i=./indat/dat10.csv k=日付 m=./indat/dat11.csv o=./outdat/out348.csv r=金額%n; IN=6 OUT=2; 2014/06/04 01:46:39
+#END# kgnrjoin -x R=1%n,2 f=3,1 i=./indat/dat10.csv k=0 m=./indat/dat11.csv o=./outdat/out348x.csv r=2%n; IN=6 OUT=2; 2014/06/04 01:46:39
+#END# kgnrjoin -nfn R=1%n,2 f=3,1 i=./indat/dat10nfn.csv k=0 m=./indat/dat11nfn.csv o=./outdat/out348nfn.csv r=2%n; IN=2 OUT=0; 2014/06/04 01:46:39
+#END# kgnrjoin -n R=金額F%n,金額T f=平均金額,金額F i=./indat/dat10.csv k=日付 m=./indat/dat11.csv o=./outdat/out353.csv r=金額; IN=6 OUT=8; 2014/06/04 01:46:39
+#END# kgnrjoin -n -x R=1%n,2 f=3,1 i=./indat/dat10.csv k=0 m=./indat/dat11.csv o=./outdat/out353x.csv r=2; IN=6 OUT=8; 2014/06/04 01:46:39
+#END# kgnrjoin -n -nfn R=1%n,2 f=3,1 i=./indat/dat10nfn.csv k=0 m=./indat/dat11nfn.csv o=./outdat/out353nfn.csv r=2; IN=6 OUT=6; 2014/06/04 01:46:39
+#END# kgnrjoin -N R=金額F,金額T%e f=平均金額,金額F i=./indat/dat10.csv k=日付 m=./indat/dat11.csv o=./outdat/out358.csv r=金額%n; IN=6 OUT=4; 2014/06/04 01:46:39
+#END# kgnrjoin -N -x R=1,2%e f=3,1 i=./indat/dat10.csv k=0 m=./indat/dat11.csv o=./outdat/out358x.csv r=2%n; IN=6 OUT=4; 2014/06/04 01:46:39
+#END# kgnrjoin -N -nfn R=1,2%e f=3,1 i=./indat/dat10nfn.csv k=0 m=./indat/dat11nfn.csv o=./outdat/out358nfn.csv r=2%n; IN=2 OUT=2; 2014/06/04 01:46:39
+#END# kgnrjoin -N -n R=金額F,金額T%e f=平均金額,金額F i=./indat/dat10.csv k=日付 m=./indat/dat11.csv o=./outdat/out363.csv r=金額; IN=6 OUT=9; 2014/06/04 01:46:39
+#END# kgnrjoin -N -n -x R=1,2%e f=3,1 i=./indat/dat10.csv k=0 m=./indat/dat11.csv o=./outdat/out363x.csv r=2; IN=6 OUT=9; 2014/06/04 01:46:39
+#END# kgnrjoin -N -n -nfn R=1,2%e f=3,1 i=./indat/dat10nfn.csv k=0 m=./indat/dat11nfn.csv o=./outdat/out363nfn.csv r=2; IN=6 OUT=7; 2014/06/04 01:46:40
+#END# kgnrjoin R=金額F%n,金額T%e f=平均金額 i=./indat/dat10.csv k=日付 m=./indat/dat11.csv o=./outdat/out368.csv r=金額; IN=6 OUT=6; 2014/06/04 01:46:40
+#END# kgnrjoin -x R=1%n,2%e f=3 i=./indat/dat10.csv k=0 m=./indat/dat11.csv o=./outdat/out368x.csv r=2; IN=6 OUT=6; 2014/06/04 01:46:40
+#END# kgnrjoin -nfn R=1%n,2%e f=3 i=./indat/dat10nfn.csv k=0 m=./indat/dat11nfn.csv o=./outdat/out368nfn.csv r=2; IN=2 OUT=1; 2014/06/04 01:46:40
+#END# kgnrjoin K=日付1 R=金額F,金額T i=./indat/dat8.csv k=日付 m=./indat/dat12.csv o=./outdat/out372.csv r=金額%n; IN=5 OUT=5; 2014/06/04 01:46:40
+#END# kgnrjoin -N R=金額F%n,金額T%e i=./indat/dat10.csv k=日付 m=./indat/dat17.csv o=./outdat/out376.csv r=金額%n; IN=6 OUT=2; 2014/06/04 01:46:40
+#END# kgnrjoin -N R=金額F,金額T f=平均金額 i=./indat/dat18.csv k=日付 m=./indat/dat19.csv o=./outdat/out377.csv r=金額; IN=5 OUT=3; 2014/06/04 01:46:40
+#END# kgnrjoin -N R=金額F,金額T f=平均金額 i=./indat/dat20.csv k=日付 m=./indat/dat21.csv o=./outdat/out378.csv r=金額; IN=6 OUT=4; 2014/06/04 01:46:40
+#END# kgnrjoin -N R=金額F,金額T f=平均金額 i=./indat/dat18.csv k=日付 m=./indat/dat21.csv o=./outdat/out379.csv r=金額; IN=5 OUT=4; 2014/06/04 01:46:40
+#END# kgnrjoin -N R=金額F,金額T f=平均金額 i=./indat/dat20.csv k=日付 m=./indat/dat19.csv o=./outdat/out380.csv r=金額; IN=6 OUT=3; 2014/06/04 01:46:40

@@ -1,0 +1,22 @@
+#END# kgfldname f=顧客:cust,10月:Oct. i=./indat/dat0.csv o=./outdat/out0.csv; IN=0 OUT=0; 2014/06/23 13:07:02
+#END# kgfldname -x f=0:cust,2:Oct. i=./indat/dat0.csv o=./outdat/out0x.csv; IN=0 OUT=0; 2014/06/23 13:07:02
+#END# kgfldname f=顧客:cust,10月:Oct. i=./indat/dat1.csv o=./outdat/out1.csv; IN=3 OUT=3; 2014/06/23 13:07:02
+#END# kgfldname -x f=0:cust,2:Oct. i=./indat/dat1.csv o=./outdat/out1x.csv; IN=3 OUT=3; 2014/06/23 13:07:02
+#END# kgfldname -q f=顧客:cust,10月:Oct. i=./indat/dat1.csv o=./outdat/out1q.csv; IN=3 OUT=3; 2014/06/23 13:07:02
+#END# kgfldname -q -x f=0:cust,2:Oct. i=./indat/dat1.csv o=./outdat/out1qx.csv; IN=3 OUT=3; 2014/06/23 13:07:02
+#END# kgfldname i=./indat/dat1.csv n=x,y,z o=./outdat/out2.csv; IN=3 OUT=3; 2014/06/23 13:07:02
+#END# kgfldname -x i=./indat/dat1.csv n=x,y,z o=./outdat/out2x.csv; IN=3 OUT=3; 2014/06/23 13:07:02
+#END# kgfldname -nfni i=./indat/dat1nfn.csv n=x,y,z o=./outdat/out2nfn.csv; IN=3 OUT=3; 2014/06/23 13:07:02
+#END# kgfldname -q i=./indat/dat1.csv n=x,y,z o=./outdat/out2q.csv; IN=3 OUT=3; 2014/06/23 13:07:02
+#END# kgfldname -nfno i=./indat/dat1.csv o=./outdat/out3.csv; IN=3 OUT=3; 2014/06/23 13:07:02
+#END# kgfldname -nfno -x i=./indat/dat1.csv o=./outdat/out3x.csv; IN=3 OUT=3; 2014/06/23 13:07:02
+#END# kgfldname -nfni -nfno i=./indat/dat1nfn.csv o=./outdat/out3nfn.csv; IN=3 OUT=3; 2014/06/23 13:07:02
+#END# kgfldname -nfn i=./indat/dat1nfn.csv n=x,y,z o=./outdat/out5nfn.csv; IN=3 OUT=3; 2014/06/23 13:07:02
+#END# kgfldname f=顧客:cust,10月:Oct. i=./indat/dat1s.csv o=./outdat/out6.csv; IN=3 OUT=3; 2014/06/23 13:07:02
+#END# kgfldname -x f=0:cust,2:Oct. i=./indat/dat1s.csv o=./outdat/out6x.csv; IN=3 OUT=3; 2014/06/23 13:07:02
+#END# kgfldname -q f=顧客:cust,10月:Oct. i=./indat/dat1s.csv o=./outdat/out6q.csv; IN=3 OUT=3; 2014/06/23 13:07:02
+#END# kgfldname -q -x f=0:cust,2:Oct. i=./indat/dat1s.csv o=./outdat/out6qx.csv; IN=3 OUT=3; 2014/06/23 13:07:02
+#END# kgfldname i=./indat/dat1s.csv n=x,y,z o=./outdat/out7.csv; IN=3 OUT=3; 2014/06/23 13:07:02
+#END# kgfldname -x i=./indat/dat1s.csv n=x,y,z o=./outdat/out7x.csv; IN=3 OUT=3; 2014/06/23 13:07:02
+#END# kgfldname -nfni i=./indat/dat1snfn.csv n=x,y,z o=./outdat/out7nfn.csv; IN=3 OUT=3; 2014/06/23 13:07:02
+#END# kgfldname -q i=./indat/dat1s.csv n=x,y,z o=./outdat/out7q.csv; IN=3 OUT=3; 2014/06/23 13:07:02

@@ -1,0 +1,89 @@
+#END# kgvcat a=items i=./indat/dat0.csv o=./outdat/out1.csv vf=items*; IN=0 OUT=0; 2014/06/16 14:03:57
+#END# kgvcat -x a=items i=./indat/dat0.csv o=./outdat/out1x.csv vf=0-3; IN=0 OUT=0; 2014/06/16 14:03:57
+#END# kgvcat -nfn a=items i=./indat/dat0nfn.csv o=./outdat/out1nfn.csv vf=0-3; IN=0 OUT=0; 2014/06/16 14:03:57
+#END# kgvcat a=new i=./indat/dat0.csv o=./outdat/out2.csv vf=items*; IN=0 OUT=0; 2014/06/16 14:03:57
+#END# kgvcat -x a=new i=./indat/dat0.csv o=./outdat/out2x.csv vf=0-3; IN=0 OUT=0; 2014/06/16 14:03:57
+#END# kgvcat -nfn a=new i=./indat/dat0nfn.csv o=./outdat/out2nfn.csv vf=0-3; IN=0 OUT=0; 2014/06/16 14:03:57
+#END# kgvcat -A a=items i=./indat/dat0.csv o=./outdat/out3.csv vf=items*; IN=0 OUT=0; 2014/06/16 14:03:57
+#END# kgvcat -A -x a=items i=./indat/dat0.csv o=./outdat/out3x.csv vf=0-3; IN=0 OUT=0; 2014/06/16 14:03:57
+#END# kgvcat -A -nfn a=items i=./indat/dat0nfn.csv o=./outdat/out3nfn.csv vf=0-3; IN=0 OUT=0; 2014/06/16 14:03:57
+#END# kgvcat -A a=new i=./indat/dat0.csv o=./outdat/out4.csv vf=items*; IN=0 OUT=0; 2014/06/16 14:03:57
+#END# kgvcat -A -x a=new i=./indat/dat0.csv o=./outdat/out4x.csv vf=0-3; IN=0 OUT=0; 2014/06/16 14:03:57
+#END# kgvcat -A -nfn a=new i=./indat/dat0nfn.csv o=./outdat/out4nfn.csv vf=0-3; IN=0 OUT=0; 2014/06/16 14:03:57
+#END# kgvcat a=items i=./indat/dat0.csv o=./outdat/out5.csv vf=items2,items3; IN=0 OUT=0; 2014/06/16 14:03:57
+#END# kgvcat -x a=items i=./indat/dat0.csv o=./outdat/out5x.csv vf=1,2; IN=0 OUT=0; 2014/06/16 14:03:57
+#END# kgvcat -nfn a=items i=./indat/dat0nfn.csv o=./outdat/out5nfn.csv vf=1,2; IN=0 OUT=0; 2014/06/16 14:03:57
+#END# kgvcat a=new i=./indat/dat0.csv o=./outdat/out6.csv vf=items2,items3; IN=0 OUT=0; 2014/06/16 14:03:57
+#END# kgvcat -x a=new i=./indat/dat0.csv o=./outdat/out6x.csv vf=1,2; IN=0 OUT=0; 2014/06/16 14:03:57
+#END# kgvcat -nfn a=new i=./indat/dat0nfn.csv o=./outdat/out6nfn.csv vf=1,2; IN=0 OUT=0; 2014/06/16 14:03:57
+#END# kgvcat -A a=items i=./indat/dat0.csv o=./outdat/out7.csv vf=items2,items3; IN=0 OUT=0; 2014/06/16 14:03:57
+#END# kgvcat -A -x a=items i=./indat/dat0.csv o=./outdat/out7x.csv vf=1,2; IN=0 OUT=0; 2014/06/16 14:03:57
+#END# kgvcat -A -nfn a=items i=./indat/dat0nfn.csv o=./outdat/out7nfn.csv vf=1,2; IN=0 OUT=0; 2014/06/16 14:03:57
+#END# kgvcat -A a=new i=./indat/dat0.csv o=./outdat/out8.csv vf=items2,items3; IN=0 OUT=0; 2014/06/16 14:03:57
+#END# kgvcat -A -x a=new i=./indat/dat0.csv o=./outdat/out8x.csv vf=1,2; IN=0 OUT=0; 2014/06/16 14:03:57
+#END# kgvcat -A -nfn a=new i=./indat/dat0nfn.csv o=./outdat/out8nfn.csv vf=1,2; IN=0 OUT=0; 2014/06/16 14:03:57
+#END# kgvcat a=items i=./indat/dat1.csv o=./outdat/out9.csv vf=items*; IN=3 OUT=3; 2014/06/16 14:03:57
+#END# kgvcat -x a=items i=./indat/dat1.csv o=./outdat/out9x.csv vf=0-3; IN=3 OUT=3; 2014/06/16 14:03:57
+#END# kgvcat -nfn a=items i=./indat/dat1nfn.csv o=./outdat/out9nfn.csv vf=0-3; IN=3 OUT=3; 2014/06/16 14:03:57
+#END# kgvcat -nfno a=items i=./indat/dat1.csv o=./outdat/out9nfno.csv vf=items*; IN=3 OUT=3; 2014/06/16 14:03:57
+#END# kgvcat a=new i=./indat/dat1.csv o=./outdat/out10.csv vf=items*; IN=3 OUT=3; 2014/06/16 14:03:58
+#END# kgvcat -x a=new i=./indat/dat1.csv o=./outdat/out10x.csv vf=0-3; IN=3 OUT=3; 2014/06/16 14:03:58
+#END# kgvcat -nfn a=new i=./indat/dat1nfn.csv o=./outdat/out10nfn.csv vf=0-3; IN=3 OUT=3; 2014/06/16 14:03:58
+#END# kgvcat -A a=items i=./indat/dat1.csv o=./outdat/out11.csv vf=items*; IN=3 OUT=3; 2014/06/16 14:03:58
+#END# kgvcat -A -x a=items i=./indat/dat1.csv o=./outdat/out11x.csv vf=0-3; IN=3 OUT=3; 2014/06/16 14:03:58
+#END# kgvcat -A -nfn a=items i=./indat/dat1nfn.csv o=./outdat/out11nfn.csv vf=0-3; IN=3 OUT=3; 2014/06/16 14:03:58
+#END# kgvcat -A a=new i=./indat/dat1.csv o=./outdat/out12.csv vf=items*; IN=3 OUT=3; 2014/06/16 14:03:58
+#END# kgvcat -A -x a=new i=./indat/dat1.csv o=./outdat/out12x.csv vf=0-3; IN=3 OUT=3; 2014/06/16 14:03:58
+#END# kgvcat -A -nfn a=new i=./indat/dat1nfn.csv o=./outdat/out12nfn.csv vf=0-3; IN=3 OUT=3; 2014/06/16 14:03:58
+#END# kgvcat a=items i=./indat/dat1.csv o=./outdat/out13.csv vf=items2,items3; IN=3 OUT=3; 2014/06/16 14:03:58
+#END# kgvcat -x a=items i=./indat/dat1.csv o=./outdat/out13x.csv vf=1,2; IN=3 OUT=3; 2014/06/16 14:03:58
+#END# kgvcat -nfn a=items i=./indat/dat1nfn.csv o=./outdat/out13nfn.csv vf=1,2; IN=3 OUT=3; 2014/06/16 14:03:58
+#END# kgvcat a=new i=./indat/dat1.csv o=./outdat/out14.csv vf=items2,items3; IN=3 OUT=3; 2014/06/16 14:03:58
+#END# kgvcat -x a=new i=./indat/dat1.csv o=./outdat/out14x.csv vf=1,2; IN=3 OUT=3; 2014/06/16 14:03:58
+#END# kgvcat -nfn a=new i=./indat/dat1nfn.csv o=./outdat/out14nfn.csv vf=1,2; IN=3 OUT=3; 2014/06/16 14:03:58
+#END# kgvcat -A a=items i=./indat/dat1.csv o=./outdat/out15.csv vf=items2,items3; IN=3 OUT=3; 2014/06/16 14:03:58
+#END# kgvcat -A -x a=items i=./indat/dat1.csv o=./outdat/out15x.csv vf=1,2; IN=3 OUT=3; 2014/06/16 14:03:58
+#END# kgvcat -A -nfn a=items i=./indat/dat1nfn.csv o=./outdat/out15nfn.csv vf=1,2; IN=3 OUT=3; 2014/06/16 14:03:58
+#END# kgvcat -A a=new i=./indat/dat1.csv o=./outdat/out16.csv vf=items2,items3; IN=3 OUT=3; 2014/06/16 14:03:58
+#END# kgvcat -A -x a=new i=./indat/dat1.csv o=./outdat/out16x.csv vf=1,2; IN=3 OUT=3; 2014/06/16 14:03:58
+#END# kgvcat -A -nfn a=new i=./indat/dat1nfn.csv o=./outdat/out16nfn.csv vf=1,2; IN=3 OUT=3; 2014/06/16 14:03:58
+#END# kgvcat a=items delim=/ i=./indat/dat1.csv o=./outdat/out25.csv vf=items*; IN=3 OUT=3; 2014/06/16 14:03:58
+#END# kgvcat a=items delim=, i=./indat/dat1.csv o=./outdat/out26.csv vf=items*; IN=3 OUT=3; 2014/06/16 14:03:58
+#END# kgvcat a=items delim=/ i=./indat/dat1.csv o=./outdat/out27.csv vf=items*; IN=3 OUT=3; 2014/06/16 14:03:58
+#END# kgvcat a=items i=./indat/dat2.csv o=./outdat/out17.csv vf=items*; IN=3 OUT=3; 2014/06/16 14:03:58
+#END# kgvcat -x a=items i=./indat/dat2.csv o=./outdat/out17x.csv vf=0-3; IN=3 OUT=3; 2014/06/16 14:03:58
+#END# kgvcat -nfn a=items i=./indat/dat2nfn.csv o=./outdat/out17nfn.csv vf=0-3; IN=3 OUT=3; 2014/06/16 14:03:58
+#END# kgvcat a=new i=./indat/dat2.csv o=./outdat/out18.csv vf=items*; IN=3 OUT=3; 2014/06/16 14:03:58
+#END# kgvcat -x a=new i=./indat/dat2.csv o=./outdat/out18x.csv vf=0-3; IN=3 OUT=3; 2014/06/16 14:03:58
+#END# kgvcat -nfn a=new i=./indat/dat2nfn.csv o=./outdat/out18nfn.csv vf=0-3; IN=3 OUT=3; 2014/06/16 14:03:58
+#END# kgvcat -A a=items i=./indat/dat2.csv o=./outdat/out19.csv vf=items*; IN=3 OUT=3; 2014/06/16 14:03:58
+#END# kgvcat -A -x a=items i=./indat/dat2.csv o=./outdat/out19x.csv vf=0-3; IN=3 OUT=3; 2014/06/16 14:03:58
+#END# kgvcat -A -nfn a=items i=./indat/dat2nfn.csv o=./outdat/out19nfn.csv vf=0-3; IN=3 OUT=3; 2014/06/16 14:03:58
+#END# kgvcat -A a=new i=./indat/dat2.csv o=./outdat/out20.csv vf=items*; IN=3 OUT=3; 2014/06/16 14:03:58
+#END# kgvcat -A -x a=new i=./indat/dat2.csv o=./outdat/out20x.csv vf=0-3; IN=3 OUT=3; 2014/06/16 14:03:58
+#END# kgvcat -A -nfn a=new i=./indat/dat2nfn.csv o=./outdat/out20nfn.csv vf=0-3; IN=3 OUT=3; 2014/06/16 14:03:58
+#END# kgvcat a=items i=./indat/dat2.csv o=./outdat/out21.csv vf=items2,items3; IN=3 OUT=3; 2014/06/16 14:03:58
+#END# kgvcat -x a=items i=./indat/dat2.csv o=./outdat/out21x.csv vf=1,2; IN=3 OUT=3; 2014/06/16 14:03:58
+#END# kgvcat -nfn a=items i=./indat/dat2nfn.csv o=./outdat/out21nfn.csv vf=1,2; IN=3 OUT=3; 2014/06/16 14:03:58
+#END# kgvcat a=new i=./indat/dat2.csv o=./outdat/out22.csv vf=items2,items3; IN=3 OUT=3; 2014/06/16 14:03:58
+#END# kgvcat -x a=new i=./indat/dat2.csv o=./outdat/out22x.csv vf=1,2; IN=3 OUT=3; 2014/06/16 14:03:58
+#END# kgvcat -nfn a=new i=./indat/dat2nfn.csv o=./outdat/out22nfn.csv vf=1,2; IN=3 OUT=3; 2014/06/16 14:03:58
+#END# kgvcat -A a=items i=./indat/dat2.csv o=./outdat/out23.csv vf=items2,items3; IN=3 OUT=3; 2014/06/16 14:03:58
+#END# kgvcat -A -x a=items i=./indat/dat2.csv o=./outdat/out23x.csv vf=1,2; IN=3 OUT=3; 2014/06/16 14:03:58
+#END# kgvcat -A -nfn a=items i=./indat/dat2nfn.csv o=./outdat/out23nfn.csv vf=1,2; IN=3 OUT=3; 2014/06/16 14:03:58
+#END# kgvcat -A a=new i=./indat/dat2.csv o=./outdat/out24.csv vf=items2,items3; IN=3 OUT=3; 2014/06/16 14:03:58
+#END# kgvcat -A -x a=new i=./indat/dat2.csv o=./outdat/out24x.csv vf=1,2; IN=3 OUT=3; 2014/06/16 14:03:58
+#END# kgvcat -A -nfn a=new i=./indat/dat2nfn.csv o=./outdat/out24nfn.csv vf=1,2; IN=3 OUT=3; 2014/06/16 14:03:58
+#END# kgvcat a=items i=./indat/dat1s.csv o=./outdat/out30.csv vf=items*; IN=3 OUT=3; 2014/06/16 14:03:58
+#END# kgvcat -x a=items i=./indat/dat1s.csv o=./outdat/out30x.csv vf=0-3; IN=3 OUT=3; 2014/06/16 14:03:58
+#END# kgvcat -nfn a=items i=./indat/dat1snfn.csv o=./outdat/out30nfn.csv vf=0-3; IN=3 OUT=3; 2014/06/16 14:03:58
+#END# kgvcat -nfno a=items i=./indat/dat1s.csv o=./outdat/out30nfno.csv vf=items*; IN=3 OUT=3; 2014/06/16 14:03:58
+#END# kgvcat -A a=new i=./indat/dat1s.csv o=./outdat/out31.csv vf=items*; IN=3 OUT=3; 2014/06/16 14:03:58
+#END# kgvcat -A -x a=new i=./indat/dat1s.csv o=./outdat/out31x.csv vf=0-3; IN=3 OUT=3; 2014/06/16 14:03:58
+#END# kgvcat -A -nfn a=new i=./indat/dat1snfn.csv o=./outdat/out31nfn.csv vf=0-3; IN=3 OUT=3; 2014/06/16 14:03:58
+#END# kgvcat a=items i=./indat/dat1s.csv o=./outdat/out32.csv vf=items2,items3; IN=3 OUT=3; 2014/06/16 14:03:58
+#END# kgvcat -x a=items i=./indat/dat1s.csv o=./outdat/out32x.csv vf=1,2; IN=3 OUT=3; 2014/06/16 14:03:58
+#END# kgvcat -nfn a=items i=./indat/dat1snfn.csv o=./outdat/out32nfn.csv vf=1,2; IN=3 OUT=3; 2014/06/16 14:03:58
+#END# kgvcat -A a=new i=./indat/dat1s.csv o=./outdat/out33.csv vf=items2,items3; IN=3 OUT=3; 2014/06/16 14:03:58
+#END# kgvcat -A -x a=new i=./indat/dat1s.csv o=./outdat/out33x.csv vf=1,2; IN=3 OUT=3; 2014/06/16 14:03:58
+#END# kgvcat -A -nfn a=new i=./indat/dat1snfn.csv o=./outdat/out33nfn.csv vf=1,2; IN=3 OUT=3; 2014/06/16 14:03:58

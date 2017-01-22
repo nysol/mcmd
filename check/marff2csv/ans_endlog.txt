@@ -1,0 +1,8 @@
+#END# kgarff2csv i=./indat/dat1.arff o=./outdat/out01.csv; IN=23 OUT=13; 2013/10/23 15:25:17
+#END# kgarff2csv -x i=./indat/dat1.arff o=./outdat/out01x.csv; IN=23 OUT=13; 2013/10/23 15:25:17
+#END# kgarff2csv -nfn i=./indat/dat1.arff o=./outdat/out01nfn.csv; IN=23 OUT=13; 2013/10/23 15:25:17
+#END# kgarff2csv -nfno i=./indat/dat1.arff o=./outdat/out01nfno.csv; IN=23 OUT=13; 2013/10/23 15:25:17
+#END# kgarff2csv i=./indat/dat2.arff o=./outdat/out02.csv; IN=23 OUT=13; 2013/10/23 15:25:17
+#END# kgarff2csv -x i=./indat/dat2.arff o=./outdat/out02x.csv; IN=23 OUT=13; 2013/10/23 15:25:17
+#END# kgarff2csv -nfn i=./indat/dat2.arff o=./outdat/out02nfn.csv; IN=23 OUT=13; 2013/10/23 15:25:17
+#END# kgarff2csv -nfno i=./indat/dat2.arff o=./outdat/out02nfno.csv; IN=23 OUT=13; 2013/10/23 15:25:17

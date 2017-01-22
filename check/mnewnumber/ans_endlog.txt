@@ -1,0 +1,28 @@
+#END# kgNewnumber a=追加 o=./outdat/out0.csv;  OUT=10; 2013/10/24 13:44:52
+#END# kgNewnumber -x a=追加 o=./outdat/out0x.csv;  OUT=10; 2013/10/24 13:44:52
+#END# kgNewnumber -nfn o=./outdat/out0nfn.csv;  OUT=10; 2013/10/24 13:44:52
+#END# kgNewnumber -nfno o=./outdat/out0nfno.csv;  OUT=10; 2013/10/24 13:44:52
+#END# kgNewnumber I=2 a=追加 o=./outdat/out1.csv;  OUT=10; 2013/10/24 13:44:52
+#END# kgNewnumber -x I=2 a=追加 o=./outdat/out1x.csv;  OUT=10; 2013/10/24 13:44:52
+#END# kgNewnumber -nfn I=2 o=./outdat/out1nfn.csv;  OUT=10; 2013/10/24 13:44:52
+#END# kgNewnumber -nfno I=2 o=./outdat/out1nfno.csv;  OUT=10; 2013/10/24 13:44:52
+#END# kgNewnumber I=2 a=追加 l=15 o=./outdat/out2.csv;  OUT=15; 2013/10/24 13:44:52
+#END# kgNewnumber -x I=2 a=追加 l=15 o=./outdat/out2x.csv;  OUT=15; 2013/10/24 13:44:52
+#END# kgNewnumber -nfn I=2 l=15 o=./outdat/out2nfn.csv;  OUT=15; 2013/10/24 13:44:52
+#END# kgNewnumber -nfno I=2 l=15 o=./outdat/out2nfno.csv;  OUT=15; 2013/10/24 13:44:52
+#END# kgNewnumber I=2 S=20 a=追加 l=20 o=./outdat/out3.csv;  OUT=20; 2013/10/24 13:44:52
+#END# kgNewnumber -x I=2 S=20 a=追加 l=20 o=./outdat/out3x.csv;  OUT=20; 2013/10/24 13:44:52
+#END# kgNewnumber -nfn I=2 S=20 l=20 o=./outdat/out3nfn.csv;  OUT=20; 2013/10/24 13:44:52
+#END# kgNewnumber -nfno I=2 S=20 l=20 o=./outdat/out3nfno.csv;  OUT=20; 2013/10/24 13:44:52
+#END# kgNewnumber S=A a=追加 o=./outdat/out4.csv;  OUT=10; 2013/10/24 13:44:52
+#END# kgNewnumber -x S=A a=追加 o=./outdat/out4x.csv;  OUT=10; 2013/10/24 13:44:52
+#END# kgNewnumber -nfn S=A o=./outdat/out4nfn.csv;  OUT=10; 2013/10/24 13:44:52
+#END# kgNewnumber -nfno S=A o=./outdat/out4nfno.csv;  OUT=10; 2013/10/24 13:44:52
+#END# kgNewnumber I=5 S=B a=追加 o=./outdat/out5.csv;  OUT=10; 2013/10/24 13:44:52
+#END# kgNewnumber -x I=5 S=B a=追加 o=./outdat/out5x.csv;  OUT=10; 2013/10/24 13:44:52
+#END# kgNewnumber -nfn I=5 S=B o=./outdat/out5nfn.csv;  OUT=10; 2013/10/24 13:44:52
+#END# kgNewnumber -nfno I=5 S=B o=./outdat/out5nfno.csv;  OUT=10; 2013/10/24 13:44:52
+#END# kgNewnumber I=3 S=B a=追加 l=15 o=./outdat/out6.csv;  OUT=15; 2013/10/24 13:44:52
+#END# kgNewnumber -x I=3 S=B a=追加 l=15 o=./outdat/out6x.csv;  OUT=15; 2013/10/24 13:44:52
+#END# kgNewnumber -nfn I=3 S=B l=15 o=./outdat/out6nfn.csv;  OUT=15; 2013/10/24 13:44:52
+#END# kgNewnumber -nfno I=3 S=B l=15 o=./outdat/out6nfno.csv;  OUT=15; 2013/10/24 13:44:52

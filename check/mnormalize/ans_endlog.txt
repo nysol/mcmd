@@ -1,0 +1,188 @@
+#END# kgnormalize c=z f=数量:数量基準値,金額:金額基準値 i=./indat/dat0s.csv o=./outdat/out0.csv; IN=0 OUT=0; 2014/06/02 19:12:00
+#END# kgnormalize -x c=z f=1:数量基準値,2:金額基準値 i=./indat/dat0s.csv o=./outdat/out0x.csv; IN=0 OUT=0; 2014/06/02 19:12:01
+#END# kgnormalize -nfn c=z f=1,2 i=./indat/dat0snfn.csv o=./outdat/out0nfn.csv; IN=0 OUT=0; 2014/06/02 19:12:01
+#END# kgnormalize c=z f=数量:数量基準値 i=./indat/dat5s.csv o=./outdat/out35.csv; IN=1 OUT=1; 2014/06/02 19:12:01
+#END# kgnormalize c=Z f=数量:数量基準値,金額:金額基準値 i=./indat/dat0s.csv o=./outdat/out1.csv; IN=0 OUT=0; 2014/06/02 19:12:01
+#END# kgnormalize -x c=Z f=1:数量基準値,2:金額基準値 i=./indat/dat0s.csv o=./outdat/out1x.csv; IN=0 OUT=0; 2014/06/02 19:12:01
+#END# kgnormalize -nfn c=Z f=1,2 i=./indat/dat0snfn.csv o=./outdat/out1nfn.csv; IN=0 OUT=0; 2014/06/02 19:12:01
+#END# kgnormalize c=range f=数量:数量基準値,金額:金額基準値 i=./indat/dat0s.csv o=./outdat/out2.csv; IN=0 OUT=0; 2014/06/02 19:12:01
+#END# kgnormalize -x c=range f=1:数量基準値,2:金額基準値 i=./indat/dat0s.csv o=./outdat/out2x.csv; IN=0 OUT=0; 2014/06/02 19:12:01
+#END# kgnormalize -nfn c=range f=1,2 i=./indat/dat0snfn.csv o=./outdat/out2nfn.csv; IN=0 OUT=0; 2014/06/02 19:12:01
+#END# kgnormalize c=z f=数量:数量基準値 i=./indat/dat1s.csv o=./outdat/out3.csv; IN=5 OUT=5; 2014/06/02 19:12:01
+#END# kgnormalize -x c=z f=1:数量基準値 i=./indat/dat1s.csv o=./outdat/out3x.csv; IN=5 OUT=5; 2014/06/02 19:12:01
+#END# kgnormalize -nfn c=z f=1 i=./indat/dat1snfn.csv o=./outdat/out3nfn.csv; IN=5 OUT=5; 2014/06/02 19:12:01
+#END# kgnormalize -nfno c=z f=数量:数量基準値 i=./indat/dat1s.csv o=./outdat/out3nfno.csv; IN=5 OUT=5; 2014/06/02 19:12:01
+#END# kgnormalize c=Z f=数量:数量基準値 i=./indat/dat1s.csv o=./outdat/out4.csv; IN=5 OUT=5; 2014/06/02 19:12:01
+#END# kgnormalize -x c=Z f=1:数量基準値 i=./indat/dat1s.csv o=./outdat/out4x.csv; IN=5 OUT=5; 2014/06/02 19:12:01
+#END# kgnormalize -nfn c=Z f=1 i=./indat/dat1snfn.csv o=./outdat/out4nfn.csv; IN=5 OUT=5; 2014/06/02 19:12:01
+#END# kgnormalize c=range f=数量:数量基準値 i=./indat/dat1s.csv o=./outdat/out5.csv; IN=5 OUT=5; 2014/06/02 19:12:01
+#END# kgnormalize -x c=range f=1:数量基準値 i=./indat/dat1s.csv o=./outdat/out5x.csv; IN=5 OUT=5; 2014/06/02 19:12:01
+#END# kgnormalize -nfn c=range f=1 i=./indat/dat1snfn.csv o=./outdat/out5nfn.csv; IN=5 OUT=5; 2014/06/02 19:12:01
+#END# kgnormalize c=z f=数量:数量基準値,金額:金額基準値 i=./indat/dat1s.csv o=./outdat/out6.csv; IN=5 OUT=5; 2014/06/02 19:12:01
+#END# kgnormalize -x c=z f=1:数量基準値,2:金額基準値 i=./indat/dat1s.csv o=./outdat/out6x.csv; IN=5 OUT=5; 2014/06/02 19:12:01
+#END# kgnormalize -nfn c=z f=1,2 i=./indat/dat1snfn.csv o=./outdat/out6nfn.csv; IN=5 OUT=5; 2014/06/02 19:12:01
+#END# kgnormalize c=Z f=数量:数量基準値,金額:金額基準値 i=./indat/dat1s.csv o=./outdat/out7.csv; IN=5 OUT=5; 2014/06/02 19:12:01
+#END# kgnormalize -x c=Z f=1:数量基準値,2:金額基準値 i=./indat/dat1s.csv o=./outdat/out7x.csv; IN=5 OUT=5; 2014/06/02 19:12:01
+#END# kgnormalize -nfn c=Z f=1,2 i=./indat/dat1snfn.csv o=./outdat/out7nfn.csv; IN=5 OUT=5; 2014/06/02 19:12:01
+#END# kgnormalize c=range f=数量:数量基準値,金額:金額基準値 i=./indat/dat1s.csv o=./outdat/out8.csv; IN=5 OUT=5; 2014/06/02 19:12:01
+#END# kgnormalize -x c=range f=1:数量基準値,2:金額基準値 i=./indat/dat1s.csv o=./outdat/out8x.csv; IN=5 OUT=5; 2014/06/02 19:12:01
+#END# kgnormalize -nfn c=range f=1,2 i=./indat/dat1snfn.csv o=./outdat/out8nfn.csv; IN=5 OUT=5; 2014/06/02 19:12:01
+#END# kgnormalize c=z f=金額:金額基準値 i=./indat/dat1s.csv k=顧客 o=./outdat/out9.csv; IN=5 OUT=5; 2014/06/02 19:12:01
+#END# kgnormalize -x c=z f=2:金額基準値 i=./indat/dat1s.csv k=0 o=./outdat/out9x.csv; IN=5 OUT=5; 2014/06/02 19:12:01
+#END# kgnormalize -nfn c=z f=2 i=./indat/dat1snfn.csv k=0 o=./outdat/out9nfn.csv; IN=5 OUT=5; 2014/06/02 19:12:01
+#END# kgnormalize c=Z f=金額:金額基準値 i=./indat/dat1s.csv k=顧客 o=./outdat/out10.csv; IN=5 OUT=5; 2014/06/02 19:12:01
+#END# kgnormalize -x c=Z f=2:金額基準値 i=./indat/dat1s.csv k=0 o=./outdat/out10x.csv; IN=5 OUT=5; 2014/06/02 19:12:01
+#END# kgnormalize -nfn c=Z f=2 i=./indat/dat1snfn.csv k=0 o=./outdat/out10nfn.csv; IN=5 OUT=5; 2014/06/02 19:12:01
+#END# kgnormalize c=range f=金額:金額基準値 i=./indat/dat1s.csv k=顧客 o=./outdat/out11.csv; IN=5 OUT=5; 2014/06/02 19:12:01
+#END# kgnormalize -x c=range f=2:金額基準値 i=./indat/dat1s.csv k=0 o=./outdat/out11x.csv; IN=5 OUT=5; 2014/06/02 19:12:01
+#END# kgnormalize -nfn c=range f=2 i=./indat/dat1snfn.csv k=0 o=./outdat/out11nfn.csv; IN=5 OUT=5; 2014/06/02 19:12:01
+#END# kgnormalize c=z f=金額:金額基準値,数量:数量基準値 i=./indat/dat1s.csv k=顧客 o=./outdat/out12.csv; IN=5 OUT=5; 2014/06/02 19:12:01
+#END# kgnormalize -x c=z f=2:金額基準値,1:数量基準値 i=./indat/dat1s.csv k=0 o=./outdat/out12x.csv; IN=5 OUT=5; 2014/06/02 19:12:01
+#END# kgnormalize -nfn c=z f=2,1 i=./indat/dat1snfn.csv k=0 o=./outdat/out12nfn.csv; IN=5 OUT=5; 2014/06/02 19:12:01
+#END# kgnormalize c=Z f=金額:金額基準値,数量:数量基準値 i=./indat/dat1s.csv k=顧客 o=./outdat/out13.csv; IN=5 OUT=5; 2014/06/02 19:12:01
+#END# kgnormalize -x c=Z f=2:金額基準値,1:数量基準値 i=./indat/dat1s.csv k=0 o=./outdat/out13x.csv; IN=5 OUT=5; 2014/06/02 19:12:01
+#END# kgnormalize -nfn c=Z f=2,1 i=./indat/dat1snfn.csv k=0 o=./outdat/out13nfn.csv; IN=5 OUT=5; 2014/06/02 19:12:01
+#END# kgnormalize c=range f=金額:金額基準値,数量:数量基準値 i=./indat/dat1s.csv k=顧客 o=./outdat/out14.csv; IN=5 OUT=5; 2014/06/02 19:12:01
+#END# kgnormalize -x c=range f=2:金額基準値,1:数量基準値 i=./indat/dat1s.csv k=0 o=./outdat/out14x.csv; IN=5 OUT=5; 2014/06/02 19:12:01
+#END# kgnormalize -nfn c=range f=2,1 i=./indat/dat1snfn.csv k=0 o=./outdat/out14nfn.csv; IN=5 OUT=5; 2014/06/02 19:12:01
+#END# kgnormalize c=z f=金額:金額基準値 i=./indat/dat2s.csv k=顧客 o=./outdat/out15.csv; IN=7 OUT=7; 2014/06/02 19:12:01
+#END# kgnormalize -x c=z f=2:金額基準値 i=./indat/dat2s.csv k=0 o=./outdat/out15x.csv; IN=7 OUT=7; 2014/06/02 19:12:01
+#END# kgnormalize -nfn c=z f=2 i=./indat/dat2snfn.csv k=0 o=./outdat/out15nfn.csv; IN=7 OUT=7; 2014/06/02 19:12:01
+#END# kgnormalize c=Z f=金額:金額基準値 i=./indat/dat2s.csv k=顧客 o=./outdat/out16.csv; IN=7 OUT=7; 2014/06/02 19:12:01
+#END# kgnormalize -x c=Z f=2:金額基準値 i=./indat/dat2s.csv k=0 o=./outdat/out16x.csv; IN=7 OUT=7; 2014/06/02 19:12:01
+#END# kgnormalize -nfn c=Z f=2 i=./indat/dat2snfn.csv k=0 o=./outdat/out16nfn.csv; IN=7 OUT=7; 2014/06/02 19:12:01
+#END# kgnormalize c=range f=金額:金額基準値 i=./indat/dat2s.csv k=顧客 o=./outdat/out17.csv; IN=7 OUT=7; 2014/06/02 19:12:01
+#END# kgnormalize -x c=range f=2:金額基準値 i=./indat/dat2s.csv k=0 o=./outdat/out17x.csv; IN=7 OUT=7; 2014/06/02 19:12:01
+#END# kgnormalize -nfn c=range f=2 i=./indat/dat2snfn.csv k=0 o=./outdat/out17nfn.csv; IN=7 OUT=7; 2014/06/02 19:12:01
+#END# kgnormalize c=z f=金額:金額基準値,数量:数量基準値 i=./indat/dat2s.csv k=顧客 o=./outdat/out18.csv; IN=7 OUT=7; 2014/06/02 19:12:01
+#END# kgnormalize -x c=z f=2:金額基準値,1:数量基準値 i=./indat/dat2s.csv k=0 o=./outdat/out18x.csv; IN=7 OUT=7; 2014/06/02 19:12:01
+#END# kgnormalize -nfn c=z f=2,1 i=./indat/dat2snfn.csv k=0 o=./outdat/out18nfn.csv; IN=7 OUT=7; 2014/06/02 19:12:01
+#END# kgnormalize c=Z f=金額:金額基準値,数量:数量基準値 i=./indat/dat2s.csv k=顧客 o=./outdat/out19.csv; IN=7 OUT=7; 2014/06/02 19:12:01
+#END# kgnormalize -x c=Z f=2:金額基準値,1:数量基準値 i=./indat/dat2s.csv k=0 o=./outdat/out19x.csv; IN=7 OUT=7; 2014/06/02 19:12:01
+#END# kgnormalize -nfn c=Z f=2,1 i=./indat/dat2snfn.csv k=0 o=./outdat/out19nfn.csv; IN=7 OUT=7; 2014/06/02 19:12:01
+#END# kgnormalize c=range f=金額:金額基準値,数量:数量基準値 i=./indat/dat2s.csv k=顧客 o=./outdat/out20.csv; IN=7 OUT=7; 2014/06/02 19:12:01
+#END# kgnormalize -x c=range f=2:金額基準値,1:数量基準値 i=./indat/dat2s.csv k=0 o=./outdat/out20x.csv; IN=7 OUT=7; 2014/06/02 19:12:01
+#END# kgnormalize -nfn c=range f=2,1 i=./indat/dat2snfn.csv k=0 o=./outdat/out20nfn.csv; IN=7 OUT=7; 2014/06/02 19:12:01
+#END# kgnormalize c=z f=金額:金額基準値 i=./indat/dat3s.csv k=顧客 o=./outdat/out21.csv; IN=7 OUT=7; 2014/06/02 19:12:01
+#END# kgnormalize -x c=z f=2:金額基準値 i=./indat/dat3s.csv k=0 o=./outdat/out21x.csv; IN=7 OUT=7; 2014/06/02 19:12:01
+#END# kgnormalize -nfn c=z f=2 i=./indat/dat3snfn.csv k=0 o=./outdat/out21nfn.csv; IN=7 OUT=7; 2014/06/02 19:12:01
+#END# kgnormalize c=Z f=金額:金額基準値 i=./indat/dat3s.csv k=顧客 o=./outdat/out22.csv; IN=7 OUT=7; 2014/06/02 19:12:01
+#END# kgnormalize -x c=Z f=2:金額基準値 i=./indat/dat3s.csv k=0 o=./outdat/out22x.csv; IN=7 OUT=7; 2014/06/02 19:12:01
+#END# kgnormalize -nfn c=Z f=2 i=./indat/dat3snfn.csv k=0 o=./outdat/out22nfn.csv; IN=7 OUT=7; 2014/06/02 19:12:01
+#END# kgnormalize c=range f=金額:金額基準値 i=./indat/dat3s.csv k=顧客 o=./outdat/out23.csv; IN=7 OUT=7; 2014/06/02 19:12:01
+#END# kgnormalize -x c=range f=2:金額基準値 i=./indat/dat3s.csv k=0 o=./outdat/out23x.csv; IN=7 OUT=7; 2014/06/02 19:12:01
+#END# kgnormalize -nfn c=range f=2 i=./indat/dat3snfn.csv k=0 o=./outdat/out23nfn.csv; IN=7 OUT=7; 2014/06/02 19:12:01
+#END# kgnormalize c=z f=金額:金額基準値,数量:数量基準値 i=./indat/dat3s.csv k=顧客 o=./outdat/out24.csv; IN=7 OUT=7; 2014/06/02 19:12:01
+#END# kgnormalize -x c=z f=2:金額基準値,1:数量基準値 i=./indat/dat3s.csv k=0 o=./outdat/out24x.csv; IN=7 OUT=7; 2014/06/02 19:12:01
+#END# kgnormalize -nfn c=z f=2,1 i=./indat/dat3snfn.csv k=0 o=./outdat/out24nfn.csv; IN=7 OUT=7; 2014/06/02 19:12:01
+#END# kgnormalize c=Z f=金額:金額基準値,数量:数量基準値 i=./indat/dat3s.csv k=顧客 o=./outdat/out25.csv; IN=7 OUT=7; 2014/06/02 19:12:01
+#END# kgnormalize -x c=Z f=2:金額基準値,1:数量基準値 i=./indat/dat3s.csv k=0 o=./outdat/out25x.csv; IN=7 OUT=7; 2014/06/02 19:12:01
+#END# kgnormalize -nfn c=Z f=2,1 i=./indat/dat3snfn.csv k=0 o=./outdat/out25nfn.csv; IN=7 OUT=7; 2014/06/02 19:12:01
+#END# kgnormalize c=range f=金額:金額基準値,数量:数量基準値 i=./indat/dat3s.csv k=顧客 o=./outdat/out26.csv; IN=7 OUT=7; 2014/06/02 19:12:01
+#END# kgnormalize -x c=range f=2:金額基準値,1:数量基準値 i=./indat/dat3s.csv k=0 o=./outdat/out26x.csv; IN=7 OUT=7; 2014/06/02 19:12:01
+#END# kgnormalize -nfn c=range f=2,1 i=./indat/dat3snfn.csv k=0 o=./outdat/out26nfn.csv; IN=7 OUT=7; 2014/06/02 19:12:01
+#END# kgnormalize c=z f=金額:金額基準値 i=./indat/dat4s.csv k=顧客 o=./outdat/out27.csv; IN=9 OUT=9; 2014/06/02 19:12:01
+#END# kgnormalize -x c=z f=2:金額基準値 i=./indat/dat4s.csv k=0 o=./outdat/out27x.csv; IN=9 OUT=9; 2014/06/02 19:12:01
+#END# kgnormalize -nfn c=z f=2 i=./indat/dat4snfn.csv k=0 o=./outdat/out27nfn.csv; IN=9 OUT=9; 2014/06/02 19:12:01
+#END# kgnormalize c=Z f=金額:金額基準値 i=./indat/dat4s.csv k=顧客 o=./outdat/out28.csv; IN=9 OUT=9; 2014/06/02 19:12:01
+#END# kgnormalize -x c=Z f=2:金額基準値 i=./indat/dat4s.csv k=0 o=./outdat/out28x.csv; IN=9 OUT=9; 2014/06/02 19:12:01
+#END# kgnormalize -nfn c=Z f=2 i=./indat/dat4snfn.csv k=0 o=./outdat/out28nfn.csv; IN=9 OUT=9; 2014/06/02 19:12:01
+#END# kgnormalize c=range f=金額:金額基準値 i=./indat/dat4s.csv k=顧客 o=./outdat/out29.csv; IN=9 OUT=9; 2014/06/02 19:12:01
+#END# kgnormalize -x c=range f=2:金額基準値 i=./indat/dat4s.csv k=0 o=./outdat/out29x.csv; IN=9 OUT=9; 2014/06/02 19:12:01
+#END# kgnormalize -nfn c=range f=2 i=./indat/dat4snfn.csv k=0 o=./outdat/out29nfn.csv; IN=9 OUT=9; 2014/06/02 19:12:01
+#END# kgnormalize c=z f=金額:金額基準値,数量:数量基準値 i=./indat/dat4s.csv k=顧客 o=./outdat/out30.csv; IN=9 OUT=9; 2014/06/02 19:12:01
+#END# kgnormalize -x c=z f=2:金額基準値,1:数量基準値 i=./indat/dat4s.csv k=0 o=./outdat/out30x.csv; IN=9 OUT=9; 2014/06/02 19:12:01
+#END# kgnormalize -nfn c=z f=2,1 i=./indat/dat4snfn.csv k=0 o=./outdat/out30nfn.csv; IN=9 OUT=9; 2014/06/02 19:12:01
+#END# kgnormalize c=Z f=金額:金額基準値,数量:数量基準値 i=./indat/dat4s.csv k=顧客 o=./outdat/out31.csv; IN=9 OUT=9; 2014/06/02 19:12:01
+#END# kgnormalize -x c=Z f=2:金額基準値,1:数量基準値 i=./indat/dat4s.csv k=0 o=./outdat/out31x.csv; IN=9 OUT=9; 2014/06/02 19:12:01
+#END# kgnormalize -nfn c=Z f=2,1 i=./indat/dat4snfn.csv k=0 o=./outdat/out31nfn.csv; IN=9 OUT=9; 2014/06/02 19:12:01
+#END# kgnormalize c=range f=金額:金額基準値,数量:数量基準値 i=./indat/dat4s.csv k=顧客 o=./outdat/out32.csv; IN=9 OUT=9; 2014/06/02 19:12:01
+#END# kgnormalize -x c=range f=2:金額基準値,1:数量基準値 i=./indat/dat4s.csv k=0 o=./outdat/out32x.csv; IN=9 OUT=9; 2014/06/02 19:12:01
+#END# kgnormalize -nfn c=range f=2,1 i=./indat/dat4snfn.csv k=0 o=./outdat/out32nfn.csv; IN=9 OUT=9; 2014/06/02 19:12:01
+#END# kgnormalize c=range f=金額:金額基準値 i=./indat/dat6s.csv k=顧客 o=./outdat/out36.csv; IN=5 OUT=5; 2014/06/02 19:12:01
+#END# kgnormalize c=range f=数量:数量基準値 i=./indat/dat6s.csv k=顧客 o=./outdat/out37.csv; IN=5 OUT=5; 2014/06/02 19:12:01
+#END# kgnormalize bufcount=2 c=z f=数量:数量基準値 i=./indat/dat1s.csv o=./outdat/out33.csv; IN=5 OUT=5; 2014/06/02 19:12:01
+#END# kgnormalize bufcount=-2 c=z f=数量:数量基準値 i=./indat/dat1s.csv o=./outdat/out34.csv; IN=5 OUT=5; 2014/06/02 19:12:01
+#END# kgnormalize c=z f=数量:数量基準値,金額:金額基準値 i=./indat/dat0.csv k=顧客 o=./outdat/out50.csv; IN=0 OUT=0; 2014/06/02 19:12:01
+#END# kgnormalize -x c=z f=1:数量基準値,2:金額基準値 i=./indat/dat0.csv k=0 o=./outdat/out50x.csv; IN=0 OUT=0; 2014/06/02 19:12:01
+#END# kgnormalize -nfn c=z f=1,2 i=./indat/dat0nfn.csv k=0 o=./outdat/out50nfn.csv; IN=0 OUT=0; 2014/06/02 19:12:01
+#END# kgnormalize c=Z f=数量:数量基準値,金額:金額基準値 i=./indat/dat0.csv k=顧客 o=./outdat/out51.csv; IN=0 OUT=0; 2014/06/02 19:12:01
+#END# kgnormalize -x c=Z f=1:数量基準値,2:金額基準値 i=./indat/dat0.csv k=0 o=./outdat/out51x.csv; IN=0 OUT=0; 2014/06/02 19:12:01
+#END# kgnormalize -nfn c=Z f=1,2 i=./indat/dat0nfn.csv k=0 o=./outdat/out51nfn.csv; IN=0 OUT=0; 2014/06/02 19:12:01
+#END# kgnormalize c=range f=数量:数量基準値,金額:金額基準値 i=./indat/dat0.csv k=顧客 o=./outdat/out52.csv; IN=0 OUT=0; 2014/06/02 19:12:01
+#END# kgnormalize -x c=range f=1:数量基準値,2:金額基準値 i=./indat/dat0.csv k=0 o=./outdat/out52x.csv; IN=0 OUT=0; 2014/06/02 19:12:01
+#END# kgnormalize -nfn c=range f=1,2 i=./indat/dat0nfn.csv k=0 o=./outdat/out52nfn.csv; IN=0 OUT=0; 2014/06/02 19:12:01
+#END# kgnormalize c=z f=金額:金額基準値 i=./indat/dat1.csv k=顧客 o=./outdat/out59.csv; IN=5 OUT=5; 2014/06/02 19:12:01
+#END# kgnormalize -x c=z f=2:金額基準値 i=./indat/dat1.csv k=0 o=./outdat/out59x.csv; IN=5 OUT=5; 2014/06/02 19:12:01
+#END# kgnormalize -nfn c=z f=2 i=./indat/dat1nfn.csv k=0 o=./outdat/out59nfn.csv; IN=5 OUT=5; 2014/06/02 19:12:01
+#END# kgnormalize c=Z f=金額:金額基準値 i=./indat/dat1.csv k=顧客 o=./outdat/out60.csv; IN=5 OUT=5; 2014/06/02 19:12:02
+#END# kgnormalize -x c=Z f=2:金額基準値 i=./indat/dat1.csv k=0 o=./outdat/out60x.csv; IN=5 OUT=5; 2014/06/02 19:12:02
+#END# kgnormalize -nfn c=Z f=2 i=./indat/dat1nfn.csv k=0 o=./outdat/out60nfn.csv; IN=5 OUT=5; 2014/06/02 19:12:02
+#END# kgnormalize c=range f=金額:金額基準値 i=./indat/dat1.csv k=顧客 o=./outdat/out61.csv; IN=5 OUT=5; 2014/06/02 19:12:02
+#END# kgnormalize -x c=range f=2:金額基準値 i=./indat/dat1.csv k=0 o=./outdat/out61x.csv; IN=5 OUT=5; 2014/06/02 19:12:02
+#END# kgnormalize -nfn c=range f=2 i=./indat/dat1nfn.csv k=0 o=./outdat/out61nfn.csv; IN=5 OUT=5; 2014/06/02 19:12:02
+#END# kgnormalize c=z f=金額:金額基準値,数量:数量基準値 i=./indat/dat1.csv k=顧客 o=./outdat/out62.csv; IN=5 OUT=5; 2014/06/02 19:12:02
+#END# kgnormalize -x c=z f=2:金額基準値,1:数量基準値 i=./indat/dat1.csv k=0 o=./outdat/out62x.csv; IN=5 OUT=5; 2014/06/02 19:12:02
+#END# kgnormalize -nfn c=z f=2,1 i=./indat/dat1nfn.csv k=0 o=./outdat/out62nfn.csv; IN=5 OUT=5; 2014/06/02 19:12:02
+#END# kgnormalize c=Z f=金額:金額基準値,数量:数量基準値 i=./indat/dat1.csv k=顧客 o=./outdat/out63.csv; IN=5 OUT=5; 2014/06/02 19:12:02
+#END# kgnormalize -x c=Z f=2:金額基準値,1:数量基準値 i=./indat/dat1.csv k=0 o=./outdat/out63x.csv; IN=5 OUT=5; 2014/06/02 19:12:02
+#END# kgnormalize -nfn c=Z f=2,1 i=./indat/dat1nfn.csv k=0 o=./outdat/out63nfn.csv; IN=5 OUT=5; 2014/06/02 19:12:02
+#END# kgnormalize c=range f=金額:金額基準値,数量:数量基準値 i=./indat/dat1.csv k=顧客 o=./outdat/out64.csv; IN=5 OUT=5; 2014/06/02 19:12:02
+#END# kgnormalize -x c=range f=2:金額基準値,1:数量基準値 i=./indat/dat1.csv k=0 o=./outdat/out64x.csv; IN=5 OUT=5; 2014/06/02 19:12:02
+#END# kgnormalize -nfn c=range f=2,1 i=./indat/dat1nfn.csv k=0 o=./outdat/out64nfn.csv; IN=5 OUT=5; 2014/06/02 19:12:02
+#END# kgnormalize c=z f=金額:金額基準値 i=./indat/dat2.csv k=顧客 o=./outdat/out65.csv; IN=7 OUT=7; 2014/06/02 19:12:02
+#END# kgnormalize -x c=z f=2:金額基準値 i=./indat/dat2.csv k=0 o=./outdat/out65x.csv; IN=7 OUT=7; 2014/06/02 19:12:02
+#END# kgnormalize -nfn c=z f=2 i=./indat/dat2nfn.csv k=0 o=./outdat/out65nfn.csv; IN=7 OUT=7; 2014/06/02 19:12:02
+#END# kgnormalize c=Z f=金額:金額基準値 i=./indat/dat2.csv k=顧客 o=./outdat/out66.csv; IN=7 OUT=7; 2014/06/02 19:12:02
+#END# kgnormalize -x c=Z f=2:金額基準値 i=./indat/dat2.csv k=0 o=./outdat/out66x.csv; IN=7 OUT=7; 2014/06/02 19:12:02
+#END# kgnormalize -nfn c=Z f=2 i=./indat/dat2nfn.csv k=0 o=./outdat/out66nfn.csv; IN=7 OUT=7; 2014/06/02 19:12:02
+#END# kgnormalize c=range f=金額:金額基準値 i=./indat/dat2.csv k=顧客 o=./outdat/out67.csv; IN=7 OUT=7; 2014/06/02 19:12:02
+#END# kgnormalize -x c=range f=2:金額基準値 i=./indat/dat2.csv k=0 o=./outdat/out67x.csv; IN=7 OUT=7; 2014/06/02 19:12:02
+#END# kgnormalize -nfn c=range f=2 i=./indat/dat2nfn.csv k=0 o=./outdat/out67nfn.csv; IN=7 OUT=7; 2014/06/02 19:12:02
+#END# kgnormalize c=z f=金額:金額基準値,数量:数量基準値 i=./indat/dat2.csv k=顧客 o=./outdat/out68.csv; IN=7 OUT=7; 2014/06/02 19:12:02
+#END# kgnormalize -x c=z f=2:金額基準値,1:数量基準値 i=./indat/dat2.csv k=0 o=./outdat/out68x.csv; IN=7 OUT=7; 2014/06/02 19:12:02
+#END# kgnormalize -nfn c=z f=2,1 i=./indat/dat2nfn.csv k=0 o=./outdat/out68nfn.csv; IN=7 OUT=7; 2014/06/02 19:12:02
+#END# kgnormalize c=Z f=金額:金額基準値,数量:数量基準値 i=./indat/dat2.csv k=顧客 o=./outdat/out69.csv; IN=7 OUT=7; 2014/06/02 19:12:02
+#END# kgnormalize -x c=Z f=2:金額基準値,1:数量基準値 i=./indat/dat2.csv k=0 o=./outdat/out69x.csv; IN=7 OUT=7; 2014/06/02 19:12:02
+#END# kgnormalize -nfn c=Z f=2,1 i=./indat/dat2nfn.csv k=0 o=./outdat/out69nfn.csv; IN=7 OUT=7; 2014/06/02 19:12:02
+#END# kgnormalize c=range f=金額:金額基準値,数量:数量基準値 i=./indat/dat2.csv k=顧客 o=./outdat/out70.csv; IN=7 OUT=7; 2014/06/02 19:12:02
+#END# kgnormalize -x c=range f=2:金額基準値,1:数量基準値 i=./indat/dat2.csv k=0 o=./outdat/out70x.csv; IN=7 OUT=7; 2014/06/02 19:12:02
+#END# kgnormalize -nfn c=range f=2,1 i=./indat/dat2nfn.csv k=0 o=./outdat/out70nfn.csv; IN=7 OUT=7; 2014/06/02 19:12:02
+#END# kgnormalize c=z f=金額:金額基準値 i=./indat/dat3.csv k=顧客 o=./outdat/out71.csv; IN=7 OUT=7; 2014/06/02 19:12:02
+#END# kgnormalize -x c=z f=2:金額基準値 i=./indat/dat3.csv k=0 o=./outdat/out71x.csv; IN=7 OUT=7; 2014/06/02 19:12:02
+#END# kgnormalize -nfn c=z f=2 i=./indat/dat3nfn.csv k=0 o=./outdat/out71nfn.csv; IN=7 OUT=7; 2014/06/02 19:12:02
+#END# kgnormalize c=Z f=金額:金額基準値 i=./indat/dat3.csv k=顧客 o=./outdat/out72.csv; IN=7 OUT=7; 2014/06/02 19:12:02
+#END# kgnormalize -x c=Z f=2:金額基準値 i=./indat/dat3.csv k=0 o=./outdat/out72x.csv; IN=7 OUT=7; 2014/06/02 19:12:02
+#END# kgnormalize -nfn c=Z f=2 i=./indat/dat3nfn.csv k=0 o=./outdat/out72nfn.csv; IN=7 OUT=7; 2014/06/02 19:12:02
+#END# kgnormalize c=range f=金額:金額基準値 i=./indat/dat3.csv k=顧客 o=./outdat/out73.csv; IN=7 OUT=7; 2014/06/02 19:12:02
+#END# kgnormalize -x c=range f=2:金額基準値 i=./indat/dat3.csv k=0 o=./outdat/out73x.csv; IN=7 OUT=7; 2014/06/02 19:12:02
+#END# kgnormalize -nfn c=range f=2 i=./indat/dat3nfn.csv k=0 o=./outdat/out73nfn.csv; IN=7 OUT=7; 2014/06/02 19:12:02
+#END# kgnormalize c=z f=金額:金額基準値,数量:数量基準値 i=./indat/dat3.csv k=顧客 o=./outdat/out74.csv; IN=7 OUT=7; 2014/06/02 19:12:02
+#END# kgnormalize -x c=z f=2:金額基準値,1:数量基準値 i=./indat/dat3.csv k=0 o=./outdat/out74x.csv; IN=7 OUT=7; 2014/06/02 19:12:03
+#END# kgnormalize -nfn c=z f=2,1 i=./indat/dat3nfn.csv k=0 o=./outdat/out74nfn.csv; IN=7 OUT=7; 2014/06/02 19:12:03
+#END# kgnormalize c=Z f=金額:金額基準値,数量:数量基準値 i=./indat/dat3.csv k=顧客 o=./outdat/out75.csv; IN=7 OUT=7; 2014/06/02 19:12:03
+#END# kgnormalize -x c=Z f=2:金額基準値,1:数量基準値 i=./indat/dat3.csv k=0 o=./outdat/out75x.csv; IN=7 OUT=7; 2014/06/02 19:12:03
+#END# kgnormalize -nfn c=Z f=2,1 i=./indat/dat3nfn.csv k=0 o=./outdat/out75nfn.csv; IN=7 OUT=7; 2014/06/02 19:12:03
+#END# kgnormalize c=range f=金額:金額基準値,数量:数量基準値 i=./indat/dat3.csv k=顧客 o=./outdat/out76.csv; IN=7 OUT=7; 2014/06/02 19:12:03
+#END# kgnormalize -x c=range f=2:金額基準値,1:数量基準値 i=./indat/dat3.csv k=0 o=./outdat/out76x.csv; IN=7 OUT=7; 2014/06/02 19:12:03
+#END# kgnormalize -nfn c=range f=2,1 i=./indat/dat3nfn.csv k=0 o=./outdat/out76nfn.csv; IN=7 OUT=7; 2014/06/02 19:12:03
+#END# kgnormalize c=z f=金額:金額基準値 i=./indat/dat4.csv k=顧客 o=./outdat/out77.csv; IN=9 OUT=9; 2014/06/02 19:12:03
+#END# kgnormalize -x c=z f=2:金額基準値 i=./indat/dat4.csv k=0 o=./outdat/out77x.csv; IN=9 OUT=9; 2014/06/02 19:12:03
+#END# kgnormalize -nfn c=z f=2 i=./indat/dat4nfn.csv k=0 o=./outdat/out77nfn.csv; IN=9 OUT=9; 2014/06/02 19:12:03
+#END# kgnormalize c=Z f=金額:金額基準値 i=./indat/dat4.csv k=顧客 o=./outdat/out78.csv; IN=9 OUT=9; 2014/06/02 19:12:03
+#END# kgnormalize -x c=Z f=2:金額基準値 i=./indat/dat4.csv k=0 o=./outdat/out78x.csv; IN=9 OUT=9; 2014/06/02 19:12:03
+#END# kgnormalize -nfn c=Z f=2 i=./indat/dat4nfn.csv k=0 o=./outdat/out78nfn.csv; IN=9 OUT=9; 2014/06/02 19:12:03
+#END# kgnormalize c=range f=金額:金額基準値 i=./indat/dat4.csv k=顧客 o=./outdat/out79.csv; IN=9 OUT=9; 2014/06/02 19:12:03
+#END# kgnormalize -x c=range f=2:金額基準値 i=./indat/dat4.csv k=0 o=./outdat/out79x.csv; IN=9 OUT=9; 2014/06/02 19:12:03
+#END# kgnormalize -nfn c=range f=2 i=./indat/dat4nfn.csv k=0 o=./outdat/out79nfn.csv; IN=9 OUT=9; 2014/06/02 19:12:03
+#END# kgnormalize c=z f=金額:金額基準値,数量:数量基準値 i=./indat/dat4.csv k=顧客 o=./outdat/out80.csv; IN=9 OUT=9; 2014/06/02 19:12:03
+#END# kgnormalize -x c=z f=2:金額基準値,1:数量基準値 i=./indat/dat4.csv k=0 o=./outdat/out80x.csv; IN=9 OUT=9; 2014/06/02 19:12:03
+#END# kgnormalize -nfn c=z f=2,1 i=./indat/dat4nfn.csv k=0 o=./outdat/out80nfn.csv; IN=9 OUT=9; 2014/06/02 19:12:03
+#END# kgnormalize c=Z f=金額:金額基準値,数量:数量基準値 i=./indat/dat4.csv k=顧客 o=./outdat/out81.csv; IN=9 OUT=9; 2014/06/02 19:12:03
+#END# kgnormalize -x c=Z f=2:金額基準値,1:数量基準値 i=./indat/dat4.csv k=0 o=./outdat/out81x.csv; IN=9 OUT=9; 2014/06/02 19:12:03
+#END# kgnormalize -nfn c=Z f=2,1 i=./indat/dat4nfn.csv k=0 o=./outdat/out81nfn.csv; IN=9 OUT=9; 2014/06/02 19:12:03
+#END# kgnormalize c=range f=金額:金額基準値,数量:数量基準値 i=./indat/dat4.csv k=顧客 o=./outdat/out82.csv; IN=9 OUT=9; 2014/06/02 19:12:03
+#END# kgnormalize -x c=range f=2:金額基準値,1:数量基準値 i=./indat/dat4.csv k=0 o=./outdat/out82x.csv; IN=9 OUT=9; 2014/06/02 19:12:03
+#END# kgnormalize -nfn c=range f=2,1 i=./indat/dat4nfn.csv k=0 o=./outdat/out82nfn.csv; IN=9 OUT=9; 2014/06/02 19:12:03
+#END# kgnormalize c=range f=金額:金額基準値 i=./indat/dat6.csv k=顧客 o=./outdat/out86.csv; IN=5 OUT=5; 2014/06/02 19:12:03
+#END# kgnormalize c=range f=数量:数量基準値 i=./indat/dat6.csv k=顧客 o=./outdat/out87.csv; IN=5 OUT=5; 2014/06/02 19:12:03

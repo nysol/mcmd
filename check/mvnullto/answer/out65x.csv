@@ -1,0 +1,8 @@
+key%0,tra1,tra2
+a,known known known unknown,known known known unknown
+b,,known known unknown known unknown
+c,known unknown known known,known known unknown known known unknown
+d,known known known,known known known known unknown
+e,known known known,unknown known known unknown known known unknown
+f,known known unknown known,
+g,unknown known unknown known unknown known,known known known known

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmltbl version="1.00">
+<header>
+<title>
+顧客購買履歴データ
+</title>
+<comment>
+人工データ
+</comment>
+<field no="1">
+<name>正規</name>
+</field>
+</header>
+<body><![CDATA[
+AABCADDAAACAABBDBACBC
+CBDDACBDDCBBABDDADDBA
+BCAADDBBCCAACACACABBD
+ABABABABABABABABABABA
+]]></body>
+</xmltbl>

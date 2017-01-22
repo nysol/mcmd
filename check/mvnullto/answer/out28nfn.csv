@@ -1,0 +1,7 @@
+a,z1_z2_z4_,a1_a2_a4_,z1_z2_z4_unknown
+b,,a3_a6__a7_,
+c,z2__z4_z5,a8_a11__a9_a10_,z2_unknown_z4_z5
+d,z99_z98_z97,a96_a95_a94_a93_,z99_z98_z97
+e,z199___z198_z197,_a196_a195__a194_a193_,z199_unknown_unknown_z198_z197
+f,z299_z298___z297,,z299_z298_unknown_unknown_z297
+g,_z399__z398__z397,a396_a395_a394_a393,unknown_z399_unknown_z398_unknown_z397

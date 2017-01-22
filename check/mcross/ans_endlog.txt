@@ -1,0 +1,185 @@
+#END# kgcross f=数量 i=./indat/dat0s.csv k=商品 o=./outdat/out0.csv s=日付; IN=0 OUT=0; 2014/06/23 13:58:16
+#END# kgcross -x f=2 i=./indat/dat0s.csv k=0 o=./outdat/out0x.csv s=1; IN=0 OUT=0; 2014/06/23 13:58:16
+#END# kgcross -nfn f=2 i=./indat/dat0snfn.csv k=0 o=./outdat/out0nfn.csv s=1; IN=0 OUT=0; 2014/06/23 13:58:16
+#END# kgcross -nfno f=数量 i=./indat/dat0s.csv k=商品 o=./outdat/out0nfno.csv s=日付; IN=0 OUT=0; 2014/06/23 13:58:16
+#END# kgcross f=数量 i=./indat/dat1s.csv k=商品 o=./outdat/out1.csv s=日付; IN=5 OUT=2; 2014/06/23 13:58:16
+#END# kgcross -x f=2 i=./indat/dat1s.csv k=0 o=./outdat/out1x.csv s=1; IN=5 OUT=2; 2014/06/23 13:58:16
+#END# kgcross -nfn f=2 i=./indat/dat1snfn.csv k=0 o=./outdat/out1nfn.csv s=1; IN=5 OUT=2; 2014/06/23 13:58:16
+#END# kgcross -nfno f=数量 i=./indat/dat1s.csv k=商品 o=./outdat/out1nfno.csv s=日付; IN=5 OUT=2; 2014/06/23 13:58:16
+#END# kgcross -q f=数量 i=./indat/dat1s.csv k=商品 o=./outdat/out1q.csv s=日付; IN=5 OUT=2; 2014/06/23 13:58:16
+#END# kgcross -nfn -q f=2 i=./indat/dat1snfn.csv k=0 o=./outdat/out1qnfn.csv s=1; IN=5 OUT=2; 2014/06/23 13:58:16
+#END# kgcross f=数量,金額 i=./indat/dat1s.csv k=商品 o=./outdat/out2.csv s=日付; IN=5 OUT=4; 2014/06/23 13:58:16
+#END# kgcross -x f=2,3 i=./indat/dat1s.csv k=0 o=./outdat/out2x.csv s=1; IN=5 OUT=4; 2014/06/23 13:58:16
+#END# kgcross -nfn f=2,3 i=./indat/dat1snfn.csv k=0 o=./outdat/out2nfn.csv s=1; IN=5 OUT=4; 2014/06/23 13:58:16
+#END# kgcross -nfno f=数量,金額 i=./indat/dat1s.csv k=商品 o=./outdat/out2nfno.csv s=日付; IN=5 OUT=4; 2014/06/23 13:58:16
+#END# kgcross f=数量 i=./indat/dat1s.csv k=商品 o=./outdat/out3.csv s=日付%r; IN=5 OUT=2; 2014/06/23 13:58:16
+#END# kgcross -x f=2 i=./indat/dat1s.csv k=0 o=./outdat/out3x.csv s=1%r; IN=5 OUT=2; 2014/06/23 13:58:16
+#END# kgcross -nfn f=2 i=./indat/dat1snfn.csv k=0 o=./outdat/out3nfn.csv s=1%r; IN=5 OUT=2; 2014/06/23 13:58:16
+#END# kgcross -nfno f=数量 i=./indat/dat1s.csv k=商品 o=./outdat/out3nfno.csv s=日付%r; IN=5 OUT=2; 2014/06/23 13:58:16
+#END# kgcross f=数量,金額 i=./indat/dat1s.csv k=商品 o=./outdat/out4.csv s=日付%r; IN=5 OUT=4; 2014/06/23 13:58:16
+#END# kgcross -x f=2,3 i=./indat/dat1s.csv k=0 o=./outdat/out4x.csv s=1%r; IN=5 OUT=4; 2014/06/23 13:58:16
+#END# kgcross -nfn f=2,3 i=./indat/dat1snfn.csv k=0 o=./outdat/out4nfn.csv s=1%r; IN=5 OUT=4; 2014/06/23 13:58:16
+#END# kgcross -nfno f=数量,金額 i=./indat/dat1s.csv k=商品 o=./outdat/out4nfno.csv s=日付%r; IN=5 OUT=4; 2014/06/23 13:58:16
+#END# kgcross f=数量 i=./indat/dat1s.csv k=商品 o=./outdat/out5.csv s=日付%n; IN=5 OUT=2; 2014/06/23 13:58:16
+#END# kgcross -x f=2 i=./indat/dat1s.csv k=0 o=./outdat/out5x.csv s=1%n; IN=5 OUT=2; 2014/06/23 13:58:16
+#END# kgcross -nfn f=2 i=./indat/dat1snfn.csv k=0 o=./outdat/out5nfn.csv s=1%n; IN=5 OUT=2; 2014/06/23 13:58:16
+#END# kgcross f=数量,金額 i=./indat/dat1s.csv k=商品 o=./outdat/out6.csv s=日付%n; IN=5 OUT=4; 2014/06/23 13:58:16
+#END# kgcross -x f=2,3 i=./indat/dat1s.csv k=0 o=./outdat/out6x.csv s=1%n; IN=5 OUT=4; 2014/06/23 13:58:16
+#END# kgcross -nfn f=2,3 i=./indat/dat1snfn.csv k=0 o=./outdat/out6nfn.csv s=1%n; IN=5 OUT=4; 2014/06/23 13:58:16
+#END# kgcross f=数量 i=./indat/dat1s.csv k=商品 o=./outdat/out7.csv s=日付%nr; IN=5 OUT=2; 2014/06/23 13:58:16
+#END# kgcross -x f=2 i=./indat/dat1s.csv k=0 o=./outdat/out7x.csv s=1%nr; IN=5 OUT=2; 2014/06/23 13:58:16
+#END# kgcross -nfn f=2 i=./indat/dat1snfn.csv k=0 o=./outdat/out7nfn.csv s=1%nr; IN=5 OUT=2; 2014/06/23 13:58:16
+#END# kgcross f=数量,金額 i=./indat/dat1s.csv k=商品 o=./outdat/out8.csv s=日付%nr; IN=5 OUT=4; 2014/06/23 13:58:16
+#END# kgcross -x f=2,3 i=./indat/dat1s.csv k=0 o=./outdat/out8x.csv s=1%nr; IN=5 OUT=4; 2014/06/23 13:58:16
+#END# kgcross -nfn f=2,3 i=./indat/dat1snfn.csv k=0 o=./outdat/out8nfn.csv s=1%nr; IN=5 OUT=4; 2014/06/23 13:58:16
+#END# kgcross a=項目種別 f=数量,金額 i=./indat/dat1s.csv k=商品 o=./outdat/out9.csv s=日付; IN=5 OUT=4; 2014/06/23 13:58:16
+#END# kgcross -x a=項目種別 f=2,3 i=./indat/dat1s.csv k=0 o=./outdat/out9x.csv s=1; IN=5 OUT=4; 2014/06/23 13:58:16
+#END# kgcross -nfn f=2,3 i=./indat/dat1snfn.csv k=0 o=./outdat/out9nfn.csv s=1; IN=5 OUT=4; 2014/06/23 13:58:16
+#END# kgcross -nfno a=項目種別 f=数量,金額 i=./indat/dat1s.csv k=商品 o=./outdat/out9nfno.csv s=日付; IN=5 OUT=4; 2014/06/23 13:58:16
+#END# kgcross f=数量,金額 i=./indat/dat4s.csv k=商品 o=./outdat/out18.csv s=日付; IN=5 OUT=6; 2014/06/23 13:58:16
+#END# kgcross -x f=2,3 i=./indat/dat4s.csv k=0 o=./outdat/out18x.csv s=1; IN=5 OUT=6; 2014/06/23 13:58:16
+#END# kgcross -nfn f=2,3 i=./indat/dat4snfn.csv k=0 o=./outdat/out18nfn.csv s=1; IN=5 OUT=6; 2014/06/23 13:58:16
+#END# kgcross -nfno f=数量,金額 i=./indat/dat4s.csv k=商品 o=./outdat/out18nfno.csv s=日付; IN=5 OUT=6; 2014/06/23 13:58:16
+#END# kgcross f=数量,金額 i=./indat/dat5s.csv k=商品 o=./outdat/out19.csv s=日付; IN=5 OUT=4; 2014/06/23 13:58:16
+#END# kgcross -x f=2,3 i=./indat/dat5s.csv k=0 o=./outdat/out19x.csv s=1; IN=5 OUT=4; 2014/06/23 13:58:16
+#END# kgcross -nfn f=2,3 i=./indat/dat5snfn.csv k=0 o=./outdat/out19nfn.csv s=1; IN=5 OUT=4; 2014/06/23 13:58:16
+#END# kgcross f=数量,金額 i=./indat/dat6s.csv k=商品 o=./outdat/out20.csv s=日付; IN=5 OUT=4; 2014/06/23 13:58:17
+#END# kgcross -x f=2,3 i=./indat/dat6s.csv k=0 o=./outdat/out20x.csv s=1; IN=5 OUT=4; 2014/06/23 13:58:17
+#END# kgcross -nfn f=2,3 i=./indat/dat6snfn.csv k=0 o=./outdat/out20nfn.csv s=1; IN=5 OUT=4; 2014/06/23 13:58:17
+#END# kgcross f=数量,金額 i=./indat/dat7s.csv k=商品 o=./outdat/out21.csv s=日付; IN=5 OUT=6; 2014/06/23 13:58:17
+#END# kgcross -x f=2,3 i=./indat/dat7s.csv k=0 o=./outdat/out21x.csv s=1; IN=5 OUT=6; 2014/06/23 13:58:17
+#END# kgcross -nfn f=2,3 i=./indat/dat7snfn.csv k=0 o=./outdat/out21nfn.csv s=1; IN=5 OUT=6; 2014/06/23 13:58:17
+#END# kgcross -nfno f=数量,金額 i=./indat/dat7s.csv k=商品 o=./outdat/out21nfno.csv s=日付; IN=5 OUT=6; 2014/06/23 13:58:17
+#END# kgcross f=数量,金額 i=./indat/dat7s.csv k=商品 o=./outdat/out30.csv s=日付 v=null; IN=5 OUT=6; 2014/06/23 13:58:17
+#END# kgcross -x f=2,3 i=./indat/dat7s.csv k=0 o=./outdat/out30x.csv s=1 v=null; IN=5 OUT=6; 2014/06/23 13:58:17
+#END# kgcross -nfn f=2,3 i=./indat/dat7snfn.csv k=0 o=./outdat/out30nfn.csv s=1 v=null; IN=5 OUT=6; 2014/06/23 13:58:17
+#END# kgcross -nfno f=数量,金額 i=./indat/dat7s.csv k=商品 o=./outdat/out30nfno.csv s=日付 v=null; IN=5 OUT=6; 2014/06/23 13:58:17
+#END# kgcross a=項目種類 f=数量 i=./indat/dat8s.csv k=顧客,商品 o=./outdat/out22.csv s=日付; IN=20 OUT=4; 2014/06/23 13:58:17
+#END# kgcross -x a=項目種類 f=3 i=./indat/dat8s.csv k=0,1 o=./outdat/out22x.csv s=2; IN=20 OUT=4; 2014/06/23 13:58:17
+#END# kgcross -nfn f=3 i=./indat/dat8snfn.csv k=0,1 o=./outdat/out22nfn.csv s=2; IN=20 OUT=4; 2014/06/23 13:58:17
+#END# kgcross a=項目種類 f=数量,金額 i=./indat/dat8s.csv k=顧客,商品 o=./outdat/out23.csv s=日付; IN=20 OUT=8; 2014/06/23 13:58:17
+#END# kgcross -x a=項目種類 f=3,4 i=./indat/dat8s.csv k=0,1 o=./outdat/out23x.csv s=2; IN=20 OUT=8; 2014/06/23 13:58:17
+#END# kgcross -nfn f=3,4 i=./indat/dat8snfn.csv k=0,1 o=./outdat/out23nfn.csv s=2; IN=20 OUT=8; 2014/06/23 13:58:17
+#END# kgcross a=項目種類 f=数量 i=./indat/dat8s.csv k=顧客,商品 o=./outdat/out24.csv s=日付%r; IN=20 OUT=4; 2014/06/23 13:58:17
+#END# kgcross -x a=項目種類 f=3 i=./indat/dat8s.csv k=0,1 o=./outdat/out24x.csv s=2%r; IN=20 OUT=4; 2014/06/23 13:58:17
+#END# kgcross -nfn f=3 i=./indat/dat8snfn.csv k=0,1 o=./outdat/out24nfn.csv s=2%r; IN=20 OUT=4; 2014/06/23 13:58:17
+#END# kgcross a=項目種類 f=数量,金額 i=./indat/dat8s.csv k=顧客,商品 o=./outdat/out25.csv s=日付%r; IN=20 OUT=8; 2014/06/23 13:58:17
+#END# kgcross -x a=項目種類 f=3,4 i=./indat/dat8s.csv k=0,1 o=./outdat/out25x.csv s=2%r; IN=20 OUT=8; 2014/06/23 13:58:17
+#END# kgcross -nfn f=3,4 i=./indat/dat8snfn.csv k=0,1 o=./outdat/out25nfn.csv s=2%r; IN=20 OUT=8; 2014/06/23 13:58:17
+#END# kgcross a=項目種類 f=数量 i=./indat/dat8s.csv k=顧客,商品 o=./outdat/out26.csv s=日付%n; IN=20 OUT=4; 2014/06/23 13:58:17
+#END# kgcross -x a=項目種類 f=3 i=./indat/dat8s.csv k=0,1 o=./outdat/out26x.csv s=2%n; IN=20 OUT=4; 2014/06/23 13:58:17
+#END# kgcross -nfn f=3 i=./indat/dat8snfn.csv k=0,1 o=./outdat/out26nfn.csv s=2%n; IN=20 OUT=4; 2014/06/23 13:58:17
+#END# kgcross a=項目種類 f=数量,金額 i=./indat/dat8s.csv k=顧客,商品 o=./outdat/out27.csv s=日付%n; IN=20 OUT=8; 2014/06/23 13:58:17
+#END# kgcross -x a=項目種類 f=3,4 i=./indat/dat8s.csv k=0,1 o=./outdat/out27x.csv s=2%n; IN=20 OUT=8; 2014/06/23 13:58:17
+#END# kgcross -nfn f=3,4 i=./indat/dat8snfn.csv k=0,1 o=./outdat/out27nfn.csv s=2%n; IN=20 OUT=8; 2014/06/23 13:58:17
+#END# kgcross a=項目種類 f=数量 i=./indat/dat8s.csv k=顧客,商品 o=./outdat/out28.csv s=日付%nr; IN=20 OUT=4; 2014/06/23 13:58:17
+#END# kgcross -x a=項目種類 f=3 i=./indat/dat8s.csv k=0,1 o=./outdat/out28x.csv s=2%nr; IN=20 OUT=4; 2014/06/23 13:58:17
+#END# kgcross -nfn f=3 i=./indat/dat8snfn.csv k=0,1 o=./outdat/out28nfn.csv s=2%nr; IN=20 OUT=4; 2014/06/23 13:58:17
+#END# kgcross a=項目種類 f=数量,金額 i=./indat/dat8s.csv k=顧客,商品 o=./outdat/out29.csv s=日付%nr; IN=20 OUT=8; 2014/06/23 13:58:17
+#END# kgcross -x a=項目種類 f=3,4 i=./indat/dat8s.csv k=0,1 o=./outdat/out29x.csv s=2%nr; IN=20 OUT=8; 2014/06/23 13:58:17
+#END# kgcross -nfn f=3,4 i=./indat/dat8snfn.csv k=0,1 o=./outdat/out29nfn.csv s=2%nr; IN=20 OUT=8; 2014/06/23 13:58:17
+#END# kgcross a=項目種類 f=数量 i=./indat/dat3.csv o=./outdat/out10.csv s=日付; IN=5 OUT=1; 2014/06/23 13:58:17
+#END# kgcross -x a=項目種類 f=2 i=./indat/dat3.csv o=./outdat/out10x.csv s=1; IN=5 OUT=1; 2014/06/23 13:58:17
+#END# kgcross -nfn f=2 i=./indat/dat3nfn.csv o=./outdat/out10nfn.csv s=1; IN=5 OUT=1; 2014/06/23 13:58:17
+#END# kgcross -nfno a=項目種類 f=数量 i=./indat/dat3.csv o=./outdat/out10nfno.csv s=日付; IN=5 OUT=1; 2014/06/23 13:58:17
+#END# kgcross a=項目種類 f=数量,金額 i=./indat/dat3.csv o=./outdat/out11.csv s=日付; IN=5 OUT=2; 2014/06/23 13:58:17
+#END# kgcross -x a=項目種類 f=2,3 i=./indat/dat3.csv o=./outdat/out11x.csv s=1; IN=5 OUT=2; 2014/06/23 13:58:17
+#END# kgcross -nfn f=2,3 i=./indat/dat3nfn.csv o=./outdat/out11nfn.csv s=1; IN=5 OUT=2; 2014/06/23 13:58:17
+#END# kgcross a=項目種類 f=数量 i=./indat/dat3.csv o=./outdat/out12.csv s=日付%r; IN=5 OUT=1; 2014/06/23 13:58:17
+#END# kgcross -x a=項目種類 f=2 i=./indat/dat3.csv o=./outdat/out12x.csv s=1%r; IN=5 OUT=1; 2014/06/23 13:58:17
+#END# kgcross -nfn f=2 i=./indat/dat3nfn.csv o=./outdat/out12nfn.csv s=1%r; IN=5 OUT=1; 2014/06/23 13:58:17
+#END# kgcross a=項目種類 f=数量,金額 i=./indat/dat3.csv o=./outdat/out13.csv s=日付%r; IN=5 OUT=2; 2014/06/23 13:58:17
+#END# kgcross -x a=項目種類 f=2,3 i=./indat/dat3.csv o=./outdat/out13x.csv s=1%r; IN=5 OUT=2; 2014/06/23 13:58:17
+#END# kgcross -nfn f=2,3 i=./indat/dat3nfn.csv o=./outdat/out13nfn.csv s=1%r; IN=5 OUT=2; 2014/06/23 13:58:17
+#END# kgcross a=項目種類 f=数量 i=./indat/dat3.csv o=./outdat/out14.csv s=日付%n; IN=5 OUT=1; 2014/06/23 13:58:17
+#END# kgcross -x a=項目種類 f=2 i=./indat/dat3.csv o=./outdat/out14x.csv s=1%n; IN=5 OUT=1; 2014/06/23 13:58:17
+#END# kgcross -nfn f=2 i=./indat/dat3nfn.csv o=./outdat/out14nfn.csv s=1%n; IN=5 OUT=1; 2014/06/23 13:58:17
+#END# kgcross a=項目種類 f=数量,金額 i=./indat/dat3.csv o=./outdat/out15.csv s=日付%n; IN=5 OUT=2; 2014/06/23 13:58:17
+#END# kgcross -x a=項目種類 f=2,3 i=./indat/dat3.csv o=./outdat/out15x.csv s=1%n; IN=5 OUT=2; 2014/06/23 13:58:17
+#END# kgcross -nfn f=2,3 i=./indat/dat3nfn.csv o=./outdat/out15nfn.csv s=1%n; IN=5 OUT=2; 2014/06/23 13:58:17
+#END# kgcross a=項目種類 f=数量 i=./indat/dat3.csv o=./outdat/out16.csv s=日付%nr; IN=5 OUT=1; 2014/06/23 13:58:17
+#END# kgcross -x a=項目種類 f=2 i=./indat/dat3.csv o=./outdat/out16x.csv s=1%nr; IN=5 OUT=1; 2014/06/23 13:58:17
+#END# kgcross -nfn f=2 i=./indat/dat3nfn.csv o=./outdat/out16nfn.csv s=1%nr; IN=5 OUT=1; 2014/06/23 13:58:17
+#END# kgcross a=項目種類 f=数量,金額 i=./indat/dat3.csv o=./outdat/out17.csv s=日付%nr; IN=5 OUT=2; 2014/06/23 13:58:17
+#END# kgcross -x a=項目種類 f=2,3 i=./indat/dat3.csv o=./outdat/out17x.csv s=1%nr; IN=5 OUT=2; 2014/06/23 13:58:17
+#END# kgcross -nfn f=2,3 i=./indat/dat3nfn.csv o=./outdat/out17nfn.csv s=1%nr; IN=5 OUT=2; 2014/06/23 13:58:17
+#END# kgcross f=数量 i=./indat/dat0.csv k=商品 o=./outdat/out31.csv s=日付; IN=0 OUT=0; 2014/06/23 13:58:17
+#END# kgcross -x f=2 i=./indat/dat0.csv k=0 o=./outdat/out31x.csv s=1; IN=0 OUT=0; 2014/06/23 13:58:17
+#END# kgcross -nfn f=2 i=./indat/dat0nfn.csv k=0 o=./outdat/out31nfn.csv s=1; IN=0 OUT=0; 2014/06/23 13:58:17
+#END# kgcross -nfno f=数量 i=./indat/dat0.csv k=商品 o=./outdat/out31nfno.csv s=日付; IN=0 OUT=0; 2014/06/23 13:58:17
+#END# kgcross f=数量 i=./indat/dat1.csv k=商品 o=./outdat/out32.csv s=日付; IN=5 OUT=2; 2014/06/23 13:58:17
+#END# kgcross -x f=2 i=./indat/dat1.csv k=0 o=./outdat/out32x.csv s=1; IN=5 OUT=2; 2014/06/23 13:58:17
+#END# kgcross -nfn f=2 i=./indat/dat1nfn.csv k=0 o=./outdat/out32nfn.csv s=1; IN=5 OUT=4; 2014/06/23 13:58:17
+#END# kgcross -nfno f=数量 i=./indat/dat1.csv k=商品 o=./outdat/out32nfno.csv s=日付; IN=5 OUT=2; 2014/06/23 13:58:17
+#END# kgcross -q f=数量 i=./indat/dat1.csv k=商品 o=./outdat/out32q.csv s=日付; IN=5 OUT=4; 2014/06/23 13:58:17
+#END# kgcross -nfn -q f=2 i=./indat/dat1nfn.csv k=0 o=./outdat/out32qnfn.csv s=1; IN=5 OUT=4; 2014/06/23 13:58:17
+#END# kgcross f=数量,金額 i=./indat/dat1.csv k=商品 o=./outdat/out33.csv s=日付; IN=5 OUT=4; 2014/06/23 13:58:17
+#END# kgcross -x f=2,3 i=./indat/dat1.csv k=0 o=./outdat/out33x.csv s=1; IN=5 OUT=4; 2014/06/23 13:58:17
+#END# kgcross -nfn f=2,3 i=./indat/dat1nfn.csv k=0 o=./outdat/out33nfn.csv s=1; IN=5 OUT=8; 2014/06/23 13:58:17
+#END# kgcross -nfno f=数量,金額 i=./indat/dat1.csv k=商品 o=./outdat/out33nfno.csv s=日付; IN=5 OUT=4; 2014/06/23 13:58:17
+#END# kgcross f=数量 i=./indat/dat1.csv k=商品 o=./outdat/out34.csv s=日付%r; IN=5 OUT=2; 2014/06/23 13:58:17
+#END# kgcross -x f=2 i=./indat/dat1.csv k=0 o=./outdat/out34x.csv s=1%r; IN=5 OUT=2; 2014/06/23 13:58:17
+#END# kgcross -nfn f=2 i=./indat/dat1nfn.csv k=0 o=./outdat/out34nfn.csv s=1%r; IN=5 OUT=4; 2014/06/23 13:58:17
+#END# kgcross -nfno f=数量 i=./indat/dat1.csv k=商品 o=./outdat/out34nfno.csv s=日付%r; IN=5 OUT=2; 2014/06/23 13:58:17
+#END# kgcross f=数量,金額 i=./indat/dat1.csv k=商品 o=./outdat/out35.csv s=日付%r; IN=5 OUT=4; 2014/06/23 13:58:17
+#END# kgcross -x f=2,3 i=./indat/dat1.csv k=0 o=./outdat/out35x.csv s=1%r; IN=5 OUT=4; 2014/06/23 13:58:17
+#END# kgcross -nfn f=2,3 i=./indat/dat1nfn.csv k=0 o=./outdat/out35nfn.csv s=1%r; IN=5 OUT=8; 2014/06/23 13:58:17
+#END# kgcross -nfno f=数量,金額 i=./indat/dat1.csv k=商品 o=./outdat/out35nfno.csv s=日付%r; IN=5 OUT=4; 2014/06/23 13:58:17
+#END# kgcross f=数量 i=./indat/dat1.csv k=商品 o=./outdat/out36.csv s=日付%n; IN=5 OUT=2; 2014/06/23 13:58:17
+#END# kgcross -x f=2 i=./indat/dat1.csv k=0 o=./outdat/out36x.csv s=1%n; IN=5 OUT=2; 2014/06/23 13:58:18
+#END# kgcross -nfn f=2 i=./indat/dat1nfn.csv k=0 o=./outdat/out36nfn.csv s=1%n; IN=5 OUT=4; 2014/06/23 13:58:18
+#END# kgcross f=数量,金額 i=./indat/dat1.csv k=商品 o=./outdat/out37.csv s=日付%n; IN=5 OUT=4; 2014/06/23 13:58:18
+#END# kgcross -x f=2,3 i=./indat/dat1.csv k=0 o=./outdat/out37x.csv s=1%n; IN=5 OUT=4; 2014/06/23 13:58:18
+#END# kgcross -nfn f=2,3 i=./indat/dat1nfn.csv k=0 o=./outdat/out37nfn.csv s=1%n; IN=5 OUT=8; 2014/06/23 13:58:18
+#END# kgcross f=数量 i=./indat/dat1.csv k=商品 o=./outdat/out38.csv s=日付%nr; IN=5 OUT=2; 2014/06/23 13:58:18
+#END# kgcross -x f=2 i=./indat/dat1.csv k=0 o=./outdat/out38x.csv s=1%nr; IN=5 OUT=2; 2014/06/23 13:58:18
+#END# kgcross -nfn f=2 i=./indat/dat1nfn.csv k=0 o=./outdat/out38nfn.csv s=1%nr; IN=5 OUT=4; 2014/06/23 13:58:18
+#END# kgcross f=数量,金額 i=./indat/dat1.csv k=商品 o=./outdat/out39.csv s=日付%nr; IN=5 OUT=4; 2014/06/23 13:58:18
+#END# kgcross -x f=2,3 i=./indat/dat1.csv k=0 o=./outdat/out39x.csv s=1%nr; IN=5 OUT=4; 2014/06/23 13:58:18
+#END# kgcross -nfn f=2,3 i=./indat/dat1nfn.csv k=0 o=./outdat/out39nfn.csv s=1%nr; IN=5 OUT=8; 2014/06/23 13:58:18
+#END# kgcross a=項目種別 f=数量,金額 i=./indat/dat1.csv k=商品 o=./outdat/out40.csv s=日付; IN=5 OUT=4; 2014/06/23 13:58:18
+#END# kgcross -x a=項目種別 f=2,3 i=./indat/dat1.csv k=0 o=./outdat/out40x.csv s=1; IN=5 OUT=4; 2014/06/23 13:58:18
+#END# kgcross -nfn f=2,3 i=./indat/dat1nfn.csv k=0 o=./outdat/out40nfn.csv s=1; IN=5 OUT=8; 2014/06/23 13:58:18
+#END# kgcross -nfno a=項目種別 f=数量,金額 i=./indat/dat1.csv k=商品 o=./outdat/out40nfno.csv s=日付; IN=5 OUT=4; 2014/06/23 13:58:18
+#END# kgcross f=数量,金額 i=./indat/dat4.csv k=商品 o=./outdat/out42.csv s=日付; IN=5 OUT=6; 2014/06/23 13:58:18
+#END# kgcross -x f=2,3 i=./indat/dat4.csv k=0 o=./outdat/out42x.csv s=1; IN=5 OUT=6; 2014/06/23 13:58:18
+#END# kgcross -nfn f=2,3 i=./indat/dat4nfn.csv k=0 o=./outdat/out42nfn.csv s=1; IN=5 OUT=10; 2014/06/23 13:58:18
+#END# kgcross -nfno f=数量,金額 i=./indat/dat4.csv k=商品 o=./outdat/out42nfno.csv s=日付; IN=5 OUT=6; 2014/06/23 13:58:18
+#END# kgcross f=数量,金額 i=./indat/dat5.csv k=商品 o=./outdat/out43.csv s=日付; IN=5 OUT=4; 2014/06/23 13:58:18
+#END# kgcross -x f=2,3 i=./indat/dat5.csv k=0 o=./outdat/out43x.csv s=1; IN=5 OUT=4; 2014/06/23 13:58:18
+#END# kgcross -nfn f=2,3 i=./indat/dat5nfn.csv k=0 o=./outdat/out43nfn.csv s=1; IN=5 OUT=8; 2014/06/23 13:58:18
+#END# kgcross f=数量,金額 i=./indat/dat6.csv k=商品 o=./outdat/out44.csv s=日付; IN=5 OUT=4; 2014/06/23 13:58:18
+#END# kgcross -x f=2,3 i=./indat/dat6.csv k=0 o=./outdat/out44x.csv s=1; IN=5 OUT=4; 2014/06/23 13:58:18
+#END# kgcross -nfn f=2,3 i=./indat/dat6nfn.csv k=0 o=./outdat/out44nfn.csv s=1; IN=5 OUT=6; 2014/06/23 13:58:18
+#END# kgcross f=数量,金額 i=./indat/dat7.csv k=商品 o=./outdat/out45.csv s=日付; IN=5 OUT=6; 2014/06/23 13:58:18
+#END# kgcross -x f=2,3 i=./indat/dat7.csv k=0 o=./outdat/out45x.csv s=1; IN=5 OUT=6; 2014/06/23 13:58:18
+#END# kgcross -nfn f=2,3 i=./indat/dat7nfn.csv k=0 o=./outdat/out45nfn.csv s=1; IN=5 OUT=8; 2014/06/23 13:58:18
+#END# kgcross -nfno f=数量,金額 i=./indat/dat7.csv k=商品 o=./outdat/out45nfno.csv s=日付; IN=5 OUT=6; 2014/06/23 13:58:18
+#END# kgcross f=数量,金額 i=./indat/dat7.csv k=商品 o=./outdat/out46.csv s=日付 v=null; IN=5 OUT=6; 2014/06/23 13:58:18
+#END# kgcross -x f=2,3 i=./indat/dat7.csv k=0 o=./outdat/out46x.csv s=1 v=null; IN=5 OUT=6; 2014/06/23 13:58:18
+#END# kgcross -nfn f=2,3 i=./indat/dat7nfn.csv k=0 o=./outdat/out46nfn.csv s=1 v=null; IN=5 OUT=8; 2014/06/23 13:58:18
+#END# kgcross -nfno f=数量,金額 i=./indat/dat7.csv k=商品 o=./outdat/out46nfno.csv s=日付 v=null; IN=5 OUT=6; 2014/06/23 13:58:18
+#END# kgcross a=項目種類 f=数量 i=./indat/dat8.csv k=顧客,商品 o=./outdat/out47.csv s=日付; IN=20 OUT=4; 2014/06/23 13:58:18
+#END# kgcross -x a=項目種類 f=3 i=./indat/dat8.csv k=0,1 o=./outdat/out47x.csv s=2; IN=20 OUT=4; 2014/06/23 13:58:18
+#END# kgcross -nfn f=3 i=./indat/dat8nfn.csv k=0,1 o=./outdat/out47nfn.csv s=2; IN=20 OUT=9; 2014/06/23 13:58:18
+#END# kgcross a=項目種類 f=数量,金額 i=./indat/dat8.csv k=顧客,商品 o=./outdat/out48.csv s=日付; IN=20 OUT=8; 2014/06/23 13:58:18
+#END# kgcross -x a=項目種類 f=3,4 i=./indat/dat8.csv k=0,1 o=./outdat/out48x.csv s=2; IN=20 OUT=8; 2014/06/23 13:58:18
+#END# kgcross -nfn f=3,4 i=./indat/dat8nfn.csv k=0,1 o=./outdat/out48nfn.csv s=2; IN=20 OUT=18; 2014/06/23 13:58:18
+#END# kgcross a=項目種類 f=数量 i=./indat/dat8.csv k=顧客,商品 o=./outdat/out49.csv s=日付%r; IN=20 OUT=4; 2014/06/23 13:58:18
+#END# kgcross -x a=項目種類 f=3 i=./indat/dat8.csv k=0,1 o=./outdat/out49x.csv s=2%r; IN=20 OUT=4; 2014/06/23 13:58:18
+#END# kgcross -nfn f=3 i=./indat/dat8nfn.csv k=0,1 o=./outdat/out49nfn.csv s=2%r; IN=20 OUT=9; 2014/06/23 13:58:18
+#END# kgcross a=項目種類 f=数量,金額 i=./indat/dat8.csv k=顧客,商品 o=./outdat/out50.csv s=日付%r; IN=20 OUT=8; 2014/06/23 13:58:18
+#END# kgcross -x a=項目種類 f=3,4 i=./indat/dat8.csv k=0,1 o=./outdat/out50x.csv s=2%r; IN=20 OUT=8; 2014/06/23 13:58:19
+#END# kgcross -nfn f=3,4 i=./indat/dat8nfn.csv k=0,1 o=./outdat/out50nfn.csv s=2%r; IN=20 OUT=18; 2014/06/23 13:58:19
+#END# kgcross a=項目種類 f=数量 i=./indat/dat8.csv k=顧客,商品 o=./outdat/out51.csv s=日付%n; IN=20 OUT=4; 2014/06/23 13:58:19
+#END# kgcross -x a=項目種類 f=3 i=./indat/dat8.csv k=0,1 o=./outdat/out51x.csv s=2%n; IN=20 OUT=4; 2014/06/23 13:58:19
+#END# kgcross -nfn f=3 i=./indat/dat8nfn.csv k=0,1 o=./outdat/out51nfn.csv s=2%n; IN=20 OUT=9; 2014/06/23 13:58:19
+#END# kgcross a=項目種類 f=数量,金額 i=./indat/dat8.csv k=顧客,商品 o=./outdat/out52.csv s=日付%n; IN=20 OUT=8; 2014/06/23 13:58:19
+#END# kgcross -x a=項目種類 f=3,4 i=./indat/dat8.csv k=0,1 o=./outdat/out52x.csv s=2%n; IN=20 OUT=8; 2014/06/23 13:58:19
+#END# kgcross -nfn f=3,4 i=./indat/dat8nfn.csv k=0,1 o=./outdat/out52nfn.csv s=2%n; IN=20 OUT=18; 2014/06/23 13:58:19
+#END# kgcross a=項目種類 f=数量 i=./indat/dat8.csv k=顧客,商品 o=./outdat/out53.csv s=日付%nr; IN=20 OUT=4; 2014/06/23 13:58:19
+#END# kgcross -x a=項目種類 f=3 i=./indat/dat8.csv k=0,1 o=./outdat/out53x.csv s=2%nr; IN=20 OUT=4; 2014/06/23 13:58:19
+#END# kgcross -nfn f=3 i=./indat/dat8nfn.csv k=0,1 o=./outdat/out53nfn.csv s=2%nr; IN=20 OUT=9; 2014/06/23 13:58:19
+#END# kgcross a=項目種類 f=数量,金額 i=./indat/dat8.csv k=顧客,商品 o=./outdat/out54.csv s=日付%nr; IN=20 OUT=8; 2014/06/23 13:58:19
+#END# kgcross -x a=項目種類 f=3,4 i=./indat/dat8.csv k=0,1 o=./outdat/out54x.csv s=2%nr; IN=20 OUT=8; 2014/06/23 13:58:19
+#END# kgcross -nfn f=3,4 i=./indat/dat8nfn.csv k=0,1 o=./outdat/out54nfn.csv s=2%nr; IN=20 OUT=18; 2014/06/23 13:58:19

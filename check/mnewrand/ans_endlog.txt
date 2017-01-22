@@ -1,0 +1,42 @@
+#END# kgnewrand -int S=1 a=乱数 o=./outdat/out0.csv;  OUT=10; 2013/10/24 13:44:52
+#END# kgnewrand -int -x S=1 a=乱数 o=./outdat/out0x.csv;  OUT=10; 2013/10/24 13:44:52
+#END# kgnewrand -int -nfn S=1 o=./outdat/out0nfn.csv;  OUT=10; 2013/10/24 13:44:52
+#END# kgnewrand -int S=1 a=乱数 min=10 o=./outdat/out1.csv;  OUT=10; 2013/10/24 13:44:52
+#END# kgnewrand -int -x S=1 a=乱数 min=10 o=./outdat/out1x.csv;  OUT=10; 2013/10/24 13:44:52
+#END# kgnewrand -int -nfn S=1 min=10 o=./outdat/out1nfn.csv;  OUT=10; 2013/10/24 13:44:52
+#END# kgnewrand -int S=1 a=乱数 max=20 o=./outdat/out2.csv;  OUT=10; 2013/10/24 13:44:52
+#END# kgnewrand -int -x S=1 a=乱数 max=20 o=./outdat/out2x.csv;  OUT=10; 2013/10/24 13:44:52
+#END# kgnewrand -int -nfn S=1 max=20 o=./outdat/out2nfn.csv;  OUT=10; 2013/10/24 13:44:52
+#END# kgnewrand -int S=1 a=乱数 max=20 min=10 o=./outdat/out3.csv;  OUT=10; 2013/10/24 13:44:52
+#END# kgnewrand -int -x S=1 a=乱数 max=20 min=10 o=./outdat/out3x.csv;  OUT=10; 2013/10/24 13:44:52
+#END# kgnewrand -int -nfn S=1 max=20 min=10 o=./outdat/out3nfn.csv;  OUT=10; 2013/10/24 13:44:52
+#END# kgnewrand -int S=1 a=乱数 l=20 max=20 min=10 o=./outdat/out4.csv;  OUT=20; 2013/10/24 13:44:52
+#END# kgnewrand -int -x S=1 a=乱数 l=20 max=20 min=10 o=./outdat/out4x.csv;  OUT=20; 2013/10/24 13:44:52
+#END# kgnewrand -int -nfn S=1 l=20 max=20 min=10 o=./outdat/out4nfn.csv;  OUT=20; 2013/10/24 13:44:52
+#END# kgnewrand S=1 a=乱数 o=./outdat/out12.csv;  OUT=10; 2013/10/24 13:44:52
+#END# kgnewrand -x S=1 a=乱数 o=./outdat/out12x.csv;  OUT=10; 2013/10/24 13:44:52
+#END# kgnewrand -nfn S=1 o=./outdat/out12nfn.csv;  OUT=10; 2013/10/24 13:44:52
+#END# kgnewrand S=1 a=乱数 l=20 o=./outdat/out13.csv;  OUT=20; 2013/10/24 13:44:52
+#END# kgnewrand -x S=1 a=乱数 l=20 o=./outdat/out13x.csv;  OUT=20; 2013/10/24 13:44:52
+#END# kgnewrand -nfn S=1 l=20 o=./outdat/out13nfn.csv;  OUT=20; 2013/10/24 13:44:52
+#END# kgnewrand -int a=乱数 o=./outdat/out5.csv;  OUT=10; 2013/10/24 13:44:52
+#END# kgnewrand -int -x a=乱数 o=./outdat/out5x.csv;  OUT=10; 2013/10/24 13:44:52
+#END# kgnewrand -int -nfn o=./outdat/out5nfn.csv;  OUT=10; 2013/10/24 13:44:52
+#END# kgnewrand -int a=乱数 min=10 o=./outdat/out6.csv;  OUT=10; 2013/10/24 13:44:52
+#END# kgnewrand -int -x a=乱数 min=10 o=./outdat/out6x.csv;  OUT=10; 2013/10/24 13:44:52
+#END# kgnewrand -int -nfn min=10 o=./outdat/out6nfn.csv;  OUT=10; 2013/10/24 13:44:52
+#END# kgnewrand -int a=乱数 max=20 o=./outdat/out7.csv;  OUT=10; 2013/10/24 13:44:52
+#END# kgnewrand -int -x a=乱数 max=20 o=./outdat/out7x.csv;  OUT=10; 2013/10/24 13:44:52
+#END# kgnewrand -int -nfn max=20 o=./outdat/out7nfn.csv;  OUT=10; 2013/10/24 13:44:52
+#END# kgnewrand -int a=乱数 max=20 min=10 o=./outdat/out8.csv;  OUT=10; 2013/10/24 13:44:52
+#END# kgnewrand -int -x a=乱数 max=20 min=10 o=./outdat/out8x.csv;  OUT=10; 2013/10/24 13:44:52
+#END# kgnewrand -int -nfn max=20 min=10 o=./outdat/out8nfn.csv;  OUT=10; 2013/10/24 13:44:52
+#END# kgnewrand -int a=乱数 l=20 max=20 min=10 o=./outdat/out9.csv;  OUT=20; 2013/10/24 13:44:52
+#END# kgnewrand -int -x a=乱数 l=20 max=20 min=10 o=./outdat/out9x.csv;  OUT=20; 2013/10/24 13:44:52
+#END# kgnewrand -int -nfn l=20 max=20 min=10 o=./outdat/out9nfn.csv;  OUT=20; 2013/10/24 13:44:52
+#END# kgnewrand a=乱数 o=./outdat/out10.csv;  OUT=10; 2013/10/24 13:44:52
+#END# kgnewrand -x a=乱数 o=./outdat/out10x.csv;  OUT=10; 2013/10/24 13:44:52
+#END# kgnewrand -nfn o=./outdat/out10nfn.csv;  OUT=10; 2013/10/24 13:44:52
+#END# kgnewrand a=乱数 l=20 o=./outdat/out11.csv;  OUT=20; 2013/10/24 13:44:52
+#END# kgnewrand -x a=乱数 l=20 o=./outdat/out11x.csv;  OUT=20; 2013/10/24 13:44:52
+#END# kgnewrand -nfn l=20 o=./outdat/out11nfn.csv;  OUT=20; 2013/10/24 13:44:52

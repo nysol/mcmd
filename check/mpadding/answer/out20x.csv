@@ -1,0 +1,15 @@
+a,b%0n,c,d
+padding,-1,padding,padding
+padding,0,padding,padding
+a,1,x1,y1
+a,2,x2,y2
+a,2,x2,y2
+padding,3,padding,padding
+padding,4,padding,padding
+a,5,x2,y2
+a,6,x3,y3
+padding,7,padding,padding
+a,8,x4,y4
+padding,9,padding,padding
+a,10,x5,y5
+padding,11,padding,padding

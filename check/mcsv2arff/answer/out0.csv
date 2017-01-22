@@ -1,0 +1,7 @@
+@RELATION	By_KGMOD
+
+@ATTRIBUTE	数量	numeric
+@ATTRIBUTE	金額	numeric
+@ATTRIBUTE	商品	{}
+
+@DATA

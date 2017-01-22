@@ -1,0 +1,54 @@
+#END# kgnullto f=生年月日:生年月日登録状況 i=./indat/dat0.csv o=./outdat/out0.csv v=値なし; IN=0 OUT=0; 2014/06/04 01:57:48
+#END# kgnullto -x f=1:生年月日登録状況 i=./indat/dat0.csv o=./outdat/out0x.csv v=値なし; IN=0 OUT=0; 2014/06/04 01:57:48
+#END# kgnullto -nfn f=1 i=./indat/dat0nfn.csv o=./outdat/out0nfn.csv v=値なし; IN=0 OUT=0; 2014/06/04 01:57:48
+#END# kgnullto -A f=生年月日:生年月日登録状況 i=./indat/dat0.csv o=./outdat/out1.csv v=値なし; IN=0 OUT=0; 2014/06/04 01:57:48
+#END# kgnullto -A -x f=1:生年月日登録状況 i=./indat/dat0.csv o=./outdat/out1x.csv v=値なし; IN=0 OUT=0; 2014/06/04 01:57:48
+#END# kgnullto -A -nfn f=1 i=./indat/dat0nfn.csv o=./outdat/out1nfn.csv v=値なし; IN=0 OUT=0; 2014/06/04 01:57:48
+#END# kgnullto f=生年月日 i=./indat/dat1.csv o=./outdat/out2.csv v=値なし; IN=5 OUT=5; 2014/06/04 01:57:48
+#END# kgnullto -x f=1 i=./indat/dat1.csv o=./outdat/out2x.csv v=値なし; IN=5 OUT=5; 2014/06/04 01:57:48
+#END# kgnullto -nfn f=1 i=./indat/dat1nfn.csv o=./outdat/out2nfn.csv v=値なし; IN=5 OUT=5; 2014/06/04 01:57:48
+#END# kgnullto O=値あり f=生年月日 i=./indat/dat1.csv o=./outdat/out3.csv v=値なし; IN=5 OUT=5; 2014/06/04 01:57:48
+#END# kgnullto -x O=値あり f=1 i=./indat/dat1.csv o=./outdat/out3x.csv v=値なし; IN=5 OUT=5; 2014/06/04 01:57:48
+#END# kgnullto -nfn O=値あり f=1 i=./indat/dat1nfn.csv o=./outdat/out3nfn.csv v=値なし; IN=5 OUT=5; 2014/06/04 01:57:48
+#END# kgnullto O=値あり f=生年月日:生年月日登録状況 i=./indat/dat1.csv o=./outdat/out4.csv v=値なし; IN=5 OUT=5; 2014/06/04 01:57:48
+#END# kgnullto -x O=値あり f=1:生年月日登録状況 i=./indat/dat1.csv o=./outdat/out4x.csv v=値なし; IN=5 OUT=5; 2014/06/04 01:57:48
+#END# kgnullto -nfn O=値あり f=1 i=./indat/dat1nfn.csv o=./outdat/out4nfn.csv v=値なし; IN=5 OUT=5; 2014/06/04 01:57:48
+#END# kgnullto -A O=値あり f=生年月日:生年月日登録状況 i=./indat/dat1.csv o=./outdat/out5.csv v=値なし; IN=5 OUT=5; 2014/06/04 01:57:48
+#END# kgnullto -A -x O=値あり f=1:生年月日登録状況 i=./indat/dat1.csv o=./outdat/out5x.csv v=値なし; IN=5 OUT=5; 2014/06/04 01:57:48
+#END# kgnullto -A -nfn O=値あり f=1 i=./indat/dat1nfn.csv o=./outdat/out5nfn.csv v=値なし; IN=5 OUT=5; 2014/06/04 01:57:48
+#END# kgnullto f=生年月日,血液型 i=./indat/dat2.csv o=./outdat/out6.csv v=値なし; IN=5 OUT=5; 2014/06/04 01:57:48
+#END# kgnullto -x f=1,2 i=./indat/dat2.csv o=./outdat/out6x.csv v=値なし; IN=5 OUT=5; 2014/06/04 01:57:48
+#END# kgnullto -nfn f=1,2 i=./indat/dat2nfn.csv o=./outdat/out6nfn.csv v=値なし; IN=5 OUT=5; 2014/06/04 01:57:48
+#END# kgnullto O=値あり f=生年月日,血液型 i=./indat/dat2.csv o=./outdat/out7.csv v=値なし; IN=5 OUT=5; 2014/06/04 01:57:48
+#END# kgnullto -x O=値あり f=1,2 i=./indat/dat2.csv o=./outdat/out7x.csv v=値なし; IN=5 OUT=5; 2014/06/04 01:57:48
+#END# kgnullto -nfn O=値あり f=1,2 i=./indat/dat2nfn.csv o=./outdat/out7nfn.csv v=値なし; IN=5 OUT=5; 2014/06/04 01:57:48
+#END# kgnullto O=値あり f=生年月日:生年月日登録状況,血液型:血液型登録状況 i=./indat/dat2.csv o=./outdat/out8.csv v=値なし; IN=5 OUT=5; 2014/06/04 01:57:48
+#END# kgnullto -x O=値あり f=1:生年月日登録状況,2:血液型登録状況 i=./indat/dat2.csv o=./outdat/out8x.csv v=値なし; IN=5 OUT=5; 2014/06/04 01:57:48
+#END# kgnullto -nfn O=値あり f=1,2 i=./indat/dat2nfn.csv o=./outdat/out8nfn.csv v=値なし; IN=5 OUT=5; 2014/06/04 01:57:48
+#END# kgnullto -A O=値あり f=生年月日:生年月日登録状況,血液型:血液型登録状況 i=./indat/dat2.csv o=./outdat/out9.csv v=値なし; IN=5 OUT=5; 2014/06/04 01:57:48
+#END# kgnullto -A -x O=値あり f=1:生年月日登録状況,2:血液型登録状況 i=./indat/dat2.csv o=./outdat/out9x.csv v=値なし; IN=5 OUT=5; 2014/06/04 01:57:48
+#END# kgnullto -A -nfn O=値あり f=1,2 i=./indat/dat2nfn.csv o=./outdat/out9nfn.csv v=値なし; IN=5 OUT=5; 2014/06/04 01:57:48
+#END# kgnullto -p f=生年月日 i=./indat/dat1.csv o=./outdat/out10.csv; IN=5 OUT=5; 2014/06/04 01:57:48
+#END# kgnullto -p -x f=1 i=./indat/dat1.csv o=./outdat/out10x.csv; IN=5 OUT=5; 2014/06/04 01:57:48
+#END# kgnullto -nfn -p f=1 i=./indat/dat1nfn.csv o=./outdat/out10nfn.csv; IN=5 OUT=5; 2014/06/04 01:57:48
+#END# kgnullto -p O=値あり f=生年月日 i=./indat/dat1.csv o=./outdat/out11.csv; IN=5 OUT=5; 2014/06/04 01:57:49
+#END# kgnullto -p -x O=値あり f=1 i=./indat/dat1.csv o=./outdat/out11x.csv; IN=5 OUT=5; 2014/06/04 01:57:49
+#END# kgnullto -nfn -p O=値あり f=1 i=./indat/dat1nfn.csv o=./outdat/out11nfn.csv; IN=5 OUT=5; 2014/06/04 01:57:49
+#END# kgnullto -p O=値あり f=生年月日:生年月日登録状況 i=./indat/dat1.csv o=./outdat/out12.csv; IN=5 OUT=5; 2014/06/04 01:57:49
+#END# kgnullto -p -x O=値あり f=1:生年月日登録状況 i=./indat/dat1.csv o=./outdat/out12x.csv; IN=5 OUT=5; 2014/06/04 01:57:49
+#END# kgnullto -nfn -p O=値あり f=1 i=./indat/dat1nfn.csv o=./outdat/out12nfn.csv; IN=5 OUT=5; 2014/06/04 01:57:49
+#END# kgnullto -A -p O=値あり f=生年月日:生年月日登録状況 i=./indat/dat1.csv o=./outdat/out13.csv; IN=5 OUT=5; 2014/06/04 01:57:49
+#END# kgnullto -A -p -x O=値あり f=1:生年月日登録状況 i=./indat/dat1.csv o=./outdat/out13x.csv; IN=5 OUT=5; 2014/06/04 01:57:49
+#END# kgnullto -A -nfn -p O=値あり f=1 i=./indat/dat1nfn.csv o=./outdat/out13nfn.csv; IN=5 OUT=5; 2014/06/04 01:57:49
+#END# kgnullto f=生年月日,血液型 i=./indat/dat2s.csv o=./outdat/out16.csv v=値なし; IN=5 OUT=5; 2014/06/04 01:57:49
+#END# kgnullto -x f=1,2 i=./indat/dat2s.csv o=./outdat/out16x.csv v=値なし; IN=5 OUT=5; 2014/06/04 01:57:49
+#END# kgnullto -nfn f=1,2 i=./indat/dat2snfn.csv o=./outdat/out16nfn.csv v=値なし; IN=5 OUT=5; 2014/06/04 01:57:49
+#END# kgnullto O=値あり f=生年月日,血液型 i=./indat/dat2s.csv o=./outdat/out17.csv v=値なし; IN=5 OUT=5; 2014/06/04 01:57:49
+#END# kgnullto -x O=値あり f=1,2 i=./indat/dat2s.csv o=./outdat/out17x.csv v=値なし; IN=5 OUT=5; 2014/06/04 01:57:49
+#END# kgnullto -nfn O=値あり f=1,2 i=./indat/dat2snfn.csv o=./outdat/out17nfn.csv v=値なし; IN=5 OUT=5; 2014/06/04 01:57:49
+#END# kgnullto O=値あり f=生年月日:生年月日登録状況,血液型:血液型登録状況 i=./indat/dat2s.csv o=./outdat/out18.csv v=値なし; IN=5 OUT=5; 2014/06/04 01:57:49
+#END# kgnullto -x O=値あり f=1:生年月日登録状況,2:血液型登録状況 i=./indat/dat2s.csv o=./outdat/out18x.csv v=値なし; IN=5 OUT=5; 2014/06/04 01:57:49
+#END# kgnullto -nfn O=値あり f=1,2 i=./indat/dat2snfn.csv o=./outdat/out18nfn.csv v=値なし; IN=5 OUT=5; 2014/06/04 01:57:49
+#END# kgnullto -A O=値あり f=生年月日:生年月日登録状況,血液型:血液型登録状況 i=./indat/dat2s.csv o=./outdat/out19.csv v=値なし; IN=5 OUT=5; 2014/06/04 01:57:49
+#END# kgnullto -A -x O=値あり f=1:生年月日登録状況,2:血液型登録状況 i=./indat/dat2s.csv o=./outdat/out19x.csv v=値なし; IN=5 OUT=5; 2014/06/04 01:57:49
+#END# kgnullto -A -nfn O=値あり f=1,2 i=./indat/dat2snfn.csv o=./outdat/out19nfn.csv v=値なし; IN=5 OUT=5; 2014/06/04 01:57:49

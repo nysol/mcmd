@@ -1,0 +1,8 @@
+key%0,tra1%1,tra2%2,trax2
+a,z1_z2_z4_,a1_a2_a4_,a1_a2_a4_unknown
+b,,a3_a6__a7_,a3_a6_unknown_a7_unknown
+c,z2__z4_z5,a8_a11__a9_a10_,a8_a11_unknown_a9_a10_unknown
+d,z99_z98_z97,a96_a95_a94_a93_,a96_a95_a94_a93_unknown
+e,z199___z198_z197,_a196_a195__a194_a193_,unknown_a196_a195_unknown_a194_a193_unknown
+f,z299_z298___z297,,
+g,_z399__z398__z397,a396_a395_a394_a393,a396_a395_a394_a393

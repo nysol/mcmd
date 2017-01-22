@@ -1,0 +1,7 @@
+key%0,fld1,fld2,hamming,chi,phi,jaccard,support,lift
+A,x,y,0,,,1,1,1
+A,x,z,,,,,,
+A,y,z,,,,,,
+B,x,y,,,,,,
+B,x,z,,,,,,
+B,y,z,,,,,,

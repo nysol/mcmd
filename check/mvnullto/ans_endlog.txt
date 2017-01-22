@@ -1,0 +1,291 @@
+#END# kgvnullto i=./indat/dat0.csv o=./outdat/out0.csv v=unknown vf=tra1,tra2; IN=0 OUT=0; 2014/06/18 14:03:21
+#END# kgvnullto -x i=./indat/dat0.csv o=./outdat/out0x.csv v=unknown vf=1,2; IN=0 OUT=0; 2014/06/18 14:03:21
+#END# kgvnullto -nfn i=./indat/dat0nfn.csv o=./outdat/out0nfn.csv v=unknown vf=1,2; IN=0 OUT=0; 2014/06/18 14:03:21
+#END# kgvnullto i=./indat/dat1.csv o=./outdat/out1.csv v=unknown vf=tra1; IN=7 OUT=7; 2014/06/18 14:03:21
+#END# kgvnullto -x i=./indat/dat1.csv o=./outdat/out1x.csv v=unknown vf=1; IN=7 OUT=7; 2014/06/18 14:03:21
+#END# kgvnullto -nfn i=./indat/dat1nfn.csv o=./outdat/out1nfn.csv v=unknown vf=1; IN=7 OUT=7; 2014/06/18 14:03:21
+#END# kgvnullto i=./indat/dat1.csv o=./outdat/out2.csv v=unknown vf=tra2; IN=7 OUT=7; 2014/06/18 14:03:21
+#END# kgvnullto -x i=./indat/dat1.csv o=./outdat/out2x.csv v=unknown vf=2; IN=7 OUT=7; 2014/06/18 14:03:21
+#END# kgvnullto -nfn i=./indat/dat1nfn.csv o=./outdat/out2nfn.csv v=unknown vf=2; IN=7 OUT=7; 2014/06/18 14:03:21
+#END# kgvnullto i=./indat/dat1.csv o=./outdat/out3.csv v=unknown vf=tra1,tra2; IN=7 OUT=7; 2014/06/18 14:03:21
+#END# kgvnullto -x i=./indat/dat1.csv o=./outdat/out3x.csv v=unknown vf=1,2; IN=7 OUT=7; 2014/06/18 14:03:21
+#END# kgvnullto -nfn i=./indat/dat1nfn.csv o=./outdat/out3nfn.csv v=unknown vf=1,2; IN=7 OUT=7; 2014/06/18 14:03:21
+#END# kgvnullto delim=_ i=./indat/dat2.csv o=./outdat/out4.csv v=unknown vf=tra1; IN=7 OUT=7; 2014/06/18 14:03:21
+#END# kgvnullto -x delim=_ i=./indat/dat2.csv o=./outdat/out4x.csv v=unknown vf=1; IN=7 OUT=7; 2014/06/18 14:03:21
+#END# kgvnullto -nfn delim=_ i=./indat/dat2nfn.csv o=./outdat/out4nfn.csv v=unknown vf=1; IN=7 OUT=7; 2014/06/18 14:03:21
+#END# kgvnullto delim=_ i=./indat/dat2.csv o=./outdat/out5.csv v=unknown vf=tra2; IN=7 OUT=7; 2014/06/18 14:03:21
+#END# kgvnullto -x delim=_ i=./indat/dat2.csv o=./outdat/out5x.csv v=unknown vf=2; IN=7 OUT=7; 2014/06/18 14:03:21
+#END# kgvnullto -nfn delim=_ i=./indat/dat2nfn.csv o=./outdat/out5nfn.csv v=unknown vf=2; IN=7 OUT=7; 2014/06/18 14:03:21
+#END# kgvnullto delim=_ i=./indat/dat2.csv o=./outdat/out6.csv v=unknown vf=tra1,tra2; IN=7 OUT=7; 2014/06/18 14:03:21
+#END# kgvnullto -x delim=_ i=./indat/dat2.csv o=./outdat/out6x.csv v=unknown vf=1,2; IN=7 OUT=7; 2014/06/18 14:03:21
+#END# kgvnullto -nfn delim=_ i=./indat/dat2nfn.csv o=./outdat/out6nfn.csv v=unknown vf=1,2; IN=7 OUT=7; 2014/06/18 14:03:21
+#END# kgvnullto -p i=./indat/dat1.csv o=./outdat/out7.csv vf=tra1; IN=7 OUT=7; 2014/06/18 14:03:21
+#END# kgvnullto -p -x i=./indat/dat1.csv o=./outdat/out7x.csv vf=1; IN=7 OUT=7; 2014/06/18 14:03:21
+#END# kgvnullto -nfn -p i=./indat/dat1nfn.csv o=./outdat/out7nfn.csv vf=1; IN=7 OUT=7; 2014/06/18 14:03:21
+#END# kgvnullto -p i=./indat/dat1.csv o=./outdat/out8.csv vf=tra2; IN=7 OUT=7; 2014/06/18 14:03:21
+#END# kgvnullto -p -x i=./indat/dat1.csv o=./outdat/out8x.csv vf=2; IN=7 OUT=7; 2014/06/18 14:03:21
+#END# kgvnullto -nfn -p i=./indat/dat1nfn.csv o=./outdat/out8nfn.csv vf=2; IN=7 OUT=7; 2014/06/18 14:03:21
+#END# kgvnullto -p i=./indat/dat1.csv o=./outdat/out9.csv vf=tra1,tra2; IN=7 OUT=7; 2014/06/18 14:03:21
+#END# kgvnullto -p -x i=./indat/dat1.csv o=./outdat/out9x.csv vf=1,2; IN=7 OUT=7; 2014/06/18 14:03:21
+#END# kgvnullto -nfn -p i=./indat/dat1nfn.csv o=./outdat/out9nfn.csv vf=1,2; IN=7 OUT=7; 2014/06/18 14:03:21
+#END# kgvnullto -p delim=_ i=./indat/dat2.csv o=./outdat/out10.csv vf=tra1; IN=7 OUT=7; 2014/06/18 14:03:21
+#END# kgvnullto -p -x delim=_ i=./indat/dat2.csv o=./outdat/out10x.csv vf=1; IN=7 OUT=7; 2014/06/18 14:03:22
+#END# kgvnullto -nfn -p delim=_ i=./indat/dat2nfn.csv o=./outdat/out10nfn.csv vf=1; IN=7 OUT=7; 2014/06/18 14:03:22
+#END# kgvnullto -p delim=_ i=./indat/dat2.csv o=./outdat/out11.csv vf=tra2; IN=7 OUT=7; 2014/06/18 14:03:22
+#END# kgvnullto -p -x delim=_ i=./indat/dat2.csv o=./outdat/out11x.csv vf=2; IN=7 OUT=7; 2014/06/18 14:03:22
+#END# kgvnullto -nfn -p delim=_ i=./indat/dat2nfn.csv o=./outdat/out11nfn.csv vf=2; IN=7 OUT=7; 2014/06/18 14:03:22
+#END# kgvnullto -p delim=_ i=./indat/dat2.csv o=./outdat/out12.csv vf=tra1,tra2; IN=7 OUT=7; 2014/06/18 14:03:22
+#END# kgvnullto -p -x delim=_ i=./indat/dat2.csv o=./outdat/out12x.csv vf=1,2; IN=7 OUT=7; 2014/06/18 14:03:22
+#END# kgvnullto -nfn -p delim=_ i=./indat/dat2nfn.csv o=./outdat/out12nfn.csv vf=1,2; IN=7 OUT=7; 2014/06/18 14:03:22
+#END# kgvnullto O=known i=./indat/dat1.csv o=./outdat/out13.csv v=unknown vf=tra1; IN=7 OUT=7; 2014/06/18 14:03:22
+#END# kgvnullto -x O=known i=./indat/dat1.csv o=./outdat/out13x.csv v=unknown vf=1; IN=7 OUT=7; 2014/06/18 14:03:22
+#END# kgvnullto -nfn O=known i=./indat/dat1nfn.csv o=./outdat/out13nfn.csv v=unknown vf=1; IN=7 OUT=7; 2014/06/18 14:03:22
+#END# kgvnullto O=known i=./indat/dat1.csv o=./outdat/out14.csv v=unknown vf=tra2; IN=7 OUT=7; 2014/06/18 14:03:22
+#END# kgvnullto -x O=known i=./indat/dat1.csv o=./outdat/out14x.csv v=unknown vf=2; IN=7 OUT=7; 2014/06/18 14:03:22
+#END# kgvnullto -nfn O=known i=./indat/dat1nfn.csv o=./outdat/out14nfn.csv v=unknown vf=2; IN=7 OUT=7; 2014/06/18 14:03:22
+#END# kgvnullto O=known i=./indat/dat1.csv o=./outdat/out15.csv v=unknown vf=tra1,tra2; IN=7 OUT=7; 2014/06/18 14:03:22
+#END# kgvnullto -x O=known i=./indat/dat1.csv o=./outdat/out15x.csv v=unknown vf=1,2; IN=7 OUT=7; 2014/06/18 14:03:22
+#END# kgvnullto -nfn O=known i=./indat/dat1nfn.csv o=./outdat/out15nfn.csv v=unknown vf=1,2; IN=7 OUT=7; 2014/06/18 14:03:22
+#END# kgvnullto O=known delim=_ i=./indat/dat2.csv o=./outdat/out16.csv v=unknown vf=tra1; IN=7 OUT=7; 2014/06/18 14:03:22
+#END# kgvnullto -x O=known delim=_ i=./indat/dat2.csv o=./outdat/out16x.csv v=unknown vf=1; IN=7 OUT=7; 2014/06/18 14:03:22
+#END# kgvnullto -nfn O=known delim=_ i=./indat/dat2nfn.csv o=./outdat/out16nfn.csv v=unknown vf=1; IN=7 OUT=7; 2014/06/18 14:03:22
+#END# kgvnullto O=known delim=_ i=./indat/dat2.csv o=./outdat/out17.csv v=unknown vf=tra2; IN=7 OUT=7; 2014/06/18 14:03:22
+#END# kgvnullto -x O=known delim=_ i=./indat/dat2.csv o=./outdat/out17x.csv v=unknown vf=2; IN=7 OUT=7; 2014/06/18 14:03:22
+#END# kgvnullto -nfn O=known delim=_ i=./indat/dat2nfn.csv o=./outdat/out17nfn.csv v=unknown vf=2; IN=7 OUT=7; 2014/06/18 14:03:22
+#END# kgvnullto O=known delim=_ i=./indat/dat2.csv o=./outdat/out18.csv v=unknown vf=tra1,tra2; IN=7 OUT=7; 2014/06/18 14:03:22
+#END# kgvnullto -x O=known delim=_ i=./indat/dat2.csv o=./outdat/out18x.csv v=unknown vf=1,2; IN=7 OUT=7; 2014/06/18 14:03:22
+#END# kgvnullto -nfn O=known delim=_ i=./indat/dat2nfn.csv o=./outdat/out18nfn.csv v=unknown vf=1,2; IN=7 OUT=7; 2014/06/18 14:03:22
+#END# kgvnullto -p O=known i=./indat/dat1.csv o=./outdat/out19.csv vf=tra1; IN=7 OUT=7; 2014/06/18 14:03:22
+#END# kgvnullto -p -x O=known i=./indat/dat1.csv o=./outdat/out19x.csv vf=1; IN=7 OUT=7; 2014/06/18 14:03:22
+#END# kgvnullto -nfn -p O=known i=./indat/dat1nfn.csv o=./outdat/out19nfn.csv vf=1; IN=7 OUT=7; 2014/06/18 14:03:22
+#END# kgvnullto -p O=known i=./indat/dat1.csv o=./outdat/out20.csv vf=tra2; IN=7 OUT=7; 2014/06/18 14:03:22
+#END# kgvnullto -p -x O=known i=./indat/dat1.csv o=./outdat/out20x.csv vf=2; IN=7 OUT=7; 2014/06/18 14:03:22
+#END# kgvnullto -nfn -p O=known i=./indat/dat1nfn.csv o=./outdat/out20nfn.csv vf=2; IN=7 OUT=7; 2014/06/18 14:03:22
+#END# kgvnullto -p O=known i=./indat/dat1.csv o=./outdat/out21.csv vf=tra1,tra2; IN=7 OUT=7; 2014/06/18 14:03:22
+#END# kgvnullto -p -x O=known i=./indat/dat1.csv o=./outdat/out21x.csv vf=1,2; IN=7 OUT=7; 2014/06/18 14:03:22
+#END# kgvnullto -nfn -p O=known i=./indat/dat1nfn.csv o=./outdat/out21nfn.csv vf=1,2; IN=7 OUT=7; 2014/06/18 14:03:22
+#END# kgvnullto -p O=known delim=_ i=./indat/dat2.csv o=./outdat/out22.csv vf=tra1; IN=7 OUT=7; 2014/06/18 14:03:22
+#END# kgvnullto -p -x O=known delim=_ i=./indat/dat2.csv o=./outdat/out22x.csv vf=1; IN=7 OUT=7; 2014/06/18 14:03:22
+#END# kgvnullto -nfn -p O=known delim=_ i=./indat/dat2nfn.csv o=./outdat/out22nfn.csv vf=1; IN=7 OUT=7; 2014/06/18 14:03:22
+#END# kgvnullto -p O=known delim=_ i=./indat/dat2.csv o=./outdat/out23.csv vf=tra2; IN=7 OUT=7; 2014/06/18 14:03:22
+#END# kgvnullto -p -x O=known delim=_ i=./indat/dat2.csv o=./outdat/out23x.csv vf=2; IN=7 OUT=7; 2014/06/18 14:03:22
+#END# kgvnullto -nfn -p O=known delim=_ i=./indat/dat2nfn.csv o=./outdat/out23nfn.csv vf=2; IN=7 OUT=7; 2014/06/18 14:03:22
+#END# kgvnullto -p O=known delim=_ i=./indat/dat2.csv o=./outdat/out24.csv vf=tra1,tra2; IN=7 OUT=7; 2014/06/18 14:03:22
+#END# kgvnullto -p -x O=known delim=_ i=./indat/dat2.csv o=./outdat/out24x.csv vf=1,2; IN=7 OUT=7; 2014/06/18 14:03:22
+#END# kgvnullto -nfn -p O=known delim=_ i=./indat/dat2nfn.csv o=./outdat/out24nfn.csv vf=1,2; IN=7 OUT=7; 2014/06/18 14:03:22
+#END# kgvnullto -A i=./indat/dat1.csv o=./outdat/out25.csv v=unknown vf=tra1:trax1; IN=7 OUT=7; 2014/06/18 14:03:22
+#END# kgvnullto -A -x i=./indat/dat1.csv o=./outdat/out25x.csv v=unknown vf=1:trax1; IN=7 OUT=7; 2014/06/18 14:03:22
+#END# kgvnullto -A -nfn i=./indat/dat1nfn.csv o=./outdat/out25nfn.csv v=unknown vf=1:trax1; IN=7 OUT=7; 2014/06/18 14:03:22
+#END# kgvnullto -A i=./indat/dat1.csv o=./outdat/out26.csv v=unknown vf=tra2:trax2; IN=7 OUT=7; 2014/06/18 14:03:22
+#END# kgvnullto -A -x i=./indat/dat1.csv o=./outdat/out26x.csv v=unknown vf=2:trax2; IN=7 OUT=7; 2014/06/18 14:03:22
+#END# kgvnullto -A -nfn i=./indat/dat1nfn.csv o=./outdat/out26nfn.csv v=unknown vf=2:trax2; IN=7 OUT=7; 2014/06/18 14:03:22
+#END# kgvnullto -A i=./indat/dat1.csv o=./outdat/out27.csv v=unknown vf=tra1:trax1,tra2:trax2; IN=7 OUT=7; 2014/06/18 14:03:22
+#END# kgvnullto -A -x i=./indat/dat1.csv o=./outdat/out27x.csv v=unknown vf=1:trax1,2:trax2; IN=7 OUT=7; 2014/06/18 14:03:22
+#END# kgvnullto -A -nfn i=./indat/dat1nfn.csv o=./outdat/out27nfn.csv v=unknown vf=1:trax1,2:trax2; IN=7 OUT=7; 2014/06/18 14:03:22
+#END# kgvnullto -A delim=_ i=./indat/dat2.csv o=./outdat/out28.csv v=unknown vf=tra1:trax1; IN=7 OUT=7; 2014/06/18 14:03:22
+#END# kgvnullto -A -x delim=_ i=./indat/dat2.csv o=./outdat/out28x.csv v=unknown vf=1:trax1; IN=7 OUT=7; 2014/06/18 14:03:22
+#END# kgvnullto -A -nfn delim=_ i=./indat/dat2nfn.csv o=./outdat/out28nfn.csv v=unknown vf=1:trax1; IN=7 OUT=7; 2014/06/18 14:03:22
+#END# kgvnullto -A delim=_ i=./indat/dat2.csv o=./outdat/out29.csv v=unknown vf=tra2:trax2; IN=7 OUT=7; 2014/06/18 14:03:22
+#END# kgvnullto -A -x delim=_ i=./indat/dat2.csv o=./outdat/out29x.csv v=unknown vf=2:trax2; IN=7 OUT=7; 2014/06/18 14:03:22
+#END# kgvnullto -A -nfn delim=_ i=./indat/dat2nfn.csv o=./outdat/out29nfn.csv v=unknown vf=2:trax2; IN=7 OUT=7; 2014/06/18 14:03:22
+#END# kgvnullto -A delim=_ i=./indat/dat2.csv o=./outdat/out30.csv v=unknown vf=tra1:trax1,tra2:trax2; IN=7 OUT=7; 2014/06/18 14:03:22
+#END# kgvnullto -A -x delim=_ i=./indat/dat2.csv o=./outdat/out30x.csv v=unknown vf=1:trax1,2:trax2; IN=7 OUT=7; 2014/06/18 14:03:22
+#END# kgvnullto -A -nfn delim=_ i=./indat/dat2nfn.csv o=./outdat/out30nfn.csv v=unknown vf=1:trax1,2:trax2; IN=7 OUT=7; 2014/06/18 14:03:22
+#END# kgvnullto -A -p i=./indat/dat1.csv o=./outdat/out31.csv vf=tra1:trax1; IN=7 OUT=7; 2014/06/18 14:03:22
+#END# kgvnullto -A -p -x i=./indat/dat1.csv o=./outdat/out31x.csv vf=1:trax1; IN=7 OUT=7; 2014/06/18 14:03:22
+#END# kgvnullto -A -nfn -p i=./indat/dat1nfn.csv o=./outdat/out31nfn.csv vf=1:trax1; IN=7 OUT=7; 2014/06/18 14:03:22
+#END# kgvnullto -A -p i=./indat/dat1.csv o=./outdat/out32.csv vf=tra2:trax2; IN=7 OUT=7; 2014/06/18 14:03:22
+#END# kgvnullto -A -p -x i=./indat/dat1.csv o=./outdat/out32x.csv vf=2:trax2; IN=7 OUT=7; 2014/06/18 14:03:22
+#END# kgvnullto -A -nfn -p i=./indat/dat1nfn.csv o=./outdat/out32nfn.csv vf=2:trax2; IN=7 OUT=7; 2014/06/18 14:03:22
+#END# kgvnullto -A -p i=./indat/dat1.csv o=./outdat/out34.csv vf=tra1:trax1,tra2:trax2; IN=7 OUT=7; 2014/06/18 14:03:22
+#END# kgvnullto -A -p -x i=./indat/dat1.csv o=./outdat/out34x.csv vf=1:trax1,2:trax2; IN=7 OUT=7; 2014/06/18 14:03:22
+#END# kgvnullto -A -nfn -p i=./indat/dat1nfn.csv o=./outdat/out34nfn.csv vf=1:trax1,2:trax2; IN=7 OUT=7; 2014/06/18 14:03:22
+#END# kgvnullto -A -p delim=_ i=./indat/dat2.csv o=./outdat/out35.csv vf=tra1:trax1; IN=7 OUT=7; 2014/06/18 14:03:22
+#END# kgvnullto -A -p -x delim=_ i=./indat/dat2.csv o=./outdat/out35x.csv vf=1:trax1; IN=7 OUT=7; 2014/06/18 14:03:22
+#END# kgvnullto -A -nfn -p delim=_ i=./indat/dat2nfn.csv o=./outdat/out35nfn.csv vf=1:trax1; IN=7 OUT=7; 2014/06/18 14:03:22
+#END# kgvnullto -A -p delim=_ i=./indat/dat2.csv o=./outdat/out36.csv vf=tra2:trax2; IN=7 OUT=7; 2014/06/18 14:03:22
+#END# kgvnullto -A -p -x delim=_ i=./indat/dat2.csv o=./outdat/out36x.csv vf=2:trax2; IN=7 OUT=7; 2014/06/18 14:03:22
+#END# kgvnullto -A -nfn -p delim=_ i=./indat/dat2nfn.csv o=./outdat/out36nfn.csv vf=2:trax2; IN=7 OUT=7; 2014/06/18 14:03:22
+#END# kgvnullto -A -p delim=_ i=./indat/dat2.csv o=./outdat/out37.csv vf=tra1:trax1,tra2:trax2; IN=7 OUT=7; 2014/06/18 14:03:22
+#END# kgvnullto -A -p -x delim=_ i=./indat/dat2.csv o=./outdat/out37x.csv vf=1:trax1,2:trax2; IN=7 OUT=7; 2014/06/18 14:03:22
+#END# kgvnullto -A -nfn -p delim=_ i=./indat/dat2nfn.csv o=./outdat/out37nfn.csv vf=1:trax1,2:trax2; IN=7 OUT=7; 2014/06/18 14:03:22
+#END# kgvnullto -A O=known i=./indat/dat1.csv o=./outdat/out38.csv v=unknown vf=tra1:trax1; IN=7 OUT=7; 2014/06/18 14:03:22
+#END# kgvnullto -A -x O=known i=./indat/dat1.csv o=./outdat/out38x.csv v=unknown vf=1:trax1; IN=7 OUT=7; 2014/06/18 14:03:22
+#END# kgvnullto -A -nfn O=known i=./indat/dat1nfn.csv o=./outdat/out38nfn.csv v=unknown vf=1:trax1; IN=7 OUT=7; 2014/06/18 14:03:22
+#END# kgvnullto -A O=known i=./indat/dat1.csv o=./outdat/out39.csv v=unknown vf=tra2:trax2; IN=7 OUT=7; 2014/06/18 14:03:22
+#END# kgvnullto -A -x O=known i=./indat/dat1.csv o=./outdat/out39x.csv v=unknown vf=2:trax2; IN=7 OUT=7; 2014/06/18 14:03:22
+#END# kgvnullto -A -nfn O=known i=./indat/dat1nfn.csv o=./outdat/out39nfn.csv v=unknown vf=2:trax2; IN=7 OUT=7; 2014/06/18 14:03:22
+#END# kgvnullto -A O=known i=./indat/dat1.csv o=./outdat/out40.csv v=unknown vf=tra1:trax1,tra2:trax2; IN=7 OUT=7; 2014/06/18 14:03:22
+#END# kgvnullto -A -x O=known i=./indat/dat1.csv o=./outdat/out40x.csv v=unknown vf=1:trax1,2:trax2; IN=7 OUT=7; 2014/06/18 14:03:22
+#END# kgvnullto -A -nfn O=known i=./indat/dat1nfn.csv o=./outdat/out40nfn.csv v=unknown vf=1:trax1,2:trax2; IN=7 OUT=7; 2014/06/18 14:03:22
+#END# kgvnullto -A O=known delim=_ i=./indat/dat2.csv o=./outdat/out41.csv v=unknown vf=tra1:trax1; IN=7 OUT=7; 2014/06/18 14:03:22
+#END# kgvnullto -A -x O=known delim=_ i=./indat/dat2.csv o=./outdat/out41x.csv v=unknown vf=1:trax1; IN=7 OUT=7; 2014/06/18 14:03:22
+#END# kgvnullto -A -nfn O=known delim=_ i=./indat/dat2nfn.csv o=./outdat/out41nfn.csv v=unknown vf=1:trax1; IN=7 OUT=7; 2014/06/18 14:03:22
+#END# kgvnullto -A O=known delim=_ i=./indat/dat2.csv o=./outdat/out42.csv v=unknown vf=tra2:trax2; IN=7 OUT=7; 2014/06/18 14:03:22
+#END# kgvnullto -A -x O=known delim=_ i=./indat/dat2.csv o=./outdat/out42x.csv v=unknown vf=2:trax2; IN=7 OUT=7; 2014/06/18 14:03:22
+#END# kgvnullto -A -nfn O=known delim=_ i=./indat/dat2nfn.csv o=./outdat/out42nfn.csv v=unknown vf=2:trax2; IN=7 OUT=7; 2014/06/18 14:03:22
+#END# kgvnullto -A O=known delim=_ i=./indat/dat2.csv o=./outdat/out43.csv v=unknown vf=tra1:trax1,tra2:trax2; IN=7 OUT=7; 2014/06/18 14:03:22
+#END# kgvnullto -A -x O=known delim=_ i=./indat/dat2.csv o=./outdat/out43x.csv v=unknown vf=1:trax1,2:trax2; IN=7 OUT=7; 2014/06/18 14:03:22
+#END# kgvnullto -A -nfn O=known delim=_ i=./indat/dat2nfn.csv o=./outdat/out43nfn.csv v=unknown vf=1:trax1,2:trax2; IN=7 OUT=7; 2014/06/18 14:03:22
+#END# kgvnullto -A -p O=known i=./indat/dat1.csv o=./outdat/out44.csv vf=tra1:trax1; IN=7 OUT=7; 2014/06/18 14:03:22
+#END# kgvnullto -A -p -x O=known i=./indat/dat1.csv o=./outdat/out44x.csv vf=1:trax1; IN=7 OUT=7; 2014/06/18 14:03:22
+#END# kgvnullto -A -nfn -p O=known i=./indat/dat1nfn.csv o=./outdat/out44nfn.csv vf=1:trax1; IN=7 OUT=7; 2014/06/18 14:03:22
+#END# kgvnullto -A -p O=known i=./indat/dat1.csv o=./outdat/out45.csv vf=tra2:trax2; IN=7 OUT=7; 2014/06/18 14:03:22
+#END# kgvnullto -A -p -x O=known i=./indat/dat1.csv o=./outdat/out45x.csv vf=2:trax2; IN=7 OUT=7; 2014/06/18 14:03:22
+#END# kgvnullto -A -nfn -p O=known i=./indat/dat1nfn.csv o=./outdat/out45nfn.csv vf=2:trax2; IN=7 OUT=7; 2014/06/18 14:03:22
+#END# kgvnullto -A -p O=known i=./indat/dat1.csv o=./outdat/out46.csv vf=tra1:trax1,tra2:trax2; IN=7 OUT=7; 2014/06/18 14:03:22
+#END# kgvnullto -A -p -x O=known i=./indat/dat1.csv o=./outdat/out46x.csv vf=1:trax1,2:trax2; IN=7 OUT=7; 2014/06/18 14:03:22
+#END# kgvnullto -A -nfn -p O=known i=./indat/dat1nfn.csv o=./outdat/out46nfn.csv vf=1:trax1,2:trax2; IN=7 OUT=7; 2014/06/18 14:03:22
+#END# kgvnullto -A -p O=known delim=_ i=./indat/dat2.csv o=./outdat/out47.csv vf=tra1:trax1; IN=7 OUT=7; 2014/06/18 14:03:22
+#END# kgvnullto -A -p -x O=known delim=_ i=./indat/dat2.csv o=./outdat/out47x.csv vf=1:trax1; IN=7 OUT=7; 2014/06/18 14:03:22
+#END# kgvnullto -A -nfn -p O=known delim=_ i=./indat/dat2nfn.csv o=./outdat/out47nfn.csv vf=1:trax1; IN=7 OUT=7; 2014/06/18 14:03:22
+#END# kgvnullto -A -p O=known delim=_ i=./indat/dat2.csv o=./outdat/out48.csv vf=tra2:trax2; IN=7 OUT=7; 2014/06/18 14:03:22
+#END# kgvnullto -A -p -x O=known delim=_ i=./indat/dat2.csv o=./outdat/out48x.csv vf=2:trax2; IN=7 OUT=7; 2014/06/18 14:03:22
+#END# kgvnullto -A -nfn -p O=known delim=_ i=./indat/dat2nfn.csv o=./outdat/out48nfn.csv vf=2:trax2; IN=7 OUT=7; 2014/06/18 14:03:22
+#END# kgvnullto -A -p O=known delim=_ i=./indat/dat2.csv o=./outdat/out49.csv vf=tra1:trax1,tra2:trax2; IN=7 OUT=7; 2014/06/18 14:03:22
+#END# kgvnullto -A -p -x O=known delim=_ i=./indat/dat2.csv o=./outdat/out49x.csv vf=1:trax1,2:trax2; IN=7 OUT=7; 2014/06/18 14:03:22
+#END# kgvnullto -A -nfn -p O=known delim=_ i=./indat/dat2nfn.csv o=./outdat/out49nfn.csv vf=1:trax1,2:trax2; IN=7 OUT=7; 2014/06/18 14:03:22
+#END# kgvnullto i=./indat/dat1s.csv o=./outdat/out51.csv v=unknown vf=tra1; IN=7 OUT=7; 2014/06/18 14:03:22
+#END# kgvnullto -x i=./indat/dat1s.csv o=./outdat/out51x.csv v=unknown vf=1; IN=7 OUT=7; 2014/06/18 14:03:22
+#END# kgvnullto -nfn i=./indat/dat1snfn.csv o=./outdat/out51nfn.csv v=unknown vf=1; IN=7 OUT=7; 2014/06/18 14:03:22
+#END# kgvnullto i=./indat/dat1s.csv o=./outdat/out52.csv v=unknown vf=tra2; IN=7 OUT=7; 2014/06/18 14:03:22
+#END# kgvnullto -x i=./indat/dat1s.csv o=./outdat/out52x.csv v=unknown vf=2; IN=7 OUT=7; 2014/06/18 14:03:22
+#END# kgvnullto -nfn i=./indat/dat1snfn.csv o=./outdat/out52nfn.csv v=unknown vf=2; IN=7 OUT=7; 2014/06/18 14:03:22
+#END# kgvnullto i=./indat/dat1s.csv o=./outdat/out53.csv v=unknown vf=tra1,tra2; IN=7 OUT=7; 2014/06/18 14:03:22
+#END# kgvnullto -x i=./indat/dat1s.csv o=./outdat/out53x.csv v=unknown vf=1,2; IN=7 OUT=7; 2014/06/18 14:03:22
+#END# kgvnullto -nfn i=./indat/dat1snfn.csv o=./outdat/out53nfn.csv v=unknown vf=1,2; IN=7 OUT=7; 2014/06/18 14:03:22
+#END# kgvnullto delim=_ i=./indat/dat2s.csv o=./outdat/out54.csv v=unknown vf=tra1; IN=7 OUT=7; 2014/06/18 14:03:22
+#END# kgvnullto -x delim=_ i=./indat/dat2s.csv o=./outdat/out54x.csv v=unknown vf=1; IN=7 OUT=7; 2014/06/18 14:03:22
+#END# kgvnullto -nfn delim=_ i=./indat/dat2snfn.csv o=./outdat/out54nfn.csv v=unknown vf=1; IN=7 OUT=7; 2014/06/18 14:03:22
+#END# kgvnullto delim=_ i=./indat/dat2s.csv o=./outdat/out55.csv v=unknown vf=tra2; IN=7 OUT=7; 2014/06/18 14:03:22
+#END# kgvnullto -x delim=_ i=./indat/dat2s.csv o=./outdat/out55x.csv v=unknown vf=2; IN=7 OUT=7; 2014/06/18 14:03:22
+#END# kgvnullto -nfn delim=_ i=./indat/dat2snfn.csv o=./outdat/out55nfn.csv v=unknown vf=2; IN=7 OUT=7; 2014/06/18 14:03:22
+#END# kgvnullto delim=_ i=./indat/dat2s.csv o=./outdat/out56.csv v=unknown vf=tra1,tra2; IN=7 OUT=7; 2014/06/18 14:03:22
+#END# kgvnullto -x delim=_ i=./indat/dat2s.csv o=./outdat/out56x.csv v=unknown vf=1,2; IN=7 OUT=7; 2014/06/18 14:03:22
+#END# kgvnullto -nfn delim=_ i=./indat/dat2snfn.csv o=./outdat/out56nfn.csv v=unknown vf=1,2; IN=7 OUT=7; 2014/06/18 14:03:22
+#END# kgvnullto -p i=./indat/dat1s.csv o=./outdat/out57.csv vf=tra1; IN=7 OUT=7; 2014/06/18 14:03:22
+#END# kgvnullto -p -x i=./indat/dat1s.csv o=./outdat/out57x.csv vf=1; IN=7 OUT=7; 2014/06/18 14:03:22
+#END# kgvnullto -nfn -p i=./indat/dat1snfn.csv o=./outdat/out57nfn.csv vf=1; IN=7 OUT=7; 2014/06/18 14:03:22
+#END# kgvnullto -p i=./indat/dat1s.csv o=./outdat/out58.csv vf=tra2; IN=7 OUT=7; 2014/06/18 14:03:23
+#END# kgvnullto -p -x i=./indat/dat1s.csv o=./outdat/out58x.csv vf=2; IN=7 OUT=7; 2014/06/18 14:03:23
+#END# kgvnullto -nfn -p i=./indat/dat1snfn.csv o=./outdat/out58nfn.csv vf=2; IN=7 OUT=7; 2014/06/18 14:03:23
+#END# kgvnullto -p i=./indat/dat1s.csv o=./outdat/out59.csv vf=tra1,tra2; IN=7 OUT=7; 2014/06/18 14:03:23
+#END# kgvnullto -p -x i=./indat/dat1s.csv o=./outdat/out59x.csv vf=1,2; IN=7 OUT=7; 2014/06/18 14:03:23
+#END# kgvnullto -nfn -p i=./indat/dat1snfn.csv o=./outdat/out59nfn.csv vf=1,2; IN=7 OUT=7; 2014/06/18 14:03:23
+#END# kgvnullto -p delim=_ i=./indat/dat2s.csv o=./outdat/out60.csv vf=tra1; IN=7 OUT=7; 2014/06/18 14:03:23
+#END# kgvnullto -p -x delim=_ i=./indat/dat2s.csv o=./outdat/out60x.csv vf=1; IN=7 OUT=7; 2014/06/18 14:03:23
+#END# kgvnullto -nfn -p delim=_ i=./indat/dat2snfn.csv o=./outdat/out60nfn.csv vf=1; IN=7 OUT=7; 2014/06/18 14:03:23
+#END# kgvnullto -p delim=_ i=./indat/dat2s.csv o=./outdat/out61.csv vf=tra2; IN=7 OUT=7; 2014/06/18 14:03:23
+#END# kgvnullto -p -x delim=_ i=./indat/dat2s.csv o=./outdat/out61x.csv vf=2; IN=7 OUT=7; 2014/06/18 14:03:23
+#END# kgvnullto -nfn -p delim=_ i=./indat/dat2snfn.csv o=./outdat/out61nfn.csv vf=2; IN=7 OUT=7; 2014/06/18 14:03:23
+#END# kgvnullto -p delim=_ i=./indat/dat2s.csv o=./outdat/out62.csv vf=tra1,tra2; IN=7 OUT=7; 2014/06/18 14:03:23
+#END# kgvnullto -p -x delim=_ i=./indat/dat2s.csv o=./outdat/out62x.csv vf=1,2; IN=7 OUT=7; 2014/06/18 14:03:23
+#END# kgvnullto -nfn -p delim=_ i=./indat/dat2snfn.csv o=./outdat/out62nfn.csv vf=1,2; IN=7 OUT=7; 2014/06/18 14:03:23
+#END# kgvnullto O=known i=./indat/dat1s.csv o=./outdat/out63.csv v=unknown vf=tra1; IN=7 OUT=7; 2014/06/18 14:03:23
+#END# kgvnullto -x O=known i=./indat/dat1s.csv o=./outdat/out63x.csv v=unknown vf=1; IN=7 OUT=7; 2014/06/18 14:03:23
+#END# kgvnullto -nfn O=known i=./indat/dat1snfn.csv o=./outdat/out63nfn.csv v=unknown vf=1; IN=7 OUT=7; 2014/06/18 14:03:23
+#END# kgvnullto O=known i=./indat/dat1s.csv o=./outdat/out64.csv v=unknown vf=tra2; IN=7 OUT=7; 2014/06/18 14:03:23
+#END# kgvnullto -x O=known i=./indat/dat1s.csv o=./outdat/out64x.csv v=unknown vf=2; IN=7 OUT=7; 2014/06/18 14:03:23
+#END# kgvnullto -nfn O=known i=./indat/dat1snfn.csv o=./outdat/out64nfn.csv v=unknown vf=2; IN=7 OUT=7; 2014/06/18 14:03:23
+#END# kgvnullto O=known i=./indat/dat1s.csv o=./outdat/out65.csv v=unknown vf=tra1,tra2; IN=7 OUT=7; 2014/06/18 14:03:23
+#END# kgvnullto -x O=known i=./indat/dat1s.csv o=./outdat/out65x.csv v=unknown vf=1,2; IN=7 OUT=7; 2014/06/18 14:03:23
+#END# kgvnullto -nfn O=known i=./indat/dat1snfn.csv o=./outdat/out65nfn.csv v=unknown vf=1,2; IN=7 OUT=7; 2014/06/18 14:03:23
+#END# kgvnullto O=known delim=_ i=./indat/dat2s.csv o=./outdat/out66.csv v=unknown vf=tra1; IN=7 OUT=7; 2014/06/18 14:03:23
+#END# kgvnullto -x O=known delim=_ i=./indat/dat2s.csv o=./outdat/out66x.csv v=unknown vf=1; IN=7 OUT=7; 2014/06/18 14:03:23
+#END# kgvnullto -nfn O=known delim=_ i=./indat/dat2snfn.csv o=./outdat/out66nfn.csv v=unknown vf=1; IN=7 OUT=7; 2014/06/18 14:03:23
+#END# kgvnullto O=known delim=_ i=./indat/dat2s.csv o=./outdat/out67.csv v=unknown vf=tra2; IN=7 OUT=7; 2014/06/18 14:03:23
+#END# kgvnullto -x O=known delim=_ i=./indat/dat2s.csv o=./outdat/out67x.csv v=unknown vf=2; IN=7 OUT=7; 2014/06/18 14:03:23
+#END# kgvnullto -nfn O=known delim=_ i=./indat/dat2snfn.csv o=./outdat/out67nfn.csv v=unknown vf=2; IN=7 OUT=7; 2014/06/18 14:03:23
+#END# kgvnullto O=known delim=_ i=./indat/dat2s.csv o=./outdat/out68.csv v=unknown vf=tra1,tra2; IN=7 OUT=7; 2014/06/18 14:03:23
+#END# kgvnullto -x O=known delim=_ i=./indat/dat2s.csv o=./outdat/out68x.csv v=unknown vf=1,2; IN=7 OUT=7; 2014/06/18 14:03:23
+#END# kgvnullto -nfn O=known delim=_ i=./indat/dat2snfn.csv o=./outdat/out68nfn.csv v=unknown vf=1,2; IN=7 OUT=7; 2014/06/18 14:03:23
+#END# kgvnullto -p O=known i=./indat/dat1s.csv o=./outdat/out69.csv vf=tra1; IN=7 OUT=7; 2014/06/18 14:03:23
+#END# kgvnullto -p -x O=known i=./indat/dat1s.csv o=./outdat/out69x.csv vf=1; IN=7 OUT=7; 2014/06/18 14:03:23
+#END# kgvnullto -nfn -p O=known i=./indat/dat1snfn.csv o=./outdat/out69nfn.csv vf=1; IN=7 OUT=7; 2014/06/18 14:03:23
+#END# kgvnullto -p O=known i=./indat/dat1s.csv o=./outdat/out70.csv vf=tra2; IN=7 OUT=7; 2014/06/18 14:03:23
+#END# kgvnullto -p -x O=known i=./indat/dat1s.csv o=./outdat/out70x.csv vf=2; IN=7 OUT=7; 2014/06/18 14:03:23
+#END# kgvnullto -nfn -p O=known i=./indat/dat1snfn.csv o=./outdat/out70nfn.csv vf=2; IN=7 OUT=7; 2014/06/18 14:03:23
+#END# kgvnullto -p O=known i=./indat/dat1s.csv o=./outdat/out71.csv vf=tra1,tra2; IN=7 OUT=7; 2014/06/18 14:03:23
+#END# kgvnullto -p -x O=known i=./indat/dat1s.csv o=./outdat/out71x.csv vf=1,2; IN=7 OUT=7; 2014/06/18 14:03:23
+#END# kgvnullto -nfn -p O=known i=./indat/dat1snfn.csv o=./outdat/out71nfn.csv vf=1,2; IN=7 OUT=7; 2014/06/18 14:03:23
+#END# kgvnullto -p O=known delim=_ i=./indat/dat2s.csv o=./outdat/out72.csv vf=tra1; IN=7 OUT=7; 2014/06/18 14:03:23
+#END# kgvnullto -p -x O=known delim=_ i=./indat/dat2s.csv o=./outdat/out72x.csv vf=1; IN=7 OUT=7; 2014/06/18 14:03:23
+#END# kgvnullto -nfn -p O=known delim=_ i=./indat/dat2snfn.csv o=./outdat/out72nfn.csv vf=1; IN=7 OUT=7; 2014/06/18 14:03:23
+#END# kgvnullto -p O=known delim=_ i=./indat/dat2s.csv o=./outdat/out73.csv vf=tra2; IN=7 OUT=7; 2014/06/18 14:03:23
+#END# kgvnullto -p -x O=known delim=_ i=./indat/dat2s.csv o=./outdat/out73x.csv vf=2; IN=7 OUT=7; 2014/06/18 14:03:23
+#END# kgvnullto -nfn -p O=known delim=_ i=./indat/dat2snfn.csv o=./outdat/out73nfn.csv vf=2; IN=7 OUT=7; 2014/06/18 14:03:23
+#END# kgvnullto -p O=known delim=_ i=./indat/dat2s.csv o=./outdat/out74.csv vf=tra1,tra2; IN=7 OUT=7; 2014/06/18 14:03:23
+#END# kgvnullto -p -x O=known delim=_ i=./indat/dat2s.csv o=./outdat/out74x.csv vf=1,2; IN=7 OUT=7; 2014/06/18 14:03:23
+#END# kgvnullto -nfn -p O=known delim=_ i=./indat/dat2snfn.csv o=./outdat/out74nfn.csv vf=1,2; IN=7 OUT=7; 2014/06/18 14:03:23
+#END# kgvnullto -A i=./indat/dat1s.csv o=./outdat/out75.csv v=unknown vf=tra1:trax1; IN=7 OUT=7; 2014/06/18 14:03:23
+#END# kgvnullto -A -x i=./indat/dat1s.csv o=./outdat/out75x.csv v=unknown vf=1:trax1; IN=7 OUT=7; 2014/06/18 14:03:23
+#END# kgvnullto -A -nfn i=./indat/dat1snfn.csv o=./outdat/out75nfn.csv v=unknown vf=1:trax1; IN=7 OUT=7; 2014/06/18 14:03:23
+#END# kgvnullto -A i=./indat/dat1s.csv o=./outdat/out76.csv v=unknown vf=tra2:trax2; IN=7 OUT=7; 2014/06/18 14:03:23
+#END# kgvnullto -A -x i=./indat/dat1s.csv o=./outdat/out76x.csv v=unknown vf=2:trax2; IN=7 OUT=7; 2014/06/18 14:03:23
+#END# kgvnullto -A -nfn i=./indat/dat1snfn.csv o=./outdat/out76nfn.csv v=unknown vf=2:trax2; IN=7 OUT=7; 2014/06/18 14:03:23
+#END# kgvnullto -A i=./indat/dat1s.csv o=./outdat/out77.csv v=unknown vf=tra1:trax1,tra2:trax2; IN=7 OUT=7; 2014/06/18 14:03:23
+#END# kgvnullto -A -x i=./indat/dat1s.csv o=./outdat/out77x.csv v=unknown vf=1:trax1,2:trax2; IN=7 OUT=7; 2014/06/18 14:03:23
+#END# kgvnullto -A -nfn i=./indat/dat1snfn.csv o=./outdat/out77nfn.csv v=unknown vf=1:trax1,2:trax2; IN=7 OUT=7; 2014/06/18 14:03:23
+#END# kgvnullto -A delim=_ i=./indat/dat2s.csv o=./outdat/out78.csv v=unknown vf=tra1:trax1; IN=7 OUT=7; 2014/06/18 14:03:23
+#END# kgvnullto -A -x delim=_ i=./indat/dat2s.csv o=./outdat/out78x.csv v=unknown vf=1:trax1; IN=7 OUT=7; 2014/06/18 14:03:23
+#END# kgvnullto -A -nfn delim=_ i=./indat/dat2snfn.csv o=./outdat/out78nfn.csv v=unknown vf=1:trax1; IN=7 OUT=7; 2014/06/18 14:03:23
+#END# kgvnullto -A delim=_ i=./indat/dat2s.csv o=./outdat/out79.csv v=unknown vf=tra2:trax2; IN=7 OUT=7; 2014/06/18 14:03:23
+#END# kgvnullto -A -x delim=_ i=./indat/dat2s.csv o=./outdat/out79x.csv v=unknown vf=2:trax2; IN=7 OUT=7; 2014/06/18 14:03:23
+#END# kgvnullto -A -nfn delim=_ i=./indat/dat2snfn.csv o=./outdat/out79nfn.csv v=unknown vf=2:trax2; IN=7 OUT=7; 2014/06/18 14:03:23
+#END# kgvnullto -A delim=_ i=./indat/dat2s.csv o=./outdat/out80.csv v=unknown vf=tra1:trax1,tra2:trax2; IN=7 OUT=7; 2014/06/18 14:03:23
+#END# kgvnullto -A -x delim=_ i=./indat/dat2s.csv o=./outdat/out80x.csv v=unknown vf=1:trax1,2:trax2; IN=7 OUT=7; 2014/06/18 14:03:23
+#END# kgvnullto -A -nfn delim=_ i=./indat/dat2snfn.csv o=./outdat/out80nfn.csv v=unknown vf=1:trax1,2:trax2; IN=7 OUT=7; 2014/06/18 14:03:23
+#END# kgvnullto -A -p i=./indat/dat1s.csv o=./outdat/out81.csv vf=tra1:trax1; IN=7 OUT=7; 2014/06/18 14:03:23
+#END# kgvnullto -A -p -x i=./indat/dat1s.csv o=./outdat/out81x.csv vf=1:trax1; IN=7 OUT=7; 2014/06/18 14:03:23
+#END# kgvnullto -A -nfn -p i=./indat/dat1snfn.csv o=./outdat/out81nfn.csv vf=1:trax1; IN=7 OUT=7; 2014/06/18 14:03:23
+#END# kgvnullto -A -p i=./indat/dat1s.csv o=./outdat/out82.csv vf=tra2:trax2; IN=7 OUT=7; 2014/06/18 14:03:23
+#END# kgvnullto -A -p -x i=./indat/dat1s.csv o=./outdat/out82x.csv vf=2:trax2; IN=7 OUT=7; 2014/06/18 14:03:23
+#END# kgvnullto -A -nfn -p i=./indat/dat1snfn.csv o=./outdat/out82nfn.csv vf=2:trax2; IN=7 OUT=7; 2014/06/18 14:03:23
+#END# kgvnullto -A -p i=./indat/dat1s.csv o=./outdat/out84.csv vf=tra1:trax1,tra2:trax2; IN=7 OUT=7; 2014/06/18 14:03:23
+#END# kgvnullto -A -p -x i=./indat/dat1s.csv o=./outdat/out84x.csv vf=1:trax1,2:trax2; IN=7 OUT=7; 2014/06/18 14:03:23
+#END# kgvnullto -A -nfn -p i=./indat/dat1snfn.csv o=./outdat/out84nfn.csv vf=1:trax1,2:trax2; IN=7 OUT=7; 2014/06/18 14:03:23
+#END# kgvnullto -A -p delim=_ i=./indat/dat2s.csv o=./outdat/out85.csv vf=tra1:trax1; IN=7 OUT=7; 2014/06/18 14:03:23
+#END# kgvnullto -A -p -x delim=_ i=./indat/dat2s.csv o=./outdat/out85x.csv vf=1:trax1; IN=7 OUT=7; 2014/06/18 14:03:23
+#END# kgvnullto -A -nfn -p delim=_ i=./indat/dat2snfn.csv o=./outdat/out85nfn.csv vf=1:trax1; IN=7 OUT=7; 2014/06/18 14:03:23
+#END# kgvnullto -A -p delim=_ i=./indat/dat2s.csv o=./outdat/out86.csv vf=tra2:trax2; IN=7 OUT=7; 2014/06/18 14:03:23
+#END# kgvnullto -A -p -x delim=_ i=./indat/dat2s.csv o=./outdat/out86x.csv vf=2:trax2; IN=7 OUT=7; 2014/06/18 14:03:23
+#END# kgvnullto -A -nfn -p delim=_ i=./indat/dat2snfn.csv o=./outdat/out86nfn.csv vf=2:trax2; IN=7 OUT=7; 2014/06/18 14:03:23
+#END# kgvnullto -A -p delim=_ i=./indat/dat2s.csv o=./outdat/out87.csv vf=tra1:trax1,tra2:trax2; IN=7 OUT=7; 2014/06/18 14:03:23
+#END# kgvnullto -A -p -x delim=_ i=./indat/dat2s.csv o=./outdat/out87x.csv vf=1:trax1,2:trax2; IN=7 OUT=7; 2014/06/18 14:03:23
+#END# kgvnullto -A -nfn -p delim=_ i=./indat/dat2snfn.csv o=./outdat/out87nfn.csv vf=1:trax1,2:trax2; IN=7 OUT=7; 2014/06/18 14:03:23
+#END# kgvnullto -A O=known i=./indat/dat1s.csv o=./outdat/out88.csv v=unknown vf=tra1:trax1; IN=7 OUT=7; 2014/06/18 14:03:23
+#END# kgvnullto -A -x O=known i=./indat/dat1s.csv o=./outdat/out88x.csv v=unknown vf=1:trax1; IN=7 OUT=7; 2014/06/18 14:03:23
+#END# kgvnullto -A -nfn O=known i=./indat/dat1snfn.csv o=./outdat/out88nfn.csv v=unknown vf=1:trax1; IN=7 OUT=7; 2014/06/18 14:03:23
+#END# kgvnullto -A O=known i=./indat/dat1s.csv o=./outdat/out89.csv v=unknown vf=tra2:trax2; IN=7 OUT=7; 2014/06/18 14:03:23
+#END# kgvnullto -A -x O=known i=./indat/dat1s.csv o=./outdat/out89x.csv v=unknown vf=2:trax2; IN=7 OUT=7; 2014/06/18 14:03:23
+#END# kgvnullto -A -nfn O=known i=./indat/dat1snfn.csv o=./outdat/out89nfn.csv v=unknown vf=2:trax2; IN=7 OUT=7; 2014/06/18 14:03:23
+#END# kgvnullto -A O=known i=./indat/dat1s.csv o=./outdat/out90.csv v=unknown vf=tra1:trax1,tra2:trax2; IN=7 OUT=7; 2014/06/18 14:03:23
+#END# kgvnullto -A -x O=known i=./indat/dat1s.csv o=./outdat/out90x.csv v=unknown vf=1:trax1,2:trax2; IN=7 OUT=7; 2014/06/18 14:03:23
+#END# kgvnullto -A -nfn O=known i=./indat/dat1snfn.csv o=./outdat/out90nfn.csv v=unknown vf=1:trax1,2:trax2; IN=7 OUT=7; 2014/06/18 14:03:23
+#END# kgvnullto -A O=known delim=_ i=./indat/dat2s.csv o=./outdat/out91.csv v=unknown vf=tra1:trax1; IN=7 OUT=7; 2014/06/18 14:03:23
+#END# kgvnullto -A -x O=known delim=_ i=./indat/dat2s.csv o=./outdat/out91x.csv v=unknown vf=1:trax1; IN=7 OUT=7; 2014/06/18 14:03:23
+#END# kgvnullto -A -nfn O=known delim=_ i=./indat/dat2snfn.csv o=./outdat/out91nfn.csv v=unknown vf=1:trax1; IN=7 OUT=7; 2014/06/18 14:03:23
+#END# kgvnullto -A O=known delim=_ i=./indat/dat2s.csv o=./outdat/out92.csv v=unknown vf=tra2:trax2; IN=7 OUT=7; 2014/06/18 14:03:23
+#END# kgvnullto -A -x O=known delim=_ i=./indat/dat2s.csv o=./outdat/out92x.csv v=unknown vf=2:trax2; IN=7 OUT=7; 2014/06/18 14:03:23
+#END# kgvnullto -A -nfn O=known delim=_ i=./indat/dat2snfn.csv o=./outdat/out92nfn.csv v=unknown vf=2:trax2; IN=7 OUT=7; 2014/06/18 14:03:23
+#END# kgvnullto -A O=known delim=_ i=./indat/dat2s.csv o=./outdat/out93.csv v=unknown vf=tra1:trax1,tra2:trax2; IN=7 OUT=7; 2014/06/18 14:03:23
+#END# kgvnullto -A -x O=known delim=_ i=./indat/dat2s.csv o=./outdat/out93x.csv v=unknown vf=1:trax1,2:trax2; IN=7 OUT=7; 2014/06/18 14:03:23
+#END# kgvnullto -A -nfn O=known delim=_ i=./indat/dat2snfn.csv o=./outdat/out93nfn.csv v=unknown vf=1:trax1,2:trax2; IN=7 OUT=7; 2014/06/18 14:03:23
+#END# kgvnullto -A -p O=known i=./indat/dat1s.csv o=./outdat/out94.csv vf=tra1:trax1; IN=7 OUT=7; 2014/06/18 14:03:23
+#END# kgvnullto -A -p -x O=known i=./indat/dat1s.csv o=./outdat/out94x.csv vf=1:trax1; IN=7 OUT=7; 2014/06/18 14:03:23
+#END# kgvnullto -A -nfn -p O=known i=./indat/dat1snfn.csv o=./outdat/out94nfn.csv vf=1:trax1; IN=7 OUT=7; 2014/06/18 14:03:23
+#END# kgvnullto -A -p O=known i=./indat/dat1s.csv o=./outdat/out95.csv vf=tra2:trax2; IN=7 OUT=7; 2014/06/18 14:03:23
+#END# kgvnullto -A -p -x O=known i=./indat/dat1s.csv o=./outdat/out95x.csv vf=2:trax2; IN=7 OUT=7; 2014/06/18 14:03:23
+#END# kgvnullto -A -nfn -p O=known i=./indat/dat1snfn.csv o=./outdat/out95nfn.csv vf=2:trax2; IN=7 OUT=7; 2014/06/18 14:03:23
+#END# kgvnullto -A -p O=known i=./indat/dat1s.csv o=./outdat/out96.csv vf=tra1:trax1,tra2:trax2; IN=7 OUT=7; 2014/06/18 14:03:23
+#END# kgvnullto -A -p -x O=known i=./indat/dat1s.csv o=./outdat/out96x.csv vf=1:trax1,2:trax2; IN=7 OUT=7; 2014/06/18 14:03:23
+#END# kgvnullto -A -nfn -p O=known i=./indat/dat1snfn.csv o=./outdat/out96nfn.csv vf=1:trax1,2:trax2; IN=7 OUT=7; 2014/06/18 14:03:23
+#END# kgvnullto -A -p O=known delim=_ i=./indat/dat2s.csv o=./outdat/out97.csv vf=tra1:trax1; IN=7 OUT=7; 2014/06/18 14:03:23
+#END# kgvnullto -A -p -x O=known delim=_ i=./indat/dat2s.csv o=./outdat/out97x.csv vf=1:trax1; IN=7 OUT=7; 2014/06/18 14:03:23
+#END# kgvnullto -A -nfn -p O=known delim=_ i=./indat/dat2snfn.csv o=./outdat/out97nfn.csv vf=1:trax1; IN=7 OUT=7; 2014/06/18 14:03:23
+#END# kgvnullto -A -p O=known delim=_ i=./indat/dat2s.csv o=./outdat/out98.csv vf=tra2:trax2; IN=7 OUT=7; 2014/06/18 14:03:23
+#END# kgvnullto -A -p -x O=known delim=_ i=./indat/dat2s.csv o=./outdat/out98x.csv vf=2:trax2; IN=7 OUT=7; 2014/06/18 14:03:23
+#END# kgvnullto -A -nfn -p O=known delim=_ i=./indat/dat2snfn.csv o=./outdat/out98nfn.csv vf=2:trax2; IN=7 OUT=7; 2014/06/18 14:03:23
+#END# kgvnullto -A -p O=known delim=_ i=./indat/dat2s.csv o=./outdat/out99.csv vf=tra1:trax1,tra2:trax2; IN=7 OUT=7; 2014/06/18 14:03:23
+#END# kgvnullto -A -p -x O=known delim=_ i=./indat/dat2s.csv o=./outdat/out99x.csv vf=1:trax1,2:trax2; IN=7 OUT=7; 2014/06/18 14:03:23
+#END# kgvnullto -A -nfn -p O=known delim=_ i=./indat/dat2snfn.csv o=./outdat/out99nfn.csv vf=1:trax1,2:trax2; IN=7 OUT=7; 2014/06/18 14:03:23

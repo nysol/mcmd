@@ -1,0 +1,10 @@
+@RELATION	By_KGMOD
+
+@ATTRIBUTE	商品	{A,B}
+
+@DATA
+A
+A
+A
+B
+B

@@ -1,0 +1,570 @@
+#END# kgnjoin i=./indat/dat0s.csv k=商品 m=./indat/dat1s.csv o=./outdat/out0.csv; IN=0 OUT=0; 2014/06/02 17:05:47
+#END# kgnjoin -x i=./indat/dat0s.csv k=0 m=./indat/dat1s.csv o=./outdat/out0x.csv; IN=0 OUT=0; 2014/06/02 17:05:47
+#END# kgnjoin -nfn i=./indat/dat0snfn.csv k=0 m=./indat/dat1snfn.csv o=./outdat/out0nfn.csv; IN=0 OUT=0; 2014/06/02 17:05:47
+#END# kgnjoin i=./indat/dat0s.csv k=商品 m=./indat/dat3s.csv o=./outdat/out1.csv; IN=0 OUT=0; 2014/06/02 17:05:47
+#END# kgnjoin -x i=./indat/dat0s.csv k=0 m=./indat/dat3s.csv o=./outdat/out1x.csv; IN=0 OUT=0; 2014/06/02 17:05:47
+#END# kgnjoin -nfn i=./indat/dat0snfn.csv k=0 m=./indat/dat3snfn.csv o=./outdat/out1nfn.csv; IN=0 OUT=0; 2014/06/02 17:05:47
+#END# kgnjoin i=./indat/dat2s.csv k=商品 m=./indat/dat1s.csv o=./outdat/out2.csv; IN=1 OUT=0; 2014/06/02 17:05:47
+#END# kgnjoin -x i=./indat/dat2s.csv k=0 m=./indat/dat1s.csv o=./outdat/out2x.csv; IN=1 OUT=0; 2014/06/02 17:05:47
+#END# kgnjoin -nfn i=./indat/dat2snfn.csv k=0 m=./indat/dat1snfn.csv o=./outdat/out2nfn.csv; IN=1 OUT=0; 2014/06/02 17:05:47
+#END# kgnjoin -nfno i=./indat/dat2s.csv k=商品 m=./indat/dat1s.csv o=./outdat/out2nfno.csv; IN=1 OUT=0; 2014/06/02 17:05:47
+#END# kgnjoin -n i=./indat/dat0s.csv k=商品 m=./indat/dat1s.csv o=./outdat/out3.csv; IN=0 OUT=0; 2014/06/02 17:05:47
+#END# kgnjoin -n -x i=./indat/dat0s.csv k=0 m=./indat/dat1s.csv o=./outdat/out3x.csv; IN=0 OUT=0; 2014/06/02 17:05:47
+#END# kgnjoin -n -nfn i=./indat/dat0snfn.csv k=0 m=./indat/dat1snfn.csv o=./outdat/out3nfn.csv; IN=0 OUT=0; 2014/06/02 17:05:47
+#END# kgnjoin -n i=./indat/dat0s.csv k=商品 m=./indat/dat3s.csv o=./outdat/out4.csv; IN=0 OUT=0; 2014/06/02 17:05:47
+#END# kgnjoin -n -x i=./indat/dat0s.csv k=0 m=./indat/dat3s.csv o=./outdat/out4x.csv; IN=0 OUT=0; 2014/06/02 17:05:47
+#END# kgnjoin -n -nfn i=./indat/dat0snfn.csv k=0 m=./indat/dat3snfn.csv o=./outdat/out4nfn.csv; IN=0 OUT=0; 2014/06/02 17:05:47
+#END# kgnjoin -n i=./indat/dat2s.csv k=商品 m=./indat/dat1s.csv o=./outdat/out5.csv; IN=5 OUT=5; 2014/06/02 17:05:47
+#END# kgnjoin -n -x i=./indat/dat2s.csv k=0 m=./indat/dat1s.csv o=./outdat/out5x.csv; IN=5 OUT=5; 2014/06/02 17:05:47
+#END# kgnjoin -n -nfn i=./indat/dat2snfn.csv k=0 m=./indat/dat1snfn.csv o=./outdat/out5nfn.csv; IN=5 OUT=5; 2014/06/02 17:05:47
+#END# kgnjoin -N i=./indat/dat0s.csv k=商品 m=./indat/dat1s.csv o=./outdat/out6.csv; IN=0 OUT=0; 2014/06/02 17:05:47
+#END# kgnjoin -N -x i=./indat/dat0s.csv k=0 m=./indat/dat1s.csv o=./outdat/out6x.csv; IN=0 OUT=0; 2014/06/02 17:05:47
+#END# kgnjoin -N -nfn i=./indat/dat0snfn.csv k=0 m=./indat/dat1snfn.csv o=./outdat/out6nfn.csv; IN=0 OUT=0; 2014/06/02 17:05:47
+#END# kgnjoin -N i=./indat/dat0s.csv k=商品 m=./indat/dat3s.csv o=./outdat/out7.csv; IN=0 OUT=4; 2014/06/02 17:05:47
+#END# kgnjoin -N -x i=./indat/dat0s.csv k=0 m=./indat/dat3s.csv o=./outdat/out7x.csv; IN=0 OUT=4; 2014/06/02 17:05:47
+#END# kgnjoin -N -nfn i=./indat/dat0snfn.csv k=0 m=./indat/dat3snfn.csv o=./outdat/out7nfn.csv; IN=0 OUT=4; 2014/06/02 17:05:47
+#END# kgnjoin -N i=./indat/dat2s.csv k=商品 m=./indat/dat1s.csv o=./outdat/out8.csv; IN=1 OUT=0; 2014/06/02 17:05:47
+#END# kgnjoin -N -x i=./indat/dat2s.csv k=0 m=./indat/dat1s.csv o=./outdat/out8x.csv; IN=1 OUT=0; 2014/06/02 17:05:47
+#END# kgnjoin -N -nfn i=./indat/dat2snfn.csv k=0 m=./indat/dat1snfn.csv o=./outdat/out8nfn.csv; IN=1 OUT=0; 2014/06/02 17:05:47
+#END# kgnjoin -N -n i=./indat/dat0s.csv k=商品 m=./indat/dat1s.csv o=./outdat/out9.csv; IN=0 OUT=0; 2014/06/02 17:05:47
+#END# kgnjoin -N -n -x i=./indat/dat0s.csv k=0 m=./indat/dat1s.csv o=./outdat/out9x.csv; IN=0 OUT=0; 2014/06/02 17:05:47
+#END# kgnjoin -N -n -nfn i=./indat/dat0snfn.csv k=0 m=./indat/dat1snfn.csv o=./outdat/out9nfn.csv; IN=0 OUT=0; 2014/06/02 17:05:47
+#END# kgnjoin -N -n i=./indat/dat0s.csv k=商品 m=./indat/dat3s.csv o=./outdat/out10.csv; IN=0 OUT=4; 2014/06/02 17:05:47
+#END# kgnjoin -N -n -x i=./indat/dat0s.csv k=0 m=./indat/dat3s.csv o=./outdat/out10x.csv; IN=0 OUT=4; 2014/06/02 17:05:47
+#END# kgnjoin -N -n -nfn i=./indat/dat0snfn.csv k=0 m=./indat/dat3snfn.csv o=./outdat/out10nfn.csv; IN=0 OUT=4; 2014/06/02 17:05:47
+#END# kgnjoin -N -n i=./indat/dat2s.csv k=商品 m=./indat/dat1s.csv o=./outdat/out11.csv; IN=5 OUT=5; 2014/06/02 17:05:47
+#END# kgnjoin -N -n -x i=./indat/dat2s.csv k=0 m=./indat/dat1s.csv o=./outdat/out11x.csv; IN=5 OUT=5; 2014/06/02 17:05:47
+#END# kgnjoin -N -n -nfn i=./indat/dat2snfn.csv k=0 m=./indat/dat1snfn.csv o=./outdat/out11nfn.csv; IN=5 OUT=5; 2014/06/02 17:05:47
+#END# kgnjoin f=仕入価格 i=./indat/dat2s.csv k=商品 m=./indat/dat3s.csv o=./outdat/out12.csv; IN=5 OUT=5; 2014/06/02 17:05:47
+#END# kgnjoin -x f=1 i=./indat/dat2s.csv k=0 m=./indat/dat3s.csv o=./outdat/out12x.csv; IN=5 OUT=5; 2014/06/02 17:05:47
+#END# kgnjoin -nfn f=1 i=./indat/dat2snfn.csv k=0 m=./indat/dat3snfn.csv o=./outdat/out12nfn.csv; IN=5 OUT=5; 2014/06/02 17:05:47
+#END# kgnjoin -q f=仕入価格 i=./indat/dat2s.csv k=商品 m=./indat/dat3s.csv o=./outdat/out12q.csv; IN=5 OUT=5; 2014/06/02 17:05:47
+#END# kgnjoin -q -x f=1 i=./indat/dat2s.csv k=0 m=./indat/dat3s.csv o=./outdat/out12qx.csv; IN=5 OUT=5; 2014/06/02 17:05:47
+#END# kgnjoin -n f=仕入価格 i=./indat/dat2s.csv k=商品 m=./indat/dat3s.csv o=./outdat/out13.csv; IN=5 OUT=7; 2014/06/02 17:05:47
+#END# kgnjoin -n -x f=1 i=./indat/dat2s.csv k=0 m=./indat/dat3s.csv o=./outdat/out13x.csv; IN=5 OUT=7; 2014/06/02 17:05:47
+#END# kgnjoin -n -nfn f=1 i=./indat/dat2snfn.csv k=0 m=./indat/dat3snfn.csv o=./outdat/out13nfn.csv; IN=5 OUT=7; 2014/06/02 17:05:48
+#END# kgnjoin -N f=仕入価格 i=./indat/dat2s.csv k=商品 m=./indat/dat3s.csv o=./outdat/out14.csv; IN=5 OUT=6; 2014/06/02 17:05:48
+#END# kgnjoin -N -x f=1 i=./indat/dat2s.csv k=0 m=./indat/dat3s.csv o=./outdat/out14x.csv; IN=5 OUT=6; 2014/06/02 17:05:48
+#END# kgnjoin -N -nfn f=1 i=./indat/dat2snfn.csv k=0 m=./indat/dat3snfn.csv o=./outdat/out14nfn.csv; IN=5 OUT=6; 2014/06/02 17:05:48
+#END# kgnjoin -N -n f=仕入価格 i=./indat/dat2s.csv k=商品 m=./indat/dat3s.csv o=./outdat/out15.csv; IN=5 OUT=8; 2014/06/02 17:05:48
+#END# kgnjoin -N -n -x f=1 i=./indat/dat2s.csv k=0 m=./indat/dat3s.csv o=./outdat/out15x.csv; IN=5 OUT=8; 2014/06/02 17:05:48
+#END# kgnjoin -N -n -nfn f=1 i=./indat/dat2snfn.csv k=0 m=./indat/dat3snfn.csv o=./outdat/out15nfn.csv; IN=5 OUT=8; 2014/06/02 17:05:48
+#END# kgnjoin f=仕入価格,在庫数 i=./indat/dat2s.csv k=商品 m=./indat/dat3s.csv o=./outdat/out16.csv; IN=5 OUT=5; 2014/06/02 17:05:48
+#END# kgnjoin -x f=1,2 i=./indat/dat2s.csv k=0 m=./indat/dat3s.csv o=./outdat/out16x.csv; IN=5 OUT=5; 2014/06/02 17:05:48
+#END# kgnjoin -nfn f=1,2 i=./indat/dat2snfn.csv k=0 m=./indat/dat3snfn.csv o=./outdat/out16nfn.csv; IN=5 OUT=5; 2014/06/02 17:05:48
+#END# kgnjoin -n f=仕入価格,在庫数 i=./indat/dat2s.csv k=商品 m=./indat/dat3s.csv o=./outdat/out17.csv; IN=5 OUT=7; 2014/06/02 17:05:48
+#END# kgnjoin -n -x f=1,2 i=./indat/dat2s.csv k=0 m=./indat/dat3s.csv o=./outdat/out17x.csv; IN=5 OUT=7; 2014/06/02 17:05:48
+#END# kgnjoin -n -nfn f=1,2 i=./indat/dat2snfn.csv k=0 m=./indat/dat3snfn.csv o=./outdat/out17nfn.csv; IN=5 OUT=7; 2014/06/02 17:05:48
+#END# kgnjoin -N f=仕入価格,在庫数 i=./indat/dat2s.csv k=商品 m=./indat/dat3s.csv o=./outdat/out18.csv; IN=5 OUT=6; 2014/06/02 17:05:48
+#END# kgnjoin -N -x f=1,2 i=./indat/dat2s.csv k=0 m=./indat/dat3s.csv o=./outdat/out18x.csv; IN=5 OUT=6; 2014/06/02 17:05:48
+#END# kgnjoin -N -nfn f=1,2 i=./indat/dat2snfn.csv k=0 m=./indat/dat3snfn.csv o=./outdat/out18nfn.csv; IN=5 OUT=6; 2014/06/02 17:05:48
+#END# kgnjoin -N -n f=仕入価格,在庫数 i=./indat/dat2s.csv k=商品 m=./indat/dat3s.csv o=./outdat/out19.csv; IN=5 OUT=8; 2014/06/02 17:05:48
+#END# kgnjoin -N -n -x f=1,2 i=./indat/dat2s.csv k=0 m=./indat/dat3s.csv o=./outdat/out19x.csv; IN=5 OUT=8; 2014/06/02 17:05:48
+#END# kgnjoin -N -n -nfn f=1,2 i=./indat/dat2snfn.csv k=0 m=./indat/dat3snfn.csv o=./outdat/out19nfn.csv; IN=5 OUT=8; 2014/06/02 17:05:48
+#END# kgnjoin i=./indat/dat2s.csv k=商品 m=./indat/dat3s.csv o=./outdat/out20.csv; IN=5 OUT=5; 2014/06/02 17:05:48
+#END# kgnjoin -x i=./indat/dat2s.csv k=0 m=./indat/dat3s.csv o=./outdat/out20x.csv; IN=5 OUT=5; 2014/06/02 17:05:48
+#END# kgnjoin -nfn i=./indat/dat2snfn.csv k=0 m=./indat/dat3snfn.csv o=./outdat/out20nfn.csv; IN=5 OUT=5; 2014/06/02 17:05:48
+#END# kgnjoin -n i=./indat/dat2s.csv k=商品 m=./indat/dat3s.csv o=./outdat/out21.csv; IN=5 OUT=7; 2014/06/02 17:05:48
+#END# kgnjoin -n -x i=./indat/dat2s.csv k=0 m=./indat/dat3s.csv o=./outdat/out21x.csv; IN=5 OUT=7; 2014/06/02 17:05:48
+#END# kgnjoin -n -nfn i=./indat/dat2snfn.csv k=0 m=./indat/dat3snfn.csv o=./outdat/out21nfn.csv; IN=5 OUT=7; 2014/06/02 17:05:48
+#END# kgnjoin -N i=./indat/dat2s.csv k=商品 m=./indat/dat3s.csv o=./outdat/out22.csv; IN=5 OUT=6; 2014/06/02 17:05:48
+#END# kgnjoin -N -x i=./indat/dat2s.csv k=0 m=./indat/dat3s.csv o=./outdat/out22x.csv; IN=5 OUT=6; 2014/06/02 17:05:48
+#END# kgnjoin -N -nfn i=./indat/dat2snfn.csv k=0 m=./indat/dat3snfn.csv o=./outdat/out22nfn.csv; IN=5 OUT=6; 2014/06/02 17:05:48
+#END# kgnjoin -N -n i=./indat/dat2s.csv k=商品 m=./indat/dat3s.csv o=./outdat/out23.csv; IN=5 OUT=8; 2014/06/02 17:05:48
+#END# kgnjoin -N -n -x i=./indat/dat2s.csv k=0 m=./indat/dat3s.csv o=./outdat/out23x.csv; IN=5 OUT=8; 2014/06/02 17:05:48
+#END# kgnjoin -N -n -nfn i=./indat/dat2snfn.csv k=0 m=./indat/dat3snfn.csv o=./outdat/out23nfn.csv; IN=5 OUT=8; 2014/06/02 17:05:48
+#END# kgnjoin f=仕入価格 i=./indat/dat2s.csv k=商品,日付 m=./indat/dat4s.csv o=./outdat/out24.csv; IN=5 OUT=6; 2014/06/02 17:05:48
+#END# kgnjoin -x K=0,3 f=1 i=./indat/dat2s.csv k=0,1 m=./indat/dat4s.csv o=./outdat/out24x.csv; IN=5 OUT=6; 2014/06/02 17:05:48
+#END# kgnjoin -nfn K=0,3 f=1 i=./indat/dat2snfn.csv k=0,1 m=./indat/dat4snfn.csv o=./outdat/out24nfn.csv; IN=5 OUT=6; 2014/06/02 17:05:48
+#END# kgnjoin -n f=仕入価格 i=./indat/dat2s.csv k=商品,日付 m=./indat/dat4s.csv o=./outdat/out25.csv; IN=5 OUT=8; 2014/06/02 17:05:48
+#END# kgnjoin -n -x K=0,3 f=1 i=./indat/dat2s.csv k=0,1 m=./indat/dat4s.csv o=./outdat/out25x.csv; IN=5 OUT=8; 2014/06/02 17:05:48
+#END# kgnjoin -n -nfn K=0,3 f=1 i=./indat/dat2snfn.csv k=0,1 m=./indat/dat4snfn.csv o=./outdat/out25nfn.csv; IN=5 OUT=8; 2014/06/02 17:05:48
+#END# kgnjoin -N f=仕入価格 i=./indat/dat2s.csv k=商品,日付 m=./indat/dat4s.csv o=./outdat/out26.csv; IN=5 OUT=10; 2014/06/02 17:05:48
+#END# kgnjoin -N -x K=0,3 f=1 i=./indat/dat2s.csv k=0,1 m=./indat/dat4s.csv o=./outdat/out26x.csv; IN=5 OUT=10; 2014/06/02 17:05:48
+#END# kgnjoin -N -nfn K=0,3 f=1 i=./indat/dat2snfn.csv k=0,1 m=./indat/dat4snfn.csv o=./outdat/out26nfn.csv; IN=5 OUT=10; 2014/06/02 17:05:48
+#END# kgnjoin -N -n f=仕入価格 i=./indat/dat2s.csv k=商品,日付 m=./indat/dat4s.csv o=./outdat/out27.csv; IN=5 OUT=12; 2014/06/02 17:05:48
+#END# kgnjoin -N -n -x K=0,3 f=1 i=./indat/dat2s.csv k=0,1 m=./indat/dat4s.csv o=./outdat/out27x.csv; IN=5 OUT=12; 2014/06/02 17:05:48
+#END# kgnjoin -N -n -nfn K=0,3 f=1 i=./indat/dat2snfn.csv k=0,1 m=./indat/dat4snfn.csv o=./outdat/out27nfn.csv; IN=5 OUT=12; 2014/06/02 17:05:48
+#END# kgnjoin i=./indat/dat2s.csv k=商品,日付 m=./indat/dat4s.csv o=./outdat/out28.csv; IN=5 OUT=6; 2014/06/02 17:05:48
+#END# kgnjoin -x K=0,3 i=./indat/dat2s.csv k=0,1 m=./indat/dat4s.csv o=./outdat/out28x.csv; IN=5 OUT=6; 2014/06/02 17:05:48
+#END# kgnjoin -nfn K=0,3 i=./indat/dat2snfn.csv k=0,1 m=./indat/dat4snfn.csv o=./outdat/out28nfn.csv; IN=5 OUT=6; 2014/06/02 17:05:48
+#END# kgnjoin -n i=./indat/dat2s.csv k=商品,日付 m=./indat/dat4s.csv o=./outdat/out29.csv; IN=5 OUT=8; 2014/06/02 17:05:48
+#END# kgnjoin -n -x K=0,3 i=./indat/dat2s.csv k=0,1 m=./indat/dat4s.csv o=./outdat/out29x.csv; IN=5 OUT=8; 2014/06/02 17:05:48
+#END# kgnjoin -n -nfn K=0,3 i=./indat/dat2snfn.csv k=0,1 m=./indat/dat4snfn.csv o=./outdat/out29nfn.csv; IN=5 OUT=8; 2014/06/02 17:05:48
+#END# kgnjoin -N i=./indat/dat2s.csv k=商品,日付 m=./indat/dat4s.csv o=./outdat/out30.csv; IN=5 OUT=10; 2014/06/02 17:05:48
+#END# kgnjoin -N -x K=0,3 i=./indat/dat2s.csv k=0,1 m=./indat/dat4s.csv o=./outdat/out30x.csv; IN=5 OUT=10; 2014/06/02 17:05:48
+#END# kgnjoin -N -nfn K=0,3 i=./indat/dat2snfn.csv k=0,1 m=./indat/dat4snfn.csv o=./outdat/out30nfn.csv; IN=5 OUT=10; 2014/06/02 17:05:48
+#END# kgnjoin -N -n i=./indat/dat2s.csv k=商品,日付 m=./indat/dat4s.csv o=./outdat/out31.csv; IN=5 OUT=12; 2014/06/02 17:05:48
+#END# kgnjoin -N -n -x K=0,3 i=./indat/dat2s.csv k=0,1 m=./indat/dat4s.csv o=./outdat/out31x.csv; IN=5 OUT=12; 2014/06/02 17:05:48
+#END# kgnjoin -N -n -nfn K=0,3 i=./indat/dat2snfn.csv k=0,1 m=./indat/dat4snfn.csv o=./outdat/out31nfn.csv; IN=5 OUT=12; 2014/06/02 17:05:48
+#END# kgnjoin K=商品 f=仕入価格 i=./indat/dat2s.csv k=商品 m=./indat/dat3s.csv o=./outdat/out32.csv; IN=5 OUT=5; 2014/06/02 17:05:48
+#END# kgnjoin -x K=0 f=1 i=./indat/dat2s.csv k=0 m=./indat/dat3s.csv o=./outdat/out32x.csv; IN=5 OUT=5; 2014/06/02 17:05:48
+#END# kgnjoin -nfn K=0 f=1 i=./indat/dat2snfn.csv k=0 m=./indat/dat3snfn.csv o=./outdat/out32nfn.csv; IN=5 OUT=5; 2014/06/02 17:05:48
+#END# kgnjoin -n K=商品 f=仕入価格 i=./indat/dat2s.csv k=商品 m=./indat/dat3s.csv o=./outdat/out33.csv; IN=5 OUT=7; 2014/06/02 17:05:48
+#END# kgnjoin -n -x K=0 f=1 i=./indat/dat2s.csv k=0 m=./indat/dat3s.csv o=./outdat/out33x.csv; IN=5 OUT=7; 2014/06/02 17:05:48
+#END# kgnjoin -n -nfn K=0 f=1 i=./indat/dat2snfn.csv k=0 m=./indat/dat3snfn.csv o=./outdat/out33nfn.csv; IN=5 OUT=7; 2014/06/02 17:05:48
+#END# kgnjoin -N K=商品 f=仕入価格 i=./indat/dat2s.csv k=商品 m=./indat/dat3s.csv o=./outdat/out34.csv; IN=5 OUT=6; 2014/06/02 17:05:48
+#END# kgnjoin -N -x K=0 f=1 i=./indat/dat2s.csv k=0 m=./indat/dat3s.csv o=./outdat/out34x.csv; IN=5 OUT=6; 2014/06/02 17:05:48
+#END# kgnjoin -N -nfn K=0 f=1 i=./indat/dat2snfn.csv k=0 m=./indat/dat3snfn.csv o=./outdat/out34nfn.csv; IN=5 OUT=6; 2014/06/02 17:05:48
+#END# kgnjoin -N -n K=商品 f=仕入価格 i=./indat/dat2s.csv k=商品 m=./indat/dat3s.csv o=./outdat/out35.csv; IN=5 OUT=8; 2014/06/02 17:05:48
+#END# kgnjoin -N -n -x K=0 f=1 i=./indat/dat2s.csv k=0 m=./indat/dat3s.csv o=./outdat/out35x.csv; IN=5 OUT=8; 2014/06/02 17:05:48
+#END# kgnjoin -N -n -nfn K=0 f=1 i=./indat/dat2snfn.csv k=0 m=./indat/dat3snfn.csv o=./outdat/out35nfn.csv; IN=5 OUT=8; 2014/06/02 17:05:48
+#END# kgnjoin K=商品 i=./indat/dat2s.csv k=商品 m=./indat/dat3s.csv o=./outdat/out36.csv; IN=5 OUT=5; 2014/06/02 17:05:48
+#END# kgnjoin -x K=0 i=./indat/dat2s.csv k=0 m=./indat/dat3s.csv o=./outdat/out36x.csv; IN=5 OUT=5; 2014/06/02 17:05:48
+#END# kgnjoin -nfn K=0 i=./indat/dat2snfn.csv k=0 m=./indat/dat3snfn.csv o=./outdat/out36nfn.csv; IN=5 OUT=5; 2014/06/02 17:05:48
+#END# kgnjoin -n K=商品 i=./indat/dat2s.csv k=商品 m=./indat/dat3s.csv o=./outdat/out37.csv; IN=5 OUT=7; 2014/06/02 17:05:48
+#END# kgnjoin -n -x K=0 i=./indat/dat2s.csv k=0 m=./indat/dat3s.csv o=./outdat/out37x.csv; IN=5 OUT=7; 2014/06/02 17:05:48
+#END# kgnjoin -n -nfn K=0 i=./indat/dat2snfn.csv k=0 m=./indat/dat3snfn.csv o=./outdat/out37nfn.csv; IN=5 OUT=7; 2014/06/02 17:05:48
+#END# kgnjoin -N K=商品 i=./indat/dat2s.csv k=商品 m=./indat/dat3s.csv o=./outdat/out38.csv; IN=5 OUT=6; 2014/06/02 17:05:48
+#END# kgnjoin -N -x K=0 i=./indat/dat2s.csv k=0 m=./indat/dat3s.csv o=./outdat/out38x.csv; IN=5 OUT=6; 2014/06/02 17:05:48
+#END# kgnjoin -N -nfn K=0 i=./indat/dat2snfn.csv k=0 m=./indat/dat3snfn.csv o=./outdat/out38nfn.csv; IN=5 OUT=6; 2014/06/02 17:05:48
+#END# kgnjoin -N -n K=商品 i=./indat/dat2s.csv k=商品 m=./indat/dat3s.csv o=./outdat/out39.csv; IN=5 OUT=8; 2014/06/02 17:05:48
+#END# kgnjoin -N -n -x K=0 i=./indat/dat2s.csv k=0 m=./indat/dat3s.csv o=./outdat/out39x.csv; IN=5 OUT=8; 2014/06/02 17:05:48
+#END# kgnjoin -N -n -nfn K=0 i=./indat/dat2snfn.csv k=0 m=./indat/dat3snfn.csv o=./outdat/out39nfn.csv; IN=5 OUT=8; 2014/06/02 17:05:48
+#END# kgnjoin K=商品,日付 f=仕入価格 i=./indat/dat2s.csv k=商品,日付 m=./indat/dat4s.csv o=./outdat/out40.csv; IN=5 OUT=6; 2014/06/02 17:05:49
+#END# kgnjoin -x K=0,3 f=1 i=./indat/dat2s.csv k=0,1 m=./indat/dat4s.csv o=./outdat/out40x.csv; IN=5 OUT=6; 2014/06/02 17:05:49
+#END# kgnjoin -nfn K=0,3 f=1 i=./indat/dat2snfn.csv k=0,1 m=./indat/dat4snfn.csv o=./outdat/out40nfn.csv; IN=5 OUT=6; 2014/06/02 17:05:49
+#END# kgnjoin -n K=商品,日付 f=仕入価格 i=./indat/dat2s.csv k=商品,日付 m=./indat/dat4s.csv o=./outdat/out41.csv; IN=5 OUT=8; 2014/06/02 17:05:49
+#END# kgnjoin -n -x K=0,3 f=1 i=./indat/dat2s.csv k=0,1 m=./indat/dat4s.csv o=./outdat/out41x.csv; IN=5 OUT=8; 2014/06/02 17:05:49
+#END# kgnjoin -n -nfn K=0,3 f=1 i=./indat/dat2snfn.csv k=0,1 m=./indat/dat4snfn.csv o=./outdat/out41nfn.csv; IN=5 OUT=8; 2014/06/02 17:05:49
+#END# kgnjoin -N K=商品,日付 f=仕入価格 i=./indat/dat2s.csv k=商品,日付 m=./indat/dat4s.csv o=./outdat/out42.csv; IN=5 OUT=10; 2014/06/02 17:05:49
+#END# kgnjoin -N -x K=0,3 f=1 i=./indat/dat2s.csv k=0,1 m=./indat/dat4s.csv o=./outdat/out42x.csv; IN=5 OUT=10; 2014/06/02 17:05:49
+#END# kgnjoin -N -nfn K=0,3 f=1 i=./indat/dat2snfn.csv k=0,1 m=./indat/dat4snfn.csv o=./outdat/out42nfn.csv; IN=5 OUT=10; 2014/06/02 17:05:49
+#END# kgnjoin -N -n K=商品,日付 f=仕入価格 i=./indat/dat2s.csv k=商品,日付 m=./indat/dat4s.csv o=./outdat/out43.csv; IN=5 OUT=12; 2014/06/02 17:05:49
+#END# kgnjoin -N -n -x K=0,3 f=1 i=./indat/dat2s.csv k=0,1 m=./indat/dat4s.csv o=./outdat/out43x.csv; IN=5 OUT=12; 2014/06/02 17:05:49
+#END# kgnjoin -N -n -nfn K=0,3 f=1 i=./indat/dat2snfn.csv k=0,1 m=./indat/dat4snfn.csv o=./outdat/out43nfn.csv; IN=5 OUT=12; 2014/06/02 17:05:49
+#END# kgnjoin K=商品,日付 i=./indat/dat2s.csv k=商品,日付 m=./indat/dat4s.csv o=./outdat/out44.csv; IN=5 OUT=6; 2014/06/02 17:05:49
+#END# kgnjoin -x K=0,3 i=./indat/dat2s.csv k=0,1 m=./indat/dat4s.csv o=./outdat/out44x.csv; IN=5 OUT=6; 2014/06/02 17:05:49
+#END# kgnjoin -nfn K=0,3 i=./indat/dat2snfn.csv k=0,1 m=./indat/dat4snfn.csv o=./outdat/out44nfn.csv; IN=5 OUT=6; 2014/06/02 17:05:49
+#END# kgnjoin -n K=商品,日付 i=./indat/dat2s.csv k=商品,日付 m=./indat/dat4s.csv o=./outdat/out45.csv; IN=5 OUT=8; 2014/06/02 17:05:49
+#END# kgnjoin -n -x K=0,3 i=./indat/dat2s.csv k=0,1 m=./indat/dat4s.csv o=./outdat/out45x.csv; IN=5 OUT=8; 2014/06/02 17:05:49
+#END# kgnjoin -n -nfn K=0,3 i=./indat/dat2snfn.csv k=0,1 m=./indat/dat4snfn.csv o=./outdat/out45nfn.csv; IN=5 OUT=8; 2014/06/02 17:05:49
+#END# kgnjoin -N K=商品,日付 i=./indat/dat2s.csv k=商品,日付 m=./indat/dat4s.csv o=./outdat/out46.csv; IN=5 OUT=10; 2014/06/02 17:05:49
+#END# kgnjoin -N -x K=0,3 i=./indat/dat2s.csv k=0,1 m=./indat/dat4s.csv o=./outdat/out46x.csv; IN=5 OUT=10; 2014/06/02 17:05:49
+#END# kgnjoin -N -nfn K=0,3 i=./indat/dat2snfn.csv k=0,1 m=./indat/dat4snfn.csv o=./outdat/out46nfn.csv; IN=5 OUT=10; 2014/06/02 17:05:49
+#END# kgnjoin -N -n K=商品,日付 i=./indat/dat2s.csv k=商品,日付 m=./indat/dat4s.csv o=./outdat/out47.csv; IN=5 OUT=12; 2014/06/02 17:05:49
+#END# kgnjoin -N -n -x K=0,3 i=./indat/dat2s.csv k=0,1 m=./indat/dat4s.csv o=./outdat/out47x.csv; IN=5 OUT=12; 2014/06/02 17:05:49
+#END# kgnjoin -N -n -nfn K=0,3 i=./indat/dat2snfn.csv k=0,1 m=./indat/dat4snfn.csv o=./outdat/out47nfn.csv; IN=5 OUT=12; 2014/06/02 17:05:49
+#END# kgnjoin f=仕入価格 i=./indat/dat5s.csv k=商品 m=./indat/dat3s.csv o=./outdat/out48.csv; IN=7 OUT=5; 2014/06/02 17:05:49
+#END# kgnjoin -x f=1 i=./indat/dat5s.csv k=0 m=./indat/dat3s.csv o=./outdat/out48x.csv; IN=7 OUT=5; 2014/06/02 17:05:49
+#END# kgnjoin -nfn f=1 i=./indat/dat5snfn.csv k=0 m=./indat/dat3snfn.csv o=./outdat/out48nfn.csv; IN=7 OUT=5; 2014/06/02 17:05:49
+#END# kgnjoin -n f=仕入価格 i=./indat/dat5s.csv k=商品 m=./indat/dat3s.csv o=./outdat/out49.csv; IN=7 OUT=9; 2014/06/02 17:05:49
+#END# kgnjoin -n -x f=1 i=./indat/dat5s.csv k=0 m=./indat/dat3s.csv o=./outdat/out49x.csv; IN=7 OUT=9; 2014/06/02 17:05:49
+#END# kgnjoin -n -nfn f=1 i=./indat/dat5snfn.csv k=0 m=./indat/dat3snfn.csv o=./outdat/out49nfn.csv; IN=7 OUT=9; 2014/06/02 17:05:49
+#END# kgnjoin -N f=仕入価格 i=./indat/dat5s.csv k=商品 m=./indat/dat3s.csv o=./outdat/out50.csv; IN=7 OUT=6; 2014/06/02 17:05:49
+#END# kgnjoin -N -x f=1 i=./indat/dat5s.csv k=0 m=./indat/dat3s.csv o=./outdat/out50x.csv; IN=7 OUT=6; 2014/06/02 17:05:49
+#END# kgnjoin -N -nfn f=1 i=./indat/dat5snfn.csv k=0 m=./indat/dat3snfn.csv o=./outdat/out50nfn.csv; IN=7 OUT=6; 2014/06/02 17:05:49
+#END# kgnjoin -N -n f=仕入価格 i=./indat/dat5s.csv k=商品 m=./indat/dat3s.csv o=./outdat/out51.csv; IN=7 OUT=10; 2014/06/02 17:05:49
+#END# kgnjoin -N -n -x f=1 i=./indat/dat5s.csv k=0 m=./indat/dat3s.csv o=./outdat/out51x.csv; IN=7 OUT=10; 2014/06/02 17:05:49
+#END# kgnjoin -N -n -nfn f=1 i=./indat/dat5snfn.csv k=0 m=./indat/dat3snfn.csv o=./outdat/out51nfn.csv; IN=7 OUT=10; 2014/06/02 17:05:49
+#END# kgnjoin i=./indat/dat5s.csv k=商品 m=./indat/dat3s.csv o=./outdat/out52.csv; IN=7 OUT=5; 2014/06/02 17:05:49
+#END# kgnjoin -x i=./indat/dat5s.csv k=0 m=./indat/dat3s.csv o=./outdat/out52x.csv; IN=7 OUT=5; 2014/06/02 17:05:49
+#END# kgnjoin -nfn i=./indat/dat5snfn.csv k=0 m=./indat/dat3snfn.csv o=./outdat/out52nfn.csv; IN=7 OUT=5; 2014/06/02 17:05:49
+#END# kgnjoin -n i=./indat/dat5s.csv k=商品 m=./indat/dat3s.csv o=./outdat/out53.csv; IN=7 OUT=9; 2014/06/02 17:05:49
+#END# kgnjoin -n -x i=./indat/dat5s.csv k=0 m=./indat/dat3s.csv o=./outdat/out53x.csv; IN=7 OUT=9; 2014/06/02 17:05:49
+#END# kgnjoin -n -nfn i=./indat/dat5snfn.csv k=0 m=./indat/dat3snfn.csv o=./outdat/out53nfn.csv; IN=7 OUT=9; 2014/06/02 17:05:49
+#END# kgnjoin -N i=./indat/dat5s.csv k=商品 m=./indat/dat3s.csv o=./outdat/out54.csv; IN=7 OUT=6; 2014/06/02 17:05:49
+#END# kgnjoin -N -x i=./indat/dat5s.csv k=0 m=./indat/dat3s.csv o=./outdat/out54x.csv; IN=7 OUT=6; 2014/06/02 17:05:49
+#END# kgnjoin -N -nfn i=./indat/dat5snfn.csv k=0 m=./indat/dat3snfn.csv o=./outdat/out54nfn.csv; IN=7 OUT=6; 2014/06/02 17:05:49
+#END# kgnjoin -N -n i=./indat/dat5s.csv k=商品 m=./indat/dat3s.csv o=./outdat/out55.csv; IN=7 OUT=10; 2014/06/02 17:05:49
+#END# kgnjoin -N -n -x i=./indat/dat5s.csv k=0 m=./indat/dat3s.csv o=./outdat/out55x.csv; IN=7 OUT=10; 2014/06/02 17:05:49
+#END# kgnjoin -N -n -nfn i=./indat/dat5snfn.csv k=0 m=./indat/dat3snfn.csv o=./outdat/out55nfn.csv; IN=7 OUT=10; 2014/06/02 17:05:49
+#END# kgnjoin f=仕入価格 i=./indat/dat2s.csv k=商品 m=./indat/dat6s.csv o=./outdat/out56.csv; IN=5 OUT=8; 2014/06/02 17:05:49
+#END# kgnjoin -x f=1 i=./indat/dat2s.csv k=0 m=./indat/dat6s.csv o=./outdat/out56x.csv; IN=5 OUT=8; 2014/06/02 17:05:49
+#END# kgnjoin -nfn f=1 i=./indat/dat2snfn.csv k=0 m=./indat/dat6snfn.csv o=./outdat/out56nfn.csv; IN=5 OUT=8; 2014/06/02 17:05:49
+#END# kgnjoin -n f=仕入価格 i=./indat/dat2s.csv k=商品 m=./indat/dat6s.csv o=./outdat/out57.csv; IN=5 OUT=9; 2014/06/02 17:05:49
+#END# kgnjoin -n -x f=1 i=./indat/dat2s.csv k=0 m=./indat/dat6s.csv o=./outdat/out57x.csv; IN=5 OUT=9; 2014/06/02 17:05:49
+#END# kgnjoin -n -nfn f=1 i=./indat/dat2snfn.csv k=0 m=./indat/dat6snfn.csv o=./outdat/out57nfn.csv; IN=5 OUT=9; 2014/06/02 17:05:49
+#END# kgnjoin -N f=仕入価格 i=./indat/dat2s.csv k=商品 m=./indat/dat6s.csv o=./outdat/out58.csv; IN=5 OUT=11; 2014/06/02 17:05:49
+#END# kgnjoin -N -x f=1 i=./indat/dat2s.csv k=0 m=./indat/dat6s.csv o=./outdat/out58x.csv; IN=5 OUT=11; 2014/06/02 17:05:49
+#END# kgnjoin -N -nfn f=1 i=./indat/dat2snfn.csv k=0 m=./indat/dat6snfn.csv o=./outdat/out58nfn.csv; IN=5 OUT=11; 2014/06/02 17:05:49
+#END# kgnjoin -N -n f=仕入価格 i=./indat/dat2s.csv k=商品 m=./indat/dat6s.csv o=./outdat/out59.csv; IN=5 OUT=12; 2014/06/02 17:05:49
+#END# kgnjoin -N -n -x f=1 i=./indat/dat2s.csv k=0 m=./indat/dat6s.csv o=./outdat/out59x.csv; IN=5 OUT=12; 2014/06/02 17:05:49
+#END# kgnjoin -N -n -nfn f=1 i=./indat/dat2snfn.csv k=0 m=./indat/dat6snfn.csv o=./outdat/out59nfn.csv; IN=5 OUT=12; 2014/06/02 17:05:49
+#END# kgnjoin i=./indat/dat2s.csv k=商品 m=./indat/dat6s.csv o=./outdat/out60.csv; IN=5 OUT=8; 2014/06/02 17:05:49
+#END# kgnjoin -x i=./indat/dat2s.csv k=0 m=./indat/dat6s.csv o=./outdat/out60x.csv; IN=5 OUT=8; 2014/06/02 17:05:49
+#END# kgnjoin -nfn i=./indat/dat2snfn.csv k=0 m=./indat/dat6snfn.csv o=./outdat/out60nfn.csv; IN=5 OUT=8; 2014/06/02 17:05:49
+#END# kgnjoin -n i=./indat/dat2s.csv k=商品 m=./indat/dat6s.csv o=./outdat/out61.csv; IN=5 OUT=9; 2014/06/02 17:05:49
+#END# kgnjoin -n -x i=./indat/dat2s.csv k=0 m=./indat/dat6s.csv o=./outdat/out61x.csv; IN=5 OUT=9; 2014/06/02 17:05:49
+#END# kgnjoin -n -nfn i=./indat/dat2snfn.csv k=0 m=./indat/dat6snfn.csv o=./outdat/out61nfn.csv; IN=5 OUT=9; 2014/06/02 17:05:49
+#END# kgnjoin -N i=./indat/dat2s.csv k=商品 m=./indat/dat6s.csv o=./outdat/out62.csv; IN=5 OUT=11; 2014/06/02 17:05:49
+#END# kgnjoin -N -x i=./indat/dat2s.csv k=0 m=./indat/dat6s.csv o=./outdat/out62x.csv; IN=5 OUT=11; 2014/06/02 17:05:49
+#END# kgnjoin -N -nfn i=./indat/dat2snfn.csv k=0 m=./indat/dat6snfn.csv o=./outdat/out62nfn.csv; IN=5 OUT=11; 2014/06/02 17:05:49
+#END# kgnjoin -N -n i=./indat/dat2s.csv k=商品 m=./indat/dat6s.csv o=./outdat/out63.csv; IN=5 OUT=12; 2014/06/02 17:05:49
+#END# kgnjoin -N -n -x i=./indat/dat2s.csv k=0 m=./indat/dat6s.csv o=./outdat/out63x.csv; IN=5 OUT=12; 2014/06/02 17:05:49
+#END# kgnjoin -N -n -nfn i=./indat/dat2snfn.csv k=0 m=./indat/dat6snfn.csv o=./outdat/out63nfn.csv; IN=5 OUT=12; 2014/06/02 17:05:49
+#END# kgnjoin f=仕入価格 i=./indat/dat5s.csv k=商品 m=./indat/dat6s.csv o=./outdat/out64.csv; IN=7 OUT=8; 2014/06/02 17:05:49
+#END# kgnjoin -x f=1 i=./indat/dat5s.csv k=0 m=./indat/dat6s.csv o=./outdat/out64x.csv; IN=7 OUT=8; 2014/06/02 17:05:49
+#END# kgnjoin -nfn f=1 i=./indat/dat5snfn.csv k=0 m=./indat/dat6snfn.csv o=./outdat/out64nfn.csv; IN=7 OUT=8; 2014/06/02 17:05:49
+#END# kgnjoin -n f=仕入価格 i=./indat/dat5s.csv k=商品 m=./indat/dat6s.csv o=./outdat/out65.csv; IN=7 OUT=11; 2014/06/02 17:05:49
+#END# kgnjoin -n -x f=1 i=./indat/dat5s.csv k=0 m=./indat/dat6s.csv o=./outdat/out65x.csv; IN=7 OUT=11; 2014/06/02 17:05:49
+#END# kgnjoin -n -nfn f=1 i=./indat/dat5snfn.csv k=0 m=./indat/dat6snfn.csv o=./outdat/out65nfn.csv; IN=7 OUT=11; 2014/06/02 17:05:49
+#END# kgnjoin -N f=仕入価格 i=./indat/dat5s.csv k=商品 m=./indat/dat6s.csv o=./outdat/out66.csv; IN=7 OUT=11; 2014/06/02 17:05:49
+#END# kgnjoin -N -x f=1 i=./indat/dat5s.csv k=0 m=./indat/dat6s.csv o=./outdat/out66x.csv; IN=7 OUT=11; 2014/06/02 17:05:49
+#END# kgnjoin -N -nfn f=1 i=./indat/dat5snfn.csv k=0 m=./indat/dat6snfn.csv o=./outdat/out66nfn.csv; IN=7 OUT=11; 2014/06/02 17:05:49
+#END# kgnjoin -N -n f=仕入価格 i=./indat/dat5s.csv k=商品 m=./indat/dat6s.csv o=./outdat/out67.csv; IN=7 OUT=14; 2014/06/02 17:05:49
+#END# kgnjoin -N -n -x f=1 i=./indat/dat5s.csv k=0 m=./indat/dat6s.csv o=./outdat/out67x.csv; IN=7 OUT=14; 2014/06/02 17:05:49
+#END# kgnjoin -N -n -nfn f=1 i=./indat/dat5snfn.csv k=0 m=./indat/dat6snfn.csv o=./outdat/out67nfn.csv; IN=7 OUT=14; 2014/06/02 17:05:49
+#END# kgnjoin i=./indat/dat5s.csv k=商品 m=./indat/dat6s.csv o=./outdat/out68.csv; IN=7 OUT=8; 2014/06/02 17:05:50
+#END# kgnjoin -x i=./indat/dat5s.csv k=0 m=./indat/dat6s.csv o=./outdat/out68x.csv; IN=7 OUT=8; 2014/06/02 17:05:50
+#END# kgnjoin -nfn i=./indat/dat5snfn.csv k=0 m=./indat/dat6snfn.csv o=./outdat/out68nfn.csv; IN=7 OUT=8; 2014/06/02 17:05:50
+#END# kgnjoin -n i=./indat/dat5s.csv k=商品 m=./indat/dat6s.csv o=./outdat/out69.csv; IN=7 OUT=11; 2014/06/02 17:05:50
+#END# kgnjoin -n -x i=./indat/dat5s.csv k=0 m=./indat/dat6s.csv o=./outdat/out69x.csv; IN=7 OUT=11; 2014/06/02 17:05:50
+#END# kgnjoin -n -nfn i=./indat/dat5snfn.csv k=0 m=./indat/dat6snfn.csv o=./outdat/out69nfn.csv; IN=7 OUT=11; 2014/06/02 17:05:50
+#END# kgnjoin -N i=./indat/dat5s.csv k=商品 m=./indat/dat6s.csv o=./outdat/out70.csv; IN=7 OUT=11; 2014/06/02 17:05:50
+#END# kgnjoin -N -x i=./indat/dat5s.csv k=0 m=./indat/dat6s.csv o=./outdat/out70x.csv; IN=7 OUT=11; 2014/06/02 17:05:50
+#END# kgnjoin -N -nfn i=./indat/dat5snfn.csv k=0 m=./indat/dat6snfn.csv o=./outdat/out70nfn.csv; IN=7 OUT=11; 2014/06/02 17:05:50
+#END# kgnjoin -N -n i=./indat/dat5s.csv k=商品 m=./indat/dat6s.csv o=./outdat/out71.csv; IN=7 OUT=14; 2014/06/02 17:05:50
+#END# kgnjoin -N -n -x i=./indat/dat5s.csv k=0 m=./indat/dat6s.csv o=./outdat/out71x.csv; IN=7 OUT=14; 2014/06/02 17:05:50
+#END# kgnjoin -N -n -nfn i=./indat/dat5snfn.csv k=0 m=./indat/dat6snfn.csv o=./outdat/out71nfn.csv; IN=7 OUT=14; 2014/06/02 17:05:50
+#END# kgnjoin f=仕入価格 i=./indat/dat2s.csv k=商品 m=./indat/dat7s.csv o=./outdat/out72.csv; IN=5 OUT=7; 2014/06/02 17:05:50
+#END# kgnjoin -x f=1 i=./indat/dat2s.csv k=0 m=./indat/dat7s.csv o=./outdat/out72x.csv; IN=5 OUT=7; 2014/06/02 17:05:50
+#END# kgnjoin -nfn f=1 i=./indat/dat2snfn.csv k=0 m=./indat/dat7snfn.csv o=./outdat/out72nfn.csv; IN=5 OUT=7; 2014/06/02 17:05:50
+#END# kgnjoin -n f=仕入価格 i=./indat/dat2s.csv k=商品 m=./indat/dat7s.csv o=./outdat/out73.csv; IN=5 OUT=7; 2014/06/02 17:05:50
+#END# kgnjoin -n -x f=1 i=./indat/dat2s.csv k=0 m=./indat/dat7s.csv o=./outdat/out73x.csv; IN=5 OUT=7; 2014/06/02 17:05:50
+#END# kgnjoin -n -nfn f=1 i=./indat/dat2snfn.csv k=0 m=./indat/dat7snfn.csv o=./outdat/out73nfn.csv; IN=5 OUT=7; 2014/06/02 17:05:50
+#END# kgnjoin -N f=仕入価格 i=./indat/dat2s.csv k=商品 m=./indat/dat7s.csv o=./outdat/out74.csv; IN=5 OUT=10; 2014/06/02 17:05:50
+#END# kgnjoin -N -x f=1 i=./indat/dat2s.csv k=0 m=./indat/dat7s.csv o=./outdat/out74x.csv; IN=5 OUT=10; 2014/06/02 17:05:50
+#END# kgnjoin -N -nfn f=1 i=./indat/dat2snfn.csv k=0 m=./indat/dat7snfn.csv o=./outdat/out74nfn.csv; IN=5 OUT=10; 2014/06/02 17:05:50
+#END# kgnjoin -N -n f=仕入価格 i=./indat/dat2s.csv k=商品 m=./indat/dat7s.csv o=./outdat/out75.csv; IN=5 OUT=10; 2014/06/02 17:05:50
+#END# kgnjoin -N -n -x f=1 i=./indat/dat2s.csv k=0 m=./indat/dat7s.csv o=./outdat/out75x.csv; IN=5 OUT=10; 2014/06/02 17:05:50
+#END# kgnjoin -N -n -nfn f=1 i=./indat/dat2snfn.csv k=0 m=./indat/dat7snfn.csv o=./outdat/out75nfn.csv; IN=5 OUT=10; 2014/06/02 17:05:50
+#END# kgnjoin i=./indat/dat2s.csv k=商品 m=./indat/dat7s.csv o=./outdat/out76.csv; IN=5 OUT=7; 2014/06/02 17:05:50
+#END# kgnjoin -x i=./indat/dat2s.csv k=0 m=./indat/dat7s.csv o=./outdat/out76x.csv; IN=5 OUT=7; 2014/06/02 17:05:50
+#END# kgnjoin -nfn i=./indat/dat2snfn.csv k=0 m=./indat/dat7snfn.csv o=./outdat/out76nfn.csv; IN=5 OUT=7; 2014/06/02 17:05:50
+#END# kgnjoin -n i=./indat/dat2s.csv k=商品 m=./indat/dat7s.csv o=./outdat/out77.csv; IN=5 OUT=7; 2014/06/02 17:05:50
+#END# kgnjoin -n -x i=./indat/dat2s.csv k=0 m=./indat/dat7s.csv o=./outdat/out77x.csv; IN=5 OUT=7; 2014/06/02 17:05:50
+#END# kgnjoin -n -nfn i=./indat/dat2snfn.csv k=0 m=./indat/dat7snfn.csv o=./outdat/out77nfn.csv; IN=5 OUT=7; 2014/06/02 17:05:50
+#END# kgnjoin -N i=./indat/dat2s.csv k=商品 m=./indat/dat7s.csv o=./outdat/out78.csv; IN=5 OUT=10; 2014/06/02 17:05:50
+#END# kgnjoin -N -x i=./indat/dat2s.csv k=0 m=./indat/dat7s.csv o=./outdat/out78x.csv; IN=5 OUT=10; 2014/06/02 17:05:50
+#END# kgnjoin -N -nfn i=./indat/dat2snfn.csv k=0 m=./indat/dat7snfn.csv o=./outdat/out78nfn.csv; IN=5 OUT=10; 2014/06/02 17:05:50
+#END# kgnjoin -N -n i=./indat/dat2s.csv k=商品 m=./indat/dat7s.csv o=./outdat/out79.csv; IN=5 OUT=10; 2014/06/02 17:05:50
+#END# kgnjoin -N -n -x i=./indat/dat2s.csv k=0 m=./indat/dat7s.csv o=./outdat/out79x.csv; IN=5 OUT=10; 2014/06/02 17:05:50
+#END# kgnjoin -N -n -nfn i=./indat/dat2snfn.csv k=0 m=./indat/dat7snfn.csv o=./outdat/out79nfn.csv; IN=5 OUT=10; 2014/06/02 17:05:50
+#END# kgnjoin f=仕入価格 i=./indat/dat2s.csv k=商品 m=./indat/dat8s.csv o=./outdat/out80.csv; IN=5 OUT=10; 2014/06/02 17:05:50
+#END# kgnjoin -x f=1 i=./indat/dat2s.csv k=0 m=./indat/dat8s.csv o=./outdat/out80x.csv; IN=5 OUT=10; 2014/06/02 17:05:50
+#END# kgnjoin -nfn f=1 i=./indat/dat2snfn.csv k=0 m=./indat/dat8snfn.csv o=./outdat/out80nfn.csv; IN=5 OUT=10; 2014/06/02 17:05:50
+#END# kgnjoin -n f=仕入価格 i=./indat/dat2s.csv k=商品 m=./indat/dat8s.csv o=./outdat/out81.csv; IN=5 OUT=11; 2014/06/02 17:05:50
+#END# kgnjoin -n -x f=1 i=./indat/dat2s.csv k=0 m=./indat/dat8s.csv o=./outdat/out81x.csv; IN=5 OUT=11; 2014/06/02 17:05:50
+#END# kgnjoin -n -nfn f=1 i=./indat/dat2snfn.csv k=0 m=./indat/dat8snfn.csv o=./outdat/out81nfn.csv; IN=5 OUT=11; 2014/06/02 17:05:50
+#END# kgnjoin -N f=仕入価格 i=./indat/dat2s.csv k=商品 m=./indat/dat8s.csv o=./outdat/out82.csv; IN=5 OUT=10; 2014/06/02 17:05:50
+#END# kgnjoin -N -x f=1 i=./indat/dat2s.csv k=0 m=./indat/dat8s.csv o=./outdat/out82x.csv; IN=5 OUT=10; 2014/06/02 17:05:50
+#END# kgnjoin -N -nfn f=1 i=./indat/dat2snfn.csv k=0 m=./indat/dat8snfn.csv o=./outdat/out82nfn.csv; IN=5 OUT=10; 2014/06/02 17:05:50
+#END# kgnjoin -N -n f=仕入価格 i=./indat/dat2s.csv k=商品 m=./indat/dat8s.csv o=./outdat/out83.csv; IN=5 OUT=11; 2014/06/02 17:05:50
+#END# kgnjoin -N -n -x f=1 i=./indat/dat2s.csv k=0 m=./indat/dat8s.csv o=./outdat/out83x.csv; IN=5 OUT=11; 2014/06/02 17:05:50
+#END# kgnjoin -N -n -nfn f=1 i=./indat/dat2snfn.csv k=0 m=./indat/dat8snfn.csv o=./outdat/out83nfn.csv; IN=5 OUT=11; 2014/06/02 17:05:50
+#END# kgnjoin i=./indat/dat2s.csv k=商品 m=./indat/dat8s.csv o=./outdat/out84.csv; IN=5 OUT=10; 2014/06/02 17:05:50
+#END# kgnjoin -x i=./indat/dat2s.csv k=0 m=./indat/dat8s.csv o=./outdat/out84x.csv; IN=5 OUT=10; 2014/06/02 17:05:50
+#END# kgnjoin -nfn i=./indat/dat2snfn.csv k=0 m=./indat/dat8snfn.csv o=./outdat/out84nfn.csv; IN=5 OUT=10; 2014/06/02 17:05:50
+#END# kgnjoin -n i=./indat/dat2s.csv k=商品 m=./indat/dat8s.csv o=./outdat/out85.csv; IN=5 OUT=11; 2014/06/02 17:05:50
+#END# kgnjoin -n -x i=./indat/dat2s.csv k=0 m=./indat/dat8s.csv o=./outdat/out85x.csv; IN=5 OUT=11; 2014/06/02 17:05:50
+#END# kgnjoin -n -nfn i=./indat/dat2snfn.csv k=0 m=./indat/dat8snfn.csv o=./outdat/out85nfn.csv; IN=5 OUT=11; 2014/06/02 17:05:50
+#END# kgnjoin -N i=./indat/dat2s.csv k=商品 m=./indat/dat8s.csv o=./outdat/out86.csv; IN=5 OUT=10; 2014/06/02 17:05:50
+#END# kgnjoin -N -x i=./indat/dat2s.csv k=0 m=./indat/dat8s.csv o=./outdat/out86x.csv; IN=5 OUT=10; 2014/06/02 17:05:50
+#END# kgnjoin -N -nfn i=./indat/dat2snfn.csv k=0 m=./indat/dat8snfn.csv o=./outdat/out86nfn.csv; IN=5 OUT=10; 2014/06/02 17:05:50
+#END# kgnjoin -N -n i=./indat/dat2s.csv k=商品 m=./indat/dat8s.csv o=./outdat/out87.csv; IN=5 OUT=11; 2014/06/02 17:05:50
+#END# kgnjoin -N -n -x i=./indat/dat2s.csv k=0 m=./indat/dat8s.csv o=./outdat/out87x.csv; IN=5 OUT=11; 2014/06/02 17:05:50
+#END# kgnjoin -N -n -nfn i=./indat/dat2snfn.csv k=0 m=./indat/dat8snfn.csv o=./outdat/out87nfn.csv; IN=5 OUT=11; 2014/06/02 17:05:50
+#END# kgnjoin f=仕入価格 i=./indat/dat2s.csv k=商品 m=./indat/dat9s.csv o=./outdat/out88.csv; IN=5 OUT=12; 2014/06/02 17:05:50
+#END# kgnjoin -x f=1 i=./indat/dat2s.csv k=0 m=./indat/dat9s.csv o=./outdat/out88x.csv; IN=5 OUT=12; 2014/06/02 17:05:50
+#END# kgnjoin -nfn f=1 i=./indat/dat2snfn.csv k=0 m=./indat/dat9snfn.csv o=./outdat/out88nfn.csv; IN=5 OUT=12; 2014/06/02 17:05:50
+#END# kgnjoin -n f=仕入価格 i=./indat/dat2s.csv k=商品 m=./indat/dat9s.csv o=./outdat/out89.csv; IN=5 OUT=12; 2014/06/02 17:05:50
+#END# kgnjoin -n -x f=1 i=./indat/dat2s.csv k=0 m=./indat/dat9s.csv o=./outdat/out89x.csv; IN=5 OUT=12; 2014/06/02 17:05:50
+#END# kgnjoin -n -nfn f=1 i=./indat/dat2snfn.csv k=0 m=./indat/dat9snfn.csv o=./outdat/out89nfn.csv; IN=5 OUT=12; 2014/06/02 17:05:50
+#END# kgnjoin -N f=仕入価格 i=./indat/dat2s.csv k=商品 m=./indat/dat9s.csv o=./outdat/out90.csv; IN=5 OUT=12; 2014/06/02 17:05:50
+#END# kgnjoin -N -x f=1 i=./indat/dat2s.csv k=0 m=./indat/dat9s.csv o=./outdat/out90x.csv; IN=5 OUT=12; 2014/06/02 17:05:50
+#END# kgnjoin -N -nfn f=1 i=./indat/dat2snfn.csv k=0 m=./indat/dat9snfn.csv o=./outdat/out90nfn.csv; IN=5 OUT=12; 2014/06/02 17:05:50
+#END# kgnjoin -N -n f=仕入価格 i=./indat/dat2s.csv k=商品 m=./indat/dat9s.csv o=./outdat/out91.csv; IN=5 OUT=12; 2014/06/02 17:05:50
+#END# kgnjoin -N -n -x f=1 i=./indat/dat2s.csv k=0 m=./indat/dat9s.csv o=./outdat/out91x.csv; IN=5 OUT=12; 2014/06/02 17:05:50
+#END# kgnjoin -N -n -nfn f=1 i=./indat/dat2snfn.csv k=0 m=./indat/dat9snfn.csv o=./outdat/out91nfn.csv; IN=5 OUT=12; 2014/06/02 17:05:50
+#END# kgnjoin i=./indat/dat2s.csv k=商品 m=./indat/dat9s.csv o=./outdat/out92.csv; IN=5 OUT=12; 2014/06/02 17:05:50
+#END# kgnjoin -x i=./indat/dat2s.csv k=0 m=./indat/dat9s.csv o=./outdat/out92x.csv; IN=5 OUT=12; 2014/06/02 17:05:50
+#END# kgnjoin -nfn i=./indat/dat2snfn.csv k=0 m=./indat/dat9snfn.csv o=./outdat/out92nfn.csv; IN=5 OUT=12; 2014/06/02 17:05:50
+#END# kgnjoin -n i=./indat/dat2s.csv k=商品 m=./indat/dat9s.csv o=./outdat/out93.csv; IN=5 OUT=12; 2014/06/02 17:05:50
+#END# kgnjoin -n -x i=./indat/dat2s.csv k=0 m=./indat/dat9s.csv o=./outdat/out93x.csv; IN=5 OUT=12; 2014/06/02 17:05:50
+#END# kgnjoin -n -nfn i=./indat/dat2snfn.csv k=0 m=./indat/dat9snfn.csv o=./outdat/out93nfn.csv; IN=5 OUT=12; 2014/06/02 17:05:50
+#END# kgnjoin -N i=./indat/dat2s.csv k=商品 m=./indat/dat9s.csv o=./outdat/out94.csv; IN=5 OUT=12; 2014/06/02 17:05:50
+#END# kgnjoin -N -x i=./indat/dat2s.csv k=0 m=./indat/dat9s.csv o=./outdat/out94x.csv; IN=5 OUT=12; 2014/06/02 17:05:50
+#END# kgnjoin -N -nfn i=./indat/dat2snfn.csv k=0 m=./indat/dat9snfn.csv o=./outdat/out94nfn.csv; IN=5 OUT=12; 2014/06/02 17:05:50
+#END# kgnjoin -N -n i=./indat/dat2s.csv k=商品 m=./indat/dat9s.csv o=./outdat/out95.csv; IN=5 OUT=12; 2014/06/02 17:05:50
+#END# kgnjoin -N -n -x i=./indat/dat2s.csv k=0 m=./indat/dat9s.csv o=./outdat/out95x.csv; IN=5 OUT=12; 2014/06/02 17:05:50
+#END# kgnjoin -N -n -nfn i=./indat/dat2snfn.csv k=0 m=./indat/dat9snfn.csv o=./outdat/out95nfn.csv; IN=5 OUT=12; 2014/06/02 17:05:50
+#END# kgnjoin bufcount=-2 f=仕入価格 i=./indat/dat2s.csv k=商品 m=./indat/dat3s.csv o=./outdat/out96.csv; IN=5 OUT=5; 2014/06/02 17:05:50
+#END# kgnjoin bufcount=2 f=仕入価格 i=./indat/dat2s.csv k=商品 m=./indat/dat3s.csv o=./outdat/out97.csv; IN=5 OUT=5; 2014/06/02 17:05:50
+#END# kgnjoin i=./indat/dat0.csv k=商品 m=./indat/dat1.csv o=./outdat/out100.csv; IN=0 OUT=0; 2014/06/02 17:05:50
+#END# kgnjoin -x i=./indat/dat0.csv k=0 m=./indat/dat1.csv o=./outdat/out100x.csv; IN=0 OUT=0; 2014/06/02 17:05:50
+#END# kgnjoin -nfn i=./indat/dat0nfn.csv k=0 m=./indat/dat1nfn.csv o=./outdat/out100nfn.csv; IN=0 OUT=0; 2014/06/02 17:05:50
+#END# kgnjoin i=./indat/dat0.csv k=商品 m=./indat/dat3.csv o=./outdat/out101.csv; IN=0 OUT=0; 2014/06/02 17:05:50
+#END# kgnjoin -x i=./indat/dat0.csv k=0 m=./indat/dat3.csv o=./outdat/out101x.csv; IN=0 OUT=0; 2014/06/02 17:05:50
+#END# kgnjoin -nfn i=./indat/dat0nfn.csv k=0 m=./indat/dat3nfn.csv o=./outdat/out101nfn.csv; IN=0 OUT=0; 2014/06/02 17:05:50
+#END# kgnjoin i=./indat/dat2.csv k=商品 m=./indat/dat1.csv o=./outdat/out102.csv; IN=1 OUT=0; 2014/06/02 17:05:50
+#END# kgnjoin -x i=./indat/dat2.csv k=0 m=./indat/dat1.csv o=./outdat/out102x.csv; IN=1 OUT=0; 2014/06/02 17:05:50
+#END# kgnjoin -nfn i=./indat/dat2nfn.csv k=0 m=./indat/dat1nfn.csv o=./outdat/out102nfn.csv; IN=1 OUT=0; 2014/06/02 17:05:50
+#END# kgnjoin -nfno i=./indat/dat2.csv k=商品 m=./indat/dat1.csv o=./outdat/out102nfno.csv; IN=1 OUT=0; 2014/06/02 17:05:51
+#END# kgnjoin -n i=./indat/dat0.csv k=商品 m=./indat/dat1.csv o=./outdat/out103.csv; IN=0 OUT=0; 2014/06/02 17:05:51
+#END# kgnjoin -n -x i=./indat/dat0.csv k=0 m=./indat/dat1.csv o=./outdat/out103x.csv; IN=0 OUT=0; 2014/06/02 17:05:51
+#END# kgnjoin -n -nfn i=./indat/dat0nfn.csv k=0 m=./indat/dat1nfn.csv o=./outdat/out103nfn.csv; IN=0 OUT=0; 2014/06/02 17:05:51
+#END# kgnjoin -n i=./indat/dat0.csv k=商品 m=./indat/dat3.csv o=./outdat/out104.csv; IN=0 OUT=0; 2014/06/02 17:05:51
+#END# kgnjoin -n -x i=./indat/dat0.csv k=0 m=./indat/dat3.csv o=./outdat/out104x.csv; IN=0 OUT=0; 2014/06/02 17:05:51
+#END# kgnjoin -n -nfn i=./indat/dat0nfn.csv k=0 m=./indat/dat3nfn.csv o=./outdat/out104nfn.csv; IN=0 OUT=0; 2014/06/02 17:05:51
+#END# kgnjoin -n i=./indat/dat2.csv k=商品 m=./indat/dat1.csv o=./outdat/out105.csv; IN=5 OUT=5; 2014/06/02 17:05:51
+#END# kgnjoin -n -x i=./indat/dat2.csv k=0 m=./indat/dat1.csv o=./outdat/out105x.csv; IN=5 OUT=5; 2014/06/02 17:05:51
+#END# kgnjoin -n -nfn i=./indat/dat2nfn.csv k=0 m=./indat/dat1nfn.csv o=./outdat/out105nfn.csv; IN=5 OUT=5; 2014/06/02 17:05:51
+#END# kgnjoin -N i=./indat/dat0.csv k=商品 m=./indat/dat1.csv o=./outdat/out106.csv; IN=0 OUT=0; 2014/06/02 17:05:51
+#END# kgnjoin -N -x i=./indat/dat0.csv k=0 m=./indat/dat1.csv o=./outdat/out106x.csv; IN=0 OUT=0; 2014/06/02 17:05:51
+#END# kgnjoin -N -nfn i=./indat/dat0nfn.csv k=0 m=./indat/dat1nfn.csv o=./outdat/out106nfn.csv; IN=0 OUT=0; 2014/06/02 17:05:51
+#END# kgnjoin -N i=./indat/dat0.csv k=商品 m=./indat/dat3.csv o=./outdat/out107.csv; IN=0 OUT=4; 2014/06/02 17:05:51
+#END# kgnjoin -N -x i=./indat/dat0.csv k=0 m=./indat/dat3.csv o=./outdat/out107x.csv; IN=0 OUT=4; 2014/06/02 17:05:51
+#END# kgnjoin -N -nfn i=./indat/dat0nfn.csv k=0 m=./indat/dat3nfn.csv o=./outdat/out107nfn.csv; IN=0 OUT=4; 2014/06/02 17:05:51
+#END# kgnjoin -N i=./indat/dat2.csv k=商品 m=./indat/dat1.csv o=./outdat/out108.csv; IN=1 OUT=0; 2014/06/02 17:05:51
+#END# kgnjoin -N -x i=./indat/dat2.csv k=0 m=./indat/dat1.csv o=./outdat/out108x.csv; IN=1 OUT=0; 2014/06/02 17:05:51
+#END# kgnjoin -N -nfn i=./indat/dat2nfn.csv k=0 m=./indat/dat1nfn.csv o=./outdat/out108nfn.csv; IN=1 OUT=0; 2014/06/02 17:05:51
+#END# kgnjoin -N -n i=./indat/dat0.csv k=商品 m=./indat/dat1.csv o=./outdat/out109.csv; IN=0 OUT=0; 2014/06/02 17:05:51
+#END# kgnjoin -N -n -x i=./indat/dat0.csv k=0 m=./indat/dat1.csv o=./outdat/out109x.csv; IN=0 OUT=0; 2014/06/02 17:05:51
+#END# kgnjoin -N -n -nfn i=./indat/dat0nfn.csv k=0 m=./indat/dat1nfn.csv o=./outdat/out109nfn.csv; IN=0 OUT=0; 2014/06/02 17:05:51
+#END# kgnjoin -N -n i=./indat/dat0.csv k=商品 m=./indat/dat3.csv o=./outdat/out110.csv; IN=0 OUT=4; 2014/06/02 17:05:51
+#END# kgnjoin -N -n -x i=./indat/dat0.csv k=0 m=./indat/dat3.csv o=./outdat/out110x.csv; IN=0 OUT=4; 2014/06/02 17:05:51
+#END# kgnjoin -N -n -nfn i=./indat/dat0nfn.csv k=0 m=./indat/dat3nfn.csv o=./outdat/out110nfn.csv; IN=0 OUT=4; 2014/06/02 17:05:51
+#END# kgnjoin -N -n i=./indat/dat2.csv k=商品 m=./indat/dat1.csv o=./outdat/out111.csv; IN=5 OUT=5; 2014/06/02 17:05:52
+#END# kgnjoin -N -n -x i=./indat/dat2.csv k=0 m=./indat/dat1.csv o=./outdat/out111x.csv; IN=5 OUT=5; 2014/06/02 17:05:52
+#END# kgnjoin -N -n -nfn i=./indat/dat2nfn.csv k=0 m=./indat/dat1nfn.csv o=./outdat/out111nfn.csv; IN=5 OUT=5; 2014/06/02 17:05:52
+#END# kgnjoin f=仕入価格 i=./indat/dat2.csv k=商品 m=./indat/dat3.csv o=./outdat/out112.csv; IN=5 OUT=5; 2014/06/02 17:05:52
+#END# kgnjoin -x f=1 i=./indat/dat2.csv k=0 m=./indat/dat3.csv o=./outdat/out112x.csv; IN=5 OUT=5; 2014/06/02 17:05:52
+#END# kgnjoin -nfn f=1 i=./indat/dat2nfn.csv k=0 m=./indat/dat3nfn.csv o=./outdat/out112nfn.csv; IN=5 OUT=1; 2014/06/02 17:05:52
+#END# kgnjoin -q f=仕入価格 i=./indat/dat2.csv k=商品 m=./indat/dat3.csv o=./outdat/out112q.csv; IN=5 OUT=1; 2014/06/02 17:05:52
+#END# kgnjoin -q -x f=1 i=./indat/dat2.csv k=0 m=./indat/dat3.csv o=./outdat/out112qx.csv; IN=5 OUT=1; 2014/06/02 17:05:52
+#END# kgnjoin -n f=仕入価格 i=./indat/dat2.csv k=商品 m=./indat/dat3.csv o=./outdat/out113.csv; IN=5 OUT=7; 2014/06/02 17:05:52
+#END# kgnjoin -n -x f=1 i=./indat/dat2.csv k=0 m=./indat/dat3.csv o=./outdat/out113x.csv; IN=5 OUT=7; 2014/06/02 17:05:52
+#END# kgnjoin -n -nfn f=1 i=./indat/dat2nfn.csv k=0 m=./indat/dat3nfn.csv o=./outdat/out113nfn.csv; IN=5 OUT=5; 2014/06/02 17:05:52
+#END# kgnjoin -N f=仕入価格 i=./indat/dat2.csv k=商品 m=./indat/dat3.csv o=./outdat/out114.csv; IN=5 OUT=6; 2014/06/02 17:05:52
+#END# kgnjoin -N -x f=1 i=./indat/dat2.csv k=0 m=./indat/dat3.csv o=./outdat/out114x.csv; IN=5 OUT=6; 2014/06/02 17:05:52
+#END# kgnjoin -N -nfn f=1 i=./indat/dat2nfn.csv k=0 m=./indat/dat3nfn.csv o=./outdat/out114nfn.csv; IN=5 OUT=4; 2014/06/02 17:05:52
+#END# kgnjoin -N -n f=仕入価格 i=./indat/dat2.csv k=商品 m=./indat/dat3.csv o=./outdat/out115.csv; IN=5 OUT=8; 2014/06/02 17:05:52
+#END# kgnjoin -N -n -x f=1 i=./indat/dat2.csv k=0 m=./indat/dat3.csv o=./outdat/out115x.csv; IN=5 OUT=8; 2014/06/02 17:05:52
+#END# kgnjoin -N -n -nfn f=1 i=./indat/dat2nfn.csv k=0 m=./indat/dat3nfn.csv o=./outdat/out115nfn.csv; IN=5 OUT=8; 2014/06/02 17:05:52
+#END# kgnjoin f=仕入価格,在庫数 i=./indat/dat2.csv k=商品 m=./indat/dat3.csv o=./outdat/out116.csv; IN=5 OUT=5; 2014/06/02 17:05:52
+#END# kgnjoin -x f=1,2 i=./indat/dat2.csv k=0 m=./indat/dat3.csv o=./outdat/out116x.csv; IN=5 OUT=5; 2014/06/02 17:05:52
+#END# kgnjoin -nfn f=1,2 i=./indat/dat2nfn.csv k=0 m=./indat/dat3nfn.csv o=./outdat/out116nfn.csv; IN=5 OUT=1; 2014/06/02 17:05:52
+#END# kgnjoin -n f=仕入価格,在庫数 i=./indat/dat2.csv k=商品 m=./indat/dat3.csv o=./outdat/out117.csv; IN=5 OUT=7; 2014/06/02 17:05:52
+#END# kgnjoin -n -x f=1,2 i=./indat/dat2.csv k=0 m=./indat/dat3.csv o=./outdat/out117x.csv; IN=5 OUT=7; 2014/06/02 17:05:52
+#END# kgnjoin -n -nfn f=1,2 i=./indat/dat2nfn.csv k=0 m=./indat/dat3nfn.csv o=./outdat/out117nfn.csv; IN=5 OUT=5; 2014/06/02 17:05:52
+#END# kgnjoin -N f=仕入価格,在庫数 i=./indat/dat2.csv k=商品 m=./indat/dat3.csv o=./outdat/out118.csv; IN=5 OUT=6; 2014/06/02 17:05:52
+#END# kgnjoin -N -x f=1,2 i=./indat/dat2.csv k=0 m=./indat/dat3.csv o=./outdat/out118x.csv; IN=5 OUT=6; 2014/06/02 17:05:52
+#END# kgnjoin -N -nfn f=1,2 i=./indat/dat2nfn.csv k=0 m=./indat/dat3nfn.csv o=./outdat/out118nfn.csv; IN=5 OUT=4; 2014/06/02 17:05:52
+#END# kgnjoin -N -n f=仕入価格,在庫数 i=./indat/dat2.csv k=商品 m=./indat/dat3.csv o=./outdat/out119.csv; IN=5 OUT=8; 2014/06/02 17:05:52
+#END# kgnjoin -N -n -x f=1,2 i=./indat/dat2.csv k=0 m=./indat/dat3.csv o=./outdat/out119x.csv; IN=5 OUT=8; 2014/06/02 17:05:53
+#END# kgnjoin -N -n -nfn f=1,2 i=./indat/dat2nfn.csv k=0 m=./indat/dat3nfn.csv o=./outdat/out119nfn.csv; IN=5 OUT=8; 2014/06/02 17:05:53
+#END# kgnjoin i=./indat/dat2.csv k=商品 m=./indat/dat3.csv o=./outdat/out120.csv; IN=5 OUT=5; 2014/06/02 17:05:53
+#END# kgnjoin -x i=./indat/dat2.csv k=0 m=./indat/dat3.csv o=./outdat/out120x.csv; IN=5 OUT=5; 2014/06/02 17:05:53
+#END# kgnjoin -nfn i=./indat/dat2nfn.csv k=0 m=./indat/dat3nfn.csv o=./outdat/out120nfn.csv; IN=5 OUT=1; 2014/06/02 17:05:53
+#END# kgnjoin -n i=./indat/dat2.csv k=商品 m=./indat/dat3.csv o=./outdat/out121.csv; IN=5 OUT=7; 2014/06/02 17:05:53
+#END# kgnjoin -n -x i=./indat/dat2.csv k=0 m=./indat/dat3.csv o=./outdat/out121x.csv; IN=5 OUT=7; 2014/06/02 17:05:53
+#END# kgnjoin -n -nfn i=./indat/dat2nfn.csv k=0 m=./indat/dat3nfn.csv o=./outdat/out121nfn.csv; IN=5 OUT=5; 2014/06/02 17:05:53
+#END# kgnjoin -N i=./indat/dat2.csv k=商品 m=./indat/dat3.csv o=./outdat/out122.csv; IN=5 OUT=6; 2014/06/02 17:05:53
+#END# kgnjoin -N -x i=./indat/dat2.csv k=0 m=./indat/dat3.csv o=./outdat/out122x.csv; IN=5 OUT=6; 2014/06/02 17:05:53
+#END# kgnjoin -N -nfn i=./indat/dat2nfn.csv k=0 m=./indat/dat3nfn.csv o=./outdat/out122nfn.csv; IN=5 OUT=4; 2014/06/02 17:05:53
+#END# kgnjoin -N -n i=./indat/dat2.csv k=商品 m=./indat/dat3.csv o=./outdat/out123.csv; IN=5 OUT=8; 2014/06/02 17:05:53
+#END# kgnjoin -N -n -x i=./indat/dat2.csv k=0 m=./indat/dat3.csv o=./outdat/out123x.csv; IN=5 OUT=8; 2014/06/02 17:05:53
+#END# kgnjoin -N -n -nfn i=./indat/dat2nfn.csv k=0 m=./indat/dat3nfn.csv o=./outdat/out123nfn.csv; IN=5 OUT=8; 2014/06/02 17:05:53
+#END# kgnjoin f=仕入価格 i=./indat/dat2.csv k=商品,日付 m=./indat/dat4.csv o=./outdat/out124.csv; IN=5 OUT=6; 2014/06/02 17:05:53
+#END# kgnjoin -x K=0,3 f=1 i=./indat/dat2.csv k=0,1 m=./indat/dat4.csv o=./outdat/out124x.csv; IN=5 OUT=6; 2014/06/02 17:05:53
+#END# kgnjoin -nfn K=0,3 f=1 i=./indat/dat2nfn.csv k=0,1 m=./indat/dat4nfn.csv o=./outdat/out124nfn.csv; IN=5 OUT=3; 2014/06/02 17:05:53
+#END# kgnjoin -n f=仕入価格 i=./indat/dat2.csv k=商品,日付 m=./indat/dat4.csv o=./outdat/out125.csv; IN=5 OUT=8; 2014/06/02 17:05:53
+#END# kgnjoin -n -x K=0,3 f=1 i=./indat/dat2.csv k=0,1 m=./indat/dat4.csv o=./outdat/out125x.csv; IN=5 OUT=8; 2014/06/02 17:05:53
+#END# kgnjoin -n -nfn K=0,3 f=1 i=./indat/dat2nfn.csv k=0,1 m=./indat/dat4nfn.csv o=./outdat/out125nfn.csv; IN=5 OUT=6; 2014/06/02 17:05:53
+#END# kgnjoin -N f=仕入価格 i=./indat/dat2.csv k=商品,日付 m=./indat/dat4.csv o=./outdat/out126.csv; IN=5 OUT=10; 2014/06/02 17:05:53
+#END# kgnjoin -N -x K=0,3 f=1 i=./indat/dat2.csv k=0,1 m=./indat/dat4.csv o=./outdat/out126x.csv; IN=5 OUT=10; 2014/06/02 17:05:53
+#END# kgnjoin -N -nfn K=0,3 f=1 i=./indat/dat2nfn.csv k=0,1 m=./indat/dat4nfn.csv o=./outdat/out126nfn.csv; IN=5 OUT=10; 2014/06/02 17:05:53
+#END# kgnjoin -N -n f=仕入価格 i=./indat/dat2.csv k=商品,日付 m=./indat/dat4.csv o=./outdat/out127.csv; IN=5 OUT=12; 2014/06/02 17:05:53
+#END# kgnjoin -N -n -x K=0,3 f=1 i=./indat/dat2.csv k=0,1 m=./indat/dat4.csv o=./outdat/out127x.csv; IN=5 OUT=12; 2014/06/02 17:05:53
+#END# kgnjoin -N -n -nfn K=0,3 f=1 i=./indat/dat2nfn.csv k=0,1 m=./indat/dat4nfn.csv o=./outdat/out127nfn.csv; IN=5 OUT=13; 2014/06/02 17:05:53
+#END# kgnjoin i=./indat/dat2.csv k=商品,日付 m=./indat/dat4.csv o=./outdat/out128.csv; IN=5 OUT=6; 2014/06/02 17:05:54
+#END# kgnjoin -x K=0,3 i=./indat/dat2.csv k=0,1 m=./indat/dat4.csv o=./outdat/out128x.csv; IN=5 OUT=6; 2014/06/02 17:05:54
+#END# kgnjoin -nfn K=0,3 i=./indat/dat2nfn.csv k=0,1 m=./indat/dat4nfn.csv o=./outdat/out128nfn.csv; IN=5 OUT=3; 2014/06/02 17:05:54
+#END# kgnjoin -n i=./indat/dat2.csv k=商品,日付 m=./indat/dat4.csv o=./outdat/out129.csv; IN=5 OUT=8; 2014/06/02 17:05:54
+#END# kgnjoin -n -x K=0,3 i=./indat/dat2.csv k=0,1 m=./indat/dat4.csv o=./outdat/out129x.csv; IN=5 OUT=8; 2014/06/02 17:05:54
+#END# kgnjoin -n -nfn K=0,3 i=./indat/dat2nfn.csv k=0,1 m=./indat/dat4nfn.csv o=./outdat/out129nfn.csv; IN=5 OUT=6; 2014/06/02 17:05:54
+#END# kgnjoin -N i=./indat/dat2.csv k=商品,日付 m=./indat/dat4.csv o=./outdat/out130.csv; IN=5 OUT=10; 2014/06/02 17:05:54
+#END# kgnjoin -N -x K=0,3 i=./indat/dat2.csv k=0,1 m=./indat/dat4.csv o=./outdat/out130x.csv; IN=5 OUT=10; 2014/06/02 17:05:54
+#END# kgnjoin -N -nfn K=0,3 i=./indat/dat2nfn.csv k=0,1 m=./indat/dat4nfn.csv o=./outdat/out130nfn.csv; IN=5 OUT=10; 2014/06/02 17:05:54
+#END# kgnjoin -N -n i=./indat/dat2.csv k=商品,日付 m=./indat/dat4.csv o=./outdat/out131.csv; IN=5 OUT=12; 2014/06/02 17:05:54
+#END# kgnjoin -N -n -x K=0,3 i=./indat/dat2.csv k=0,1 m=./indat/dat4.csv o=./outdat/out131x.csv; IN=5 OUT=12; 2014/06/02 17:05:54
+#END# kgnjoin -N -n -nfn K=0,3 i=./indat/dat2nfn.csv k=0,1 m=./indat/dat4nfn.csv o=./outdat/out131nfn.csv; IN=5 OUT=13; 2014/06/02 17:05:54
+#END# kgnjoin K=商品 f=仕入価格 i=./indat/dat2.csv k=商品 m=./indat/dat3.csv o=./outdat/out132.csv; IN=5 OUT=5; 2014/06/02 17:05:54
+#END# kgnjoin -x K=0 f=1 i=./indat/dat2.csv k=0 m=./indat/dat3.csv o=./outdat/out132x.csv; IN=5 OUT=5; 2014/06/02 17:05:54
+#END# kgnjoin -nfn K=0 f=1 i=./indat/dat2nfn.csv k=0 m=./indat/dat3nfn.csv o=./outdat/out132nfn.csv; IN=5 OUT=1; 2014/06/02 17:05:54
+#END# kgnjoin -n K=商品 f=仕入価格 i=./indat/dat2.csv k=商品 m=./indat/dat3.csv o=./outdat/out133.csv; IN=5 OUT=7; 2014/06/02 17:05:54
+#END# kgnjoin -n -x K=0 f=1 i=./indat/dat2.csv k=0 m=./indat/dat3.csv o=./outdat/out133x.csv; IN=5 OUT=7; 2014/06/02 17:05:54
+#END# kgnjoin -n -nfn K=0 f=1 i=./indat/dat2nfn.csv k=0 m=./indat/dat3nfn.csv o=./outdat/out133nfn.csv; IN=5 OUT=5; 2014/06/02 17:05:54
+#END# kgnjoin -N K=商品 f=仕入価格 i=./indat/dat2.csv k=商品 m=./indat/dat3.csv o=./outdat/out134.csv; IN=5 OUT=6; 2014/06/02 17:05:54
+#END# kgnjoin -N -x K=0 f=1 i=./indat/dat2.csv k=0 m=./indat/dat3.csv o=./outdat/out134x.csv; IN=5 OUT=6; 2014/06/02 17:05:54
+#END# kgnjoin -N -nfn K=0 f=1 i=./indat/dat2nfn.csv k=0 m=./indat/dat3nfn.csv o=./outdat/out134nfn.csv; IN=5 OUT=4; 2014/06/02 17:05:54
+#END# kgnjoin -N -n K=商品 f=仕入価格 i=./indat/dat2.csv k=商品 m=./indat/dat3.csv o=./outdat/out135.csv; IN=5 OUT=8; 2014/06/02 17:05:54
+#END# kgnjoin -N -n -x K=0 f=1 i=./indat/dat2.csv k=0 m=./indat/dat3.csv o=./outdat/out135x.csv; IN=5 OUT=8; 2014/06/02 17:05:54
+#END# kgnjoin -N -n -nfn K=0 f=1 i=./indat/dat2nfn.csv k=0 m=./indat/dat3nfn.csv o=./outdat/out135nfn.csv; IN=5 OUT=8; 2014/06/02 17:05:54
+#END# kgnjoin K=商品 i=./indat/dat2.csv k=商品 m=./indat/dat3.csv o=./outdat/out136.csv; IN=5 OUT=5; 2014/06/02 17:05:54
+#END# kgnjoin -x K=0 i=./indat/dat2.csv k=0 m=./indat/dat3.csv o=./outdat/out136x.csv; IN=5 OUT=5; 2014/06/02 17:05:55
+#END# kgnjoin -nfn K=0 i=./indat/dat2nfn.csv k=0 m=./indat/dat3nfn.csv o=./outdat/out136nfn.csv; IN=5 OUT=1; 2014/06/02 17:05:55
+#END# kgnjoin -n K=商品 i=./indat/dat2.csv k=商品 m=./indat/dat3.csv o=./outdat/out137.csv; IN=5 OUT=7; 2014/06/02 17:05:55
+#END# kgnjoin -n -x K=0 i=./indat/dat2.csv k=0 m=./indat/dat3.csv o=./outdat/out137x.csv; IN=5 OUT=7; 2014/06/02 17:05:55
+#END# kgnjoin -n -nfn K=0 i=./indat/dat2nfn.csv k=0 m=./indat/dat3nfn.csv o=./outdat/out137nfn.csv; IN=5 OUT=5; 2014/06/02 17:05:55
+#END# kgnjoin -N K=商品 i=./indat/dat2.csv k=商品 m=./indat/dat3.csv o=./outdat/out138.csv; IN=5 OUT=6; 2014/06/02 17:05:55
+#END# kgnjoin -N -x K=0 i=./indat/dat2.csv k=0 m=./indat/dat3.csv o=./outdat/out138x.csv; IN=5 OUT=6; 2014/06/02 17:05:55
+#END# kgnjoin -N -nfn K=0 i=./indat/dat2nfn.csv k=0 m=./indat/dat3nfn.csv o=./outdat/out138nfn.csv; IN=5 OUT=4; 2014/06/02 17:05:55
+#END# kgnjoin -N -n K=商品 i=./indat/dat2.csv k=商品 m=./indat/dat3.csv o=./outdat/out139.csv; IN=5 OUT=8; 2014/06/02 17:05:55
+#END# kgnjoin -N -n -x K=0 i=./indat/dat2.csv k=0 m=./indat/dat3.csv o=./outdat/out139x.csv; IN=5 OUT=8; 2014/06/02 17:05:55
+#END# kgnjoin -N -n -nfn K=0 i=./indat/dat2nfn.csv k=0 m=./indat/dat3nfn.csv o=./outdat/out139nfn.csv; IN=5 OUT=8; 2014/06/02 17:05:55
+#END# kgnjoin K=商品,日付 f=仕入価格 i=./indat/dat2.csv k=商品,日付 m=./indat/dat4.csv o=./outdat/out140.csv; IN=5 OUT=6; 2014/06/02 17:05:55
+#END# kgnjoin -n K=商品,日付 f=仕入価格 i=./indat/dat2.csv k=商品,日付 m=./indat/dat4.csv o=./outdat/out141.csv; IN=5 OUT=8; 2014/06/02 17:05:55
+#END# kgnjoin -N K=商品,日付 f=仕入価格 i=./indat/dat2.csv k=商品,日付 m=./indat/dat4.csv o=./outdat/out142.csv; IN=5 OUT=10; 2014/06/02 17:05:55
+#END# kgnjoin -N -n K=商品,日付 f=仕入価格 i=./indat/dat2.csv k=商品,日付 m=./indat/dat4.csv o=./outdat/out143.csv; IN=5 OUT=12; 2014/06/02 17:05:55
+#END# kgnjoin K=商品,日付 i=./indat/dat2.csv k=商品,日付 m=./indat/dat4.csv o=./outdat/out144.csv; IN=5 OUT=6; 2014/06/02 17:05:55
+#END# kgnjoin -n K=商品,日付 i=./indat/dat2.csv k=商品,日付 m=./indat/dat4.csv o=./outdat/out145.csv; IN=5 OUT=8; 2014/06/02 17:05:55
+#END# kgnjoin -N K=商品,日付 i=./indat/dat2.csv k=商品,日付 m=./indat/dat4.csv o=./outdat/out146.csv; IN=5 OUT=10; 2014/06/02 17:05:55
+#END# kgnjoin -N -n K=商品,日付 i=./indat/dat2.csv k=商品,日付 m=./indat/dat4.csv o=./outdat/out147.csv; IN=5 OUT=12; 2014/06/02 17:05:55
+#END# kgnjoin f=仕入価格 i=./indat/dat5.csv k=商品 m=./indat/dat3.csv o=./outdat/out148.csv; IN=7 OUT=5; 2014/06/02 17:05:55
+#END# kgnjoin -x f=1 i=./indat/dat5.csv k=0 m=./indat/dat3.csv o=./outdat/out148x.csv; IN=7 OUT=5; 2014/06/02 17:05:55
+#END# kgnjoin -nfn f=1 i=./indat/dat5nfn.csv k=0 m=./indat/dat3nfn.csv o=./outdat/out148nfn.csv; IN=7 OUT=0; 2014/06/02 17:05:55
+#END# kgnjoin -n f=仕入価格 i=./indat/dat5.csv k=商品 m=./indat/dat3.csv o=./outdat/out149.csv; IN=7 OUT=9; 2014/06/02 17:05:56
+#END# kgnjoin -n -x f=1 i=./indat/dat5.csv k=0 m=./indat/dat3.csv o=./outdat/out149x.csv; IN=7 OUT=9; 2014/06/02 17:05:56
+#END# kgnjoin -n -nfn f=1 i=./indat/dat5nfn.csv k=0 m=./indat/dat3nfn.csv o=./outdat/out149nfn.csv; IN=7 OUT=7; 2014/06/02 17:05:56
+#END# kgnjoin -N f=仕入価格 i=./indat/dat5.csv k=商品 m=./indat/dat3.csv o=./outdat/out150.csv; IN=7 OUT=6; 2014/06/02 17:05:56
+#END# kgnjoin -N -x f=1 i=./indat/dat5.csv k=0 m=./indat/dat3.csv o=./outdat/out150x.csv; IN=7 OUT=6; 2014/06/02 17:05:56
+#END# kgnjoin -N -nfn f=1 i=./indat/dat5nfn.csv k=0 m=./indat/dat3nfn.csv o=./outdat/out150nfn.csv; IN=7 OUT=4; 2014/06/02 17:05:56
+#END# kgnjoin -N -n f=仕入価格 i=./indat/dat5.csv k=商品 m=./indat/dat3.csv o=./outdat/out151.csv; IN=7 OUT=10; 2014/06/02 17:05:56
+#END# kgnjoin -N -n -x f=1 i=./indat/dat5.csv k=0 m=./indat/dat3.csv o=./outdat/out151x.csv; IN=7 OUT=10; 2014/06/02 17:05:56
+#END# kgnjoin -N -n -nfn f=1 i=./indat/dat5nfn.csv k=0 m=./indat/dat3nfn.csv o=./outdat/out151nfn.csv; IN=7 OUT=11; 2014/06/02 17:05:56
+#END# kgnjoin i=./indat/dat5.csv k=商品 m=./indat/dat3.csv o=./outdat/out152.csv; IN=7 OUT=5; 2014/06/02 17:05:56
+#END# kgnjoin -x i=./indat/dat5.csv k=0 m=./indat/dat3.csv o=./outdat/out152x.csv; IN=7 OUT=5; 2014/06/02 17:05:56
+#END# kgnjoin -nfn i=./indat/dat5nfn.csv k=0 m=./indat/dat3nfn.csv o=./outdat/out152nfn.csv; IN=7 OUT=0; 2014/06/02 17:05:56
+#END# kgnjoin -n i=./indat/dat5.csv k=商品 m=./indat/dat3.csv o=./outdat/out153.csv; IN=7 OUT=9; 2014/06/02 17:05:56
+#END# kgnjoin -n -x i=./indat/dat5.csv k=0 m=./indat/dat3.csv o=./outdat/out153x.csv; IN=7 OUT=9; 2014/06/02 17:05:56
+#END# kgnjoin -n -nfn i=./indat/dat5nfn.csv k=0 m=./indat/dat3nfn.csv o=./outdat/out153nfn.csv; IN=7 OUT=7; 2014/06/02 17:05:56
+#END# kgnjoin -N i=./indat/dat5.csv k=商品 m=./indat/dat3.csv o=./outdat/out154.csv; IN=7 OUT=6; 2014/06/02 17:05:56
+#END# kgnjoin -N -x i=./indat/dat5.csv k=0 m=./indat/dat3.csv o=./outdat/out154x.csv; IN=7 OUT=6; 2014/06/02 17:05:56
+#END# kgnjoin -N -nfn i=./indat/dat5nfn.csv k=0 m=./indat/dat3nfn.csv o=./outdat/out154nfn.csv; IN=7 OUT=4; 2014/06/02 17:05:56
+#END# kgnjoin -N -n i=./indat/dat5.csv k=商品 m=./indat/dat3.csv o=./outdat/out155.csv; IN=7 OUT=10; 2014/06/02 17:05:56
+#END# kgnjoin -N -n -x i=./indat/dat5.csv k=0 m=./indat/dat3.csv o=./outdat/out155x.csv; IN=7 OUT=10; 2014/06/02 17:05:56
+#END# kgnjoin -N -n -nfn i=./indat/dat5nfn.csv k=0 m=./indat/dat3nfn.csv o=./outdat/out155nfn.csv; IN=7 OUT=11; 2014/06/02 17:05:56
+#END# kgnjoin f=仕入価格 i=./indat/dat2.csv k=商品 m=./indat/dat6.csv o=./outdat/out156.csv; IN=5 OUT=8; 2014/06/02 17:05:56
+#END# kgnjoin -x f=1 i=./indat/dat2.csv k=0 m=./indat/dat6.csv o=./outdat/out156x.csv; IN=5 OUT=8; 2014/06/02 17:05:56
+#END# kgnjoin -nfn f=1 i=./indat/dat2nfn.csv k=0 m=./indat/dat6nfn.csv o=./outdat/out156nfn.csv; IN=5 OUT=1; 2014/06/02 17:05:56
+#END# kgnjoin -n f=仕入価格 i=./indat/dat2.csv k=商品 m=./indat/dat6.csv o=./outdat/out157.csv; IN=5 OUT=9; 2014/06/02 17:05:56
+#END# kgnjoin -n -x f=1 i=./indat/dat2.csv k=0 m=./indat/dat6.csv o=./outdat/out157x.csv; IN=5 OUT=9; 2014/06/02 17:05:57
+#END# kgnjoin -n -nfn f=1 i=./indat/dat2nfn.csv k=0 m=./indat/dat6nfn.csv o=./outdat/out157nfn.csv; IN=5 OUT=5; 2014/06/02 17:05:57
+#END# kgnjoin -N f=仕入価格 i=./indat/dat2.csv k=商品 m=./indat/dat6.csv o=./outdat/out158.csv; IN=5 OUT=11; 2014/06/02 17:05:57
+#END# kgnjoin -N -x f=1 i=./indat/dat2.csv k=0 m=./indat/dat6.csv o=./outdat/out158x.csv; IN=5 OUT=11; 2014/06/02 17:05:57
+#END# kgnjoin -N -nfn f=1 i=./indat/dat2nfn.csv k=0 m=./indat/dat6nfn.csv o=./outdat/out158nfn.csv; IN=5 OUT=7; 2014/06/02 17:05:57
+#END# kgnjoin -N -n f=仕入価格 i=./indat/dat2.csv k=商品 m=./indat/dat6.csv o=./outdat/out159.csv; IN=5 OUT=12; 2014/06/02 17:05:57
+#END# kgnjoin -N -n -x f=1 i=./indat/dat2.csv k=0 m=./indat/dat6.csv o=./outdat/out159x.csv; IN=5 OUT=12; 2014/06/02 17:05:57
+#END# kgnjoin -N -n -nfn f=1 i=./indat/dat2nfn.csv k=0 m=./indat/dat6nfn.csv o=./outdat/out159nfn.csv; IN=5 OUT=11; 2014/06/02 17:05:57
+#END# kgnjoin i=./indat/dat2.csv k=商品 m=./indat/dat6.csv o=./outdat/out160.csv; IN=5 OUT=8; 2014/06/02 17:05:57
+#END# kgnjoin -x i=./indat/dat2.csv k=0 m=./indat/dat6.csv o=./outdat/out160x.csv; IN=5 OUT=8; 2014/06/02 17:05:57
+#END# kgnjoin -nfn i=./indat/dat2nfn.csv k=0 m=./indat/dat6nfn.csv o=./outdat/out160nfn.csv; IN=5 OUT=1; 2014/06/02 17:05:57
+#END# kgnjoin -n i=./indat/dat2.csv k=商品 m=./indat/dat6.csv o=./outdat/out161.csv; IN=5 OUT=9; 2014/06/02 17:05:57
+#END# kgnjoin -n -x i=./indat/dat2.csv k=0 m=./indat/dat6.csv o=./outdat/out161x.csv; IN=5 OUT=9; 2014/06/02 17:05:57
+#END# kgnjoin -n -nfn i=./indat/dat2nfn.csv k=0 m=./indat/dat6nfn.csv o=./outdat/out161nfn.csv; IN=5 OUT=5; 2014/06/02 17:05:57
+#END# kgnjoin -N i=./indat/dat2.csv k=商品 m=./indat/dat6.csv o=./outdat/out162.csv; IN=5 OUT=11; 2014/06/02 17:05:57
+#END# kgnjoin -N -x i=./indat/dat2.csv k=0 m=./indat/dat6.csv o=./outdat/out162x.csv; IN=5 OUT=11; 2014/06/02 17:05:57
+#END# kgnjoin -N -nfn i=./indat/dat2nfn.csv k=0 m=./indat/dat6nfn.csv o=./outdat/out162nfn.csv; IN=5 OUT=7; 2014/06/02 17:05:57
+#END# kgnjoin -N -n i=./indat/dat2.csv k=商品 m=./indat/dat6.csv o=./outdat/out163.csv; IN=5 OUT=12; 2014/06/02 17:05:57
+#END# kgnjoin -N -n -x i=./indat/dat2.csv k=0 m=./indat/dat6.csv o=./outdat/out163x.csv; IN=5 OUT=12; 2014/06/02 17:05:57
+#END# kgnjoin -N -n -nfn i=./indat/dat2nfn.csv k=0 m=./indat/dat6nfn.csv o=./outdat/out163nfn.csv; IN=5 OUT=11; 2014/06/02 17:05:57
+#END# kgnjoin f=仕入価格 i=./indat/dat5.csv k=商品 m=./indat/dat6.csv o=./outdat/out164.csv; IN=7 OUT=8; 2014/06/02 17:05:57
+#END# kgnjoin -x f=1 i=./indat/dat5.csv k=0 m=./indat/dat6.csv o=./outdat/out164x.csv; IN=7 OUT=8; 2014/06/02 17:05:57
+#END# kgnjoin -nfn f=1 i=./indat/dat5nfn.csv k=0 m=./indat/dat6nfn.csv o=./outdat/out164nfn.csv; IN=7 OUT=1; 2014/06/02 17:05:57
+#END# kgnjoin -n f=仕入価格 i=./indat/dat5.csv k=商品 m=./indat/dat6.csv o=./outdat/out165.csv; IN=7 OUT=11; 2014/06/02 17:05:57
+#END# kgnjoin -n -x f=1 i=./indat/dat5.csv k=0 m=./indat/dat6.csv o=./outdat/out165x.csv; IN=7 OUT=11; 2014/06/02 17:05:57
+#END# kgnjoin -n -nfn f=1 i=./indat/dat5nfn.csv k=0 m=./indat/dat6nfn.csv o=./outdat/out165nfn.csv; IN=7 OUT=7; 2014/06/02 17:05:57
+#END# kgnjoin -N f=仕入価格 i=./indat/dat5.csv k=商品 m=./indat/dat6.csv o=./outdat/out166.csv; IN=7 OUT=11; 2014/06/02 17:05:58
+#END# kgnjoin -N -x f=1 i=./indat/dat5.csv k=0 m=./indat/dat6.csv o=./outdat/out166x.csv; IN=7 OUT=11; 2014/06/02 17:05:58
+#END# kgnjoin -N -nfn f=1 i=./indat/dat5nfn.csv k=0 m=./indat/dat6nfn.csv o=./outdat/out166nfn.csv; IN=7 OUT=7; 2014/06/02 17:05:58
+#END# kgnjoin -N -n f=仕入価格 i=./indat/dat5.csv k=商品 m=./indat/dat6.csv o=./outdat/out167.csv; IN=7 OUT=14; 2014/06/02 17:05:58
+#END# kgnjoin -N -n -x f=1 i=./indat/dat5.csv k=0 m=./indat/dat6.csv o=./outdat/out167x.csv; IN=7 OUT=14; 2014/06/02 17:05:58
+#END# kgnjoin -N -n -nfn f=1 i=./indat/dat5nfn.csv k=0 m=./indat/dat6nfn.csv o=./outdat/out167nfn.csv; IN=7 OUT=13; 2014/06/02 17:05:58
+#END# kgnjoin i=./indat/dat5.csv k=商品 m=./indat/dat6.csv o=./outdat/out168.csv; IN=7 OUT=8; 2014/06/02 17:05:58
+#END# kgnjoin -x i=./indat/dat5.csv k=0 m=./indat/dat6.csv o=./outdat/out168x.csv; IN=7 OUT=8; 2014/06/02 17:05:58
+#END# kgnjoin -nfn i=./indat/dat5nfn.csv k=0 m=./indat/dat6nfn.csv o=./outdat/out168nfn.csv; IN=7 OUT=1; 2014/06/02 17:05:58
+#END# kgnjoin -n i=./indat/dat5.csv k=商品 m=./indat/dat6.csv o=./outdat/out169.csv; IN=7 OUT=11; 2014/06/02 17:05:58
+#END# kgnjoin -n -x i=./indat/dat5.csv k=0 m=./indat/dat6.csv o=./outdat/out169x.csv; IN=7 OUT=11; 2014/06/02 17:05:58
+#END# kgnjoin -n -nfn i=./indat/dat5nfn.csv k=0 m=./indat/dat6nfn.csv o=./outdat/out169nfn.csv; IN=7 OUT=7; 2014/06/02 17:05:58
+#END# kgnjoin -N i=./indat/dat5.csv k=商品 m=./indat/dat6.csv o=./outdat/out170.csv; IN=7 OUT=11; 2014/06/02 17:05:58
+#END# kgnjoin -N -x i=./indat/dat5.csv k=0 m=./indat/dat6.csv o=./outdat/out170x.csv; IN=7 OUT=11; 2014/06/02 17:05:58
+#END# kgnjoin -N -nfn i=./indat/dat5nfn.csv k=0 m=./indat/dat6nfn.csv o=./outdat/out170nfn.csv; IN=7 OUT=7; 2014/06/02 17:05:58
+#END# kgnjoin -N -n i=./indat/dat5.csv k=商品 m=./indat/dat6.csv o=./outdat/out171.csv; IN=7 OUT=14; 2014/06/02 17:05:58
+#END# kgnjoin -N -n -x i=./indat/dat5.csv k=0 m=./indat/dat6.csv o=./outdat/out171x.csv; IN=7 OUT=14; 2014/06/02 17:05:58
+#END# kgnjoin -N -n -nfn i=./indat/dat5nfn.csv k=0 m=./indat/dat6nfn.csv o=./outdat/out171nfn.csv; IN=7 OUT=13; 2014/06/02 17:05:58
+#END# kgnjoin f=仕入価格 i=./indat/dat2.csv k=商品 m=./indat/dat7.csv o=./outdat/out172.csv; IN=5 OUT=7; 2014/06/02 17:05:58
+#END# kgnjoin -x f=1 i=./indat/dat2.csv k=0 m=./indat/dat7.csv o=./outdat/out172x.csv; IN=5 OUT=7; 2014/06/02 17:05:58
+#END# kgnjoin -nfn f=1 i=./indat/dat2nfn.csv k=0 m=./indat/dat7nfn.csv o=./outdat/out172nfn.csv; IN=5 OUT=1; 2014/06/02 17:05:58
+#END# kgnjoin -n f=仕入価格 i=./indat/dat2.csv k=商品 m=./indat/dat7.csv o=./outdat/out173.csv; IN=5 OUT=7; 2014/06/02 17:05:58
+#END# kgnjoin -n -x f=1 i=./indat/dat2.csv k=0 m=./indat/dat7.csv o=./outdat/out173x.csv; IN=5 OUT=7; 2014/06/02 17:05:58
+#END# kgnjoin -n -nfn f=1 i=./indat/dat2nfn.csv k=0 m=./indat/dat7nfn.csv o=./outdat/out173nfn.csv; IN=5 OUT=5; 2014/06/02 17:05:58
+#END# kgnjoin -N f=仕入価格 i=./indat/dat2.csv k=商品 m=./indat/dat7.csv o=./outdat/out174.csv; IN=5 OUT=10; 2014/06/02 17:05:58
+#END# kgnjoin -N -x f=1 i=./indat/dat2.csv k=0 m=./indat/dat7.csv o=./outdat/out174x.csv; IN=5 OUT=10; 2014/06/02 17:05:59
+#END# kgnjoin -N -nfn f=1 i=./indat/dat2nfn.csv k=0 m=./indat/dat7nfn.csv o=./outdat/out174nfn.csv; IN=5 OUT=7; 2014/06/02 17:05:59
+#END# kgnjoin -N -n f=仕入価格 i=./indat/dat2.csv k=商品 m=./indat/dat7.csv o=./outdat/out175.csv; IN=5 OUT=10; 2014/06/02 17:05:59
+#END# kgnjoin -N -n -x f=1 i=./indat/dat2.csv k=0 m=./indat/dat7.csv o=./outdat/out175x.csv; IN=5 OUT=10; 2014/06/02 17:05:59
+#END# kgnjoin -N -n -nfn f=1 i=./indat/dat2nfn.csv k=0 m=./indat/dat7nfn.csv o=./outdat/out175nfn.csv; IN=5 OUT=11; 2014/06/02 17:05:59
+#END# kgnjoin i=./indat/dat2.csv k=商品 m=./indat/dat7.csv o=./outdat/out176.csv; IN=5 OUT=7; 2014/06/02 17:05:59
+#END# kgnjoin -x i=./indat/dat2.csv k=0 m=./indat/dat7.csv o=./outdat/out176x.csv; IN=5 OUT=7; 2014/06/02 17:05:59
+#END# kgnjoin -nfn i=./indat/dat2nfn.csv k=0 m=./indat/dat7nfn.csv o=./outdat/out176nfn.csv; IN=5 OUT=1; 2014/06/02 17:05:59
+#END# kgnjoin -n i=./indat/dat2.csv k=商品 m=./indat/dat7.csv o=./outdat/out177.csv; IN=5 OUT=7; 2014/06/02 17:05:59
+#END# kgnjoin -n -x i=./indat/dat2.csv k=0 m=./indat/dat7.csv o=./outdat/out177x.csv; IN=5 OUT=7; 2014/06/02 17:05:59
+#END# kgnjoin -n -nfn i=./indat/dat2nfn.csv k=0 m=./indat/dat7nfn.csv o=./outdat/out177nfn.csv; IN=5 OUT=5; 2014/06/02 17:05:59
+#END# kgnjoin -N i=./indat/dat2.csv k=商品 m=./indat/dat7.csv o=./outdat/out178.csv; IN=5 OUT=10; 2014/06/02 17:05:59
+#END# kgnjoin -N -x i=./indat/dat2.csv k=0 m=./indat/dat7.csv o=./outdat/out178x.csv; IN=5 OUT=10; 2014/06/02 17:05:59
+#END# kgnjoin -N -nfn i=./indat/dat2nfn.csv k=0 m=./indat/dat7nfn.csv o=./outdat/out178nfn.csv; IN=5 OUT=7; 2014/06/02 17:05:59
+#END# kgnjoin -N -n i=./indat/dat2.csv k=商品 m=./indat/dat7.csv o=./outdat/out179.csv; IN=5 OUT=10; 2014/06/02 17:05:59
+#END# kgnjoin -N -n -x i=./indat/dat2.csv k=0 m=./indat/dat7.csv o=./outdat/out179x.csv; IN=5 OUT=10; 2014/06/02 17:05:59
+#END# kgnjoin -N -n -nfn i=./indat/dat2nfn.csv k=0 m=./indat/dat7nfn.csv o=./outdat/out179nfn.csv; IN=5 OUT=11; 2014/06/02 17:05:59
+#END# kgnjoin f=仕入価格 i=./indat/dat2.csv k=商品 m=./indat/dat8.csv o=./outdat/out180.csv; IN=5 OUT=10; 2014/06/02 17:05:59
+#END# kgnjoin -x f=1 i=./indat/dat2.csv k=0 m=./indat/dat8.csv o=./outdat/out180x.csv; IN=5 OUT=10; 2014/06/02 17:05:59
+#END# kgnjoin -nfn f=1 i=./indat/dat2nfn.csv k=0 m=./indat/dat8nfn.csv o=./outdat/out180nfn.csv; IN=3 OUT=2; 2014/06/02 17:05:59
+#END# kgnjoin -n f=仕入価格 i=./indat/dat2.csv k=商品 m=./indat/dat8.csv o=./outdat/out181.csv; IN=5 OUT=11; 2014/06/02 17:05:59
+#END# kgnjoin -n -x f=1 i=./indat/dat2.csv k=0 m=./indat/dat8.csv o=./outdat/out181x.csv; IN=5 OUT=11; 2014/06/02 17:05:59
+#END# kgnjoin -n -nfn f=1 i=./indat/dat2nfn.csv k=0 m=./indat/dat8nfn.csv o=./outdat/out181nfn.csv; IN=5 OUT=5; 2014/06/02 17:05:59
+#END# kgnjoin -N f=仕入価格 i=./indat/dat2.csv k=商品 m=./indat/dat8.csv o=./outdat/out182.csv; IN=5 OUT=10; 2014/06/02 17:05:59
+#END# kgnjoin -N -x f=1 i=./indat/dat2.csv k=0 m=./indat/dat8.csv o=./outdat/out182x.csv; IN=5 OUT=10; 2014/06/02 17:06:00
+#END# kgnjoin -N -nfn f=1 i=./indat/dat2nfn.csv k=0 m=./indat/dat8nfn.csv o=./outdat/out182nfn.csv; IN=3 OUT=5; 2014/06/02 17:06:00
+#END# kgnjoin -N -n f=仕入価格 i=./indat/dat2.csv k=商品 m=./indat/dat8.csv o=./outdat/out183.csv; IN=5 OUT=11; 2014/06/02 17:06:00
+#END# kgnjoin -N -n -x f=1 i=./indat/dat2.csv k=0 m=./indat/dat8.csv o=./outdat/out183x.csv; IN=5 OUT=11; 2014/06/02 17:06:00
+#END# kgnjoin -N -n -nfn f=1 i=./indat/dat2nfn.csv k=0 m=./indat/dat8nfn.csv o=./outdat/out183nfn.csv; IN=5 OUT=8; 2014/06/02 17:06:00
+#END# kgnjoin i=./indat/dat2.csv k=商品 m=./indat/dat8.csv o=./outdat/out184.csv; IN=5 OUT=10; 2014/06/02 17:06:00
+#END# kgnjoin -x i=./indat/dat2.csv k=0 m=./indat/dat8.csv o=./outdat/out184x.csv; IN=5 OUT=10; 2014/06/02 17:06:00
+#END# kgnjoin -nfn i=./indat/dat2nfn.csv k=0 m=./indat/dat8nfn.csv o=./outdat/out184nfn.csv; IN=3 OUT=2; 2014/06/02 17:06:00
+#END# kgnjoin -n i=./indat/dat2.csv k=商品 m=./indat/dat8.csv o=./outdat/out185.csv; IN=5 OUT=11; 2014/06/02 17:06:00
+#END# kgnjoin -n -x i=./indat/dat2.csv k=0 m=./indat/dat8.csv o=./outdat/out185x.csv; IN=5 OUT=11; 2014/06/02 17:06:00
+#END# kgnjoin -n -nfn i=./indat/dat2nfn.csv k=0 m=./indat/dat8nfn.csv o=./outdat/out185nfn.csv; IN=5 OUT=5; 2014/06/02 17:06:00
+#END# kgnjoin -N i=./indat/dat2.csv k=商品 m=./indat/dat8.csv o=./outdat/out186.csv; IN=5 OUT=10; 2014/06/02 17:06:00
+#END# kgnjoin -N -x i=./indat/dat2.csv k=0 m=./indat/dat8.csv o=./outdat/out186x.csv; IN=5 OUT=10; 2014/06/02 17:06:00
+#END# kgnjoin -N -nfn i=./indat/dat2nfn.csv k=0 m=./indat/dat8nfn.csv o=./outdat/out186nfn.csv; IN=3 OUT=5; 2014/06/02 17:06:00
+#END# kgnjoin -N -n i=./indat/dat2.csv k=商品 m=./indat/dat8.csv o=./outdat/out187.csv; IN=5 OUT=11; 2014/06/02 17:06:00
+#END# kgnjoin -N -n -x i=./indat/dat2.csv k=0 m=./indat/dat8.csv o=./outdat/out187x.csv; IN=5 OUT=11; 2014/06/02 17:06:00
+#END# kgnjoin -N -n -nfn i=./indat/dat2nfn.csv k=0 m=./indat/dat8nfn.csv o=./outdat/out187nfn.csv; IN=5 OUT=8; 2014/06/02 17:06:00
+#END# kgnjoin f=仕入価格 i=./indat/dat2.csv k=商品 m=./indat/dat9.csv o=./outdat/out188.csv; IN=5 OUT=12; 2014/06/02 17:06:00
+#END# kgnjoin -x f=1 i=./indat/dat2.csv k=0 m=./indat/dat9.csv o=./outdat/out188x.csv; IN=5 OUT=12; 2014/06/02 17:06:00
+#END# kgnjoin -nfn f=1 i=./indat/dat2nfn.csv k=0 m=./indat/dat9nfn.csv o=./outdat/out188nfn.csv; IN=5 OUT=6; 2014/06/02 17:06:00
+#END# kgnjoin -n f=仕入価格 i=./indat/dat2.csv k=商品 m=./indat/dat9.csv o=./outdat/out189.csv; IN=5 OUT=12; 2014/06/02 17:06:00
+#END# kgnjoin -n -x f=1 i=./indat/dat2.csv k=0 m=./indat/dat9.csv o=./outdat/out189x.csv; IN=5 OUT=12; 2014/06/02 17:06:00
+#END# kgnjoin -n -nfn f=1 i=./indat/dat2nfn.csv k=0 m=./indat/dat9nfn.csv o=./outdat/out189nfn.csv; IN=5 OUT=7; 2014/06/02 17:06:00
+#END# kgnjoin -N f=仕入価格 i=./indat/dat2.csv k=商品 m=./indat/dat9.csv o=./outdat/out190.csv; IN=5 OUT=12; 2014/06/02 17:06:00
+#END# kgnjoin -N -x f=1 i=./indat/dat2.csv k=0 m=./indat/dat9.csv o=./outdat/out190x.csv; IN=5 OUT=12; 2014/06/02 17:06:00
+#END# kgnjoin -N -nfn f=1 i=./indat/dat2nfn.csv k=0 m=./indat/dat9nfn.csv o=./outdat/out190nfn.csv; IN=5 OUT=7; 2014/06/02 17:06:00
+#END# kgnjoin -N -n f=仕入価格 i=./indat/dat2.csv k=商品 m=./indat/dat9.csv o=./outdat/out191.csv; IN=5 OUT=12; 2014/06/02 17:06:01
+#END# kgnjoin -N -n -x f=1 i=./indat/dat2.csv k=0 m=./indat/dat9.csv o=./outdat/out191x.csv; IN=5 OUT=12; 2014/06/02 17:06:01
+#END# kgnjoin -N -n -nfn f=1 i=./indat/dat2nfn.csv k=0 m=./indat/dat9nfn.csv o=./outdat/out191nfn.csv; IN=5 OUT=8; 2014/06/02 17:06:01
+#END# kgnjoin i=./indat/dat2.csv k=商品 m=./indat/dat9.csv o=./outdat/out192.csv; IN=5 OUT=12; 2014/06/02 17:06:01
+#END# kgnjoin -x i=./indat/dat2.csv k=0 m=./indat/dat9.csv o=./outdat/out192x.csv; IN=5 OUT=12; 2014/06/02 17:06:01
+#END# kgnjoin -nfn i=./indat/dat2nfn.csv k=0 m=./indat/dat9nfn.csv o=./outdat/out192nfn.csv; IN=5 OUT=6; 2014/06/02 17:06:01
+#END# kgnjoin -n i=./indat/dat2.csv k=商品 m=./indat/dat9.csv o=./outdat/out193.csv; IN=5 OUT=12; 2014/06/02 17:06:01
+#END# kgnjoin -n -x i=./indat/dat2.csv k=0 m=./indat/dat9.csv o=./outdat/out193x.csv; IN=5 OUT=12; 2014/06/02 17:06:01
+#END# kgnjoin -n -nfn i=./indat/dat2nfn.csv k=0 m=./indat/dat9nfn.csv o=./outdat/out193nfn.csv; IN=5 OUT=7; 2014/06/02 17:06:01
+#END# kgnjoin -N i=./indat/dat2.csv k=商品 m=./indat/dat9.csv o=./outdat/out194.csv; IN=5 OUT=12; 2014/06/02 17:06:01
+#END# kgnjoin -N -x i=./indat/dat2.csv k=0 m=./indat/dat9.csv o=./outdat/out194x.csv; IN=5 OUT=12; 2014/06/02 17:06:01
+#END# kgnjoin -N -nfn i=./indat/dat2nfn.csv k=0 m=./indat/dat9nfn.csv o=./outdat/out194nfn.csv; IN=5 OUT=7; 2014/06/02 17:06:01
+#END# kgnjoin -N -n i=./indat/dat2.csv k=商品 m=./indat/dat9.csv o=./outdat/out195.csv; IN=5 OUT=12; 2014/06/02 17:06:01
+#END# kgnjoin -N -n -x i=./indat/dat2.csv k=0 m=./indat/dat9.csv o=./outdat/out195x.csv; IN=5 OUT=12; 2014/06/02 17:06:01
+#END# kgnjoin -N -n -nfn i=./indat/dat2nfn.csv k=0 m=./indat/dat9nfn.csv o=./outdat/out195nfn.csv; IN=5 OUT=8; 2014/06/02 17:06:01
+#END# kgnjoin bufcount=-2 f=仕入価格 i=./indat/dat2.csv k=商品 m=./indat/dat3.csv o=./outdat/out196.csv; IN=5 OUT=5; 2014/06/02 17:06:01
+#END# kgnjoin bufcount=2 f=仕入価格 i=./indat/dat2.csv k=商品 m=./indat/dat3.csv o=./outdat/out197.csv; IN=5 OUT=5; 2014/06/02 17:06:01

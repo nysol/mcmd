@@ -1,0 +1,38 @@
+#END# kgmvavg f=v1,v2 i=./indat/dat0s.csv o=./outdat/out0.csv s=id t=2; IN=0 OUT=0; 2014/05/30 13:36:01
+#END# kgmvavg -x f=1,2 i=./indat/dat0s.csv o=./outdat/out0x.csv s=0 t=2; IN=0 OUT=0; 2014/05/30 13:36:01
+#END# kgmvavg -nfn f=1,2 i=./indat/dat0snfn.csv o=./outdat/out0nfn.csv s=0 t=2; IN=0 OUT=0; 2014/05/30 13:36:01
+#END# kgmvavg -nfno f=v1,v2 i=./indat/dat0s.csv o=./outdat/out0nfno.csv s=id t=2; IN=0 OUT=0; 2014/05/30 13:36:01
+#END# kgmvavg f=v1,v2 i=./indat/dat2s.csv o=./outdat/out11.csv s=id t=2; IN=9 OUT=8; 2014/05/30 13:36:02
+#END# kgmvavg f=v1,v2 i=./indat/dat3s.csv o=./outdat/out13.csv s=id t=3; IN=9 OUT=7; 2014/05/30 13:36:02
+#END# kgmvavg -exp f=v1,v2 i=./indat/dat3s.csv o=./outdat/out14.csv s=id t=3; IN=9 OUT=9; 2014/05/30 13:36:02
+#END# kgmvavg f=v1,v2 i=./indat/dat1s.csv o=./outdat/out01.csv s=id t=2; IN=9 OUT=8; 2014/05/30 13:36:02
+#END# kgmvavg -x f=2,3 i=./indat/dat1s.csv o=./outdat/out01x.csv s=0 t=2; IN=9 OUT=8; 2014/05/30 13:36:02
+#END# kgmvavg -nfn f=2,3 i=./indat/dat1snfn.csv o=./outdat/out01nfn.csv s=0 t=2; IN=9 OUT=8; 2014/05/30 13:36:02
+#END# kgmvavg -nfno f=v1,v2 i=./indat/dat1s.csv o=./outdat/out01nfno.csv s=id t=2; IN=9 OUT=8; 2014/05/30 13:36:02
+#END# kgmvavg -q f=v1,v2 i=./indat/dat1s.csv o=./outdat/out01q.csv s=id t=2; IN=9 OUT=8; 2014/05/30 13:36:02
+#END# kgmvavg -nfn -q f=2,3 i=./indat/dat1snfn.csv o=./outdat/out01qnfn.csv s=0 t=2; IN=9 OUT=8; 2014/05/30 13:36:02
+#END# kgmvavg -w f=v1,v2 i=./indat/dat1s.csv o=./outdat/out02.csv s=id t=2; IN=9 OUT=8; 2014/05/30 13:36:02
+#END# kgmvavg -exp f=v1,v2 i=./indat/dat1s.csv o=./outdat/out03.csv s=id t=2; IN=9 OUT=9; 2014/05/30 13:36:02
+#END# kgmvavg f=v1,v2 i=./indat/dat1s.csv k=k o=./outdat/out04.csv s=id t=2; IN=9 OUT=7; 2014/05/30 13:36:02
+#END# kgmvavg -x f=2,3 i=./indat/dat1s.csv k=1 o=./outdat/out04x.csv s=0 t=2; IN=9 OUT=7; 2014/05/30 13:36:02
+#END# kgmvavg -nfn f=2,3 i=./indat/dat1snfn.csv k=1 o=./outdat/out04nfn.csv s=0 t=2; IN=9 OUT=7; 2014/05/30 13:36:02
+#END# kgmvavg -q f=v1,v2 i=./indat/dat1s.csv k=k o=./outdat/out04q.csv s=id t=2; IN=9 OUT=7; 2014/05/30 13:36:02
+#END# kgmvavg -nfn -q f=2,3 i=./indat/dat1snfn.csv k=1 o=./outdat/out04qnfn.csv s=0 t=2; IN=9 OUT=7; 2014/05/30 13:36:02
+#END# kgmvavg f=v1,v2 i=./indat/dat1s.csv k=k o=./outdat/out05.csv s=id skip=0 t=2; IN=9 OUT=9; 2014/05/30 13:36:02
+#END# kgmvavg -w f=v1,v2 i=./indat/dat1s.csv k=k o=./outdat/out06.csv s=id t=2; IN=9 OUT=7; 2014/05/30 13:36:02
+#END# kgmvavg -w f=v1,v2 i=./indat/dat1s.csv k=k o=./outdat/out07.csv s=id skip=0 t=2; IN=9 OUT=9; 2014/05/30 13:36:02
+#END# kgmvavg -exp f=v1,v2 i=./indat/dat1s.csv k=k o=./outdat/out08.csv s=id t=2; IN=9 OUT=9; 2014/05/30 13:36:02
+#END# kgmvavg -exp f=v1,v2 i=./indat/dat1s.csv k=k o=./outdat/out09.csv s=id skip=1 t=2; IN=9 OUT=7; 2014/05/30 13:36:02
+#END# kgmvavg -exp alpha=5 f=v1,v2 i=./indat/dat1s.csv k=k o=./outdat/out10.csv s=id t=2; IN=9 OUT=9; 2014/05/30 13:36:02
+#END# kgmvavg -w f=v1,v2 i=./indat/dat2s.csv o=./outdat/out12.csv s=id t=2; IN=9 OUT=8; 2014/05/30 13:36:02
+#END# kgmvavg f=v1,v2 i=./indat/dat1.csv k=k o=./outdat/out15.csv s=id t=2; IN=9 OUT=7; 2014/05/30 13:36:02
+#END# kgmvavg -x f=2,3 i=./indat/dat1.csv k=1 o=./outdat/out15x.csv s=0 t=2; IN=9 OUT=7; 2014/05/30 13:36:02
+#END# kgmvavg -nfn f=2,3 i=./indat/dat1nfn.csv k=1 o=./outdat/out15nfn.csv s=0 t=2; IN=9 OUT=5; 2014/05/30 13:36:02
+#END# kgmvavg -q f=v1,v2 i=./indat/dat1.csv k=k o=./outdat/out15q.csv s=id t=2; IN=9 OUT=5; 2014/05/30 13:36:02
+#END# kgmvavg -nfn -q f=2,3 i=./indat/dat1nfn.csv k=1 o=./outdat/out15qnfn.csv s=0 t=2; IN=9 OUT=5; 2014/05/30 13:36:02
+#END# kgmvavg f=v1,v2 i=./indat/dat1.csv k=k o=./outdat/out16.csv s=id skip=0 t=2; IN=9 OUT=9; 2014/05/30 13:36:02
+#END# kgmvavg -w f=v1,v2 i=./indat/dat1.csv k=k o=./outdat/out17.csv s=id t=2; IN=9 OUT=7; 2014/05/30 13:36:02
+#END# kgmvavg -w f=v1,v2 i=./indat/dat1.csv k=k o=./outdat/out18.csv s=id skip=0 t=2; IN=9 OUT=9; 2014/05/30 13:36:02
+#END# kgmvavg -exp f=v1,v2 i=./indat/dat1.csv k=k o=./outdat/out19.csv s=id t=2; IN=9 OUT=9; 2014/05/30 13:36:02
+#END# kgmvavg -exp f=v1,v2 i=./indat/dat1.csv k=k o=./outdat/out20.csv s=id skip=1 t=2; IN=9 OUT=7; 2014/05/30 13:36:02
+#END# kgmvavg -exp alpha=5 f=v1,v2 i=./indat/dat1.csv k=k o=./outdat/out21.csv s=id t=2; IN=9 OUT=9; 2014/05/30 13:36:02

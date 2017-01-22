@@ -1,0 +1,31 @@
+#END# kgproduct f=日付 i=./indat/dat0.csv m=./indat/dat1.csv o=./outdat/out0.csv; IN=0 OUT=0; 2014/06/06 17:41:45
+#END# kgproduct -x f=0 i=./indat/dat0.csv m=./indat/dat1.csv o=./outdat/out0x.csv; IN=0 OUT=0; 2014/06/06 17:41:45
+#END# kgproduct -nfn f=0 i=./indat/dat0nfn.csv m=./indat/dat1nfn.csv o=./outdat/out0nfn.csv; IN=0 OUT=0; 2014/06/06 17:41:45
+#END# kgproduct f=日付 i=./indat/dat2.csv m=./indat/dat1.csv o=./outdat/out1.csv; IN=0 OUT=0; 2014/06/06 17:41:45
+#END# kgproduct -x f=0 i=./indat/dat2.csv m=./indat/dat1.csv o=./outdat/out1x.csv; IN=0 OUT=0; 2014/06/06 17:41:45
+#END# kgproduct -nfn f=0 i=./indat/dat2nfn.csv m=./indat/dat1nfn.csv o=./outdat/out1nfn.csv; IN=0 OUT=0; 2014/06/06 17:41:45
+#END# kgproduct f=日付 i=./indat/dat0.csv m=./indat/dat3.csv o=./outdat/out2.csv; IN=0 OUT=0; 2014/06/06 17:41:45
+#END# kgproduct -x f=0 i=./indat/dat0.csv m=./indat/dat3.csv o=./outdat/out2x.csv; IN=0 OUT=0; 2014/06/06 17:41:45
+#END# kgproduct -nfn f=0 i=./indat/dat0nfn.csv m=./indat/dat3nfn.csv o=./outdat/out2nfn.csv; IN=0 OUT=0; 2014/06/06 17:41:45
+#END# kgproduct f=日付 i=./indat/dat2.csv m=./indat/dat3.csv o=./outdat/out3.csv; IN=2 OUT=6; 2014/06/06 17:41:45
+#END# kgproduct -x f=0 i=./indat/dat2.csv m=./indat/dat3.csv o=./outdat/out3x.csv; IN=2 OUT=6; 2014/06/06 17:41:45
+#END# kgproduct -nfn f=0 i=./indat/dat2nfn.csv m=./indat/dat3nfn.csv o=./outdat/out3nfn.csv; IN=2 OUT=6; 2014/06/06 17:41:45
+#END# kgproduct -nfno f=日付 i=./indat/dat2.csv m=./indat/dat3.csv o=./outdat/out3nfno.csv; IN=2 OUT=6; 2014/06/06 17:41:45
+#END# kgproduct f=日付,天気 i=./indat/dat2.csv m=./indat/dat4.csv o=./outdat/out4.csv; IN=2 OUT=6; 2014/06/06 17:41:45
+#END# kgproduct -x f=0,1 i=./indat/dat2.csv m=./indat/dat4.csv o=./outdat/out4x.csv; IN=2 OUT=6; 2014/06/06 17:41:45
+#END# kgproduct -nfn f=0,1 i=./indat/dat2nfn.csv m=./indat/dat4nfn.csv o=./outdat/out4nfn.csv; IN=2 OUT=6; 2014/06/06 17:41:45
+#END# kgproduct f=日付,天気 i=./indat/dat5.csv m=./indat/dat4.csv o=./outdat/out5.csv; IN=3 OUT=9; 2014/06/06 17:41:45
+#END# kgproduct -x f=0,1 i=./indat/dat5.csv m=./indat/dat4.csv o=./outdat/out5x.csv; IN=3 OUT=9; 2014/06/06 17:41:45
+#END# kgproduct -nfn f=0,1 i=./indat/dat5nfn.csv m=./indat/dat4nfn.csv o=./outdat/out5nfn.csv; IN=3 OUT=9; 2014/06/06 17:41:45
+#END# kgproduct f=日付,天気 i=./indat/dat2.csv m=./indat/dat6.csv o=./outdat/out6.csv; IN=2 OUT=6; 2014/06/06 17:41:45
+#END# kgproduct -x f=0,1 i=./indat/dat2.csv m=./indat/dat6.csv o=./outdat/out6x.csv; IN=2 OUT=6; 2014/06/06 17:41:45
+#END# kgproduct -nfn f=0,1 i=./indat/dat2nfn.csv m=./indat/dat6nfn.csv o=./outdat/out6nfn.csv; IN=2 OUT=6; 2014/06/06 17:41:46
+#END# kgproduct f=日付,天気 i=./indat/dat5.csv m=./indat/dat6.csv o=./outdat/out7.csv; IN=3 OUT=9; 2014/06/06 17:41:46
+#END# kgproduct -x f=0,1 i=./indat/dat5.csv m=./indat/dat6.csv o=./outdat/out7x.csv; IN=3 OUT=9; 2014/06/06 17:41:46
+#END# kgproduct -nfn f=0,1 i=./indat/dat5nfn.csv m=./indat/dat6nfn.csv o=./outdat/out7nfn.csv; IN=3 OUT=9; 2014/06/06 17:41:46
+#END# kgproduct bufcount=2 f=日付 i=./indat/dat2.csv m=./indat/dat3.csv o=./outdat/out8.csv; IN=2 OUT=6; 2014/06/06 17:41:46
+#END# kgproduct bufcount=-2 f=日付 i=./indat/dat2.csv m=./indat/dat3.csv o=./outdat/out9.csv; IN=2 OUT=6; 2014/06/06 17:41:46
+#END# kgproduct i=./indat/dat5.csv m=./indat/dat6.csv o=./outdat/out10.csv; IN=3 OUT=9; 2014/06/06 17:41:46
+#END# kgproduct -x i=./indat/dat5.csv m=./indat/dat6.csv o=./outdat/out10x.csv; IN=3 OUT=9; 2014/06/06 17:41:46
+#END# kgproduct -nfn i=./indat/dat5nfn.csv m=./indat/dat6nfn.csv o=./outdat/out10nfn.csv; IN=3 OUT=9; 2014/06/06 17:41:46
+#END# kgproduct f=日付 i=./indat/dat2s.csv m=./indat/dat3.csv o=./outdat/out11.csv; IN=2 OUT=6; 2014/06/06 17:41:46

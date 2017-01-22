@@ -1,0 +1,562 @@
+#END# kgnumber a=番号 i=./indat/dat0s.csv o=./outdat/out0.csv s=顧客; IN=0 OUT=0; 2014/06/04 14:25:05
+#END# kgnumber -x a=番号 i=./indat/dat0s.csv o=./outdat/out0x.csv s=0; IN=0 OUT=0; 2014/06/04 14:25:05
+#END# kgnumber -nfn i=./indat/dat0snfn.csv o=./outdat/out0nfn.csv s=0; IN=0 OUT=0; 2014/06/04 14:25:05
+#END# kgnumber -nfno a=番号 i=./indat/dat0s.csv o=./outdat/out0nfno.csv s=顧客; IN=0 OUT=0; 2014/06/04 14:25:05
+#END# kgnumber a=番号 i=./indat/dat1s.csv o=./outdat/out1.csv s=金額%nr; IN=5 OUT=5; 2014/06/04 14:25:05
+#END# kgnumber -x a=番号 i=./indat/dat1s.csv o=./outdat/out1x.csv s=2%nr; IN=5 OUT=5; 2014/06/04 14:25:05
+#END# kgnumber -nfn i=./indat/dat1snfn.csv o=./outdat/out1nfn.csv s=2%nr; IN=5 OUT=5; 2014/06/04 14:25:05
+#END# kgnumber -nfno a=番号 i=./indat/dat1s.csv o=./outdat/out1nfno.csv s=金額%nr; IN=5 OUT=5; 2014/06/04 14:25:05
+#END# kgnumber a=順位 e=seq i=./indat/dat1s.csv o=./outdat/out2.csv s=金額%nr; IN=5 OUT=5; 2014/06/04 14:25:05
+#END# kgnumber -x a=順位 e=seq i=./indat/dat1s.csv o=./outdat/out2x.csv s=2%nr; IN=5 OUT=5; 2014/06/04 14:25:05
+#END# kgnumber -nfn e=seq i=./indat/dat1snfn.csv o=./outdat/out2nfn.csv s=2%nr; IN=5 OUT=5; 2014/06/04 14:25:05
+#END# kgnumber -nfno a=順位 e=seq i=./indat/dat1s.csv o=./outdat/out2nfno.csv s=金額%nr; IN=5 OUT=5; 2014/06/04 14:25:05
+#END# kgnumber a=順位 e=same i=./indat/dat1s.csv o=./outdat/out3.csv s=金額%nr; IN=5 OUT=5; 2014/06/04 14:25:05
+#END# kgnumber -x a=順位 e=same i=./indat/dat1s.csv o=./outdat/out3x.csv s=2%nr; IN=5 OUT=5; 2014/06/04 14:25:05
+#END# kgnumber -nfn e=same i=./indat/dat1snfn.csv o=./outdat/out3nfn.csv s=2%nr; IN=5 OUT=5; 2014/06/04 14:25:05
+#END# kgnumber -nfno a=順位 e=same i=./indat/dat1s.csv o=./outdat/out3nfno.csv s=金額%nr; IN=5 OUT=5; 2014/06/04 14:25:05
+#END# kgnumber a=順位 e=skip i=./indat/dat1s.csv o=./outdat/out4.csv s=金額%nr; IN=5 OUT=5; 2014/06/04 14:25:05
+#END# kgnumber -x a=順位 e=skip i=./indat/dat1s.csv o=./outdat/out4x.csv s=2%nr; IN=5 OUT=5; 2014/06/04 14:25:05
+#END# kgnumber -nfn e=skip i=./indat/dat1snfn.csv o=./outdat/out4nfn.csv s=2%nr; IN=5 OUT=5; 2014/06/04 14:25:05
+#END# kgnumber -nfno a=順位 e=skip i=./indat/dat1s.csv o=./outdat/out4nfno.csv s=金額%nr; IN=5 OUT=5; 2014/06/04 14:25:05
+#END# kgnumber S=10 a=番号 i=./indat/dat1s.csv o=./outdat/out5.csv s=金額%nr; IN=5 OUT=5; 2014/06/04 14:25:05
+#END# kgnumber -x S=10 a=番号 i=./indat/dat1s.csv o=./outdat/out5x.csv s=2%nr; IN=5 OUT=5; 2014/06/04 14:25:06
+#END# kgnumber -nfn S=10 i=./indat/dat1snfn.csv o=./outdat/out5nfn.csv s=2%nr; IN=5 OUT=5; 2014/06/04 14:25:06
+#END# kgnumber -nfno S=10 a=番号 i=./indat/dat1s.csv o=./outdat/out5nfno.csv s=金額%nr; IN=5 OUT=5; 2014/06/04 14:25:06
+#END# kgnumber S=10 a=得点 e=same i=./indat/dat1s.csv o=./outdat/out6.csv s=金額%nr; IN=5 OUT=5; 2014/06/04 14:25:06
+#END# kgnumber -x S=10 a=得点 e=same i=./indat/dat1s.csv o=./outdat/out6x.csv s=2%nr; IN=5 OUT=5; 2014/06/04 14:25:06
+#END# kgnumber -nfn S=10 e=same i=./indat/dat1snfn.csv o=./outdat/out6nfn.csv s=2%nr; IN=5 OUT=5; 2014/06/04 14:25:06
+#END# kgnumber -nfno S=10 a=得点 e=same i=./indat/dat1s.csv o=./outdat/out6nfno.csv s=金額%nr; IN=5 OUT=5; 2014/06/04 14:25:06
+#END# kgnumber S=20 a=番号 e=skip i=./indat/dat1s.csv o=./outdat/out7.csv s=金額%nr; IN=5 OUT=5; 2014/06/04 14:25:06
+#END# kgnumber -x S=20 a=番号 e=skip i=./indat/dat1s.csv o=./outdat/out7x.csv s=2%nr; IN=5 OUT=5; 2014/06/04 14:25:06
+#END# kgnumber -nfn S=20 e=skip i=./indat/dat1snfn.csv o=./outdat/out7nfn.csv s=2%nr; IN=5 OUT=5; 2014/06/04 14:25:06
+#END# kgnumber S=H a=ランク i=./indat/dat1s.csv o=./outdat/out8.csv s=金額%nr; IN=5 OUT=5; 2014/06/04 14:25:06
+#END# kgnumber -x S=H a=ランク i=./indat/dat1s.csv o=./outdat/out8x.csv s=2%nr; IN=5 OUT=5; 2014/06/04 14:25:06
+#END# kgnumber -nfn S=H i=./indat/dat1snfn.csv o=./outdat/out8nfn.csv s=2%nr; IN=5 OUT=5; 2014/06/04 14:25:06
+#END# kgnumber -nfno S=H a=ランク i=./indat/dat1s.csv o=./outdat/out8nfno.csv s=金額%nr; IN=5 OUT=5; 2014/06/04 14:25:06
+#END# kgnumber S=A a=ランク e=same i=./indat/dat1s.csv o=./outdat/out9.csv s=金額%nr; IN=5 OUT=5; 2014/06/04 14:25:06
+#END# kgnumber -x S=A a=ランク e=same i=./indat/dat1s.csv o=./outdat/out9x.csv s=2%nr; IN=5 OUT=5; 2014/06/04 14:25:06
+#END# kgnumber -nfn S=A e=same i=./indat/dat1snfn.csv o=./outdat/out9nfn.csv s=2%nr; IN=5 OUT=5; 2014/06/04 14:25:06
+#END# kgnumber -nfno S=A a=ランク e=same i=./indat/dat1s.csv o=./outdat/out9nfno.csv s=金額%nr; IN=5 OUT=5; 2014/06/04 14:25:06
+#END# kgnumber S=X a=ランク e=skip i=./indat/dat1s.csv o=./outdat/out10.csv s=金額%nr; IN=5 OUT=5; 2014/06/04 14:25:06
+#END# kgnumber -x S=X a=ランク e=skip i=./indat/dat1s.csv o=./outdat/out10x.csv s=2%nr; IN=5 OUT=5; 2014/06/04 14:25:06
+#END# kgnumber -nfn S=X e=skip i=./indat/dat1snfn.csv o=./outdat/out10nfn.csv s=2%nr; IN=5 OUT=5; 2014/06/04 14:25:06
+#END# kgnumber -nfno S=X a=ランク e=skip i=./indat/dat1s.csv o=./outdat/out10nfno.csv s=金額%nr; IN=5 OUT=5; 2014/06/04 14:25:06
+#END# kgnumber I=8 S=15 a=番号 i=./indat/dat1s.csv o=./outdat/out11.csv s=金額%nr; IN=5 OUT=5; 2014/06/04 14:25:06
+#END# kgnumber -x I=8 S=15 a=番号 i=./indat/dat1s.csv o=./outdat/out11x.csv s=2%nr; IN=5 OUT=5; 2014/06/04 14:25:06
+#END# kgnumber -nfn I=8 S=15 i=./indat/dat1snfn.csv o=./outdat/out11nfn.csv s=2%nr; IN=5 OUT=5; 2014/06/04 14:25:06
+#END# kgnumber -nfno I=8 S=15 a=番号 i=./indat/dat1s.csv o=./outdat/out11nfno.csv s=金額%nr; IN=5 OUT=5; 2014/06/04 14:25:06
+#END# kgnumber I=5 S=10 a=得点 e=same i=./indat/dat1s.csv o=./outdat/out12.csv s=金額%nr; IN=5 OUT=5; 2014/06/04 14:25:06
+#END# kgnumber -x I=5 S=10 a=得点 e=same i=./indat/dat1s.csv o=./outdat/out12x.csv s=2%nr; IN=5 OUT=5; 2014/06/04 14:25:06
+#END# kgnumber -nfn I=5 S=10 e=same i=./indat/dat1snfn.csv o=./outdat/out12nfn.csv s=2%nr; IN=5 OUT=5; 2014/06/04 14:25:06
+#END# kgnumber -nfno I=5 S=10 a=得点 e=same i=./indat/dat1s.csv o=./outdat/out12nfno.csv s=金額%nr; IN=5 OUT=5; 2014/06/04 14:25:06
+#END# kgnumber I=7 S=20 a=番号 e=skip i=./indat/dat1s.csv o=./outdat/out13.csv s=金額%nr; IN=5 OUT=5; 2014/06/04 14:25:06
+#END# kgnumber -x I=7 S=20 a=番号 e=skip i=./indat/dat1s.csv o=./outdat/out13x.csv s=2%nr; IN=5 OUT=5; 2014/06/04 14:25:06
+#END# kgnumber -nfn I=7 S=20 e=skip i=./indat/dat1snfn.csv o=./outdat/out13nfn.csv s=2%nr; IN=5 OUT=5; 2014/06/04 14:25:06
+#END# kgnumber -nfno I=7 S=20 a=番号 e=skip i=./indat/dat1s.csv o=./outdat/out13nfno.csv s=金額%nr; IN=5 OUT=5; 2014/06/04 14:25:06
+#END# kgnumber I=3 S=A a=ランク i=./indat/dat1s.csv o=./outdat/out14.csv s=金額%nr; IN=5 OUT=5; 2014/06/04 14:25:06
+#END# kgnumber -x I=3 S=A a=ランク i=./indat/dat1s.csv o=./outdat/out14x.csv s=2%nr; IN=5 OUT=5; 2014/06/04 14:25:06
+#END# kgnumber -nfn I=3 S=A i=./indat/dat1snfn.csv o=./outdat/out14nfn.csv s=2%nr; IN=5 OUT=5; 2014/06/04 14:25:06
+#END# kgnumber -nfno I=3 S=A a=ランク i=./indat/dat1s.csv o=./outdat/out14nfno.csv s=金額%nr; IN=5 OUT=5; 2014/06/04 14:25:06
+#END# kgnumber I=5 S=H a=ランク e=same i=./indat/dat1s.csv o=./outdat/out15.csv s=金額%nr; IN=5 OUT=5; 2014/06/04 14:25:06
+#END# kgnumber -x I=5 S=H a=ランク e=same i=./indat/dat1s.csv o=./outdat/out15x.csv s=2%nr; IN=5 OUT=5; 2014/06/04 14:25:06
+#END# kgnumber -nfn I=5 S=H e=same i=./indat/dat1snfn.csv o=./outdat/out15nfn.csv s=2%nr; IN=5 OUT=5; 2014/06/04 14:25:06
+#END# kgnumber -nfno I=5 S=H a=ランク e=same i=./indat/dat1s.csv o=./outdat/out15nfno.csv s=金額%nr; IN=5 OUT=5; 2014/06/04 14:25:06
+#END# kgnumber I=10 S=X a=ランク e=skip i=./indat/dat1s.csv o=./outdat/out16.csv s=金額%nr; IN=5 OUT=5; 2014/06/04 14:25:07
+#END# kgnumber -x I=10 S=X a=ランク e=skip i=./indat/dat1s.csv o=./outdat/out16x.csv s=2%nr; IN=5 OUT=5; 2014/06/04 14:25:07
+#END# kgnumber -nfn I=10 S=X e=skip i=./indat/dat1snfn.csv o=./outdat/out16nfn.csv s=2%nr; IN=5 OUT=5; 2014/06/04 14:25:07
+#END# kgnumber -nfno I=10 S=X a=ランク e=skip i=./indat/dat1s.csv o=./outdat/out16nfno.csv s=金額%nr; IN=5 OUT=5; 2014/06/04 14:25:07
+#END# kgnumber a=番号 i=./indat/dat2s.csv k=日付 o=./outdat/out17.csv s=金額%nr; IN=10 OUT=10; 2014/06/04 14:25:07
+#END# kgnumber -x a=番号 i=./indat/dat2s.csv k=0 o=./outdat/out17x.csv s=3%nr; IN=10 OUT=10; 2014/06/04 14:25:07
+#END# kgnumber -nfn i=./indat/dat2snfn.csv k=0 o=./outdat/out17nfn.csv s=3%nr; IN=10 OUT=10; 2014/06/04 14:25:07
+#END# kgnumber -nfno a=番号 i=./indat/dat2s.csv k=日付 o=./outdat/out17nfno.csv s=金額%nr; IN=10 OUT=10; 2014/06/04 14:25:07
+#END# kgnumber -q a=番号 i=./indat/dat2s.csv k=日付 o=./outdat/out17q.csv s=金額%nr; IN=10 OUT=10; 2014/06/04 14:25:07
+#END# kgnumber -q -x a=番号 i=./indat/dat2s.csv k=0 o=./outdat/out17qx.csv s=3%nr; IN=10 OUT=10; 2014/06/04 14:25:07
+#END# kgnumber a=順位 e=same i=./indat/dat2s.csv k=日付 o=./outdat/out18.csv s=金額%nr; IN=10 OUT=10; 2014/06/04 14:25:07
+#END# kgnumber -x a=順位 e=same i=./indat/dat2s.csv k=0 o=./outdat/out18x.csv s=3%nr; IN=10 OUT=10; 2014/06/04 14:25:07
+#END# kgnumber -nfn e=same i=./indat/dat2snfn.csv k=0 o=./outdat/out18nfn.csv s=3%nr; IN=10 OUT=10; 2014/06/04 14:25:07
+#END# kgnumber -nfno a=順位 e=same i=./indat/dat2s.csv k=日付 o=./outdat/out18nfno.csv s=金額%nr; IN=10 OUT=10; 2014/06/04 14:25:07
+#END# kgnumber a=順位 e=skip i=./indat/dat2s.csv k=日付 o=./outdat/out19.csv s=金額%nr; IN=10 OUT=10; 2014/06/04 14:25:07
+#END# kgnumber -x a=順位 e=skip i=./indat/dat2s.csv k=0 o=./outdat/out19x.csv s=3%nr; IN=10 OUT=10; 2014/06/04 14:25:07
+#END# kgnumber -nfn e=skip i=./indat/dat2snfn.csv k=0 o=./outdat/out19nfn.csv s=3%nr; IN=10 OUT=10; 2014/06/04 14:25:07
+#END# kgnumber -nfno a=順位 e=skip i=./indat/dat2s.csv k=日付 o=./outdat/out19nfno.csv s=金額%nr; IN=10 OUT=10; 2014/06/04 14:25:07
+#END# kgnumber S=10 a=番号 i=./indat/dat2s.csv k=日付 o=./outdat/out20.csv s=金額%nr; IN=10 OUT=10; 2014/06/04 14:25:07
+#END# kgnumber -x S=10 a=番号 i=./indat/dat2s.csv k=0 o=./outdat/out20x.csv s=3%nr; IN=10 OUT=10; 2014/06/04 14:25:07
+#END# kgnumber -nfn S=10 i=./indat/dat2snfn.csv k=0 o=./outdat/out20nfn.csv s=3%nr; IN=10 OUT=10; 2014/06/04 14:25:07
+#END# kgnumber -nfno S=10 a=番号 i=./indat/dat2s.csv k=日付 o=./outdat/out20nfno.csv s=金額%nr; IN=10 OUT=10; 2014/06/04 14:25:07
+#END# kgnumber S=10 a=得点 e=same i=./indat/dat2s.csv k=日付 o=./outdat/out21.csv s=金額%nr; IN=10 OUT=10; 2014/06/04 14:25:07
+#END# kgnumber -x S=10 a=得点 e=same i=./indat/dat2s.csv k=0 o=./outdat/out21x.csv s=3%nr; IN=10 OUT=10; 2014/06/04 14:25:07
+#END# kgnumber -nfn S=10 e=same i=./indat/dat2snfn.csv k=0 o=./outdat/out21nfn.csv s=3%nr; IN=10 OUT=10; 2014/06/04 14:25:07
+#END# kgnumber -nfno S=10 a=得点 e=same i=./indat/dat2s.csv k=日付 o=./outdat/out21nfno.csv s=金額%nr; IN=10 OUT=10; 2014/06/04 14:25:07
+#END# kgnumber S=20 a=番号 e=skip i=./indat/dat2s.csv k=日付 o=./outdat/out22.csv s=金額%nr; IN=10 OUT=10; 2014/06/04 14:25:07
+#END# kgnumber -x S=20 a=番号 e=skip i=./indat/dat2s.csv k=0 o=./outdat/out22x.csv s=3%nr; IN=10 OUT=10; 2014/06/04 14:25:07
+#END# kgnumber -nfn S=20 e=skip i=./indat/dat2snfn.csv k=0 o=./outdat/out22nfn.csv s=3%nr; IN=10 OUT=10; 2014/06/04 14:25:07
+#END# kgnumber -nfno S=20 a=番号 e=skip i=./indat/dat2s.csv k=日付 o=./outdat/out22nfno.csv s=金額%nr; IN=10 OUT=10; 2014/06/04 14:25:07
+#END# kgnumber S=H a=ランク i=./indat/dat2s.csv k=日付 o=./outdat/out23.csv s=金額%nr; IN=10 OUT=10; 2014/06/04 14:25:07
+#END# kgnumber -x S=H a=ランク i=./indat/dat2s.csv k=0 o=./outdat/out23x.csv s=3%nr; IN=10 OUT=10; 2014/06/04 14:25:07
+#END# kgnumber -nfn S=H i=./indat/dat2snfn.csv k=0 o=./outdat/out23nfn.csv s=3%nr; IN=10 OUT=10; 2014/06/04 14:25:07
+#END# kgnumber -nfno S=H a=ランク i=./indat/dat2s.csv k=日付 o=./outdat/out23nfno.csv s=金額%nr; IN=10 OUT=10; 2014/06/04 14:25:07
+#END# kgnumber S=A a=ランク e=same i=./indat/dat2s.csv k=日付 o=./outdat/out24.csv s=金額%nr; IN=10 OUT=10; 2014/06/04 14:25:07
+#END# kgnumber -x S=A a=ランク e=same i=./indat/dat2s.csv k=0 o=./outdat/out24x.csv s=3%nr; IN=10 OUT=10; 2014/06/04 14:25:07
+#END# kgnumber -nfn S=A e=same i=./indat/dat2snfn.csv k=0 o=./outdat/out24nfn.csv s=3%nr; IN=10 OUT=10; 2014/06/04 14:25:07
+#END# kgnumber -nfno S=A a=ランク e=same i=./indat/dat2s.csv k=日付 o=./outdat/out24nfno.csv s=金額%nr; IN=10 OUT=10; 2014/06/04 14:25:07
+#END# kgnumber S=X a=ランク e=skip i=./indat/dat2s.csv k=日付 o=./outdat/out25.csv s=金額%nr; IN=10 OUT=10; 2014/06/04 14:25:07
+#END# kgnumber -x S=X a=ランク e=skip i=./indat/dat2s.csv k=0 o=./outdat/out25x.csv s=3%nr; IN=10 OUT=10; 2014/06/04 14:25:07
+#END# kgnumber -nfn S=X e=skip i=./indat/dat2snfn.csv k=0 o=./outdat/out25nfn.csv s=3%nr; IN=10 OUT=10; 2014/06/04 14:25:07
+#END# kgnumber -nfno S=X a=ランク e=skip i=./indat/dat2s.csv k=日付 o=./outdat/out25nfno.csv s=金額%nr; IN=10 OUT=10; 2014/06/04 14:25:07
+#END# kgnumber I=8 S=15 a=番号 i=./indat/dat2s.csv k=日付 o=./outdat/out26.csv s=金額%nr; IN=10 OUT=10; 2014/06/04 14:25:08
+#END# kgnumber -x I=8 S=15 a=番号 i=./indat/dat2s.csv k=0 o=./outdat/out26x.csv s=3%nr; IN=10 OUT=10; 2014/06/04 14:25:08
+#END# kgnumber -nfn I=8 S=15 i=./indat/dat2snfn.csv k=0 o=./outdat/out26nfn.csv s=3%nr; IN=10 OUT=10; 2014/06/04 14:25:08
+#END# kgnumber -nfno I=8 S=15 a=番号 i=./indat/dat2s.csv k=日付 o=./outdat/out26nfno.csv s=金額%nr; IN=10 OUT=10; 2014/06/04 14:25:08
+#END# kgnumber I=5 S=10 a=得点 e=same i=./indat/dat2s.csv k=日付 o=./outdat/out27.csv s=金額%nr; IN=10 OUT=10; 2014/06/04 14:25:08
+#END# kgnumber -x I=5 S=10 a=得点 e=same i=./indat/dat2s.csv k=0 o=./outdat/out27x.csv s=3%nr; IN=10 OUT=10; 2014/06/04 14:25:08
+#END# kgnumber -nfn I=5 S=10 e=same i=./indat/dat2snfn.csv k=0 o=./outdat/out27nfn.csv s=3%nr; IN=10 OUT=10; 2014/06/04 14:25:08
+#END# kgnumber -nfno I=5 S=10 a=得点 e=same i=./indat/dat2s.csv k=日付 o=./outdat/out27nfno.csv s=金額%nr; IN=10 OUT=10; 2014/06/04 14:25:08
+#END# kgnumber I=7 S=20 a=番号 e=skip i=./indat/dat2s.csv k=日付 o=./outdat/out28.csv s=金額%nr; IN=10 OUT=10; 2014/06/04 14:25:08
+#END# kgnumber -x I=7 S=20 a=番号 e=skip i=./indat/dat2s.csv k=0 o=./outdat/out28x.csv s=3%nr; IN=10 OUT=10; 2014/06/04 14:25:08
+#END# kgnumber -nfn I=7 S=20 e=skip i=./indat/dat2snfn.csv k=0 o=./outdat/out28nfn.csv s=3%nr; IN=10 OUT=10; 2014/06/04 14:25:08
+#END# kgnumber -nfno I=7 S=20 a=番号 e=skip i=./indat/dat2s.csv k=日付 o=./outdat/out28nfno.csv s=金額%nr; IN=10 OUT=10; 2014/06/04 14:25:08
+#END# kgnumber I=3 S=A a=ランク i=./indat/dat2s.csv k=日付 o=./outdat/out29.csv s=金額%nr; IN=10 OUT=10; 2014/06/04 14:25:08
+#END# kgnumber -x I=3 S=A a=ランク i=./indat/dat2s.csv k=0 o=./outdat/out29x.csv s=3%nr; IN=10 OUT=10; 2014/06/04 14:25:08
+#END# kgnumber -nfn I=3 S=A i=./indat/dat2snfn.csv k=0 o=./outdat/out29nfn.csv s=3%nr; IN=10 OUT=10; 2014/06/04 14:25:08
+#END# kgnumber -nfno I=3 S=A a=ランク i=./indat/dat2s.csv k=日付 o=./outdat/out29nfno.csv s=金額%nr; IN=10 OUT=10; 2014/06/04 14:25:08
+#END# kgnumber I=5 S=H a=ランク e=same i=./indat/dat2s.csv k=日付 o=./outdat/out30.csv s=金額%nr; IN=10 OUT=10; 2014/06/04 14:25:08
+#END# kgnumber -x I=5 S=H a=ランク e=same i=./indat/dat2s.csv k=0 o=./outdat/out30x.csv s=3%nr; IN=10 OUT=10; 2014/06/04 14:25:08
+#END# kgnumber -nfn I=5 S=H e=same i=./indat/dat2snfn.csv k=0 o=./outdat/out30nfn.csv s=3%nr; IN=10 OUT=10; 2014/06/04 14:25:08
+#END# kgnumber -nfno I=5 S=H a=ランク e=same i=./indat/dat2s.csv k=日付 o=./outdat/out30nfno.csv s=金額%nr; IN=10 OUT=10; 2014/06/04 14:25:08
+#END# kgnumber I=10 S=X a=ランク e=skip i=./indat/dat2s.csv k=日付 o=./outdat/out31.csv s=金額%nr; IN=10 OUT=10; 2014/06/04 14:25:08
+#END# kgnumber -x I=10 S=X a=ランク e=skip i=./indat/dat2s.csv k=0 o=./outdat/out31x.csv s=3%nr; IN=10 OUT=10; 2014/06/04 14:25:08
+#END# kgnumber -nfn I=10 S=X e=skip i=./indat/dat2snfn.csv k=0 o=./outdat/out31nfn.csv s=3%nr; IN=10 OUT=10; 2014/06/04 14:25:08
+#END# kgnumber -nfno I=10 S=X a=ランク e=skip i=./indat/dat2s.csv k=日付 o=./outdat/out31nfno.csv s=金額%nr; IN=10 OUT=10; 2014/06/04 14:25:08
+#END# kgnumber -B a=番号 i=./indat/dat2s.csv k=日付 o=./outdat/out32.csv; IN=10 OUT=10; 2014/06/04 14:25:08
+#END# kgnumber -B -x a=番号 i=./indat/dat2s.csv k=0 o=./outdat/out32x.csv; IN=10 OUT=10; 2014/06/04 14:25:08
+#END# kgnumber -B -nfn i=./indat/dat2snfn.csv k=0 o=./outdat/out32nfn.csv; IN=10 OUT=10; 2014/06/04 14:25:08
+#END# kgnumber -B -nfno a=番号 i=./indat/dat2s.csv k=日付 o=./outdat/out32nfno.csv; IN=10 OUT=10; 2014/06/04 14:25:08
+#END# kgnumber -B S=10 a=番号 i=./indat/dat2s.csv k=日付 o=./outdat/out33.csv; IN=10 OUT=10; 2014/06/04 14:25:08
+#END# kgnumber -B -x S=10 a=番号 i=./indat/dat2s.csv k=0 o=./outdat/out33x.csv; IN=10 OUT=10; 2014/06/04 14:25:08
+#END# kgnumber -B -nfn S=10 i=./indat/dat2snfn.csv k=0 o=./outdat/out33nfn.csv; IN=10 OUT=10; 2014/06/04 14:25:08
+#END# kgnumber -B -nfno S=10 a=番号 i=./indat/dat2s.csv k=日付 o=./outdat/out33nfno.csv; IN=10 OUT=10; 2014/06/04 14:25:08
+#END# kgnumber -B S=H a=ランク i=./indat/dat2s.csv k=日付 o=./outdat/out34.csv; IN=10 OUT=10; 2014/06/04 14:25:08
+#END# kgnumber -B -x S=H a=ランク i=./indat/dat2s.csv k=0 o=./outdat/out34x.csv; IN=10 OUT=10; 2014/06/04 14:25:08
+#END# kgnumber -B -nfn S=H i=./indat/dat2snfn.csv k=0 o=./outdat/out34nfn.csv; IN=10 OUT=10; 2014/06/04 14:25:08
+#END# kgnumber -B -nfno S=H a=ランク i=./indat/dat2s.csv k=日付 o=./outdat/out34nfno.csv; IN=10 OUT=10; 2014/06/04 14:25:08
+#END# kgnumber -B I=8 S=15 a=番号 i=./indat/dat2s.csv k=日付 o=./outdat/out35.csv; IN=10 OUT=10; 2014/06/04 14:25:08
+#END# kgnumber -B -x I=8 S=15 a=番号 i=./indat/dat2s.csv k=0 o=./outdat/out35x.csv; IN=10 OUT=10; 2014/06/04 14:25:08
+#END# kgnumber -B -nfn I=8 S=15 i=./indat/dat2snfn.csv k=0 o=./outdat/out35nfn.csv; IN=10 OUT=10; 2014/06/04 14:25:08
+#END# kgnumber -B -nfno I=8 S=15 a=番号 i=./indat/dat2s.csv k=日付 o=./outdat/out35nfno.csv; IN=10 OUT=10; 2014/06/04 14:25:08
+#END# kgnumber -B I=3 S=A a=ランク i=./indat/dat2s.csv k=日付 o=./outdat/out36.csv; IN=10 OUT=10; 2014/06/04 14:25:08
+#END# kgnumber -B -x I=3 S=A a=ランク i=./indat/dat2s.csv k=0 o=./outdat/out36x.csv; IN=10 OUT=10; 2014/06/04 14:25:08
+#END# kgnumber -B -nfn I=3 S=A i=./indat/dat2snfn.csv k=0 o=./outdat/out36nfn.csv; IN=10 OUT=10; 2014/06/04 14:25:08
+#END# kgnumber -B -nfno I=3 S=A a=ランク i=./indat/dat2s.csv k=日付 o=./outdat/out36nfno.csv; IN=10 OUT=10; 2014/06/04 14:25:08
+#END# kgnumber a=順位 e=seq i=./indat/dat3s.csv o=./outdat/out37.csv s=顧客,金額%nr; IN=5 OUT=5; 2014/06/04 14:25:08
+#END# kgnumber -x a=順位 e=seq i=./indat/dat3s.csv o=./outdat/out37x.csv s=0,2%nr; IN=5 OUT=5; 2014/06/04 14:25:08
+#END# kgnumber -nfn e=seq i=./indat/dat3snfn.csv o=./outdat/out37nfn.csv s=0,2%nr; IN=5 OUT=5; 2014/06/04 14:25:08
+#END# kgnumber -nfno a=順位 e=seq i=./indat/dat3s.csv o=./outdat/out37nfno.csv s=顧客,金額%nr; IN=5 OUT=5; 2014/06/04 14:25:08
+#END# kgnumber a=順位 e=same i=./indat/dat3s.csv o=./outdat/out38.csv s=顧客,金額%nr; IN=5 OUT=5; 2014/06/04 14:25:08
+#END# kgnumber -x a=順位 e=same i=./indat/dat3s.csv o=./outdat/out38x.csv s=0,2%nr; IN=5 OUT=5; 2014/06/04 14:25:08
+#END# kgnumber -nfn e=same i=./indat/dat3snfn.csv o=./outdat/out38nfn.csv s=0,2%nr; IN=5 OUT=5; 2014/06/04 14:25:08
+#END# kgnumber -nfno a=順位 e=same i=./indat/dat3s.csv o=./outdat/out38nfno.csv s=顧客,金額%nr; IN=5 OUT=5; 2014/06/04 14:25:08
+#END# kgnumber a=順位 e=skip i=./indat/dat3s.csv o=./outdat/out39.csv s=顧客,金額%nr; IN=5 OUT=5; 2014/06/04 14:25:08
+#END# kgnumber -x a=順位 e=skip i=./indat/dat3s.csv o=./outdat/out39x.csv s=0,2%nr; IN=5 OUT=5; 2014/06/04 14:25:08
+#END# kgnumber -nfn e=skip i=./indat/dat3snfn.csv o=./outdat/out39nfn.csv s=0,2%nr; IN=5 OUT=5; 2014/06/04 14:25:08
+#END# kgnumber -nfno a=順位 e=skip i=./indat/dat3s.csv o=./outdat/out39nfno.csv s=顧客,金額%nr; IN=5 OUT=5; 2014/06/04 14:25:09
+#END# kgnumber a=順位 i=./indat/dat4s.csv k=日付 o=./outdat/out40.csv s=顧客,金額%nr; IN=10 OUT=10; 2014/06/04 14:25:09
+#END# kgnumber -x a=順位 i=./indat/dat4s.csv k=0 o=./outdat/out40x.csv s=1,3%nr; IN=10 OUT=10; 2014/06/04 14:25:09
+#END# kgnumber -nfn i=./indat/dat4snfn.csv k=0 o=./outdat/out40nfn.csv s=1,3%nr; IN=10 OUT=10; 2014/06/04 14:25:09
+#END# kgnumber -nfno a=順位 i=./indat/dat4s.csv k=日付 o=./outdat/out40nfno.csv s=顧客,金額%nr; IN=10 OUT=10; 2014/06/04 14:25:09
+#END# kgnumber a=順位 e=same i=./indat/dat4s.csv k=日付 o=./outdat/out41.csv s=顧客,金額%nr; IN=10 OUT=10; 2014/06/04 14:25:09
+#END# kgnumber -x a=順位 e=same i=./indat/dat4s.csv k=0 o=./outdat/out41x.csv s=1,3%nr; IN=10 OUT=10; 2014/06/04 14:25:09
+#END# kgnumber -nfn e=same i=./indat/dat4snfn.csv k=0 o=./outdat/out41nfn.csv s=1,3%nr; IN=10 OUT=10; 2014/06/04 14:25:09
+#END# kgnumber -nfno a=順位 e=same i=./indat/dat4s.csv k=日付 o=./outdat/out41nfno.csv s=顧客,金額%nr; IN=10 OUT=10; 2014/06/04 14:25:09
+#END# kgnumber a=順位 e=skip i=./indat/dat4s.csv k=日付 o=./outdat/out42.csv s=顧客,金額%nr; IN=10 OUT=10; 2014/06/04 14:25:09
+#END# kgnumber -x a=順位 e=skip i=./indat/dat4s.csv k=0 o=./outdat/out42x.csv s=1,3%nr; IN=10 OUT=10; 2014/06/04 14:25:09
+#END# kgnumber -nfn e=skip i=./indat/dat4snfn.csv k=0 o=./outdat/out42nfn.csv s=1,3%nr; IN=10 OUT=10; 2014/06/04 14:25:09
+#END# kgnumber -nfno a=順位 e=skip i=./indat/dat4s.csv k=日付 o=./outdat/out42nfno.csv s=顧客,金額%nr; IN=10 OUT=10; 2014/06/04 14:25:09
+#END# kgnumber a=番号 i=./indat/dat5s.csv o=./outdat/out43.csv s=金額%nr; IN=5 OUT=5; 2014/06/04 14:25:09
+#END# kgnumber -x a=番号 i=./indat/dat5s.csv o=./outdat/out43x.csv s=2%nr; IN=5 OUT=5; 2014/06/04 14:25:09
+#END# kgnumber -nfn i=./indat/dat5snfn.csv o=./outdat/out43nfn.csv s=2%nr; IN=5 OUT=5; 2014/06/04 14:25:09
+#END# kgnumber a=順位 e=seq i=./indat/dat5s.csv o=./outdat/out44.csv s=金額%nr; IN=5 OUT=5; 2014/06/04 14:25:09
+#END# kgnumber -x a=順位 e=seq i=./indat/dat5s.csv o=./outdat/out44x.csv s=2%nr; IN=5 OUT=5; 2014/06/04 14:25:09
+#END# kgnumber -nfn e=seq i=./indat/dat5snfn.csv o=./outdat/out44nfn.csv s=2%nr; IN=5 OUT=5; 2014/06/04 14:25:09
+#END# kgnumber a=順位 e=same i=./indat/dat5s.csv o=./outdat/out45.csv s=金額%nr; IN=5 OUT=5; 2014/06/04 14:25:09
+#END# kgnumber -x a=順位 e=same i=./indat/dat5s.csv o=./outdat/out45x.csv s=2%nr; IN=5 OUT=5; 2014/06/04 14:25:09
+#END# kgnumber -nfn e=same i=./indat/dat5snfn.csv o=./outdat/out45nfn.csv s=2%nr; IN=5 OUT=5; 2014/06/04 14:25:09
+#END# kgnumber a=順位 e=skip i=./indat/dat5s.csv o=./outdat/out46.csv s=金額%nr; IN=5 OUT=5; 2014/06/04 14:25:09
+#END# kgnumber -x a=順位 e=skip i=./indat/dat5s.csv o=./outdat/out46x.csv s=2%nr; IN=5 OUT=5; 2014/06/04 14:25:09
+#END# kgnumber -nfn e=skip i=./indat/dat5snfn.csv o=./outdat/out46nfn.csv s=2%nr; IN=5 OUT=5; 2014/06/04 14:25:09
+#END# kgnumber S=10 a=番号 i=./indat/dat5s.csv o=./outdat/out47.csv s=金額%nr; IN=5 OUT=5; 2014/06/04 14:25:09
+#END# kgnumber -x S=10 a=番号 i=./indat/dat5s.csv o=./outdat/out47x.csv s=2%nr; IN=5 OUT=5; 2014/06/04 14:25:09
+#END# kgnumber -nfn S=10 i=./indat/dat5snfn.csv o=./outdat/out47nfn.csv s=2%nr; IN=5 OUT=5; 2014/06/04 14:25:09
+#END# kgnumber S=10 a=得点 e=same i=./indat/dat5s.csv o=./outdat/out48.csv s=金額%nr; IN=5 OUT=5; 2014/06/04 14:25:09
+#END# kgnumber -x S=10 a=得点 e=same i=./indat/dat5s.csv o=./outdat/out48x.csv s=2%nr; IN=5 OUT=5; 2014/06/04 14:25:09
+#END# kgnumber -nfn S=10 e=same i=./indat/dat5snfn.csv o=./outdat/out48nfn.csv s=2%nr; IN=5 OUT=5; 2014/06/04 14:25:09
+#END# kgnumber S=20 a=番号 e=skip i=./indat/dat5s.csv o=./outdat/out49.csv s=金額%nr; IN=5 OUT=5; 2014/06/04 14:25:09
+#END# kgnumber -x S=20 a=番号 e=skip i=./indat/dat5s.csv o=./outdat/out49x.csv s=2%nr; IN=5 OUT=5; 2014/06/04 14:25:09
+#END# kgnumber -nfn S=20 e=skip i=./indat/dat5snfn.csv o=./outdat/out49nfn.csv s=2%nr; IN=5 OUT=5; 2014/06/04 14:25:09
+#END# kgnumber S=H a=ランク i=./indat/dat5s.csv o=./outdat/out50.csv s=金額%nr; IN=5 OUT=5; 2014/06/04 14:25:09
+#END# kgnumber -x S=H a=ランク i=./indat/dat5s.csv o=./outdat/out50x.csv s=2%nr; IN=5 OUT=5; 2014/06/04 14:25:09
+#END# kgnumber -nfn S=H i=./indat/dat5snfn.csv o=./outdat/out50nfn.csv s=2%nr; IN=5 OUT=5; 2014/06/04 14:25:09
+#END# kgnumber S=A a=ランク e=same i=./indat/dat5s.csv o=./outdat/out51.csv s=金額%nr; IN=5 OUT=5; 2014/06/04 14:25:09
+#END# kgnumber -x S=A a=ランク e=same i=./indat/dat5s.csv o=./outdat/out51x.csv s=2%nr; IN=5 OUT=5; 2014/06/04 14:25:09
+#END# kgnumber -nfn S=A e=same i=./indat/dat5snfn.csv o=./outdat/out51nfn.csv s=2%nr; IN=5 OUT=5; 2014/06/04 14:25:09
+#END# kgnumber S=X a=ランク e=skip i=./indat/dat5s.csv o=./outdat/out52.csv s=金額%nr; IN=5 OUT=5; 2014/06/04 14:25:09
+#END# kgnumber -x S=X a=ランク e=skip i=./indat/dat5s.csv o=./outdat/out52x.csv s=2%nr; IN=5 OUT=5; 2014/06/04 14:25:09
+#END# kgnumber -nfn S=X e=skip i=./indat/dat5snfn.csv o=./outdat/out52nfn.csv s=2%nr; IN=5 OUT=5; 2014/06/04 14:25:09
+#END# kgnumber I=8 S=15 a=番号 i=./indat/dat5s.csv o=./outdat/out53.csv s=金額%nr; IN=5 OUT=5; 2014/06/04 14:25:09
+#END# kgnumber -x I=8 S=15 a=番号 i=./indat/dat5s.csv o=./outdat/out53x.csv s=2%nr; IN=5 OUT=5; 2014/06/04 14:25:10
+#END# kgnumber -nfn I=8 S=15 i=./indat/dat5snfn.csv o=./outdat/out53nfn.csv s=2%nr; IN=5 OUT=5; 2014/06/04 14:25:10
+#END# kgnumber I=5 S=10 a=得点 e=same i=./indat/dat5s.csv o=./outdat/out54.csv s=金額%nr; IN=5 OUT=5; 2014/06/04 14:25:10
+#END# kgnumber -x I=5 S=10 a=得点 e=same i=./indat/dat5s.csv o=./outdat/out54x.csv s=2%nr; IN=5 OUT=5; 2014/06/04 14:25:10
+#END# kgnumber -nfn I=5 S=10 e=same i=./indat/dat5snfn.csv o=./outdat/out54nfn.csv s=2%nr; IN=5 OUT=5; 2014/06/04 14:25:10
+#END# kgnumber I=7 S=20 a=番号 e=skip i=./indat/dat5s.csv o=./outdat/out55.csv s=金額%nr; IN=5 OUT=5; 2014/06/04 14:25:10
+#END# kgnumber -x I=7 S=20 a=番号 e=skip i=./indat/dat5s.csv o=./outdat/out55x.csv s=2%nr; IN=5 OUT=5; 2014/06/04 14:25:10
+#END# kgnumber -nfn I=7 S=20 e=skip i=./indat/dat5snfn.csv o=./outdat/out55nfn.csv s=2%nr; IN=5 OUT=5; 2014/06/04 14:25:10
+#END# kgnumber I=3 S=A a=ランク i=./indat/dat5s.csv o=./outdat/out56.csv s=金額%nr; IN=5 OUT=5; 2014/06/04 14:25:10
+#END# kgnumber -x I=3 S=A a=ランク i=./indat/dat5s.csv o=./outdat/out56x.csv s=2%nr; IN=5 OUT=5; 2014/06/04 14:25:10
+#END# kgnumber -nfn I=3 S=A i=./indat/dat5snfn.csv o=./outdat/out56nfn.csv s=2%nr; IN=5 OUT=5; 2014/06/04 14:25:10
+#END# kgnumber I=5 S=H a=ランク e=same i=./indat/dat5s.csv o=./outdat/out57.csv s=金額%nr; IN=5 OUT=5; 2014/06/04 14:25:10
+#END# kgnumber -x I=5 S=H a=ランク e=same i=./indat/dat5s.csv o=./outdat/out57x.csv s=2%nr; IN=5 OUT=5; 2014/06/04 14:25:10
+#END# kgnumber -nfn I=5 S=H e=same i=./indat/dat5snfn.csv o=./outdat/out57nfn.csv s=2%nr; IN=5 OUT=5; 2014/06/04 14:25:10
+#END# kgnumber I=10 S=X a=ランク e=skip i=./indat/dat5s.csv o=./outdat/out58.csv s=金額%nr; IN=5 OUT=5; 2014/06/04 14:25:10
+#END# kgnumber -x I=10 S=X a=ランク e=skip i=./indat/dat5s.csv o=./outdat/out58x.csv s=2%nr; IN=5 OUT=5; 2014/06/04 14:25:10
+#END# kgnumber -nfn I=10 S=X e=skip i=./indat/dat5snfn.csv o=./outdat/out58nfn.csv s=2%nr; IN=5 OUT=5; 2014/06/04 14:25:10
+#END# kgnumber a=番号 i=./indat/dat6s.csv k=日付 o=./outdat/out59.csv s=金額%nr; IN=13 OUT=13; 2014/06/04 14:25:10
+#END# kgnumber -x a=番号 i=./indat/dat6s.csv k=0 o=./outdat/out59x.csv s=3%nr; IN=13 OUT=13; 2014/06/04 14:25:10
+#END# kgnumber -nfn i=./indat/dat6snfn.csv k=0 o=./outdat/out59nfn.csv s=3%nr; IN=13 OUT=13; 2014/06/04 14:25:10
+#END# kgnumber a=順位 e=same i=./indat/dat6s.csv k=日付 o=./outdat/out60.csv s=金額%nr; IN=13 OUT=13; 2014/06/04 14:25:10
+#END# kgnumber -x a=順位 e=same i=./indat/dat6s.csv k=0 o=./outdat/out60x.csv s=3%nr; IN=13 OUT=13; 2014/06/04 14:25:10
+#END# kgnumber -nfn e=same i=./indat/dat6snfn.csv k=0 o=./outdat/out60nfn.csv s=3%nr; IN=13 OUT=13; 2014/06/04 14:25:10
+#END# kgnumber a=順位 e=skip i=./indat/dat6s.csv k=日付 o=./outdat/out61.csv s=金額%nr; IN=13 OUT=13; 2014/06/04 14:25:10
+#END# kgnumber -x a=順位 e=skip i=./indat/dat6s.csv k=0 o=./outdat/out61x.csv s=3%nr; IN=13 OUT=13; 2014/06/04 14:25:10
+#END# kgnumber -nfn e=skip i=./indat/dat6snfn.csv k=0 o=./outdat/out61nfn.csv s=3%nr; IN=13 OUT=13; 2014/06/04 14:25:10
+#END# kgnumber S=10 a=番号 i=./indat/dat6s.csv k=日付 o=./outdat/out62.csv s=金額%nr; IN=13 OUT=13; 2014/06/04 14:25:10
+#END# kgnumber -x S=10 a=番号 i=./indat/dat6s.csv k=0 o=./outdat/out62x.csv s=3%nr; IN=13 OUT=13; 2014/06/04 14:25:10
+#END# kgnumber -nfn S=10 i=./indat/dat6snfn.csv k=0 o=./outdat/out62nfn.csv s=3%nr; IN=13 OUT=13; 2014/06/04 14:25:10
+#END# kgnumber S=10 a=得点 e=same i=./indat/dat6s.csv k=日付 o=./outdat/out63.csv s=金額%nr; IN=13 OUT=13; 2014/06/04 14:25:10
+#END# kgnumber -x S=10 a=得点 e=same i=./indat/dat6s.csv k=0 o=./outdat/out63x.csv s=3%nr; IN=13 OUT=13; 2014/06/04 14:25:10
+#END# kgnumber -nfn S=10 e=same i=./indat/dat6snfn.csv k=0 o=./outdat/out63nfn.csv s=3%nr; IN=13 OUT=13; 2014/06/04 14:25:10
+#END# kgnumber S=20 a=番号 e=skip i=./indat/dat6s.csv k=日付 o=./outdat/out64.csv s=金額%nr; IN=13 OUT=13; 2014/06/04 14:25:10
+#END# kgnumber -x S=20 a=番号 e=skip i=./indat/dat6s.csv k=0 o=./outdat/out64x.csv s=3%nr; IN=13 OUT=13; 2014/06/04 14:25:10
+#END# kgnumber -nfn S=20 e=skip i=./indat/dat6snfn.csv k=0 o=./outdat/out64nfn.csv s=3%nr; IN=13 OUT=13; 2014/06/04 14:25:10
+#END# kgnumber S=H a=ランク i=./indat/dat6s.csv k=日付 o=./outdat/out65.csv s=金額%nr; IN=13 OUT=13; 2014/06/04 14:25:10
+#END# kgnumber -x S=H a=ランク i=./indat/dat6s.csv k=0 o=./outdat/out65x.csv s=3%nr; IN=13 OUT=13; 2014/06/04 14:25:10
+#END# kgnumber -nfn S=H i=./indat/dat6snfn.csv k=0 o=./outdat/out65nfn.csv s=3%nr; IN=13 OUT=13; 2014/06/04 14:25:10
+#END# kgnumber S=A a=ランク e=same i=./indat/dat6s.csv k=日付 o=./outdat/out66.csv s=金額%nr; IN=13 OUT=13; 2014/06/04 14:25:10
+#END# kgnumber -x S=A a=ランク e=same i=./indat/dat6s.csv k=0 o=./outdat/out66x.csv s=3%nr; IN=13 OUT=13; 2014/06/04 14:25:10
+#END# kgnumber -nfn S=A e=same i=./indat/dat6snfn.csv k=0 o=./outdat/out66nfn.csv s=3%nr; IN=13 OUT=13; 2014/06/04 14:25:10
+#END# kgnumber S=X a=ランク e=skip i=./indat/dat6s.csv k=日付 o=./outdat/out67.csv s=金額%nr; IN=13 OUT=13; 2014/06/04 14:25:10
+#END# kgnumber -x S=X a=ランク e=skip i=./indat/dat6s.csv k=0 o=./outdat/out67x.csv s=3%nr; IN=13 OUT=13; 2014/06/04 14:25:10
+#END# kgnumber -nfn S=X e=skip i=./indat/dat6snfn.csv k=0 o=./outdat/out67nfn.csv s=3%nr; IN=13 OUT=13; 2014/06/04 14:25:10
+#END# kgnumber I=8 S=15 a=番号 i=./indat/dat6s.csv k=日付 o=./outdat/out68.csv s=金額%nr; IN=13 OUT=13; 2014/06/04 14:25:11
+#END# kgnumber -x I=8 S=15 a=番号 i=./indat/dat6s.csv k=0 o=./outdat/out68x.csv s=3%nr; IN=13 OUT=13; 2014/06/04 14:25:11
+#END# kgnumber -nfn I=8 S=15 i=./indat/dat6snfn.csv k=0 o=./outdat/out68nfn.csv s=3%nr; IN=13 OUT=13; 2014/06/04 14:25:11
+#END# kgnumber I=5 S=10 a=得点 e=same i=./indat/dat6s.csv k=日付 o=./outdat/out69.csv s=金額%nr; IN=13 OUT=13; 2014/06/04 14:25:11
+#END# kgnumber -x I=5 S=10 a=得点 e=same i=./indat/dat6s.csv k=0 o=./outdat/out69x.csv s=3%nr; IN=13 OUT=13; 2014/06/04 14:25:11
+#END# kgnumber -nfn I=5 S=10 e=same i=./indat/dat6snfn.csv k=0 o=./outdat/out69nfn.csv s=3%nr; IN=13 OUT=13; 2014/06/04 14:25:11
+#END# kgnumber I=7 S=20 a=番号 e=skip i=./indat/dat6s.csv k=日付 o=./outdat/out70.csv s=金額%nr; IN=13 OUT=13; 2014/06/04 14:25:11
+#END# kgnumber -x I=7 S=20 a=番号 e=skip i=./indat/dat6s.csv k=0 o=./outdat/out70x.csv s=3%nr; IN=13 OUT=13; 2014/06/04 14:25:11
+#END# kgnumber -nfn I=7 S=20 e=skip i=./indat/dat6snfn.csv k=0 o=./outdat/out70nfn.csv s=3%nr; IN=13 OUT=13; 2014/06/04 14:25:11
+#END# kgnumber I=3 S=A a=ランク i=./indat/dat6s.csv k=日付 o=./outdat/out71.csv s=金額%nr; IN=13 OUT=13; 2014/06/04 14:25:11
+#END# kgnumber -x I=3 S=A a=ランク i=./indat/dat6s.csv k=0 o=./outdat/out71x.csv s=3%nr; IN=13 OUT=13; 2014/06/04 14:25:11
+#END# kgnumber -nfn I=3 S=A i=./indat/dat6snfn.csv k=0 o=./outdat/out71nfn.csv s=3%nr; IN=13 OUT=13; 2014/06/04 14:25:11
+#END# kgnumber I=5 S=H a=ランク e=same i=./indat/dat6s.csv k=日付 o=./outdat/out72.csv s=金額%nr; IN=13 OUT=13; 2014/06/04 14:25:11
+#END# kgnumber -x I=5 S=H a=ランク e=same i=./indat/dat6s.csv k=0 o=./outdat/out72x.csv s=3%nr; IN=13 OUT=13; 2014/06/04 14:25:11
+#END# kgnumber -nfn I=5 S=H e=same i=./indat/dat6snfn.csv k=0 o=./outdat/out72nfn.csv s=3%nr; IN=13 OUT=13; 2014/06/04 14:25:11
+#END# kgnumber I=10 S=X a=ランク e=skip i=./indat/dat6s.csv k=日付 o=./outdat/out73.csv s=金額%nr; IN=13 OUT=13; 2014/06/04 14:25:11
+#END# kgnumber -x I=10 S=X a=ランク e=skip i=./indat/dat6s.csv k=0 o=./outdat/out73x.csv s=3%nr; IN=13 OUT=13; 2014/06/04 14:25:11
+#END# kgnumber -nfn I=10 S=X e=skip i=./indat/dat6snfn.csv k=0 o=./outdat/out73nfn.csv s=3%nr; IN=13 OUT=13; 2014/06/04 14:25:11
+#END# kgnumber -B a=番号 i=./indat/dat6s.csv k=日付 o=./outdat/out74.csv; IN=13 OUT=13; 2014/06/04 14:25:11
+#END# kgnumber -B -x a=番号 i=./indat/dat6s.csv k=0 o=./outdat/out74x.csv; IN=13 OUT=13; 2014/06/04 14:25:11
+#END# kgnumber -B -nfn i=./indat/dat6snfn.csv k=0 o=./outdat/out74nfn.csv; IN=13 OUT=13; 2014/06/04 14:25:11
+#END# kgnumber -B S=10 a=番号 i=./indat/dat6s.csv k=日付 o=./outdat/out75.csv; IN=13 OUT=13; 2014/06/04 14:25:11
+#END# kgnumber -B -x S=10 a=番号 i=./indat/dat6s.csv k=0 o=./outdat/out75x.csv; IN=13 OUT=13; 2014/06/04 14:25:11
+#END# kgnumber -B -nfn S=10 i=./indat/dat6snfn.csv k=0 o=./outdat/out75nfn.csv; IN=13 OUT=13; 2014/06/04 14:25:11
+#END# kgnumber -B S=H a=ランク i=./indat/dat6s.csv k=日付 o=./outdat/out76.csv; IN=13 OUT=13; 2014/06/04 14:25:11
+#END# kgnumber -B -x S=H a=ランク i=./indat/dat6s.csv k=0 o=./outdat/out76x.csv; IN=13 OUT=13; 2014/06/04 14:25:11
+#END# kgnumber -B -nfn S=H i=./indat/dat6snfn.csv k=0 o=./outdat/out76nfn.csv; IN=13 OUT=13; 2014/06/04 14:25:11
+#END# kgnumber -B I=8 S=15 a=番号 i=./indat/dat6s.csv k=日付 o=./outdat/out77.csv; IN=13 OUT=13; 2014/06/04 14:25:11
+#END# kgnumber -B -x I=8 S=15 a=番号 i=./indat/dat6s.csv k=0 o=./outdat/out77x.csv; IN=13 OUT=13; 2014/06/04 14:25:11
+#END# kgnumber -B -nfn I=8 S=15 i=./indat/dat6snfn.csv k=0 o=./outdat/out77nfn.csv; IN=13 OUT=13; 2014/06/04 14:25:11
+#END# kgnumber -B I=3 S=A a=ランク i=./indat/dat6s.csv k=日付 o=./outdat/out78.csv; IN=13 OUT=13; 2014/06/04 14:25:11
+#END# kgnumber -B -x I=3 S=A a=ランク i=./indat/dat6s.csv k=0 o=./outdat/out78x.csv; IN=13 OUT=13; 2014/06/04 14:25:11
+#END# kgnumber -B -nfn I=3 S=A i=./indat/dat6snfn.csv k=0 o=./outdat/out78nfn.csv; IN=13 OUT=13; 2014/06/04 14:25:11
+#END# kgnumber a=番号 i=./indat/dat0.csv o=./outdat/out100.csv s=顧客; IN=0 OUT=0; 2014/06/04 14:25:11
+#END# kgnumber -x a=番号 i=./indat/dat0.csv o=./outdat/out100x.csv s=0; IN=0 OUT=0; 2014/06/04 14:25:11
+#END# kgnumber -nfn i=./indat/dat0nfn.csv o=./outdat/out100nfn.csv s=0; IN=0 OUT=0; 2014/06/04 14:25:11
+#END# kgnumber -nfno a=番号 i=./indat/dat0.csv o=./outdat/out100nfno.csv s=顧客; IN=0 OUT=0; 2014/06/04 14:25:11
+#END# kgnumber a=番号 i=./indat/dat1.csv o=./outdat/out101.csv s=金額%nr; IN=5 OUT=5; 2014/06/04 14:25:11
+#END# kgnumber -x a=番号 i=./indat/dat1.csv o=./outdat/out101x.csv s=2%nr; IN=5 OUT=5; 2014/06/04 14:25:11
+#END# kgnumber -nfn i=./indat/dat1nfn.csv o=./outdat/out101nfn.csv s=2%nr; IN=5 OUT=5; 2014/06/04 14:25:11
+#END# kgnumber -nfno a=番号 i=./indat/dat1.csv o=./outdat/out101nfno.csv s=金額%nr; IN=5 OUT=5; 2014/06/04 14:25:11
+#END# kgnumber a=順位 e=seq i=./indat/dat1.csv o=./outdat/out102.csv s=金額%nr; IN=5 OUT=5; 2014/06/04 14:25:11
+#END# kgnumber -x a=順位 e=seq i=./indat/dat1.csv o=./outdat/out102x.csv s=2%nr; IN=5 OUT=5; 2014/06/04 14:25:11
+#END# kgnumber -nfn e=seq i=./indat/dat1nfn.csv o=./outdat/out102nfn.csv s=2%nr; IN=5 OUT=5; 2014/06/04 14:25:11
+#END# kgnumber -nfno a=順位 e=seq i=./indat/dat1.csv o=./outdat/out102nfno.csv s=金額%nr; IN=5 OUT=5; 2014/06/04 14:25:11
+#END# kgnumber a=順位 e=same i=./indat/dat1.csv o=./outdat/out103.csv s=金額%nr; IN=5 OUT=5; 2014/06/04 14:25:11
+#END# kgnumber -x a=順位 e=same i=./indat/dat1.csv o=./outdat/out103x.csv s=2%nr; IN=5 OUT=5; 2014/06/04 14:25:11
+#END# kgnumber -nfn e=same i=./indat/dat1nfn.csv o=./outdat/out103nfn.csv s=2%nr; IN=5 OUT=5; 2014/06/04 14:25:11
+#END# kgnumber -nfno a=順位 e=same i=./indat/dat1.csv o=./outdat/out103nfno.csv s=金額%nr; IN=5 OUT=5; 2014/06/04 14:25:11
+#END# kgnumber a=順位 e=skip i=./indat/dat1.csv o=./outdat/out104.csv s=金額%nr; IN=5 OUT=5; 2014/06/04 14:25:11
+#END# kgnumber -x a=順位 e=skip i=./indat/dat1.csv o=./outdat/out104x.csv s=2%nr; IN=5 OUT=5; 2014/06/04 14:25:11
+#END# kgnumber -nfn e=skip i=./indat/dat1nfn.csv o=./outdat/out104nfn.csv s=2%nr; IN=5 OUT=5; 2014/06/04 14:25:11
+#END# kgnumber -nfno a=順位 e=skip i=./indat/dat1.csv o=./outdat/out104nfno.csv s=金額%nr; IN=5 OUT=5; 2014/06/04 14:25:11
+#END# kgnumber S=10 a=番号 i=./indat/dat1.csv o=./outdat/out105.csv s=金額%nr; IN=5 OUT=5; 2014/06/04 14:25:11
+#END# kgnumber -x S=10 a=番号 i=./indat/dat1.csv o=./outdat/out105x.csv s=2%nr; IN=5 OUT=5; 2014/06/04 14:25:12
+#END# kgnumber -nfn S=10 i=./indat/dat1nfn.csv o=./outdat/out105nfn.csv s=2%nr; IN=5 OUT=5; 2014/06/04 14:25:12
+#END# kgnumber -nfno S=10 a=番号 i=./indat/dat1.csv o=./outdat/out105nfno.csv s=金額%nr; IN=5 OUT=5; 2014/06/04 14:25:12
+#END# kgnumber S=10 a=得点 e=same i=./indat/dat1.csv o=./outdat/out106.csv s=金額%nr; IN=5 OUT=5; 2014/06/04 14:25:12
+#END# kgnumber -x S=10 a=得点 e=same i=./indat/dat1.csv o=./outdat/out106x.csv s=2%nr; IN=5 OUT=5; 2014/06/04 14:25:12
+#END# kgnumber -nfn S=10 e=same i=./indat/dat1nfn.csv o=./outdat/out106nfn.csv s=2%nr; IN=5 OUT=5; 2014/06/04 14:25:12
+#END# kgnumber -nfno S=10 a=得点 e=same i=./indat/dat1.csv o=./outdat/out106nfno.csv s=金額%nr; IN=5 OUT=5; 2014/06/04 14:25:12
+#END# kgnumber S=20 a=番号 e=skip i=./indat/dat1.csv o=./outdat/out107.csv s=金額%nr; IN=5 OUT=5; 2014/06/04 14:25:12
+#END# kgnumber -x S=20 a=番号 e=skip i=./indat/dat1.csv o=./outdat/out107x.csv s=2%nr; IN=5 OUT=5; 2014/06/04 14:25:12
+#END# kgnumber -nfn S=20 e=skip i=./indat/dat1nfn.csv o=./outdat/out107nfn.csv s=2%nr; IN=5 OUT=5; 2014/06/04 14:25:12
+#END# kgnumber S=H a=ランク i=./indat/dat1.csv o=./outdat/out108.csv s=金額%nr; IN=5 OUT=5; 2014/06/04 14:25:12
+#END# kgnumber -x S=H a=ランク i=./indat/dat1.csv o=./outdat/out108x.csv s=2%nr; IN=5 OUT=5; 2014/06/04 14:25:12
+#END# kgnumber -nfn S=H i=./indat/dat1nfn.csv o=./outdat/out108nfn.csv s=2%nr; IN=5 OUT=5; 2014/06/04 14:25:12
+#END# kgnumber -nfno S=H a=ランク i=./indat/dat1.csv o=./outdat/out108nfno.csv s=金額%nr; IN=5 OUT=5; 2014/06/04 14:25:12
+#END# kgnumber S=A a=ランク e=same i=./indat/dat1.csv o=./outdat/out109.csv s=金額%nr; IN=5 OUT=5; 2014/06/04 14:25:12
+#END# kgnumber -x S=A a=ランク e=same i=./indat/dat1.csv o=./outdat/out109x.csv s=2%nr; IN=5 OUT=5; 2014/06/04 14:25:12
+#END# kgnumber -nfn S=A e=same i=./indat/dat1nfn.csv o=./outdat/out109nfn.csv s=2%nr; IN=5 OUT=5; 2014/06/04 14:25:12
+#END# kgnumber -nfno S=A a=ランク e=same i=./indat/dat1.csv o=./outdat/out109nfno.csv s=金額%nr; IN=5 OUT=5; 2014/06/04 14:25:12
+#END# kgnumber S=X a=ランク e=skip i=./indat/dat1.csv o=./outdat/out110.csv s=金額%nr; IN=5 OUT=5; 2014/06/04 14:25:12
+#END# kgnumber -x S=X a=ランク e=skip i=./indat/dat1.csv o=./outdat/out110x.csv s=2%nr; IN=5 OUT=5; 2014/06/04 14:25:12
+#END# kgnumber -nfn S=X e=skip i=./indat/dat1nfn.csv o=./outdat/out110nfn.csv s=2%nr; IN=5 OUT=5; 2014/06/04 14:25:12
+#END# kgnumber -nfno S=X a=ランク e=skip i=./indat/dat1.csv o=./outdat/out110nfno.csv s=金額%nr; IN=5 OUT=5; 2014/06/04 14:25:12
+#END# kgnumber I=8 S=15 a=番号 i=./indat/dat1.csv o=./outdat/out111.csv s=金額%nr; IN=5 OUT=5; 2014/06/04 14:25:12
+#END# kgnumber -x I=8 S=15 a=番号 i=./indat/dat1.csv o=./outdat/out111x.csv s=2%nr; IN=5 OUT=5; 2014/06/04 14:25:12
+#END# kgnumber -nfn I=8 S=15 i=./indat/dat1nfn.csv o=./outdat/out111nfn.csv s=2%nr; IN=5 OUT=5; 2014/06/04 14:25:12
+#END# kgnumber -nfno I=8 S=15 a=番号 i=./indat/dat1.csv o=./outdat/out111nfno.csv s=金額%nr; IN=5 OUT=5; 2014/06/04 14:25:12
+#END# kgnumber I=5 S=10 a=得点 e=same i=./indat/dat1.csv o=./outdat/out112.csv s=金額%nr; IN=5 OUT=5; 2014/06/04 14:25:12
+#END# kgnumber -x I=5 S=10 a=得点 e=same i=./indat/dat1.csv o=./outdat/out112x.csv s=2%nr; IN=5 OUT=5; 2014/06/04 14:25:12
+#END# kgnumber -nfn I=5 S=10 e=same i=./indat/dat1nfn.csv o=./outdat/out112nfn.csv s=2%nr; IN=5 OUT=5; 2014/06/04 14:25:12
+#END# kgnumber -nfno I=5 S=10 a=得点 e=same i=./indat/dat1.csv o=./outdat/out112nfno.csv s=金額%nr; IN=5 OUT=5; 2014/06/04 14:25:12
+#END# kgnumber I=7 S=20 a=番号 e=skip i=./indat/dat1.csv o=./outdat/out113.csv s=金額%nr; IN=5 OUT=5; 2014/06/04 14:25:12
+#END# kgnumber -x I=7 S=20 a=番号 e=skip i=./indat/dat1.csv o=./outdat/out113x.csv s=2%nr; IN=5 OUT=5; 2014/06/04 14:25:12
+#END# kgnumber -nfn I=7 S=20 e=skip i=./indat/dat1nfn.csv o=./outdat/out113nfn.csv s=2%nr; IN=5 OUT=5; 2014/06/04 14:25:12
+#END# kgnumber -nfno I=7 S=20 a=番号 e=skip i=./indat/dat1.csv o=./outdat/out113nfno.csv s=金額%nr; IN=5 OUT=5; 2014/06/04 14:25:12
+#END# kgnumber I=3 S=A a=ランク i=./indat/dat1.csv o=./outdat/out114.csv s=金額%nr; IN=5 OUT=5; 2014/06/04 14:25:12
+#END# kgnumber -x I=3 S=A a=ランク i=./indat/dat1.csv o=./outdat/out114x.csv s=2%nr; IN=5 OUT=5; 2014/06/04 14:25:12
+#END# kgnumber -nfn I=3 S=A i=./indat/dat1nfn.csv o=./outdat/out114nfn.csv s=2%nr; IN=5 OUT=5; 2014/06/04 14:25:12
+#END# kgnumber -nfno I=3 S=A a=ランク i=./indat/dat1.csv o=./outdat/out114nfno.csv s=金額%nr; IN=5 OUT=5; 2014/06/04 14:25:12
+#END# kgnumber I=5 S=H a=ランク e=same i=./indat/dat1.csv o=./outdat/out115.csv s=金額%nr; IN=5 OUT=5; 2014/06/04 14:25:12
+#END# kgnumber -x I=5 S=H a=ランク e=same i=./indat/dat1.csv o=./outdat/out115x.csv s=2%nr; IN=5 OUT=5; 2014/06/04 14:25:12
+#END# kgnumber -nfn I=5 S=H e=same i=./indat/dat1nfn.csv o=./outdat/out115nfn.csv s=2%nr; IN=5 OUT=5; 2014/06/04 14:25:12
+#END# kgnumber -nfno I=5 S=H a=ランク e=same i=./indat/dat1.csv o=./outdat/out115nfno.csv s=金額%nr; IN=5 OUT=5; 2014/06/04 14:25:13
+#END# kgnumber I=10 S=X a=ランク e=skip i=./indat/dat1.csv o=./outdat/out116.csv s=金額%nr; IN=5 OUT=5; 2014/06/04 14:25:13
+#END# kgnumber -x I=10 S=X a=ランク e=skip i=./indat/dat1.csv o=./outdat/out116x.csv s=2%nr; IN=5 OUT=5; 2014/06/04 14:25:13
+#END# kgnumber -nfn I=10 S=X e=skip i=./indat/dat1nfn.csv o=./outdat/out116nfn.csv s=2%nr; IN=5 OUT=5; 2014/06/04 14:25:13
+#END# kgnumber -nfno I=10 S=X a=ランク e=skip i=./indat/dat1.csv o=./outdat/out116nfno.csv s=金額%nr; IN=5 OUT=5; 2014/06/04 14:25:13
+#END# kgnumber a=番号 i=./indat/dat2.csv k=日付 o=./outdat/out117.csv s=金額%nr; IN=10 OUT=10; 2014/06/04 14:25:13
+#END# kgnumber -x a=番号 i=./indat/dat2.csv k=0 o=./outdat/out117x.csv s=3%nr; IN=10 OUT=10; 2014/06/04 14:25:13
+#END# kgnumber -nfn i=./indat/dat2nfn.csv k=0 o=./outdat/out117nfn.csv s=3%nr; IN=10 OUT=10; 2014/06/04 14:25:13
+#END# kgnumber -nfno a=番号 i=./indat/dat2.csv k=日付 o=./outdat/out117nfno.csv s=金額%nr; IN=10 OUT=10; 2014/06/04 14:25:13
+#END# kgnumber -q a=番号 i=./indat/dat2.csv k=日付 o=./outdat/out117q.csv s=金額%nr; IN=10 OUT=10; 2014/06/04 14:25:13
+#END# kgnumber -q -x a=番号 i=./indat/dat2.csv k=0 o=./outdat/out117qx.csv s=3%nr; IN=10 OUT=10; 2014/06/04 14:25:13
+#END# kgnumber a=順位 e=same i=./indat/dat2.csv k=日付 o=./outdat/out118.csv s=金額%nr; IN=10 OUT=10; 2014/06/04 14:25:13
+#END# kgnumber -x a=順位 e=same i=./indat/dat2.csv k=0 o=./outdat/out118x.csv s=3%nr; IN=10 OUT=10; 2014/06/04 14:25:13
+#END# kgnumber -nfn e=same i=./indat/dat2nfn.csv k=0 o=./outdat/out118nfn.csv s=3%nr; IN=10 OUT=10; 2014/06/04 14:25:13
+#END# kgnumber -nfno a=順位 e=same i=./indat/dat2.csv k=日付 o=./outdat/out118nfno.csv s=金額%nr; IN=10 OUT=10; 2014/06/04 14:25:13
+#END# kgnumber a=順位 e=skip i=./indat/dat2.csv k=日付 o=./outdat/out119.csv s=金額%nr; IN=10 OUT=10; 2014/06/04 14:25:13
+#END# kgnumber -x a=順位 e=skip i=./indat/dat2.csv k=0 o=./outdat/out119x.csv s=3%nr; IN=10 OUT=10; 2014/06/04 14:25:13
+#END# kgnumber -nfn e=skip i=./indat/dat2nfn.csv k=0 o=./outdat/out119nfn.csv s=3%nr; IN=10 OUT=10; 2014/06/04 14:25:13
+#END# kgnumber -nfno a=順位 e=skip i=./indat/dat2.csv k=日付 o=./outdat/out119nfno.csv s=金額%nr; IN=10 OUT=10; 2014/06/04 14:25:13
+#END# kgnumber S=10 a=番号 i=./indat/dat2.csv k=日付 o=./outdat/out120.csv s=金額%nr; IN=10 OUT=10; 2014/06/04 14:25:13
+#END# kgnumber -x S=10 a=番号 i=./indat/dat2.csv k=0 o=./outdat/out120x.csv s=3%nr; IN=10 OUT=10; 2014/06/04 14:25:13
+#END# kgnumber -nfn S=10 i=./indat/dat2nfn.csv k=0 o=./outdat/out120nfn.csv s=3%nr; IN=10 OUT=10; 2014/06/04 14:25:13
+#END# kgnumber -nfno S=10 a=番号 i=./indat/dat2.csv k=日付 o=./outdat/out120nfno.csv s=金額%nr; IN=10 OUT=10; 2014/06/04 14:25:13
+#END# kgnumber S=10 a=得点 e=same i=./indat/dat2.csv k=日付 o=./outdat/out121.csv s=金額%nr; IN=10 OUT=10; 2014/06/04 14:25:13
+#END# kgnumber -x S=10 a=得点 e=same i=./indat/dat2.csv k=0 o=./outdat/out121x.csv s=3%nr; IN=10 OUT=10; 2014/06/04 14:25:13
+#END# kgnumber -nfn S=10 e=same i=./indat/dat2nfn.csv k=0 o=./outdat/out121nfn.csv s=3%nr; IN=10 OUT=10; 2014/06/04 14:25:13
+#END# kgnumber -nfno S=10 a=得点 e=same i=./indat/dat2.csv k=日付 o=./outdat/out121nfno.csv s=金額%nr; IN=10 OUT=10; 2014/06/04 14:25:13
+#END# kgnumber S=20 a=番号 e=skip i=./indat/dat2.csv k=日付 o=./outdat/out122.csv s=金額%nr; IN=10 OUT=10; 2014/06/04 14:25:13
+#END# kgnumber -x S=20 a=番号 e=skip i=./indat/dat2.csv k=0 o=./outdat/out122x.csv s=3%nr; IN=10 OUT=10; 2014/06/04 14:25:13
+#END# kgnumber -nfn S=20 e=skip i=./indat/dat2nfn.csv k=0 o=./outdat/out122nfn.csv s=3%nr; IN=10 OUT=10; 2014/06/04 14:25:13
+#END# kgnumber -nfno S=20 a=番号 e=skip i=./indat/dat2.csv k=日付 o=./outdat/out122nfno.csv s=金額%nr; IN=10 OUT=10; 2014/06/04 14:25:13
+#END# kgnumber S=H a=ランク i=./indat/dat2.csv k=日付 o=./outdat/out123.csv s=金額%nr; IN=10 OUT=10; 2014/06/04 14:25:13
+#END# kgnumber -x S=H a=ランク i=./indat/dat2.csv k=0 o=./outdat/out123x.csv s=3%nr; IN=10 OUT=10; 2014/06/04 14:25:13
+#END# kgnumber -nfn S=H i=./indat/dat2nfn.csv k=0 o=./outdat/out123nfn.csv s=3%nr; IN=10 OUT=10; 2014/06/04 14:25:13
+#END# kgnumber -nfno S=H a=ランク i=./indat/dat2.csv k=日付 o=./outdat/out123nfno.csv s=金額%nr; IN=10 OUT=10; 2014/06/04 14:25:13
+#END# kgnumber S=A a=ランク e=same i=./indat/dat2.csv k=日付 o=./outdat/out124.csv s=金額%nr; IN=10 OUT=10; 2014/06/04 14:25:13
+#END# kgnumber -x S=A a=ランク e=same i=./indat/dat2.csv k=0 o=./outdat/out124x.csv s=3%nr; IN=10 OUT=10; 2014/06/04 14:25:13
+#END# kgnumber -nfn S=A e=same i=./indat/dat2nfn.csv k=0 o=./outdat/out124nfn.csv s=3%nr; IN=10 OUT=10; 2014/06/04 14:25:13
+#END# kgnumber -nfno S=A a=ランク e=same i=./indat/dat2.csv k=日付 o=./outdat/out124nfno.csv s=金額%nr; IN=10 OUT=10; 2014/06/04 14:25:13
+#END# kgnumber S=X a=ランク e=skip i=./indat/dat2.csv k=日付 o=./outdat/out125.csv s=金額%nr; IN=10 OUT=10; 2014/06/04 14:25:13
+#END# kgnumber -x S=X a=ランク e=skip i=./indat/dat2.csv k=0 o=./outdat/out125x.csv s=3%nr; IN=10 OUT=10; 2014/06/04 14:25:13
+#END# kgnumber -nfn S=X e=skip i=./indat/dat2nfn.csv k=0 o=./outdat/out125nfn.csv s=3%nr; IN=10 OUT=10; 2014/06/04 14:25:13
+#END# kgnumber -nfno S=X a=ランク e=skip i=./indat/dat2.csv k=日付 o=./outdat/out125nfno.csv s=金額%nr; IN=10 OUT=10; 2014/06/04 14:25:14
+#END# kgnumber I=8 S=15 a=番号 i=./indat/dat2.csv k=日付 o=./outdat/out126.csv s=金額%nr; IN=10 OUT=10; 2014/06/04 14:25:14
+#END# kgnumber -x I=8 S=15 a=番号 i=./indat/dat2.csv k=0 o=./outdat/out126x.csv s=3%nr; IN=10 OUT=10; 2014/06/04 14:25:14
+#END# kgnumber -nfn I=8 S=15 i=./indat/dat2nfn.csv k=0 o=./outdat/out126nfn.csv s=3%nr; IN=10 OUT=10; 2014/06/04 14:25:14
+#END# kgnumber -nfno I=8 S=15 a=番号 i=./indat/dat2.csv k=日付 o=./outdat/out126nfno.csv s=金額%nr; IN=10 OUT=10; 2014/06/04 14:25:14
+#END# kgnumber I=5 S=10 a=得点 e=same i=./indat/dat2.csv k=日付 o=./outdat/out127.csv s=金額%nr; IN=10 OUT=10; 2014/06/04 14:25:14
+#END# kgnumber -x I=5 S=10 a=得点 e=same i=./indat/dat2.csv k=0 o=./outdat/out127x.csv s=3%nr; IN=10 OUT=10; 2014/06/04 14:25:14
+#END# kgnumber -nfn I=5 S=10 e=same i=./indat/dat2nfn.csv k=0 o=./outdat/out127nfn.csv s=3%nr; IN=10 OUT=10; 2014/06/04 14:25:14
+#END# kgnumber -nfno I=5 S=10 a=得点 e=same i=./indat/dat2.csv k=日付 o=./outdat/out127nfno.csv s=金額%nr; IN=10 OUT=10; 2014/06/04 14:25:14
+#END# kgnumber I=7 S=20 a=番号 e=skip i=./indat/dat2.csv k=日付 o=./outdat/out128.csv s=金額%nr; IN=10 OUT=10; 2014/06/04 14:25:14
+#END# kgnumber -x I=7 S=20 a=番号 e=skip i=./indat/dat2.csv k=0 o=./outdat/out128x.csv s=3%nr; IN=10 OUT=10; 2014/06/04 14:25:14
+#END# kgnumber -nfn I=7 S=20 e=skip i=./indat/dat2nfn.csv k=0 o=./outdat/out128nfn.csv s=3%nr; IN=10 OUT=10; 2014/06/04 14:25:14
+#END# kgnumber -nfno I=7 S=20 a=番号 e=skip i=./indat/dat2.csv k=日付 o=./outdat/out128nfno.csv s=金額%nr; IN=10 OUT=10; 2014/06/04 14:25:14
+#END# kgnumber I=3 S=A a=ランク i=./indat/dat2.csv k=日付 o=./outdat/out129.csv s=金額%nr; IN=10 OUT=10; 2014/06/04 14:25:14
+#END# kgnumber -x I=3 S=A a=ランク i=./indat/dat2.csv k=0 o=./outdat/out129x.csv s=3%nr; IN=10 OUT=10; 2014/06/04 14:25:14
+#END# kgnumber -nfn I=3 S=A i=./indat/dat2nfn.csv k=0 o=./outdat/out129nfn.csv s=3%nr; IN=10 OUT=10; 2014/06/04 14:25:14
+#END# kgnumber -nfno I=3 S=A a=ランク i=./indat/dat2.csv k=日付 o=./outdat/out129nfno.csv s=金額%nr; IN=10 OUT=10; 2014/06/04 14:25:14
+#END# kgnumber I=5 S=H a=ランク e=same i=./indat/dat2.csv k=日付 o=./outdat/out130.csv s=金額%nr; IN=10 OUT=10; 2014/06/04 14:25:14
+#END# kgnumber -x I=5 S=H a=ランク e=same i=./indat/dat2.csv k=0 o=./outdat/out130x.csv s=3%nr; IN=10 OUT=10; 2014/06/04 14:25:14
+#END# kgnumber -nfn I=5 S=H e=same i=./indat/dat2nfn.csv k=0 o=./outdat/out130nfn.csv s=3%nr; IN=10 OUT=10; 2014/06/04 14:25:14
+#END# kgnumber -nfno I=5 S=H a=ランク e=same i=./indat/dat2.csv k=日付 o=./outdat/out130nfno.csv s=金額%nr; IN=10 OUT=10; 2014/06/04 14:25:14
+#END# kgnumber I=10 S=X a=ランク e=skip i=./indat/dat2.csv k=日付 o=./outdat/out131.csv s=金額%nr; IN=10 OUT=10; 2014/06/04 14:25:14
+#END# kgnumber -x I=10 S=X a=ランク e=skip i=./indat/dat2.csv k=0 o=./outdat/out131x.csv s=3%nr; IN=10 OUT=10; 2014/06/04 14:25:14
+#END# kgnumber -nfn I=10 S=X e=skip i=./indat/dat2nfn.csv k=0 o=./outdat/out131nfn.csv s=3%nr; IN=10 OUT=10; 2014/06/04 14:25:14
+#END# kgnumber -nfno I=10 S=X a=ランク e=skip i=./indat/dat2.csv k=日付 o=./outdat/out131nfno.csv s=金額%nr; IN=10 OUT=10; 2014/06/04 14:25:14
+#END# kgnumber -B a=番号 i=./indat/dat2.csv k=日付 o=./outdat/out132.csv; IN=10 OUT=10; 2014/06/04 14:25:14
+#END# kgnumber -B -x a=番号 i=./indat/dat2.csv k=0 o=./outdat/out132x.csv; IN=10 OUT=10; 2014/06/04 14:25:14
+#END# kgnumber -B -nfn i=./indat/dat2nfn.csv k=0 o=./outdat/out132nfn.csv; IN=10 OUT=10; 2014/06/04 14:25:14
+#END# kgnumber -B -nfno a=番号 i=./indat/dat2.csv k=日付 o=./outdat/out132nfno.csv; IN=10 OUT=10; 2014/06/04 14:25:14
+#END# kgnumber -B S=10 a=番号 i=./indat/dat2.csv k=日付 o=./outdat/out133.csv; IN=10 OUT=10; 2014/06/04 14:25:14
+#END# kgnumber -B -x S=10 a=番号 i=./indat/dat2.csv k=0 o=./outdat/out133x.csv; IN=10 OUT=10; 2014/06/04 14:25:14
+#END# kgnumber -B -nfn S=10 i=./indat/dat2nfn.csv k=0 o=./outdat/out133nfn.csv; IN=10 OUT=10; 2014/06/04 14:25:14
+#END# kgnumber -B -nfno S=10 a=番号 i=./indat/dat2.csv k=日付 o=./outdat/out133nfno.csv; IN=10 OUT=10; 2014/06/04 14:25:14
+#END# kgnumber -B S=H a=ランク i=./indat/dat2.csv k=日付 o=./outdat/out134.csv; IN=10 OUT=10; 2014/06/04 14:25:14
+#END# kgnumber -B -x S=H a=ランク i=./indat/dat2.csv k=0 o=./outdat/out134x.csv; IN=10 OUT=10; 2014/06/04 14:25:14
+#END# kgnumber -B -nfn S=H i=./indat/dat2nfn.csv k=0 o=./outdat/out134nfn.csv; IN=10 OUT=10; 2014/06/04 14:25:14
+#END# kgnumber -B -nfno S=H a=ランク i=./indat/dat2.csv k=日付 o=./outdat/out134nfno.csv; IN=10 OUT=10; 2014/06/04 14:25:14
+#END# kgnumber -B I=8 S=15 a=番号 i=./indat/dat2.csv k=日付 o=./outdat/out135.csv; IN=10 OUT=10; 2014/06/04 14:25:14
+#END# kgnumber -B -x I=8 S=15 a=番号 i=./indat/dat2.csv k=0 o=./outdat/out135x.csv; IN=10 OUT=10; 2014/06/04 14:25:14
+#END# kgnumber -B -nfn I=8 S=15 i=./indat/dat2nfn.csv k=0 o=./outdat/out135nfn.csv; IN=10 OUT=10; 2014/06/04 14:25:14
+#END# kgnumber -B -nfno I=8 S=15 a=番号 i=./indat/dat2.csv k=日付 o=./outdat/out135nfno.csv; IN=10 OUT=10; 2014/06/04 14:25:15
+#END# kgnumber -B I=3 S=A a=ランク i=./indat/dat2.csv k=日付 o=./outdat/out136.csv; IN=10 OUT=10; 2014/06/04 14:25:15
+#END# kgnumber -B -x I=3 S=A a=ランク i=./indat/dat2.csv k=0 o=./outdat/out136x.csv; IN=10 OUT=10; 2014/06/04 14:25:15
+#END# kgnumber -B -nfn I=3 S=A i=./indat/dat2nfn.csv k=0 o=./outdat/out136nfn.csv; IN=10 OUT=10; 2014/06/04 14:25:15
+#END# kgnumber -B -nfno I=3 S=A a=ランク i=./indat/dat2.csv k=日付 o=./outdat/out136nfno.csv; IN=10 OUT=10; 2014/06/04 14:25:15
+#END# kgnumber a=順位 e=seq i=./indat/dat3.csv o=./outdat/out137.csv s=顧客,金額%nr; IN=5 OUT=5; 2014/06/04 14:25:15
+#END# kgnumber -x a=順位 e=seq i=./indat/dat3.csv o=./outdat/out137x.csv s=0,2%nr; IN=5 OUT=5; 2014/06/04 14:25:15
+#END# kgnumber -nfn e=seq i=./indat/dat3nfn.csv o=./outdat/out137nfn.csv s=0,2%nr; IN=5 OUT=5; 2014/06/04 14:25:15
+#END# kgnumber -nfno a=順位 e=seq i=./indat/dat3.csv o=./outdat/out137nfno.csv s=顧客,金額%nr; IN=5 OUT=5; 2014/06/04 14:25:15
+#END# kgnumber a=順位 e=same i=./indat/dat3.csv o=./outdat/out138.csv s=顧客,金額%nr; IN=5 OUT=5; 2014/06/04 14:25:15
+#END# kgnumber -x a=順位 e=same i=./indat/dat3.csv o=./outdat/out138x.csv s=0,2%nr; IN=5 OUT=5; 2014/06/04 14:25:15
+#END# kgnumber -nfn e=same i=./indat/dat3nfn.csv o=./outdat/out138nfn.csv s=0,2%nr; IN=5 OUT=5; 2014/06/04 14:25:15
+#END# kgnumber -nfno a=順位 e=same i=./indat/dat3.csv o=./outdat/out138nfno.csv s=顧客,金額%nr; IN=5 OUT=5; 2014/06/04 14:25:15
+#END# kgnumber a=順位 e=skip i=./indat/dat3.csv o=./outdat/out139.csv s=顧客,金額%nr; IN=5 OUT=5; 2014/06/04 14:25:15
+#END# kgnumber -x a=順位 e=skip i=./indat/dat3.csv o=./outdat/out139x.csv s=0,2%nr; IN=5 OUT=5; 2014/06/04 14:25:15
+#END# kgnumber -nfn e=skip i=./indat/dat3nfn.csv o=./outdat/out139nfn.csv s=0,2%nr; IN=5 OUT=5; 2014/06/04 14:25:15
+#END# kgnumber -nfno a=順位 e=skip i=./indat/dat3.csv o=./outdat/out139nfno.csv s=顧客,金額%nr; IN=5 OUT=5; 2014/06/04 14:25:15
+#END# kgnumber a=順位 i=./indat/dat4.csv k=日付 o=./outdat/out140.csv s=顧客,金額%nr; IN=10 OUT=10; 2014/06/04 14:25:15
+#END# kgnumber -x a=順位 i=./indat/dat4.csv k=0 o=./outdat/out140x.csv s=1,3%nr; IN=10 OUT=10; 2014/06/04 14:25:15
+#END# kgnumber -nfn i=./indat/dat4nfn.csv k=0 o=./outdat/out140nfn.csv s=1,3%nr; IN=10 OUT=10; 2014/06/04 14:25:15
+#END# kgnumber -nfno a=順位 i=./indat/dat4.csv k=日付 o=./outdat/out140nfno.csv s=顧客,金額%nr; IN=10 OUT=10; 2014/06/04 14:25:15
+#END# kgnumber a=順位 e=same i=./indat/dat4.csv k=日付 o=./outdat/out141.csv s=顧客,金額%nr; IN=10 OUT=10; 2014/06/04 14:25:15
+#END# kgnumber -x a=順位 e=same i=./indat/dat4.csv k=0 o=./outdat/out141x.csv s=1,3%nr; IN=10 OUT=10; 2014/06/04 14:25:15
+#END# kgnumber -nfn e=same i=./indat/dat4nfn.csv k=0 o=./outdat/out141nfn.csv s=1,3%nr; IN=10 OUT=10; 2014/06/04 14:25:15
+#END# kgnumber -nfno a=順位 e=same i=./indat/dat4.csv k=日付 o=./outdat/out141nfno.csv s=顧客,金額%nr; IN=10 OUT=10; 2014/06/04 14:25:15
+#END# kgnumber a=順位 e=skip i=./indat/dat4.csv k=日付 o=./outdat/out142.csv s=顧客,金額%nr; IN=10 OUT=10; 2014/06/04 14:25:15
+#END# kgnumber -x a=順位 e=skip i=./indat/dat4.csv k=0 o=./outdat/out142x.csv s=1,3%nr; IN=10 OUT=10; 2014/06/04 14:25:15
+#END# kgnumber -nfn e=skip i=./indat/dat4nfn.csv k=0 o=./outdat/out142nfn.csv s=1,3%nr; IN=10 OUT=10; 2014/06/04 14:25:15
+#END# kgnumber -nfno a=順位 e=skip i=./indat/dat4.csv k=日付 o=./outdat/out142nfno.csv s=顧客,金額%nr; IN=10 OUT=10; 2014/06/04 14:25:15
+#END# kgnumber a=番号 i=./indat/dat5.csv o=./outdat/out143.csv s=金額%nr; IN=5 OUT=5; 2014/06/04 14:25:15
+#END# kgnumber -x a=番号 i=./indat/dat5.csv o=./outdat/out143x.csv s=2%nr; IN=5 OUT=5; 2014/06/04 14:25:15
+#END# kgnumber -nfn i=./indat/dat5nfn.csv o=./outdat/out143nfn.csv s=2%nr; IN=5 OUT=5; 2014/06/04 14:25:15
+#END# kgnumber a=順位 e=seq i=./indat/dat5.csv o=./outdat/out144.csv s=金額%nr; IN=5 OUT=5; 2014/06/04 14:25:15
+#END# kgnumber -x a=順位 e=seq i=./indat/dat5.csv o=./outdat/out144x.csv s=2%nr; IN=5 OUT=5; 2014/06/04 14:25:15
+#END# kgnumber -nfn e=seq i=./indat/dat5nfn.csv o=./outdat/out144nfn.csv s=2%nr; IN=5 OUT=5; 2014/06/04 14:25:15
+#END# kgnumber a=順位 e=same i=./indat/dat5.csv o=./outdat/out145.csv s=金額%nr; IN=5 OUT=5; 2014/06/04 14:25:15
+#END# kgnumber -x a=順位 e=same i=./indat/dat5.csv o=./outdat/out145x.csv s=2%nr; IN=5 OUT=5; 2014/06/04 14:25:15
+#END# kgnumber -nfn e=same i=./indat/dat5nfn.csv o=./outdat/out145nfn.csv s=2%nr; IN=5 OUT=5; 2014/06/04 14:25:15
+#END# kgnumber a=順位 e=skip i=./indat/dat5.csv o=./outdat/out146.csv s=金額%nr; IN=5 OUT=5; 2014/06/04 14:25:15
+#END# kgnumber -x a=順位 e=skip i=./indat/dat5.csv o=./outdat/out146x.csv s=2%nr; IN=5 OUT=5; 2014/06/04 14:25:15
+#END# kgnumber -nfn e=skip i=./indat/dat5nfn.csv o=./outdat/out146nfn.csv s=2%nr; IN=5 OUT=5; 2014/06/04 14:25:15
+#END# kgnumber S=10 a=番号 i=./indat/dat5.csv o=./outdat/out147.csv s=金額%nr; IN=5 OUT=5; 2014/06/04 14:25:16
+#END# kgnumber -x S=10 a=番号 i=./indat/dat5.csv o=./outdat/out147x.csv s=2%nr; IN=5 OUT=5; 2014/06/04 14:25:16
+#END# kgnumber -nfn S=10 i=./indat/dat5nfn.csv o=./outdat/out147nfn.csv s=2%nr; IN=5 OUT=5; 2014/06/04 14:25:16
+#END# kgnumber S=10 a=得点 e=same i=./indat/dat5.csv o=./outdat/out148.csv s=金額%nr; IN=5 OUT=5; 2014/06/04 14:25:16
+#END# kgnumber -x S=10 a=得点 e=same i=./indat/dat5.csv o=./outdat/out148x.csv s=2%nr; IN=5 OUT=5; 2014/06/04 14:25:16
+#END# kgnumber -nfn S=10 e=same i=./indat/dat5nfn.csv o=./outdat/out148nfn.csv s=2%nr; IN=5 OUT=5; 2014/06/04 14:25:16
+#END# kgnumber S=20 a=番号 e=skip i=./indat/dat5.csv o=./outdat/out149.csv s=金額%nr; IN=5 OUT=5; 2014/06/04 14:25:16
+#END# kgnumber -x S=20 a=番号 e=skip i=./indat/dat5.csv o=./outdat/out149x.csv s=2%nr; IN=5 OUT=5; 2014/06/04 14:25:16
+#END# kgnumber -nfn S=20 e=skip i=./indat/dat5nfn.csv o=./outdat/out149nfn.csv s=2%nr; IN=5 OUT=5; 2014/06/04 14:25:16
+#END# kgnumber S=H a=ランク i=./indat/dat5.csv o=./outdat/out150.csv s=金額%nr; IN=5 OUT=5; 2014/06/04 14:25:16
+#END# kgnumber -x S=H a=ランク i=./indat/dat5.csv o=./outdat/out150x.csv s=2%nr; IN=5 OUT=5; 2014/06/04 14:25:16
+#END# kgnumber -nfn S=H i=./indat/dat5nfn.csv o=./outdat/out150nfn.csv s=2%nr; IN=5 OUT=5; 2014/06/04 14:25:16
+#END# kgnumber S=A a=ランク e=same i=./indat/dat5.csv o=./outdat/out151.csv s=金額%nr; IN=5 OUT=5; 2014/06/04 14:25:16
+#END# kgnumber -x S=A a=ランク e=same i=./indat/dat5.csv o=./outdat/out151x.csv s=2%nr; IN=5 OUT=5; 2014/06/04 14:25:16
+#END# kgnumber -nfn S=A e=same i=./indat/dat5nfn.csv o=./outdat/out151nfn.csv s=2%nr; IN=5 OUT=5; 2014/06/04 14:25:16
+#END# kgnumber S=X a=ランク e=skip i=./indat/dat5.csv o=./outdat/out152.csv s=金額%nr; IN=5 OUT=5; 2014/06/04 14:25:16
+#END# kgnumber -x S=X a=ランク e=skip i=./indat/dat5.csv o=./outdat/out152x.csv s=2%nr; IN=5 OUT=5; 2014/06/04 14:25:16
+#END# kgnumber -nfn S=X e=skip i=./indat/dat5nfn.csv o=./outdat/out152nfn.csv s=2%nr; IN=5 OUT=5; 2014/06/04 14:25:16
+#END# kgnumber I=8 S=15 a=番号 i=./indat/dat5.csv o=./outdat/out153.csv s=金額%nr; IN=5 OUT=5; 2014/06/04 14:25:16
+#END# kgnumber -x I=8 S=15 a=番号 i=./indat/dat5.csv o=./outdat/out153x.csv s=2%nr; IN=5 OUT=5; 2014/06/04 14:25:16
+#END# kgnumber -nfn I=8 S=15 i=./indat/dat5nfn.csv o=./outdat/out153nfn.csv s=2%nr; IN=5 OUT=5; 2014/06/04 14:25:16
+#END# kgnumber I=5 S=10 a=得点 e=same i=./indat/dat5.csv o=./outdat/out154.csv s=金額%nr; IN=5 OUT=5; 2014/06/04 14:25:16
+#END# kgnumber -x I=5 S=10 a=得点 e=same i=./indat/dat5.csv o=./outdat/out154x.csv s=2%nr; IN=5 OUT=5; 2014/06/04 14:25:16
+#END# kgnumber -nfn I=5 S=10 e=same i=./indat/dat5nfn.csv o=./outdat/out154nfn.csv s=2%nr; IN=5 OUT=5; 2014/06/04 14:25:16
+#END# kgnumber I=7 S=20 a=番号 e=skip i=./indat/dat5.csv o=./outdat/out155.csv s=金額%nr; IN=5 OUT=5; 2014/06/04 14:25:16
+#END# kgnumber -x I=7 S=20 a=番号 e=skip i=./indat/dat5.csv o=./outdat/out155x.csv s=2%nr; IN=5 OUT=5; 2014/06/04 14:25:16
+#END# kgnumber -nfn I=7 S=20 e=skip i=./indat/dat5nfn.csv o=./outdat/out155nfn.csv s=2%nr; IN=5 OUT=5; 2014/06/04 14:25:16
+#END# kgnumber I=3 S=A a=ランク i=./indat/dat5.csv o=./outdat/out156.csv s=金額%nr; IN=5 OUT=5; 2014/06/04 14:25:16
+#END# kgnumber -x I=3 S=A a=ランク i=./indat/dat5.csv o=./outdat/out156x.csv s=2%nr; IN=5 OUT=5; 2014/06/04 14:25:16
+#END# kgnumber -nfn I=3 S=A i=./indat/dat5nfn.csv o=./outdat/out156nfn.csv s=2%nr; IN=5 OUT=5; 2014/06/04 14:25:16
+#END# kgnumber I=5 S=H a=ランク e=same i=./indat/dat5.csv o=./outdat/out157.csv s=金額%nr; IN=5 OUT=5; 2014/06/04 14:25:16
+#END# kgnumber -x I=5 S=H a=ランク e=same i=./indat/dat5.csv o=./outdat/out157x.csv s=2%nr; IN=5 OUT=5; 2014/06/04 14:25:16
+#END# kgnumber -nfn I=5 S=H e=same i=./indat/dat5nfn.csv o=./outdat/out157nfn.csv s=2%nr; IN=5 OUT=5; 2014/06/04 14:25:16
+#END# kgnumber I=10 S=X a=ランク e=skip i=./indat/dat5.csv o=./outdat/out158.csv s=金額%nr; IN=5 OUT=5; 2014/06/04 14:25:16
+#END# kgnumber -x I=10 S=X a=ランク e=skip i=./indat/dat5.csv o=./outdat/out158x.csv s=2%nr; IN=5 OUT=5; 2014/06/04 14:25:16
+#END# kgnumber -nfn I=10 S=X e=skip i=./indat/dat5nfn.csv o=./outdat/out158nfn.csv s=2%nr; IN=5 OUT=5; 2014/06/04 14:25:16
+#END# kgnumber a=番号 i=./indat/dat6.csv k=日付 o=./outdat/out159.csv s=金額%nr; IN=13 OUT=13; 2014/06/04 14:25:16
+#END# kgnumber -x a=番号 i=./indat/dat6.csv k=0 o=./outdat/out159x.csv s=3%nr; IN=13 OUT=13; 2014/06/04 14:25:16
+#END# kgnumber -nfn i=./indat/dat6nfn.csv k=0 o=./outdat/out159nfn.csv s=3%nr; IN=13 OUT=13; 2014/06/04 14:25:16
+#END# kgnumber a=順位 e=same i=./indat/dat6.csv k=日付 o=./outdat/out160.csv s=金額%nr; IN=13 OUT=13; 2014/06/04 14:25:16
+#END# kgnumber -x a=順位 e=same i=./indat/dat6.csv k=0 o=./outdat/out160x.csv s=3%nr; IN=13 OUT=13; 2014/06/04 14:25:16
+#END# kgnumber -nfn e=same i=./indat/dat6nfn.csv k=0 o=./outdat/out160nfn.csv s=3%nr; IN=13 OUT=13; 2014/06/04 14:25:16
+#END# kgnumber a=順位 e=skip i=./indat/dat6.csv k=日付 o=./outdat/out161.csv s=金額%nr; IN=13 OUT=13; 2014/06/04 14:25:16
+#END# kgnumber -x a=順位 e=skip i=./indat/dat6.csv k=0 o=./outdat/out161x.csv s=3%nr; IN=13 OUT=13; 2014/06/04 14:25:16
+#END# kgnumber -nfn e=skip i=./indat/dat6nfn.csv k=0 o=./outdat/out161nfn.csv s=3%nr; IN=13 OUT=13; 2014/06/04 14:25:17
+#END# kgnumber S=10 a=番号 i=./indat/dat6.csv k=日付 o=./outdat/out162.csv s=金額%nr; IN=13 OUT=13; 2014/06/04 14:25:17
+#END# kgnumber -x S=10 a=番号 i=./indat/dat6.csv k=0 o=./outdat/out162x.csv s=3%nr; IN=13 OUT=13; 2014/06/04 14:25:17
+#END# kgnumber -nfn S=10 i=./indat/dat6nfn.csv k=0 o=./outdat/out162nfn.csv s=3%nr; IN=13 OUT=13; 2014/06/04 14:25:17
+#END# kgnumber S=10 a=得点 e=same i=./indat/dat6.csv k=日付 o=./outdat/out163.csv s=金額%nr; IN=13 OUT=13; 2014/06/04 14:25:17
+#END# kgnumber -x S=10 a=得点 e=same i=./indat/dat6.csv k=0 o=./outdat/out163x.csv s=3%nr; IN=13 OUT=13; 2014/06/04 14:25:17
+#END# kgnumber -nfn S=10 e=same i=./indat/dat6nfn.csv k=0 o=./outdat/out163nfn.csv s=3%nr; IN=13 OUT=13; 2014/06/04 14:25:17
+#END# kgnumber S=20 a=番号 e=skip i=./indat/dat6.csv k=日付 o=./outdat/out164.csv s=金額%nr; IN=13 OUT=13; 2014/06/04 14:25:17
+#END# kgnumber -x S=20 a=番号 e=skip i=./indat/dat6.csv k=0 o=./outdat/out164x.csv s=3%nr; IN=13 OUT=13; 2014/06/04 14:25:17
+#END# kgnumber -nfn S=20 e=skip i=./indat/dat6nfn.csv k=0 o=./outdat/out164nfn.csv s=3%nr; IN=13 OUT=13; 2014/06/04 14:25:17
+#END# kgnumber S=H a=ランク i=./indat/dat6.csv k=日付 o=./outdat/out165.csv s=金額%nr; IN=13 OUT=13; 2014/06/04 14:25:17
+#END# kgnumber -x S=H a=ランク i=./indat/dat6.csv k=0 o=./outdat/out165x.csv s=3%nr; IN=13 OUT=13; 2014/06/04 14:25:17
+#END# kgnumber -nfn S=H i=./indat/dat6nfn.csv k=0 o=./outdat/out165nfn.csv s=3%nr; IN=13 OUT=13; 2014/06/04 14:25:17
+#END# kgnumber S=A a=ランク e=same i=./indat/dat6.csv k=日付 o=./outdat/out166.csv s=金額%nr; IN=13 OUT=13; 2014/06/04 14:25:17
+#END# kgnumber -x S=A a=ランク e=same i=./indat/dat6.csv k=0 o=./outdat/out166x.csv s=3%nr; IN=13 OUT=13; 2014/06/04 14:25:17
+#END# kgnumber -nfn S=A e=same i=./indat/dat6nfn.csv k=0 o=./outdat/out166nfn.csv s=3%nr; IN=13 OUT=13; 2014/06/04 14:25:17
+#END# kgnumber S=X a=ランク e=skip i=./indat/dat6.csv k=日付 o=./outdat/out167.csv s=金額%nr; IN=13 OUT=13; 2014/06/04 14:25:17
+#END# kgnumber -x S=X a=ランク e=skip i=./indat/dat6.csv k=0 o=./outdat/out167x.csv s=3%nr; IN=13 OUT=13; 2014/06/04 14:25:17
+#END# kgnumber -nfn S=X e=skip i=./indat/dat6nfn.csv k=0 o=./outdat/out167nfn.csv s=3%nr; IN=13 OUT=13; 2014/06/04 14:25:17
+#END# kgnumber I=8 S=15 a=番号 i=./indat/dat6.csv k=日付 o=./outdat/out168.csv s=金額%nr; IN=13 OUT=13; 2014/06/04 14:25:17
+#END# kgnumber -x I=8 S=15 a=番号 i=./indat/dat6.csv k=0 o=./outdat/out168x.csv s=3%nr; IN=13 OUT=13; 2014/06/04 14:25:17
+#END# kgnumber -nfn I=8 S=15 i=./indat/dat6nfn.csv k=0 o=./outdat/out168nfn.csv s=3%nr; IN=13 OUT=13; 2014/06/04 14:25:17
+#END# kgnumber I=5 S=10 a=得点 e=same i=./indat/dat6.csv k=日付 o=./outdat/out169.csv s=金額%nr; IN=13 OUT=13; 2014/06/04 14:25:17
+#END# kgnumber -x I=5 S=10 a=得点 e=same i=./indat/dat6.csv k=0 o=./outdat/out169x.csv s=3%nr; IN=13 OUT=13; 2014/06/04 14:25:17
+#END# kgnumber -nfn I=5 S=10 e=same i=./indat/dat6nfn.csv k=0 o=./outdat/out169nfn.csv s=3%nr; IN=13 OUT=13; 2014/06/04 14:25:17
+#END# kgnumber I=7 S=20 a=番号 e=skip i=./indat/dat6.csv k=日付 o=./outdat/out170.csv s=金額%nr; IN=13 OUT=13; 2014/06/04 14:25:17
+#END# kgnumber -x I=7 S=20 a=番号 e=skip i=./indat/dat6.csv k=0 o=./outdat/out170x.csv s=3%nr; IN=13 OUT=13; 2014/06/04 14:25:17
+#END# kgnumber -nfn I=7 S=20 e=skip i=./indat/dat6nfn.csv k=0 o=./outdat/out170nfn.csv s=3%nr; IN=13 OUT=13; 2014/06/04 14:25:17
+#END# kgnumber I=3 S=A a=ランク i=./indat/dat6.csv k=日付 o=./outdat/out171.csv s=金額%nr; IN=13 OUT=13; 2014/06/04 14:25:17
+#END# kgnumber -x I=3 S=A a=ランク i=./indat/dat6.csv k=0 o=./outdat/out171x.csv s=3%nr; IN=13 OUT=13; 2014/06/04 14:25:17
+#END# kgnumber -nfn I=3 S=A i=./indat/dat6nfn.csv k=0 o=./outdat/out171nfn.csv s=3%nr; IN=13 OUT=13; 2014/06/04 14:25:17
+#END# kgnumber I=5 S=H a=ランク e=same i=./indat/dat6.csv k=日付 o=./outdat/out172.csv s=金額%nr; IN=13 OUT=13; 2014/06/04 14:25:17
+#END# kgnumber -x I=5 S=H a=ランク e=same i=./indat/dat6.csv k=0 o=./outdat/out172x.csv s=3%nr; IN=13 OUT=13; 2014/06/04 14:25:17
+#END# kgnumber -nfn I=5 S=H e=same i=./indat/dat6nfn.csv k=0 o=./outdat/out172nfn.csv s=3%nr; IN=13 OUT=13; 2014/06/04 14:25:17
+#END# kgnumber I=10 S=X a=ランク e=skip i=./indat/dat6.csv k=日付 o=./outdat/out173.csv s=金額%nr; IN=13 OUT=13; 2014/06/04 14:25:17
+#END# kgnumber -x I=10 S=X a=ランク e=skip i=./indat/dat6.csv k=0 o=./outdat/out173x.csv s=3%nr; IN=13 OUT=13; 2014/06/04 14:25:17
+#END# kgnumber -nfn I=10 S=X e=skip i=./indat/dat6nfn.csv k=0 o=./outdat/out173nfn.csv s=3%nr; IN=13 OUT=13; 2014/06/04 14:25:17
+#END# kgnumber -B a=番号 i=./indat/dat6.csv k=日付 o=./outdat/out174.csv; IN=13 OUT=13; 2014/06/04 14:25:17
+#END# kgnumber -B -x a=番号 i=./indat/dat6.csv k=0 o=./outdat/out174x.csv; IN=13 OUT=13; 2014/06/04 14:25:17
+#END# kgnumber -B -nfn i=./indat/dat6nfn.csv k=0 o=./outdat/out174nfn.csv; IN=13 OUT=13; 2014/06/04 14:25:17
+#END# kgnumber -B S=10 a=番号 i=./indat/dat6.csv k=日付 o=./outdat/out175.csv; IN=13 OUT=13; 2014/06/04 14:25:17
+#END# kgnumber -B -x S=10 a=番号 i=./indat/dat6.csv k=0 o=./outdat/out175x.csv; IN=13 OUT=13; 2014/06/04 14:25:17
+#END# kgnumber -B -nfn S=10 i=./indat/dat6nfn.csv k=0 o=./outdat/out175nfn.csv; IN=13 OUT=13; 2014/06/04 14:25:17
+#END# kgnumber -B S=H a=ランク i=./indat/dat6.csv k=日付 o=./outdat/out176.csv; IN=13 OUT=13; 2014/06/04 14:25:17
+#END# kgnumber -B -x S=H a=ランク i=./indat/dat6.csv k=0 o=./outdat/out176x.csv; IN=13 OUT=13; 2014/06/04 14:25:18
+#END# kgnumber -B -nfn S=H i=./indat/dat6nfn.csv k=0 o=./outdat/out176nfn.csv; IN=13 OUT=13; 2014/06/04 14:25:18
+#END# kgnumber -B I=8 S=15 a=番号 i=./indat/dat6.csv k=日付 o=./outdat/out177.csv; IN=13 OUT=13; 2014/06/04 14:25:18
+#END# kgnumber -B -x I=8 S=15 a=番号 i=./indat/dat6.csv k=0 o=./outdat/out177x.csv; IN=13 OUT=13; 2014/06/04 14:25:18
+#END# kgnumber -B -nfn I=8 S=15 i=./indat/dat6nfn.csv k=0 o=./outdat/out177nfn.csv; IN=13 OUT=13; 2014/06/04 14:25:18
+#END# kgnumber -B I=3 S=A a=ランク i=./indat/dat6.csv k=日付 o=./outdat/out178.csv; IN=13 OUT=13; 2014/06/04 14:25:18
+#END# kgnumber -B -x I=3 S=A a=ランク i=./indat/dat6.csv k=0 o=./outdat/out178x.csv; IN=13 OUT=13; 2014/06/04 14:25:18
+#END# kgnumber -B -nfn I=3 S=A i=./indat/dat6nfn.csv k=0 o=./outdat/out178nfn.csv; IN=13 OUT=13; 2014/06/04 14:25:18

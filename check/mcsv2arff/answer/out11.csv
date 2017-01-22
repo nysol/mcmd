@@ -1,0 +1,12 @@
+@RELATION	By_KGMOD
+
+@ATTRIBUTE	日付	date yyyyMMdd
+@ATTRIBUTE	数量	numeric
+@ATTRIBUTE	金額	numeric
+
+@DATA
+?,1,10
+?,2,20
+20081203,3,30
+20081201,4,40
+20081203,5,50

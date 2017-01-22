@@ -1,0 +1,11 @@
+@RELATION	By_KGMOD
+
+@ATTRIBUTE	数量	numeric
+@ATTRIBUTE	金額	numeric
+
+@DATA
+1,10
+2,20
+3,30
+4,40
+5,50

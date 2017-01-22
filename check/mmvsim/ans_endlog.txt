@@ -1,0 +1,240 @@
+#END# kgmvsim a=rls c=covar f=x,y i=./indat/dat1s.csv o=./outdat/out0.csv s=id t=4; IN=4 OUT=1; 2014/05/31 13:01:58
+#END# kgmvsim a=rls c=ucovar f=x,y i=./indat/dat1s.csv o=./outdat/out1.csv s=id t=4; IN=4 OUT=1; 2014/05/31 13:01:58
+#END# kgmvsim a=rls c=pearson f=x,y i=./indat/dat1s.csv o=./outdat/out2.csv s=id t=4; IN=4 OUT=1; 2014/05/31 13:01:58
+#END# kgmvsim a=rls c=spearman f=x,y i=./indat/dat1s.csv o=./outdat/out3.csv s=id t=4; IN=4 OUT=1; 2014/05/31 13:01:58
+#END# kgmvsim a=rls c=kendall f=x,y i=./indat/dat1s.csv o=./outdat/out4.csv s=id t=4; IN=4 OUT=1; 2014/05/31 13:01:58
+#END# kgmvsim a=rls c=euclid f=x,y i=./indat/dat1s.csv o=./outdat/out5.csv s=id t=4; IN=4 OUT=1; 2014/05/31 13:01:58
+#END# kgmvsim a=rls c=cosine f=x,y i=./indat/dat1s.csv o=./outdat/out6.csv s=id t=4; IN=4 OUT=1; 2014/05/31 13:01:58
+#END# kgmvsim a=rls c=cityblock f=x,y i=./indat/dat1s.csv o=./outdat/out7.csv s=id t=4; IN=4 OUT=1; 2014/05/31 13:01:58
+#END# kgmvsim a=rls c=hamming f=x,y i=./indat/dat2s.csv o=./outdat/out8.csv s=id t=4; IN=4 OUT=1; 2014/05/31 13:01:58
+#END# kgmvsim a=rls c=chi f=x,y i=./indat/dat2s.csv o=./outdat/out9.csv s=id t=4; IN=4 OUT=1; 2014/05/31 13:01:58
+#END# kgmvsim a=rls c=phi f=x,y i=./indat/dat2s.csv o=./outdat/out10.csv s=id t=4; IN=4 OUT=1; 2014/05/31 13:01:58
+#END# kgmvsim a=rls c=jaccard f=x,y i=./indat/dat2s.csv o=./outdat/out11.csv s=id t=4; IN=4 OUT=1; 2014/05/31 13:01:58
+#END# kgmvsim a=rls c=support f=x,y i=./indat/dat2s.csv o=./outdat/out12.csv s=id t=4; IN=4 OUT=1; 2014/05/31 13:01:58
+#END# kgmvsim a=rls c=lift f=x,y i=./indat/dat2s.csv o=./outdat/out13.csv s=id t=4; IN=4 OUT=1; 2014/05/31 13:01:58
+#END# kgmvsim a=rls c=oddsRatio f=x,y i=./indat/dat2s.csv o=./outdat/out14.csv s=id t=4; IN=4 OUT=1; 2014/05/31 13:01:59
+#END# kgmvsim a=rls c=yuleQ f=x,y i=./indat/dat2s.csv o=./outdat/out15.csv s=id t=4; IN=4 OUT=1; 2014/05/31 13:01:59
+#END# kgmvsim a=rls c=yuleY f=x,y i=./indat/dat2s.csv o=./outdat/out16.csv s=id t=4; IN=4 OUT=1; 2014/05/31 13:01:59
+#END# kgmvsim a=rls c=kappa f=x,y i=./indat/dat2s.csv o=./outdat/out17.csv s=id t=4; IN=4 OUT=1; 2014/05/31 13:01:59
+#END# kgmvsim a=rls c=convMax f=x,y i=./indat/dat2s.csv o=./outdat/out18.csv s=id t=4; IN=4 OUT=1; 2014/05/31 13:01:59
+#END# kgmvsim a=rls c=convMin f=x,y i=./indat/dat2s.csv o=./outdat/out19.csv s=id t=4; IN=4 OUT=1; 2014/05/31 13:01:59
+#END# kgmvsim -x a=rls c=covar f=0,1 i=./indat/dat1s.csv o=./outdat/out0x.csv s=3 t=4; IN=4 OUT=1; 2014/05/31 13:01:59
+#END# kgmvsim -q a=rls c=covar f=x,y i=./indat/dat1s.csv o=./outdat/out0q.csv t=4; IN=4 OUT=1; 2014/05/31 13:01:59
+#END# kgmvsim -nfn a=rls c=covar f=0,1 i=./indat/dat1snfn.csv o=./outdat/out0nfn.csv s=3 t=4; IN=4 OUT=1; 2014/05/31 13:01:59
+#END# kgmvsim a=rls c=covar f=x,y i=./indat/dat3s.csv k=key o=./outdat/out20.csv s=id skip=2 t=4; IN=7 OUT=3; 2014/05/31 13:01:59
+#END# kgmvsim a=rls c=ucovar f=x,y i=./indat/dat3s.csv k=key o=./outdat/out21.csv s=id skip=2 t=4; IN=7 OUT=3; 2014/05/31 13:01:59
+#END# kgmvsim a=rls c=pearson f=x,y i=./indat/dat3s.csv k=key o=./outdat/out22.csv s=id skip=2 t=4; IN=7 OUT=3; 2014/05/31 13:01:59
+#END# kgmvsim a=rls c=spearman f=x,y i=./indat/dat3s.csv k=key o=./outdat/out23.csv s=id skip=2 t=4; IN=7 OUT=3; 2014/05/31 13:01:59
+#END# kgmvsim a=rls c=kendall f=x,y i=./indat/dat3s.csv k=key o=./outdat/out24.csv s=id skip=2 t=4; IN=7 OUT=3; 2014/05/31 13:01:59
+#END# kgmvsim a=rls c=euclid f=x,y i=./indat/dat3s.csv k=key o=./outdat/out25.csv s=id skip=2 t=4; IN=7 OUT=3; 2014/05/31 13:01:59
+#END# kgmvsim a=rls c=cosine f=x,y i=./indat/dat3s.csv k=key o=./outdat/out26.csv s=id skip=2 t=4; IN=7 OUT=3; 2014/05/31 13:01:59
+#END# kgmvsim a=rls c=cityblock f=x,y i=./indat/dat3s.csv k=key o=./outdat/out27.csv s=id skip=2 t=4; IN=7 OUT=3; 2014/05/31 13:01:59
+#END# kgmvsim a=rls c=hamming f=x,y i=./indat/dat4s.csv k=key o=./outdat/out28.csv s=id skip=2 t=5; IN=8 OUT=4; 2014/05/31 13:01:59
+#END# kgmvsim a=rls c=chi f=x,y i=./indat/dat4s.csv k=key o=./outdat/out29.csv s=id skip=2 t=5; IN=8 OUT=4; 2014/05/31 13:01:59
+#END# kgmvsim a=rls c=phi f=x,y i=./indat/dat4s.csv k=key o=./outdat/out30.csv s=id skip=2 t=5; IN=8 OUT=4; 2014/05/31 13:01:59
+#END# kgmvsim a=rls c=jaccard f=x,y i=./indat/dat4s.csv k=key o=./outdat/out31.csv s=id skip=2 t=5; IN=8 OUT=4; 2014/05/31 13:01:59
+#END# kgmvsim a=rls c=support f=x,y i=./indat/dat4s.csv k=key o=./outdat/out32.csv s=id skip=2 t=5; IN=8 OUT=4; 2014/05/31 13:01:59
+#END# kgmvsim a=rls c=lift f=x,y i=./indat/dat4s.csv k=key o=./outdat/out33.csv s=id skip=2 t=5; IN=8 OUT=4; 2014/05/31 13:01:59
+#END# kgmvsim a=rls c=oddsRatio f=x,y i=./indat/dat4s.csv k=key o=./outdat/out34.csv s=id skip=2 t=5; IN=8 OUT=4; 2014/05/31 13:01:59
+#END# kgmvsim a=rls c=yuleQ f=x,y i=./indat/dat4s.csv k=key o=./outdat/out35.csv s=id skip=2 t=5; IN=8 OUT=4; 2014/05/31 13:01:59
+#END# kgmvsim a=rls c=yuleY f=x,y i=./indat/dat4s.csv k=key o=./outdat/out36.csv s=id skip=2 t=5; IN=8 OUT=4; 2014/05/31 13:01:59
+#END# kgmvsim a=rls c=kappa f=x,y i=./indat/dat4s.csv k=key o=./outdat/out37.csv s=id skip=2 t=5; IN=8 OUT=4; 2014/05/31 13:01:59
+#END# kgmvsim a=rls c=convMax f=x,y i=./indat/dat4s.csv k=key o=./outdat/out38.csv s=id skip=2 t=5; IN=8 OUT=4; 2014/05/31 13:01:59
+#END# kgmvsim a=rls c=convMin f=x,y i=./indat/dat4s.csv k=key o=./outdat/out39.csv s=id skip=2 t=5; IN=8 OUT=4; 2014/05/31 13:01:59
+#END# kgmvsim a=rls c=confMax f=x,y i=./indat/dat4s.csv k=key o=./outdat/out40.csv s=id skip=2 t=5; IN=8 OUT=4; 2014/05/31 13:01:59
+#END# kgmvsim a=rls c=confMin f=x,y i=./indat/dat4s.csv k=key o=./outdat/out41.csv s=id skip=2 t=5; IN=8 OUT=4; 2014/05/31 13:01:59
+#END# kgmvsim -x a=rls c=covar f=1,2 i=./indat/dat3s.csv k=0 o=./outdat/out20x.csv s=4 skip=2 t=4; IN=7 OUT=3; 2014/05/31 13:01:59
+#END# kgmvsim -q a=rls c=covar f=x,y i=./indat/dat3s.csv k=key o=./outdat/out20q.csv s=4 skip=2 t=4; IN=7 OUT=3; 2014/05/31 13:01:59
+#END# kgmvsim -nfn a=rls c=covar f=1,2 i=./indat/dat3snfn.csv k=0 o=./outdat/out20nfn.csv s=4 skip=2 t=4; IN=7 OUT=3; 2014/05/31 13:01:59
+#END# kgmvsim a=rls c=covar f=x,y i=./indat/dat3s.csv o=./outdat/out42.csv s=id t=3; IN=7 OUT=5; 2014/05/31 13:01:59
+#END# kgmvsim a=rls c=ucovar f=x,y i=./indat/dat3s.csv o=./outdat/out43.csv s=id t=3; IN=7 OUT=5; 2014/05/31 13:01:59
+#END# kgmvsim a=rls c=pearson f=x,y i=./indat/dat3s.csv o=./outdat/out44.csv s=id t=3; IN=7 OUT=5; 2014/05/31 13:02:00
+#END# kgmvsim a=rls c=spearman f=x,y i=./indat/dat3s.csv o=./outdat/out45.csv s=id t=3; IN=7 OUT=5; 2014/05/31 13:02:00
+#END# kgmvsim a=rls c=kendall f=x,y i=./indat/dat3s.csv o=./outdat/out46.csv s=id t=3; IN=7 OUT=5; 2014/05/31 13:02:00
+#END# kgmvsim a=rls c=euclid f=x,y i=./indat/dat3s.csv o=./outdat/out47.csv s=id t=3; IN=7 OUT=5; 2014/05/31 13:02:00
+#END# kgmvsim a=rls c=cosine f=x,y i=./indat/dat3s.csv o=./outdat/out48.csv s=id t=3; IN=7 OUT=5; 2014/05/31 13:02:00
+#END# kgmvsim a=rls c=cityblock f=x,y i=./indat/dat3s.csv o=./outdat/out49.csv s=id t=3; IN=7 OUT=5; 2014/05/31 13:02:00
+#END# kgmvsim a=rls c=hamming f=x,y i=./indat/dat4s.csv o=./outdat/out50.csv s=id t=3; IN=8 OUT=6; 2014/05/31 13:02:00
+#END# kgmvsim a=rls c=chi f=x,y i=./indat/dat4s.csv o=./outdat/out51.csv s=id t=3; IN=8 OUT=6; 2014/05/31 13:02:00
+#END# kgmvsim a=rls c=phi f=x,y i=./indat/dat4s.csv o=./outdat/out52.csv s=id t=3; IN=8 OUT=6; 2014/05/31 13:02:00
+#END# kgmvsim a=rls c=jaccard f=x,y i=./indat/dat4s.csv o=./outdat/out53.csv s=id t=3; IN=8 OUT=6; 2014/05/31 13:02:00
+#END# kgmvsim a=rls c=support f=x,y i=./indat/dat4s.csv o=./outdat/out54.csv s=id t=3; IN=8 OUT=6; 2014/05/31 13:02:00
+#END# kgmvsim a=rls c=lift f=x,y i=./indat/dat4s.csv o=./outdat/out55.csv s=id t=3; IN=8 OUT=6; 2014/05/31 13:02:00
+#END# kgmvsim a=rls c=oddsRatio f=x,y i=./indat/dat4s.csv o=./outdat/out56.csv s=id t=3; IN=8 OUT=6; 2014/05/31 13:02:00
+#END# kgmvsim a=rls c=yuleQ f=x,y i=./indat/dat4s.csv o=./outdat/out57.csv s=id t=3; IN=8 OUT=6; 2014/05/31 13:02:00
+#END# kgmvsim a=rls c=yuleY f=x,y i=./indat/dat4s.csv o=./outdat/out58.csv s=id t=3; IN=8 OUT=6; 2014/05/31 13:02:00
+#END# kgmvsim a=rls c=kappa f=x,y i=./indat/dat4s.csv o=./outdat/out59.csv s=id t=3; IN=8 OUT=6; 2014/05/31 13:02:00
+#END# kgmvsim a=rls c=convMax f=x,y i=./indat/dat4s.csv o=./outdat/out60.csv s=id t=3; IN=8 OUT=6; 2014/05/31 13:02:00
+#END# kgmvsim a=rls c=convMin f=x,y i=./indat/dat4s.csv o=./outdat/out61.csv s=id t=3; IN=8 OUT=6; 2014/05/31 13:02:00
+#END# kgmvsim a=rls c=confMax f=x,y i=./indat/dat4s.csv o=./outdat/out62.csv s=id t=3; IN=8 OUT=6; 2014/05/31 13:02:00
+#END# kgmvsim a=rls c=confMin f=x,y i=./indat/dat4s.csv o=./outdat/out63.csv s=id t=3; IN=8 OUT=6; 2014/05/31 13:02:00
+#END# kgmvsim a=rls c=covar f=x,y i=./indat/dat5s.csv o=./outdat/out64.csv s=id t=3; IN=15 OUT=11; 2014/05/31 13:02:00
+#END# kgmvsim a=rls c=ucovar f=x,y i=./indat/dat5s.csv o=./outdat/out65.csv s=id t=3; IN=15 OUT=11; 2014/05/31 13:02:00
+#END# kgmvsim a=rls c=pearson f=x,y i=./indat/dat5s.csv o=./outdat/out67.csv s=id t=3; IN=15 OUT=11; 2014/05/31 13:02:00
+#END# kgmvsim a=rls c=spearman f=x,y i=./indat/dat5s.csv o=./outdat/out68.csv s=id t=3; IN=15 OUT=11; 2014/05/31 13:02:00
+#END# kgmvsim a=rls c=kendall f=x,y i=./indat/dat5s.csv o=./outdat/out69.csv s=id t=3; IN=15 OUT=11; 2014/05/31 13:02:00
+#END# kgmvsim a=rls c=euclid f=x,y i=./indat/dat5s.csv o=./outdat/out70.csv s=id t=3; IN=15 OUT=11; 2014/05/31 13:02:00
+#END# kgmvsim a=rls c=cosine f=x,y i=./indat/dat5s.csv o=./outdat/out71.csv s=id t=3; IN=15 OUT=11; 2014/05/31 13:02:00
+#END# kgmvsim a=rls c=cityblock f=x,y i=./indat/dat5s.csv o=./outdat/out72.csv s=id t=3; IN=15 OUT=11; 2014/05/31 13:02:00
+#END# kgmvsim -n a=rls c=covar f=x,y i=./indat/dat5s.csv o=./outdat/out73.csv s=id t=3; IN=15 OUT=13; 2014/05/31 13:02:00
+#END# kgmvsim -n a=rls c=ucovar f=x,y i=./indat/dat5s.csv o=./outdat/out74.csv s=id t=3; IN=15 OUT=13; 2014/05/31 13:02:00
+#END# kgmvsim -n a=rls c=pearson f=x,y i=./indat/dat5s.csv o=./outdat/out75.csv s=id t=3; IN=15 OUT=13; 2014/05/31 13:02:00
+#END# kgmvsim -n a=rls c=spearman f=x,y i=./indat/dat5s.csv o=./outdat/out76.csv s=id t=3; IN=15 OUT=13; 2014/05/31 13:02:00
+#END# kgmvsim -n a=rls c=kendall f=x,y i=./indat/dat5s.csv o=./outdat/out77.csv s=id t=3; IN=15 OUT=13; 2014/05/31 13:02:00
+#END# kgmvsim -n a=rls c=euclid f=x,y i=./indat/dat5s.csv o=./outdat/out78.csv s=id t=3; IN=15 OUT=13; 2014/05/31 13:02:01
+#END# kgmvsim -n a=rls c=cosine f=x,y i=./indat/dat5s.csv o=./outdat/out79.csv s=id t=3; IN=15 OUT=13; 2014/05/31 13:02:01
+#END# kgmvsim -n a=rls c=cityblock f=x,y i=./indat/dat5s.csv o=./outdat/out80.csv s=id t=3; IN=15 OUT=13; 2014/05/31 13:02:01
+#END# kgmvsim -x a=rls c=covar f=1,2 i=./indat/dat5s.csv o=./outdat/out64x.csv s=4 t=3; IN=15 OUT=11; 2014/05/31 13:02:01
+#END# kgmvsim -q a=rls c=covar f=x,y i=./indat/dat5s.csv o=./outdat/out64q.csv s=id t=3; IN=15 OUT=11; 2014/05/31 13:02:01
+#END# kgmvsim -nfn a=rls c=covar f=1,2 i=./indat/dat5snfn.csv o=./outdat/out64nfn.csv s=4 t=3; IN=15 OUT=11; 2014/05/31 13:02:01
+#END# kgmvsim -n -x a=rls c=covar f=1,2 i=./indat/dat5s.csv o=./outdat/out73x.csv s=4 t=3; IN=15 OUT=13; 2014/05/31 13:02:01
+#END# kgmvsim -n -q a=rls c=covar f=x,y i=./indat/dat5s.csv o=./outdat/out73q.csv s=id t=3; IN=15 OUT=13; 2014/05/31 13:02:01
+#END# kgmvsim -n -nfn a=rls c=covar f=1,2 i=./indat/dat5snfn.csv o=./outdat/out73nfn.csv s=4 t=3; IN=15 OUT=13; 2014/05/31 13:02:01
+#END# kgmvsim a=rls c=hamming f=x,y i=./indat/dat6s.csv o=./outdat/out81.csv s=id t=3; IN=14 OUT=10; 2014/05/31 13:02:01
+#END# kgmvsim a=rls c=chi f=x,y i=./indat/dat6s.csv o=./outdat/out82.csv s=id t=3; IN=14 OUT=10; 2014/05/31 13:02:01
+#END# kgmvsim a=rls c=phi f=x,y i=./indat/dat6s.csv o=./outdat/out83.csv s=id t=3; IN=14 OUT=10; 2014/05/31 13:02:01
+#END# kgmvsim a=rls c=jaccard f=x,y i=./indat/dat6s.csv o=./outdat/out84.csv s=id t=3; IN=14 OUT=10; 2014/05/31 13:02:01
+#END# kgmvsim a=rls c=support f=x,y i=./indat/dat6s.csv o=./outdat/out85.csv s=id t=3; IN=14 OUT=10; 2014/05/31 13:02:01
+#END# kgmvsim a=rls c=lift f=x,y i=./indat/dat6s.csv o=./outdat/out86.csv s=id t=3; IN=14 OUT=10; 2014/05/31 13:02:01
+#END# kgmvsim a=rls c=oddsRatio f=x,y i=./indat/dat6s.csv o=./outdat/out87.csv s=id t=3; IN=14 OUT=10; 2014/05/31 13:02:01
+#END# kgmvsim a=rls c=yuleQ f=x,y i=./indat/dat6s.csv o=./outdat/out88.csv s=id t=3; IN=14 OUT=10; 2014/05/31 13:02:01
+#END# kgmvsim a=rls c=yuleY f=x,y i=./indat/dat6s.csv o=./outdat/out89.csv s=id t=3; IN=14 OUT=10; 2014/05/31 13:02:01
+#END# kgmvsim a=rls c=kappa f=x,y i=./indat/dat6s.csv o=./outdat/out90.csv s=id t=3; IN=14 OUT=10; 2014/05/31 13:02:01
+#END# kgmvsim a=rls c=convMax f=x,y i=./indat/dat6s.csv o=./outdat/out91.csv s=id t=3; IN=14 OUT=10; 2014/05/31 13:02:01
+#END# kgmvsim a=rls c=convMin f=x,y i=./indat/dat6s.csv o=./outdat/out92.csv s=id t=3; IN=14 OUT=10; 2014/05/31 13:02:01
+#END# kgmvsim a=rls c=confMax f=x,y i=./indat/dat6s.csv o=./outdat/out93.csv s=id t=3; IN=14 OUT=10; 2014/05/31 13:02:01
+#END# kgmvsim a=rls c=confMin f=x,y i=./indat/dat6s.csv o=./outdat/out94.csv s=id t=3; IN=14 OUT=10; 2014/05/31 13:02:01
+#END# kgmvsim -n a=rls c=hamming f=x,y i=./indat/dat6s.csv o=./outdat/out95.csv s=id t=3; IN=14 OUT=12; 2014/05/31 13:02:01
+#END# kgmvsim -n a=rls c=chi f=x,y i=./indat/dat6s.csv o=./outdat/out96.csv s=id t=3; IN=14 OUT=12; 2014/05/31 13:02:01
+#END# kgmvsim -n a=rls c=phi f=x,y i=./indat/dat6s.csv o=./outdat/out97.csv s=id t=3; IN=14 OUT=12; 2014/05/31 13:02:01
+#END# kgmvsim -n a=rls c=jaccard f=x,y i=./indat/dat6s.csv o=./outdat/out98.csv s=id t=3; IN=14 OUT=12; 2014/05/31 13:02:01
+#END# kgmvsim -n a=rls c=support f=x,y i=./indat/dat6s.csv o=./outdat/out99.csv s=id t=3; IN=14 OUT=12; 2014/05/31 13:02:01
+#END# kgmvsim -n a=rls c=lift f=x,y i=./indat/dat6s.csv o=./outdat/out100.csv s=id t=3; IN=14 OUT=12; 2014/05/31 13:02:01
+#END# kgmvsim -n a=rls c=oddsRatio f=x,y i=./indat/dat6s.csv o=./outdat/out101.csv s=id t=3; IN=14 OUT=12; 2014/05/31 13:02:01
+#END# kgmvsim -n a=rls c=yuleQ f=x,y i=./indat/dat6s.csv o=./outdat/out102.csv s=id t=3; IN=14 OUT=12; 2014/05/31 13:02:01
+#END# kgmvsim -n a=rls c=yuleY f=x,y i=./indat/dat6s.csv o=./outdat/out103.csv s=id t=3; IN=14 OUT=12; 2014/05/31 13:02:01
+#END# kgmvsim -n a=rls c=kappa f=x,y i=./indat/dat6s.csv o=./outdat/out104.csv s=id t=3; IN=14 OUT=12; 2014/05/31 13:02:01
+#END# kgmvsim -n a=rls c=convMax f=x,y i=./indat/dat6s.csv o=./outdat/out105.csv s=id t=3; IN=14 OUT=12; 2014/05/31 13:02:01
+#END# kgmvsim -n a=rls c=convMin f=x,y i=./indat/dat6s.csv o=./outdat/out106.csv s=id t=3; IN=14 OUT=12; 2014/05/31 13:02:01
+#END# kgmvsim -n a=rls c=confMax f=x,y i=./indat/dat6s.csv o=./outdat/out107.csv s=id t=3; IN=14 OUT=12; 2014/05/31 13:02:01
+#END# kgmvsim -n a=rls c=confMin f=x,y i=./indat/dat6s.csv o=./outdat/out108.csv s=id t=3; IN=14 OUT=12; 2014/05/31 13:02:01
+#END# kgmvsim a=rls c=covar f=x,y i=./indat/dat1.csv o=./outdat/out200.csv s=id t=4; IN=4 OUT=1; 2014/05/31 13:02:02
+#END# kgmvsim a=rls c=ucovar f=x,y i=./indat/dat1.csv o=./outdat/out201.csv s=id t=4; IN=4 OUT=1; 2014/05/31 13:02:02
+#END# kgmvsim a=rls c=pearson f=x,y i=./indat/dat1.csv o=./outdat/out202.csv s=id t=4; IN=4 OUT=1; 2014/05/31 13:02:02
+#END# kgmvsim a=rls c=spearman f=x,y i=./indat/dat1.csv o=./outdat/out203.csv s=id t=4; IN=4 OUT=1; 2014/05/31 13:02:02
+#END# kgmvsim a=rls c=kendall f=x,y i=./indat/dat1.csv o=./outdat/out204.csv s=id t=4; IN=4 OUT=1; 2014/05/31 13:02:02
+#END# kgmvsim a=rls c=euclid f=x,y i=./indat/dat1.csv o=./outdat/out205.csv s=id t=4; IN=4 OUT=1; 2014/05/31 13:02:02
+#END# kgmvsim a=rls c=cosine f=x,y i=./indat/dat1.csv o=./outdat/out206.csv s=id t=4; IN=4 OUT=1; 2014/05/31 13:02:02
+#END# kgmvsim a=rls c=cityblock f=x,y i=./indat/dat1.csv o=./outdat/out207.csv s=id t=4; IN=4 OUT=1; 2014/05/31 13:02:02
+#END# kgmvsim a=rls c=hamming f=x,y i=./indat/dat2.csv o=./outdat/out208.csv s=id t=4; IN=4 OUT=1; 2014/05/31 13:02:02
+#END# kgmvsim a=rls c=chi f=x,y i=./indat/dat2.csv o=./outdat/out209.csv s=id t=4; IN=4 OUT=1; 2014/05/31 13:02:02
+#END# kgmvsim a=rls c=phi f=x,y i=./indat/dat2.csv o=./outdat/out210.csv s=id t=4; IN=4 OUT=1; 2014/05/31 13:02:02
+#END# kgmvsim a=rls c=jaccard f=x,y i=./indat/dat2.csv o=./outdat/out211.csv s=id t=4; IN=4 OUT=1; 2014/05/31 13:02:02
+#END# kgmvsim a=rls c=support f=x,y i=./indat/dat2.csv o=./outdat/out212.csv s=id t=4; IN=4 OUT=1; 2014/05/31 13:02:02
+#END# kgmvsim a=rls c=lift f=x,y i=./indat/dat2.csv o=./outdat/out213.csv s=id t=4; IN=4 OUT=1; 2014/05/31 13:02:02
+#END# kgmvsim a=rls c=oddsRatio f=x,y i=./indat/dat2.csv o=./outdat/out214.csv s=id t=4; IN=4 OUT=1; 2014/05/31 13:02:02
+#END# kgmvsim a=rls c=yuleQ f=x,y i=./indat/dat2.csv o=./outdat/out215.csv s=id t=4; IN=4 OUT=1; 2014/05/31 13:02:02
+#END# kgmvsim a=rls c=yuleY f=x,y i=./indat/dat2.csv o=./outdat/out216.csv s=id t=4; IN=4 OUT=1; 2014/05/31 13:02:02
+#END# kgmvsim a=rls c=kappa f=x,y i=./indat/dat2.csv o=./outdat/out217.csv s=id t=4; IN=4 OUT=1; 2014/05/31 13:02:02
+#END# kgmvsim a=rls c=convMax f=x,y i=./indat/dat2.csv o=./outdat/out218.csv s=id t=4; IN=4 OUT=1; 2014/05/31 13:02:02
+#END# kgmvsim a=rls c=convMin f=x,y i=./indat/dat2.csv o=./outdat/out219.csv s=id t=4; IN=4 OUT=1; 2014/05/31 13:02:02
+#END# kgmvsim -x a=rls c=covar f=0,1 i=./indat/dat1.csv o=./outdat/out200x.csv s=3 t=4; IN=4 OUT=1; 2014/05/31 13:02:02
+#END# kgmvsim -q a=rls c=covar f=x,y i=./indat/dat1.csv o=./outdat/out200q.csv s=id t=4; IN=4 OUT=1; 2014/05/31 13:02:02
+#END# kgmvsim -nfn a=rls c=covar f=0,1 i=./indat/dat1nfn.csv o=./outdat/out200nfn.csv s=3 t=4; IN=4 OUT=1; 2014/05/31 13:02:02
+#END# kgmvsim a=rls c=covar f=x,y i=./indat/dat3.csv k=key o=./outdat/out220.csv s=id skip=2 t=4; IN=7 OUT=3; 2014/05/31 13:02:02
+#END# kgmvsim a=rls c=ucovar f=x,y i=./indat/dat3.csv k=key o=./outdat/out221.csv s=id skip=2 t=4; IN=7 OUT=3; 2014/05/31 13:02:02
+#END# kgmvsim a=rls c=pearson f=x,y i=./indat/dat3.csv k=key o=./outdat/out222.csv s=id skip=2 t=4; IN=7 OUT=3; 2014/05/31 13:02:02
+#END# kgmvsim a=rls c=spearman f=x,y i=./indat/dat3.csv k=key o=./outdat/out223.csv s=id skip=2 t=4; IN=7 OUT=3; 2014/05/31 13:02:02
+#END# kgmvsim a=rls c=kendall f=x,y i=./indat/dat3.csv k=key o=./outdat/out224.csv s=id skip=2 t=4; IN=7 OUT=3; 2014/05/31 13:02:02
+#END# kgmvsim a=rls c=euclid f=x,y i=./indat/dat3.csv k=key o=./outdat/out225.csv s=id skip=2 t=4; IN=7 OUT=3; 2014/05/31 13:02:02
+#END# kgmvsim a=rls c=cosine f=x,y i=./indat/dat3.csv k=key o=./outdat/out226.csv s=id skip=2 t=4; IN=7 OUT=3; 2014/05/31 13:02:02
+#END# kgmvsim a=rls c=cityblock f=x,y i=./indat/dat3.csv k=key o=./outdat/out227.csv s=id skip=2 t=4; IN=7 OUT=3; 2014/05/31 13:02:02
+#END# kgmvsim a=rls c=hamming f=x,y i=./indat/dat4.csv k=key o=./outdat/out228.csv s=id skip=2 t=5; IN=8 OUT=4; 2014/05/31 13:02:02
+#END# kgmvsim a=rls c=chi f=x,y i=./indat/dat4.csv k=key o=./outdat/out229.csv s=id skip=2 t=5; IN=8 OUT=4; 2014/05/31 13:02:02
+#END# kgmvsim a=rls c=phi f=x,y i=./indat/dat4.csv k=key o=./outdat/out230.csv s=id skip=2 t=5; IN=8 OUT=4; 2014/05/31 13:02:02
+#END# kgmvsim a=rls c=jaccard f=x,y i=./indat/dat4.csv k=key o=./outdat/out231.csv s=id skip=2 t=5; IN=8 OUT=4; 2014/05/31 13:02:03
+#END# kgmvsim a=rls c=support f=x,y i=./indat/dat4.csv k=key o=./outdat/out232.csv s=id skip=2 t=5; IN=8 OUT=4; 2014/05/31 13:02:03
+#END# kgmvsim a=rls c=lift f=x,y i=./indat/dat4.csv k=key o=./outdat/out233.csv s=id skip=2 t=5; IN=8 OUT=4; 2014/05/31 13:02:03
+#END# kgmvsim a=rls c=oddsRatio f=x,y i=./indat/dat4.csv k=key o=./outdat/out234.csv s=id skip=2 t=5; IN=8 OUT=4; 2014/05/31 13:02:03
+#END# kgmvsim a=rls c=yuleQ f=x,y i=./indat/dat4.csv k=key o=./outdat/out235.csv s=id skip=2 t=5; IN=8 OUT=4; 2014/05/31 13:02:03
+#END# kgmvsim a=rls c=yuleY f=x,y i=./indat/dat4.csv k=key o=./outdat/out236.csv s=id skip=2 t=5; IN=8 OUT=4; 2014/05/31 13:02:03
+#END# kgmvsim a=rls c=kappa f=x,y i=./indat/dat4.csv k=key o=./outdat/out237.csv s=id skip=2 t=5; IN=8 OUT=4; 2014/05/31 13:02:03
+#END# kgmvsim a=rls c=convMax f=x,y i=./indat/dat4.csv k=key o=./outdat/out238.csv s=id skip=2 t=5; IN=8 OUT=4; 2014/05/31 13:02:03
+#END# kgmvsim a=rls c=convMin f=x,y i=./indat/dat4.csv k=key o=./outdat/out239.csv s=id skip=2 t=5; IN=8 OUT=4; 2014/05/31 13:02:03
+#END# kgmvsim a=rls c=confMax f=x,y i=./indat/dat4.csv k=key o=./outdat/out240.csv s=id skip=2 t=5; IN=8 OUT=4; 2014/05/31 13:02:03
+#END# kgmvsim a=rls c=confMin f=x,y i=./indat/dat4.csv k=key o=./outdat/out241.csv s=id skip=2 t=5; IN=8 OUT=4; 2014/05/31 13:02:03
+#END# kgmvsim -x a=rls c=covar f=1,2 i=./indat/dat3.csv k=0 o=./outdat/out220x.csv s=4 skip=2 t=4; IN=7 OUT=3; 2014/05/31 13:02:03
+#END# kgmvsim -q a=rls c=covar f=x,y i=./indat/dat3.csv k=key o=./outdat/out220q.csv s=4 skip=2 t=4; IN=7 OUT=1; 2014/05/31 13:02:03
+#END# kgmvsim -nfn a=rls c=covar f=1,2 i=./indat/dat3nfn.csv k=0 o=./outdat/out220nfn.csv s=4 skip=2 t=4; IN=7 OUT=1; 2014/05/31 13:02:03
+#END# kgmvsim a=rls c=covar f=x,y i=./indat/dat3.csv o=./outdat/out242.csv s=id t=3; IN=7 OUT=5; 2014/05/31 13:02:03
+#END# kgmvsim a=rls c=ucovar f=x,y i=./indat/dat3.csv o=./outdat/out243.csv s=id t=3; IN=7 OUT=5; 2014/05/31 13:02:03
+#END# kgmvsim a=rls c=pearson f=x,y i=./indat/dat3.csv o=./outdat/out244.csv s=id t=3; IN=7 OUT=5; 2014/05/31 13:02:03
+#END# kgmvsim a=rls c=spearman f=x,y i=./indat/dat3.csv o=./outdat/out245.csv s=id t=3; IN=7 OUT=5; 2014/05/31 13:02:03
+#END# kgmvsim a=rls c=kendall f=x,y i=./indat/dat3.csv o=./outdat/out246.csv s=id t=3; IN=7 OUT=5; 2014/05/31 13:02:03
+#END# kgmvsim a=rls c=euclid f=x,y i=./indat/dat3.csv o=./outdat/out247.csv s=id t=3; IN=7 OUT=5; 2014/05/31 13:02:03
+#END# kgmvsim a=rls c=cosine f=x,y i=./indat/dat3.csv o=./outdat/out248.csv s=id t=3; IN=7 OUT=5; 2014/05/31 13:02:03
+#END# kgmvsim a=rls c=cityblock f=x,y i=./indat/dat3.csv o=./outdat/out249.csv s=id t=3; IN=7 OUT=5; 2014/05/31 13:02:03
+#END# kgmvsim a=rls c=hamming f=x,y i=./indat/dat4.csv o=./outdat/out250.csv s=id t=3; IN=8 OUT=6; 2014/05/31 13:02:03
+#END# kgmvsim a=rls c=chi f=x,y i=./indat/dat4.csv o=./outdat/out251.csv s=id t=3; IN=8 OUT=6; 2014/05/31 13:02:03
+#END# kgmvsim a=rls c=phi f=x,y i=./indat/dat4.csv o=./outdat/out252.csv s=id t=3; IN=8 OUT=6; 2014/05/31 13:02:03
+#END# kgmvsim a=rls c=jaccard f=x,y i=./indat/dat4.csv o=./outdat/out253.csv s=id t=3; IN=8 OUT=6; 2014/05/31 13:02:03
+#END# kgmvsim a=rls c=support f=x,y i=./indat/dat4.csv o=./outdat/out254.csv s=id t=3; IN=8 OUT=6; 2014/05/31 13:02:03
+#END# kgmvsim a=rls c=lift f=x,y i=./indat/dat4.csv o=./outdat/out255.csv s=id t=3; IN=8 OUT=6; 2014/05/31 13:02:03
+#END# kgmvsim a=rls c=oddsRatio f=x,y i=./indat/dat4.csv o=./outdat/out256.csv s=id t=3; IN=8 OUT=6; 2014/05/31 13:02:03
+#END# kgmvsim a=rls c=yuleQ f=x,y i=./indat/dat4.csv o=./outdat/out257.csv s=id t=3; IN=8 OUT=6; 2014/05/31 13:02:03
+#END# kgmvsim a=rls c=yuleY f=x,y i=./indat/dat4.csv o=./outdat/out258.csv s=id t=3; IN=8 OUT=6; 2014/05/31 13:02:03
+#END# kgmvsim a=rls c=kappa f=x,y i=./indat/dat4.csv o=./outdat/out259.csv s=id t=3; IN=8 OUT=6; 2014/05/31 13:02:03
+#END# kgmvsim a=rls c=convMax f=x,y i=./indat/dat4.csv o=./outdat/out260.csv s=id t=3; IN=8 OUT=6; 2014/05/31 13:02:03
+#END# kgmvsim a=rls c=convMin f=x,y i=./indat/dat4.csv o=./outdat/out261.csv s=id t=3; IN=8 OUT=6; 2014/05/31 13:02:03
+#END# kgmvsim a=rls c=confMax f=x,y i=./indat/dat4.csv o=./outdat/out262.csv s=id t=3; IN=8 OUT=6; 2014/05/31 13:02:03
+#END# kgmvsim a=rls c=confMin f=x,y i=./indat/dat4.csv o=./outdat/out263.csv s=id t=3; IN=8 OUT=6; 2014/05/31 13:02:04
+#END# kgmvsim a=rls c=covar f=x,y i=./indat/dat5.csv o=./outdat/out264.csv s=id t=3; IN=15 OUT=11; 2014/05/31 13:02:04
+#END# kgmvsim a=rls c=ucovar f=x,y i=./indat/dat5.csv o=./outdat/out265.csv s=id t=3; IN=15 OUT=11; 2014/05/31 13:02:04
+#END# kgmvsim a=rls c=pearson f=x,y i=./indat/dat5.csv o=./outdat/out267.csv s=id t=3; IN=15 OUT=11; 2014/05/31 13:02:04
+#END# kgmvsim a=rls c=spearman f=x,y i=./indat/dat5.csv o=./outdat/out268.csv s=id t=3; IN=15 OUT=11; 2014/05/31 13:02:04
+#END# kgmvsim a=rls c=kendall f=x,y i=./indat/dat5.csv o=./outdat/out269.csv s=id t=3; IN=15 OUT=11; 2014/05/31 13:02:04
+#END# kgmvsim a=rls c=euclid f=x,y i=./indat/dat5.csv o=./outdat/out270.csv s=id t=3; IN=15 OUT=11; 2014/05/31 13:02:04
+#END# kgmvsim a=rls c=cosine f=x,y i=./indat/dat5.csv o=./outdat/out271.csv s=id t=3; IN=15 OUT=11; 2014/05/31 13:02:04
+#END# kgmvsim a=rls c=cityblock f=x,y i=./indat/dat5.csv o=./outdat/out272.csv s=id t=3; IN=15 OUT=11; 2014/05/31 13:02:04
+#END# kgmvsim -n a=rls c=covar f=x,y i=./indat/dat5.csv o=./outdat/out273.csv s=id t=3; IN=15 OUT=13; 2014/05/31 13:02:04
+#END# kgmvsim -n a=rls c=ucovar f=x,y i=./indat/dat5.csv o=./outdat/out274.csv s=id t=3; IN=15 OUT=13; 2014/05/31 13:02:04
+#END# kgmvsim -n a=rls c=pearson f=x,y i=./indat/dat5.csv o=./outdat/out275.csv s=id t=3; IN=15 OUT=13; 2014/05/31 13:02:04
+#END# kgmvsim -n a=rls c=spearman f=x,y i=./indat/dat5.csv o=./outdat/out276.csv s=id t=3; IN=15 OUT=13; 2014/05/31 13:02:04
+#END# kgmvsim -n a=rls c=kendall f=x,y i=./indat/dat5.csv o=./outdat/out277.csv s=id t=3; IN=15 OUT=13; 2014/05/31 13:02:04
+#END# kgmvsim -n a=rls c=euclid f=x,y i=./indat/dat5.csv o=./outdat/out278.csv s=id t=3; IN=15 OUT=13; 2014/05/31 13:02:04
+#END# kgmvsim -n a=rls c=cosine f=x,y i=./indat/dat5.csv o=./outdat/out279.csv s=id t=3; IN=15 OUT=13; 2014/05/31 13:02:04
+#END# kgmvsim -n a=rls c=cityblock f=x,y i=./indat/dat5.csv o=./outdat/out280.csv s=id t=3; IN=15 OUT=13; 2014/05/31 13:02:04
+#END# kgmvsim a=rls c=hamming f=x,y i=./indat/dat6.csv o=./outdat/out281.csv s=id t=3; IN=14 OUT=10; 2014/05/31 13:02:04
+#END# kgmvsim a=rls c=chi f=x,y i=./indat/dat6.csv o=./outdat/out282.csv s=id t=3; IN=14 OUT=10; 2014/05/31 13:02:04
+#END# kgmvsim a=rls c=phi f=x,y i=./indat/dat6.csv o=./outdat/out283.csv s=id t=3; IN=14 OUT=10; 2014/05/31 13:02:04
+#END# kgmvsim a=rls c=jaccard f=x,y i=./indat/dat6.csv o=./outdat/out284.csv s=id t=3; IN=14 OUT=10; 2014/05/31 13:02:04
+#END# kgmvsim a=rls c=support f=x,y i=./indat/dat6.csv o=./outdat/out285.csv s=id t=3; IN=14 OUT=10; 2014/05/31 13:02:04
+#END# kgmvsim a=rls c=lift f=x,y i=./indat/dat6.csv o=./outdat/out286.csv s=id t=3; IN=14 OUT=10; 2014/05/31 13:02:04
+#END# kgmvsim a=rls c=oddsRatio f=x,y i=./indat/dat6.csv o=./outdat/out287.csv s=id t=3; IN=14 OUT=10; 2014/05/31 13:02:04
+#END# kgmvsim a=rls c=yuleQ f=x,y i=./indat/dat6.csv o=./outdat/out288.csv s=id t=3; IN=14 OUT=10; 2014/05/31 13:02:04
+#END# kgmvsim a=rls c=yuleY f=x,y i=./indat/dat6.csv o=./outdat/out289.csv s=id t=3; IN=14 OUT=10; 2014/05/31 13:02:04
+#END# kgmvsim a=rls c=kappa f=x,y i=./indat/dat6.csv o=./outdat/out290.csv s=id t=3; IN=14 OUT=10; 2014/05/31 13:02:04
+#END# kgmvsim a=rls c=convMax f=x,y i=./indat/dat6.csv o=./outdat/out291.csv s=id t=3; IN=14 OUT=10; 2014/05/31 13:02:04
+#END# kgmvsim a=rls c=convMin f=x,y i=./indat/dat6.csv o=./outdat/out292.csv s=id t=3; IN=14 OUT=10; 2014/05/31 13:02:04
+#END# kgmvsim a=rls c=confMax f=x,y i=./indat/dat6.csv o=./outdat/out293.csv s=id t=3; IN=14 OUT=10; 2014/05/31 13:02:04
+#END# kgmvsim a=rls c=confMin f=x,y i=./indat/dat6.csv o=./outdat/out294.csv s=id t=3; IN=14 OUT=10; 2014/05/31 13:02:04
+#END# kgmvsim -n a=rls c=hamming f=x,y i=./indat/dat6.csv o=./outdat/out295.csv s=id t=3; IN=14 OUT=12; 2014/05/31 13:02:04
+#END# kgmvsim -n a=rls c=chi f=x,y i=./indat/dat6.csv o=./outdat/out296.csv s=id t=3; IN=14 OUT=12; 2014/05/31 13:02:04
+#END# kgmvsim -n a=rls c=phi f=x,y i=./indat/dat6.csv o=./outdat/out297.csv s=id t=3; IN=14 OUT=12; 2014/05/31 13:02:05
+#END# kgmvsim -n a=rls c=jaccard f=x,y i=./indat/dat6.csv o=./outdat/out298.csv s=id t=3; IN=14 OUT=12; 2014/05/31 13:02:05
+#END# kgmvsim -n a=rls c=support f=x,y i=./indat/dat6.csv o=./outdat/out299.csv s=id t=3; IN=14 OUT=12; 2014/05/31 13:02:05
+#END# kgmvsim -n a=rls c=lift f=x,y i=./indat/dat6.csv o=./outdat/out300.csv s=id t=3; IN=14 OUT=12; 2014/05/31 13:02:05
+#END# kgmvsim -n a=rls c=oddsRatio f=x,y i=./indat/dat6.csv o=./outdat/out301.csv s=id t=3; IN=14 OUT=12; 2014/05/31 13:02:05
+#END# kgmvsim -n a=rls c=yuleQ f=x,y i=./indat/dat6.csv o=./outdat/out302.csv s=id t=3; IN=14 OUT=12; 2014/05/31 13:02:05
+#END# kgmvsim -n a=rls c=yuleY f=x,y i=./indat/dat6.csv o=./outdat/out303.csv s=id t=3; IN=14 OUT=12; 2014/05/31 13:02:05
+#END# kgmvsim -n a=rls c=kappa f=x,y i=./indat/dat6.csv o=./outdat/out304.csv s=id t=3; IN=14 OUT=12; 2014/05/31 13:02:05
+#END# kgmvsim -n a=rls c=convMax f=x,y i=./indat/dat6.csv o=./outdat/out305.csv s=id t=3; IN=14 OUT=12; 2014/05/31 13:02:05
+#END# kgmvsim -n a=rls c=convMin f=x,y i=./indat/dat6s.csv o=./outdat/out306.csv s=id t=3; IN=14 OUT=12; 2014/05/31 13:02:05
+#END# kgmvsim -n a=rls c=confMax f=x,y i=./indat/dat6s.csv o=./outdat/out307.csv s=id t=3; IN=14 OUT=12; 2014/05/31 13:02:05
+#END# kgmvsim -n a=rls c=confMin f=x,y i=./indat/dat6s.csv o=./outdat/out308.csv s=id t=3; IN=14 OUT=12; 2014/05/31 13:02:05
+#END# kgmvsim -x a=rls c=covar f=1,2 i=./indat/dat5.csv o=./outdat/out264x.csv s=4 t=3; IN=15 OUT=11; 2014/05/31 13:02:05
+#END# kgmvsim -q a=rls c=covar f=x,y i=./indat/dat5.csv o=./outdat/out264q.csv s=id t=3; IN=15 OUT=11; 2014/05/31 13:02:05
+#END# kgmvsim -nfn a=rls c=covar f=1,2 i=./indat/dat5nfn.csv o=./outdat/out264nfn.csv s=4 t=3; IN=15 OUT=11; 2014/05/31 13:02:05
+#END# kgmvsim -n -x a=rls c=covar f=1,2 i=./indat/dat5.csv o=./outdat/out273x.csv s=4 t=3; IN=15 OUT=13; 2014/05/31 13:02:05
+#END# kgmvsim -n -q a=rls c=covar f=x,y i=./indat/dat5.csv o=./outdat/out273q.csv s=id t=3; IN=15 OUT=13; 2014/05/31 13:02:05
+#END# kgmvsim -n -nfn a=rls c=covar f=1,2 i=./indat/dat5nfn.csv o=./outdat/out273nfn.csv s=4 t=3; IN=15 OUT=13; 2014/05/31 13:02:05

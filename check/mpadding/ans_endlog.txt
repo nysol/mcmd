@@ -1,0 +1,960 @@
+#END# kgpadding f=b%n i=./indat/dat0.csv k=a o=./outdat/out0.csv; IN=0 OUT=0; 2014/06/06 17:12:36
+#END# kgpadding -x f=1%n i=./indat/dat0.csv k=0 o=./outdat/out0x.csv; IN=0 OUT=0; 2014/06/06 17:12:36
+#END# kgpadding -nfn f=1%n i=./indat/dat0nfn.csv k=0 o=./outdat/out0nfn.csv; IN=0 OUT=0; 2014/06/06 17:12:36
+#END# kgpadding -nfno f=b%n i=./indat/dat0.csv k=a o=./outdat/out0nfno.csv; IN=0 OUT=0; 2014/06/06 17:12:36
+#END# kgpadding f=b%n i=./indat/dat13s.csv o=./outdat/out10.csv; IN=7 OUT=11; 2014/06/06 17:12:36
+#END# kgpadding -x f=1%n i=./indat/dat13s.csv o=./outdat/out10x.csv; IN=7 OUT=11; 2014/06/06 17:12:36
+#END# kgpadding -nfn f=1%n i=./indat/dat13snfn.csv o=./outdat/out10nfn.csv; IN=7 OUT=11; 2014/06/06 17:12:36
+#END# kgpadding -n f=b%n i=./indat/dat13s.csv o=./outdat/out11.csv; IN=7 OUT=11; 2014/06/06 17:12:36
+#END# kgpadding -n -x f=1%n i=./indat/dat13s.csv o=./outdat/out11x.csv; IN=7 OUT=11; 2014/06/06 17:12:36
+#END# kgpadding -n -nfn f=1%n i=./indat/dat13snfn.csv o=./outdat/out11nfn.csv; IN=7 OUT=11; 2014/06/06 17:12:36
+#END# kgpadding f=b%n i=./indat/dat13s.csv o=./outdat/out12.csv v=padding; IN=7 OUT=11; 2014/06/06 17:12:37
+#END# kgpadding -x f=1%n i=./indat/dat13s.csv o=./outdat/out12x.csv v=padding; IN=7 OUT=11; 2014/06/06 17:12:37
+#END# kgpadding -nfn f=1%n i=./indat/dat13snfn.csv o=./outdat/out12nfn.csv v=padding; IN=7 OUT=11; 2014/06/06 17:12:37
+#END# kgpadding E=11 S=-1 f=b%n i=./indat/dat13s.csv o=./outdat/out13.csv; IN=7 OUT=14; 2014/06/06 17:12:37
+#END# kgpadding -x E=11 S=-1 f=1%n i=./indat/dat13s.csv o=./outdat/out13x.csv; IN=7 OUT=14; 2014/06/06 17:12:37
+#END# kgpadding -nfn E=11 S=-1 f=1%n i=./indat/dat13snfn.csv o=./outdat/out13nfn.csv; IN=7 OUT=14; 2014/06/06 17:12:37
+#END# kgpadding S=-1 f=b%n i=./indat/dat13s.csv o=./outdat/out14.csv; IN=7 OUT=13; 2014/06/06 17:12:37
+#END# kgpadding -x S=-1 f=1%n i=./indat/dat13s.csv o=./outdat/out14x.csv; IN=7 OUT=13; 2014/06/06 17:12:37
+#END# kgpadding -nfn S=-1 f=1%n i=./indat/dat13snfn.csv o=./outdat/out14nfn.csv; IN=7 OUT=13; 2014/06/06 17:12:37
+#END# kgpadding E=11 f=b%n i=./indat/dat13s.csv o=./outdat/out15.csv; IN=7 OUT=12; 2014/06/06 17:12:37
+#END# kgpadding -x E=11 f=1%n i=./indat/dat13s.csv o=./outdat/out15x.csv; IN=7 OUT=12; 2014/06/06 17:12:37
+#END# kgpadding -nfn E=11 f=1%n i=./indat/dat13snfn.csv o=./outdat/out15nfn.csv; IN=7 OUT=12; 2014/06/06 17:12:37
+#END# kgpadding E=10 S=1 f=b%n i=./indat/dat13s.csv o=./outdat/out16.csv; IN=7 OUT=11; 2014/06/06 17:12:37
+#END# kgpadding -x E=10 S=1 f=1%n i=./indat/dat13s.csv o=./outdat/out16x.csv; IN=7 OUT=11; 2014/06/06 17:12:37
+#END# kgpadding -nfn E=10 S=1 f=1%n i=./indat/dat13snfn.csv o=./outdat/out16nfn.csv; IN=7 OUT=11; 2014/06/06 17:12:37
+#END# kgpadding S=1 f=b%n i=./indat/dat13s.csv o=./outdat/out17.csv; IN=7 OUT=11; 2014/06/06 17:12:37
+#END# kgpadding -x S=1 f=1%n i=./indat/dat13s.csv o=./outdat/out17x.csv; IN=7 OUT=11; 2014/06/06 17:12:37
+#END# kgpadding -nfn S=1 f=1%n i=./indat/dat13snfn.csv o=./outdat/out17nfn.csv; IN=7 OUT=11; 2014/06/06 17:12:37
+#END# kgpadding E=10 f=b%n i=./indat/dat13s.csv o=./outdat/out18.csv; IN=7 OUT=11; 2014/06/06 17:12:37
+#END# kgpadding -x E=10 f=1%n i=./indat/dat13s.csv o=./outdat/out18x.csv; IN=7 OUT=11; 2014/06/06 17:12:37
+#END# kgpadding -nfn E=10 f=1%n i=./indat/dat13snfn.csv o=./outdat/out18nfn.csv; IN=7 OUT=11; 2014/06/06 17:12:37
+#END# kgpadding -n E=11 S=-1 f=b%n i=./indat/dat13s.csv o=./outdat/out19.csv; IN=7 OUT=14; 2014/06/06 17:12:37
+#END# kgpadding -n -x E=11 S=-1 f=1%n i=./indat/dat13s.csv o=./outdat/out19x.csv; IN=7 OUT=14; 2014/06/06 17:12:37
+#END# kgpadding -n -nfn E=11 S=-1 f=1%n i=./indat/dat13snfn.csv o=./outdat/out19nfn.csv; IN=7 OUT=14; 2014/06/06 17:12:37
+#END# kgpadding E=11 S=-1 f=b%n i=./indat/dat13s.csv o=./outdat/out20.csv v=padding; IN=7 OUT=14; 2014/06/06 17:12:37
+#END# kgpadding -x E=11 S=-1 f=1%n i=./indat/dat13s.csv o=./outdat/out20x.csv v=padding; IN=7 OUT=14; 2014/06/06 17:12:37
+#END# kgpadding -nfn E=11 S=-1 f=1%n i=./indat/dat13snfn.csv o=./outdat/out20nfn.csv v=padding; IN=7 OUT=14; 2014/06/06 17:12:37
+#END# kgpadding -n E=10 S=1 f=b%n i=./indat/dat13s.csv o=./outdat/out21.csv; IN=7 OUT=11; 2014/06/06 17:12:37
+#END# kgpadding -n -x E=10 S=1 f=1%n i=./indat/dat13s.csv o=./outdat/out21x.csv; IN=7 OUT=11; 2014/06/06 17:12:37
+#END# kgpadding -n -nfn E=10 S=1 f=1%n i=./indat/dat13snfn.csv o=./outdat/out21nfn.csv; IN=7 OUT=11; 2014/06/06 17:12:37
+#END# kgpadding E=10 S=1 f=b%n i=./indat/dat13s.csv o=./outdat/out22.csv v=padding; IN=7 OUT=11; 2014/06/06 17:12:37
+#END# kgpadding -x E=10 S=1 f=1%n i=./indat/dat13s.csv o=./outdat/out22x.csv v=padding; IN=7 OUT=11; 2014/06/06 17:12:37
+#END# kgpadding -nfn E=10 S=1 f=1%n i=./indat/dat13snfn.csv o=./outdat/out22nfn.csv v=padding; IN=7 OUT=11; 2014/06/06 17:12:37
+#END# kgpadding f=b%nr i=./indat/dat13sr.csv o=./outdat/out23.csv; IN=7 OUT=11; 2014/06/06 17:12:37
+#END# kgpadding -x f=1%nr i=./indat/dat13sr.csv o=./outdat/out23x.csv; IN=7 OUT=11; 2014/06/06 17:12:37
+#END# kgpadding -nfn f=1%nr i=./indat/dat13srnfn.csv o=./outdat/out23nfn.csv; IN=7 OUT=11; 2014/06/06 17:12:37
+#END# kgpadding -n f=b%nr i=./indat/dat13sr.csv o=./outdat/out24.csv; IN=7 OUT=11; 2014/06/06 17:12:37
+#END# kgpadding -n -x f=1%nr i=./indat/dat13sr.csv o=./outdat/out24x.csv; IN=7 OUT=11; 2014/06/06 17:12:37
+#END# kgpadding -n -nfn f=1%nr i=./indat/dat13srnfn.csv o=./outdat/out24nfn.csv; IN=7 OUT=11; 2014/06/06 17:12:37
+#END# kgpadding f=b%nr i=./indat/dat13sr.csv o=./outdat/out25.csv v=padding; IN=7 OUT=11; 2014/06/06 17:12:37
+#END# kgpadding -x f=1%nr i=./indat/dat13sr.csv o=./outdat/out25x.csv v=padding; IN=7 OUT=11; 2014/06/06 17:12:37
+#END# kgpadding -nfn f=1%nr i=./indat/dat13srnfn.csv o=./outdat/out25nfn.csv v=padding; IN=7 OUT=11; 2014/06/06 17:12:37
+#END# kgpadding E=-1 S=11 f=b%nr i=./indat/dat13sr.csv o=./outdat/out26.csv; IN=7 OUT=14; 2014/06/06 17:12:37
+#END# kgpadding -x E=-1 S=11 f=1%nr i=./indat/dat13sr.csv o=./outdat/out26x.csv; IN=7 OUT=14; 2014/06/06 17:12:38
+#END# kgpadding -nfn E=-1 S=11 f=1%nr i=./indat/dat13srnfn.csv o=./outdat/out26nfn.csv; IN=7 OUT=14; 2014/06/06 17:12:38
+#END# kgpadding E=-1 f=b%nr i=./indat/dat13sr.csv o=./outdat/out27.csv; IN=7 OUT=13; 2014/06/06 17:12:38
+#END# kgpadding -x E=-1 f=1%nr i=./indat/dat13sr.csv o=./outdat/out27x.csv; IN=7 OUT=13; 2014/06/06 17:12:38
+#END# kgpadding -nfn E=-1 f=1%nr i=./indat/dat13srnfn.csv o=./outdat/out27nfn.csv; IN=7 OUT=13; 2014/06/06 17:12:38
+#END# kgpadding S=11 f=b%nr i=./indat/dat13sr.csv o=./outdat/out28.csv; IN=7 OUT=12; 2014/06/06 17:12:38
+#END# kgpadding -x S=11 f=1%nr i=./indat/dat13sr.csv o=./outdat/out28x.csv; IN=7 OUT=12; 2014/06/06 17:12:38
+#END# kgpadding -nfn S=11 f=1%nr i=./indat/dat13srnfn.csv o=./outdat/out28nfn.csv; IN=7 OUT=12; 2014/06/06 17:12:38
+#END# kgpadding E=1 S=10 f=b%nr i=./indat/dat13sr.csv o=./outdat/out29.csv; IN=7 OUT=11; 2014/06/06 17:12:38
+#END# kgpadding -x E=1 S=10 f=1%nr i=./indat/dat13sr.csv o=./outdat/out29x.csv; IN=7 OUT=11; 2014/06/06 17:12:38
+#END# kgpadding -nfn E=1 S=10 f=1%nr i=./indat/dat13srnfn.csv o=./outdat/out29nfn.csv; IN=7 OUT=11; 2014/06/06 17:12:38
+#END# kgpadding E=1 f=b%nr i=./indat/dat13sr.csv o=./outdat/out30.csv; IN=7 OUT=11; 2014/06/06 17:12:38
+#END# kgpadding -x E=1 f=1%nr i=./indat/dat13sr.csv o=./outdat/out30x.csv; IN=7 OUT=11; 2014/06/06 17:12:38
+#END# kgpadding -nfn E=1 f=1%nr i=./indat/dat13srnfn.csv o=./outdat/out30nfn.csv; IN=7 OUT=11; 2014/06/06 17:12:38
+#END# kgpadding S=10 f=b%nr i=./indat/dat13sr.csv o=./outdat/out31.csv; IN=7 OUT=11; 2014/06/06 17:12:38
+#END# kgpadding -x S=10 f=1%nr i=./indat/dat13sr.csv o=./outdat/out31x.csv; IN=7 OUT=11; 2014/06/06 17:12:38
+#END# kgpadding -nfn S=10 f=1%nr i=./indat/dat13srnfn.csv o=./outdat/out31nfn.csv; IN=7 OUT=11; 2014/06/06 17:12:38
+#END# kgpadding -n E=-1 S=11 f=b%nr i=./indat/dat13sr.csv o=./outdat/out32.csv; IN=7 OUT=14; 2014/06/06 17:12:38
+#END# kgpadding -n -x E=-1 S=11 f=1%nr i=./indat/dat13sr.csv o=./outdat/out32x.csv; IN=7 OUT=14; 2014/06/06 17:12:38
+#END# kgpadding -n -nfn E=-1 S=11 f=1%nr i=./indat/dat13srnfn.csv o=./outdat/out32nfn.csv; IN=7 OUT=14; 2014/06/06 17:12:38
+#END# kgpadding E=-1 S=11 f=b%nr i=./indat/dat13sr.csv o=./outdat/out33.csv v=padding; IN=7 OUT=14; 2014/06/06 17:12:38
+#END# kgpadding -x E=-1 S=11 f=1%nr i=./indat/dat13sr.csv o=./outdat/out33x.csv v=padding; IN=7 OUT=14; 2014/06/06 17:12:38
+#END# kgpadding -nfn E=-1 S=11 f=1%nr i=./indat/dat13srnfn.csv o=./outdat/out33nfn.csv v=padding; IN=7 OUT=14; 2014/06/06 17:12:38
+#END# kgpadding -n E=1 S=10 f=b%nr i=./indat/dat13sr.csv o=./outdat/out34.csv; IN=7 OUT=11; 2014/06/06 17:12:38
+#END# kgpadding -n -x E=1 S=10 f=1%nr i=./indat/dat13sr.csv o=./outdat/out34x.csv; IN=7 OUT=11; 2014/06/06 17:12:38
+#END# kgpadding -n -nfn E=1 S=10 f=1%nr i=./indat/dat13srnfn.csv o=./outdat/out34nfn.csv; IN=7 OUT=11; 2014/06/06 17:12:38
+#END# kgpadding E=1 S=10 f=b%nr i=./indat/dat13sr.csv o=./outdat/out35.csv v=padding; IN=7 OUT=11; 2014/06/06 17:12:38
+#END# kgpadding -x E=1 S=10 f=1%nr i=./indat/dat13sr.csv o=./outdat/out35x.csv v=padding; IN=7 OUT=11; 2014/06/06 17:12:38
+#END# kgpadding -nfn E=1 S=10 f=1%nr i=./indat/dat13srnfn.csv o=./outdat/out35nfn.csv v=padding; IN=7 OUT=11; 2014/06/06 17:12:38
+#END# kgpadding f=b%d i=./indat/dat15s.csv o=./outdat/out36.csv; IN=6 OUT=17; 2014/06/06 17:12:38
+#END# kgpadding -x f=1%d i=./indat/dat15s.csv o=./outdat/out36x.csv; IN=6 OUT=17; 2014/06/06 17:12:38
+#END# kgpadding -nfn f=1%d i=./indat/dat15snfn.csv o=./outdat/out36nfn.csv; IN=6 OUT=17; 2014/06/06 17:12:38
+#END# kgpadding -n f=b%d i=./indat/dat15s.csv o=./outdat/out37.csv; IN=6 OUT=17; 2014/06/06 17:12:38
+#END# kgpadding -n -x f=1%d i=./indat/dat15s.csv o=./outdat/out37x.csv; IN=6 OUT=17; 2014/06/06 17:12:38
+#END# kgpadding -n -nfn f=1%d i=./indat/dat15snfn.csv o=./outdat/out37nfn.csv; IN=6 OUT=17; 2014/06/06 17:12:38
+#END# kgpadding f=b%d i=./indat/dat15s.csv o=./outdat/out38.csv v=padding; IN=6 OUT=17; 2014/06/06 17:12:38
+#END# kgpadding -x f=1%d i=./indat/dat15s.csv o=./outdat/out38x.csv v=padding; IN=6 OUT=17; 2014/06/06 17:12:38
+#END# kgpadding -nfn f=1%d i=./indat/dat15snfn.csv o=./outdat/out38nfn.csv v=padding; IN=6 OUT=17; 2014/06/06 17:12:38
+#END# kgpadding E=20101020 S=20100930 f=b%d i=./indat/dat15s.csv o=./outdat/out39.csv; IN=6 OUT=21; 2014/06/06 17:12:38
+#END# kgpadding -x E=20101020 S=20100930 f=1%d i=./indat/dat15s.csv o=./outdat/out39x.csv; IN=6 OUT=21; 2014/06/06 17:12:38
+#END# kgpadding -nfn E=20101020 S=20100930 f=1%d i=./indat/dat15snfn.csv o=./outdat/out39nfn.csv; IN=6 OUT=21; 2014/06/06 17:12:38
+#END# kgpadding S=20100930 f=b%d i=./indat/dat15s.csv o=./outdat/out40.csv; IN=6 OUT=18; 2014/06/06 17:12:38
+#END# kgpadding -x S=20100930 f=1%d i=./indat/dat15s.csv o=./outdat/out40x.csv; IN=6 OUT=18; 2014/06/06 17:12:38
+#END# kgpadding -nfn S=20100930 f=1%d i=./indat/dat15snfn.csv o=./outdat/out40nfn.csv; IN=6 OUT=18; 2014/06/06 17:12:38
+#END# kgpadding E=20101020 f=b%d i=./indat/dat15s.csv o=./outdat/out41.csv; IN=6 OUT=20; 2014/06/06 17:12:39
+#END# kgpadding -x E=20101020 f=1%d i=./indat/dat15s.csv o=./outdat/out41x.csv; IN=6 OUT=20; 2014/06/06 17:12:39
+#END# kgpadding -nfn E=20101020 f=1%d i=./indat/dat15snfn.csv o=./outdat/out41nfn.csv; IN=6 OUT=20; 2014/06/06 17:12:39
+#END# kgpadding E=20101017 S=20101001 f=b%d i=./indat/dat15s.csv o=./outdat/out42.csv; IN=6 OUT=17; 2014/06/06 17:12:39
+#END# kgpadding -x E=20101017 S=20101001 f=1%d i=./indat/dat15s.csv o=./outdat/out42x.csv; IN=6 OUT=17; 2014/06/06 17:12:39
+#END# kgpadding -nfn E=20101017 S=20101001 f=1%d i=./indat/dat15snfn.csv o=./outdat/out42nfn.csv; IN=6 OUT=17; 2014/06/06 17:12:39
+#END# kgpadding S=20101001 f=b%d i=./indat/dat15s.csv o=./outdat/out43.csv; IN=6 OUT=17; 2014/06/06 17:12:39
+#END# kgpadding -x S=20101001 f=1%d i=./indat/dat15s.csv o=./outdat/out43x.csv; IN=6 OUT=17; 2014/06/06 17:12:39
+#END# kgpadding -nfn S=20101001 f=1%d i=./indat/dat15snfn.csv o=./outdat/out43nfn.csv; IN=6 OUT=17; 2014/06/06 17:12:39
+#END# kgpadding E=20101017 f=b%d i=./indat/dat15s.csv o=./outdat/out44.csv; IN=6 OUT=17; 2014/06/06 17:12:39
+#END# kgpadding -x E=20101017 f=1%d i=./indat/dat15s.csv o=./outdat/out44x.csv; IN=6 OUT=17; 2014/06/06 17:12:39
+#END# kgpadding -nfn E=20101017 f=1%d i=./indat/dat15snfn.csv o=./outdat/out44nfn.csv; IN=6 OUT=17; 2014/06/06 17:12:39
+#END# kgpadding -n E=20101020 S=20100930 f=b%d i=./indat/dat15s.csv o=./outdat/out45.csv; IN=6 OUT=21; 2014/06/06 17:12:39
+#END# kgpadding -n -x E=20101020 S=20100930 f=1%d i=./indat/dat15s.csv o=./outdat/out45x.csv; IN=6 OUT=21; 2014/06/06 17:12:39
+#END# kgpadding -n -nfn E=20101020 S=20100930 f=1%d i=./indat/dat15snfn.csv o=./outdat/out45nfn.csv; IN=6 OUT=21; 2014/06/06 17:12:39
+#END# kgpadding E=20101020 S=20100930 f=b%d i=./indat/dat15s.csv o=./outdat/out46.csv v=padding; IN=6 OUT=21; 2014/06/06 17:12:39
+#END# kgpadding -x E=20101020 S=20100930 f=1%d i=./indat/dat15s.csv o=./outdat/out46x.csv v=padding; IN=6 OUT=21; 2014/06/06 17:12:39
+#END# kgpadding -nfn E=20101020 S=20100930 f=1%d i=./indat/dat15snfn.csv o=./outdat/out46nfn.csv v=padding; IN=6 OUT=21; 2014/06/06 17:12:39
+#END# kgpadding -n E=20101017 S=20101001 f=b%d i=./indat/dat15s.csv o=./outdat/out47.csv; IN=6 OUT=17; 2014/06/06 17:12:39
+#END# kgpadding -n -x E=20101017 S=20101001 f=1%d i=./indat/dat15s.csv o=./outdat/out47x.csv; IN=6 OUT=17; 2014/06/06 17:12:39
+#END# kgpadding -n -nfn E=20101017 S=20101001 f=1%d i=./indat/dat15snfn.csv o=./outdat/out47nfn.csv; IN=6 OUT=17; 2014/06/06 17:12:39
+#END# kgpadding E=20101017 S=20101001 f=b%d i=./indat/dat15s.csv o=./outdat/out48.csv v=padding; IN=6 OUT=17; 2014/06/06 17:12:39
+#END# kgpadding -x E=20101017 S=20101001 f=1%d i=./indat/dat15s.csv o=./outdat/out48x.csv v=padding; IN=6 OUT=17; 2014/06/06 17:12:39
+#END# kgpadding -nfn E=20101017 S=20101001 f=1%d i=./indat/dat15snfn.csv o=./outdat/out48nfn.csv v=padding; IN=6 OUT=17; 2014/06/06 17:12:39
+#END# kgpadding f=b%dr i=./indat/dat15sr.csv o=./outdat/out49.csv; IN=6 OUT=17; 2014/06/06 17:12:39
+#END# kgpadding -x f=1%dr i=./indat/dat15sr.csv o=./outdat/out49x.csv; IN=6 OUT=17; 2014/06/06 17:12:39
+#END# kgpadding -nfn f=1%dr i=./indat/dat15srnfn.csv o=./outdat/out49nfn.csv; IN=6 OUT=17; 2014/06/06 17:12:39
+#END# kgpadding -n f=b%dr i=./indat/dat15sr.csv o=./outdat/out50.csv; IN=6 OUT=17; 2014/06/06 17:12:39
+#END# kgpadding -n -x f=1%dr i=./indat/dat15sr.csv o=./outdat/out50x.csv; IN=6 OUT=17; 2014/06/06 17:12:39
+#END# kgpadding -n -nfn f=1%dr i=./indat/dat15srnfn.csv o=./outdat/out50nfn.csv; IN=6 OUT=17; 2014/06/06 17:12:39
+#END# kgpadding f=b%dr i=./indat/dat15sr.csv o=./outdat/out51.csv v=padding; IN=6 OUT=17; 2014/06/06 17:12:39
+#END# kgpadding -x f=1%dr i=./indat/dat15sr.csv o=./outdat/out51x.csv v=padding; IN=6 OUT=17; 2014/06/06 17:12:39
+#END# kgpadding -nfn f=1%dr i=./indat/dat15srnfn.csv o=./outdat/out51nfn.csv v=padding; IN=6 OUT=17; 2014/06/06 17:12:39
+#END# kgpadding E=20100930 S=20101020 f=b%dr i=./indat/dat15sr.csv o=./outdat/out52.csv; IN=6 OUT=21; 2014/06/06 17:12:39
+#END# kgpadding -x E=20100930 S=20101020 f=1%dr i=./indat/dat15sr.csv o=./outdat/out52x.csv; IN=6 OUT=21; 2014/06/06 17:12:39
+#END# kgpadding -nfn E=20100930 S=20101020 f=1%dr i=./indat/dat15srnfn.csv o=./outdat/out52nfn.csv; IN=6 OUT=21; 2014/06/06 17:12:39
+#END# kgpadding S=20101020 f=b%dr i=./indat/dat15sr.csv o=./outdat/out53.csv; IN=6 OUT=20; 2014/06/06 17:12:39
+#END# kgpadding -x S=20101020 f=1%dr i=./indat/dat15sr.csv o=./outdat/out53x.csv; IN=6 OUT=20; 2014/06/06 17:12:39
+#END# kgpadding -nfn S=20101020 f=1%dr i=./indat/dat15srnfn.csv o=./outdat/out53nfn.csv; IN=6 OUT=20; 2014/06/06 17:12:39
+#END# kgpadding E=20100930 f=b%dr i=./indat/dat15sr.csv o=./outdat/out54.csv; IN=6 OUT=18; 2014/06/06 17:12:39
+#END# kgpadding -x E=20100930 f=1%dr i=./indat/dat15sr.csv o=./outdat/out54x.csv; IN=6 OUT=18; 2014/06/06 17:12:39
+#END# kgpadding -nfn E=20100930 f=1%dr i=./indat/dat15srnfn.csv o=./outdat/out54nfn.csv; IN=6 OUT=18; 2014/06/06 17:12:39
+#END# kgpadding E=20101001 S=20101017 f=b%dr i=./indat/dat15sr.csv o=./outdat/out55.csv; IN=6 OUT=17; 2014/06/06 17:12:39
+#END# kgpadding -x E=20101001 S=20101017 f=1%dr i=./indat/dat15sr.csv o=./outdat/out55x.csv; IN=6 OUT=17; 2014/06/06 17:12:40
+#END# kgpadding -nfn E=20101001 S=20101017 f=1%dr i=./indat/dat15srnfn.csv o=./outdat/out55nfn.csv; IN=6 OUT=17; 2014/06/06 17:12:40
+#END# kgpadding S=20101017 f=b%dr i=./indat/dat15sr.csv o=./outdat/out56.csv; IN=6 OUT=17; 2014/06/06 17:12:40
+#END# kgpadding -x S=20101017 f=1%dr i=./indat/dat15sr.csv o=./outdat/out56x.csv; IN=6 OUT=17; 2014/06/06 17:12:40
+#END# kgpadding -nfn S=20101017 f=1%dr i=./indat/dat15srnfn.csv o=./outdat/out56nfn.csv; IN=6 OUT=17; 2014/06/06 17:12:40
+#END# kgpadding E=20101001 f=b%dr i=./indat/dat15sr.csv o=./outdat/out57.csv; IN=6 OUT=17; 2014/06/06 17:12:40
+#END# kgpadding -x E=20101001 f=1%dr i=./indat/dat15sr.csv o=./outdat/out57x.csv; IN=6 OUT=17; 2014/06/06 17:12:40
+#END# kgpadding -nfn E=20101001 f=1%dr i=./indat/dat15srnfn.csv o=./outdat/out57nfn.csv; IN=6 OUT=17; 2014/06/06 17:12:40
+#END# kgpadding -n E=20100930 S=20101020 f=b%dr i=./indat/dat15sr.csv o=./outdat/out58.csv; IN=6 OUT=21; 2014/06/06 17:12:40
+#END# kgpadding -n -x E=20100930 S=20101020 f=1%dr i=./indat/dat15sr.csv o=./outdat/out58x.csv; IN=6 OUT=21; 2014/06/06 17:12:40
+#END# kgpadding -n -nfn E=20100930 S=20101020 f=1%dr i=./indat/dat15srnfn.csv o=./outdat/out58nfn.csv; IN=6 OUT=21; 2014/06/06 17:12:40
+#END# kgpadding E=20100930 S=20101020 f=b%dr i=./indat/dat15sr.csv o=./outdat/out59.csv v=padding; IN=6 OUT=21; 2014/06/06 17:12:40
+#END# kgpadding -x E=20100930 S=20101020 f=1%dr i=./indat/dat15sr.csv o=./outdat/out59x.csv v=padding; IN=6 OUT=21; 2014/06/06 17:12:40
+#END# kgpadding -nfn E=20100930 S=20101020 f=1%dr i=./indat/dat15srnfn.csv o=./outdat/out59nfn.csv v=padding; IN=6 OUT=21; 2014/06/06 17:12:40
+#END# kgpadding -n E=20101001 S=20101017 f=b%dr i=./indat/dat15sr.csv o=./outdat/out60.csv; IN=6 OUT=17; 2014/06/06 17:12:40
+#END# kgpadding -n -x E=20101001 S=20101017 f=1%dr i=./indat/dat15sr.csv o=./outdat/out60x.csv; IN=6 OUT=17; 2014/06/06 17:12:40
+#END# kgpadding -n -nfn E=20101001 S=20101017 f=1%dr i=./indat/dat15srnfn.csv o=./outdat/out60nfn.csv; IN=6 OUT=17; 2014/06/06 17:12:40
+#END# kgpadding E=20101001 S=20101017 f=b%dr i=./indat/dat15sr.csv o=./outdat/out61.csv v=padding; IN=6 OUT=17; 2014/06/06 17:12:40
+#END# kgpadding -x E=20101001 S=20101017 f=1%dr i=./indat/dat15sr.csv o=./outdat/out61x.csv v=padding; IN=6 OUT=17; 2014/06/06 17:12:40
+#END# kgpadding -nfn E=20101001 S=20101017 f=1%dr i=./indat/dat15srnfn.csv o=./outdat/out61nfn.csv v=padding; IN=6 OUT=17; 2014/06/06 17:12:40
+#END# kgpadding f=b%t i=./indat/dat17s.csv o=./outdat/out62.csv; IN=6 OUT=20; 2014/06/06 17:12:40
+#END# kgpadding -x f=1%t i=./indat/dat17s.csv o=./outdat/out62x.csv; IN=6 OUT=20; 2014/06/06 17:12:40
+#END# kgpadding -nfn f=1%t i=./indat/dat17snfn.csv o=./outdat/out62nfn.csv; IN=6 OUT=20; 2014/06/06 17:12:40
+#END# kgpadding -n f=b%t i=./indat/dat17s.csv o=./outdat/out63.csv; IN=6 OUT=20; 2014/06/06 17:12:40
+#END# kgpadding -n -x f=1%t i=./indat/dat17s.csv o=./outdat/out63x.csv; IN=6 OUT=20; 2014/06/06 17:12:40
+#END# kgpadding -n -nfn f=1%t i=./indat/dat17snfn.csv o=./outdat/out63nfn.csv; IN=6 OUT=20; 2014/06/06 17:12:40
+#END# kgpadding f=b%t i=./indat/dat17s.csv o=./outdat/out64.csv v=padding; IN=6 OUT=20; 2014/06/06 17:12:40
+#END# kgpadding -x f=1%t i=./indat/dat17s.csv o=./outdat/out64x.csv v=padding; IN=6 OUT=20; 2014/06/06 17:12:40
+#END# kgpadding -nfn f=1%t i=./indat/dat17snfn.csv o=./outdat/out64nfn.csv v=padding; IN=6 OUT=20; 2014/06/06 17:12:40
+#END# kgpadding E=101111 S=101048 f=b%t i=./indat/dat17s.csv o=./outdat/out65.csv; IN=6 OUT=24; 2014/06/06 17:12:40
+#END# kgpadding -x E=101111 S=101048 f=1%t i=./indat/dat17s.csv o=./outdat/out65x.csv; IN=6 OUT=24; 2014/06/06 17:12:40
+#END# kgpadding -nfn E=101111 S=101048 f=1%t i=./indat/dat17snfn.csv o=./outdat/out65nfn.csv; IN=6 OUT=24; 2014/06/06 17:12:40
+#END# kgpadding S=101048 f=b%t i=./indat/dat17s.csv o=./outdat/out66.csv; IN=6 OUT=22; 2014/06/06 17:12:40
+#END# kgpadding -x S=101048 f=1%t i=./indat/dat17s.csv o=./outdat/out66x.csv; IN=6 OUT=22; 2014/06/06 17:12:40
+#END# kgpadding -nfn S=101048 f=1%t i=./indat/dat17snfn.csv o=./outdat/out66nfn.csv; IN=6 OUT=22; 2014/06/06 17:12:40
+#END# kgpadding E=101111 f=b%t i=./indat/dat17s.csv o=./outdat/out67.csv; IN=6 OUT=22; 2014/06/06 17:12:40
+#END# kgpadding -x E=101111 f=1%t i=./indat/dat17s.csv o=./outdat/out67x.csv; IN=6 OUT=22; 2014/06/06 17:12:40
+#END# kgpadding -nfn E=101111 f=1%t i=./indat/dat17snfn.csv o=./outdat/out67nfn.csv; IN=6 OUT=22; 2014/06/06 17:12:40
+#END# kgpadding E=101109 S=101050 f=b%t i=./indat/dat17s.csv o=./outdat/out68.csv; IN=6 OUT=20; 2014/06/06 17:12:40
+#END# kgpadding -x E=101109 S=101050 f=1%t i=./indat/dat17s.csv o=./outdat/out68x.csv; IN=6 OUT=20; 2014/06/06 17:12:40
+#END# kgpadding -nfn E=101109 S=101050 f=1%t i=./indat/dat17snfn.csv o=./outdat/out68nfn.csv; IN=6 OUT=20; 2014/06/06 17:12:40
+#END# kgpadding S=101050 f=b%t i=./indat/dat17s.csv o=./outdat/out69.csv; IN=6 OUT=20; 2014/06/06 17:12:40
+#END# kgpadding -x S=101050 f=1%t i=./indat/dat17s.csv o=./outdat/out69x.csv; IN=6 OUT=20; 2014/06/06 17:12:40
+#END# kgpadding -nfn S=101050 f=1%t i=./indat/dat17snfn.csv o=./outdat/out69nfn.csv; IN=6 OUT=20; 2014/06/06 17:12:40
+#END# kgpadding E=101109 f=b%t i=./indat/dat17s.csv o=./outdat/out70.csv; IN=6 OUT=20; 2014/06/06 17:12:41
+#END# kgpadding -x E=101109 f=1%t i=./indat/dat17s.csv o=./outdat/out70x.csv; IN=6 OUT=20; 2014/06/06 17:12:41
+#END# kgpadding -nfn E=101109 f=1%t i=./indat/dat17snfn.csv o=./outdat/out70nfn.csv; IN=6 OUT=20; 2014/06/06 17:12:41
+#END# kgpadding -n E=101111 S=101048 f=b%t i=./indat/dat17s.csv o=./outdat/out71.csv; IN=6 OUT=24; 2014/06/06 17:12:41
+#END# kgpadding -n -x E=101111 S=101048 f=1%t i=./indat/dat17s.csv o=./outdat/out71x.csv; IN=6 OUT=24; 2014/06/06 17:12:41
+#END# kgpadding -n -nfn E=101111 S=101048 f=1%t i=./indat/dat17snfn.csv o=./outdat/out71nfn.csv; IN=6 OUT=24; 2014/06/06 17:12:41
+#END# kgpadding E=101111 S=101048 f=b%t i=./indat/dat17s.csv o=./outdat/out72.csv v=padding; IN=6 OUT=24; 2014/06/06 17:12:41
+#END# kgpadding -x E=101111 S=101048 f=1%t i=./indat/dat17s.csv o=./outdat/out72x.csv v=padding; IN=6 OUT=24; 2014/06/06 17:12:41
+#END# kgpadding -nfn E=101111 S=101048 f=1%t i=./indat/dat17snfn.csv o=./outdat/out72nfn.csv v=padding; IN=6 OUT=24; 2014/06/06 17:12:41
+#END# kgpadding -n E=101109 S=101050 f=b%t i=./indat/dat17s.csv o=./outdat/out73.csv; IN=6 OUT=20; 2014/06/06 17:12:41
+#END# kgpadding -n -x E=101109 S=101050 f=1%t i=./indat/dat17s.csv o=./outdat/out73x.csv; IN=6 OUT=20; 2014/06/06 17:12:41
+#END# kgpadding -n -nfn E=101109 S=101050 f=1%t i=./indat/dat17snfn.csv o=./outdat/out73nfn.csv; IN=6 OUT=20; 2014/06/06 17:12:41
+#END# kgpadding E=101109 S=101050 f=b%t i=./indat/dat17s.csv o=./outdat/out74.csv v=padding; IN=6 OUT=20; 2014/06/06 17:12:41
+#END# kgpadding -x E=101109 S=101050 f=1%t i=./indat/dat17s.csv o=./outdat/out74x.csv v=padding; IN=6 OUT=20; 2014/06/06 17:12:41
+#END# kgpadding -nfn E=101109 S=101050 f=1%t i=./indat/dat17snfn.csv o=./outdat/out74nfn.csv v=padding; IN=6 OUT=20; 2014/06/06 17:12:41
+#END# kgpadding f=b%tr i=./indat/dat17sr.csv o=./outdat/out75.csv; IN=6 OUT=20; 2014/06/06 17:12:41
+#END# kgpadding -x f=1%tr i=./indat/dat17sr.csv o=./outdat/out75x.csv; IN=6 OUT=20; 2014/06/06 17:12:41
+#END# kgpadding -nfn f=1%tr i=./indat/dat17srnfn.csv o=./outdat/out75nfn.csv; IN=6 OUT=20; 2014/06/06 17:12:41
+#END# kgpadding -n f=b%tr i=./indat/dat17sr.csv o=./outdat/out76.csv; IN=6 OUT=20; 2014/06/06 17:12:41
+#END# kgpadding -n -x f=1%tr i=./indat/dat17sr.csv o=./outdat/out76x.csv; IN=6 OUT=20; 2014/06/06 17:12:41
+#END# kgpadding -n -nfn f=1%tr i=./indat/dat17srnfn.csv o=./outdat/out76nfn.csv; IN=6 OUT=20; 2014/06/06 17:12:41
+#END# kgpadding f=b%tr i=./indat/dat17sr.csv o=./outdat/out77.csv v=padding; IN=6 OUT=20; 2014/06/06 17:12:41
+#END# kgpadding -x f=1%tr i=./indat/dat17sr.csv o=./outdat/out77x.csv v=padding; IN=6 OUT=20; 2014/06/06 17:12:41
+#END# kgpadding -nfn f=1%tr i=./indat/dat17srnfn.csv o=./outdat/out77nfn.csv v=padding; IN=6 OUT=20; 2014/06/06 17:12:41
+#END# kgpadding E=101048 S=101111 f=b%tr i=./indat/dat17sr.csv o=./outdat/out78.csv; IN=6 OUT=24; 2014/06/06 17:12:41
+#END# kgpadding -x E=101048 S=101111 f=1%tr i=./indat/dat17sr.csv o=./outdat/out78x.csv; IN=6 OUT=24; 2014/06/06 17:12:41
+#END# kgpadding -nfn E=101048 S=101111 f=1%tr i=./indat/dat17srnfn.csv o=./outdat/out78nfn.csv; IN=6 OUT=24; 2014/06/06 17:12:41
+#END# kgpadding S=101111 f=b%tr i=./indat/dat17sr.csv o=./outdat/out79.csv; IN=6 OUT=22; 2014/06/06 17:12:41
+#END# kgpadding -x S=101111 f=1%tr i=./indat/dat17sr.csv o=./outdat/out79x.csv; IN=6 OUT=22; 2014/06/06 17:12:41
+#END# kgpadding -nfn S=101111 f=1%tr i=./indat/dat17srnfn.csv o=./outdat/out79nfn.csv; IN=6 OUT=22; 2014/06/06 17:12:41
+#END# kgpadding E=101048 f=b%tr i=./indat/dat17sr.csv o=./outdat/out80.csv; IN=6 OUT=22; 2014/06/06 17:12:41
+#END# kgpadding -x E=101048 f=1%tr i=./indat/dat17sr.csv o=./outdat/out80x.csv; IN=6 OUT=22; 2014/06/06 17:12:41
+#END# kgpadding -nfn E=101048 f=1%tr i=./indat/dat17srnfn.csv o=./outdat/out80nfn.csv; IN=6 OUT=22; 2014/06/06 17:12:41
+#END# kgpadding E=101050 S=101109 f=b%tr i=./indat/dat17sr.csv o=./outdat/out81.csv; IN=6 OUT=20; 2014/06/06 17:12:41
+#END# kgpadding -x E=101050 S=101109 f=1%tr i=./indat/dat17sr.csv o=./outdat/out81x.csv; IN=6 OUT=20; 2014/06/06 17:12:41
+#END# kgpadding -nfn E=101050 S=101109 f=1%tr i=./indat/dat17srnfn.csv o=./outdat/out81nfn.csv; IN=6 OUT=20; 2014/06/06 17:12:41
+#END# kgpadding S=101109 f=b%tr i=./indat/dat17sr.csv o=./outdat/out82.csv; IN=6 OUT=20; 2014/06/06 17:12:41
+#END# kgpadding -x S=101109 f=1%tr i=./indat/dat17sr.csv o=./outdat/out82x.csv; IN=6 OUT=20; 2014/06/06 17:12:41
+#END# kgpadding -nfn S=101109 f=1%tr i=./indat/dat17srnfn.csv o=./outdat/out82nfn.csv; IN=6 OUT=20; 2014/06/06 17:12:41
+#END# kgpadding E=101050 f=b%tr i=./indat/dat17sr.csv o=./outdat/out83.csv; IN=6 OUT=20; 2014/06/06 17:12:41
+#END# kgpadding -x E=101050 f=1%tr i=./indat/dat17sr.csv o=./outdat/out83x.csv; IN=6 OUT=20; 2014/06/06 17:12:41
+#END# kgpadding -nfn E=101050 f=1%tr i=./indat/dat17srnfn.csv o=./outdat/out83nfn.csv; IN=6 OUT=20; 2014/06/06 17:12:41
+#END# kgpadding -n E=101048 S=101111 f=b%tr i=./indat/dat17sr.csv o=./outdat/out84.csv; IN=6 OUT=24; 2014/06/06 17:12:41
+#END# kgpadding -n -x E=101048 S=101111 f=1%tr i=./indat/dat17sr.csv o=./outdat/out84x.csv; IN=6 OUT=24; 2014/06/06 17:12:41
+#END# kgpadding -n -nfn E=101048 S=101111 f=1%tr i=./indat/dat17srnfn.csv o=./outdat/out84nfn.csv; IN=6 OUT=24; 2014/06/06 17:12:42
+#END# kgpadding E=101048 S=101111 f=b%tr i=./indat/dat17sr.csv o=./outdat/out85.csv v=padding; IN=6 OUT=24; 2014/06/06 17:12:42
+#END# kgpadding -x E=101048 S=101111 f=1%tr i=./indat/dat17sr.csv o=./outdat/out85x.csv v=padding; IN=6 OUT=24; 2014/06/06 17:12:42
+#END# kgpadding -nfn E=101048 S=101111 f=1%tr i=./indat/dat17srnfn.csv o=./outdat/out85nfn.csv v=padding; IN=6 OUT=24; 2014/06/06 17:12:42
+#END# kgpadding -n E=101050 S=101109 f=b%tr i=./indat/dat17sr.csv o=./outdat/out86.csv; IN=6 OUT=20; 2014/06/06 17:12:42
+#END# kgpadding -n -x E=101050 S=101109 f=1%tr i=./indat/dat17sr.csv o=./outdat/out86x.csv; IN=6 OUT=20; 2014/06/06 17:12:42
+#END# kgpadding -n -nfn E=101050 S=101109 f=1%tr i=./indat/dat17srnfn.csv o=./outdat/out86nfn.csv; IN=6 OUT=20; 2014/06/06 17:12:42
+#END# kgpadding E=101050 S=101109 f=b%tr i=./indat/dat17sr.csv o=./outdat/out87.csv v=padding; IN=6 OUT=20; 2014/06/06 17:12:42
+#END# kgpadding -x E=101050 S=101109 f=1%tr i=./indat/dat17sr.csv o=./outdat/out87x.csv v=padding; IN=6 OUT=20; 2014/06/06 17:12:42
+#END# kgpadding -nfn E=101050 S=101109 f=1%tr i=./indat/dat17srnfn.csv o=./outdat/out87nfn.csv v=padding; IN=6 OUT=20; 2014/06/06 17:12:42
+#END# kgpadding f=b%n i=./indat/dat14s.csv k=a o=./outdat/out90.csv; IN=11 OUT=17; 2014/06/06 17:12:42
+#END# kgpadding -x f=1%n i=./indat/dat14s.csv k=0 o=./outdat/out90x.csv; IN=11 OUT=17; 2014/06/06 17:12:42
+#END# kgpadding -nfn f=1%n i=./indat/dat14snfn.csv k=0 o=./outdat/out90nfn.csv; IN=11 OUT=17; 2014/06/06 17:12:42
+#END# kgpadding -n f=b%n i=./indat/dat14s.csv k=a o=./outdat/out91.csv; IN=11 OUT=17; 2014/06/06 17:12:42
+#END# kgpadding -n -x f=1%n i=./indat/dat14s.csv k=0 o=./outdat/out91x.csv; IN=11 OUT=17; 2014/06/06 17:12:42
+#END# kgpadding -n -nfn f=1%n i=./indat/dat14snfn.csv k=0 o=./outdat/out91nfn.csv; IN=11 OUT=17; 2014/06/06 17:12:42
+#END# kgpadding f=b%n i=./indat/dat14s.csv k=a o=./outdat/out92.csv v=padding; IN=11 OUT=17; 2014/06/06 17:12:42
+#END# kgpadding -x f=1%n i=./indat/dat14s.csv k=0 o=./outdat/out92x.csv v=padding; IN=11 OUT=17; 2014/06/06 17:12:42
+#END# kgpadding -nfn f=1%n i=./indat/dat14snfn.csv k=0 o=./outdat/out92nfn.csv v=padding; IN=11 OUT=17; 2014/06/06 17:12:42
+#END# kgpadding E=11 S=-1 f=b%n i=./indat/dat14s.csv k=a o=./outdat/out93.csv; IN=11 OUT=26; 2014/06/06 17:12:42
+#END# kgpadding -x E=11 S=-1 f=1%n i=./indat/dat14s.csv k=0 o=./outdat/out93x.csv; IN=11 OUT=26; 2014/06/06 17:12:42
+#END# kgpadding -nfn E=11 S=-1 f=1%n i=./indat/dat14snfn.csv k=0 o=./outdat/out93nfn.csv; IN=11 OUT=26; 2014/06/06 17:12:42
+#END# kgpadding S=-1 f=b%n i=./indat/dat14s.csv k=a o=./outdat/out94.csv; IN=11 OUT=23; 2014/06/06 17:12:42
+#END# kgpadding -x S=-1 f=1%n i=./indat/dat14s.csv k=0 o=./outdat/out94x.csv; IN=11 OUT=23; 2014/06/06 17:12:42
+#END# kgpadding -nfn S=-1 f=1%n i=./indat/dat14snfn.csv k=0 o=./outdat/out94nfn.csv; IN=11 OUT=23; 2014/06/06 17:12:42
+#END# kgpadding E=11 f=b%n i=./indat/dat14s.csv k=a o=./outdat/out95.csv; IN=11 OUT=20; 2014/06/06 17:12:42
+#END# kgpadding -x E=11 f=1%n i=./indat/dat14s.csv k=0 o=./outdat/out95x.csv; IN=11 OUT=20; 2014/06/06 17:12:42
+#END# kgpadding -nfn E=11 f=1%n i=./indat/dat14snfn.csv k=0 o=./outdat/out95nfn.csv; IN=11 OUT=20; 2014/06/06 17:12:42
+#END# kgpadding E=10 S=1 f=b%n i=./indat/dat14s.csv k=a o=./outdat/out96.csv; IN=11 OUT=20; 2014/06/06 17:12:42
+#END# kgpadding -x E=10 S=1 f=1%n i=./indat/dat14s.csv k=0 o=./outdat/out96x.csv; IN=11 OUT=20; 2014/06/06 17:12:42
+#END# kgpadding -nfn E=10 S=1 f=1%n i=./indat/dat14snfn.csv k=0 o=./outdat/out96nfn.csv; IN=11 OUT=20; 2014/06/06 17:12:42
+#END# kgpadding S=1 f=b%n i=./indat/dat14s.csv k=a o=./outdat/out97.csv; IN=11 OUT=19; 2014/06/06 17:12:42
+#END# kgpadding -x S=1 f=1%n i=./indat/dat14s.csv k=0 o=./outdat/out97x.csv; IN=11 OUT=19; 2014/06/06 17:12:42
+#END# kgpadding -nfn S=1 f=1%n i=./indat/dat14snfn.csv k=0 o=./outdat/out97nfn.csv; IN=11 OUT=19; 2014/06/06 17:12:42
+#END# kgpadding E=10 f=b%n i=./indat/dat14s.csv k=a o=./outdat/out98.csv; IN=11 OUT=18; 2014/06/06 17:12:42
+#END# kgpadding -x E=10 f=1%n i=./indat/dat14s.csv k=0 o=./outdat/out98x.csv; IN=11 OUT=18; 2014/06/06 17:12:42
+#END# kgpadding -nfn E=10 f=1%n i=./indat/dat14snfn.csv k=0 o=./outdat/out98nfn.csv; IN=11 OUT=18; 2014/06/06 17:12:42
+#END# kgpadding -n E=11 S=-1 f=b%n i=./indat/dat14s.csv k=a o=./outdat/out99.csv; IN=11 OUT=26; 2014/06/06 17:12:42
+#END# kgpadding -n -x E=11 S=-1 f=1%n i=./indat/dat14s.csv k=0 o=./outdat/out99x.csv; IN=11 OUT=26; 2014/06/06 17:12:42
+#END# kgpadding -n -nfn E=11 S=-1 f=1%n i=./indat/dat14snfn.csv k=0 o=./outdat/out99nfn.csv; IN=11 OUT=26; 2014/06/06 17:12:42
+#END# kgpadding E=11 S=-1 f=b%n i=./indat/dat14s.csv k=a o=./outdat/out100.csv v=padding; IN=11 OUT=26; 2014/06/06 17:12:42
+#END# kgpadding -x E=11 S=-1 f=1%n i=./indat/dat14s.csv k=0 o=./outdat/out100x.csv v=padding; IN=11 OUT=26; 2014/06/06 17:12:42
+#END# kgpadding -nfn E=11 S=-1 f=1%n i=./indat/dat14snfn.csv k=0 o=./outdat/out100nfn.csv v=padding; IN=11 OUT=26; 2014/06/06 17:12:42
+#END# kgpadding -n E=10 S=1 f=b%n i=./indat/dat14s.csv k=a o=./outdat/out101.csv; IN=11 OUT=20; 2014/06/06 17:12:42
+#END# kgpadding -n -x E=10 S=1 f=1%n i=./indat/dat14s.csv k=0 o=./outdat/out101x.csv; IN=11 OUT=20; 2014/06/06 17:12:42
+#END# kgpadding -n -nfn E=10 S=1 f=1%n i=./indat/dat14snfn.csv k=0 o=./outdat/out101nfn.csv; IN=11 OUT=20; 2014/06/06 17:12:42
+#END# kgpadding E=10 S=1 f=b%n i=./indat/dat14s.csv k=a o=./outdat/out102.csv v=padding; IN=11 OUT=20; 2014/06/06 17:12:42
+#END# kgpadding -x E=10 S=1 f=1%n i=./indat/dat14s.csv k=0 o=./outdat/out102x.csv v=padding; IN=11 OUT=20; 2014/06/06 17:12:42
+#END# kgpadding -nfn E=10 S=1 f=1%n i=./indat/dat14snfn.csv k=0 o=./outdat/out102nfn.csv v=padding; IN=11 OUT=20; 2014/06/06 17:12:42
+#END# kgpadding f=b%nr i=./indat/dat14sr.csv k=a o=./outdat/out103.csv; IN=11 OUT=17; 2014/06/06 17:12:42
+#END# kgpadding -x f=1%nr i=./indat/dat14sr.csv k=0 o=./outdat/out103x.csv; IN=11 OUT=17; 2014/06/06 17:12:42
+#END# kgpadding -nfn f=1%nr i=./indat/dat14srnfn.csv k=0 o=./outdat/out103nfn.csv; IN=11 OUT=17; 2014/06/06 17:12:42
+#END# kgpadding -n f=b%nr i=./indat/dat14sr.csv k=a o=./outdat/out104.csv; IN=11 OUT=17; 2014/06/06 17:12:42
+#END# kgpadding -n -x f=1%nr i=./indat/dat14sr.csv k=0 o=./outdat/out104x.csv; IN=11 OUT=17; 2014/06/06 17:12:42
+#END# kgpadding -n -nfn f=1%nr i=./indat/dat14srnfn.csv k=0 o=./outdat/out104nfn.csv; IN=11 OUT=17; 2014/06/06 17:12:42
+#END# kgpadding f=b%nr i=./indat/dat14sr.csv k=a o=./outdat/out105.csv v=padding; IN=11 OUT=17; 2014/06/06 17:12:42
+#END# kgpadding -x f=1%nr i=./indat/dat14sr.csv k=0 o=./outdat/out105x.csv v=padding; IN=11 OUT=17; 2014/06/06 17:12:42
+#END# kgpadding -nfn f=1%nr i=./indat/dat14srnfn.csv k=0 o=./outdat/out105nfn.csv v=padding; IN=11 OUT=17; 2014/06/06 17:12:42
+#END# kgpadding E=-1 S=11 f=b%nr i=./indat/dat14sr.csv k=a o=./outdat/out106.csv; IN=11 OUT=26; 2014/06/06 17:12:42
+#END# kgpadding -x E=-1 S=11 f=1%nr i=./indat/dat14sr.csv k=0 o=./outdat/out106x.csv; IN=11 OUT=26; 2014/06/06 17:12:42
+#END# kgpadding -nfn E=-1 S=11 f=1%nr i=./indat/dat14srnfn.csv k=0 o=./outdat/out106nfn.csv; IN=11 OUT=26; 2014/06/06 17:12:42
+#END# kgpadding E=-1 f=b%nr i=./indat/dat14sr.csv k=a o=./outdat/out107.csv; IN=11 OUT=23; 2014/06/06 17:12:42
+#END# kgpadding -x E=-1 f=1%nr i=./indat/dat14sr.csv k=0 o=./outdat/out107x.csv; IN=11 OUT=23; 2014/06/06 17:12:42
+#END# kgpadding -nfn E=-1 f=1%nr i=./indat/dat14srnfn.csv k=0 o=./outdat/out107nfn.csv; IN=11 OUT=23; 2014/06/06 17:12:42
+#END# kgpadding S=11 f=b%nr i=./indat/dat14sr.csv k=a o=./outdat/out108.csv; IN=11 OUT=20; 2014/06/06 17:12:42
+#END# kgpadding -x S=11 f=1%nr i=./indat/dat14sr.csv k=0 o=./outdat/out108x.csv; IN=11 OUT=20; 2014/06/06 17:12:42
+#END# kgpadding -nfn S=11 f=1%nr i=./indat/dat14srnfn.csv k=0 o=./outdat/out108nfn.csv; IN=11 OUT=20; 2014/06/06 17:12:42
+#END# kgpadding E=1 S=10 f=b%nr i=./indat/dat14sr.csv k=a o=./outdat/out109.csv; IN=11 OUT=20; 2014/06/06 17:12:42
+#END# kgpadding -x E=1 S=10 f=1%nr i=./indat/dat14sr.csv k=0 o=./outdat/out109x.csv; IN=11 OUT=20; 2014/06/06 17:12:42
+#END# kgpadding -nfn E=1 S=10 f=1%nr i=./indat/dat14srnfn.csv k=0 o=./outdat/out109nfn.csv; IN=11 OUT=20; 2014/06/06 17:12:42
+#END# kgpadding E=1 f=b%nr i=./indat/dat14sr.csv k=a o=./outdat/out110.csv; IN=11 OUT=19; 2014/06/06 17:12:42
+#END# kgpadding -x E=1 f=1%nr i=./indat/dat14sr.csv k=0 o=./outdat/out110x.csv; IN=11 OUT=19; 2014/06/06 17:12:42
+#END# kgpadding -nfn E=1 f=1%nr i=./indat/dat14srnfn.csv k=0 o=./outdat/out110nfn.csv; IN=11 OUT=19; 2014/06/06 17:12:42
+#END# kgpadding S=10 f=b%nr i=./indat/dat14sr.csv k=a o=./outdat/out111.csv; IN=11 OUT=18; 2014/06/06 17:12:42
+#END# kgpadding -x S=10 f=1%nr i=./indat/dat14sr.csv k=0 o=./outdat/out111x.csv; IN=11 OUT=18; 2014/06/06 17:12:42
+#END# kgpadding -nfn S=10 f=1%nr i=./indat/dat14srnfn.csv k=0 o=./outdat/out111nfn.csv; IN=11 OUT=18; 2014/06/06 17:12:42
+#END# kgpadding -n E=-1 S=11 f=b%nr i=./indat/dat14sr.csv k=a o=./outdat/out112.csv; IN=11 OUT=26; 2014/06/06 17:12:42
+#END# kgpadding -n -x E=-1 S=11 f=1%nr i=./indat/dat14sr.csv k=0 o=./outdat/out112x.csv; IN=11 OUT=26; 2014/06/06 17:12:42
+#END# kgpadding -n -nfn E=-1 S=11 f=1%nr i=./indat/dat14srnfn.csv k=0 o=./outdat/out112nfn.csv; IN=11 OUT=26; 2014/06/06 17:12:42
+#END# kgpadding E=-1 S=11 f=b%nr i=./indat/dat14sr.csv k=a o=./outdat/out113.csv v=padding; IN=11 OUT=26; 2014/06/06 17:12:42
+#END# kgpadding -x E=-1 S=11 f=1%nr i=./indat/dat14sr.csv k=0 o=./outdat/out113x.csv v=padding; IN=11 OUT=26; 2014/06/06 17:12:42
+#END# kgpadding -nfn E=-1 S=11 f=1%nr i=./indat/dat14srnfn.csv k=0 o=./outdat/out113nfn.csv v=padding; IN=11 OUT=26; 2014/06/06 17:12:42
+#END# kgpadding -n E=1 S=10 f=b%nr i=./indat/dat14sr.csv k=a o=./outdat/out114.csv; IN=11 OUT=20; 2014/06/06 17:12:42
+#END# kgpadding -n -x E=1 S=10 f=1%nr i=./indat/dat14sr.csv k=0 o=./outdat/out114x.csv; IN=11 OUT=20; 2014/06/06 17:12:42
+#END# kgpadding -n -nfn E=1 S=10 f=1%nr i=./indat/dat14srnfn.csv k=0 o=./outdat/out114nfn.csv; IN=11 OUT=20; 2014/06/06 17:12:42
+#END# kgpadding E=1 S=10 f=b%nr i=./indat/dat14sr.csv k=a o=./outdat/out115.csv v=padding; IN=11 OUT=20; 2014/06/06 17:12:42
+#END# kgpadding -x E=1 S=10 f=1%nr i=./indat/dat14sr.csv k=0 o=./outdat/out115x.csv v=padding; IN=11 OUT=20; 2014/06/06 17:12:42
+#END# kgpadding -nfn E=1 S=10 f=1%nr i=./indat/dat14srnfn.csv k=0 o=./outdat/out115nfn.csv v=padding; IN=11 OUT=20; 2014/06/06 17:12:42
+#END# kgpadding f=b%d i=./indat/dat16s.csv k=a o=./outdat/out116.csv; IN=11 OUT=16; 2014/06/06 17:12:42
+#END# kgpadding -x f=1%d i=./indat/dat16s.csv k=0 o=./outdat/out116x.csv; IN=11 OUT=16; 2014/06/06 17:12:42
+#END# kgpadding -nfn f=1%d i=./indat/dat16snfn.csv k=0 o=./outdat/out116nfn.csv; IN=11 OUT=16; 2014/06/06 17:12:42
+#END# kgpadding -n f=b%d i=./indat/dat16s.csv k=a o=./outdat/out117.csv; IN=11 OUT=16; 2014/06/06 17:12:42
+#END# kgpadding -n -x f=1%d i=./indat/dat16s.csv k=0 o=./outdat/out117x.csv; IN=11 OUT=16; 2014/06/06 17:12:42
+#END# kgpadding -n -nfn f=1%d i=./indat/dat16snfn.csv k=0 o=./outdat/out117nfn.csv; IN=11 OUT=16; 2014/06/06 17:12:42
+#END# kgpadding f=b%d i=./indat/dat16s.csv k=a o=./outdat/out118.csv v=padding; IN=11 OUT=16; 2014/06/06 17:12:42
+#END# kgpadding -x f=1%d i=./indat/dat16s.csv k=0 o=./outdat/out118x.csv v=padding; IN=11 OUT=16; 2014/06/06 17:12:42
+#END# kgpadding -nfn f=1%d i=./indat/dat16snfn.csv k=0 o=./outdat/out118nfn.csv v=padding; IN=11 OUT=16; 2014/06/06 17:12:42
+#END# kgpadding E=20131107 S=20131024 f=b%d i=./indat/dat16s.csv k=a o=./outdat/out119.csv; IN=11 OUT=31; 2014/06/06 17:12:42
+#END# kgpadding -x E=20131107 S=20131024 f=1%d i=./indat/dat16s.csv k=0 o=./outdat/out119x.csv; IN=11 OUT=31; 2014/06/06 17:12:42
+#END# kgpadding -nfn E=20131107 S=20131024 f=1%d i=./indat/dat16snfn.csv k=0 o=./outdat/out119nfn.csv; IN=11 OUT=31; 2014/06/06 17:12:42
+#END# kgpadding S=20131024 f=b%d i=./indat/dat16s.csv k=a o=./outdat/out120.csv; IN=11 OUT=25; 2014/06/06 17:12:42
+#END# kgpadding -x S=20131024 f=1%d i=./indat/dat16s.csv k=0 o=./outdat/out120x.csv; IN=11 OUT=25; 2014/06/06 17:12:42
+#END# kgpadding -nfn S=20131024 f=1%d i=./indat/dat16snfn.csv k=0 o=./outdat/out120nfn.csv; IN=11 OUT=25; 2014/06/06 17:12:42
+#END# kgpadding E=20131107 f=b%d i=./indat/dat16s.csv k=a o=./outdat/out121.csv; IN=11 OUT=22; 2014/06/06 17:12:42
+#END# kgpadding -x E=20131107 f=1%d i=./indat/dat16s.csv k=0 o=./outdat/out121x.csv; IN=11 OUT=22; 2014/06/06 17:12:42
+#END# kgpadding -nfn E=20131107 f=1%d i=./indat/dat16snfn.csv k=0 o=./outdat/out121nfn.csv; IN=11 OUT=22; 2014/06/06 17:12:42
+#END# kgpadding E=20131103 S=20131101 f=b%d i=./indat/dat16s.csv k=a o=./outdat/out122.csv; IN=11 OUT=16; 2014/06/06 17:12:42
+#END# kgpadding -x E=20131103 S=20131101 f=1%d i=./indat/dat16s.csv k=0 o=./outdat/out122x.csv; IN=11 OUT=16; 2014/06/06 17:12:42
+#END# kgpadding -nfn E=20131103 S=20131101 f=1%d i=./indat/dat16snfn.csv k=0 o=./outdat/out122nfn.csv; IN=11 OUT=16; 2014/06/06 17:12:42
+#END# kgpadding S=20131101 f=b%d i=./indat/dat16s.csv k=a o=./outdat/out123.csv; IN=11 OUT=16; 2014/06/06 17:12:42
+#END# kgpadding -x S=20131101 f=1%d i=./indat/dat16s.csv k=0 o=./outdat/out123x.csv; IN=11 OUT=16; 2014/06/06 17:12:42
+#END# kgpadding -nfn S=20131101 f=1%d i=./indat/dat16snfn.csv k=0 o=./outdat/out123nfn.csv; IN=11 OUT=16; 2014/06/06 17:12:42
+#END# kgpadding E=20131103 f=b%d i=./indat/dat16s.csv k=a o=./outdat/out124.csv; IN=11 OUT=16; 2014/06/06 17:12:42
+#END# kgpadding -x E=20131103 f=1%d i=./indat/dat16s.csv k=0 o=./outdat/out124x.csv; IN=11 OUT=16; 2014/06/06 17:12:42
+#END# kgpadding -nfn E=20131103 f=1%d i=./indat/dat16snfn.csv k=0 o=./outdat/out124nfn.csv; IN=11 OUT=16; 2014/06/06 17:12:42
+#END# kgpadding -n E=20131107 S=20131024 f=b%d i=./indat/dat16s.csv k=a o=./outdat/out125.csv; IN=11 OUT=31; 2014/06/06 17:12:42
+#END# kgpadding -n -x E=20131107 S=20131024 f=1%d i=./indat/dat16s.csv k=0 o=./outdat/out125x.csv; IN=11 OUT=31; 2014/06/06 17:12:42
+#END# kgpadding -n -nfn E=20131107 S=20131024 f=1%d i=./indat/dat16snfn.csv k=0 o=./outdat/out125nfn.csv; IN=11 OUT=31; 2014/06/06 17:12:42
+#END# kgpadding E=20131107 S=20131024 f=b%d i=./indat/dat16s.csv k=a o=./outdat/out126.csv v=padding; IN=11 OUT=31; 2014/06/06 17:12:42
+#END# kgpadding -x E=20131107 S=20131024 f=1%d i=./indat/dat16s.csv k=0 o=./outdat/out126x.csv v=padding; IN=11 OUT=31; 2014/06/06 17:12:42
+#END# kgpadding -nfn E=20131107 S=20131024 f=1%d i=./indat/dat16snfn.csv k=0 o=./outdat/out126nfn.csv v=padding; IN=11 OUT=31; 2014/06/06 17:12:42
+#END# kgpadding -n E=20131103 S=20131101 f=b%d i=./indat/dat16s.csv k=a o=./outdat/out127.csv; IN=11 OUT=16; 2014/06/06 17:12:42
+#END# kgpadding -n -x E=20131103 S=20131101 f=1%d i=./indat/dat16s.csv k=0 o=./outdat/out127x.csv; IN=11 OUT=16; 2014/06/06 17:12:42
+#END# kgpadding -n -nfn E=20131103 S=20131101 f=1%d i=./indat/dat16snfn.csv k=0 o=./outdat/out127nfn.csv; IN=11 OUT=16; 2014/06/06 17:12:43
+#END# kgpadding E=20131103 S=20131101 f=b%d i=./indat/dat16s.csv k=a o=./outdat/out128.csv v=padding; IN=11 OUT=16; 2014/06/06 17:12:43
+#END# kgpadding -x E=20131103 S=20131101 f=1%d i=./indat/dat16s.csv k=0 o=./outdat/out128x.csv v=padding; IN=11 OUT=16; 2014/06/06 17:12:43
+#END# kgpadding -nfn E=20131103 S=20131101 f=1%d i=./indat/dat16snfn.csv k=0 o=./outdat/out128nfn.csv v=padding; IN=11 OUT=16; 2014/06/06 17:12:43
+#END# kgpadding f=b%dr i=./indat/dat16sr.csv k=a o=./outdat/out129.csv; IN=11 OUT=16; 2014/06/06 17:12:43
+#END# kgpadding -x f=1%dr i=./indat/dat16sr.csv k=0 o=./outdat/out129x.csv; IN=11 OUT=16; 2014/06/06 17:12:43
+#END# kgpadding -nfn f=1%dr i=./indat/dat16srnfn.csv k=0 o=./outdat/out129nfn.csv; IN=11 OUT=16; 2014/06/06 17:12:43
+#END# kgpadding -n f=b%dr i=./indat/dat16sr.csv k=a o=./outdat/out130.csv; IN=11 OUT=16; 2014/06/06 17:12:43
+#END# kgpadding -n -x f=1%dr i=./indat/dat16sr.csv k=0 o=./outdat/out130x.csv; IN=11 OUT=16; 2014/06/06 17:12:43
+#END# kgpadding -n -nfn f=1%dr i=./indat/dat16srnfn.csv k=0 o=./outdat/out130nfn.csv; IN=11 OUT=16; 2014/06/06 17:12:43
+#END# kgpadding f=b%dr i=./indat/dat16sr.csv k=a o=./outdat/out131.csv v=padding; IN=11 OUT=16; 2014/06/06 17:12:43
+#END# kgpadding -x f=1%dr i=./indat/dat16sr.csv k=0 o=./outdat/out131x.csv v=padding; IN=11 OUT=16; 2014/06/06 17:12:43
+#END# kgpadding -nfn f=1%dr i=./indat/dat16srnfn.csv k=0 o=./outdat/out131nfn.csv v=padding; IN=11 OUT=16; 2014/06/06 17:12:43
+#END# kgpadding E=20131024 S=20131107 f=b%dr i=./indat/dat16sr.csv k=a o=./outdat/out132.csv; IN=11 OUT=31; 2014/06/06 17:12:43
+#END# kgpadding -x E=20131024 S=20131107 f=1%dr i=./indat/dat16sr.csv k=0 o=./outdat/out132x.csv; IN=11 OUT=31; 2014/06/06 17:12:43
+#END# kgpadding -nfn E=20131024 S=20131107 f=1%dr i=./indat/dat16srnfn.csv k=0 o=./outdat/out132nfn.csv; IN=11 OUT=31; 2014/06/06 17:12:43
+#END# kgpadding S=20131107 f=b%dr i=./indat/dat16sr.csv k=a o=./outdat/out133.csv; IN=11 OUT=22; 2014/06/06 17:12:43
+#END# kgpadding -x S=20131107 f=1%dr i=./indat/dat16sr.csv k=0 o=./outdat/out133x.csv; IN=11 OUT=22; 2014/06/06 17:12:43
+#END# kgpadding -nfn S=20131107 f=1%dr i=./indat/dat16srnfn.csv k=0 o=./outdat/out133nfn.csv; IN=11 OUT=22; 2014/06/06 17:12:43
+#END# kgpadding E=20131024 f=b%dr i=./indat/dat16sr.csv k=a o=./outdat/out134.csv; IN=11 OUT=25; 2014/06/06 17:12:43
+#END# kgpadding -x E=20131024 f=1%dr i=./indat/dat16sr.csv k=0 o=./outdat/out134x.csv; IN=11 OUT=25; 2014/06/06 17:12:43
+#END# kgpadding -nfn E=20131024 f=1%dr i=./indat/dat16srnfn.csv k=0 o=./outdat/out134nfn.csv; IN=11 OUT=25; 2014/06/06 17:12:43
+#END# kgpadding E=20131101 S=20131103 f=b%dr i=./indat/dat16sr.csv k=a o=./outdat/out135.csv; IN=11 OUT=16; 2014/06/06 17:12:43
+#END# kgpadding -x E=20131101 S=20131103 f=1%dr i=./indat/dat16sr.csv k=0 o=./outdat/out135x.csv; IN=11 OUT=16; 2014/06/06 17:12:43
+#END# kgpadding -nfn E=20131101 S=20131103 f=1%dr i=./indat/dat16srnfn.csv k=0 o=./outdat/out135nfn.csv; IN=11 OUT=16; 2014/06/06 17:12:43
+#END# kgpadding S=20131103 f=b%dr i=./indat/dat16sr.csv k=a o=./outdat/out136.csv; IN=11 OUT=16; 2014/06/06 17:12:43
+#END# kgpadding -x S=20131103 f=1%dr i=./indat/dat16sr.csv k=0 o=./outdat/out136x.csv; IN=11 OUT=16; 2014/06/06 17:12:43
+#END# kgpadding -nfn S=20131103 f=1%dr i=./indat/dat16srnfn.csv k=0 o=./outdat/out136nfn.csv; IN=11 OUT=16; 2014/06/06 17:12:43
+#END# kgpadding E=20131101 f=b%dr i=./indat/dat16sr.csv k=a o=./outdat/out137.csv; IN=11 OUT=16; 2014/06/06 17:12:43
+#END# kgpadding -x E=20131101 f=1%dr i=./indat/dat16sr.csv k=0 o=./outdat/out137x.csv; IN=11 OUT=16; 2014/06/06 17:12:43
+#END# kgpadding -nfn E=20131101 f=1%dr i=./indat/dat16srnfn.csv k=0 o=./outdat/out137nfn.csv; IN=11 OUT=16; 2014/06/06 17:12:43
+#END# kgpadding -n E=20131024 S=20131107 f=b%dr i=./indat/dat16sr.csv k=a o=./outdat/out138.csv; IN=11 OUT=31; 2014/06/06 17:12:43
+#END# kgpadding -n -x E=20131024 S=20131107 f=1%dr i=./indat/dat16sr.csv k=0 o=./outdat/out138x.csv; IN=11 OUT=31; 2014/06/06 17:12:43
+#END# kgpadding -n -nfn E=20131024 S=20131107 f=1%dr i=./indat/dat16srnfn.csv k=0 o=./outdat/out138nfn.csv; IN=11 OUT=31; 2014/06/06 17:12:43
+#END# kgpadding E=20131024 S=20131107 f=b%dr i=./indat/dat16sr.csv k=a o=./outdat/out139.csv v=padding; IN=11 OUT=31; 2014/06/06 17:12:43
+#END# kgpadding -x E=20131024 S=20131107 f=1%dr i=./indat/dat16sr.csv k=0 o=./outdat/out139x.csv v=padding; IN=11 OUT=31; 2014/06/06 17:12:43
+#END# kgpadding -nfn E=20131024 S=20131107 f=1%dr i=./indat/dat16srnfn.csv k=0 o=./outdat/out139nfn.csv v=padding; IN=11 OUT=31; 2014/06/06 17:12:43
+#END# kgpadding -n E=20131101 S=20131103 f=b%dr i=./indat/dat16sr.csv k=a o=./outdat/out140.csv; IN=11 OUT=16; 2014/06/06 17:12:43
+#END# kgpadding -n -x E=20131101 S=20131103 f=1%dr i=./indat/dat16sr.csv k=0 o=./outdat/out140x.csv; IN=11 OUT=16; 2014/06/06 17:12:43
+#END# kgpadding -n -nfn E=20131101 S=20131103 f=1%dr i=./indat/dat16srnfn.csv k=0 o=./outdat/out140nfn.csv; IN=11 OUT=16; 2014/06/06 17:12:43
+#END# kgpadding E=20131101 S=20131103 f=b%dr i=./indat/dat16sr.csv k=a o=./outdat/out141.csv v=padding; IN=11 OUT=16; 2014/06/06 17:12:43
+#END# kgpadding -x E=20131101 S=20131103 f=1%dr i=./indat/dat16sr.csv k=0 o=./outdat/out141x.csv v=padding; IN=11 OUT=16; 2014/06/06 17:12:43
+#END# kgpadding -nfn E=20131101 S=20131103 f=1%dr i=./indat/dat16srnfn.csv k=0 o=./outdat/out141nfn.csv v=padding; IN=11 OUT=16; 2014/06/06 17:12:43
+#END# kgpadding f=b%t i=./indat/dat18s.csv k=a o=./outdat/out142.csv; IN=11 OUT=45; 2014/06/06 17:12:43
+#END# kgpadding -x f=1%t i=./indat/dat18s.csv k=0 o=./outdat/out142x.csv; IN=11 OUT=45; 2014/06/06 17:12:43
+#END# kgpadding -nfn f=1%t i=./indat/dat18snfn.csv k=0 o=./outdat/out142nfn.csv; IN=11 OUT=45; 2014/06/06 17:12:43
+#END# kgpadding -n f=b%t i=./indat/dat18s.csv k=a o=./outdat/out143.csv; IN=11 OUT=45; 2014/06/06 17:12:43
+#END# kgpadding -n -x f=1%t i=./indat/dat18s.csv k=0 o=./outdat/out143x.csv; IN=11 OUT=45; 2014/06/06 17:12:43
+#END# kgpadding -n -nfn f=1%t i=./indat/dat18snfn.csv k=0 o=./outdat/out143nfn.csv; IN=11 OUT=45; 2014/06/06 17:12:43
+#END# kgpadding f=b%t i=./indat/dat18s.csv k=a o=./outdat/out144.csv v=padding; IN=11 OUT=45; 2014/06/06 17:12:43
+#END# kgpadding -x f=1%t i=./indat/dat18s.csv k=0 o=./outdat/out144x.csv v=padding; IN=11 OUT=45; 2014/06/06 17:12:43
+#END# kgpadding -nfn f=1%t i=./indat/dat18snfn.csv k=0 o=./outdat/out144nfn.csv v=padding; IN=11 OUT=45; 2014/06/06 17:12:43
+#END# kgpadding E=131110 S=131020 f=b%t i=./indat/dat18s.csv k=a o=./outdat/out145.csv; IN=11 OUT=103; 2014/06/06 17:12:43
+#END# kgpadding -x E=131110 S=131020 f=1%t i=./indat/dat18s.csv k=0 o=./outdat/out145x.csv; IN=11 OUT=103; 2014/06/06 17:12:43
+#END# kgpadding -nfn E=131110 S=131020 f=1%t i=./indat/dat18snfn.csv k=0 o=./outdat/out145nfn.csv; IN=11 OUT=103; 2014/06/06 17:12:43
+#END# kgpadding S=131020 f=b%t i=./indat/dat18s.csv k=a o=./outdat/out146.csv; IN=11 OUT=91; 2014/06/06 17:12:43
+#END# kgpadding -x S=131020 f=1%t i=./indat/dat18s.csv k=0 o=./outdat/out146x.csv; IN=11 OUT=91; 2014/06/06 17:12:43
+#END# kgpadding -nfn S=131020 f=1%t i=./indat/dat18snfn.csv k=0 o=./outdat/out146nfn.csv; IN=11 OUT=91; 2014/06/06 17:12:43
+#END# kgpadding E=131110 f=b%t i=./indat/dat18s.csv k=a o=./outdat/out147.csv; IN=11 OUT=57; 2014/06/06 17:12:43
+#END# kgpadding -x E=131110 f=1%t i=./indat/dat18s.csv k=0 o=./outdat/out147x.csv; IN=11 OUT=57; 2014/06/06 17:12:43
+#END# kgpadding -nfn E=131110 f=1%t i=./indat/dat18snfn.csv k=0 o=./outdat/out147nfn.csv; IN=11 OUT=57; 2014/06/06 17:12:43
+#END# kgpadding E=131103 S=131101 f=b%t i=./indat/dat18s.csv k=a o=./outdat/out148.csv; IN=11 OUT=45; 2014/06/06 17:12:43
+#END# kgpadding -x E=131103 S=131101 f=1%t i=./indat/dat18s.csv k=0 o=./outdat/out148x.csv; IN=11 OUT=45; 2014/06/06 17:12:43
+#END# kgpadding -nfn E=131103 S=131101 f=1%t i=./indat/dat18snfn.csv k=0 o=./outdat/out148nfn.csv; IN=11 OUT=45; 2014/06/06 17:12:43
+#END# kgpadding S=131101 f=b%t i=./indat/dat18s.csv k=a o=./outdat/out149.csv; IN=11 OUT=45; 2014/06/06 17:12:43
+#END# kgpadding -x S=131101 f=1%t i=./indat/dat18s.csv k=0 o=./outdat/out149x.csv; IN=11 OUT=45; 2014/06/06 17:12:43
+#END# kgpadding -nfn S=131101 f=1%t i=./indat/dat18snfn.csv k=0 o=./outdat/out149nfn.csv; IN=11 OUT=45; 2014/06/06 17:12:43
+#END# kgpadding E=131103 f=b%t i=./indat/dat18s.csv k=a o=./outdat/out150.csv; IN=11 OUT=45; 2014/06/06 17:12:43
+#END# kgpadding -x E=131103 f=1%t i=./indat/dat18s.csv k=0 o=./outdat/out150x.csv; IN=11 OUT=45; 2014/06/06 17:12:43
+#END# kgpadding -nfn E=131103 f=1%t i=./indat/dat18snfn.csv k=0 o=./outdat/out150nfn.csv; IN=11 OUT=45; 2014/06/06 17:12:43
+#END# kgpadding -n E=131110 S=131020 f=b%t i=./indat/dat18s.csv k=a o=./outdat/out151.csv; IN=11 OUT=103; 2014/06/06 17:12:43
+#END# kgpadding -n -x E=131110 S=131020 f=1%t i=./indat/dat18s.csv k=0 o=./outdat/out151x.csv; IN=11 OUT=103; 2014/06/06 17:12:43
+#END# kgpadding -n -nfn E=131110 S=131020 f=1%t i=./indat/dat18snfn.csv k=0 o=./outdat/out151nfn.csv; IN=11 OUT=103; 2014/06/06 17:12:43
+#END# kgpadding E=131110 S=131020 f=b%t i=./indat/dat18s.csv k=a o=./outdat/out152.csv v=padding; IN=11 OUT=103; 2014/06/06 17:12:43
+#END# kgpadding -x E=131110 S=131020 f=1%t i=./indat/dat18s.csv k=0 o=./outdat/out152x.csv v=padding; IN=11 OUT=103; 2014/06/06 17:12:43
+#END# kgpadding -nfn E=131110 S=131020 f=1%t i=./indat/dat18snfn.csv k=0 o=./outdat/out152nfn.csv v=padding; IN=11 OUT=103; 2014/06/06 17:12:43
+#END# kgpadding -n E=131103 S=131101 f=b%t i=./indat/dat18s.csv k=a o=./outdat/out153.csv; IN=11 OUT=45; 2014/06/06 17:12:43
+#END# kgpadding -n -x E=131103 S=131101 f=1%t i=./indat/dat18s.csv k=0 o=./outdat/out153x.csv; IN=11 OUT=45; 2014/06/06 17:12:43
+#END# kgpadding -n -nfn E=131103 S=131101 f=1%t i=./indat/dat18snfn.csv k=0 o=./outdat/out153nfn.csv; IN=11 OUT=45; 2014/06/06 17:12:43
+#END# kgpadding E=131103 S=131101 f=b%t i=./indat/dat18s.csv k=a o=./outdat/out154.csv v=padding; IN=11 OUT=45; 2014/06/06 17:12:43
+#END# kgpadding -x E=131103 S=131101 f=1%t i=./indat/dat18s.csv k=0 o=./outdat/out154x.csv v=padding; IN=11 OUT=45; 2014/06/06 17:12:43
+#END# kgpadding -nfn E=131103 S=131101 f=1%t i=./indat/dat18snfn.csv k=0 o=./outdat/out154nfn.csv v=padding; IN=11 OUT=45; 2014/06/06 17:12:43
+#END# kgpadding f=b%tr i=./indat/dat18sr.csv k=a o=./outdat/out155.csv; IN=11 OUT=45; 2014/06/06 17:12:43
+#END# kgpadding -x f=1%tr i=./indat/dat18sr.csv k=0 o=./outdat/out155x.csv; IN=11 OUT=45; 2014/06/06 17:12:43
+#END# kgpadding -nfn f=1%tr i=./indat/dat18srnfn.csv k=0 o=./outdat/out155nfn.csv; IN=11 OUT=45; 2014/06/06 17:12:43
+#END# kgpadding -n f=b%tr i=./indat/dat18sr.csv k=a o=./outdat/out156.csv; IN=11 OUT=45; 2014/06/06 17:12:43
+#END# kgpadding -n -x f=1%tr i=./indat/dat18sr.csv k=0 o=./outdat/out156x.csv; IN=11 OUT=45; 2014/06/06 17:12:43
+#END# kgpadding -n -nfn f=1%tr i=./indat/dat18srnfn.csv k=0 o=./outdat/out156nfn.csv; IN=11 OUT=45; 2014/06/06 17:12:43
+#END# kgpadding f=b%tr i=./indat/dat18sr.csv k=a o=./outdat/out157.csv v=padding; IN=11 OUT=45; 2014/06/06 17:12:43
+#END# kgpadding -x f=1%tr i=./indat/dat18sr.csv k=0 o=./outdat/out157x.csv v=padding; IN=11 OUT=45; 2014/06/06 17:12:43
+#END# kgpadding -nfn f=1%tr i=./indat/dat18srnfn.csv k=0 o=./outdat/out157nfn.csv v=padding; IN=11 OUT=45; 2014/06/06 17:12:43
+#END# kgpadding E=131020 S=131110 f=b%tr i=./indat/dat18sr.csv k=a o=./outdat/out158.csv; IN=11 OUT=103; 2014/06/06 17:12:43
+#END# kgpadding -x E=131020 S=131110 f=1%tr i=./indat/dat18sr.csv k=0 o=./outdat/out158x.csv; IN=11 OUT=103; 2014/06/06 17:12:43
+#END# kgpadding -nfn E=131020 S=131110 f=1%tr i=./indat/dat18srnfn.csv k=0 o=./outdat/out158nfn.csv; IN=11 OUT=103; 2014/06/06 17:12:43
+#END# kgpadding S=131110 f=b%tr i=./indat/dat18sr.csv k=a o=./outdat/out159.csv; IN=11 OUT=57; 2014/06/06 17:12:43
+#END# kgpadding -x S=131110 f=1%tr i=./indat/dat18sr.csv k=0 o=./outdat/out159x.csv; IN=11 OUT=57; 2014/06/06 17:12:43
+#END# kgpadding -nfn S=131110 f=1%tr i=./indat/dat18srnfn.csv k=0 o=./outdat/out159nfn.csv; IN=11 OUT=57; 2014/06/06 17:12:43
+#END# kgpadding E=131020 f=b%tr i=./indat/dat18sr.csv k=a o=./outdat/out160.csv; IN=11 OUT=91; 2014/06/06 17:12:43
+#END# kgpadding -x E=131020 f=1%tr i=./indat/dat18sr.csv k=0 o=./outdat/out160x.csv; IN=11 OUT=91; 2014/06/06 17:12:43
+#END# kgpadding -nfn E=131020 f=1%tr i=./indat/dat18srnfn.csv k=0 o=./outdat/out160nfn.csv; IN=11 OUT=91; 2014/06/06 17:12:43
+#END# kgpadding E=131101 S=131103 f=b%tr i=./indat/dat18sr.csv k=a o=./outdat/out161.csv; IN=11 OUT=45; 2014/06/06 17:12:43
+#END# kgpadding -x E=131101 S=131103 f=1%tr i=./indat/dat18sr.csv k=0 o=./outdat/out161x.csv; IN=11 OUT=45; 2014/06/06 17:12:43
+#END# kgpadding -nfn E=131101 S=131103 f=1%tr i=./indat/dat18srnfn.csv k=0 o=./outdat/out161nfn.csv; IN=11 OUT=45; 2014/06/06 17:12:43
+#END# kgpadding S=131101 f=b%tr i=./indat/dat18sr.csv k=a o=./outdat/out162.csv; IN=11 OUT=45; 2014/06/06 17:12:43
+#END# kgpadding -x S=131101 f=1%tr i=./indat/dat18sr.csv k=0 o=./outdat/out162x.csv; IN=11 OUT=45; 2014/06/06 17:12:43
+#END# kgpadding -nfn S=131101 f=1%tr i=./indat/dat18srnfn.csv k=0 o=./outdat/out162nfn.csv; IN=11 OUT=45; 2014/06/06 17:12:43
+#END# kgpadding E=131103 f=b%tr i=./indat/dat18sr.csv k=a o=./outdat/out163.csv; IN=11 OUT=45; 2014/06/06 17:12:43
+#END# kgpadding -x E=131103 f=1%tr i=./indat/dat18sr.csv k=0 o=./outdat/out163x.csv; IN=11 OUT=45; 2014/06/06 17:12:43
+#END# kgpadding -nfn E=131103 f=1%tr i=./indat/dat18srnfn.csv k=0 o=./outdat/out163nfn.csv; IN=11 OUT=45; 2014/06/06 17:12:43
+#END# kgpadding -n E=131020 S=131110 f=b%tr i=./indat/dat18sr.csv k=a o=./outdat/out164.csv; IN=11 OUT=103; 2014/06/06 17:12:43
+#END# kgpadding -n -x E=131020 S=131110 f=1%tr i=./indat/dat18sr.csv k=0 o=./outdat/out164x.csv; IN=11 OUT=103; 2014/06/06 17:12:43
+#END# kgpadding -n -nfn E=131020 S=131110 f=1%tr i=./indat/dat18srnfn.csv k=0 o=./outdat/out164nfn.csv; IN=11 OUT=103; 2014/06/06 17:12:43
+#END# kgpadding E=131020 S=131110 f=b%tr i=./indat/dat18sr.csv k=a o=./outdat/out165.csv v=padding; IN=11 OUT=103; 2014/06/06 17:12:43
+#END# kgpadding -x E=131020 S=131110 f=1%tr i=./indat/dat18sr.csv k=0 o=./outdat/out165x.csv v=padding; IN=11 OUT=103; 2014/06/06 17:12:43
+#END# kgpadding -nfn E=131020 S=131110 f=1%tr i=./indat/dat18srnfn.csv k=0 o=./outdat/out165nfn.csv v=padding; IN=11 OUT=103; 2014/06/06 17:12:43
+#END# kgpadding -n E=131101 S=131103 f=b%tr i=./indat/dat18sr.csv k=a o=./outdat/out166.csv; IN=11 OUT=45; 2014/06/06 17:12:43
+#END# kgpadding -n -x E=131101 S=131103 f=1%tr i=./indat/dat18sr.csv k=0 o=./outdat/out166x.csv; IN=11 OUT=45; 2014/06/06 17:12:43
+#END# kgpadding -n -nfn E=131101 S=131103 f=1%tr i=./indat/dat18srnfn.csv k=0 o=./outdat/out166nfn.csv; IN=11 OUT=45; 2014/06/06 17:12:43
+#END# kgpadding E=131101 S=131103 f=b%tr i=./indat/dat18sr.csv k=a o=./outdat/out167.csv v=padding; IN=11 OUT=45; 2014/06/06 17:12:43
+#END# kgpadding -x E=131101 S=131103 f=1%tr i=./indat/dat18sr.csv k=0 o=./outdat/out167x.csv v=padding; IN=11 OUT=45; 2014/06/06 17:12:43
+#END# kgpadding -nfn E=131101 S=131103 f=1%tr i=./indat/dat18srnfn.csv k=0 o=./outdat/out167nfn.csv v=padding; IN=11 OUT=45; 2014/06/06 17:12:43
+#END# kgpadding S=0 f=b%n i=./indat/dat10s.csv k=a o=./outdat/out168.csv; IN=2 OUT=14; 2014/06/06 17:12:43
+#END# kgpadding E=6 S=0 f=b%n i=./indat/dat10s.csv k=a o=./outdat/out169.csv; IN=2 OUT=17; 2014/06/06 17:12:43
+#END# kgpadding E=6 f=b%n i=./indat/dat10s.csv k=a o=./outdat/out170.csv; IN=2 OUT=5; 2014/06/06 17:12:43
+#END# kgpadding f=b%t i=./indat/dat11s.csv k=a o=./outdat/out171.csv; IN=6 OUT=17; 2014/06/06 17:12:43
+#END# kgpadding f=b%t i=./indat/dat12s.csv k=a o=./outdat/out172.csv; IN=6 OUT=40; 2014/06/06 17:12:43
+#END# kgpadding f=b%n i=./indat/dat13.csv o=./outdat/out210.csv; IN=7 OUT=11; 2014/06/06 17:12:43
+#END# kgpadding -x f=1%n i=./indat/dat13.csv o=./outdat/out210x.csv; IN=7 OUT=11; 2014/06/06 17:12:43
+#END# kgpadding -nfn f=1%n i=./indat/dat13nfn.csv o=./outdat/out210nfn.csv; IN=7 OUT=16; 2014/06/06 17:12:43
+#END# kgpadding -n f=b%n i=./indat/dat13.csv o=./outdat/out211.csv; IN=7 OUT=11; 2014/06/06 17:12:43
+#END# kgpadding -n -x f=1%n i=./indat/dat13.csv o=./outdat/out211x.csv; IN=7 OUT=11; 2014/06/06 17:12:43
+#END# kgpadding -n -nfn f=1%n i=./indat/dat13nfn.csv o=./outdat/out211nfn.csv; IN=7 OUT=16; 2014/06/06 17:12:44
+#END# kgpadding f=b%n i=./indat/dat13.csv o=./outdat/out212.csv v=padding; IN=7 OUT=11; 2014/06/06 17:12:44
+#END# kgpadding -x f=1%n i=./indat/dat13.csv o=./outdat/out212x.csv v=padding; IN=7 OUT=11; 2014/06/06 17:12:44
+#END# kgpadding -nfn f=1%n i=./indat/dat13nfn.csv o=./outdat/out212nfn.csv v=padding; IN=7 OUT=16; 2014/06/06 17:12:44
+#END# kgpadding E=11 S=-1 f=b%n i=./indat/dat13.csv o=./outdat/out213.csv; IN=7 OUT=14; 2014/06/06 17:12:44
+#END# kgpadding -x E=11 S=-1 f=1%n i=./indat/dat13.csv o=./outdat/out213x.csv; IN=7 OUT=14; 2014/06/06 17:12:44
+#END# kgpadding -nfn E=11 S=-1 f=1%n i=./indat/dat13nfn.csv o=./outdat/out213nfn.csv; IN=7 OUT=23; 2014/06/06 17:12:44
+#END# kgpadding S=-1 f=b%n i=./indat/dat13.csv o=./outdat/out214.csv; IN=7 OUT=13; 2014/06/06 17:12:44
+#END# kgpadding -x S=-1 f=1%n i=./indat/dat13.csv o=./outdat/out214x.csv; IN=7 OUT=13; 2014/06/06 17:12:44
+#END# kgpadding -nfn S=-1 f=1%n i=./indat/dat13nfn.csv o=./outdat/out214nfn.csv; IN=7 OUT=18; 2014/06/06 17:12:44
+#END# kgpadding E=11 f=b%n i=./indat/dat13.csv o=./outdat/out215.csv; IN=7 OUT=12; 2014/06/06 17:12:44
+#END# kgpadding -x E=11 f=1%n i=./indat/dat13.csv o=./outdat/out215x.csv; IN=7 OUT=12; 2014/06/06 17:12:44
+#END# kgpadding -nfn E=11 f=1%n i=./indat/dat13nfn.csv o=./outdat/out215nfn.csv; IN=7 OUT=21; 2014/06/06 17:12:44
+#END# kgpadding E=10 S=1 f=b%n i=./indat/dat13.csv o=./outdat/out216.csv; IN=7 OUT=11; 2014/06/06 17:12:44
+#END# kgpadding -x E=10 S=1 f=1%n i=./indat/dat13.csv o=./outdat/out216x.csv; IN=7 OUT=11; 2014/06/06 17:12:44
+#END# kgpadding -nfn E=10 S=1 f=1%n i=./indat/dat13nfn.csv o=./outdat/out216nfn.csv; IN=7 OUT=20; 2014/06/06 17:12:44
+#END# kgpadding S=1 f=b%n i=./indat/dat13.csv o=./outdat/out217.csv; IN=7 OUT=11; 2014/06/06 17:12:44
+#END# kgpadding -x S=1 f=1%n i=./indat/dat13.csv o=./outdat/out217x.csv; IN=7 OUT=11; 2014/06/06 17:12:44
+#END# kgpadding -nfn S=1 f=1%n i=./indat/dat13nfn.csv o=./outdat/out217nfn.csv; IN=7 OUT=16; 2014/06/06 17:12:44
+#END# kgpadding E=10 f=b%n i=./indat/dat13.csv o=./outdat/out218.csv; IN=7 OUT=11; 2014/06/06 17:12:44
+#END# kgpadding -x E=10 f=1%n i=./indat/dat13.csv o=./outdat/out218x.csv; IN=7 OUT=11; 2014/06/06 17:12:44
+#END# kgpadding -nfn E=10 f=1%n i=./indat/dat13nfn.csv o=./outdat/out218nfn.csv; IN=7 OUT=20; 2014/06/06 17:12:44
+#END# kgpadding -n E=11 S=-1 f=b%n i=./indat/dat13.csv o=./outdat/out219.csv; IN=7 OUT=14; 2014/06/06 17:12:44
+#END# kgpadding -n -x E=11 S=-1 f=1%n i=./indat/dat13.csv o=./outdat/out219x.csv; IN=7 OUT=14; 2014/06/06 17:12:44
+#END# kgpadding -n -nfn E=11 S=-1 f=1%n i=./indat/dat13nfn.csv o=./outdat/out219nfn.csv; IN=7 OUT=23; 2014/06/06 17:12:44
+#END# kgpadding E=11 S=-1 f=b%n i=./indat/dat13.csv o=./outdat/out220.csv v=padding; IN=7 OUT=14; 2014/06/06 17:12:44
+#END# kgpadding -x E=11 S=-1 f=1%n i=./indat/dat13.csv o=./outdat/out220x.csv v=padding; IN=7 OUT=14; 2014/06/06 17:12:44
+#END# kgpadding -nfn E=11 S=-1 f=1%n i=./indat/dat13nfn.csv o=./outdat/out220nfn.csv v=padding; IN=7 OUT=23; 2014/06/06 17:12:44
+#END# kgpadding -n E=10 S=1 f=b%n i=./indat/dat13.csv o=./outdat/out221.csv; IN=7 OUT=11; 2014/06/06 17:12:44
+#END# kgpadding -n -x E=10 S=1 f=1%n i=./indat/dat13.csv o=./outdat/out221x.csv; IN=7 OUT=11; 2014/06/06 17:12:44
+#END# kgpadding -n -nfn E=10 S=1 f=1%n i=./indat/dat13nfn.csv o=./outdat/out221nfn.csv; IN=7 OUT=20; 2014/06/06 17:12:44
+#END# kgpadding E=10 S=1 f=b%n i=./indat/dat13.csv o=./outdat/out222.csv v=padding; IN=7 OUT=11; 2014/06/06 17:12:44
+#END# kgpadding -x E=10 S=1 f=1%n i=./indat/dat13.csv o=./outdat/out222x.csv v=padding; IN=7 OUT=11; 2014/06/06 17:12:44
+#END# kgpadding -nfn E=10 S=1 f=1%n i=./indat/dat13nfn.csv o=./outdat/out222nfn.csv v=padding; IN=7 OUT=20; 2014/06/06 17:12:44
+#END# kgpadding f=b%nr i=./indat/dat13.csv o=./outdat/out223.csv; IN=7 OUT=11; 2014/06/06 17:12:44
+#END# kgpadding -x f=1%nr i=./indat/dat13.csv o=./outdat/out223x.csv; IN=7 OUT=11; 2014/06/06 17:12:44
+#END# kgpadding -nfn f=1%nr i=./indat/dat13nfn.csv o=./outdat/out223nfn.csv; IN=7 OUT=14; 2014/06/06 17:12:44
+#END# kgpadding -n f=b%nr i=./indat/dat13.csv o=./outdat/out224.csv; IN=7 OUT=11; 2014/06/06 17:12:44
+#END# kgpadding -n -x f=1%nr i=./indat/dat13.csv o=./outdat/out224x.csv; IN=7 OUT=11; 2014/06/06 17:12:44
+#END# kgpadding -n -nfn f=1%nr i=./indat/dat13nfn.csv o=./outdat/out224nfn.csv; IN=7 OUT=14; 2014/06/06 17:12:44
+#END# kgpadding f=b%nr i=./indat/dat13.csv o=./outdat/out225.csv v=padding; IN=7 OUT=11; 2014/06/06 17:12:44
+#END# kgpadding -x f=1%nr i=./indat/dat13.csv o=./outdat/out225x.csv v=padding; IN=7 OUT=11; 2014/06/06 17:12:44
+#END# kgpadding -nfn f=1%nr i=./indat/dat13nfn.csv o=./outdat/out225nfn.csv v=padding; IN=7 OUT=14; 2014/06/06 17:12:44
+#END# kgpadding E=-1 S=11 f=b%nr i=./indat/dat13.csv o=./outdat/out226.csv; IN=7 OUT=14; 2014/06/06 17:12:45
+#END# kgpadding -x E=-1 S=11 f=1%nr i=./indat/dat13.csv o=./outdat/out226x.csv; IN=7 OUT=14; 2014/06/06 17:12:45
+#END# kgpadding -nfn E=-1 S=11 f=1%nr i=./indat/dat13nfn.csv o=./outdat/out226nfn.csv; IN=7 OUT=31; 2014/06/06 17:12:45
+#END# kgpadding E=-1 f=b%nr i=./indat/dat13.csv o=./outdat/out227.csv; IN=7 OUT=13; 2014/06/06 17:12:45
+#END# kgpadding -x E=-1 f=1%nr i=./indat/dat13.csv o=./outdat/out227x.csv; IN=7 OUT=13; 2014/06/06 17:12:45
+#END# kgpadding -nfn E=-1 f=1%nr i=./indat/dat13nfn.csv o=./outdat/out227nfn.csv; IN=7 OUT=21; 2014/06/06 17:12:45
+#END# kgpadding S=11 f=b%nr i=./indat/dat13.csv o=./outdat/out228.csv; IN=7 OUT=12; 2014/06/06 17:12:45
+#END# kgpadding -x S=11 f=1%nr i=./indat/dat13.csv o=./outdat/out228x.csv; IN=7 OUT=12; 2014/06/06 17:12:45
+#END# kgpadding -nfn S=11 f=1%nr i=./indat/dat13nfn.csv o=./outdat/out228nfn.csv; IN=7 OUT=24; 2014/06/06 17:12:45
+#END# kgpadding E=1 S=10 f=b%nr i=./indat/dat13.csv o=./outdat/out229.csv; IN=7 OUT=11; 2014/06/06 17:12:45
+#END# kgpadding -x E=1 S=10 f=1%nr i=./indat/dat13.csv o=./outdat/out229x.csv; IN=7 OUT=11; 2014/06/06 17:12:45
+#END# kgpadding -nfn E=1 S=10 f=1%nr i=./indat/dat13nfn.csv o=./outdat/out229nfn.csv; IN=7 OUT=28; 2014/06/06 17:12:45
+#END# kgpadding E=1 f=b%nr i=./indat/dat13.csv o=./outdat/out230.csv; IN=7 OUT=11; 2014/06/06 17:12:45
+#END# kgpadding -x E=1 f=1%nr i=./indat/dat13.csv o=./outdat/out230x.csv; IN=7 OUT=11; 2014/06/06 17:12:45
+#END# kgpadding -nfn E=1 f=1%nr i=./indat/dat13nfn.csv o=./outdat/out230nfn.csv; IN=7 OUT=19; 2014/06/06 17:12:45
+#END# kgpadding S=10 f=b%nr i=./indat/dat13.csv o=./outdat/out231.csv; IN=7 OUT=11; 2014/06/06 17:12:45
+#END# kgpadding -x S=10 f=1%nr i=./indat/dat13.csv o=./outdat/out231x.csv; IN=7 OUT=11; 2014/06/06 17:12:45
+#END# kgpadding -nfn S=10 f=1%nr i=./indat/dat13nfn.csv o=./outdat/out231nfn.csv; IN=7 OUT=23; 2014/06/06 17:12:45
+#END# kgpadding -n E=-1 S=11 f=b%nr i=./indat/dat13.csv o=./outdat/out232.csv; IN=7 OUT=14; 2014/06/06 17:12:45
+#END# kgpadding -n -x E=-1 S=11 f=1%nr i=./indat/dat13.csv o=./outdat/out232x.csv; IN=7 OUT=14; 2014/06/06 17:12:45
+#END# kgpadding -n -nfn E=-1 S=11 f=1%nr i=./indat/dat13nfn.csv o=./outdat/out232nfn.csv; IN=7 OUT=31; 2014/06/06 17:12:45
+#END# kgpadding E=-1 S=11 f=b%nr i=./indat/dat13.csv o=./outdat/out233.csv v=padding; IN=7 OUT=14; 2014/06/06 17:12:45
+#END# kgpadding -x E=-1 S=11 f=1%nr i=./indat/dat13.csv o=./outdat/out233x.csv v=padding; IN=7 OUT=14; 2014/06/06 17:12:45
+#END# kgpadding -nfn E=-1 S=11 f=1%nr i=./indat/dat13nfn.csv o=./outdat/out233nfn.csv v=padding; IN=7 OUT=31; 2014/06/06 17:12:45
+#END# kgpadding -n E=1 S=10 f=b%nr i=./indat/dat13.csv o=./outdat/out234.csv; IN=7 OUT=11; 2014/06/06 17:12:45
+#END# kgpadding -n -x E=1 S=10 f=1%nr i=./indat/dat13.csv o=./outdat/out234x.csv; IN=7 OUT=11; 2014/06/06 17:12:45
+#END# kgpadding -n -nfn E=1 S=10 f=1%nr i=./indat/dat13nfn.csv o=./outdat/out234nfn.csv; IN=7 OUT=28; 2014/06/06 17:12:45
+#END# kgpadding E=1 S=10 f=b%nr i=./indat/dat13.csv o=./outdat/out235.csv v=padding; IN=7 OUT=11; 2014/06/06 17:12:45
+#END# kgpadding -x E=1 S=10 f=1%nr i=./indat/dat13.csv o=./outdat/out235x.csv v=padding; IN=7 OUT=11; 2014/06/06 17:12:45
+#END# kgpadding -nfn E=1 S=10 f=1%nr i=./indat/dat13nfn.csv o=./outdat/out235nfn.csv v=padding; IN=7 OUT=28; 2014/06/06 17:12:45
+#END# kgpadding f=b%d i=./indat/dat15.csv o=./outdat/out236.csv; IN=6 OUT=17; 2014/06/06 17:12:45
+#END# kgpadding -x f=1%d i=./indat/dat15.csv o=./outdat/out236x.csv; IN=6 OUT=17; 2014/06/06 17:12:45
+#END# kgpadding -nfn f=1%d i=./indat/dat15nfn.csv o=./outdat/out236nfn.csv; IN=6 OUT=27; 2014/06/06 17:12:45
+#END# kgpadding -n f=b%d i=./indat/dat15.csv o=./outdat/out237.csv; IN=6 OUT=17; 2014/06/06 17:12:45
+#END# kgpadding -n -x f=1%d i=./indat/dat15.csv o=./outdat/out237x.csv; IN=6 OUT=17; 2014/06/06 17:12:45
+#END# kgpadding -n -nfn f=1%d i=./indat/dat15nfn.csv o=./outdat/out237nfn.csv; IN=6 OUT=27; 2014/06/06 17:12:45
+#END# kgpadding f=b%d i=./indat/dat15.csv o=./outdat/out238.csv v=padding; IN=6 OUT=17; 2014/06/06 17:12:45
+#END# kgpadding -x f=1%d i=./indat/dat15.csv o=./outdat/out238x.csv v=padding; IN=6 OUT=17; 2014/06/06 17:12:45
+#END# kgpadding -nfn f=1%d i=./indat/dat15nfn.csv o=./outdat/out238nfn.csv v=padding; IN=6 OUT=27; 2014/06/06 17:12:45
+#END# kgpadding E=20101020 S=20100930 f=b%d i=./indat/dat15.csv o=./outdat/out239.csv; IN=6 OUT=21; 2014/06/06 17:12:45
+#END# kgpadding -x E=20101020 S=20100930 f=1%d i=./indat/dat15.csv o=./outdat/out239x.csv; IN=6 OUT=21; 2014/06/06 17:12:45
+#END# kgpadding -nfn E=20101020 S=20100930 f=1%d i=./indat/dat15nfn.csv o=./outdat/out239nfn.csv; IN=6 OUT=33; 2014/06/06 17:12:45
+#END# kgpadding S=20100930 f=b%d i=./indat/dat15.csv o=./outdat/out240.csv; IN=6 OUT=18; 2014/06/06 17:12:45
+#END# kgpadding -x S=20100930 f=1%d i=./indat/dat15.csv o=./outdat/out240x.csv; IN=6 OUT=18; 2014/06/06 17:12:46
+#END# kgpadding -nfn S=20100930 f=1%d i=./indat/dat15nfn.csv o=./outdat/out240nfn.csv; IN=6 OUT=28; 2014/06/06 17:12:46
+#END# kgpadding E=20101020 f=b%d i=./indat/dat15.csv o=./outdat/out241.csv; IN=6 OUT=20; 2014/06/06 17:12:46
+#END# kgpadding -x E=20101020 f=1%d i=./indat/dat15.csv o=./outdat/out241x.csv; IN=6 OUT=20; 2014/06/06 17:12:46
+#END# kgpadding -nfn E=20101020 f=1%d i=./indat/dat15nfn.csv o=./outdat/out241nfn.csv; IN=6 OUT=32; 2014/06/06 17:12:46
+#END# kgpadding E=20101017 S=20101001 f=b%d i=./indat/dat15.csv o=./outdat/out242.csv; IN=6 OUT=17; 2014/06/06 17:12:46
+#END# kgpadding -x E=20101017 S=20101001 f=1%d i=./indat/dat15.csv o=./outdat/out242x.csv; IN=6 OUT=17; 2014/06/06 17:12:46
+#END# kgpadding -nfn E=20101017 S=20101001 f=1%d i=./indat/dat15nfn.csv o=./outdat/out242nfn.csv; IN=6 OUT=29; 2014/06/06 17:12:46
+#END# kgpadding S=20101001 f=b%d i=./indat/dat15.csv o=./outdat/out243.csv; IN=6 OUT=17; 2014/06/06 17:12:46
+#END# kgpadding -x S=20101001 f=1%d i=./indat/dat15.csv o=./outdat/out243x.csv; IN=6 OUT=17; 2014/06/06 17:12:46
+#END# kgpadding -nfn S=20101001 f=1%d i=./indat/dat15nfn.csv o=./outdat/out243nfn.csv; IN=6 OUT=27; 2014/06/06 17:12:46
+#END# kgpadding E=20101017 f=b%d i=./indat/dat15.csv o=./outdat/out244.csv; IN=6 OUT=17; 2014/06/06 17:12:46
+#END# kgpadding -x E=20101017 f=1%d i=./indat/dat15.csv o=./outdat/out244x.csv; IN=6 OUT=17; 2014/06/06 17:12:46
+#END# kgpadding -nfn E=20101017 f=1%d i=./indat/dat15nfn.csv o=./outdat/out244nfn.csv; IN=6 OUT=29; 2014/06/06 17:12:46
+#END# kgpadding -n E=20101020 S=20100930 f=b%d i=./indat/dat15.csv o=./outdat/out245.csv; IN=6 OUT=21; 2014/06/06 17:12:46
+#END# kgpadding -n -x E=20101020 S=20100930 f=1%d i=./indat/dat15.csv o=./outdat/out245x.csv; IN=6 OUT=21; 2014/06/06 17:12:46
+#END# kgpadding -n -nfn E=20101020 S=20100930 f=1%d i=./indat/dat15nfn.csv o=./outdat/out245nfn.csv; IN=6 OUT=33; 2014/06/06 17:12:46
+#END# kgpadding E=20101020 S=20100930 f=b%d i=./indat/dat15.csv o=./outdat/out246.csv v=padding; IN=6 OUT=21; 2014/06/06 17:12:46
+#END# kgpadding -x E=20101020 S=20100930 f=1%d i=./indat/dat15.csv o=./outdat/out246x.csv v=padding; IN=6 OUT=21; 2014/06/06 17:12:46
+#END# kgpadding -nfn E=20101020 S=20100930 f=1%d i=./indat/dat15nfn.csv o=./outdat/out246nfn.csv v=padding; IN=6 OUT=33; 2014/06/06 17:12:46
+#END# kgpadding -n E=20101017 S=20101001 f=b%d i=./indat/dat15.csv o=./outdat/out247.csv; IN=6 OUT=17; 2014/06/06 17:12:46
+#END# kgpadding -n -x E=20101017 S=20101001 f=1%d i=./indat/dat15.csv o=./outdat/out247x.csv; IN=6 OUT=17; 2014/06/06 17:12:46
+#END# kgpadding -n -nfn E=20101017 S=20101001 f=1%d i=./indat/dat15nfn.csv o=./outdat/out247nfn.csv; IN=6 OUT=29; 2014/06/06 17:12:46
+#END# kgpadding E=20101017 S=20101001 f=b%d i=./indat/dat15.csv o=./outdat/out248.csv v=padding; IN=6 OUT=17; 2014/06/06 17:12:46
+#END# kgpadding -x E=20101017 S=20101001 f=1%d i=./indat/dat15.csv o=./outdat/out248x.csv v=padding; IN=6 OUT=17; 2014/06/06 17:12:46
+#END# kgpadding -nfn E=20101017 S=20101001 f=1%d i=./indat/dat15nfn.csv o=./outdat/out248nfn.csv v=padding; IN=6 OUT=29; 2014/06/06 17:12:46
+#END# kgpadding f=b%dr i=./indat/dat15.csv o=./outdat/out249.csv; IN=6 OUT=17; 2014/06/06 17:12:46
+#END# kgpadding -x f=1%dr i=./indat/dat15.csv o=./outdat/out249x.csv; IN=6 OUT=17; 2014/06/06 17:12:46
+#END# kgpadding -nfn f=1%dr i=./indat/dat15nfn.csv o=./outdat/out249nfn.csv; IN=6 OUT=16; 2014/06/06 17:12:46
+#END# kgpadding -n f=b%dr i=./indat/dat15.csv o=./outdat/out250.csv; IN=6 OUT=17; 2014/06/06 17:12:46
+#END# kgpadding -n -x f=1%dr i=./indat/dat15.csv o=./outdat/out250x.csv; IN=6 OUT=17; 2014/06/06 17:12:46
+#END# kgpadding -n -nfn f=1%dr i=./indat/dat15nfn.csv o=./outdat/out250nfn.csv; IN=6 OUT=16; 2014/06/06 17:12:46
+#END# kgpadding f=b%dr i=./indat/dat15.csv o=./outdat/out251.csv v=padding; IN=6 OUT=17; 2014/06/06 17:12:46
+#END# kgpadding -x f=1%dr i=./indat/dat15.csv o=./outdat/out251x.csv v=padding; IN=6 OUT=17; 2014/06/06 17:12:46
+#END# kgpadding -nfn f=1%dr i=./indat/dat15nfn.csv o=./outdat/out251nfn.csv v=padding; IN=6 OUT=16; 2014/06/06 17:12:46
+#END# kgpadding E=20100930 S=20101020 f=b%dr i=./indat/dat15.csv o=./outdat/out252.csv; IN=6 OUT=21; 2014/06/06 17:12:46
+#END# kgpadding -x E=20100930 S=20101020 f=1%dr i=./indat/dat15.csv o=./outdat/out252x.csv; IN=6 OUT=21; 2014/06/06 17:12:46
+#END# kgpadding -nfn E=20100930 S=20101020 f=1%dr i=./indat/dat15nfn.csv o=./outdat/out252nfn.csv; IN=6 OUT=50; 2014/06/06 17:12:46
+#END# kgpadding S=20101020 f=b%dr i=./indat/dat15.csv o=./outdat/out253.csv; IN=6 OUT=20; 2014/06/06 17:12:46
+#END# kgpadding -x S=20101020 f=1%dr i=./indat/dat15.csv o=./outdat/out253x.csv; IN=6 OUT=20; 2014/06/06 17:12:46
+#END# kgpadding -nfn S=20101020 f=1%dr i=./indat/dat15nfn.csv o=./outdat/out253nfn.csv; IN=6 OUT=35; 2014/06/06 17:12:46
+#END# kgpadding E=20100930 f=b%dr i=./indat/dat15.csv o=./outdat/out254.csv; IN=6 OUT=18; 2014/06/06 17:12:46
+#END# kgpadding -x E=20100930 f=1%dr i=./indat/dat15.csv o=./outdat/out254x.csv; IN=6 OUT=18; 2014/06/06 17:12:46
+#END# kgpadding -nfn E=20100930 f=1%dr i=./indat/dat15nfn.csv o=./outdat/out254nfn.csv; IN=6 OUT=31; 2014/06/06 17:12:46
+#END# kgpadding E=20101001 S=20101017 f=b%dr i=./indat/dat15.csv o=./outdat/out255.csv; IN=6 OUT=17; 2014/06/06 17:12:47
+#END# kgpadding -x E=20101001 S=20101017 f=1%dr i=./indat/dat15.csv o=./outdat/out255x.csv; IN=6 OUT=17; 2014/06/06 17:12:47
+#END# kgpadding -nfn E=20101001 S=20101017 f=1%dr i=./indat/dat15nfn.csv o=./outdat/out255nfn.csv; IN=6 OUT=46; 2014/06/06 17:12:47
+#END# kgpadding S=20101017 f=b%dr i=./indat/dat15.csv o=./outdat/out256.csv; IN=6 OUT=17; 2014/06/06 17:12:47
+#END# kgpadding -x S=20101017 f=1%dr i=./indat/dat15.csv o=./outdat/out256x.csv; IN=6 OUT=17; 2014/06/06 17:12:47
+#END# kgpadding -nfn S=20101017 f=1%dr i=./indat/dat15nfn.csv o=./outdat/out256nfn.csv; IN=6 OUT=32; 2014/06/06 17:12:47
+#END# kgpadding E=20101001 f=b%dr i=./indat/dat15.csv o=./outdat/out257.csv; IN=6 OUT=17; 2014/06/06 17:12:47
+#END# kgpadding -x E=20101001 f=1%dr i=./indat/dat15.csv o=./outdat/out257x.csv; IN=6 OUT=17; 2014/06/06 17:12:47
+#END# kgpadding -nfn E=20101001 f=1%dr i=./indat/dat15nfn.csv o=./outdat/out257nfn.csv; IN=6 OUT=30; 2014/06/06 17:12:47
+#END# kgpadding -n E=20100930 S=20101020 f=b%dr i=./indat/dat15.csv o=./outdat/out258.csv; IN=6 OUT=21; 2014/06/06 17:12:47
+#END# kgpadding -n -x E=20100930 S=20101020 f=1%dr i=./indat/dat15.csv o=./outdat/out258x.csv; IN=6 OUT=21; 2014/06/06 17:12:47
+#END# kgpadding -n -nfn E=20100930 S=20101020 f=1%dr i=./indat/dat15nfn.csv o=./outdat/out258nfn.csv; IN=6 OUT=50; 2014/06/06 17:12:47
+#END# kgpadding E=20100930 S=20101020 f=b%dr i=./indat/dat15.csv o=./outdat/out259.csv v=padding; IN=6 OUT=21; 2014/06/06 17:12:47
+#END# kgpadding -x E=20100930 S=20101020 f=1%dr i=./indat/dat15.csv o=./outdat/out259x.csv v=padding; IN=6 OUT=21; 2014/06/06 17:12:47
+#END# kgpadding -nfn E=20100930 S=20101020 f=1%dr i=./indat/dat15nfn.csv o=./outdat/out259nfn.csv v=padding; IN=6 OUT=50; 2014/06/06 17:12:47
+#END# kgpadding -n E=20101001 S=20101017 f=b%dr i=./indat/dat15.csv o=./outdat/out260.csv; IN=6 OUT=17; 2014/06/06 17:12:47
+#END# kgpadding -n -x E=20101001 S=20101017 f=1%dr i=./indat/dat15.csv o=./outdat/out260x.csv; IN=6 OUT=17; 2014/06/06 17:12:47
+#END# kgpadding -n -nfn E=20101001 S=20101017 f=1%dr i=./indat/dat15nfn.csv o=./outdat/out260nfn.csv; IN=6 OUT=46; 2014/06/06 17:12:47
+#END# kgpadding E=20101001 S=20101017 f=b%dr i=./indat/dat15.csv o=./outdat/out261.csv v=padding; IN=6 OUT=17; 2014/06/06 17:12:47
+#END# kgpadding -x E=20101001 S=20101017 f=1%dr i=./indat/dat15.csv o=./outdat/out261x.csv v=padding; IN=6 OUT=17; 2014/06/06 17:12:47
+#END# kgpadding -nfn E=20101001 S=20101017 f=1%dr i=./indat/dat15nfn.csv o=./outdat/out261nfn.csv v=padding; IN=6 OUT=46; 2014/06/06 17:12:47
+#END# kgpadding f=b%t i=./indat/dat17.csv o=./outdat/out262.csv; IN=6 OUT=20; 2014/06/06 17:12:47
+#END# kgpadding -x f=1%t i=./indat/dat17.csv o=./outdat/out262x.csv; IN=6 OUT=20; 2014/06/06 17:12:47
+#END# kgpadding -nfn f=1%t i=./indat/dat17nfn.csv o=./outdat/out262nfn.csv; IN=6 OUT=29; 2014/06/06 17:12:47
+#END# kgpadding -n f=b%t i=./indat/dat17.csv o=./outdat/out263.csv; IN=6 OUT=20; 2014/06/06 17:12:47
+#END# kgpadding -n -x f=1%t i=./indat/dat17.csv o=./outdat/out263x.csv; IN=6 OUT=20; 2014/06/06 17:12:47
+#END# kgpadding -n -nfn f=1%t i=./indat/dat17nfn.csv o=./outdat/out263nfn.csv; IN=6 OUT=29; 2014/06/06 17:12:47
+#END# kgpadding f=b%t i=./indat/dat17.csv o=./outdat/out264.csv v=padding; IN=6 OUT=20; 2014/06/06 17:12:47
+#END# kgpadding -x f=1%t i=./indat/dat17.csv o=./outdat/out264x.csv v=padding; IN=6 OUT=20; 2014/06/06 17:12:47
+#END# kgpadding -nfn f=1%t i=./indat/dat17nfn.csv o=./outdat/out264nfn.csv v=padding; IN=6 OUT=29; 2014/06/06 17:12:47
+#END# kgpadding E=101111 S=101048 f=b%t i=./indat/dat17.csv o=./outdat/out265.csv; IN=6 OUT=24; 2014/06/06 17:12:47
+#END# kgpadding -x E=101111 S=101048 f=1%t i=./indat/dat17.csv o=./outdat/out265x.csv; IN=6 OUT=24; 2014/06/06 17:12:47
+#END# kgpadding -nfn E=101111 S=101048 f=1%t i=./indat/dat17nfn.csv o=./outdat/out265nfn.csv; IN=6 OUT=39; 2014/06/06 17:12:47
+#END# kgpadding S=101048 f=b%t i=./indat/dat17.csv o=./outdat/out266.csv; IN=6 OUT=22; 2014/06/06 17:12:47
+#END# kgpadding -x S=101048 f=1%t i=./indat/dat17.csv o=./outdat/out266x.csv; IN=6 OUT=22; 2014/06/06 17:12:47
+#END# kgpadding -nfn S=101048 f=1%t i=./indat/dat17nfn.csv o=./outdat/out266nfn.csv; IN=6 OUT=31; 2014/06/06 17:12:47
+#END# kgpadding E=101111 f=b%t i=./indat/dat17.csv o=./outdat/out267.csv; IN=6 OUT=22; 2014/06/06 17:12:47
+#END# kgpadding -x E=101111 f=1%t i=./indat/dat17.csv o=./outdat/out267x.csv; IN=6 OUT=22; 2014/06/06 17:12:47
+#END# kgpadding -nfn E=101111 f=1%t i=./indat/dat17nfn.csv o=./outdat/out267nfn.csv; IN=6 OUT=37; 2014/06/06 17:12:47
+#END# kgpadding E=101109 S=101050 f=b%t i=./indat/dat17.csv o=./outdat/out268.csv; IN=6 OUT=20; 2014/06/06 17:12:47
+#END# kgpadding -x E=101109 S=101050 f=1%t i=./indat/dat17.csv o=./outdat/out268x.csv; IN=6 OUT=20; 2014/06/06 17:12:47
+#END# kgpadding -nfn E=101109 S=101050 f=1%t i=./indat/dat17nfn.csv o=./outdat/out268nfn.csv; IN=6 OUT=35; 2014/06/06 17:12:47
+#END# kgpadding S=101050 f=b%t i=./indat/dat17.csv o=./outdat/out269.csv; IN=6 OUT=20; 2014/06/06 17:12:48
+#END# kgpadding -x S=101050 f=1%t i=./indat/dat17.csv o=./outdat/out269x.csv; IN=6 OUT=20; 2014/06/06 17:12:48
+#END# kgpadding -nfn S=101050 f=1%t i=./indat/dat17nfn.csv o=./outdat/out269nfn.csv; IN=6 OUT=29; 2014/06/06 17:12:48
+#END# kgpadding E=101109 f=b%t i=./indat/dat17.csv o=./outdat/out270.csv; IN=6 OUT=20; 2014/06/06 17:12:48
+#END# kgpadding -x E=101109 f=1%t i=./indat/dat17.csv o=./outdat/out270x.csv; IN=6 OUT=20; 2014/06/06 17:12:48
+#END# kgpadding -nfn E=101109 f=1%t i=./indat/dat17nfn.csv o=./outdat/out270nfn.csv; IN=6 OUT=35; 2014/06/06 17:12:48
+#END# kgpadding -n E=101111 S=101048 f=b%t i=./indat/dat17.csv o=./outdat/out271.csv; IN=6 OUT=24; 2014/06/06 17:12:48
+#END# kgpadding -n -x E=101111 S=101048 f=1%t i=./indat/dat17.csv o=./outdat/out271x.csv; IN=6 OUT=24; 2014/06/06 17:12:48
+#END# kgpadding -n -nfn E=101111 S=101048 f=1%t i=./indat/dat17nfn.csv o=./outdat/out271nfn.csv; IN=6 OUT=39; 2014/06/06 17:12:48
+#END# kgpadding E=101111 S=101048 f=b%t i=./indat/dat17.csv o=./outdat/out272.csv v=padding; IN=6 OUT=24; 2014/06/06 17:12:48
+#END# kgpadding -x E=101111 S=101048 f=1%t i=./indat/dat17.csv o=./outdat/out272x.csv v=padding; IN=6 OUT=24; 2014/06/06 17:12:48
+#END# kgpadding -nfn E=101111 S=101048 f=1%t i=./indat/dat17nfn.csv o=./outdat/out272nfn.csv v=padding; IN=6 OUT=39; 2014/06/06 17:12:48
+#END# kgpadding -n E=101109 S=101050 f=b%t i=./indat/dat17.csv o=./outdat/out273.csv; IN=6 OUT=20; 2014/06/06 17:12:48
+#END# kgpadding -n -x E=101109 S=101050 f=1%t i=./indat/dat17.csv o=./outdat/out273x.csv; IN=6 OUT=20; 2014/06/06 17:12:48
+#END# kgpadding -n -nfn E=101109 S=101050 f=1%t i=./indat/dat17nfn.csv o=./outdat/out273nfn.csv; IN=6 OUT=35; 2014/06/06 17:12:48
+#END# kgpadding E=101109 S=101050 f=b%t i=./indat/dat17.csv o=./outdat/out274.csv v=padding; IN=6 OUT=20; 2014/06/06 17:12:48
+#END# kgpadding -x E=101109 S=101050 f=1%t i=./indat/dat17.csv o=./outdat/out274x.csv v=padding; IN=6 OUT=20; 2014/06/06 17:12:48
+#END# kgpadding -nfn E=101109 S=101050 f=1%t i=./indat/dat17nfn.csv o=./outdat/out274nfn.csv v=padding; IN=6 OUT=35; 2014/06/06 17:12:48
+#END# kgpadding f=b%tr i=./indat/dat17.csv o=./outdat/out275.csv; IN=6 OUT=20; 2014/06/06 17:12:48
+#END# kgpadding -x f=1%tr i=./indat/dat17.csv o=./outdat/out275x.csv; IN=6 OUT=20; 2014/06/06 17:12:48
+#END# kgpadding -nfn f=1%tr i=./indat/dat17nfn.csv o=./outdat/out275nfn.csv; IN=6 OUT=19; 2014/06/06 17:12:48
+#END# kgpadding -n f=b%tr i=./indat/dat17.csv o=./outdat/out276.csv; IN=6 OUT=20; 2014/06/06 17:12:48
+#END# kgpadding -n -x f=1%tr i=./indat/dat17.csv o=./outdat/out276x.csv; IN=6 OUT=20; 2014/06/06 17:12:48
+#END# kgpadding -n -nfn f=1%tr i=./indat/dat17nfn.csv o=./outdat/out276nfn.csv; IN=6 OUT=19; 2014/06/06 17:12:48
+#END# kgpadding f=b%tr i=./indat/dat17.csv o=./outdat/out277.csv v=padding; IN=6 OUT=20; 2014/06/06 17:12:48
+#END# kgpadding -x f=1%tr i=./indat/dat17.csv o=./outdat/out277x.csv v=padding; IN=6 OUT=20; 2014/06/06 17:12:48
+#END# kgpadding -nfn f=1%tr i=./indat/dat17nfn.csv o=./outdat/out277nfn.csv v=padding; IN=6 OUT=19; 2014/06/06 17:12:48
+#END# kgpadding E=101048 S=101111 f=b%tr i=./indat/dat17.csv o=./outdat/out278.csv; IN=6 OUT=24; 2014/06/06 17:12:48
+#END# kgpadding -x E=101048 S=101111 f=1%tr i=./indat/dat17.csv o=./outdat/out278x.csv; IN=6 OUT=24; 2014/06/06 17:12:48
+#END# kgpadding -nfn E=101048 S=101111 f=1%tr i=./indat/dat17nfn.csv o=./outdat/out278nfn.csv; IN=6 OUT=55; 2014/06/06 17:12:48
+#END# kgpadding S=101111 f=b%tr i=./indat/dat17.csv o=./outdat/out279.csv; IN=6 OUT=22; 2014/06/06 17:12:48
+#END# kgpadding -x S=101111 f=1%tr i=./indat/dat17.csv o=./outdat/out279x.csv; IN=6 OUT=22; 2014/06/06 17:12:48
+#END# kgpadding -nfn S=101111 f=1%tr i=./indat/dat17nfn.csv o=./outdat/out279nfn.csv; IN=6 OUT=40; 2014/06/06 17:12:48
+#END# kgpadding E=101048 f=b%tr i=./indat/dat17.csv o=./outdat/out280.csv; IN=6 OUT=22; 2014/06/06 17:12:48
+#END# kgpadding -x E=101048 f=1%tr i=./indat/dat17.csv o=./outdat/out280x.csv; IN=6 OUT=22; 2014/06/06 17:12:48
+#END# kgpadding -nfn E=101048 f=1%tr i=./indat/dat17nfn.csv o=./outdat/out280nfn.csv; IN=6 OUT=34; 2014/06/06 17:12:48
+#END# kgpadding E=101050 S=101109 f=b%tr i=./indat/dat17.csv o=./outdat/out281.csv; IN=6 OUT=20; 2014/06/06 17:12:48
+#END# kgpadding -x E=101050 S=101109 f=1%tr i=./indat/dat17.csv o=./outdat/out281x.csv; IN=6 OUT=20; 2014/06/06 17:12:48
+#END# kgpadding -nfn E=101050 S=101109 f=1%tr i=./indat/dat17nfn.csv o=./outdat/out281nfn.csv; IN=6 OUT=51; 2014/06/06 17:12:48
+#END# kgpadding S=101109 f=b%tr i=./indat/dat17.csv o=./outdat/out282.csv; IN=6 OUT=20; 2014/06/06 17:12:48
+#END# kgpadding -x S=101109 f=1%tr i=./indat/dat17.csv o=./outdat/out282x.csv; IN=6 OUT=20; 2014/06/06 17:12:48
+#END# kgpadding -nfn S=101109 f=1%tr i=./indat/dat17nfn.csv o=./outdat/out282nfn.csv; IN=6 OUT=38; 2014/06/06 17:12:48
+#END# kgpadding E=101050 f=b%tr i=./indat/dat17.csv o=./outdat/out283.csv; IN=6 OUT=20; 2014/06/06 17:12:48
+#END# kgpadding -x E=101050 f=1%tr i=./indat/dat17.csv o=./outdat/out283x.csv; IN=6 OUT=20; 2014/06/06 17:12:49
+#END# kgpadding -nfn E=101050 f=1%tr i=./indat/dat17nfn.csv o=./outdat/out283nfn.csv; IN=6 OUT=32; 2014/06/06 17:12:49
+#END# kgpadding -n E=101048 S=101111 f=b%tr i=./indat/dat17.csv o=./outdat/out284.csv; IN=6 OUT=24; 2014/06/06 17:12:49
+#END# kgpadding -n -x E=101048 S=101111 f=1%tr i=./indat/dat17.csv o=./outdat/out284x.csv; IN=6 OUT=24; 2014/06/06 17:12:49
+#END# kgpadding -n -nfn E=101048 S=101111 f=1%tr i=./indat/dat17nfn.csv o=./outdat/out284nfn.csv; IN=6 OUT=55; 2014/06/06 17:12:49
+#END# kgpadding E=101048 S=101111 f=b%tr i=./indat/dat17.csv o=./outdat/out285.csv v=padding; IN=6 OUT=24; 2014/06/06 17:12:49
+#END# kgpadding -x E=101048 S=101111 f=1%tr i=./indat/dat17.csv o=./outdat/out285x.csv v=padding; IN=6 OUT=24; 2014/06/06 17:12:49
+#END# kgpadding -nfn E=101048 S=101111 f=1%tr i=./indat/dat17nfn.csv o=./outdat/out285nfn.csv v=padding; IN=6 OUT=55; 2014/06/06 17:12:49
+#END# kgpadding -n E=101050 S=101109 f=b%tr i=./indat/dat17.csv o=./outdat/out286.csv; IN=6 OUT=20; 2014/06/06 17:12:49
+#END# kgpadding -n -x E=101050 S=101109 f=1%tr i=./indat/dat17.csv o=./outdat/out286x.csv; IN=6 OUT=20; 2014/06/06 17:12:49
+#END# kgpadding -n -nfn E=101050 S=101109 f=1%tr i=./indat/dat17nfn.csv o=./outdat/out286nfn.csv; IN=6 OUT=51; 2014/06/06 17:12:49
+#END# kgpadding E=101050 S=101109 f=b%tr i=./indat/dat17.csv o=./outdat/out287.csv v=padding; IN=6 OUT=20; 2014/06/06 17:12:49
+#END# kgpadding -x E=101050 S=101109 f=1%tr i=./indat/dat17.csv o=./outdat/out287x.csv v=padding; IN=6 OUT=20; 2014/06/06 17:12:49
+#END# kgpadding -nfn E=101050 S=101109 f=1%tr i=./indat/dat17nfn.csv o=./outdat/out287nfn.csv v=padding; IN=6 OUT=51; 2014/06/06 17:12:49
+#END# kgpadding f=b%n i=./indat/dat14.csv k=a o=./outdat/out290.csv; IN=11 OUT=17; 2014/06/06 17:12:49
+#END# kgpadding -x f=1%n i=./indat/dat14.csv k=0 o=./outdat/out290x.csv; IN=11 OUT=17; 2014/06/06 17:12:49
+#END# kgpadding -nfn f=1%n i=./indat/dat14nfn.csv k=0 o=./outdat/out290nfn.csv; IN=11 OUT=17; 2014/06/06 17:12:49
+#END# kgpadding -n f=b%n i=./indat/dat14.csv k=a o=./outdat/out291.csv; IN=11 OUT=17; 2014/06/06 17:12:49
+#END# kgpadding -n -x f=1%n i=./indat/dat14.csv k=0 o=./outdat/out291x.csv; IN=11 OUT=17; 2014/06/06 17:12:49
+#END# kgpadding -n -nfn f=1%n i=./indat/dat14nfn.csv k=0 o=./outdat/out291nfn.csv; IN=11 OUT=17; 2014/06/06 17:12:49
+#END# kgpadding f=b%n i=./indat/dat14.csv k=a o=./outdat/out292.csv v=padding; IN=11 OUT=17; 2014/06/06 17:12:49
+#END# kgpadding -x f=1%n i=./indat/dat14.csv k=0 o=./outdat/out292x.csv v=padding; IN=11 OUT=17; 2014/06/06 17:12:49
+#END# kgpadding -nfn f=1%n i=./indat/dat14nfn.csv k=0 o=./outdat/out292nfn.csv v=padding; IN=11 OUT=17; 2014/06/06 17:12:49
+#END# kgpadding E=11 S=-1 f=b%n i=./indat/dat14.csv k=a o=./outdat/out293.csv; IN=11 OUT=26; 2014/06/06 17:12:49
+#END# kgpadding -x E=11 S=-1 f=1%n i=./indat/dat14.csv k=0 o=./outdat/out293x.csv; IN=11 OUT=26; 2014/06/06 17:12:49
+#END# kgpadding -nfn E=11 S=-1 f=1%n i=./indat/dat14nfn.csv k=0 o=./outdat/out293nfn.csv; IN=11 OUT=52; 2014/06/06 17:12:49
+#END# kgpadding S=-1 f=b%n i=./indat/dat14.csv k=a o=./outdat/out294.csv; IN=11 OUT=23; 2014/06/06 17:12:49
+#END# kgpadding -x S=-1 f=1%n i=./indat/dat14.csv k=0 o=./outdat/out294x.csv; IN=11 OUT=23; 2014/06/06 17:12:49
+#END# kgpadding -nfn S=-1 f=1%n i=./indat/dat14nfn.csv k=0 o=./outdat/out294nfn.csv; IN=11 OUT=37; 2014/06/06 17:12:49
+#END# kgpadding E=11 f=b%n i=./indat/dat14.csv k=a o=./outdat/out295.csv; IN=11 OUT=20; 2014/06/06 17:12:49
+#END# kgpadding -x E=11 f=1%n i=./indat/dat14.csv k=0 o=./outdat/out295x.csv; IN=11 OUT=20; 2014/06/06 17:12:49
+#END# kgpadding -nfn E=11 f=1%n i=./indat/dat14nfn.csv k=0 o=./outdat/out295nfn.csv; IN=11 OUT=32; 2014/06/06 17:12:49
+#END# kgpadding E=10 S=1 f=b%n i=./indat/dat14.csv k=a o=./outdat/out296.csv; IN=11 OUT=20; 2014/06/06 17:12:49
+#END# kgpadding -x E=10 S=1 f=1%n i=./indat/dat14.csv k=0 o=./outdat/out296x.csv; IN=11 OUT=20; 2014/06/06 17:12:49
+#END# kgpadding -nfn E=10 S=1 f=1%n i=./indat/dat14nfn.csv k=0 o=./outdat/out296nfn.csv; IN=11 OUT=40; 2014/06/06 17:12:49
+#END# kgpadding S=1 f=b%n i=./indat/dat14.csv k=a o=./outdat/out297.csv; IN=11 OUT=19; 2014/06/06 17:12:49
+#END# kgpadding -x S=1 f=1%n i=./indat/dat14.csv k=0 o=./outdat/out297x.csv; IN=11 OUT=19; 2014/06/06 17:12:49
+#END# kgpadding -nfn S=1 f=1%n i=./indat/dat14nfn.csv k=0 o=./outdat/out297nfn.csv; IN=11 OUT=29; 2014/06/06 17:12:49
+#END# kgpadding E=10 f=b%n i=./indat/dat14.csv k=a o=./outdat/out298.csv; IN=11 OUT=18; 2014/06/06 17:12:49
+#END# kgpadding -x E=10 f=1%n i=./indat/dat14.csv k=0 o=./outdat/out298x.csv; IN=11 OUT=18; 2014/06/06 17:12:49
+#END# kgpadding -nfn E=10 f=1%n i=./indat/dat14nfn.csv k=0 o=./outdat/out298nfn.csv; IN=11 OUT=28; 2014/06/06 17:12:49
+#END# kgpadding -n E=11 S=-1 f=b%n i=./indat/dat14.csv k=a o=./outdat/out299.csv; IN=11 OUT=26; 2014/06/06 17:12:49
+#END# kgpadding -n -x E=11 S=-1 f=1%n i=./indat/dat14.csv k=0 o=./outdat/out299x.csv; IN=11 OUT=26; 2014/06/06 17:12:49
+#END# kgpadding -n -nfn E=11 S=-1 f=1%n i=./indat/dat14nfn.csv k=0 o=./outdat/out299nfn.csv; IN=11 OUT=52; 2014/06/06 17:12:49
+#END# kgpadding E=11 S=-1 f=b%n i=./indat/dat14.csv k=a o=./outdat/out300.csv v=padding; IN=11 OUT=26; 2014/06/06 17:12:50
+#END# kgpadding -x E=11 S=-1 f=1%n i=./indat/dat14.csv k=0 o=./outdat/out300x.csv v=padding; IN=11 OUT=26; 2014/06/06 17:12:50
+#END# kgpadding -nfn E=11 S=-1 f=1%n i=./indat/dat14nfn.csv k=0 o=./outdat/out300nfn.csv v=padding; IN=11 OUT=52; 2014/06/06 17:12:50
+#END# kgpadding -n E=10 S=1 f=b%n i=./indat/dat14.csv k=a o=./outdat/out301.csv; IN=11 OUT=20; 2014/06/06 17:12:50
+#END# kgpadding -n -x E=10 S=1 f=1%n i=./indat/dat14.csv k=0 o=./outdat/out301x.csv; IN=11 OUT=20; 2014/06/06 17:12:50
+#END# kgpadding -n -nfn E=10 S=1 f=1%n i=./indat/dat14nfn.csv k=0 o=./outdat/out301nfn.csv; IN=11 OUT=40; 2014/06/06 17:12:50
+#END# kgpadding E=10 S=1 f=b%n i=./indat/dat14.csv k=a o=./outdat/out302.csv v=padding; IN=11 OUT=20; 2014/06/06 17:12:50
+#END# kgpadding -x E=10 S=1 f=1%n i=./indat/dat14.csv k=0 o=./outdat/out302x.csv v=padding; IN=11 OUT=20; 2014/06/06 17:12:50
+#END# kgpadding -nfn E=10 S=1 f=1%n i=./indat/dat14nfn.csv k=0 o=./outdat/out302nfn.csv v=padding; IN=11 OUT=40; 2014/06/06 17:12:50
+#END# kgpadding f=b%nr i=./indat/dat14.csv k=a o=./outdat/out303.csv; IN=11 OUT=17; 2014/06/06 17:12:50
+#END# kgpadding -x f=1%nr i=./indat/dat14.csv k=0 o=./outdat/out303x.csv; IN=11 OUT=17; 2014/06/06 17:12:50
+#END# kgpadding -nfn f=1%nr i=./indat/dat14nfn.csv k=0 o=./outdat/out303nfn.csv; IN=11 OUT=11; 2014/06/06 17:12:50
+#END# kgpadding -n f=b%nr i=./indat/dat14.csv k=a o=./outdat/out304.csv; IN=11 OUT=17; 2014/06/06 17:12:50
+#END# kgpadding -n -x f=1%nr i=./indat/dat14.csv k=0 o=./outdat/out304x.csv; IN=11 OUT=17; 2014/06/06 17:12:50
+#END# kgpadding -n -nfn f=1%nr i=./indat/dat14nfn.csv k=0 o=./outdat/out304nfn.csv; IN=11 OUT=11; 2014/06/06 17:12:50
+#END# kgpadding f=b%nr i=./indat/dat14.csv k=a o=./outdat/out305.csv v=padding; IN=11 OUT=17; 2014/06/06 17:12:50
+#END# kgpadding -x f=1%nr i=./indat/dat14.csv k=0 o=./outdat/out305x.csv v=padding; IN=11 OUT=17; 2014/06/06 17:12:50
+#END# kgpadding -nfn f=1%nr i=./indat/dat14nfn.csv k=0 o=./outdat/out305nfn.csv v=padding; IN=11 OUT=11; 2014/06/06 17:12:50
+#END# kgpadding E=-1 S=11 f=b%nr i=./indat/dat14.csv k=a o=./outdat/out306.csv; IN=11 OUT=26; 2014/06/06 17:12:50
+#END# kgpadding -x E=-1 S=11 f=1%nr i=./indat/dat14.csv k=0 o=./outdat/out306x.csv; IN=11 OUT=26; 2014/06/06 17:12:50
+#END# kgpadding -nfn E=-1 S=11 f=1%nr i=./indat/dat14nfn.csv k=0 o=./outdat/out306nfn.csv; IN=11 OUT=72; 2014/06/06 17:12:50
+#END# kgpadding E=-1 f=b%nr i=./indat/dat14.csv k=a o=./outdat/out307.csv; IN=11 OUT=23; 2014/06/06 17:12:50
+#END# kgpadding -x E=-1 f=1%nr i=./indat/dat14.csv k=0 o=./outdat/out307x.csv; IN=11 OUT=23; 2014/06/06 17:12:50
+#END# kgpadding -nfn E=-1 f=1%nr i=./indat/dat14nfn.csv k=0 o=./outdat/out307nfn.csv; IN=11 OUT=44; 2014/06/06 17:12:50
+#END# kgpadding S=11 f=b%nr i=./indat/dat14.csv k=a o=./outdat/out308.csv; IN=11 OUT=20; 2014/06/06 17:12:50
+#END# kgpadding -x S=11 f=1%nr i=./indat/dat14.csv k=0 o=./outdat/out308x.csv; IN=11 OUT=20; 2014/06/06 17:12:50
+#END# kgpadding -nfn S=11 f=1%nr i=./indat/dat14nfn.csv k=0 o=./outdat/out308nfn.csv; IN=11 OUT=39; 2014/06/06 17:12:50
+#END# kgpadding E=1 S=10 f=b%nr i=./indat/dat14.csv k=a o=./outdat/out309.csv; IN=11 OUT=20; 2014/06/06 17:12:50
+#END# kgpadding -x E=1 S=10 f=1%nr i=./indat/dat14.csv k=0 o=./outdat/out309x.csv; IN=11 OUT=20; 2014/06/06 17:12:50
+#END# kgpadding -nfn E=1 S=10 f=1%nr i=./indat/dat14nfn.csv k=0 o=./outdat/out309nfn.csv; IN=11 OUT=60; 2014/06/06 17:12:50
+#END# kgpadding E=1 f=b%nr i=./indat/dat14.csv k=a o=./outdat/out310.csv; IN=11 OUT=19; 2014/06/06 17:12:50
+#END# kgpadding -x E=1 f=1%nr i=./indat/dat14.csv k=0 o=./outdat/out310x.csv; IN=11 OUT=19; 2014/06/06 17:12:50
+#END# kgpadding -nfn E=1 f=1%nr i=./indat/dat14nfn.csv k=0 o=./outdat/out310nfn.csv; IN=11 OUT=36; 2014/06/06 17:12:50
+#END# kgpadding S=10 f=b%nr i=./indat/dat14.csv k=a o=./outdat/out311.csv; IN=11 OUT=18; 2014/06/06 17:12:50
+#END# kgpadding -x S=10 f=1%nr i=./indat/dat14.csv k=0 o=./outdat/out311x.csv; IN=11 OUT=18; 2014/06/06 17:12:50
+#END# kgpadding -nfn S=10 f=1%nr i=./indat/dat14nfn.csv k=0 o=./outdat/out311nfn.csv; IN=11 OUT=35; 2014/06/06 17:12:50
+#END# kgpadding -n E=-1 S=11 f=b%nr i=./indat/dat14.csv k=a o=./outdat/out312.csv; IN=11 OUT=26; 2014/06/06 17:12:50
+#END# kgpadding -n -x E=-1 S=11 f=1%nr i=./indat/dat14.csv k=0 o=./outdat/out312x.csv; IN=11 OUT=26; 2014/06/06 17:12:50
+#END# kgpadding -n -nfn E=-1 S=11 f=1%nr i=./indat/dat14nfn.csv k=0 o=./outdat/out312nfn.csv; IN=11 OUT=72; 2014/06/06 17:12:50
+#END# kgpadding E=-1 S=11 f=b%nr i=./indat/dat14.csv k=a o=./outdat/out313.csv v=padding; IN=11 OUT=26; 2014/06/06 17:12:50
+#END# kgpadding -x E=-1 S=11 f=1%nr i=./indat/dat14.csv k=0 o=./outdat/out313x.csv v=padding; IN=11 OUT=26; 2014/06/06 17:12:50
+#END# kgpadding -nfn E=-1 S=11 f=1%nr i=./indat/dat14nfn.csv k=0 o=./outdat/out313nfn.csv v=padding; IN=11 OUT=72; 2014/06/06 17:12:50
+#END# kgpadding -n E=1 S=10 f=b%nr i=./indat/dat14.csv k=a o=./outdat/out314.csv; IN=11 OUT=20; 2014/06/06 17:12:51
+#END# kgpadding -n -x E=1 S=10 f=1%nr i=./indat/dat14.csv k=0 o=./outdat/out314x.csv; IN=11 OUT=20; 2014/06/06 17:12:51
+#END# kgpadding -n -nfn E=1 S=10 f=1%nr i=./indat/dat14nfn.csv k=0 o=./outdat/out314nfn.csv; IN=11 OUT=60; 2014/06/06 17:12:51
+#END# kgpadding E=1 S=10 f=b%nr i=./indat/dat14.csv k=a o=./outdat/out315.csv v=padding; IN=11 OUT=20; 2014/06/06 17:12:51
+#END# kgpadding -x E=1 S=10 f=1%nr i=./indat/dat14.csv k=0 o=./outdat/out315x.csv v=padding; IN=11 OUT=20; 2014/06/06 17:12:51
+#END# kgpadding -nfn E=1 S=10 f=1%nr i=./indat/dat14nfn.csv k=0 o=./outdat/out315nfn.csv v=padding; IN=11 OUT=60; 2014/06/06 17:12:51
+#END# kgpadding f=b%d i=./indat/dat16.csv k=a o=./outdat/out316.csv; IN=11 OUT=16; 2014/06/06 17:12:51
+#END# kgpadding -x f=1%d i=./indat/dat16.csv k=0 o=./outdat/out316x.csv; IN=11 OUT=16; 2014/06/06 17:12:51
+#END# kgpadding -nfn f=1%d i=./indat/dat16nfn.csv k=0 o=./outdat/out316nfn.csv; IN=11 OUT=16; 2014/06/06 17:12:51
+#END# kgpadding -n f=b%d i=./indat/dat16.csv k=a o=./outdat/out317.csv; IN=11 OUT=16; 2014/06/06 17:12:51
+#END# kgpadding -n -x f=1%d i=./indat/dat16.csv k=0 o=./outdat/out317x.csv; IN=11 OUT=16; 2014/06/06 17:12:51
+#END# kgpadding -n -nfn f=1%d i=./indat/dat16nfn.csv k=0 o=./outdat/out317nfn.csv; IN=11 OUT=16; 2014/06/06 17:12:51
+#END# kgpadding f=b%d i=./indat/dat16.csv k=a o=./outdat/out318.csv v=padding; IN=11 OUT=16; 2014/06/06 17:12:51
+#END# kgpadding -x f=1%d i=./indat/dat16.csv k=0 o=./outdat/out318x.csv v=padding; IN=11 OUT=16; 2014/06/06 17:12:51
+#END# kgpadding -nfn f=1%d i=./indat/dat16nfn.csv k=0 o=./outdat/out318nfn.csv v=padding; IN=11 OUT=16; 2014/06/06 17:12:51
+#END# kgpadding E=20131107 S=20131024 f=b%d i=./indat/dat16.csv k=a o=./outdat/out319.csv; IN=11 OUT=31; 2014/06/06 17:12:51
+#END# kgpadding -x E=20131107 S=20131024 f=1%d i=./indat/dat16.csv k=0 o=./outdat/out319x.csv; IN=11 OUT=31; 2014/06/06 17:12:51
+#END# kgpadding -nfn E=20131107 S=20131024 f=1%d i=./indat/dat16nfn.csv k=0 o=./outdat/out319nfn.csv; IN=11 OUT=61; 2014/06/06 17:12:51
+#END# kgpadding S=20131024 f=b%d i=./indat/dat16.csv k=a o=./outdat/out320.csv; IN=11 OUT=25; 2014/06/06 17:12:51
+#END# kgpadding -x S=20131024 f=1%d i=./indat/dat16.csv k=0 o=./outdat/out320x.csv; IN=11 OUT=25; 2014/06/06 17:12:51
+#END# kgpadding -nfn S=20131024 f=1%d i=./indat/dat16nfn.csv k=0 o=./outdat/out320nfn.csv; IN=11 OUT=42; 2014/06/06 17:12:51
+#END# kgpadding E=20131107 f=b%d i=./indat/dat16.csv k=a o=./outdat/out321.csv; IN=11 OUT=22; 2014/06/06 17:12:51
+#END# kgpadding -x E=20131107 f=1%d i=./indat/dat16.csv k=0 o=./outdat/out321x.csv; IN=11 OUT=22; 2014/06/06 17:12:51
+#END# kgpadding -nfn E=20131107 f=1%d i=./indat/dat16nfn.csv k=0 o=./outdat/out321nfn.csv; IN=11 OUT=35; 2014/06/06 17:12:51
+#END# kgpadding E=20131103 S=20131101 f=b%d i=./indat/dat16.csv k=a o=./outdat/out322.csv; IN=11 OUT=16; 2014/06/06 17:12:51
+#END# kgpadding -x E=20131103 S=20131101 f=1%d i=./indat/dat16.csv k=0 o=./outdat/out322x.csv; IN=11 OUT=16; 2014/06/06 17:12:51
+#END# kgpadding -nfn E=20131103 S=20131101 f=1%d i=./indat/dat16nfn.csv k=0 o=./outdat/out322nfn.csv; IN=11 OUT=24; 2014/06/06 17:12:51
+#END# kgpadding S=20131101 f=b%d i=./indat/dat16.csv k=a o=./outdat/out323.csv; IN=11 OUT=16; 2014/06/06 17:12:51
+#END# kgpadding -x S=20131101 f=1%d i=./indat/dat16.csv k=0 o=./outdat/out323x.csv; IN=11 OUT=16; 2014/06/06 17:12:51
+#END# kgpadding -nfn S=20131101 f=1%d i=./indat/dat16nfn.csv k=0 o=./outdat/out323nfn.csv; IN=11 OUT=19; 2014/06/06 17:12:51
+#END# kgpadding E=20131103 f=b%d i=./indat/dat16.csv k=a o=./outdat/out324.csv; IN=11 OUT=16; 2014/06/06 17:12:51
+#END# kgpadding -x E=20131103 f=1%d i=./indat/dat16.csv k=0 o=./outdat/out324x.csv; IN=11 OUT=16; 2014/06/06 17:12:51
+#END# kgpadding -nfn E=20131103 f=1%d i=./indat/dat16nfn.csv k=0 o=./outdat/out324nfn.csv; IN=11 OUT=21; 2014/06/06 17:12:51
+#END# kgpadding -n E=20131107 S=20131024 f=b%d i=./indat/dat16.csv k=a o=./outdat/out325.csv; IN=11 OUT=31; 2014/06/06 17:12:51
+#END# kgpadding -n -x E=20131107 S=20131024 f=1%d i=./indat/dat16.csv k=0 o=./outdat/out325x.csv; IN=11 OUT=31; 2014/06/06 17:12:51
+#END# kgpadding -n -nfn E=20131107 S=20131024 f=1%d i=./indat/dat16nfn.csv k=0 o=./outdat/out325nfn.csv; IN=11 OUT=61; 2014/06/06 17:12:51
+#END# kgpadding E=20131107 S=20131024 f=b%d i=./indat/dat16.csv k=a o=./outdat/out326.csv v=padding; IN=11 OUT=31; 2014/06/06 17:12:51
+#END# kgpadding -x E=20131107 S=20131024 f=1%d i=./indat/dat16.csv k=0 o=./outdat/out326x.csv v=padding; IN=11 OUT=31; 2014/06/06 17:12:51
+#END# kgpadding -nfn E=20131107 S=20131024 f=1%d i=./indat/dat16nfn.csv k=0 o=./outdat/out326nfn.csv v=padding; IN=11 OUT=61; 2014/06/06 17:12:51
+#END# kgpadding -n E=20131103 S=20131101 f=b%d i=./indat/dat16.csv k=a o=./outdat/out327.csv; IN=11 OUT=16; 2014/06/06 17:12:51
+#END# kgpadding -n -x E=20131103 S=20131101 f=1%d i=./indat/dat16.csv k=0 o=./outdat/out327x.csv; IN=11 OUT=16; 2014/06/06 17:12:51
+#END# kgpadding -n -nfn E=20131103 S=20131101 f=1%d i=./indat/dat16nfn.csv k=0 o=./outdat/out327nfn.csv; IN=11 OUT=24; 2014/06/06 17:12:51
+#END# kgpadding E=20131103 S=20131101 f=b%d i=./indat/dat16.csv k=a o=./outdat/out328.csv v=padding; IN=11 OUT=16; 2014/06/06 17:12:51
+#END# kgpadding -x E=20131103 S=20131101 f=1%d i=./indat/dat16.csv k=0 o=./outdat/out328x.csv v=padding; IN=11 OUT=16; 2014/06/06 17:12:52
+#END# kgpadding -nfn E=20131103 S=20131101 f=1%d i=./indat/dat16nfn.csv k=0 o=./outdat/out328nfn.csv v=padding; IN=11 OUT=24; 2014/06/06 17:12:52
+#END# kgpadding f=b%dr i=./indat/dat16.csv k=a o=./outdat/out329.csv; IN=11 OUT=16; 2014/06/06 17:12:52
+#END# kgpadding -x f=1%dr i=./indat/dat16.csv k=0 o=./outdat/out329x.csv; IN=11 OUT=16; 2014/06/06 17:12:52
+#END# kgpadding -nfn f=1%dr i=./indat/dat16nfn.csv k=0 o=./outdat/out329nfn.csv; IN=11 OUT=11; 2014/06/06 17:12:52
+#END# kgpadding -n f=b%dr i=./indat/dat16.csv k=a o=./outdat/out330.csv; IN=11 OUT=16; 2014/06/06 17:12:52
+#END# kgpadding -n -x f=1%dr i=./indat/dat16.csv k=0 o=./outdat/out330x.csv; IN=11 OUT=16; 2014/06/06 17:12:52
+#END# kgpadding -n -nfn f=1%dr i=./indat/dat16nfn.csv k=0 o=./outdat/out330nfn.csv; IN=11 OUT=11; 2014/06/06 17:12:52
+#END# kgpadding f=b%dr i=./indat/dat16.csv k=a o=./outdat/out331.csv v=padding; IN=11 OUT=16; 2014/06/06 17:12:52
+#END# kgpadding -x f=1%dr i=./indat/dat16.csv k=0 o=./outdat/out331x.csv v=padding; IN=11 OUT=16; 2014/06/06 17:12:52
+#END# kgpadding -nfn f=1%dr i=./indat/dat16nfn.csv k=0 o=./outdat/out331nfn.csv v=padding; IN=11 OUT=11; 2014/06/06 17:12:52
+#END# kgpadding E=20131024 S=20131107 f=b%dr i=./indat/dat16.csv k=a o=./outdat/out332.csv; IN=11 OUT=31; 2014/06/06 17:12:52
+#END# kgpadding -x E=20131024 S=20131107 f=1%dr i=./indat/dat16.csv k=0 o=./outdat/out332x.csv; IN=11 OUT=31; 2014/06/06 17:12:52
+#END# kgpadding -nfn E=20131024 S=20131107 f=1%dr i=./indat/dat16nfn.csv k=0 o=./outdat/out332nfn.csv; IN=11 OUT=78; 2014/06/06 17:12:52
+#END# kgpadding S=20131107 f=b%dr i=./indat/dat16.csv k=a o=./outdat/out333.csv; IN=11 OUT=22; 2014/06/06 17:12:52
+#END# kgpadding -x S=20131107 f=1%dr i=./indat/dat16.csv k=0 o=./outdat/out333x.csv; IN=11 OUT=22; 2014/06/06 17:12:52
+#END# kgpadding -nfn S=20131107 f=1%dr i=./indat/dat16nfn.csv k=0 o=./outdat/out333nfn.csv; IN=11 OUT=41; 2014/06/06 17:12:52
+#END# kgpadding E=20131024 f=b%dr i=./indat/dat16.csv k=a o=./outdat/out334.csv; IN=11 OUT=25; 2014/06/06 17:12:52
+#END# kgpadding -x E=20131024 f=1%dr i=./indat/dat16.csv k=0 o=./outdat/out334x.csv; IN=11 OUT=25; 2014/06/06 17:12:52
+#END# kgpadding -nfn E=20131024 f=1%dr i=./indat/dat16nfn.csv k=0 o=./outdat/out334nfn.csv; IN=11 OUT=48; 2014/06/06 17:12:52
+#END# kgpadding E=20131101 S=20131103 f=b%dr i=./indat/dat16.csv k=a o=./outdat/out335.csv; IN=11 OUT=16; 2014/06/06 17:12:52
+#END# kgpadding -x E=20131101 S=20131103 f=1%dr i=./indat/dat16.csv k=0 o=./outdat/out335x.csv; IN=11 OUT=16; 2014/06/06 17:12:52
+#END# kgpadding -nfn E=20131101 S=20131103 f=1%dr i=./indat/dat16nfn.csv k=0 o=./outdat/out335nfn.csv; IN=11 OUT=34; 2014/06/06 17:12:52
+#END# kgpadding S=20131103 f=b%dr i=./indat/dat16.csv k=a o=./outdat/out336.csv; IN=11 OUT=16; 2014/06/06 17:12:52
+#END# kgpadding -x S=20131103 f=1%dr i=./indat/dat16.csv k=0 o=./outdat/out336x.csv; IN=11 OUT=16; 2014/06/06 17:12:52
+#END# kgpadding -nfn S=20131103 f=1%dr i=./indat/dat16nfn.csv k=0 o=./outdat/out336nfn.csv; IN=11 OUT=26; 2014/06/06 17:12:52
+#END# kgpadding E=20131101 f=b%dr i=./indat/dat16.csv k=a o=./outdat/out337.csv; IN=11 OUT=16; 2014/06/06 17:12:52
+#END# kgpadding -x E=20131101 f=1%dr i=./indat/dat16.csv k=0 o=./outdat/out337x.csv; IN=11 OUT=16; 2014/06/06 17:12:52
+#END# kgpadding -nfn E=20131101 f=1%dr i=./indat/dat16nfn.csv k=0 o=./outdat/out337nfn.csv; IN=11 OUT=19; 2014/06/06 17:12:52
+#END# kgpadding -n E=20131024 S=20131107 f=b%dr i=./indat/dat16.csv k=a o=./outdat/out338.csv; IN=11 OUT=31; 2014/06/06 17:12:52
+#END# kgpadding -n -x E=20131024 S=20131107 f=1%dr i=./indat/dat16.csv k=0 o=./outdat/out338x.csv; IN=11 OUT=31; 2014/06/06 17:12:52
+#END# kgpadding -n -nfn E=20131024 S=20131107 f=1%dr i=./indat/dat16nfn.csv k=0 o=./outdat/out338nfn.csv; IN=11 OUT=78; 2014/06/06 17:12:52
+#END# kgpadding E=20131024 S=20131107 f=b%dr i=./indat/dat16.csv k=a o=./outdat/out339.csv v=padding; IN=11 OUT=31; 2014/06/06 17:12:52
+#END# kgpadding -x E=20131024 S=20131107 f=1%dr i=./indat/dat16.csv k=0 o=./outdat/out339x.csv v=padding; IN=11 OUT=31; 2014/06/06 17:12:52
+#END# kgpadding -nfn E=20131024 S=20131107 f=1%dr i=./indat/dat16nfn.csv k=0 o=./outdat/out339nfn.csv v=padding; IN=11 OUT=78; 2014/06/06 17:12:52
+#END# kgpadding -n E=20131101 S=20131103 f=b%dr i=./indat/dat16.csv k=a o=./outdat/out340.csv; IN=11 OUT=16; 2014/06/06 17:12:52
+#END# kgpadding -n -x E=20131101 S=20131103 f=1%dr i=./indat/dat16.csv k=0 o=./outdat/out340x.csv; IN=11 OUT=16; 2014/06/06 17:12:52
+#END# kgpadding -n -nfn E=20131101 S=20131103 f=1%dr i=./indat/dat16nfn.csv k=0 o=./outdat/out340nfn.csv; IN=11 OUT=34; 2014/06/06 17:12:52
+#END# kgpadding E=20131101 S=20131103 f=b%dr i=./indat/dat16.csv k=a o=./outdat/out341.csv v=padding; IN=11 OUT=16; 2014/06/06 17:12:52
+#END# kgpadding -x E=20131101 S=20131103 f=1%dr i=./indat/dat16.csv k=0 o=./outdat/out341x.csv v=padding; IN=11 OUT=16; 2014/06/06 17:12:52
+#END# kgpadding -nfn E=20131101 S=20131103 f=1%dr i=./indat/dat16nfn.csv k=0 o=./outdat/out341nfn.csv v=padding; IN=11 OUT=34; 2014/06/06 17:12:52
+#END# kgpadding f=b%t i=./indat/dat18.csv k=a o=./outdat/out342.csv; IN=11 OUT=45; 2014/06/06 17:12:52
+#END# kgpadding -x f=1%t i=./indat/dat18.csv k=0 o=./outdat/out342x.csv; IN=11 OUT=45; 2014/06/06 17:12:52
+#END# kgpadding -nfn f=1%t i=./indat/dat18nfn.csv k=0 o=./outdat/out342nfn.csv; IN=11 OUT=45; 2014/06/06 17:12:52
+#END# kgpadding -n f=b%t i=./indat/dat18.csv k=a o=./outdat/out343.csv; IN=11 OUT=45; 2014/06/06 17:12:53
+#END# kgpadding -n -x f=1%t i=./indat/dat18.csv k=0 o=./outdat/out343x.csv; IN=11 OUT=45; 2014/06/06 17:12:53
+#END# kgpadding -n -nfn f=1%t i=./indat/dat18nfn.csv k=0 o=./outdat/out343nfn.csv; IN=11 OUT=45; 2014/06/06 17:12:53
+#END# kgpadding f=b%t i=./indat/dat18.csv k=a o=./outdat/out344.csv v=padding; IN=11 OUT=45; 2014/06/06 17:12:53
+#END# kgpadding -x f=1%t i=./indat/dat18.csv k=0 o=./outdat/out344x.csv v=padding; IN=11 OUT=45; 2014/06/06 17:12:53
+#END# kgpadding -nfn f=1%t i=./indat/dat18nfn.csv k=0 o=./outdat/out344nfn.csv v=padding; IN=11 OUT=45; 2014/06/06 17:12:53
+#END# kgpadding E=131110 S=131020 f=b%t i=./indat/dat18.csv k=a o=./outdat/out345.csv; IN=11 OUT=103; 2014/06/06 17:12:53
+#END# kgpadding -x E=131110 S=131020 f=1%t i=./indat/dat18.csv k=0 o=./outdat/out345x.csv; IN=11 OUT=103; 2014/06/06 17:12:53
+#END# kgpadding -nfn E=131110 S=131020 f=1%t i=./indat/dat18nfn.csv k=0 o=./outdat/out345nfn.csv; IN=11 OUT=205; 2014/06/06 17:12:53
+#END# kgpadding S=131020 f=b%t i=./indat/dat18.csv k=a o=./outdat/out346.csv; IN=11 OUT=91; 2014/06/06 17:12:53
+#END# kgpadding -x S=131020 f=1%t i=./indat/dat18.csv k=0 o=./outdat/out346x.csv; IN=11 OUT=91; 2014/06/06 17:12:53
+#END# kgpadding -nfn S=131020 f=1%t i=./indat/dat18nfn.csv k=0 o=./outdat/out346nfn.csv; IN=11 OUT=144; 2014/06/06 17:12:53
+#END# kgpadding E=131110 f=b%t i=./indat/dat18.csv k=a o=./outdat/out347.csv; IN=11 OUT=57; 2014/06/06 17:12:53
+#END# kgpadding -x E=131110 f=1%t i=./indat/dat18.csv k=0 o=./outdat/out347x.csv; IN=11 OUT=57; 2014/06/06 17:12:53
+#END# kgpadding -nfn E=131110 f=1%t i=./indat/dat18nfn.csv k=0 o=./outdat/out347nfn.csv; IN=11 OUT=106; 2014/06/06 17:12:53
+#END# kgpadding E=131103 S=131101 f=b%t i=./indat/dat18.csv k=a o=./outdat/out348.csv; IN=11 OUT=45; 2014/06/06 17:12:53
+#END# kgpadding -x E=131103 S=131101 f=1%t i=./indat/dat18.csv k=0 o=./outdat/out348x.csv; IN=11 OUT=45; 2014/06/06 17:12:53
+#END# kgpadding -nfn E=131103 S=131101 f=1%t i=./indat/dat18nfn.csv k=0 o=./outdat/out348nfn.csv; IN=11 OUT=82; 2014/06/06 17:12:53
+#END# kgpadding S=131101 f=b%t i=./indat/dat18.csv k=a o=./outdat/out349.csv; IN=11 OUT=45; 2014/06/06 17:12:53
+#END# kgpadding -x S=131101 f=1%t i=./indat/dat18.csv k=0 o=./outdat/out349x.csv; IN=11 OUT=45; 2014/06/06 17:12:53
+#END# kgpadding -nfn S=131101 f=1%t i=./indat/dat18nfn.csv k=0 o=./outdat/out349nfn.csv; IN=11 OUT=47; 2014/06/06 17:12:53
+#END# kgpadding E=131103 f=b%t i=./indat/dat18.csv k=a o=./outdat/out350.csv; IN=11 OUT=45; 2014/06/06 17:12:53
+#END# kgpadding -x E=131103 f=1%t i=./indat/dat18.csv k=0 o=./outdat/out350x.csv; IN=11 OUT=45; 2014/06/06 17:12:53
+#END# kgpadding -nfn E=131103 f=1%t i=./indat/dat18nfn.csv k=0 o=./outdat/out350nfn.csv; IN=11 OUT=80; 2014/06/06 17:12:53
+#END# kgpadding -n E=131110 S=131020 f=b%t i=./indat/dat18.csv k=a o=./outdat/out351.csv; IN=11 OUT=103; 2014/06/06 17:12:53
+#END# kgpadding -n -x E=131110 S=131020 f=1%t i=./indat/dat18.csv k=0 o=./outdat/out351x.csv; IN=11 OUT=103; 2014/06/06 17:12:53
+#END# kgpadding -n -nfn E=131110 S=131020 f=1%t i=./indat/dat18nfn.csv k=0 o=./outdat/out351nfn.csv; IN=11 OUT=205; 2014/06/06 17:12:53
+#END# kgpadding E=131110 S=131020 f=b%t i=./indat/dat18.csv k=a o=./outdat/out352.csv v=padding; IN=11 OUT=103; 2014/06/06 17:12:53
+#END# kgpadding -x E=131110 S=131020 f=1%t i=./indat/dat18.csv k=0 o=./outdat/out352x.csv v=padding; IN=11 OUT=103; 2014/06/06 17:12:53
+#END# kgpadding -nfn E=131110 S=131020 f=1%t i=./indat/dat18nfn.csv k=0 o=./outdat/out352nfn.csv v=padding; IN=11 OUT=205; 2014/06/06 17:12:53
+#END# kgpadding -n E=131103 S=131101 f=b%t i=./indat/dat18.csv k=a o=./outdat/out353.csv; IN=11 OUT=45; 2014/06/06 17:12:53
+#END# kgpadding -n -x E=131103 S=131101 f=1%t i=./indat/dat18.csv k=0 o=./outdat/out353x.csv; IN=11 OUT=45; 2014/06/06 17:12:53
+#END# kgpadding -n -nfn E=131103 S=131101 f=1%t i=./indat/dat18nfn.csv k=0 o=./outdat/out353nfn.csv; IN=11 OUT=82; 2014/06/06 17:12:53
+#END# kgpadding E=131103 S=131101 f=b%t i=./indat/dat18.csv k=a o=./outdat/out354.csv v=padding; IN=11 OUT=45; 2014/06/06 17:12:53
+#END# kgpadding -x E=131103 S=131101 f=1%t i=./indat/dat18.csv k=0 o=./outdat/out354x.csv v=padding; IN=11 OUT=45; 2014/06/06 17:12:53
+#END# kgpadding -nfn E=131103 S=131101 f=1%t i=./indat/dat18nfn.csv k=0 o=./outdat/out354nfn.csv v=padding; IN=11 OUT=82; 2014/06/06 17:12:53
+#END# kgpadding f=b%tr i=./indat/dat18.csv k=a o=./outdat/out355.csv; IN=11 OUT=45; 2014/06/06 17:12:53
+#END# kgpadding -x f=1%tr i=./indat/dat18.csv k=0 o=./outdat/out355x.csv; IN=11 OUT=45; 2014/06/06 17:12:53
+#END# kgpadding -nfn f=1%tr i=./indat/dat18nfn.csv k=0 o=./outdat/out355nfn.csv; IN=11 OUT=11; 2014/06/06 17:12:53
+#END# kgpadding -n f=b%tr i=./indat/dat18.csv k=a o=./outdat/out356.csv; IN=11 OUT=45; 2014/06/06 17:12:53
+#END# kgpadding -n -x f=1%tr i=./indat/dat18.csv k=0 o=./outdat/out356x.csv; IN=11 OUT=45; 2014/06/06 17:12:53
+#END# kgpadding -n -nfn f=1%tr i=./indat/dat18nfn.csv k=0 o=./outdat/out356nfn.csv; IN=11 OUT=11; 2014/06/06 17:12:53
+#END# kgpadding f=b%tr i=./indat/dat18.csv k=a o=./outdat/out357.csv v=padding; IN=11 OUT=45; 2014/06/06 17:12:54
+#END# kgpadding -x f=1%tr i=./indat/dat18.csv k=0 o=./outdat/out357x.csv v=padding; IN=11 OUT=45; 2014/06/06 17:12:54
+#END# kgpadding -nfn f=1%tr i=./indat/dat18nfn.csv k=0 o=./outdat/out357nfn.csv v=padding; IN=11 OUT=11; 2014/06/06 17:12:54
+#END# kgpadding E=131020 S=131110 f=b%tr i=./indat/dat18.csv k=a o=./outdat/out358.csv; IN=11 OUT=103; 2014/06/06 17:12:54
+#END# kgpadding -x E=131020 S=131110 f=1%tr i=./indat/dat18.csv k=0 o=./outdat/out358x.csv; IN=11 OUT=103; 2014/06/06 17:12:54
+#END# kgpadding -nfn E=131020 S=131110 f=1%tr i=./indat/dat18nfn.csv k=0 o=./outdat/out358nfn.csv; IN=11 OUT=251; 2014/06/06 17:12:54
+#END# kgpadding S=131110 f=b%tr i=./indat/dat18.csv k=a o=./outdat/out359.csv; IN=11 OUT=57; 2014/06/06 17:12:54
+#END# kgpadding -x S=131110 f=1%tr i=./indat/dat18.csv k=0 o=./outdat/out359x.csv; IN=11 OUT=57; 2014/06/06 17:12:54
+#END# kgpadding -nfn S=131110 f=1%tr i=./indat/dat18nfn.csv k=0 o=./outdat/out359nfn.csv; IN=11 OUT=112; 2014/06/06 17:12:54
+#END# kgpadding E=131020 f=b%tr i=./indat/dat18.csv k=a o=./outdat/out360.csv; IN=11 OUT=91; 2014/06/06 17:12:54
+#END# kgpadding -x E=131020 f=1%tr i=./indat/dat18.csv k=0 o=./outdat/out360x.csv; IN=11 OUT=91; 2014/06/06 17:12:54
+#END# kgpadding -nfn E=131020 f=1%tr i=./indat/dat18nfn.csv k=0 o=./outdat/out360nfn.csv; IN=11 OUT=150; 2014/06/06 17:12:54
+#END# kgpadding E=131101 S=131103 f=b%tr i=./indat/dat18.csv k=a o=./outdat/out361.csv; IN=11 OUT=45; 2014/06/06 17:12:54
+#END# kgpadding -x E=131101 S=131103 f=1%tr i=./indat/dat18.csv k=0 o=./outdat/out361x.csv; IN=11 OUT=45; 2014/06/06 17:12:54
+#END# kgpadding -nfn E=131101 S=131103 f=1%tr i=./indat/dat18nfn.csv k=0 o=./outdat/out361nfn.csv; IN=11 OUT=91; 2014/06/06 17:12:54
+#END# kgpadding S=131103 f=b%tr i=./indat/dat18.csv k=a o=./outdat/out362.csv; IN=11 OUT=45; 2014/06/06 17:12:54
+#END# kgpadding -x S=131103 f=1%tr i=./indat/dat18.csv k=0 o=./outdat/out362x.csv; IN=11 OUT=45; 2014/06/06 17:12:54
+#END# kgpadding -nfn S=131103 f=1%tr i=./indat/dat18nfn.csv k=0 o=./outdat/out362nfn.csv; IN=11 OUT=84; 2014/06/06 17:12:54
+#END# kgpadding E=131101 f=b%tr i=./indat/dat18.csv k=a o=./outdat/out363.csv; IN=11 OUT=45; 2014/06/06 17:12:54
+#END# kgpadding -x E=131101 f=1%tr i=./indat/dat18.csv k=0 o=./outdat/out363x.csv; IN=11 OUT=45; 2014/06/06 17:12:54
+#END# kgpadding -nfn E=131101 f=1%tr i=./indat/dat18nfn.csv k=0 o=./outdat/out363nfn.csv; IN=11 OUT=18; 2014/06/06 17:12:54
+#END# kgpadding -n E=131020 S=131110 f=b%tr i=./indat/dat18.csv k=a o=./outdat/out364.csv; IN=11 OUT=103; 2014/06/06 17:12:54
+#END# kgpadding -n -x E=131020 S=131110 f=1%tr i=./indat/dat18.csv k=0 o=./outdat/out364x.csv; IN=11 OUT=103; 2014/06/06 17:12:54
+#END# kgpadding -n -nfn E=131020 S=131110 f=1%tr i=./indat/dat18nfn.csv k=0 o=./outdat/out364nfn.csv; IN=11 OUT=251; 2014/06/06 17:12:54
+#END# kgpadding E=131020 S=131110 f=b%tr i=./indat/dat18.csv k=a o=./outdat/out365.csv v=padding; IN=11 OUT=103; 2014/06/06 17:12:54
+#END# kgpadding -x E=131020 S=131110 f=1%tr i=./indat/dat18.csv k=0 o=./outdat/out365x.csv v=padding; IN=11 OUT=103; 2014/06/06 17:12:54
+#END# kgpadding -nfn E=131020 S=131110 f=1%tr i=./indat/dat18nfn.csv k=0 o=./outdat/out365nfn.csv v=padding; IN=11 OUT=251; 2014/06/06 17:12:54
+#END# kgpadding -n E=131101 S=131103 f=b%tr i=./indat/dat18.csv k=a o=./outdat/out366.csv; IN=11 OUT=45; 2014/06/06 17:12:54
+#END# kgpadding -n -x E=131101 S=131103 f=1%tr i=./indat/dat18.csv k=0 o=./outdat/out366x.csv; IN=11 OUT=45; 2014/06/06 17:12:54
+#END# kgpadding -n -nfn E=131101 S=131103 f=1%tr i=./indat/dat18nfn.csv k=0 o=./outdat/out366nfn.csv; IN=11 OUT=91; 2014/06/06 17:12:54
+#END# kgpadding E=131101 S=131103 f=b%tr i=./indat/dat18.csv k=a o=./outdat/out367.csv v=padding; IN=11 OUT=45; 2014/06/06 17:12:54
+#END# kgpadding -x E=131101 S=131103 f=1%tr i=./indat/dat18.csv k=0 o=./outdat/out367x.csv v=padding; IN=11 OUT=45; 2014/06/06 17:12:54
+#END# kgpadding -nfn E=131101 S=131103 f=1%tr i=./indat/dat18nfn.csv k=0 o=./outdat/out367nfn.csv v=padding; IN=11 OUT=91; 2014/06/06 17:12:54
+#END# kgpadding f=b%n i=./indat/dat19.csv k=a o=./outdat/out400.csv; IN=7 OUT=12; 2014/06/06 17:12:54
+#END# kgpadding E=11 S=-1 f=b%n i=./indat/dat19.csv k=a o=./outdat/out401.csv; IN=7 OUT=16; 2014/06/06 17:12:54
+#END# kgpadding S=-1 f=b%n i=./indat/dat19.csv k=a o=./outdat/out402.csv; IN=7 OUT=13; 2014/06/06 17:12:54
+#END# kgpadding E=11 f=b%n i=./indat/dat19.csv k=a o=./outdat/out403.csv; IN=7 OUT=15; 2014/06/06 17:12:54
+#END# kgpadding -q f=b%n i=./indat/dat19.csv k=a o=./outdat/out404.csv; IN=7 OUT=7; 2014/06/06 17:12:54
+#END# kgpadding f=b%d i=./indat/dat20.csv k=a o=./outdat/out405.csv; IN=7 OUT=15; 2014/06/06 17:12:54
+#END# kgpadding E=20101020 S=20100930 f=b%d i=./indat/dat20.csv k=a o=./outdat/out406.csv; IN=7 OUT=21; 2014/06/06 17:12:54
+#END# kgpadding S=20100930 f=b%d i=./indat/dat20.csv k=a o=./outdat/out407.csv; IN=7 OUT=16; 2014/06/06 17:12:54
+#END# kgpadding E=20101020 f=b%d i=./indat/dat20.csv k=a o=./outdat/out408.csv; IN=7 OUT=20; 2014/06/06 17:12:55
+#END# kgpadding -q f=b%d i=./indat/dat20.csv k=a o=./outdat/out409.csv; IN=7 OUT=8; 2014/06/06 17:12:55
+#END# kgpadding f=b%t i=./indat/dat21.csv k=a o=./outdat/out410.csv; IN=7 OUT=17; 2014/06/06 17:12:55
+#END# kgpadding E=101111 S=101048 f=b%t i=./indat/dat21.csv k=a o=./outdat/out411.csv; IN=7 OUT=22; 2014/06/06 17:12:55
+#END# kgpadding S=101048 f=b%t i=./indat/dat21.csv k=a o=./outdat/out412.csv; IN=7 OUT=18; 2014/06/06 17:12:55
+#END# kgpadding E=101111 f=b%t i=./indat/dat21.csv k=a o=./outdat/out413.csv; IN=7 OUT=21; 2014/06/06 17:12:55
+#END# kgpadding -q f=b%t i=./indat/dat21.csv k=a o=./outdat/out414.csv; IN=7 OUT=8; 2014/06/06 17:12:55

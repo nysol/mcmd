@@ -1,0 +1,69 @@
+#END# kgVjoin K=item f=taxo i=./indat/dat0.csv m=./indat/ref0.csv o=./outdat/out0.csv vf=items1; IN=0 OUT=0; 2014/06/19 09:52:10
+#END# kgVjoin -x K=0 f=1 i=./indat/dat0.csv m=./indat/ref0.csv o=./outdat/out0x.csv vf=0; IN=0 OUT=0; 2014/06/19 09:52:10
+#END# kgVjoin -nfn K=0 f=1 i=./indat/dat0nfn.csv m=./indat/ref0nfn.csv o=./outdat/out0nfn.csv vf=0; IN=0 OUT=0; 2014/06/19 09:52:10
+#END# kgVjoin K=item f=taxo i=./indat/dat1.csv m=./indat/ref0.csv o=./outdat/out1.csv vf=items1; IN=3 OUT=3; 2014/06/19 09:52:10
+#END# kgVjoin -x K=0 f=1 i=./indat/dat1.csv m=./indat/ref0.csv o=./outdat/out1x.csv vf=0; IN=3 OUT=3; 2014/06/19 09:52:10
+#END# kgVjoin -nfn K=0 f=1 i=./indat/dat1nfn.csv m=./indat/ref0nfn.csv o=./outdat/out1nfn.csv vf=0; IN=3 OUT=3; 2014/06/19 09:52:10
+#END# kgVjoin K=item f=taxo i=./indat/dat0.csv m=./indat/ref1.csv o=./outdat/out2.csv vf=items1; IN=0 OUT=0; 2014/06/19 09:52:10
+#END# kgVjoin -x K=0 f=1 i=./indat/dat0.csv m=./indat/ref1.csv o=./outdat/out2x.csv vf=0; IN=0 OUT=0; 2014/06/19 09:52:10
+#END# kgVjoin -nfn K=0 f=1 i=./indat/dat0nfn.csv m=./indat/ref1nfn.csv o=./outdat/out2nfn.csv vf=0; IN=0 OUT=0; 2014/06/19 09:52:10
+#END# kgVjoin K=item f=taxo i=./indat/dat1.csv m=./indat/ref1.csv o=./outdat/out3.csv vf=items1; IN=3 OUT=3; 2014/06/19 09:52:10
+#END# kgVjoin -x K=0 f=1 i=./indat/dat1.csv m=./indat/ref1.csv o=./outdat/out3x.csv vf=0; IN=3 OUT=3; 2014/06/19 09:52:10
+#END# kgVjoin -nfn K=0 f=1 i=./indat/dat1nfn.csv m=./indat/ref1nfn.csv o=./outdat/out3nfn.csv vf=0; IN=3 OUT=3; 2014/06/19 09:52:10
+#END# kgVjoin K=item f=taxo i=./indat/dat1.csv m=./indat/ref1.csv n=* o=./outdat/out4.csv vf=items1; IN=3 OUT=3; 2014/06/19 09:52:10
+#END# kgVjoin -x K=0 f=1 i=./indat/dat1.csv m=./indat/ref1.csv n=* o=./outdat/out4x.csv vf=0; IN=3 OUT=3; 2014/06/19 09:52:10
+#END# kgVjoin -nfn K=0 f=1 i=./indat/dat1nfn.csv m=./indat/ref1nfn.csv n=* o=./outdat/out4nfn.csv vf=0; IN=3 OUT=3; 2014/06/19 09:52:10
+#END# kgVjoin K=item f=taxo i=./indat/dat2.csv m=./indat/ref2.csv o=./outdat/out5.csv vf=items1; IN=4 OUT=4; 2014/06/19 09:52:10
+#END# kgVjoin -x K=0 f=1 i=./indat/dat2.csv m=./indat/ref2.csv o=./outdat/out5x.csv vf=0; IN=4 OUT=4; 2014/06/19 09:52:10
+#END# kgVjoin -nfn K=0 f=1 i=./indat/dat2nfn.csv m=./indat/ref2nfn.csv o=./outdat/out5nfn.csv vf=0; IN=4 OUT=4; 2014/06/19 09:52:10
+#END# kgVjoin K=item f=taxo i=./indat/dat2.csv m=./indat/ref2.csv n=* o=./outdat/out6.csv vf=items1; IN=4 OUT=4; 2014/06/19 09:52:10
+#END# kgVjoin -x K=0 f=1 i=./indat/dat2.csv m=./indat/ref2.csv n=* o=./outdat/out6x.csv vf=0; IN=4 OUT=4; 2014/06/19 09:52:10
+#END# kgVjoin -nfn K=0 f=1 i=./indat/dat2nfn.csv m=./indat/ref2nfn.csv n=* o=./outdat/out6nfn.csv vf=0; IN=4 OUT=4; 2014/06/19 09:52:10
+#END# kgVjoin K=item f=taxo i=./indat/dat2.csv m=./indat/ref2.csv o=./outdat/out7.csv vf=items1,items2; IN=4 OUT=4; 2014/06/19 09:52:10
+#END# kgVjoin -x K=0 f=1 i=./indat/dat2.csv m=./indat/ref2.csv o=./outdat/out7x.csv vf=0,1; IN=4 OUT=4; 2014/06/19 09:52:10
+#END# kgVjoin -nfn K=0 f=1 i=./indat/dat2nfn.csv m=./indat/ref2nfn.csv o=./outdat/out7nfn.csv vf=0,1; IN=4 OUT=4; 2014/06/19 09:52:10
+#END# kgVjoin K=item f=taxo i=./indat/dat2.csv m=./indat/ref2.csv n=* o=./outdat/out8.csv vf=items1,items2; IN=4 OUT=4; 2014/06/19 09:52:10
+#END# kgVjoin -x K=0 f=1 i=./indat/dat2.csv m=./indat/ref2.csv n=* o=./outdat/out8x.csv vf=0,1; IN=4 OUT=4; 2014/06/19 09:52:10
+#END# kgVjoin -nfn K=0 f=1 i=./indat/dat2nfn.csv m=./indat/ref2nfn.csv n=* o=./outdat/out8nfn.csv vf=0,1; IN=4 OUT=4; 2014/06/19 09:52:10
+#END# kgVjoin -A K=item f=taxo i=./indat/dat1.csv m=./indat/ref1.csv n=* o=./outdat/out9.csv vf=items1:itx; IN=3 OUT=3; 2014/06/19 09:52:10
+#END# kgVjoin -A -x K=0 f=1 i=./indat/dat1.csv m=./indat/ref1.csv n=* o=./outdat/out9x.csv vf=0:itx; IN=3 OUT=3; 2014/06/19 09:52:10
+#END# kgVjoin -A -nfn K=0 f=1 i=./indat/dat1nfn.csv m=./indat/ref1nfn.csv n=* o=./outdat/out9nfn.csv vf=0:itx; IN=3 OUT=3; 2014/06/19 09:52:10
+#END# kgVjoin K=item f=taxo i=./indat/dat2.csv m=./indat/ref2.csv n=* o=./outdat/out10.csv vf=items1:itx,items2:it2x; IN=4 OUT=4; 2014/06/19 09:52:10
+#END# kgVjoin -x K=0 f=1 i=./indat/dat2.csv m=./indat/ref2.csv n=* o=./outdat/out10x.csv vf=0:itx,1:it2x; IN=4 OUT=4; 2014/06/19 09:52:10
+#END# kgVjoin -nfn K=0 f=1 i=./indat/dat2nfn.csv m=./indat/ref2nfn.csv n=* o=./outdat/out10nfn.csv vf=0:itx,1:it2x; IN=4 OUT=4; 2014/06/19 09:52:10
+#END# kgVjoin -A K=item f=taxo i=./indat/dat2.csv m=./indat/ref2.csv n=* o=./outdat/out11.csv vf=items1:itx,items2:it2x; IN=4 OUT=4; 2014/06/19 09:52:10
+#END# kgVjoin -A -x K=0 f=1 i=./indat/dat2.csv m=./indat/ref2.csv n=* o=./outdat/out11x.csv vf=0:itx,1:it2x; IN=4 OUT=4; 2014/06/19 09:52:10
+#END# kgVjoin -A -nfn K=0 f=1 i=./indat/dat2nfn.csv m=./indat/ref2nfn.csv n=* o=./outdat/out11nfn.csv vf=0:itx,1:it2x; IN=4 OUT=4; 2014/06/19 09:52:10
+#END# kgVjoin K=item f=taxo i=./indat/dat2.csv m=./indat/ref2.csv n=* o=./outdat/out12.csv vf=items2; IN=4 OUT=4; 2014/06/19 09:52:10
+#END# kgVjoin -x K=0 f=1 i=./indat/dat2.csv m=./indat/ref2.csv n=* o=./outdat/out12x.csv vf=1; IN=4 OUT=4; 2014/06/19 09:52:10
+#END# kgVjoin -nfn K=0 f=1 i=./indat/dat2nfn.csv m=./indat/ref2nfn.csv n=* o=./outdat/out12nfn.csv vf=1; IN=4 OUT=4; 2014/06/19 09:52:10
+#END# kgVjoin K=item f=taxo i=./indat/dat1s.csv m=./indat/ref1s.csv o=./outdat/out13.csv vf=items1; IN=3 OUT=3; 2014/06/19 09:52:10
+#END# kgVjoin -x K=0 f=1 i=./indat/dat1s.csv m=./indat/ref1s.csv o=./outdat/out13x.csv vf=0; IN=3 OUT=3; 2014/06/19 09:52:10
+#END# kgVjoin -nfn K=0 f=1 i=./indat/dat1snfn.csv m=./indat/ref1snfn.csv o=./outdat/out13nfn.csv vf=0; IN=3 OUT=3; 2014/06/19 09:52:10
+#END# kgVjoin K=item f=taxo i=./indat/dat1s.csv m=./indat/ref1s.csv n=* o=./outdat/out14.csv vf=items1; IN=3 OUT=3; 2014/06/19 09:52:10
+#END# kgVjoin -x K=0 f=1 i=./indat/dat1s.csv m=./indat/ref1s.csv n=* o=./outdat/out14x.csv vf=0; IN=3 OUT=3; 2014/06/19 09:52:10
+#END# kgVjoin -nfn K=0 f=1 i=./indat/dat1snfn.csv m=./indat/ref1snfn.csv n=* o=./outdat/out14nfn.csv vf=0; IN=3 OUT=3; 2014/06/19 09:52:10
+#END# kgVjoin K=item f=taxo i=./indat/dat2s.csv m=./indat/ref2s.csv o=./outdat/out15.csv vf=items1; IN=4 OUT=4; 2014/06/19 09:52:10
+#END# kgVjoin -x K=0 f=1 i=./indat/dat2s.csv m=./indat/ref2s.csv o=./outdat/out15x.csv vf=0; IN=4 OUT=4; 2014/06/19 09:52:10
+#END# kgVjoin -nfn K=0 f=1 i=./indat/dat2snfn.csv m=./indat/ref2snfn.csv o=./outdat/out15nfn.csv vf=0; IN=4 OUT=4; 2014/06/19 09:52:10
+#END# kgVjoin K=item f=taxo i=./indat/dat2s.csv m=./indat/ref2s.csv n=* o=./outdat/out16.csv vf=items1; IN=4 OUT=4; 2014/06/19 09:52:10
+#END# kgVjoin -x K=0 f=1 i=./indat/dat2s.csv m=./indat/ref2s.csv n=* o=./outdat/out16x.csv vf=0; IN=4 OUT=4; 2014/06/19 09:52:10
+#END# kgVjoin -nfn K=0 f=1 i=./indat/dat2snfn.csv m=./indat/ref2snfn.csv n=* o=./outdat/out16nfn.csv vf=0; IN=4 OUT=4; 2014/06/19 09:52:10
+#END# kgVjoin K=item f=taxo i=./indat/dat2s.csv m=./indat/ref2s.csv o=./outdat/out17.csv vf=items1,items2; IN=4 OUT=4; 2014/06/19 09:52:10
+#END# kgVjoin -x K=0 f=1 i=./indat/dat2s.csv m=./indat/ref2s.csv o=./outdat/out17x.csv vf=0,1; IN=4 OUT=4; 2014/06/19 09:52:10
+#END# kgVjoin -nfn K=0 f=1 i=./indat/dat2snfn.csv m=./indat/ref2snfn.csv o=./outdat/out17nfn.csv vf=0,1; IN=4 OUT=4; 2014/06/19 09:52:10
+#END# kgVjoin K=item f=taxo i=./indat/dat2s.csv m=./indat/ref2s.csv n=* o=./outdat/out18.csv vf=items1,items2; IN=4 OUT=4; 2014/06/19 09:52:10
+#END# kgVjoin -x K=0 f=1 i=./indat/dat2s.csv m=./indat/ref2s.csv n=* o=./outdat/out18x.csv vf=0,1; IN=4 OUT=4; 2014/06/19 09:52:10
+#END# kgVjoin -nfn K=0 f=1 i=./indat/dat2snfn.csv m=./indat/ref2snfn.csv n=* o=./outdat/out18nfn.csv vf=0,1; IN=4 OUT=4; 2014/06/19 09:52:10
+#END# kgVjoin -A K=item f=taxo i=./indat/dat1s.csv m=./indat/ref1s.csv n=* o=./outdat/out19.csv vf=items1:itx; IN=3 OUT=3; 2014/06/19 09:52:10
+#END# kgVjoin -A -x K=0 f=1 i=./indat/dat1s.csv m=./indat/ref1s.csv n=* o=./outdat/out19x.csv vf=0:itx; IN=3 OUT=3; 2014/06/19 09:52:10
+#END# kgVjoin -A -nfn K=0 f=1 i=./indat/dat1snfn.csv m=./indat/ref1snfn.csv n=* o=./outdat/out19nfn.csv vf=0:itx; IN=3 OUT=3; 2014/06/19 09:52:10
+#END# kgVjoin K=item f=taxo i=./indat/dat2s.csv m=./indat/ref2s.csv n=* o=./outdat/out20.csv vf=items1:itx,items2:it2x; IN=4 OUT=4; 2014/06/19 09:52:10
+#END# kgVjoin -x K=0 f=1 i=./indat/dat2s.csv m=./indat/ref2s.csv n=* o=./outdat/out20x.csv vf=0:itx,1:it2x; IN=4 OUT=4; 2014/06/19 09:52:10
+#END# kgVjoin -nfn K=0 f=1 i=./indat/dat2snfn.csv m=./indat/ref2snfn.csv n=* o=./outdat/out20nfn.csv vf=0:itx,1:it2x; IN=4 OUT=4; 2014/06/19 09:52:10
+#END# kgVjoin -A K=item f=taxo i=./indat/dat2s.csv m=./indat/ref2s.csv n=* o=./outdat/out21.csv vf=items1:itx,items2:it2x; IN=4 OUT=4; 2014/06/19 09:52:10
+#END# kgVjoin -A -x K=0 f=1 i=./indat/dat2s.csv m=./indat/ref2s.csv n=* o=./outdat/out21x.csv vf=0:itx,1:it2x; IN=4 OUT=4; 2014/06/19 09:52:10
+#END# kgVjoin -A -nfn K=0 f=1 i=./indat/dat2snfn.csv m=./indat/ref2snfn.csv n=* o=./outdat/out21nfn.csv vf=0:itx,1:it2x; IN=4 OUT=4; 2014/06/19 09:52:10
+#END# kgVjoin K=item f=taxo i=./indat/dat2s.csv m=./indat/ref2s.csv n=* o=./outdat/out22.csv vf=items2; IN=4 OUT=4; 2014/06/19 09:52:10
+#END# kgVjoin -x K=0 f=1 i=./indat/dat2s.csv m=./indat/ref2s.csv n=* o=./outdat/out22x.csv vf=1; IN=4 OUT=4; 2014/06/19 09:52:10
+#END# kgVjoin -nfn K=0 f=1 i=./indat/dat2snfn.csv m=./indat/ref2snfn.csv n=* o=./outdat/out22nfn.csv vf=1; IN=4 OUT=4; 2014/06/19 09:52:10

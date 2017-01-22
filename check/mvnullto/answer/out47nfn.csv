@@ -1,0 +1,7 @@
+a,z1_z2_z4_,a1_a2_a4_,known_known_known_z4
+b,,a3_a6__a7_,
+c,z2__z4_z5,a8_a11__a9_a10_,known_z2_known_known
+d,z99_z98_z97,a96_a95_a94_a93_,known_known_known
+e,z199___z198_z197,_a196_a195__a194_a193_,known_z199_z199_known_known
+f,z299_z298___z297,,known_known_z298_z298_known
+g,_z399__z398__z397,a396_a395_a394_a393,_known_z399_known_z398_known

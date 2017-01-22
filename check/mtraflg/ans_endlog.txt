@@ -1,0 +1,18 @@
+#END# kgtraflg a=トランザクション f=来店,購入 i=./indat/dat0.csv o=./outdat/out00.csv; IN=0 OUT=0; 2014/06/16 13:03:04
+#END# kgtraflg -x a=トランザクション f=1,2 i=./indat/dat0.csv o=./outdat/out00x.csv; IN=0 OUT=0; 2014/06/16 13:03:04
+#END# kgtraflg -nfn f=1,2 i=./indat/dat0nfn.csv o=./outdat/out00nfn.csv; IN=0 OUT=0; 2014/06/16 13:03:04
+#END# kgtraflg a=トランザクション f=来店,購入 i=./indat/dat1.csv o=./outdat/out01.csv; IN=4 OUT=4; 2014/06/16 13:03:04
+#END# kgtraflg -x a=トランザクション f=1,2 i=./indat/dat1.csv o=./outdat/out01x.csv; IN=4 OUT=4; 2014/06/16 13:03:04
+#END# kgtraflg -nfn f=1,2 i=./indat/dat1nfn.csv o=./outdat/out01nfn.csv; IN=4 OUT=4; 2014/06/16 13:03:04
+#END# kgtraflg -r a=トランザクション f=来店,購入 i=./indat/dat2.csv o=./outdat/out02.csv; IN=4 OUT=4; 2014/06/16 13:03:04
+#END# kgtraflg -r -x a=1 f=来店,購入 i=./indat/dat2.csv o=./outdat/out02x.csv; IN=4 OUT=4; 2014/06/16 13:03:04
+#END# kgtraflg -nfn -r a=1 f=来店,購入 i=./indat/dat2nfn.csv o=./outdat/out02nfn.csv; IN=4 OUT=4; 2014/06/16 13:03:04
+#END# kgtraflg a=トランザクション delim=- f=来店,購入 i=./indat/dat1.csv o=./outdat/out03.csv; IN=4 OUT=4; 2014/06/16 13:03:04
+#END# kgtraflg -x a=トランザクション delim=- f=1,2 i=./indat/dat1.csv o=./outdat/out03x.csv; IN=4 OUT=4; 2014/06/16 13:03:04
+#END# kgtraflg -nfn delim=- f=1,2 i=./indat/dat1nfn.csv o=./outdat/out03nfn.csv; IN=4 OUT=4; 2014/06/16 13:03:04
+#END# kgtraflg a=トランザクション f=来店,購入 i=./indat/dat1s.csv o=./outdat/out04.csv; IN=4 OUT=4; 2014/06/16 13:03:04
+#END# kgtraflg -x a=トランザクション f=1,2 i=./indat/dat1s.csv o=./outdat/out04x.csv; IN=4 OUT=4; 2014/06/16 13:03:04
+#END# kgtraflg -nfn f=1,2 i=./indat/dat1snfn.csv o=./outdat/out04nfn.csv; IN=4 OUT=4; 2014/06/16 13:03:04
+#END# kgtraflg -r a=トランザクション f=来店,購入 i=./indat/dat2s.csv o=./outdat/out05.csv; IN=4 OUT=4; 2014/06/16 13:03:04
+#END# kgtraflg -r -x a=1 f=来店,購入 i=./indat/dat2s.csv o=./outdat/out05x.csv; IN=4 OUT=4; 2014/06/16 13:03:04
+#END# kgtraflg -nfn -r a=1 f=来店,購入 i=./indat/dat2snfn.csv o=./outdat/out05nfn.csv; IN=4 OUT=4; 2014/06/16 13:03:04

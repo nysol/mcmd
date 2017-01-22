@@ -1,0 +1,44 @@
+#END# kgtra f=商品:トランザクション i=./indat/dat0s.csv k=顧客 o=./outdat/out01.csv; IN=0 OUT=0; 2014/06/12 10:28:51
+#END# kgtra -x f=1:トランザクション i=./indat/dat0s.csv k=0 o=./outdat/out01x.csv; IN=0 OUT=0; 2014/06/12 10:28:51
+#END# kgtra -nfn f=1:トランザクション i=./indat/dat0snfn.csv k=0 o=./outdat/out01nfn.csv; IN=0 OUT=0; 2014/06/12 10:28:51
+#END# kgtra f=商品:トランザクション i=./indat/dat1s.csv k=顧客 o=./outdat/out02.csv; IN=5 OUT=2; 2014/06/12 10:28:51
+#END# kgtra -x f=1:トランザクション i=./indat/dat1s.csv k=0 o=./outdat/out02x.csv; IN=5 OUT=2; 2014/06/12 10:28:51
+#END# kgtra -nfn f=1:トランザクション i=./indat/dat1snfn.csv k=0 o=./outdat/out02nfn.csv; IN=5 OUT=2; 2014/06/12 10:28:51
+#END# kgtra -q f=商品:トランザクション i=./indat/dat1s.csv k=顧客 o=./outdat/out02q.csv; IN=5 OUT=2; 2014/06/12 10:28:51
+#END# kgtra -q -x f=1:トランザクション i=./indat/dat1s.csv k=0 o=./outdat/out02qx.csv; IN=5 OUT=2; 2014/06/12 10:28:51
+#END# kgtra -r f=トランザクション:商品 i=./indat/dat2s.csv o=./outdat/out03.csv; IN=0 OUT=0; 2014/06/12 10:28:51
+#END# kgtra -r -x f=1:商品 i=./indat/dat2s.csv o=./outdat/out03x.csv; IN=0 OUT=0; 2014/06/12 10:28:51
+#END# kgtra -nfn -r f=1:商品 i=./indat/dat2snfn.csv o=./outdat/out03nfn.csv; IN=0 OUT=0; 2014/06/12 10:28:51
+#END# kgtra -r f=トランザクション:商品 i=./indat/dat3s.csv o=./outdat/out04.csv; IN=2 OUT=5; 2014/06/12 10:28:51
+#END# kgtra -r -x f=1:商品 i=./indat/dat3s.csv o=./outdat/out04x.csv; IN=2 OUT=5; 2014/06/12 10:28:51
+#END# kgtra -nfn -r f=1:商品 i=./indat/dat3snfn.csv o=./outdat/out04nfn.csv; IN=2 OUT=5; 2014/06/12 10:28:51
+#END# kgtra f=商品:トランザクション i=./indat/dat4s.csv k=顧客 o=./outdat/out05.csv; IN=5 OUT=2; 2014/06/12 10:28:51
+#END# kgtra -x f=1:トランザクション i=./indat/dat4s.csv k=0 o=./outdat/out05x.csv; IN=5 OUT=2; 2014/06/12 10:28:51
+#END# kgtra -nfn f=1:トランザクション i=./indat/dat4snfn.csv k=0 o=./outdat/out05nfn.csv; IN=5 OUT=2; 2014/06/12 10:28:51
+#END# kgtra -r f=商品:トランザクション i=./indat/dat4s.csv o=./outdat/out08.csv; IN=5 OUT=5; 2014/06/12 10:28:51
+#END# kgtra delim=- f=商品:トランザクション i=./indat/dat1s.csv k=顧客 o=./outdat/out06.csv; IN=5 OUT=2; 2014/06/12 10:28:51
+#END# kgtra -x delim=- f=1:トランザクション i=./indat/dat1s.csv k=0 o=./outdat/out06x.csv; IN=5 OUT=2; 2014/06/12 10:28:51
+#END# kgtra -nfn delim=- f=1:トランザクション i=./indat/dat1snfn.csv k=0 o=./outdat/out06nfn.csv; IN=5 OUT=2; 2014/06/12 10:28:51
+#END# kgtra delim=, f=商品:トランザクション i=./indat/dat1s.csv k=顧客 o=./outdat/out07.csv; IN=5 OUT=2; 2014/06/12 10:28:51
+#END# kgtra f=商品:トランザクション i=./indat/dat0.csv k=顧客 o=./outdat/out11.csv; IN=0 OUT=0; 2014/06/12 10:28:51
+#END# kgtra -x f=1:トランザクション i=./indat/dat0.csv k=0 o=./outdat/out11x.csv; IN=0 OUT=0; 2014/06/12 10:28:51
+#END# kgtra -nfn f=1:トランザクション i=./indat/dat0nfn.csv k=0 o=./outdat/out11nfn.csv; IN=0 OUT=0; 2014/06/12 10:28:51
+#END# kgtra f=商品:トランザクション i=./indat/dat1.csv k=顧客 o=./outdat/out12.csv; IN=5 OUT=2; 2014/06/12 10:28:51
+#END# kgtra -x f=1:トランザクション i=./indat/dat1.csv k=0 o=./outdat/out12x.csv; IN=5 OUT=2; 2014/06/12 10:28:51
+#END# kgtra -nfn f=1:トランザクション i=./indat/dat1nfn.csv k=0 o=./outdat/out12nfn.csv; IN=5 OUT=4; 2014/06/12 10:28:51
+#END# kgtra -q f=商品:トランザクション i=./indat/dat1.csv k=顧客 o=./outdat/out12q.csv; IN=5 OUT=4; 2014/06/12 10:28:51
+#END# kgtra -q -x f=1:トランザクション i=./indat/dat1.csv k=0 o=./outdat/out12qx.csv; IN=5 OUT=4; 2014/06/12 10:28:51
+#END# kgtra -r f=トランザクション:商品 i=./indat/dat2.csv o=./outdat/out13.csv; IN=0 OUT=0; 2014/06/12 10:28:51
+#END# kgtra -r -x f=1:商品 i=./indat/dat2.csv o=./outdat/out13x.csv; IN=0 OUT=0; 2014/06/12 10:28:51
+#END# kgtra -nfn -r f=1:商品 i=./indat/dat2nfn.csv o=./outdat/out13nfn.csv; IN=0 OUT=0; 2014/06/12 10:28:51
+#END# kgtra -r f=トランザクション:商品 i=./indat/dat3.csv o=./outdat/out14.csv; IN=2 OUT=5; 2014/06/12 10:28:51
+#END# kgtra -r -x f=1:商品 i=./indat/dat3.csv o=./outdat/out14x.csv; IN=2 OUT=5; 2014/06/12 10:28:51
+#END# kgtra -nfn -r f=1:商品 i=./indat/dat3nfn.csv o=./outdat/out14nfn.csv; IN=2 OUT=5; 2014/06/12 10:28:51
+#END# kgtra f=商品:トランザクション i=./indat/dat4.csv k=顧客 o=./outdat/out15.csv; IN=5 OUT=2; 2014/06/12 10:28:51
+#END# kgtra -x f=1:トランザクション i=./indat/dat4.csv k=0 o=./outdat/out15x.csv; IN=5 OUT=2; 2014/06/12 10:28:51
+#END# kgtra -nfn f=1:トランザクション i=./indat/dat4nfn.csv k=0 o=./outdat/out15nfn.csv; IN=5 OUT=4; 2014/06/12 10:28:51
+#END# kgtra -r f=商品:トランザクション i=./indat/dat4.csv o=./outdat/out18.csv; IN=5 OUT=5; 2014/06/12 10:28:51
+#END# kgtra delim=- f=商品:トランザクション i=./indat/dat1.csv k=顧客 o=./outdat/out16.csv; IN=5 OUT=2; 2014/06/12 10:28:51
+#END# kgtra -x delim=- f=1:トランザクション i=./indat/dat1.csv k=0 o=./outdat/out16x.csv; IN=5 OUT=2; 2014/06/12 10:28:51
+#END# kgtra -nfn delim=- f=1:トランザクション i=./indat/dat1nfn.csv k=0 o=./outdat/out16nfn.csv; IN=5 OUT=4; 2014/06/12 10:28:51
+#END# kgtra delim=, f=商品:トランザクション i=./indat/dat1.csv k=顧客 o=./outdat/out17.csv; IN=5 OUT=2; 2014/06/12 10:28:51

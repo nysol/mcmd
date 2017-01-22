@@ -1,0 +1,8 @@
+key%0,tra1,tra2
+a,z1 z2 z4 unknown,a1 a2 a4 unknown
+b,,a3 a6 unknown a7 unknown
+c,z2 unknown z4 z5,a8 a11 unknown a9 a10 unknown
+d,z99 z98 z97,a96 a95 a94 a93 unknown
+e,z199 z198 z197,unknown a196 a195 unknown a194 a193 unknown
+f,z299 z298 unknown z297,
+g,unknown z399 unknown z398 unknown z397,a396 a395 a394 a393

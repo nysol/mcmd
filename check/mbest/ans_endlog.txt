@@ -1,0 +1,122 @@
+#END# kgbest R=1_3 i=./indat/dat0s.csv o=./outdat/out0.csv s=金額; IN=0 OUT=0; 2014/05/23 01:44:41
+#END# kgbest -x R=1_3 i=./indat/dat0s.csv o=./outdat/out0x.csv s=2; IN=0 OUT=0; 2014/05/23 01:44:41
+#END# kgbest -nfn R=1_3 i=./indat/dat0snfn.csv o=./outdat/out0nfn.csv s=2; IN=0 OUT=0; 2014/05/23 01:44:41
+#END# kgbest -nfno R=1_3 i=./indat/dat0s.csv o=./outdat/out0nfno.csv s=金額; IN=0 OUT=0; 2014/05/23 01:44:41
+#END# kgbest -q R=1_3 i=./indat/dat0s.csv o=./outdat/out0q.csv s=金額; IN=0 OUT=0; 2014/05/23 01:44:41
+#END# kgbest -nfn -q R=1_3 i=./indat/dat0snfn.csv o=./outdat/out0qnfn.csv s=2; IN=0 OUT=0; 2014/05/23 01:44:41
+#END# kgbest R=1_3 i=./indat/dat1s.csv o=./outdat/out1.csv s=金額%nr; IN=4 OUT=3; 2014/05/23 01:44:41
+#END# kgbest -x R=1_3 i=./indat/dat1s.csv o=./outdat/out1x.csv s=2%nr; IN=4 OUT=3; 2014/05/23 01:44:41
+#END# kgbest -nfn R=1_3 i=./indat/dat1snfn.csv o=./outdat/out1nfn.csv s=2%nr; IN=4 OUT=3; 2014/05/23 01:44:41
+#END# kgbest -nfno R=1_3 i=./indat/dat1s.csv o=./outdat/out1nfno.csv s=金額%nr; IN=4 OUT=3; 2014/05/23 01:44:41
+#END# kgbest -q R=1_3 i=./indat/dat1s.csv o=./outdat/out1q.csv s=金額%nr; IN=4 OUT=3; 2014/05/23 01:44:41
+#END# kgbest -nfn -q R=1_3 i=./indat/dat1snfn.csv o=./outdat/out1qnfn.csv s=2%nr; IN=4 OUT=3; 2014/05/23 01:44:41
+#END# kgbest R=1_2,4_5 i=./indat/dat1s.csv o=./outdat/out2.csv s=金額%nr; IN=5 OUT=4; 2014/05/23 01:44:41
+#END# kgbest -x R=1_2,4_5 i=./indat/dat1s.csv o=./outdat/out2x.csv s=2%nr; IN=5 OUT=4; 2014/05/23 01:44:41
+#END# kgbest -nfn R=1_2,4_5 i=./indat/dat1snfn.csv o=./outdat/out2nfn.csv s=2%nr; IN=5 OUT=4; 2014/05/23 01:44:41
+#END# kgbest -q R=1_2,4_5 i=./indat/dat1s.csv o=./outdat/out2q.csv s=金額%nr; IN=5 OUT=4; 2014/05/23 01:44:41
+#END# kgbest -nfn -q R=1_2,4_5 i=./indat/dat1snfn.csv o=./outdat/out2qnfn.csv s=2%nr; IN=5 OUT=4; 2014/05/23 01:44:41
+#END# kgbest R=MIN_2 i=./indat/dat1s.csv o=./outdat/out3.csv s=金額%nr; IN=3 OUT=2; 2014/05/23 01:44:41
+#END# kgbest -x R=MIN_2 i=./indat/dat1s.csv o=./outdat/out3x.csv s=2%nr; IN=3 OUT=2; 2014/05/23 01:44:41
+#END# kgbest -nfn R=MIN_2 i=./indat/dat1snfn.csv o=./outdat/out3nfn.csv s=2%nr; IN=3 OUT=2; 2014/05/23 01:44:41
+#END# kgbest R=4_MAX i=./indat/dat1s.csv o=./outdat/out4.csv s=金額%nr; IN=5 OUT=2; 2014/05/23 01:44:41
+#END# kgbest -x R=4_MAX i=./indat/dat1s.csv o=./outdat/out4x.csv s=2%nr; IN=5 OUT=2; 2014/05/23 01:44:41
+#END# kgbest -nfn R=4_MAX i=./indat/dat1snfn.csv o=./outdat/out4nfn.csv s=2%nr; IN=5 OUT=2; 2014/05/23 01:44:41
+#END# kgbest R=MIN_2,4_MAX i=./indat/dat1s.csv o=./outdat/out5.csv s=金額%nr; IN=5 OUT=4; 2014/05/23 01:44:42
+#END# kgbest -x R=MIN_2,4_MAX i=./indat/dat1s.csv o=./outdat/out5x.csv s=2%nr; IN=5 OUT=4; 2014/05/23 01:44:42
+#END# kgbest -nfn R=MIN_2,4_MAX i=./indat/dat1snfn.csv o=./outdat/out5nfn.csv s=2%nr; IN=5 OUT=4; 2014/05/23 01:44:42
+#END# kgbest R=2 i=./indat/dat1s.csv o=./outdat/out6.csv s=金額%nr u=./outdat/out7.csv; IN=5 OUT=1; 2014/05/23 01:44:42
+#END# kgbest -x R=2 i=./indat/dat1s.csv o=./outdat/out6x.csv s=2%nr u=./outdat/out7x.csv; IN=5 OUT=1; 2014/05/23 01:44:42
+#END# kgbest -nfn R=2 i=./indat/dat1snfn.csv o=./outdat/out6nfn.csv s=2%nr u=./outdat/out7nfn.csv; IN=5 OUT=1; 2014/05/23 01:44:42
+#END# kgbest -r R=2 i=./indat/dat1s.csv o=./outdat/out8.csv s=金額%nr; IN=5 OUT=4; 2014/05/23 01:44:42
+#END# kgbest -r -x R=2 i=./indat/dat1s.csv o=./outdat/out8x.csv s=2%nr; IN=5 OUT=4; 2014/05/23 01:44:42
+#END# kgbest -nfn -r R=2 i=./indat/dat1snfn.csv o=./outdat/out8nfn.csv s=2%nr; IN=5 OUT=4; 2014/05/23 01:44:42
+#END# kgbest -r R=2 i=./indat/dat1s.csv o=./outdat/out9.csv s=金額%nr u=./outdat/out10.csv; IN=5 OUT=4; 2014/05/23 01:44:42
+#END# kgbest -r -x R=2 i=./indat/dat1s.csv o=./outdat/out9x.csv s=2%nr u=./outdat/out10x.csv; IN=5 OUT=4; 2014/05/23 01:44:42
+#END# kgbest -nfn -r R=2 i=./indat/dat1snfn.csv o=./outdat/out9nfn.csv s=2%nr u=./outdat/out10nfn.csv; IN=5 OUT=4; 2014/05/23 01:44:42
+#END# kgbest R=2 i=./indat/dat2s.csv k=顧客 o=./outdat/out11.csv s=日付; IN=5 OUT=2; 2014/05/23 01:44:42
+#END# kgbest -x R=2 i=./indat/dat2s.csv k=0 o=./outdat/out11x.csv s=1　; IN=5 OUT=2; 2014/05/23 01:44:42
+#END# kgbest -nfn R=2 i=./indat/dat2snfn.csv k=0 o=./outdat/out11nfn.csv s=1; IN=5 OUT=2; 2014/05/23 01:44:42
+#END# kgbest R=2_3 i=./indat/dat2s.csv k=顧客 o=./outdat/out12.csv s=日付 u=./outdat/out13.csv; IN=5 OUT=3; 2014/05/23 01:44:42
+#END# kgbest -x R=2_3 i=./indat/dat2s.csv k=0 o=./outdat/out12x.csv s=1 u=./outdat/out13x.csv; IN=5 OUT=3; 2014/05/23 01:44:42
+#END# kgbest -nfn R=2_3 i=./indat/dat2snfn.csv k=0 o=./outdat/out12nfn.csv s=1 u=./outdat/out13nfn.csv; IN=5 OUT=3; 2014/05/23 01:44:42
+#END# kgbest -r R=1_2 i=./indat/dat2s.csv k=顧客 o=./outdat/out14.csv s=日付; IN=5 OUT=1; 2014/05/23 01:44:42
+#END# kgbest -r -x R=1_2 i=./indat/dat2s.csv k=0 o=./outdat/out14x.csv s=1; IN=5 OUT=1; 2014/05/23 01:44:42
+#END# kgbest -nfn -r R=1_2 i=./indat/dat2s.csv k=0 o=./outdat/out14nfn.csv s=1; IN=6 OUT=1; 2014/05/23 01:44:42
+#END# kgbest -r R=1 i=./indat/dat2s.csv k=顧客 o=./outdat/out15.csv s=日付 u=./outdat/out16.csv; IN=5 OUT=3; 2014/05/23 01:44:42
+#END# kgbest -r -x R=1 i=./indat/dat2s.csv k=0 o=./outdat/out15x.csv s=1 u=./outdat/out16x.csv; IN=5 OUT=3; 2014/05/23 01:44:42
+#END# kgbest -nfn -r R=1 i=./indat/dat2snfn.csv k=0 o=./outdat/out15nfn.csv s=1 u=./outdat/out16nfn.csv; IN=5 OUT=3; 2014/05/23 01:44:42
+#END# kgbest R=2_1,MAX_4 i=./indat/dat1s.csv o=./outdat/out17.csv s=金額%nr; IN=5 OUT=4; 2014/05/23 01:44:42
+#END# kgbest -x R=2_1,MAX_4 i=./indat/dat1s.csv o=./outdat/out17x.csv s=2%nr; IN=5 OUT=4; 2014/05/23 01:44:42
+#END# kgbest -nfn R=2_1,MAX_4 i=./indat/dat1snfn.csv o=./outdat/out17nfn.csv s=2%nr; IN=5 OUT=4; 2014/05/23 01:44:42
+#END# kgbest R=1 i=./indat/dat3s.csv k=顧客 o=./outdat/out18.csv s=日付 u=./outdat/out19.csv; IN=5 OUT=3; 2014/05/23 01:44:42
+#END# kgbest -x R=1 i=./indat/dat3s.csv k=0 o=./outdat/out18x.csv s=1 u=./outdat/out19x.csv; IN=5 OUT=3; 2014/05/23 01:44:42
+#END# kgbest -nfn R=1 i=./indat/dat3snfn.csv k=0 o=./outdat/out18nfn.csv s=1 u=./outdat/out19nfn.csv; IN=5 OUT=3; 2014/05/23 01:44:42
+#END# kgbest i=./indat/dat1s.csv o=./outdat/out58.csv s=金額%nr; IN=2 OUT=1; 2014/05/23 01:44:42
+#END# kgbest from=0 i=./indat/dat1s.csv o=./outdat/out20.csv s=金額%nr; IN=2 OUT=1; 2014/05/23 01:44:42
+#END# kgbest from=1 i=./indat/dat1s.csv o=./outdat/out21.csv s=金額%nr; IN=3 OUT=1; 2014/05/23 01:44:42
+#END# kgbest from=5 i=./indat/dat1s.csv o=./outdat/out22.csv s=金額%nr; IN=5 OUT=0; 2014/05/23 01:44:43
+#END# kgbest from=2 i=./indat/dat1s.csv o=./outdat/out23.csv s=金額%nr to=5; IN=5 OUT=3; 2014/05/23 01:44:43
+#END# kgbest from=MIN i=./indat/dat1s.csv o=./outdat/out24.csv s=金額%nr; IN=2 OUT=1; 2014/05/23 01:44:43
+#END# kgbest i=./indat/dat1s.csv o=./outdat/out25.csv s=金額%nr to=MAX; IN=5 OUT=5; 2014/05/23 01:44:43
+#END# kgbest from=1 i=./indat/dat1s.csv o=./outdat/out26.csv s=金額%nr size=3; IN=5 OUT=3; 2014/05/23 01:44:43
+#END# kgbest R=1_3 i=./indat/dat0.csv o=./outdat/out27.csv s=金額; IN=0 OUT=0; 2014/05/23 01:44:43
+#END# kgbest -x R=1_3 i=./indat/dat0.csv o=./outdat/out27x.csv s=2; IN=0 OUT=0; 2014/05/23 01:44:43
+#END# kgbest -nfn R=1_3 i=./indat/dat0nfn.csv o=./outdat/out27nfn.csv s=2; IN=0 OUT=0; 2014/05/23 01:44:43
+#END# kgbest -nfno R=1_3 i=./indat/dat0.csv o=./outdat/out27nfno.csv s=金額; IN=0 OUT=0; 2014/05/23 01:44:43
+#END# kgbest -q R=1_3 i=./indat/dat0s.csv o=./outdat/out27q.csv s=金額; IN=0 OUT=0; 2014/05/23 01:44:43
+#END# kgbest -nfn -q R=1_3 i=./indat/dat0snfn.csv o=./outdat/out27qnfn.csv s=2; IN=0 OUT=0; 2014/05/23 01:44:43
+#END# kgbest R=1_3 i=./indat/dat1.csv o=./outdat/out28.csv s=金額%nr; IN=4 OUT=3; 2014/05/23 01:44:43
+#END# kgbest -x R=1_3 i=./indat/dat1.csv o=./outdat/out28x.csv s=2%nr; IN=4 OUT=3; 2014/05/23 01:44:43
+#END# kgbest -nfn R=1_3 i=./indat/dat1nfn.csv o=./outdat/out28nfn.csv s=2%nr; IN=4 OUT=3; 2014/05/23 01:44:43
+#END# kgbest -nfno R=1_3 i=./indat/dat1.csv o=./outdat/out28nfno.csv s=金額%nr; IN=4 OUT=3; 2014/05/23 01:44:43
+#END# kgbest -q R=1_3 i=./indat/dat1.csv o=./outdat/out28q.csv s=金額%nr; IN=4 OUT=3; 2014/05/23 01:44:43
+#END# kgbest -nfn -q R=1_3 i=./indat/dat1nfn.csv o=./outdat/out28qnfn.csv s=2%nr; IN=4 OUT=3; 2014/05/23 01:44:43
+#END# kgbest R=1_2,4_5 i=./indat/dat1.csv o=./outdat/out29.csv s=金額%nr; IN=5 OUT=4; 2014/05/23 01:44:43
+#END# kgbest -x R=1_2,4_5 i=./indat/dat1.csv o=./outdat/out29x.csv s=2%nr; IN=5 OUT=4; 2014/05/23 01:44:43
+#END# kgbest -nfn R=1_2,4_5 i=./indat/dat1nfn.csv o=./outdat/out29nfn.csv s=2%nr; IN=5 OUT=4; 2014/05/23 01:44:43
+#END# kgbest -q R=1_2,4_5 i=./indat/dat1.csv o=./outdat/out29q.csv s=金額%nr; IN=5 OUT=4; 2014/05/23 01:44:43
+#END# kgbest -nfn -q R=1_2,4_5 i=./indat/dat1nfn.csv o=./outdat/out29qnfn.csv s=2%nr; IN=5 OUT=4; 2014/05/23 01:44:43
+#END# kgbest R=MIN_2 i=./indat/dat1.csv o=./outdat/out30.csv s=金額%nr; IN=3 OUT=2; 2014/05/23 01:44:43
+#END# kgbest -x R=MIN_2 i=./indat/dat1.csv o=./outdat/out30x.csv s=2%nr; IN=3 OUT=2; 2014/05/23 01:44:43
+#END# kgbest -nfn R=MIN_2 i=./indat/dat1nfn.csv o=./outdat/out30nfn.csv s=2%nr; IN=3 OUT=2; 2014/05/23 01:44:43
+#END# kgbest R=4_MAX i=./indat/dat1.csv o=./outdat/out31.csv s=金額%nr; IN=5 OUT=2; 2014/05/23 01:44:43
+#END# kgbest -x R=4_MAX i=./indat/dat1.csv o=./outdat/out31x.csv s=2%nr; IN=5 OUT=2; 2014/05/23 01:44:43
+#END# kgbest -nfn R=4_MAX i=./indat/dat1nfn.csv o=./outdat/out31nfn.csv s=2%nr; IN=5 OUT=2; 2014/05/23 01:44:43
+#END# kgbest R=MIN_2,4_MAX i=./indat/dat1.csv o=./outdat/out32.csv s=金額%nr; IN=5 OUT=4; 2014/05/23 01:44:43
+#END# kgbest -x R=MIN_2,4_MAX i=./indat/dat1.csv o=./outdat/out32x.csv s=2%nr; IN=5 OUT=4; 2014/05/23 01:44:43
+#END# kgbest -nfn R=MIN_2,4_MAX i=./indat/dat1nfn.csv o=./outdat/out32nfn.csv s=2%nr; IN=5 OUT=4; 2014/05/23 01:44:43
+#END# kgbest R=2 i=./indat/dat1.csv o=./outdat/out35.csv s=金額%nr u=./outdat/out36.csv; IN=5 OUT=1; 2014/05/23 01:44:44
+#END# kgbest -x R=2 i=./indat/dat1.csv o=./outdat/out35x.csv s=2%nr u=./outdat/out36x.csv; IN=5 OUT=1; 2014/05/23 01:44:44
+#END# kgbest -nfn R=2 i=./indat/dat1nfn.csv o=./outdat/out35nfn.csv s=2%nr u=./outdat/out36nfn.csv; IN=5 OUT=1; 2014/05/23 01:44:44
+#END# kgbest -r R=2 i=./indat/dat1.csv o=./outdat/out37.csv s=金額%nr; IN=5 OUT=4; 2014/05/23 01:44:44
+#END# kgbest -r -x R=2 i=./indat/dat1.csv o=./outdat/out37x.csv s=2%nr; IN=5 OUT=4; 2014/05/23 01:44:44
+#END# kgbest -nfn -r R=2 i=./indat/dat1nfn.csv o=./outdat/out37nfn.csv s=2%nr; IN=5 OUT=4; 2014/05/23 01:44:44
+#END# kgbest -r R=2 i=./indat/dat1.csv o=./outdat/out38.csv s=金額%nr u=./outdat/out39.csv; IN=5 OUT=4; 2014/05/23 01:44:44
+#END# kgbest -r -x R=2 i=./indat/dat1.csv o=./outdat/out38x.csv s=2%nr u=./outdat/out39x.csv; IN=5 OUT=4; 2014/05/23 01:44:44
+#END# kgbest -nfn -r R=2 i=./indat/dat1nfn.csv o=./outdat/out38nfn.csv s=2%nr u=./outdat/out39nfn.csv; IN=5 OUT=4; 2014/05/23 01:44:44
+#END# kgbest R=2 i=./indat/dat2.csv k=顧客 o=./outdat/out40.csv s=日付; IN=5 OUT=2; 2014/05/23 01:44:44
+#END# kgbest -x R=2 i=./indat/dat2.csv k=0 o=./outdat/out40x.csv s=1　; IN=5 OUT=2; 2014/05/23 01:44:44
+#END# kgbest -nfn R=2 i=./indat/dat2nfn.csv k=0 o=./outdat/out40nfn.csv s=1; IN=5 OUT=2; 2014/05/23 01:44:44
+#END# kgbest R=2_3 i=./indat/dat2.csv k=顧客 o=./outdat/out41.csv s=日付 u=./outdat/out42.csv; IN=5 OUT=3; 2014/05/23 01:44:44
+#END# kgbest -x R=2_3 i=./indat/dat2.csv k=0 o=./outdat/out41x.csv s=1 u=./outdat/out42x.csv; IN=5 OUT=3; 2014/05/23 01:44:44
+#END# kgbest -nfn R=2_3 i=./indat/dat2nfn.csv k=0 o=./outdat/out41nfn.csv s=1 u=./outdat/out42nfn.csv; IN=5 OUT=2; 2014/05/23 01:44:44
+#END# kgbest -r R=1_2 i=./indat/dat2.csv k=顧客 o=./outdat/out43.csv s=日付; IN=5 OUT=1; 2014/05/23 01:44:44
+#END# kgbest -r -x R=1_2 i=./indat/dat2.csv k=0 o=./outdat/out43x.csv s=1; IN=5 OUT=1; 2014/05/23 01:44:44
+#END# kgbest -nfn -r R=1_2 i=./indat/dat2.csv k=0 o=./outdat/out43nfn.csv s=1; IN=6 OUT=0; 2014/05/23 01:44:44
+#END# kgbest -r R=1 i=./indat/dat2.csv k=顧客 o=./outdat/out44.csv s=日付 u=./outdat/out45.csv; IN=5 OUT=3; 2014/05/23 01:44:44
+#END# kgbest -r -x R=1 i=./indat/dat2.csv k=0 o=./outdat/out44x.csv s=1 u=./outdat/out45x.csv; IN=5 OUT=3; 2014/05/23 01:44:44
+#END# kgbest -nfn -r R=1 i=./indat/dat2nfn.csv k=0 o=./outdat/out44nfn.csv s=1 u=./outdat/out45nfn.csv; IN=5 OUT=2; 2014/05/23 01:44:44
+#END# kgbest R=2_1,MAX_4 i=./indat/dat1.csv o=./outdat/out46.csv s=金額%nr; IN=5 OUT=4; 2014/05/23 01:44:45
+#END# kgbest -x R=2_1,MAX_4 i=./indat/dat1.csv o=./outdat/out46x.csv s=2%nr; IN=5 OUT=4; 2014/05/23 01:44:45
+#END# kgbest -nfn R=2_1,MAX_4 i=./indat/dat1nfn.csv o=./outdat/out46nfn.csv s=2%nr; IN=5 OUT=4; 2014/05/23 01:44:45
+#END# kgbest R=1 i=./indat/dat3.csv k=顧客 o=./outdat/out47.csv s=日付 u=./outdat/out48.csv; IN=5 OUT=3; 2014/05/23 01:44:45
+#END# kgbest -x R=1 i=./indat/dat3.csv k=0 o=./outdat/out47x.csv s=1 u=./outdat/out48x.csv; IN=5 OUT=3; 2014/05/23 01:44:45
+#END# kgbest -nfn R=1 i=./indat/dat3nfn.csv k=0 o=./outdat/out47nfn.csv s=1 u=./outdat/out48nfn.csv; IN=5 OUT=5; 2014/05/23 01:44:45
+#END# kgbest i=./indat/dat1.csv o=./outdat/out50.csv s=金額%nr; IN=2 OUT=1; 2014/05/23 01:44:45
+#END# kgbest from=0 i=./indat/dat1.csv o=./outdat/out51.csv s=金額%nr; IN=2 OUT=1; 2014/05/23 01:44:45
+#END# kgbest from=1 i=./indat/dat1.csv o=./outdat/out52.csv s=金額%nr; IN=3 OUT=1; 2014/05/23 01:44:46
+#END# kgbest from=5 i=./indat/dat1.csv o=./outdat/out53.csv s=金額%nr; IN=5 OUT=0; 2014/05/23 01:44:46
+#END# kgbest from=2 i=./indat/dat1.csv o=./outdat/out54.csv s=金額%nr to=5; IN=5 OUT=3; 2014/05/23 01:44:46
+#END# kgbest from=MIN i=./indat/dat1.csv o=./outdat/out55.csv s=金額%nr; IN=2 OUT=1; 2014/05/23 01:44:46
+#END# kgbest i=./indat/dat1.csv o=./outdat/out56.csv s=金額%nr to=MAX; IN=5 OUT=5; 2014/05/23 01:44:46
+#END# kgbest from=1 i=./indat/dat1.csv o=./outdat/out57.csv s=金額%nr size=3; IN=5 OUT=3; 2014/05/23 01:44:46

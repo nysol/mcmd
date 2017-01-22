@@ -1,0 +1,132 @@
+#END# kghashavg f=数量:数量平均,金額:金額平均 i=./indat/dat0.csv k=顧客 o=./outdat/out0.csv; IN=0 OUT=0; 2014/05/28 02:14:57
+#END# kghashavg -x f=1:数量平均,2:金額平均 i=./indat/dat0.csv k=0 o=./outdat/out0x.csv; IN=0 OUT=0; 2014/05/28 02:14:57
+#END# kghashavg -nfn f=1,2 i=./indat/dat0nfn.csv k=0 o=./outdat/out0nfn.csv; IN=0 OUT=0; 2014/05/28 02:14:57
+#END# kghashavg -nfno f=数量,金額 i=./indat/dat0.csv k=顧客 o=./outdat/out0nfno.csv; IN=0 OUT=0; 2014/05/28 02:14:57
+#END# kghashavg f=数量:数量平均 i=./indat/dat1.csv k=顧客 o=./outdat/out1.csv; IN=5 OUT=2; 2014/05/28 02:14:57
+#END# kghashavg -x f=1:数量平均 i=./indat/dat1.csv k=0 o=./outdat/out1x.csv; IN=5 OUT=2; 2014/05/28 02:14:57
+#END# kghashavg -nfn f=1 i=./indat/dat1nfn.csv k=0 o=./outdat/out1nfn.csv; IN=5 OUT=2; 2014/05/28 02:14:57
+#END# kghashavg -nfno f=数量 i=./indat/dat1.csv k=顧客 o=./outdat/out1nfno.csv; IN=5 OUT=2; 2014/05/28 02:14:57
+#END# kghashavg f=数量:数量平均,金額:金額平均 i=./indat/dat1.csv k=顧客 o=./outdat/out2.csv; IN=5 OUT=2; 2014/05/28 02:14:57
+#END# kghashavg -x f=1:数量平均,2:金額平均 i=./indat/dat1.csv k=0 o=./outdat/out2x.csv; IN=5 OUT=2; 2014/05/28 02:14:57
+#END# kghashavg -nfn f=1,2 i=./indat/dat1nfn.csv k=0 o=./outdat/out2nfn.csv; IN=5 OUT=2; 2014/05/28 02:14:57
+#END# kghashavg -nfno f=数量,金額 i=./indat/dat1.csv k=顧客 o=./outdat/out2nfno.csv; IN=5 OUT=2; 2014/05/28 02:14:57
+#END# kghashavg f=数量:数量平均,金額:金額平均 i=./indat/dat1.csv o=./outdat/out3.csv; IN=5 OUT=1; 2014/05/28 02:14:57
+#END# kghashavg -x f=1:数量平均,2:金額平均 i=./indat/dat1.csv o=./outdat/out3x.csv; IN=5 OUT=1; 2014/05/28 02:14:57
+#END# kghashavg -nfn f=1,2 i=./indat/dat1nfn.csv o=./outdat/out3nfn.csv; IN=5 OUT=1; 2014/05/28 02:14:57
+#END# kghashavg -nfno f=数量,金額 i=./indat/dat1.csv o=./outdat/out3nfno.csv; IN=5 OUT=1; 2014/05/28 02:14:57
+#END# kghashavg f=数量:数量平均 i=./indat/dat2.csv k=顧客,日付 o=./outdat/out4.csv; IN=10 OUT=5; 2014/05/28 02:14:57
+#END# kghashavg -x f=2:数量平均 i=./indat/dat2.csv k=0,1 o=./outdat/out4x.csv; IN=10 OUT=5; 2014/05/28 02:14:57
+#END# kghashavg -nfn f=2 i=./indat/dat2nfn.csv k=0,1 o=./outdat/out4nfn.csv; IN=10 OUT=5; 2014/05/28 02:14:57
+#END# kghashavg -nfno f=数量 i=./indat/dat2.csv k=顧客,日付 o=./outdat/out4nfno.csv; IN=10 OUT=5; 2014/05/28 02:14:57
+#END# kghashavg f=数量:数量平均,金額:金額平均 i=./indat/dat2.csv k=顧客,日付 o=./outdat/out5.csv; IN=10 OUT=5; 2014/05/28 02:14:57
+#END# kghashavg -x f=2:数量平均,3:金額平均 i=./indat/dat2.csv k=0,1 o=./outdat/out5x.csv; IN=10 OUT=5; 2014/05/28 02:14:57
+#END# kghashavg -nfn f=2,3 i=./indat/dat2nfn.csv k=0,1 o=./outdat/out5nfn.csv; IN=10 OUT=5; 2014/05/28 02:14:57
+#END# kghashavg -nfno f=数量,金額 i=./indat/dat2.csv k=顧客,日付 o=./outdat/out5nfno.csv; IN=10 OUT=5; 2014/05/28 02:14:57
+#END# kghashavg -n f=数量:数量平均,金額:金額平均 i=./indat/dat2.csv k=顧客,日付 o=./outdat/out6.csv; IN=10 OUT=5; 2014/05/28 02:14:57
+#END# kghashavg -n -x f=2:数量平均,3:金額平均 i=./indat/dat2.csv k=0,1 o=./outdat/out6x.csv; IN=10 OUT=5; 2014/05/28 02:14:57
+#END# kghashavg -n -nfn f=2,3 i=./indat/dat2nfn.csv k=0,1 o=./outdat/out6nfn.csv; IN=10 OUT=5; 2014/05/28 02:14:57
+#END# kghashavg -n -nfno f=数量,金額 i=./indat/dat2.csv k=顧客,日付 o=./outdat/out6nfno.csv; IN=10 OUT=5; 2014/05/28 02:14:57
+#END# kghashavg f=数量:数量平均,金額:金額平均 i=./indat/dat3.csv o=./outdat/out7.csv; IN=5 OUT=1; 2014/05/28 02:14:57
+#END# kghashavg -x f=1:数量平均,2:金額平均 i=./indat/dat3.csv o=./outdat/out7x.csv; IN=5 OUT=1; 2014/05/28 02:14:57
+#END# kghashavg -nfn f=1,2 i=./indat/dat3nfn.csv o=./outdat/out7nfn.csv; IN=5 OUT=1; 2014/05/28 02:14:57
+#END# kghashavg -nfno f=数量,金額 i=./indat/dat3.csv o=./outdat/out7nfno.csv; IN=5 OUT=1; 2014/05/28 02:14:57
+#END# kghashavg -n f=数量:数量平均,金額:金額平均 i=./indat/dat3.csv o=./outdat/out8.csv; IN=5 OUT=1; 2014/05/28 02:14:57
+#END# kghashavg -n -x f=1:数量平均,2:金額平均 i=./indat/dat3.csv o=./outdat/out8x.csv; IN=5 OUT=1; 2014/05/28 02:14:57
+#END# kghashavg -n -nfn f=1,2 i=./indat/dat3nfn.csv o=./outdat/out8nfn.csv; IN=5 OUT=1; 2014/05/28 02:14:57
+#END# kghashavg -n -nfno f=数量,金額 i=./indat/dat3.csv o=./outdat/out8nfno.csv; IN=5 OUT=1; 2014/05/28 02:14:57
+#END# kghashavg f=数量:数量平均,金額:金額平均 i=./indat/dat3.csv k=顧客 o=./outdat/out9.csv; IN=5 OUT=2; 2014/05/28 02:14:57
+#END# kghashavg -x f=1:数量平均,2:金額平均 i=./indat/dat3.csv k=0 o=./outdat/out9x.csv; IN=5 OUT=2; 2014/05/28 02:14:57
+#END# kghashavg -nfn f=1,2 i=./indat/dat3nfn.csv k=0 o=./outdat/out9nfn.csv; IN=5 OUT=2; 2014/05/28 02:14:57
+#END# kghashavg -nfno f=数量,金額 i=./indat/dat3.csv k=顧客 o=./outdat/out9nfno.csv; IN=5 OUT=2; 2014/05/28 02:14:57
+#END# kghashavg -n f=数量:数量平均,金額:金額平均 i=./indat/dat3.csv k=顧客 o=./outdat/out10.csv; IN=5 OUT=2; 2014/05/28 02:14:57
+#END# kghashavg -n -x f=1:数量平均,2:金額平均 i=./indat/dat3.csv k=0 o=./outdat/out10x.csv; IN=5 OUT=2; 2014/05/28 02:14:57
+#END# kghashavg -n -nfn f=1,2 i=./indat/dat3nfn.csv k=0 o=./outdat/out10nfn.csv; IN=5 OUT=2; 2014/05/28 02:14:57
+#END# kghashavg -n -nfno f=数量,金額 i=./indat/dat3.csv k=顧客 o=./outdat/out10nfno.csv; IN=5 OUT=2; 2014/05/28 02:14:57
+#END# kghashavg f=数量:数量平均,金額:金額平均 i=./indat/dat4.csv k=顧客,日付 o=./outdat/out11.csv; IN=10 OUT=5; 2014/05/28 02:14:57
+#END# kghashavg -x f=2:数量平均,3:金額平均 i=./indat/dat4.csv k=0,1 o=./outdat/out11x.csv; IN=10 OUT=5; 2014/05/28 02:14:57
+#END# kghashavg -nfn f=2,3 i=./indat/dat4nfn.csv k=0,1 o=./outdat/out11nfn.csv; IN=10 OUT=5; 2014/05/28 02:14:57
+#END# kghashavg -nfno f=数量,金額 i=./indat/dat4.csv k=顧客,日付 o=./outdat/out11nfno.csv; IN=10 OUT=5; 2014/05/28 02:14:57
+#END# kghashavg -n f=数量:数量平均,金額:金額平均 i=./indat/dat4.csv k=顧客,日付 o=./outdat/out12.csv; IN=10 OUT=5; 2014/05/28 02:14:57
+#END# kghashavg -n -x f=2:数量平均,3:金額平均 i=./indat/dat4.csv k=0,1 o=./outdat/out12x.csv; IN=10 OUT=5; 2014/05/28 02:14:57
+#END# kghashavg -n -nfn f=2,3 i=./indat/dat4nfn.csv k=0,1 o=./outdat/out12nfn.csv; IN=10 OUT=5; 2014/05/28 02:14:57
+#END# kghashavg -n -nfno f=数量,金額 i=./indat/dat4.csv k=顧客,日付 o=./outdat/out12nfno.csv; IN=10 OUT=5; 2014/05/28 02:14:57
+#END# kghashavg f=数量:数量平均,金額:金額平均 i=./indat/dat5.csv k=顧客 o=./outdat/out13.csv; IN=10 OUT=3; 2014/05/28 02:14:57
+#END# kghashavg -x f=2:数量平均,3:金額平均 i=./indat/dat5.csv k=0 o=./outdat/out13x.csv; IN=10 OUT=3; 2014/05/28 02:14:57
+#END# kghashavg -nfn f=2,3 i=./indat/dat5nfn.csv k=0 o=./outdat/out13nfn.csv; IN=10 OUT=3; 2014/05/28 02:14:57
+#END# kghashavg -nfno f=数量,金額 i=./indat/dat5.csv k=顧客 o=./outdat/out13nfno.csv; IN=10 OUT=3; 2014/05/28 02:14:57
+#END# kghashavg f=数量:数量平均,金額:金額平均 hs=101 i=./indat/dat0.csv k=顧客 o=./outdat/out14.csv; IN=0 OUT=0; 2014/05/28 02:14:57
+#END# kghashavg -x f=1:数量平均,2:金額平均 hs=101 i=./indat/dat0.csv k=0 o=./outdat/out14x.csv; IN=0 OUT=0; 2014/05/28 02:14:57
+#END# kghashavg -nfn f=1,2 hs=101 i=./indat/dat0nfn.csv k=0 o=./outdat/out14nfn.csv; IN=0 OUT=0; 2014/05/28 02:14:58
+#END# kghashavg -nfno f=数量,金額 hs=101 i=./indat/dat0.csv k=顧客 o=./outdat/out14nfno.csv; IN=0 OUT=0; 2014/05/28 02:14:58
+#END# kghashavg f=数量:数量平均 hs=101 i=./indat/dat1.csv k=顧客 o=./outdat/out15.csv; IN=5 OUT=2; 2014/05/28 02:14:58
+#END# kghashavg -x f=1:数量平均 hs=101 i=./indat/dat1.csv k=0 o=./outdat/out15x.csv; IN=5 OUT=2; 2014/05/28 02:14:58
+#END# kghashavg -nfn f=1 hs=101 i=./indat/dat1nfn.csv k=0 o=./outdat/out15nfn.csv; IN=5 OUT=2; 2014/05/28 02:14:58
+#END# kghashavg -nfno f=数量 hs=101 i=./indat/dat1.csv k=顧客 o=./outdat/out15nfno.csv; IN=5 OUT=2; 2014/05/28 02:14:58
+#END# kghashavg f=数量:数量平均,金額:金額平均 hs=101 i=./indat/dat1.csv k=顧客 o=./outdat/out16.csv; IN=5 OUT=2; 2014/05/28 02:14:58
+#END# kghashavg -x f=1:数量平均,2:金額平均 hs=101 i=./indat/dat1.csv k=0 o=./outdat/out16x.csv; IN=5 OUT=2; 2014/05/28 02:14:58
+#END# kghashavg -nfn f=1,2 hs=101 i=./indat/dat1nfn.csv k=0 o=./outdat/out16nfn.csv; IN=5 OUT=2; 2014/05/28 02:14:58
+#END# kghashavg -nfno f=数量,金額 hs=101 i=./indat/dat1.csv k=顧客 o=./outdat/out16nfno.csv; IN=5 OUT=2; 2014/05/28 02:14:58
+#END# kghashavg f=数量:数量平均,金額:金額平均 hs=101 i=./indat/dat1.csv o=./outdat/out17.csv; IN=5 OUT=1; 2014/05/28 02:14:58
+#END# kghashavg -x f=1:数量平均,2:金額平均 hs=101 i=./indat/dat1.csv o=./outdat/out17x.csv; IN=5 OUT=1; 2014/05/28 02:14:58
+#END# kghashavg -nfn f=1,2 hs=101 i=./indat/dat1nfn.csv o=./outdat/out17nfn.csv; IN=5 OUT=1; 2014/05/28 02:14:58
+#END# kghashavg -nfno f=数量,金額 hs=101 i=./indat/dat1.csv o=./outdat/out17nfno.csv; IN=5 OUT=1; 2014/05/28 02:14:58
+#END# kghashavg f=数量:数量平均 hs=101 i=./indat/dat2.csv k=顧客,日付 o=./outdat/out18.csv; IN=10 OUT=5; 2014/05/28 02:14:58
+#END# kghashavg -x f=2:数量平均 hs=101 i=./indat/dat2.csv k=0,1 o=./outdat/out18x.csv; IN=10 OUT=5; 2014/05/28 02:14:58
+#END# kghashavg -nfn f=2 hs=101 i=./indat/dat2nfn.csv k=0,1 o=./outdat/out18nfn.csv; IN=10 OUT=5; 2014/05/28 02:14:58
+#END# kghashavg -nfno f=数量 hs=101 i=./indat/dat2.csv k=顧客,日付 o=./outdat/out18nfno.csv; IN=10 OUT=5; 2014/05/28 02:14:58
+#END# kghashavg f=数量:数量平均,金額:金額平均 hs=101 i=./indat/dat2.csv k=顧客,日付 o=./outdat/out19.csv; IN=10 OUT=5; 2014/05/28 02:14:58
+#END# kghashavg -x f=2:数量平均,3:金額平均 hs=101 i=./indat/dat2.csv k=0,1 o=./outdat/out19x.csv; IN=10 OUT=5; 2014/05/28 02:14:58
+#END# kghashavg -nfn f=2,3 hs=101 i=./indat/dat2nfn.csv k=0,1 o=./outdat/out19nfn.csv; IN=10 OUT=5; 2014/05/28 02:14:58
+#END# kghashavg -nfno f=数量,金額 hs=101 i=./indat/dat2.csv k=顧客,日付 o=./outdat/out19nfno.csv; IN=10 OUT=5; 2014/05/28 02:14:58
+#END# kghashavg -n f=数量:数量平均,金額:金額平均 hs=101 i=./indat/dat2.csv k=顧客,日付 o=./outdat/out20.csv; IN=10 OUT=5; 2014/05/28 02:14:58
+#END# kghashavg -n -x f=2:数量平均,3:金額平均 hs=101 i=./indat/dat2.csv k=0,1 o=./outdat/out20x.csv; IN=10 OUT=5; 2014/05/28 02:14:58
+#END# kghashavg -n -nfn f=2,3 hs=101 i=./indat/dat2nfn.csv k=0,1 o=./outdat/out20nfn.csv; IN=10 OUT=5; 2014/05/28 02:14:58
+#END# kghashavg -n -nfno f=数量,金額 hs=101 i=./indat/dat2.csv k=顧客,日付 o=./outdat/out20nfno.csv; IN=10 OUT=5; 2014/05/28 02:14:58
+#END# kghashavg f=数量:数量平均,金額:金額平均 hs=101 i=./indat/dat3.csv o=./outdat/out21.csv; IN=5 OUT=1; 2014/05/28 02:14:58
+#END# kghashavg -x f=1:数量平均,2:金額平均 hs=101 i=./indat/dat3.csv o=./outdat/out21x.csv; IN=5 OUT=1; 2014/05/28 02:14:58
+#END# kghashavg -nfn f=1,2 hs=101 i=./indat/dat3nfn.csv o=./outdat/out21nfn.csv; IN=5 OUT=1; 2014/05/28 02:14:58
+#END# kghashavg -nfno f=数量,金額 hs=101 i=./indat/dat3.csv o=./outdat/out21nfno.csv; IN=5 OUT=1; 2014/05/28 02:14:58
+#END# kghashavg -n f=数量:数量平均,金額:金額平均 hs=101 i=./indat/dat3.csv o=./outdat/out22.csv; IN=5 OUT=1; 2014/05/28 02:14:58
+#END# kghashavg -n -x f=1:数量平均,2:金額平均 hs=101 i=./indat/dat3.csv o=./outdat/out22x.csv; IN=5 OUT=1; 2014/05/28 02:14:58
+#END# kghashavg -n -nfn f=1,2 hs=101 i=./indat/dat3nfn.csv o=./outdat/out22nfn.csv; IN=5 OUT=1; 2014/05/28 02:14:58
+#END# kghashavg -n -nfno f=数量,金額 hs=101 i=./indat/dat3.csv o=./outdat/out22nfno.csv; IN=5 OUT=1; 2014/05/28 02:14:58
+#END# kghashavg f=数量:数量平均,金額:金額平均 hs=101 i=./indat/dat3.csv k=顧客 o=./outdat/out23.csv; IN=5 OUT=2; 2014/05/28 02:14:58
+#END# kghashavg -x f=1:数量平均,2:金額平均 hs=101 i=./indat/dat3.csv k=0 o=./outdat/out23x.csv; IN=5 OUT=2; 2014/05/28 02:14:58
+#END# kghashavg -nfn f=1,2 hs=101 i=./indat/dat3nfn.csv k=0 o=./outdat/out23nfn.csv; IN=5 OUT=2; 2014/05/28 02:14:58
+#END# kghashavg -nfno f=数量,金額 hs=101 i=./indat/dat3.csv k=顧客 o=./outdat/out23nfno.csv; IN=5 OUT=2; 2014/05/28 02:14:58
+#END# kghashavg -n f=数量:数量平均,金額:金額平均 hs=101 i=./indat/dat3.csv k=顧客 o=./outdat/out24.csv; IN=5 OUT=2; 2014/05/28 02:14:58
+#END# kghashavg -n -x f=1:数量平均,2:金額平均 hs=101 i=./indat/dat3.csv k=0 o=./outdat/out24x.csv; IN=5 OUT=2; 2014/05/28 02:14:58
+#END# kghashavg -n -nfn f=1,2 hs=101 i=./indat/dat3nfn.csv k=0 o=./outdat/out24nfn.csv; IN=5 OUT=2; 2014/05/28 02:14:58
+#END# kghashavg -n -nfno f=数量,金額 hs=101 i=./indat/dat3.csv k=顧客 o=./outdat/out24nfno.csv; IN=5 OUT=2; 2014/05/28 02:14:58
+#END# kghashavg f=数量:数量平均,金額:金額平均 hs=101 i=./indat/dat4.csv k=顧客,日付 o=./outdat/out25.csv; IN=10 OUT=5; 2014/05/28 02:14:58
+#END# kghashavg -x f=2:数量平均,3:金額平均 hs=101 i=./indat/dat4.csv k=0,1 o=./outdat/out25x.csv; IN=10 OUT=5; 2014/05/28 02:14:58
+#END# kghashavg -nfn f=2,3 hs=101 i=./indat/dat4nfn.csv k=0,1 o=./outdat/out25nfn.csv; IN=10 OUT=5; 2014/05/28 02:14:58
+#END# kghashavg -nfno f=数量,金額 hs=101 i=./indat/dat4.csv k=顧客,日付 o=./outdat/out25nfno.csv; IN=10 OUT=5; 2014/05/28 02:14:58
+#END# kghashavg -n f=数量:数量平均,金額:金額平均 hs=101 i=./indat/dat4.csv k=顧客,日付 o=./outdat/out26.csv; IN=10 OUT=5; 2014/05/28 02:14:58
+#END# kghashavg -n -x f=2:数量平均,3:金額平均 hs=101 i=./indat/dat4.csv k=0,1 o=./outdat/out26x.csv; IN=10 OUT=5; 2014/05/28 02:14:58
+#END# kghashavg -n -nfn f=2,3 hs=101 i=./indat/dat4nfn.csv k=0,1 o=./outdat/out26nfn.csv; IN=10 OUT=5; 2014/05/28 02:14:58
+#END# kghashavg -n -nfno f=数量,金額 hs=101 i=./indat/dat4.csv k=顧客,日付 o=./outdat/out26nfno.csv; IN=10 OUT=5; 2014/05/28 02:14:58
+#END# kghashavg f=数量:数量平均,金額:金額平均 hs=101 i=./indat/dat5.csv k=顧客 o=./outdat/out27.csv; IN=10 OUT=3; 2014/05/28 02:14:58
+#END# kghashavg -x f=2:数量平均,3:金額平均 hs=101 i=./indat/dat5.csv k=0 o=./outdat/out27x.csv; IN=10 OUT=3; 2014/05/28 02:14:58
+#END# kghashavg -nfn f=2,3 hs=101 i=./indat/dat5nfn.csv k=0 o=./outdat/out27nfn.csv; IN=10 OUT=3; 2014/05/28 02:14:58
+#END# kghashavg -nfno f=数量,金額 hs=101 i=./indat/dat5.csv k=顧客 o=./outdat/out27nfno.csv; IN=10 OUT=3; 2014/05/28 02:14:58
+#END# kghashavg f=数量:数量平均 i=./indat/dat1.csv k=顧客 o=./outdat/out28.csv precision=0; IN=5 OUT=2; 2014/05/28 02:14:58
+#END# kghashavg -x f=1:数量平均 i=./indat/dat1.csv k=0 o=./outdat/out28x.csv precision=0; IN=5 OUT=2; 2014/05/28 02:14:58
+#END# kghashavg -nfn f=1 i=./indat/dat1nfn.csv k=0 o=./outdat/out28nfn.csv precision=0; IN=5 OUT=2; 2014/05/28 02:14:58
+#END# kghashavg -nfno f=数量 i=./indat/dat1.csv k=顧客 o=./outdat/out28nfno.csv precision=0; IN=5 OUT=2; 2014/05/28 02:14:58
+#END# kghashavg f=数量:数量平均 i=./indat/dat1.csv k=顧客 o=./outdat/out29.csv precision=1; IN=5 OUT=2; 2014/05/28 02:14:58
+#END# kghashavg -x f=1:数量平均 i=./indat/dat1.csv k=0 o=./outdat/out29x.csv precision=1; IN=5 OUT=2; 2014/05/28 02:14:58
+#END# kghashavg -nfn f=1 i=./indat/dat1nfn.csv k=0 o=./outdat/out29nfn.csv precision=1; IN=5 OUT=2; 2014/05/28 02:14:58
+#END# kghashavg -nfno f=数量 i=./indat/dat1.csv k=顧客 o=./outdat/out29nfno.csv precision=1; IN=5 OUT=2; 2014/05/28 02:14:58
+#END# kghashavg f=数量:数量平均 i=./indat/dat1.csv k=顧客 o=./outdat/out30.csv precision=2; IN=5 OUT=2; 2014/05/28 02:14:58
+#END# kghashavg -x f=1:数量平均 i=./indat/dat1.csv k=0 o=./outdat/out30x.csv precision=2; IN=5 OUT=2; 2014/05/28 02:14:58
+#END# kghashavg -nfn f=1 i=./indat/dat1nfn.csv k=0 o=./outdat/out30nfn.csv precision=2; IN=5 OUT=2; 2014/05/28 02:14:58
+#END# kghashavg -nfno f=数量 i=./indat/dat1.csv k=顧客 o=./outdat/out30nfno.csv precision=2; IN=5 OUT=2; 2014/05/28 02:14:58
+#END# kghashavg f=数量:数量平均 i=./indat/dat1.csv k=顧客 o=./outdat/out31.csv precision=100; IN=5 OUT=2; 2014/05/28 02:14:58
+#END# kghashavg -x f=1:数量平均 i=./indat/dat1.csv k=0 o=./outdat/out31x.csv precision=100; IN=5 OUT=2; 2014/05/28 02:14:58
+#END# kghashavg -nfn f=1 i=./indat/dat1nfn.csv k=0 o=./outdat/out31nfn.csv precision=100; IN=5 OUT=2; 2014/05/28 02:14:58
+#END# kghashavg -nfno f=数量 i=./indat/dat1.csv k=顧客 o=./outdat/out31nfno.csv precision=100; IN=5 OUT=2; 2014/05/28 02:14:58
+#END# kghashavg f=金額:金額平均 i=./indat/dat1s.csv k=顧客 o=./outdat/out32.csv; IN=5 OUT=2; 2014/05/28 02:14:58
+#END# kghashavg -x f=2:金額平均 i=./indat/dat1s.csv k=0 o=./outdat/out32x.csv; IN=5 OUT=2; 2014/05/28 02:14:58
+#END# kghashavg -nfn f=2 i=./indat/dat1snfn.csv k=0 o=./outdat/out32nfn.csv; IN=5 OUT=2; 2014/05/28 02:14:58
+#END# kghashavg -nfno f=金額 i=./indat/dat1s.csv k=顧客 o=./outdat/out32nfno.csv; IN=5 OUT=2; 2014/05/28 02:14:58

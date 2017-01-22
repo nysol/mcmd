@@ -1,0 +1,91 @@
+#END# kgcombi a=商品1,商品2 f=商品 i=./indat/dat0.csv k=顧客 n=2 o=./outdat/out0.csv s=商品; IN=0 OUT=0; 2014/05/23 18:09:37
+#END# kgcombi -x a=商品1,商品2 f=1 i=./indat/dat0.csv k=0 n=2 o=./outdat/out0x.csv s=1; IN=0 OUT=0; 2014/05/23 18:09:37
+#END# kgcombi -nfn f=1 i=./indat/dat0nfn.csv k=0 n=2 o=./outdat/out0nfn.csv s=1; IN=0 OUT=0; 2014/05/23 18:09:37
+#END# kgcombi a=商品1,商品2 f=商品 i=./indat/dat1s.csv k=顧客 n=2 o=./outdat/out1.csv s=商品; IN=5 OUT=4; 2014/05/23 18:09:37
+#END# kgcombi -x a=商品1,商品2 f=1 i=./indat/dat1s.csv k=0 n=2 o=./outdat/out1x.csv s=1; IN=5 OUT=4; 2014/05/23 18:09:37
+#END# kgcombi -nfn f=1 i=./indat/dat1snfn.csv k=0 n=2 o=./outdat/out1nfn.csv s=1; IN=5 OUT=4; 2014/05/23 18:09:38
+#END# kgcombi -q a=商品1,商品2 f=商品 i=./indat/dat1s.csv k=顧客 n=2 o=./outdat/out1q.csv s=商品; IN=5 OUT=4; 2014/05/23 18:09:38
+#END# kgcombi -nfn -q f=1 i=./indat/dat1snfn.csv k=0 n=2 o=./outdat/out1qnfn.csv s=1; IN=5 OUT=4; 2014/05/23 18:09:38
+#END# kgcombi -p a=商品1,商品2 f=商品 i=./indat/dat1s.csv k=顧客 n=2 o=./outdat/out2.csv s=商品; IN=5 OUT=8; 2014/05/23 18:09:38
+#END# kgcombi -p -x a=商品1,商品2 f=1 i=./indat/dat1s.csv k=0 n=2 o=./outdat/out2x.csv s=1; IN=5 OUT=8; 2014/05/23 18:09:38
+#END# kgcombi -nfn -p f=1 i=./indat/dat1snfn.csv k=0 n=2 o=./outdat/out2nfn.csv s=1; IN=5 OUT=8; 2014/05/23 18:09:38
+#END# kgcombi -p -q a=商品1,商品2 f=商品 i=./indat/dat1s.csv k=顧客 n=2 o=./outdat/out2q.csv s=商品; IN=5 OUT=8; 2014/05/23 18:09:38
+#END# kgcombi -nfn -p -q f=1 i=./indat/dat1snfn.csv k=0 n=2 o=./outdat/out2qnfn.csv s=1; IN=5 OUT=8; 2014/05/23 18:09:38
+#END# kgcombi a=商品1,商品2 f=商品 i=./indat/dat1s.csv n=2 o=./outdat/out3.csv s=商品; IN=5 OUT=10; 2014/05/23 18:09:38
+#END# kgcombi -x a=商品1,商品2 f=1 i=./indat/dat1s.csv n=2 o=./outdat/out3x.csv s=1; IN=5 OUT=10; 2014/05/23 18:09:38
+#END# kgcombi -nfn f=1 i=./indat/dat1snfn.csv n=2 o=./outdat/out3nfn.csv s=1; IN=5 OUT=10; 2014/05/23 18:09:38
+#END# kgcombi -q a=商品1,商品2 f=商品 i=./indat/dat1s.csv n=2 o=./outdat/out3q.csv s=商品; IN=5 OUT=10; 2014/05/23 18:09:38
+#END# kgcombi -nfn -q f=1 i=./indat/dat1snfn.csv n=2 o=./outdat/out3qnfn.csv s=1; IN=5 OUT=10; 2014/05/23 18:09:38
+#END# kgcombi -p a=商品1,商品2 f=商品 i=./indat/dat1s.csv n=2 o=./outdat/out4.csv s=商品; IN=5 OUT=20; 2014/05/23 18:09:38
+#END# kgcombi -p -x a=商品1,商品2 f=1 i=./indat/dat1s.csv n=2 o=./outdat/out4x.csv s=1; IN=5 OUT=20; 2014/05/23 18:09:38
+#END# kgcombi -nfn -p f=1 i=./indat/dat1snfn.csv n=2 o=./outdat/out4nfn.csv s=1; IN=5 OUT=20; 2014/05/23 18:09:38
+#END# kgcombi -p -q a=商品1,商品2 f=商品 i=./indat/dat1s.csv n=2 o=./outdat/out4q.csv s=商品; IN=5 OUT=20; 2014/05/23 18:09:38
+#END# kgcombi -nfn -p -q f=1 i=./indat/dat1snfn.csv n=2 o=./outdat/out4qnfn.csv s=1; IN=5 OUT=20; 2014/05/23 18:09:38
+#END# kgcombi a=商品1,商品2,商品3 f=商品 i=./indat/dat2s.csv k=顧客,日付 n=3 o=./outdat/out5.csv s=商品; IN=14 OUT=10; 2014/05/23 18:09:38
+#END# kgcombi -x a=商品1,商品2,商品3 f=2 i=./indat/dat2s.csv k=0,1 n=3 o=./outdat/out5x.csv s=2; IN=14 OUT=10; 2014/05/23 18:09:38
+#END# kgcombi -nfn f=2 i=./indat/dat2snfn.csv k=0,1 n=3 o=./outdat/out5nfn.csv s=2; IN=14 OUT=10; 2014/05/23 18:09:38
+#END# kgcombi -p a=商品1,商品2,商品3 f=商品 i=./indat/dat2s.csv k=顧客,日付 n=3 o=./outdat/out6.csv s=商品; IN=14 OUT=60; 2014/05/23 18:09:38
+#END# kgcombi -p -x a=商品1,商品2,商品3 f=2 i=./indat/dat2s.csv k=0,1 n=3 o=./outdat/out6x.csv s=2; IN=14 OUT=60; 2014/05/23 18:09:38
+#END# kgcombi -nfn -p f=2 i=./indat/dat2snfn.csv k=0,1 n=3 o=./outdat/out6nfn.csv s=2; IN=14 OUT=60; 2014/05/23 18:09:38
+#END# kgcombi a=商品1,商品2,商品3 f=商品 i=./indat/dat1s.csv k=顧客 n=3 o=./outdat/out7.csv s=商品; IN=5 OUT=1; 2014/05/23 18:09:38
+#END# kgcombi -x a=商品1,商品2,商品3 f=1 i=./indat/dat1s.csv k=0 n=3 o=./outdat/out7x.csv s=1; IN=5 OUT=1; 2014/05/23 18:09:38
+#END# kgcombi -nfn f=1 i=./indat/dat1snfn.csv k=0 n=3 o=./outdat/out7nfn.csv s=1; IN=5 OUT=1; 2014/05/23 18:09:38
+#END# kgcombi -p a=商品1,商品2,商品3 f=商品 i=./indat/dat1s.csv k=顧客 n=3 o=./outdat/out8.csv s=商品; IN=5 OUT=6; 2014/05/23 18:09:38
+#END# kgcombi -p -x a=商品1,商品2,商品3 f=1 i=./indat/dat1s.csv k=0 n=3 o=./outdat/out8x.csv s=1; IN=5 OUT=6; 2014/05/23 18:09:38
+#END# kgcombi -nfn -p f=1 i=./indat/dat1snfn.csv k=0 n=3 o=./outdat/out8nfn.csv s=1; IN=5 OUT=6; 2014/05/23 18:09:38
+#END# kgcombi a=商品1,商品2,商品3 f=商品 i=./indat/dat3s.csv k=顧客,日付 n=3 o=./outdat/out9.csv s=商品; IN=14 OUT=10; 2014/05/23 18:09:38
+#END# kgcombi -x a=商品1,商品2,商品3 f=2 i=./indat/dat3s.csv k=0,1 n=3 o=./outdat/out9x.csv s=2; IN=14 OUT=10; 2014/05/23 18:09:38
+#END# kgcombi -nfn f=2 i=./indat/dat3snfn.csv k=0,1 n=3 o=./outdat/out9nfn.csv s=2; IN=14 OUT=10; 2014/05/23 18:09:38
+#END# kgcombi -p a=商品1,商品2,商品3 f=商品 i=./indat/dat3s.csv k=顧客,日付 n=3 o=./outdat/out10.csv s=商品; IN=14 OUT=60; 2014/05/23 18:09:38
+#END# kgcombi -p -x a=商品1,商品2,商品3 f=2 i=./indat/dat3s.csv k=0,1 n=3 o=./outdat/out10x.csv s=2; IN=14 OUT=60; 2014/05/23 18:09:38
+#END# kgcombi -nfn -p f=2 i=./indat/dat3snfn.csv k=0,1 n=3 o=./outdat/out10nfn.csv s=2; IN=14 OUT=60; 2014/05/23 18:09:38
+#END# kgcombi a=商品1,商品2,商品3 f=商品 i=./indat/dat4s.csv k=顧客,日付 n=3 o=./outdat/out11.csv s=商品; IN=14 OUT=10; 2014/05/23 18:09:38
+#END# kgcombi -x a=商品1,商品2,商品3 f=2 i=./indat/dat4s.csv k=0,1 n=3 o=./outdat/out11x.csv s=2; IN=14 OUT=10; 2014/05/23 18:09:38
+#END# kgcombi -nfn f=2 i=./indat/dat4snfn.csv k=0,1 n=3 o=./outdat/out11nfn.csv s=2; IN=14 OUT=10; 2014/05/23 18:09:38
+#END# kgcombi -p a=商品1,商品2,商品3 f=商品 i=./indat/dat4s.csv k=顧客,日付 n=3 o=./outdat/out12.csv s=商品; IN=14 OUT=60; 2014/05/23 18:09:38
+#END# kgcombi -p -x a=商品1,商品2,商品3 f=2 i=./indat/dat4s.csv k=0,1 n=3 o=./outdat/out12x.csv s=2; IN=14 OUT=60; 2014/05/23 18:09:38
+#END# kgcombi -nfn -p f=2 i=./indat/dat4snfn.csv k=0,1 n=3 o=./outdat/out12nfn.csv s=2; IN=14 OUT=60; 2014/05/23 18:09:38
+#END# kgcombi a=商品1,商品2 f=商品 i=./indat/dat1.csv k=顧客 n=2 o=./outdat/out13.csv s=商品; IN=5 OUT=4; 2014/05/23 18:09:38
+#END# kgcombi -x a=商品1,商品2 f=1 i=./indat/dat1.csv k=0 n=2 o=./outdat/out13x.csv s=1; IN=5 OUT=4; 2014/05/23 18:09:38
+#END# kgcombi -nfn f=1 i=./indat/dat1nfn.csv k=0 n=2 o=./outdat/out13nfn.csv s=1; IN=5 OUT=1; 2014/05/23 18:09:38
+#END# kgcombi -q a=商品1,商品2 f=商品 i=./indat/dat1.csv k=顧客 n=2 o=./outdat/out13q.csv s=商品; IN=5 OUT=1; 2014/05/23 18:09:38
+#END# kgcombi -nfn -q f=1 i=./indat/dat1nfn.csv k=0 n=2 o=./outdat/out13qnfn.csv s=1; IN=5 OUT=1; 2014/05/23 18:09:38
+#END# kgcombi -p a=商品1,商品2 f=商品 i=./indat/dat1.csv k=顧客 n=2 o=./outdat/out14.csv s=商品; IN=5 OUT=8; 2014/05/23 18:09:38
+#END# kgcombi -p -x a=商品1,商品2 f=1 i=./indat/dat1.csv k=0 n=2 o=./outdat/out14x.csv s=1; IN=5 OUT=8; 2014/05/23 18:09:38
+#END# kgcombi -nfn -p f=1 i=./indat/dat1nfn.csv k=0 n=2 o=./outdat/out14nfn.csv s=1; IN=5 OUT=2; 2014/05/23 18:09:38
+#END# kgcombi -p -q a=商品1,商品2 f=商品 i=./indat/dat1.csv k=顧客 n=2 o=./outdat/out14q.csv s=商品; IN=5 OUT=2; 2014/05/23 18:09:38
+#END# kgcombi -nfn -p -q f=1 i=./indat/dat1nfn.csv k=0 n=2 o=./outdat/out14qnfn.csv s=1; IN=5 OUT=2; 2014/05/23 18:09:38
+#END# kgcombi a=商品1,商品2 f=商品 i=./indat/dat1.csv n=2 o=./outdat/out15.csv s=商品; IN=5 OUT=10; 2014/05/23 18:09:38
+#END# kgcombi -x a=商品1,商品2 f=1 i=./indat/dat1.csv n=2 o=./outdat/out15x.csv s=1; IN=5 OUT=10; 2014/05/23 18:09:38
+#END# kgcombi -nfn f=1 i=./indat/dat1nfn.csv n=2 o=./outdat/out15nfn.csv s=1; IN=5 OUT=10; 2014/05/23 18:09:38
+#END# kgcombi -q a=商品1,商品2 f=商品 i=./indat/dat1.csv n=2 o=./outdat/out15q.csv s=商品; IN=5 OUT=10; 2014/05/23 18:09:38
+#END# kgcombi -nfn -q f=1 i=./indat/dat1nfn.csv n=2 o=./outdat/out15qnfn.csv s=1; IN=5 OUT=10; 2014/05/23 18:09:38
+#END# kgcombi -p a=商品1,商品2 f=商品 i=./indat/dat1.csv n=2 o=./outdat/out16.csv s=商品; IN=5 OUT=20; 2014/05/23 18:09:38
+#END# kgcombi -p -x a=商品1,商品2 f=1 i=./indat/dat1.csv n=2 o=./outdat/out16x.csv s=1; IN=5 OUT=20; 2014/05/23 18:09:38
+#END# kgcombi -nfn -p f=1 i=./indat/dat1nfn.csv n=2 o=./outdat/out16nfn.csv s=1; IN=5 OUT=20; 2014/05/23 18:09:38
+#END# kgcombi -p -q a=商品1,商品2 f=商品 i=./indat/dat1.csv n=2 o=./outdat/out16q.csv s=商品; IN=5 OUT=20; 2014/05/23 18:09:38
+#END# kgcombi -nfn -p -q f=1 i=./indat/dat1nfn.csv n=2 o=./outdat/out16qnfn.csv s=1; IN=5 OUT=20; 2014/05/23 18:09:38
+#END# kgcombi a=商品1,商品2,商品3 f=商品 i=./indat/dat2.csv k=顧客,日付 n=3 o=./outdat/out17.csv s=商品; IN=14 OUT=10; 2014/05/23 18:09:38
+#END# kgcombi -x a=商品1,商品2,商品3 f=2 i=./indat/dat2.csv k=0,1 n=3 o=./outdat/out17x.csv s=2; IN=14 OUT=10; 2014/05/23 18:09:38
+#END# kgcombi -nfn f=2 i=./indat/dat2nfn.csv k=0,1 n=3 o=./outdat/out17nfn.csv s=2; IN=14 OUT=0; 2014/05/23 18:09:38
+#END# kgcombi -p a=商品1,商品2,商品3 f=商品 i=./indat/dat2.csv k=顧客,日付 n=3 o=./outdat/out18.csv s=商品; IN=14 OUT=60; 2014/05/23 18:09:38
+#END# kgcombi -p -x a=商品1,商品2,商品3 f=2 i=./indat/dat2.csv k=0,1 n=3 o=./outdat/out18x.csv s=2; IN=14 OUT=60; 2014/05/23 18:09:38
+#END# kgcombi -nfn -p f=2 i=./indat/dat2nfn.csv k=0,1 n=3 o=./outdat/out18nfn.csv s=2; IN=14 OUT=0; 2014/05/23 18:09:38
+#END# kgcombi a=商品1,商品2,商品3 f=商品 i=./indat/dat1.csv k=顧客 n=3 o=./outdat/out19.csv s=商品; IN=5 OUT=1; 2014/05/23 18:09:38
+#END# kgcombi -x a=商品1,商品2,商品3 f=1 i=./indat/dat1.csv k=0 n=3 o=./outdat/out19x.csv s=1; IN=5 OUT=1; 2014/05/23 18:09:38
+#END# kgcombi -nfn f=1 i=./indat/dat1nfn.csv k=0 n=3 o=./outdat/out19nfn.csv s=1; IN=5 OUT=0; 2014/05/23 18:09:38
+#END# kgcombi -p a=商品1,商品2,商品3 f=商品 i=./indat/dat1.csv k=顧客 n=3 o=./outdat/out20.csv s=商品; IN=5 OUT=6; 2014/05/23 18:09:38
+#END# kgcombi -p -x a=商品1,商品2,商品3 f=1 i=./indat/dat1.csv k=0 n=3 o=./outdat/out20x.csv s=1; IN=5 OUT=6; 2014/05/23 18:09:39
+#END# kgcombi -nfn -p f=1 i=./indat/dat1nfn.csv k=0 n=3 o=./outdat/out20nfn.csv s=1; IN=5 OUT=0; 2014/05/23 18:09:39
+#END# kgcombi a=商品1,商品2,商品3 f=商品 i=./indat/dat3.csv k=顧客,日付 n=3 o=./outdat/out21.csv s=商品; IN=14 OUT=10; 2014/05/23 18:09:39
+#END# kgcombi -x a=商品1,商品2,商品3 f=2 i=./indat/dat3.csv k=0,1 n=3 o=./outdat/out21x.csv s=2; IN=14 OUT=10; 2014/05/23 18:09:39
+#END# kgcombi -nfn f=2 i=./indat/dat3nfn.csv k=0,1 n=3 o=./outdat/out21nfn.csv s=2; IN=14 OUT=2; 2014/05/23 18:09:39
+#END# kgcombi -p a=商品1,商品2,商品3 f=商品 i=./indat/dat3.csv k=顧客,日付 n=3 o=./outdat/out22.csv s=商品; IN=14 OUT=60; 2014/05/23 18:09:39
+#END# kgcombi -p -x a=商品1,商品2,商品3 f=2 i=./indat/dat3.csv k=0,1 n=3 o=./outdat/out22x.csv s=2; IN=14 OUT=60; 2014/05/23 18:09:39
+#END# kgcombi -nfn -p f=2 i=./indat/dat3nfn.csv k=0,1 n=3 o=./outdat/out22nfn.csv s=2; IN=14 OUT=12; 2014/05/23 18:09:39
+#END# kgcombi a=商品1,商品2,商品3 f=商品 i=./indat/dat4.csv k=顧客,日付 n=3 o=./outdat/out23.csv s=商品; IN=14 OUT=10; 2014/05/23 18:09:39
+#END# kgcombi -x a=商品1,商品2,商品3 f=2 i=./indat/dat4.csv k=0,1 n=3 o=./outdat/out23x.csv s=2; IN=14 OUT=10; 2014/05/23 18:09:39
+#END# kgcombi -nfn f=2 i=./indat/dat4nfn.csv k=0,1 n=3 o=./outdat/out23nfn.csv s=2; IN=14 OUT=0; 2014/05/23 18:09:39
+#END# kgcombi -p a=商品1,商品2,商品3 f=商品 i=./indat/dat4.csv k=顧客,日付 n=3 o=./outdat/out24.csv s=商品; IN=14 OUT=60; 2014/05/23 18:09:39
+#END# kgcombi -p -x a=商品1,商品2,商品3 f=2 i=./indat/dat4.csv k=0,1 n=3 o=./outdat/out24x.csv s=2; IN=14 OUT=60; 2014/05/23 18:09:39
+#END# kgcombi -nfn -p f=2 i=./indat/dat4nfn.csv k=0,1 n=3 o=./outdat/out24nfn.csv s=2; IN=14 OUT=0; 2014/05/23 18:09:39

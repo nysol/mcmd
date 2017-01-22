@@ -1,0 +1,1036 @@
+#END# kgmbucket f=x:xb,y:yb i=./indat/dat0s.csv n=2,2 o=./outdat/out0.csv; IN=0 OUT=0; 2014/05/29 17:35:28
+#END# kgmbucket -x f=1:xb,2:yb i=./indat/dat0s.csv n=2,2 o=./outdat/out0x.csv; IN=0 OUT=0; 2014/05/29 17:35:28
+#END# kgmbucket -nfn f=1,2 i=./indat/dat0snfn.csv n=2,2 o=./outdat/out0nfn.csv; IN=0 OUT=0; 2014/05/29 17:35:28
+#END# kgmbucket -nfno f=x:xb,y:yb i=./indat/dat0s.csv n=2,2 o=./outdat/out0nfno.csv; IN=0 OUT=0; 2014/05/29 17:35:28
+#END# kgmbucket O=./outdat/out2.csv f=x:xb,y:yb i=./indat/dat0s.csv k=id n=2,2 o=./outdat/out1.csv; IN=0 OUT=0; 2014/05/29 17:35:28
+#END# kgmbucket -x O=./outdat/out2x.csv f=1:xb,2:yb i=./indat/dat0s.csv k=0 n=2,2 o=./outdat/out1x.csv; IN=0 OUT=0; 2014/05/29 17:35:28
+#END# kgmbucket -nfn O=./outdat/out2nfn.csv f=1,2 i=./indat/dat0snfn.csv k=0 n=2,2 o=./outdat/out1nfn.csv; IN=0 OUT=0; 2014/05/29 17:35:28
+calculating on dimension ... #0 done. VAR=50 updated!
+#END# kgmbucket f=x:xb i=./indat/dat1.csv n=2 o=./outdat/out3.csv; IN=10 OUT=10; 2014/05/29 17:35:28
+calculating on dimension ... #0 done. VAR=50 updated!
+#END# kgmbucket -x f=1:xb i=./indat/dat1.csv n=2 o=./outdat/out3x.csv; IN=10 OUT=10; 2014/05/29 17:35:28
+calculating on dimension ... #0 done. VAR=50 updated!
+#END# kgmbucket -nfn f=1 i=./indat/dat1nfn.csv n=2 o=./outdat/out3nfn.csv; IN=10 OUT=10; 2014/05/29 17:35:28
+calculating on dimension ... #0 done. VAR=50 updated!
+#END# kgmbucket -nfno f=x:xb i=./indat/dat1.csv n=2 o=./outdat/out3nfno.csv; IN=10 OUT=10; 2014/05/29 17:35:28
+calculating on dimension ... #0 done. VAR=50 updated!
+#END# kgmbucket -q f=x:xb i=./indat/dat1.csv n=2 o=./outdat/out3q.csv; IN=10 OUT=10; 2014/05/29 17:35:28
+calculating on dimension ... #0 done. VAR=5 updated!
+calculating on dimension ... #0 done. VAR=5 updated!
+calculating on dimension ... #0 done. VAR=8 updated!
+#END# kgmbucket f=x:xb i=./indat/dat2s.csv k=id n=2 o=./outdat/out4.csv; IN=10 OUT=10; 2014/05/29 17:35:28
+calculating on dimension ... #0 done. VAR=5 updated!
+calculating on dimension ... #0 done. VAR=5 updated!
+calculating on dimension ... #0 done. VAR=8 updated!
+#END# kgmbucket -x f=1:xb i=./indat/dat2s.csv k=0 n=2 o=./outdat/out4x.csv; IN=10 OUT=10; 2014/05/29 17:35:28
+calculating on dimension ... #0 done. VAR=5 updated!
+calculating on dimension ... #0 done. VAR=5 updated!
+calculating on dimension ... #0 done. VAR=8 updated!
+#END# kgmbucket -nfn f=1 i=./indat/dat2snfn.csv k=0 n=2 o=./outdat/out4nfn.csv; IN=10 OUT=10; 2014/05/29 17:35:28
+calculating on dimension ... #0 #1 done. VAR=3 updated!
+calculating on dimension ... #0 #1 done. VAR=3
+calculating on dimension ... #0 #1 done. VAR=3 updated!
+calculating on dimension ... #0 #1 done. VAR=3
+calculating on dimension ... #0 #1 done. VAR=6 updated!
+calculating on dimension ... #0 #1 done. VAR=4 updated!
+calculating on dimension ... #0 #1 done. VAR=4
+#END# kgmbucket f=x:xb,y:yb i=./indat/dat2s.csv k=id n=3,2 o=./outdat/out5.csv; IN=10 OUT=10; 2014/05/29 17:35:28
+calculating on dimension ... #0 #1 done. VAR=3 updated!
+calculating on dimension ... #0 #1 done. VAR=3
+calculating on dimension ... #0 #1 done. VAR=3 updated!
+calculating on dimension ... #0 #1 done. VAR=3
+calculating on dimension ... #0 #1 done. VAR=6 updated!
+calculating on dimension ... #0 #1 done. VAR=4 updated!
+calculating on dimension ... #0 #1 done. VAR=4
+#END# kgmbucket -x f=1:xb,2:yb i=./indat/dat2s.csv k=0 n=3,2 o=./outdat/out5x.csv; IN=10 OUT=10; 2014/05/29 17:35:28
+calculating on dimension ... #0 #1 done. VAR=3 updated!
+calculating on dimension ... #0 #1 done. VAR=3
+calculating on dimension ... #0 #1 done. VAR=3 updated!
+calculating on dimension ... #0 #1 done. VAR=3
+calculating on dimension ... #0 #1 done. VAR=6 updated!
+calculating on dimension ... #0 #1 done. VAR=4 updated!
+calculating on dimension ... #0 #1 done. VAR=4
+#END# kgmbucket -nfn f=1,2 i=./indat/dat2snfn.csv k=0 n=3,2 o=./outdat/out5nfn.csv; IN=10 OUT=10; 2014/05/29 17:35:28
+calculating on dimension ... #0 #1 done. VAR=12 updated!
+calculating on dimension ... #0 #1 done. VAR=12
+#END# kgmbucket O=./outdat/out7.csv f=x:xb,y:yb i=./indat/dat1.csv n=3 o=./outdat/out6.csv; IN=10 OUT=10; 2014/05/29 17:35:28
+calculating on dimension ... #0 #1 done. VAR=12 updated!
+calculating on dimension ... #0 #1 done. VAR=12
+#END# kgmbucket -x O=./outdat/out7x.csv f=1:xb,2:yb i=./indat/dat1.csv n=3 o=./outdat/out6x.csv; IN=10 OUT=10; 2014/05/29 17:35:28
+calculating on dimension ... #0 #1 done. VAR=12 updated!
+calculating on dimension ... #0 #1 done. VAR=12
+#END# kgmbucket -nfn O=./outdat/out7nfn.csv f=1,2 i=./indat/dat1nfn.csv n=3 o=./outdat/out6nfn.csv; IN=10 OUT=10; 2014/05/29 17:35:28
+calculating on dimension ... #0 #1 done. VAR=3 updated!
+calculating on dimension ... #0 #1 done. VAR=3
+calculating on dimension ... #0 #1 done. VAR=3 updated!
+calculating on dimension ... #0 #1 done. VAR=3
+calculating on dimension ... #0 #1 done. VAR=6 updated!
+calculating on dimension ... #0 #1 done. VAR=4 updated!
+calculating on dimension ... #0 #1 done. VAR=4
+#END# kgmbucket bufcount=2 f=x:xb,y:yb i=./indat/dat2s.csv k=id n=3,2 o=./outdat/out45.csv; IN=10 OUT=10; 2014/05/29 17:35:28
+#END# kgmbucket f=x:xb,y:yb i=./indat/dat6s.csv k=id n=3,2 o=./outdat/out46.csv; IN=11 OUT=11; 2014/05/29 17:35:28
+calculating on dimension ... #0 #1 done. VAR=3 updated!
+calculating on dimension ... #0 #1 done. VAR=3
+calculating on dimension ... #0 #1 done. VAR=3 updated!
+calculating on dimension ... #0 #1 done. VAR=3
+calculating on dimension ... #0 #1 done. VAR=6 updated!
+calculating on dimension ... #0 #1 done. VAR=6
+#END# kgmbucket O=./outdat/out9.csv f=x:xb,y:yb i=./indat/dat2s.csv k=id n=2,2 o=./outdat/out8.csv; IN=10 OUT=10; 2014/05/29 17:35:28
+calculating on dimension ... #0 #1 done. VAR=3 updated!
+calculating on dimension ... #0 #1 done. VAR=3
+calculating on dimension ... #0 #1 done. VAR=3 updated!
+calculating on dimension ... #0 #1 done. VAR=3
+calculating on dimension ... #0 #1 done. VAR=6 updated!
+calculating on dimension ... #0 #1 done. VAR=6
+#END# kgmbucket -x O=./outdat/out9x.csv f=1:xb,2:yb i=./indat/dat2s.csv k=0 n=2,2 o=./outdat/out8x.csv; IN=10 OUT=10; 2014/05/29 17:35:28
+calculating on dimension ... #0 #1 done. VAR=3 updated!
+calculating on dimension ... #0 #1 done. VAR=3
+calculating on dimension ... #0 #1 done. VAR=3 updated!
+calculating on dimension ... #0 #1 done. VAR=3
+calculating on dimension ... #0 #1 done. VAR=6 updated!
+calculating on dimension ... #0 #1 done. VAR=6
+#END# kgmbucket -nfn O=./outdat/out9nfn.csv f=1,2 i=./indat/dat2snfn.csv k=0 n=2,2 o=./outdat/out8nfn.csv; IN=10 OUT=10; 2014/05/29 17:35:28
+calculating on dimension ... #0 #1 done. VAR=12 updated!
+calculating on dimension ... #0 #1 done. VAR=12
+#END# kgmbucket F=0 f=x:xb,y:yb i=./indat/dat1.csv n=3,3 o=./outdat/out44.csv; IN=10 OUT=10; 2014/05/29 17:35:28
+calculating on dimension ... #0 #1 done. VAR=12 updated!
+calculating on dimension ... #0 #1 done. VAR=12
+#END# kgmbucket -x F=0 f=1:xb,2:yb i=./indat/dat1.csv n=3,3 o=./outdat/out44x.csv; IN=10 OUT=10; 2014/05/29 17:35:28
+calculating on dimension ... #0 #1 done. VAR=12 updated!
+calculating on dimension ... #0 #1 done. VAR=12
+#END# kgmbucket -nfn F=0 f=1,2 i=./indat/dat1nfn.csv n=3,3 o=./outdat/out44nfn.csv; IN=10 OUT=10; 2014/05/29 17:35:28
+calculating on dimension ... #0 #1 done. VAR=12 updated!
+calculating on dimension ... #0 #1 done. VAR=12
+#END# kgmbucket F=1 f=x:xb,y:yb i=./indat/dat1.csv n=3,3 o=./outdat/out10.csv; IN=10 OUT=10; 2014/05/29 17:35:28
+calculating on dimension ... #0 #1 done. VAR=12 updated!
+calculating on dimension ... #0 #1 done. VAR=12
+#END# kgmbucket -x F=1 f=1:xb,2:yb i=./indat/dat1.csv n=3,3 o=./outdat/out10x.csv; IN=10 OUT=10; 2014/05/29 17:35:28
+calculating on dimension ... #0 #1 done. VAR=12 updated!
+calculating on dimension ... #0 #1 done. VAR=12
+#END# kgmbucket -nfn F=1 f=1,2 i=./indat/dat1nfn.csv n=3,3 o=./outdat/out10nfn.csv; IN=10 OUT=10; 2014/05/29 17:35:28
+calculating on dimension ... #0 #1 done. VAR=12 updated!
+calculating on dimension ... #0 #1 done. VAR=12
+#END# kgmbucket F=2 f=x:xb,y:yb i=./indat/dat1.csv n=3,3 o=./outdat/out11.csv; IN=10 OUT=10; 2014/05/29 17:35:28
+calculating on dimension ... #0 #1 done. VAR=12 updated!
+calculating on dimension ... #0 #1 done. VAR=12
+#END# kgmbucket -x F=2 f=1:xb,2:yb i=./indat/dat1.csv n=3,3 o=./outdat/out11x.csv; IN=10 OUT=10; 2014/05/29 17:35:28
+calculating on dimension ... #0 #1 done. VAR=12 updated!
+calculating on dimension ... #0 #1 done. VAR=12
+#END# kgmbucket -nfn F=2 f=1,2 i=./indat/dat1nfn.csv n=3,3 o=./outdat/out11nfn.csv; IN=10 OUT=10; 2014/05/29 17:35:28
+calculating on dimension ... #0 #1 done. VAR=3 updated!
+calculating on dimension ... #0 #1 done. VAR=3
+calculating on dimension ... #0 #1 done. VAR=3 updated!
+calculating on dimension ... #0 #1 done. VAR=3
+calculating on dimension ... #0 #1 done. VAR=6 updated!
+calculating on dimension ... #0 #1 done. VAR=4 updated!
+calculating on dimension ... #0 #1 done. VAR=4
+#END# kgmbucket F=1 f=x:xb,y:yb i=./indat/dat2s.csv k=id n=3,3 o=./outdat/out12.csv; IN=10 OUT=10; 2014/05/29 17:35:28
+calculating on dimension ... #0 #1 done. VAR=3 updated!
+calculating on dimension ... #0 #1 done. VAR=3
+calculating on dimension ... #0 #1 done. VAR=3 updated!
+calculating on dimension ... #0 #1 done. VAR=3
+calculating on dimension ... #0 #1 done. VAR=6 updated!
+calculating on dimension ... #0 #1 done. VAR=4 updated!
+calculating on dimension ... #0 #1 done. VAR=4
+#END# kgmbucket -x F=1 f=1:xb,2:yb i=./indat/dat2s.csv k=0 n=3,3 o=./outdat/out12x.csv; IN=10 OUT=10; 2014/05/29 17:35:28
+calculating on dimension ... #0 #1 done. VAR=3 updated!
+calculating on dimension ... #0 #1 done. VAR=3
+calculating on dimension ... #0 #1 done. VAR=3 updated!
+calculating on dimension ... #0 #1 done. VAR=3
+calculating on dimension ... #0 #1 done. VAR=6 updated!
+calculating on dimension ... #0 #1 done. VAR=4 updated!
+calculating on dimension ... #0 #1 done. VAR=4
+#END# kgmbucket -nfn F=1 f=1,2 i=./indat/dat2snfn.csv k=0 n=3,3 o=./outdat/out12nfn.csv; IN=10 OUT=10; 2014/05/29 17:35:28
+calculating on dimension ... #0 #1 done. VAR=3 updated!
+calculating on dimension ... #0 #1 done. VAR=3
+calculating on dimension ... #0 #1 done. VAR=3 updated!
+calculating on dimension ... #0 #1 done. VAR=3
+calculating on dimension ... #0 #1 done. VAR=6 updated!
+calculating on dimension ... #0 #1 done. VAR=4 updated!
+calculating on dimension ... #0 #1 done. VAR=4
+#END# kgmbucket F=2 f=x:xb,y:yb i=./indat/dat2s.csv k=id n=3,3 o=./outdat/out13.csv; IN=10 OUT=10; 2014/05/29 17:35:28
+calculating on dimension ... #0 #1 done. VAR=3 updated!
+calculating on dimension ... #0 #1 done. VAR=3
+calculating on dimension ... #0 #1 done. VAR=3 updated!
+calculating on dimension ... #0 #1 done. VAR=3
+calculating on dimension ... #0 #1 done. VAR=6 updated!
+calculating on dimension ... #0 #1 done. VAR=4 updated!
+calculating on dimension ... #0 #1 done. VAR=4
+#END# kgmbucket -x F=2 f=1:xb,2:yb i=./indat/dat2s.csv k=0 n=3,3 o=./outdat/out13x.csv; IN=10 OUT=10; 2014/05/29 17:35:28
+calculating on dimension ... #0 #1 done. VAR=3 updated!
+calculating on dimension ... #0 #1 done. VAR=3
+calculating on dimension ... #0 #1 done. VAR=3 updated!
+calculating on dimension ... #0 #1 done. VAR=3
+calculating on dimension ... #0 #1 done. VAR=6 updated!
+calculating on dimension ... #0 #1 done. VAR=4 updated!
+calculating on dimension ... #0 #1 done. VAR=4
+#END# kgmbucket -nfn F=2 f=1,2 i=./indat/dat2snfn.csv k=0 n=3,3 o=./outdat/out13nfn.csv; IN=10 OUT=10; 2014/05/29 17:35:28
+calculating on dimension ... #0 #1 done. VAR=30 updated!
+calculating on dimension ... #0 #1 done. VAR=28 updated!
+calculating on dimension ... #0 #1 done. VAR=28
+#END# kgmbucket f=x:xb,y:yb i=./indat/dat1.csv n=2 o=./outdat/out14.csv; IN=10 OUT=10; 2014/05/29 17:35:28
+calculating on dimension ... #0 #1 done. VAR=30 updated!
+calculating on dimension ... #0 #1 done. VAR=28 updated!
+calculating on dimension ... #0 #1 done. VAR=28
+#END# kgmbucket -x f=1:xb,2:yb i=./indat/dat1.csv n=2 o=./outdat/out14x.csv; IN=10 OUT=10; 2014/05/29 17:35:28
+calculating on dimension ... #0 #1 done. VAR=30 updated!
+calculating on dimension ... #0 #1 done. VAR=28 updated!
+calculating on dimension ... #0 #1 done. VAR=28
+#END# kgmbucket -nfn f=1,2 i=./indat/dat1nfn.csv n=2 o=./outdat/out14nfn.csv; IN=10 OUT=10; 2014/05/29 17:35:28
+calculating on dimension ... #0 #1 done. VAR=10 updated!
+calculating on dimension ... #0 #1 done. VAR=10
+#END# kgmbucket f=x:xb,y:yb i=./indat/dat3.csv n=2,2 o=./outdat/out15.csv; IN=10 OUT=10; 2014/05/29 17:35:28
+calculating on dimension ... #0 #1 done. VAR=10 updated!
+calculating on dimension ... #0 #1 done. VAR=10
+#END# kgmbucket -x f=1:xb,2:yb i=./indat/dat3.csv n=2,2 o=./outdat/out15x.csv; IN=10 OUT=10; 2014/05/29 17:35:28
+calculating on dimension ... #0 #1 done. VAR=10 updated!
+calculating on dimension ... #0 #1 done. VAR=10
+#END# kgmbucket -nfn f=1,2 i=./indat/dat3nfn.csv n=2,2 o=./outdat/out15nfn.csv; IN=10 OUT=10; 2014/05/29 17:35:28
+calculating on dimension ... #0 #1 done. VAR=2 updated!
+calculating on dimension ... #0 #1 done. VAR=2
+calculating on dimension ... #0 #1 done. VAR=2 updated!
+calculating on dimension ... #0 #1 done. VAR=2
+calculating on dimension ... #0 #1 done. VAR=3 updated!
+calculating on dimension ... #0 #1 done. VAR=3
+#END# kgmbucket f=x:xb,y:yb i=./indat/dat4s.csv k=id n=2,2 o=./outdat/out16.csv; IN=10 OUT=10; 2014/05/29 17:35:28
+calculating on dimension ... #0 #1 done. VAR=2 updated!
+calculating on dimension ... #0 #1 done. VAR=2
+calculating on dimension ... #0 #1 done. VAR=2 updated!
+calculating on dimension ... #0 #1 done. VAR=2
+calculating on dimension ... #0 #1 done. VAR=3 updated!
+calculating on dimension ... #0 #1 done. VAR=3
+#END# kgmbucket -x f=1:xb,2:yb i=./indat/dat4s.csv k=0 n=2,2 o=./outdat/out16x.csv; IN=10 OUT=10; 2014/05/29 17:35:28
+calculating on dimension ... #0 #1 done. VAR=2 updated!
+calculating on dimension ... #0 #1 done. VAR=2
+calculating on dimension ... #0 #1 done. VAR=2 updated!
+calculating on dimension ... #0 #1 done. VAR=2
+calculating on dimension ... #0 #1 done. VAR=3 updated!
+calculating on dimension ... #0 #1 done. VAR=3
+#END# kgmbucket -nfn f=1,2 i=./indat/dat4snfn.csv k=0 n=2,2 o=./outdat/out16nfn.csv; IN=10 OUT=10; 2014/05/29 17:35:28
+calculating on dimension ... #0 #1 done. VAR=10 updated!
+calculating on dimension ... #0 #1 done. VAR=10
+#END# kgmbucket F=1 f=x:xb,y:yb i=./indat/dat3.csv n=2,2 o=./outdat/out17.csv; IN=10 OUT=10; 2014/05/29 17:35:28
+calculating on dimension ... #0 #1 done. VAR=10 updated!
+calculating on dimension ... #0 #1 done. VAR=10
+#END# kgmbucket -x F=1 f=1:xb,2:yb i=./indat/dat3.csv n=2,2 o=./outdat/out17x.csv; IN=10 OUT=10; 2014/05/29 17:35:28
+calculating on dimension ... #0 #1 done. VAR=10 updated!
+calculating on dimension ... #0 #1 done. VAR=10
+#END# kgmbucket -nfn F=1 f=1,2 i=./indat/dat3nfn.csv n=2,2 o=./outdat/out17nfn.csv; IN=10 OUT=10; 2014/05/29 17:35:28
+calculating on dimension ... #0 #1 done. VAR=10 updated!
+calculating on dimension ... #0 #1 done. VAR=10
+#END# kgmbucket F=2 f=x:xb,y:yb i=./indat/dat3.csv n=2,2 o=./outdat/out18.csv; IN=10 OUT=10; 2014/05/29 17:35:28
+calculating on dimension ... #0 #1 done. VAR=10 updated!
+calculating on dimension ... #0 #1 done. VAR=10
+#END# kgmbucket -x F=2 f=1:xb,2:yb i=./indat/dat3.csv n=2,2 o=./outdat/out18x.csv; IN=10 OUT=10; 2014/05/29 17:35:28
+calculating on dimension ... #0 #1 done. VAR=10 updated!
+calculating on dimension ... #0 #1 done. VAR=10
+#END# kgmbucket -nfn F=2 f=1,2 i=./indat/dat3nfn.csv n=2,2 o=./outdat/out18nfn.csv; IN=10 OUT=10; 2014/05/29 17:35:28
+calculating on dimension ... #0 #1 done. VAR=10 updated!
+calculating on dimension ... #0 #1 done. VAR=10
+#END# kgmbucket O=./outdat/out20.csv f=x:xb,y:yb i=./indat/dat3.csv n=2,2 o=./outdat/out19.csv; IN=10 OUT=10; 2014/05/29 17:35:28
+calculating on dimension ... #0 #1 done. VAR=10 updated!
+calculating on dimension ... #0 #1 done. VAR=10
+#END# kgmbucket -x O=./outdat/out20x.csv f=1:xb,2:yb i=./indat/dat3.csv n=2,2 o=./outdat/out19x.csv; IN=10 OUT=10; 2014/05/29 17:35:28
+calculating on dimension ... #0 #1 done. VAR=10 updated!
+calculating on dimension ... #0 #1 done. VAR=10
+#END# kgmbucket -nfn O=./outdat/out20nfn.csv f=1,2 i=./indat/dat3nfn.csv n=2,2 o=./outdat/out19nfn.csv; IN=10 OUT=10; 2014/05/29 17:35:28
+calculating on dimension ... #0 #1 done. VAR=2 updated!
+calculating on dimension ... #0 #1 done. VAR=2
+calculating on dimension ... #0 #1 done. VAR=2 updated!
+calculating on dimension ... #0 #1 done. VAR=2
+calculating on dimension ... #0 #1 done. VAR=2 updated!
+calculating on dimension ... #0 #1 done. VAR=2
+calculating on dimension ... #0 #1 done. VAR=2 updated!
+calculating on dimension ... #0 #1 done. VAR=2
+#END# kgmbucket F=2 f=x:xb,y:yb i=./indat/dat5s.csv k=id n=2,2 o=./outdat/out21.csv; IN=11 OUT=11; 2014/05/29 17:35:28
+calculating on dimension ... #0 #1 done. VAR=2 updated!
+calculating on dimension ... #0 #1 done. VAR=2
+calculating on dimension ... #0 #1 done. VAR=2 updated!
+calculating on dimension ... #0 #1 done. VAR=2
+calculating on dimension ... #0 #1 done. VAR=2 updated!
+calculating on dimension ... #0 #1 done. VAR=2
+calculating on dimension ... #0 #1 done. VAR=2 updated!
+calculating on dimension ... #0 #1 done. VAR=2
+#END# kgmbucket -x F=2 f=1:xb,2:yb i=./indat/dat5s.csv k=0 n=2,2 o=./outdat/out21x.csv; IN=11 OUT=11; 2014/05/29 17:35:28
+calculating on dimension ... #0 #1 done. VAR=2 updated!
+calculating on dimension ... #0 #1 done. VAR=2
+calculating on dimension ... #0 #1 done. VAR=2 updated!
+calculating on dimension ... #0 #1 done. VAR=2
+calculating on dimension ... #0 #1 done. VAR=2 updated!
+calculating on dimension ... #0 #1 done. VAR=2
+calculating on dimension ... #0 #1 done. VAR=2 updated!
+calculating on dimension ... #0 #1 done. VAR=2
+#END# kgmbucket -nfn F=2 f=1,2 i=./indat/dat5snfn.csv k=0 n=2,2 o=./outdat/out21nfn.csv; IN=11 OUT=11; 2014/05/29 17:35:28
+#END# kgmbucket -ms f=x:xb,y:yb i=./indat/dat0s.csv n=2,2 o=./outdat/out22.csv; IN=0 OUT=0; 2014/05/29 17:35:28
+#END# kgmbucket -ms -x f=1:xb,2:yb i=./indat/dat0s.csv n=2,2 o=./outdat/out22x.csv; IN=0 OUT=0; 2014/05/29 17:35:28
+#END# kgmbucket -ms -nfn f=1,2 i=./indat/dat0snfn.csv n=2,2 o=./outdat/out22nfn.csv; IN=0 OUT=0; 2014/05/29 17:35:28
+#END# kgmbucket -ms O=./outdat/out24.csv f=x:xb,y:yb i=./indat/dat0s.csv n=2,2 o=./outdat/out23.csv; IN=0 OUT=0; 2014/05/29 17:35:28
+#END# kgmbucket -ms -x O=./outdat/out24x.csv f=1:xb,2:yb i=./indat/dat0s.csv n=2,2 o=./outdat/out23x.csv; IN=0 OUT=0; 2014/05/29 17:35:28
+#END# kgmbucket -ms -nfn O=./outdat/out24nfn.csv f=1,2 i=./indat/dat0snfn.csv n=2,2 o=./outdat/out23nfn.csv; IN=0 OUT=0; 2014/05/29 17:35:28
+calculating on dimension ... #0 done. VAR=50 updated!
+#END# kgmbucket -ms f=x:xb i=./indat/dat1.csv n=2 o=./outdat/out25.csv; IN=10 OUT=10; 2014/05/29 17:35:28
+calculating on dimension ... #0 done. VAR=50 updated!
+#END# kgmbucket -ms -x f=1:xb i=./indat/dat1.csv n=2 o=./outdat/out25x.csv; IN=10 OUT=10; 2014/05/29 17:35:28
+calculating on dimension ... #0 done. VAR=50 updated!
+#END# kgmbucket -ms -nfn f=1 i=./indat/dat1nfn.csv n=2 o=./outdat/out25nfn.csv; IN=10 OUT=10; 2014/05/29 17:35:28
+calculating on dimension ... #0 done. VAR=5 updated!
+calculating on dimension ... #0 done. VAR=5 updated!
+calculating on dimension ... #0 done. VAR=8 updated!
+#END# kgmbucket -ms f=x:xb i=./indat/dat2s.csv k=id n=2 o=./outdat/out26.csv; IN=10 OUT=10; 2014/05/29 17:35:28
+calculating on dimension ... #0 done. VAR=5 updated!
+calculating on dimension ... #0 done. VAR=5 updated!
+calculating on dimension ... #0 done. VAR=8 updated!
+#END# kgmbucket -ms -x f=1:xb i=./indat/dat2s.csv k=0 n=2 o=./outdat/out26x.csv; IN=10 OUT=10; 2014/05/29 17:35:28
+calculating on dimension ... #0 done. VAR=5 updated!
+calculating on dimension ... #0 done. VAR=5 updated!
+calculating on dimension ... #0 done. VAR=8 updated!
+#END# kgmbucket -ms -nfn f=1 i=./indat/dat2snfn.csv k=0 n=2 o=./outdat/out26nfn.csv; IN=10 OUT=10; 2014/05/29 17:35:28
+iteration #0 on multi-start
+calculating on dimension ... #0 #1 done. VAR=3 updated!
+calculating on dimension ... #0 #1 done. VAR=3
+iteration #1 on multi-start
+calculating on dimension ... #1 #0 done. VAR=3
+calculating on dimension ... #1 #0 done. VAR=3
+iteration #0 on multi-start
+calculating on dimension ... #0 #1 done. VAR=3 updated!
+calculating on dimension ... #0 #1 done. VAR=3
+iteration #1 on multi-start
+calculating on dimension ... #1 #0 done. VAR=3
+calculating on dimension ... #1 #0 done. VAR=3
+iteration #0 on multi-start
+calculating on dimension ... #0 #1 done. VAR=6 updated!
+calculating on dimension ... #0 #1 done. VAR=4 updated!
+calculating on dimension ... #0 #1 done. VAR=4
+iteration #1 on multi-start
+calculating on dimension ... #1 #0 done. VAR=4
+calculating on dimension ... #1 #0 done. VAR=4
+#END# kgmbucket -ms f=x:xb,y:yb i=./indat/dat2s.csv k=id n=3,2 o=./outdat/out27.csv; IN=10 OUT=10; 2014/05/29 17:35:28
+iteration #0 on multi-start
+calculating on dimension ... #0 #1 done. VAR=3 updated!
+calculating on dimension ... #0 #1 done. VAR=3
+iteration #1 on multi-start
+calculating on dimension ... #1 #0 done. VAR=3
+calculating on dimension ... #1 #0 done. VAR=3
+iteration #0 on multi-start
+calculating on dimension ... #0 #1 done. VAR=3 updated!
+calculating on dimension ... #0 #1 done. VAR=3
+iteration #1 on multi-start
+calculating on dimension ... #1 #0 done. VAR=3
+calculating on dimension ... #1 #0 done. VAR=3
+iteration #0 on multi-start
+calculating on dimension ... #0 #1 done. VAR=6 updated!
+calculating on dimension ... #0 #1 done. VAR=4 updated!
+calculating on dimension ... #0 #1 done. VAR=4
+iteration #1 on multi-start
+calculating on dimension ... #1 #0 done. VAR=4
+calculating on dimension ... #1 #0 done. VAR=4
+#END# kgmbucket -ms -x f=1:xb,2:yb i=./indat/dat2s.csv k=0 n=3,2 o=./outdat/out27x.csv; IN=10 OUT=10; 2014/05/29 17:35:28
+iteration #0 on multi-start
+calculating on dimension ... #0 #1 done. VAR=3 updated!
+calculating on dimension ... #0 #1 done. VAR=3
+iteration #1 on multi-start
+calculating on dimension ... #1 #0 done. VAR=3
+calculating on dimension ... #1 #0 done. VAR=3
+iteration #0 on multi-start
+calculating on dimension ... #0 #1 done. VAR=3 updated!
+calculating on dimension ... #0 #1 done. VAR=3
+iteration #1 on multi-start
+calculating on dimension ... #1 #0 done. VAR=3
+calculating on dimension ... #1 #0 done. VAR=3
+iteration #0 on multi-start
+calculating on dimension ... #0 #1 done. VAR=6 updated!
+calculating on dimension ... #0 #1 done. VAR=4 updated!
+calculating on dimension ... #0 #1 done. VAR=4
+iteration #1 on multi-start
+calculating on dimension ... #1 #0 done. VAR=4
+calculating on dimension ... #1 #0 done. VAR=4
+#END# kgmbucket -ms -nfn f=1,2 i=./indat/dat2snfn.csv k=0 n=3,2 o=./outdat/out27nfn.csv; IN=10 OUT=10; 2014/05/29 17:35:28
+iteration #0 on multi-start
+calculating on dimension ... #0 #1 done. VAR=12 updated!
+calculating on dimension ... #0 #1 done. VAR=12
+iteration #1 on multi-start
+calculating on dimension ... #1 #0 done. VAR=12
+calculating on dimension ... #1 #0 done. VAR=12
+#END# kgmbucket -ms O=./outdat/out29.csv f=x:xb,y:yb i=./indat/dat1.csv n=3 o=./outdat/out28.csv; IN=10 OUT=10; 2014/05/29 17:35:28
+iteration #0 on multi-start
+calculating on dimension ... #0 #1 done. VAR=12 updated!
+calculating on dimension ... #0 #1 done. VAR=12
+iteration #1 on multi-start
+calculating on dimension ... #1 #0 done. VAR=12
+calculating on dimension ... #1 #0 done. VAR=12
+#END# kgmbucket -ms -x O=./outdat/out29x.csv f=1:xb,2:yb i=./indat/dat1.csv n=3 o=./outdat/out28x.csv; IN=10 OUT=10; 2014/05/29 17:35:28
+iteration #0 on multi-start
+calculating on dimension ... #0 #1 done. VAR=12 updated!
+calculating on dimension ... #0 #1 done. VAR=12
+iteration #1 on multi-start
+calculating on dimension ... #1 #0 done. VAR=12
+calculating on dimension ... #1 #0 done. VAR=12
+#END# kgmbucket -ms -nfn O=./outdat/out29nfn.csv f=1,2 i=./indat/dat1nfn.csv n=3 o=./outdat/out28nfn.csv; IN=10 OUT=10; 2014/05/29 17:35:28
+iteration #0 on multi-start
+calculating on dimension ... #0 #1 done. VAR=3 updated!
+calculating on dimension ... #0 #1 done. VAR=3
+iteration #1 on multi-start
+calculating on dimension ... #1 #0 done. VAR=3
+calculating on dimension ... #1 #0 done. VAR=3
+iteration #0 on multi-start
+calculating on dimension ... #0 #1 done. VAR=3 updated!
+calculating on dimension ... #0 #1 done. VAR=3
+iteration #1 on multi-start
+calculating on dimension ... #1 #0 done. VAR=3
+calculating on dimension ... #1 #0 done. VAR=3
+iteration #0 on multi-start
+calculating on dimension ... #0 #1 done. VAR=6 updated!
+calculating on dimension ... #0 #1 done. VAR=6
+iteration #1 on multi-start
+calculating on dimension ... #1 #0 done. VAR=6
+calculating on dimension ... #1 #0 done. VAR=6
+#END# kgmbucket -ms O=./outdat/out31.csv f=x:xb,y:yb i=./indat/dat2s.csv k=id n=2,2 o=./outdat/out30.csv; IN=10 OUT=10; 2014/05/29 17:35:28
+iteration #0 on multi-start
+calculating on dimension ... #0 #1 done. VAR=3 updated!
+calculating on dimension ... #0 #1 done. VAR=3
+iteration #1 on multi-start
+calculating on dimension ... #1 #0 done. VAR=3
+calculating on dimension ... #1 #0 done. VAR=3
+iteration #0 on multi-start
+calculating on dimension ... #0 #1 done. VAR=3 updated!
+calculating on dimension ... #0 #1 done. VAR=3
+iteration #1 on multi-start
+calculating on dimension ... #1 #0 done. VAR=3
+calculating on dimension ... #1 #0 done. VAR=3
+iteration #0 on multi-start
+calculating on dimension ... #0 #1 done. VAR=6 updated!
+calculating on dimension ... #0 #1 done. VAR=6
+iteration #1 on multi-start
+calculating on dimension ... #1 #0 done. VAR=6
+calculating on dimension ... #1 #0 done. VAR=6
+#END# kgmbucket -ms -x O=./outdat/out31x.csv f=1:xb,2:yb i=./indat/dat2s.csv k=0 n=2,2 o=./outdat/out30x.csv; IN=10 OUT=10; 2014/05/29 17:35:28
+iteration #0 on multi-start
+calculating on dimension ... #0 #1 done. VAR=3 updated!
+calculating on dimension ... #0 #1 done. VAR=3
+iteration #1 on multi-start
+calculating on dimension ... #1 #0 done. VAR=3
+calculating on dimension ... #1 #0 done. VAR=3
+iteration #0 on multi-start
+calculating on dimension ... #0 #1 done. VAR=3 updated!
+calculating on dimension ... #0 #1 done. VAR=3
+iteration #1 on multi-start
+calculating on dimension ... #1 #0 done. VAR=3
+calculating on dimension ... #1 #0 done. VAR=3
+iteration #0 on multi-start
+calculating on dimension ... #0 #1 done. VAR=6 updated!
+calculating on dimension ... #0 #1 done. VAR=6
+iteration #1 on multi-start
+calculating on dimension ... #1 #0 done. VAR=6
+calculating on dimension ... #1 #0 done. VAR=6
+#END# kgmbucket -ms -nfn O=./outdat/out31nfn.csv f=1,2 i=./indat/dat2snfn.csv k=0 n=2,2 o=./outdat/out30nfn.csv; IN=10 OUT=10; 2014/05/29 17:35:28
+iteration #0 on multi-start
+calculating on dimension ... #0 #1 done. VAR=12 updated!
+calculating on dimension ... #0 #1 done. VAR=12
+iteration #1 on multi-start
+calculating on dimension ... #1 #0 done. VAR=12
+calculating on dimension ... #1 #0 done. VAR=12
+#END# kgmbucket -ms F=1 f=x:xb,y:yb i=./indat/dat1.csv n=3,3 o=./outdat/out32.csv; IN=10 OUT=10; 2014/05/29 17:35:28
+iteration #0 on multi-start
+calculating on dimension ... #0 #1 done. VAR=12 updated!
+calculating on dimension ... #0 #1 done. VAR=12
+iteration #1 on multi-start
+calculating on dimension ... #1 #0 done. VAR=12
+calculating on dimension ... #1 #0 done. VAR=12
+#END# kgmbucket -ms -x F=1 f=1:xb,2:yb i=./indat/dat1.csv n=3,3 o=./outdat/out32x.csv; IN=10 OUT=10; 2014/05/29 17:35:28
+iteration #0 on multi-start
+calculating on dimension ... #0 #1 done. VAR=12 updated!
+calculating on dimension ... #0 #1 done. VAR=12
+iteration #1 on multi-start
+calculating on dimension ... #1 #0 done. VAR=12
+calculating on dimension ... #1 #0 done. VAR=12
+#END# kgmbucket -ms -nfn F=1 f=1,2 i=./indat/dat1nfn.csv n=3,3 o=./outdat/out32nfn.csv; IN=10 OUT=10; 2014/05/29 17:35:28
+iteration #0 on multi-start
+calculating on dimension ... #0 #1 done. VAR=12 updated!
+calculating on dimension ... #0 #1 done. VAR=12
+iteration #1 on multi-start
+calculating on dimension ... #1 #0 done. VAR=12
+calculating on dimension ... #1 #0 done. VAR=12
+#END# kgmbucket -ms F=2 f=x:xb,y:yb i=./indat/dat1.csv n=3,3 o=./outdat/out33.csv; IN=10 OUT=10; 2014/05/29 17:35:28
+iteration #0 on multi-start
+calculating on dimension ... #0 #1 done. VAR=12 updated!
+calculating on dimension ... #0 #1 done. VAR=12
+iteration #1 on multi-start
+calculating on dimension ... #1 #0 done. VAR=12
+calculating on dimension ... #1 #0 done. VAR=12
+#END# kgmbucket -ms -x F=2 f=1:xb,2:yb i=./indat/dat1.csv n=3,3 o=./outdat/out33x.csv; IN=10 OUT=10; 2014/05/29 17:35:28
+iteration #0 on multi-start
+calculating on dimension ... #0 #1 done. VAR=12 updated!
+calculating on dimension ... #0 #1 done. VAR=12
+iteration #1 on multi-start
+calculating on dimension ... #1 #0 done. VAR=12
+calculating on dimension ... #1 #0 done. VAR=12
+#END# kgmbucket -ms -nfn F=2 f=1,2 i=./indat/dat1nfn.csv n=3,3 o=./outdat/out33nfn.csv; IN=10 OUT=10; 2014/05/29 17:35:28
+iteration #0 on multi-start
+calculating on dimension ... #0 #1 done. VAR=3 updated!
+calculating on dimension ... #0 #1 done. VAR=3
+iteration #1 on multi-start
+calculating on dimension ... #1 #0 done. VAR=3
+calculating on dimension ... #1 #0 done. VAR=3
+iteration #0 on multi-start
+calculating on dimension ... #0 #1 done. VAR=3 updated!
+calculating on dimension ... #0 #1 done. VAR=3
+iteration #1 on multi-start
+calculating on dimension ... #1 #0 done. VAR=3
+calculating on dimension ... #1 #0 done. VAR=3
+iteration #0 on multi-start
+calculating on dimension ... #0 #1 done. VAR=6 updated!
+calculating on dimension ... #0 #1 done. VAR=4 updated!
+calculating on dimension ... #0 #1 done. VAR=4
+iteration #1 on multi-start
+calculating on dimension ... #1 #0 done. VAR=4
+calculating on dimension ... #1 #0 done. VAR=4
+#END# kgmbucket -ms F=1 f=x:xb,y:yb i=./indat/dat2s.csv k=id n=3,3 o=./outdat/out34.csv; IN=10 OUT=10; 2014/05/29 17:35:28
+iteration #0 on multi-start
+calculating on dimension ... #0 #1 done. VAR=3 updated!
+calculating on dimension ... #0 #1 done. VAR=3
+iteration #1 on multi-start
+calculating on dimension ... #1 #0 done. VAR=3
+calculating on dimension ... #1 #0 done. VAR=3
+iteration #0 on multi-start
+calculating on dimension ... #0 #1 done. VAR=3 updated!
+calculating on dimension ... #0 #1 done. VAR=3
+iteration #1 on multi-start
+calculating on dimension ... #1 #0 done. VAR=3
+calculating on dimension ... #1 #0 done. VAR=3
+iteration #0 on multi-start
+calculating on dimension ... #0 #1 done. VAR=6 updated!
+calculating on dimension ... #0 #1 done. VAR=4 updated!
+calculating on dimension ... #0 #1 done. VAR=4
+iteration #1 on multi-start
+calculating on dimension ... #1 #0 done. VAR=4
+calculating on dimension ... #1 #0 done. VAR=4
+#END# kgmbucket -ms -x F=1 f=1:xb,2:yb i=./indat/dat2s.csv k=0 n=3,3 o=./outdat/out34x.csv; IN=10 OUT=10; 2014/05/29 17:35:28
+iteration #0 on multi-start
+calculating on dimension ... #0 #1 done. VAR=3 updated!
+calculating on dimension ... #0 #1 done. VAR=3
+iteration #1 on multi-start
+calculating on dimension ... #1 #0 done. VAR=3
+calculating on dimension ... #1 #0 done. VAR=3
+iteration #0 on multi-start
+calculating on dimension ... #0 #1 done. VAR=3 updated!
+calculating on dimension ... #0 #1 done. VAR=3
+iteration #1 on multi-start
+calculating on dimension ... #1 #0 done. VAR=3
+calculating on dimension ... #1 #0 done. VAR=3
+iteration #0 on multi-start
+calculating on dimension ... #0 #1 done. VAR=6 updated!
+calculating on dimension ... #0 #1 done. VAR=4 updated!
+calculating on dimension ... #0 #1 done. VAR=4
+iteration #1 on multi-start
+calculating on dimension ... #1 #0 done. VAR=4
+calculating on dimension ... #1 #0 done. VAR=4
+#END# kgmbucket -ms -nfn F=1 f=1,2 i=./indat/dat2snfn.csv k=0 n=3,3 o=./outdat/out34nfn.csv; IN=10 OUT=10; 2014/05/29 17:35:28
+iteration #0 on multi-start
+calculating on dimension ... #0 #1 done. VAR=3 updated!
+calculating on dimension ... #0 #1 done. VAR=3
+iteration #1 on multi-start
+calculating on dimension ... #1 #0 done. VAR=3
+calculating on dimension ... #1 #0 done. VAR=3
+iteration #0 on multi-start
+calculating on dimension ... #0 #1 done. VAR=3 updated!
+calculating on dimension ... #0 #1 done. VAR=3
+iteration #1 on multi-start
+calculating on dimension ... #1 #0 done. VAR=3
+calculating on dimension ... #1 #0 done. VAR=3
+iteration #0 on multi-start
+calculating on dimension ... #0 #1 done. VAR=6 updated!
+calculating on dimension ... #0 #1 done. VAR=4 updated!
+calculating on dimension ... #0 #1 done. VAR=4
+iteration #1 on multi-start
+calculating on dimension ... #1 #0 done. VAR=4
+calculating on dimension ... #1 #0 done. VAR=4
+#END# kgmbucket -ms F=2 f=x:xb,y:yb i=./indat/dat2s.csv k=id n=3,3 o=./outdat/out35.csv; IN=10 OUT=10; 2014/05/29 17:35:28
+iteration #0 on multi-start
+calculating on dimension ... #0 #1 done. VAR=3 updated!
+calculating on dimension ... #0 #1 done. VAR=3
+iteration #1 on multi-start
+calculating on dimension ... #1 #0 done. VAR=3
+calculating on dimension ... #1 #0 done. VAR=3
+iteration #0 on multi-start
+calculating on dimension ... #0 #1 done. VAR=3 updated!
+calculating on dimension ... #0 #1 done. VAR=3
+iteration #1 on multi-start
+calculating on dimension ... #1 #0 done. VAR=3
+calculating on dimension ... #1 #0 done. VAR=3
+iteration #0 on multi-start
+calculating on dimension ... #0 #1 done. VAR=6 updated!
+calculating on dimension ... #0 #1 done. VAR=4 updated!
+calculating on dimension ... #0 #1 done. VAR=4
+iteration #1 on multi-start
+calculating on dimension ... #1 #0 done. VAR=4
+calculating on dimension ... #1 #0 done. VAR=4
+#END# kgmbucket -ms -x F=2 f=1:xb,2:yb i=./indat/dat2s.csv k=0 n=3,3 o=./outdat/out35x.csv; IN=10 OUT=10; 2014/05/29 17:35:28
+iteration #0 on multi-start
+calculating on dimension ... #0 #1 done. VAR=3 updated!
+calculating on dimension ... #0 #1 done. VAR=3
+iteration #1 on multi-start
+calculating on dimension ... #1 #0 done. VAR=3
+calculating on dimension ... #1 #0 done. VAR=3
+iteration #0 on multi-start
+calculating on dimension ... #0 #1 done. VAR=3 updated!
+calculating on dimension ... #0 #1 done. VAR=3
+iteration #1 on multi-start
+calculating on dimension ... #1 #0 done. VAR=3
+calculating on dimension ... #1 #0 done. VAR=3
+iteration #0 on multi-start
+calculating on dimension ... #0 #1 done. VAR=6 updated!
+calculating on dimension ... #0 #1 done. VAR=4 updated!
+calculating on dimension ... #0 #1 done. VAR=4
+iteration #1 on multi-start
+calculating on dimension ... #1 #0 done. VAR=4
+calculating on dimension ... #1 #0 done. VAR=4
+#END# kgmbucket -ms -nfn F=2 f=1,2 i=./indat/dat2snfn.csv k=0 n=3,3 o=./outdat/out35nfn.csv; IN=10 OUT=10; 2014/05/29 17:35:28
+iteration #0 on multi-start
+calculating on dimension ... #0 #1 done. VAR=30 updated!
+calculating on dimension ... #0 #1 done. VAR=28 updated!
+calculating on dimension ... #0 #1 done. VAR=28
+iteration #1 on multi-start
+calculating on dimension ... #1 #0 done. VAR=30
+calculating on dimension ... #1 #0 done. VAR=30
+#END# kgmbucket -ms f=x:xb,y:yb i=./indat/dat1.csv n=2 o=./outdat/out36.csv; IN=10 OUT=10; 2014/05/29 17:35:28
+iteration #0 on multi-start
+calculating on dimension ... #0 #1 done. VAR=30 updated!
+calculating on dimension ... #0 #1 done. VAR=28 updated!
+calculating on dimension ... #0 #1 done. VAR=28
+iteration #1 on multi-start
+calculating on dimension ... #1 #0 done. VAR=30
+calculating on dimension ... #1 #0 done. VAR=30
+#END# kgmbucket -ms -x f=1:xb,2:yb i=./indat/dat1.csv n=2 o=./outdat/out36x.csv; IN=10 OUT=10; 2014/05/29 17:35:28
+iteration #0 on multi-start
+calculating on dimension ... #0 #1 done. VAR=30 updated!
+calculating on dimension ... #0 #1 done. VAR=28 updated!
+calculating on dimension ... #0 #1 done. VAR=28
+iteration #1 on multi-start
+calculating on dimension ... #1 #0 done. VAR=30
+calculating on dimension ... #1 #0 done. VAR=30
+#END# kgmbucket -ms -nfn f=1,2 i=./indat/dat1nfn.csv n=2 o=./outdat/out36nfn.csv; IN=10 OUT=10; 2014/05/29 17:35:28
+iteration #0 on multi-start
+calculating on dimension ... #0 #1 done. VAR=10 updated!
+calculating on dimension ... #0 #1 done. VAR=10
+iteration #1 on multi-start
+calculating on dimension ... #1 #0 done. VAR=10
+calculating on dimension ... #1 #0 done. VAR=10
+#END# kgmbucket -ms f=x:xb,y:yb i=./indat/dat3.csv n=2,2 o=./outdat/out37.csv; IN=10 OUT=10; 2014/05/29 17:35:28
+iteration #0 on multi-start
+calculating on dimension ... #0 #1 done. VAR=10 updated!
+calculating on dimension ... #0 #1 done. VAR=10
+iteration #1 on multi-start
+calculating on dimension ... #1 #0 done. VAR=10
+calculating on dimension ... #1 #0 done. VAR=10
+#END# kgmbucket -ms -x f=1:xb,2:yb i=./indat/dat3.csv n=2,2 o=./outdat/out37x.csv; IN=10 OUT=10; 2014/05/29 17:35:28
+iteration #0 on multi-start
+calculating on dimension ... #0 #1 done. VAR=10 updated!
+calculating on dimension ... #0 #1 done. VAR=10
+iteration #1 on multi-start
+calculating on dimension ... #1 #0 done. VAR=10
+calculating on dimension ... #1 #0 done. VAR=10
+#END# kgmbucket -ms -nfn f=1,2 i=./indat/dat3nfn.csv n=2,2 o=./outdat/out37nfn.csv; IN=10 OUT=10; 2014/05/29 17:35:28
+iteration #0 on multi-start
+calculating on dimension ... #0 #1 done. VAR=2 updated!
+calculating on dimension ... #0 #1 done. VAR=2
+iteration #1 on multi-start
+calculating on dimension ... #1 #0 done. VAR=2
+calculating on dimension ... #1 #0 done. VAR=2
+iteration #0 on multi-start
+calculating on dimension ... #0 #1 done. VAR=2 updated!
+calculating on dimension ... #0 #1 done. VAR=2
+iteration #1 on multi-start
+calculating on dimension ... #1 #0 done. VAR=2
+calculating on dimension ... #1 #0 done. VAR=2
+iteration #0 on multi-start
+calculating on dimension ... #0 #1 done. VAR=3 updated!
+calculating on dimension ... #0 #1 done. VAR=3
+iteration #1 on multi-start
+calculating on dimension ... #1 #0 done. VAR=3
+calculating on dimension ... #1 #0 done. VAR=3
+#END# kgmbucket -ms f=x:xb,y:yb i=./indat/dat4s.csv k=id n=2,2 o=./outdat/out38.csv; IN=10 OUT=10; 2014/05/29 17:35:28
+iteration #0 on multi-start
+calculating on dimension ... #0 #1 done. VAR=2 updated!
+calculating on dimension ... #0 #1 done. VAR=2
+iteration #1 on multi-start
+calculating on dimension ... #1 #0 done. VAR=2
+calculating on dimension ... #1 #0 done. VAR=2
+iteration #0 on multi-start
+calculating on dimension ... #0 #1 done. VAR=2 updated!
+calculating on dimension ... #0 #1 done. VAR=2
+iteration #1 on multi-start
+calculating on dimension ... #1 #0 done. VAR=2
+calculating on dimension ... #1 #0 done. VAR=2
+iteration #0 on multi-start
+calculating on dimension ... #0 #1 done. VAR=3 updated!
+calculating on dimension ... #0 #1 done. VAR=3
+iteration #1 on multi-start
+calculating on dimension ... #1 #0 done. VAR=3
+calculating on dimension ... #1 #0 done. VAR=3
+#END# kgmbucket -ms -x f=1:xb,2:yb i=./indat/dat4s.csv k=0 n=2,2 o=./outdat/out38x.csv; IN=10 OUT=10; 2014/05/29 17:35:28
+iteration #0 on multi-start
+calculating on dimension ... #0 #1 done. VAR=2 updated!
+calculating on dimension ... #0 #1 done. VAR=2
+iteration #1 on multi-start
+calculating on dimension ... #1 #0 done. VAR=2
+calculating on dimension ... #1 #0 done. VAR=2
+iteration #0 on multi-start
+calculating on dimension ... #0 #1 done. VAR=2 updated!
+calculating on dimension ... #0 #1 done. VAR=2
+iteration #1 on multi-start
+calculating on dimension ... #1 #0 done. VAR=2
+calculating on dimension ... #1 #0 done. VAR=2
+iteration #0 on multi-start
+calculating on dimension ... #0 #1 done. VAR=3 updated!
+calculating on dimension ... #0 #1 done. VAR=3
+iteration #1 on multi-start
+calculating on dimension ... #1 #0 done. VAR=3
+calculating on dimension ... #1 #0 done. VAR=3
+#END# kgmbucket -ms -nfn f=1,2 i=./indat/dat4snfn.csv k=0 n=2,2 o=./outdat/out38nfn.csv; IN=10 OUT=10; 2014/05/29 17:35:28
+iteration #0 on multi-start
+calculating on dimension ... #0 #1 done. VAR=10 updated!
+calculating on dimension ... #0 #1 done. VAR=10
+iteration #1 on multi-start
+calculating on dimension ... #1 #0 done. VAR=10
+calculating on dimension ... #1 #0 done. VAR=10
+#END# kgmbucket -ms F=1 f=x:xb,y:yb i=./indat/dat3.csv n=2,2 o=./outdat/out39.csv; IN=10 OUT=10; 2014/05/29 17:35:28
+iteration #0 on multi-start
+calculating on dimension ... #0 #1 done. VAR=10 updated!
+calculating on dimension ... #0 #1 done. VAR=10
+iteration #1 on multi-start
+calculating on dimension ... #1 #0 done. VAR=10
+calculating on dimension ... #1 #0 done. VAR=10
+#END# kgmbucket -ms -x F=1 f=1:xb,2:yb i=./indat/dat3.csv n=2,2 o=./outdat/out39x.csv; IN=10 OUT=10; 2014/05/29 17:35:28
+iteration #0 on multi-start
+calculating on dimension ... #0 #1 done. VAR=10 updated!
+calculating on dimension ... #0 #1 done. VAR=10
+iteration #1 on multi-start
+calculating on dimension ... #1 #0 done. VAR=10
+calculating on dimension ... #1 #0 done. VAR=10
+#END# kgmbucket -ms -nfn F=1 f=1,2b i=./indat/dat3nfn.csv n=2,2 o=./outdat/out39nfn.csv; IN=10 OUT=10; 2014/05/29 17:35:28
+iteration #0 on multi-start
+calculating on dimension ... #0 #1 done. VAR=10 updated!
+calculating on dimension ... #0 #1 done. VAR=10
+iteration #1 on multi-start
+calculating on dimension ... #1 #0 done. VAR=10
+calculating on dimension ... #1 #0 done. VAR=10
+#END# kgmbucket -ms F=2 f=x:xb,y:yb i=./indat/dat3.csv n=2,2 o=./outdat/out40.csv; IN=10 OUT=10; 2014/05/29 17:35:28
+iteration #0 on multi-start
+calculating on dimension ... #0 #1 done. VAR=10 updated!
+calculating on dimension ... #0 #1 done. VAR=10
+iteration #1 on multi-start
+calculating on dimension ... #1 #0 done. VAR=10
+calculating on dimension ... #1 #0 done. VAR=10
+#END# kgmbucket -ms -x F=2 f=1:xb,2:yb i=./indat/dat3.csv n=2,2 o=./outdat/out40x.csv; IN=10 OUT=10; 2014/05/29 17:35:28
+iteration #0 on multi-start
+calculating on dimension ... #0 #1 done. VAR=10 updated!
+calculating on dimension ... #0 #1 done. VAR=10
+iteration #1 on multi-start
+calculating on dimension ... #1 #0 done. VAR=10
+calculating on dimension ... #1 #0 done. VAR=10
+#END# kgmbucket -ms -nfn F=2 f=1,2 i=./indat/dat3nfn.csv n=2,2 o=./outdat/out40nfn.csv; IN=10 OUT=10; 2014/05/29 17:35:28
+iteration #0 on multi-start
+calculating on dimension ... #0 #1 done. VAR=10 updated!
+calculating on dimension ... #0 #1 done. VAR=10
+iteration #1 on multi-start
+calculating on dimension ... #1 #0 done. VAR=10
+calculating on dimension ... #1 #0 done. VAR=10
+#END# kgmbucket -ms O=./outdat/out42.csv f=x:xb,y:yb i=./indat/dat3.csv n=2,2 o=./outdat/out41.csv; IN=10 OUT=10; 2014/05/29 17:35:28
+iteration #0 on multi-start
+calculating on dimension ... #0 #1 done. VAR=10 updated!
+calculating on dimension ... #0 #1 done. VAR=10
+iteration #1 on multi-start
+calculating on dimension ... #1 #0 done. VAR=10
+calculating on dimension ... #1 #0 done. VAR=10
+#END# kgmbucket -ms -x O=./outdat/out42x.csv f=1:xb,2:yb i=./indat/dat3.csv n=2,2 o=./outdat/out41x.csv; IN=10 OUT=10; 2014/05/29 17:35:28
+iteration #0 on multi-start
+calculating on dimension ... #0 #1 done. VAR=10 updated!
+calculating on dimension ... #0 #1 done. VAR=10
+iteration #1 on multi-start
+calculating on dimension ... #1 #0 done. VAR=10
+calculating on dimension ... #1 #0 done. VAR=10
+#END# kgmbucket -ms -nfn O=./outdat/out42nfn.csv f=1,2 i=./indat/dat3nfn.csv n=2,2 o=./outdat/out41nfn.csv; IN=10 OUT=10; 2014/05/29 17:35:28
+iteration #0 on multi-start
+calculating on dimension ... #0 #1 done. VAR=2 updated!
+calculating on dimension ... #0 #1 done. VAR=2
+iteration #1 on multi-start
+calculating on dimension ... #1 #0 done. VAR=2
+calculating on dimension ... #1 #0 done. VAR=2
+iteration #0 on multi-start
+calculating on dimension ... #0 #1 done. VAR=2 updated!
+calculating on dimension ... #0 #1 done. VAR=2
+iteration #1 on multi-start
+calculating on dimension ... #1 #0 done. VAR=2
+calculating on dimension ... #1 #0 done. VAR=2
+iteration #0 on multi-start
+calculating on dimension ... #0 #1 done. VAR=2 updated!
+calculating on dimension ... #0 #1 done. VAR=2
+iteration #1 on multi-start
+calculating on dimension ... #1 #0 done. VAR=2
+calculating on dimension ... #1 #0 done. VAR=2
+iteration #0 on multi-start
+calculating on dimension ... #0 #1 done. VAR=2 updated!
+calculating on dimension ... #0 #1 done. VAR=2
+iteration #1 on multi-start
+calculating on dimension ... #1 #0 done. VAR=2
+calculating on dimension ... #1 #0 done. VAR=2
+#END# kgmbucket -ms F=2 f=x:xb,y:yb i=./indat/dat5s.csv k=id n=2,2 o=./outdat/out43.csv; IN=11 OUT=11; 2014/05/29 17:35:29
+iteration #0 on multi-start
+calculating on dimension ... #0 #1 done. VAR=2 updated!
+calculating on dimension ... #0 #1 done. VAR=2
+iteration #1 on multi-start
+calculating on dimension ... #1 #0 done. VAR=2
+calculating on dimension ... #1 #0 done. VAR=2
+iteration #0 on multi-start
+calculating on dimension ... #0 #1 done. VAR=2 updated!
+calculating on dimension ... #0 #1 done. VAR=2
+iteration #1 on multi-start
+calculating on dimension ... #1 #0 done. VAR=2
+calculating on dimension ... #1 #0 done. VAR=2
+iteration #0 on multi-start
+calculating on dimension ... #0 #1 done. VAR=2 updated!
+calculating on dimension ... #0 #1 done. VAR=2
+iteration #1 on multi-start
+calculating on dimension ... #1 #0 done. VAR=2
+calculating on dimension ... #1 #0 done. VAR=2
+iteration #0 on multi-start
+calculating on dimension ... #0 #1 done. VAR=2 updated!
+calculating on dimension ... #0 #1 done. VAR=2
+iteration #1 on multi-start
+calculating on dimension ... #1 #0 done. VAR=2
+calculating on dimension ... #1 #0 done. VAR=2
+#END# kgmbucket -ms -x F=2 f=1:xb,2:yb i=./indat/dat5s.csv k=0 n=2,2 o=./outdat/out43x.csv; IN=11 OUT=11; 2014/05/29 17:35:29
+iteration #0 on multi-start
+calculating on dimension ... #0 #1 done. VAR=2 updated!
+calculating on dimension ... #0 #1 done. VAR=2
+iteration #1 on multi-start
+calculating on dimension ... #1 #0 done. VAR=2
+calculating on dimension ... #1 #0 done. VAR=2
+iteration #0 on multi-start
+calculating on dimension ... #0 #1 done. VAR=2 updated!
+calculating on dimension ... #0 #1 done. VAR=2
+iteration #1 on multi-start
+calculating on dimension ... #1 #0 done. VAR=2
+calculating on dimension ... #1 #0 done. VAR=2
+iteration #0 on multi-start
+calculating on dimension ... #0 #1 done. VAR=2 updated!
+calculating on dimension ... #0 #1 done. VAR=2
+iteration #1 on multi-start
+calculating on dimension ... #1 #0 done. VAR=2
+calculating on dimension ... #1 #0 done. VAR=2
+iteration #0 on multi-start
+calculating on dimension ... #0 #1 done. VAR=2 updated!
+calculating on dimension ... #0 #1 done. VAR=2
+iteration #1 on multi-start
+calculating on dimension ... #1 #0 done. VAR=2
+calculating on dimension ... #1 #0 done. VAR=2
+#END# kgmbucket -ms -nfn F=2 f=1,2 i=./indat/dat5snfn.csv k=0 n=2,2 o=./outdat/out43nfn.csv; IN=11 OUT=11; 2014/05/29 17:35:29
+#END# kgmbucket O=./outdat/out48.csv f=x:xb,y:yb i=./indat/dat0.csv k=id n=2,2 o=./outdat/out47.csv; IN=0 OUT=0; 2014/05/29 17:35:29
+#END# kgmbucket -x O=./outdat/out48x.csv f=1:xb,2:yb i=./indat/dat0.csv k=0 n=2,2 o=./outdat/out47x.csv; IN=0 OUT=0; 2014/05/29 17:35:29
+#END# kgmbucket -nfn O=./outdat/out48nfn.csv f=1,2 i=./indat/dat0nfn.csv k=0 n=2,2 o=./outdat/out47nfn.csv; IN=0 OUT=0; 2014/05/29 17:35:29
+calculating on dimension ... #0 done. VAR=5 updated!
+calculating on dimension ... #0 done. VAR=5 updated!
+calculating on dimension ... #0 done. VAR=8 updated!
+#END# kgmbucket f=x:xb i=./indat/dat2.csv k=id n=2 o=./outdat/out49.csv; IN=10 OUT=10; 2014/05/29 17:35:29
+calculating on dimension ... #0 done. VAR=5 updated!
+calculating on dimension ... #0 done. VAR=5 updated!
+calculating on dimension ... #0 done. VAR=8 updated!
+#END# kgmbucket -x f=1:xb i=./indat/dat2.csv k=0 n=2 o=./outdat/out49x.csv; IN=10 OUT=10; 2014/05/29 17:35:29
+calculating on dimension ... #0 done. VAR=1 updated!
+calculating on dimension ... #0 done. VAR=2 updated!
+calculating on dimension ... #0 done. VAR=1 updated!
+calculating on dimension ... #0 done. VAR=2 updated!
+calculating on dimension ... #0 done. VAR=1 updated!
+calculating on dimension ... #0 done. VAR=5 updated!
+#END# kgmbucket -nfn f=1 i=./indat/dat2nfn.csv k=0 n=2 o=./outdat/out49nfn.csv; IN=10 OUT=10; 2014/05/29 17:35:29
+calculating on dimension ... #0 done. VAR=1 updated!
+calculating on dimension ... #0 done. VAR=2 updated!
+calculating on dimension ... #0 done. VAR=1 updated!
+calculating on dimension ... #0 done. VAR=2 updated!
+calculating on dimension ... #0 done. VAR=1 updated!
+calculating on dimension ... #0 done. VAR=5 updated!
+#END# kgmbucket -q f=x:xb i=./indat/dat2.csv k=id n=2 o=./outdat/out49q.csv; IN=10 OUT=10; 2014/05/29 17:35:29
+calculating on dimension ... #0 #1 done. VAR=3 updated!
+calculating on dimension ... #0 #1 done. VAR=3
+calculating on dimension ... #0 #1 done. VAR=3 updated!
+calculating on dimension ... #0 #1 done. VAR=3
+calculating on dimension ... #0 #1 done. VAR=6 updated!
+calculating on dimension ... #0 #1 done. VAR=4 updated!
+calculating on dimension ... #0 #1 done. VAR=4
+#END# kgmbucket f=x:xb,y:yb i=./indat/dat2.csv k=id n=3,2 o=./outdat/out50.csv; IN=10 OUT=10; 2014/05/29 17:35:29
+calculating on dimension ... #0 #1 done. VAR=3 updated!
+calculating on dimension ... #0 #1 done. VAR=3
+calculating on dimension ... #0 #1 done. VAR=3 updated!
+calculating on dimension ... #0 #1 done. VAR=3
+calculating on dimension ... #0 #1 done. VAR=6 updated!
+calculating on dimension ... #0 #1 done. VAR=4 updated!
+calculating on dimension ... #0 #1 done. VAR=4
+#END# kgmbucket -x f=1:xb,2:yb i=./indat/dat2.csv k=0 n=3,2 o=./outdat/out50x.csv; IN=10 OUT=10; 2014/05/29 17:35:29
+calculating on dimension ... #0 #1 done. VAR=1 updated!
+calculating on dimension ... #0 #1 done. VAR=1
+calculating on dimension ... #0 #1 done. VAR=2 updated!
+calculating on dimension ... #0 #1 done. VAR=2
+calculating on dimension ... #0 #1 done. VAR=1 updated!
+calculating on dimension ... #0 #1 done. VAR=1
+calculating on dimension ... #0 #1 done. VAR=2 updated!
+calculating on dimension ... #0 #1 done. VAR=2
+calculating on dimension ... #0 #1 done. VAR=1 updated!
+calculating on dimension ... #0 #1 done. VAR=1
+calculating on dimension ... #0 #1 done. VAR=3 updated!
+calculating on dimension ... #0 #1 done. VAR=3
+#END# kgmbucket -nfn f=1,2 i=./indat/dat2nfn.csv k=0 n=3,2 o=./outdat/out50nfn.csv; IN=10 OUT=10; 2014/05/29 17:35:29
+calculating on dimension ... #0 #1 done. VAR=3 updated!
+calculating on dimension ... #0 #1 done. VAR=3
+calculating on dimension ... #0 #1 done. VAR=3 updated!
+calculating on dimension ... #0 #1 done. VAR=3
+calculating on dimension ... #0 #1 done. VAR=6 updated!
+calculating on dimension ... #0 #1 done. VAR=4 updated!
+calculating on dimension ... #0 #1 done. VAR=4
+#END# kgmbucket bufcount=2 f=x:xb,y:yb i=./indat/dat2.csv k=id n=3,2 o=./outdat/out51.csv; IN=10 OUT=10; 2014/05/29 17:35:29
+#END# kgmbucket f=x:xb,y:yb i=./indat/dat6.csv k=id n=3,2 o=./outdat/out52.csv; IN=11 OUT=11; 2014/05/29 17:35:29
+calculating on dimension ... #0 #1 done. VAR=3 updated!
+calculating on dimension ... #0 #1 done. VAR=3
+calculating on dimension ... #0 #1 done. VAR=3 updated!
+calculating on dimension ... #0 #1 done. VAR=3
+calculating on dimension ... #0 #1 done. VAR=6 updated!
+calculating on dimension ... #0 #1 done. VAR=6
+#END# kgmbucket O=./outdat/out54.csv f=x:xb,y:yb i=./indat/dat2.csv k=id n=2,2 o=./outdat/out53.csv; IN=10 OUT=10; 2014/05/29 17:35:29
+calculating on dimension ... #0 #1 done. VAR=3 updated!
+calculating on dimension ... #0 #1 done. VAR=3
+calculating on dimension ... #0 #1 done. VAR=3 updated!
+calculating on dimension ... #0 #1 done. VAR=3
+calculating on dimension ... #0 #1 done. VAR=6 updated!
+calculating on dimension ... #0 #1 done. VAR=6
+#END# kgmbucket -x O=./outdat/out54x.csv f=1:xb,2:yb i=./indat/dat2.csv k=0 n=2,2 o=./outdat/out53x.csv; IN=10 OUT=10; 2014/05/29 17:35:29
+calculating on dimension ... #0 #1 done. VAR=1 updated!
+calculating on dimension ... #0 #1 done. VAR=1
+calculating on dimension ... #0 #1 done. VAR=2 updated!
+calculating on dimension ... #0 #1 done. VAR=2
+calculating on dimension ... #0 #1 done. VAR=1 updated!
+calculating on dimension ... #0 #1 done. VAR=1
+calculating on dimension ... #0 #1 done. VAR=2 updated!
+calculating on dimension ... #0 #1 done. VAR=2
+calculating on dimension ... #0 #1 done. VAR=1 updated!
+calculating on dimension ... #0 #1 done. VAR=1
+calculating on dimension ... #0 #1 done. VAR=5 updated!
+calculating on dimension ... #0 #1 done. VAR=3 updated!
+calculating on dimension ... #0 #1 done. VAR=3
+#END# kgmbucket -nfn O=./outdat/out54nfn.csv f=1,2 i=./indat/dat2nfn.csv k=0 n=2,2 o=./outdat/out53nfn.csv; IN=10 OUT=10; 2014/05/29 17:35:29
+calculating on dimension ... #0 #1 done. VAR=3 updated!
+calculating on dimension ... #0 #1 done. VAR=3
+calculating on dimension ... #0 #1 done. VAR=3 updated!
+calculating on dimension ... #0 #1 done. VAR=3
+calculating on dimension ... #0 #1 done. VAR=6 updated!
+calculating on dimension ... #0 #1 done. VAR=4 updated!
+calculating on dimension ... #0 #1 done. VAR=4
+#END# kgmbucket F=1 f=x:xb,y:yb i=./indat/dat2.csv k=id n=3,3 o=./outdat/out55.csv; IN=10 OUT=10; 2014/05/29 17:35:29
+calculating on dimension ... #0 #1 done. VAR=3 updated!
+calculating on dimension ... #0 #1 done. VAR=3
+calculating on dimension ... #0 #1 done. VAR=3 updated!
+calculating on dimension ... #0 #1 done. VAR=3
+calculating on dimension ... #0 #1 done. VAR=6 updated!
+calculating on dimension ... #0 #1 done. VAR=4 updated!
+calculating on dimension ... #0 #1 done. VAR=4
+#END# kgmbucket -x F=1 f=1:xb,2:yb i=./indat/dat2.csv k=0 n=3,3 o=./outdat/out55x.csv; IN=10 OUT=10; 2014/05/29 17:35:29
+calculating on dimension ... #0 #1 done. VAR=1 updated!
+calculating on dimension ... #0 #1 done. VAR=1
+calculating on dimension ... #0 #1 done. VAR=2 updated!
+calculating on dimension ... #0 #1 done. VAR=2
+calculating on dimension ... #0 #1 done. VAR=1 updated!
+calculating on dimension ... #0 #1 done. VAR=1
+calculating on dimension ... #0 #1 done. VAR=2 updated!
+calculating on dimension ... #0 #1 done. VAR=2
+calculating on dimension ... #0 #1 done. VAR=1 updated!
+calculating on dimension ... #0 #1 done. VAR=1
+calculating on dimension ... #0 #1 done. VAR=3 updated!
+calculating on dimension ... #0 #1 done. VAR=3
+#END# kgmbucket -nfn F=1 f=1,2 i=./indat/dat2nfn.csv k=0 n=3,3 o=./outdat/out55nfn.csv; IN=10 OUT=10; 2014/05/29 17:35:29
+calculating on dimension ... #0 #1 done. VAR=3 updated!
+calculating on dimension ... #0 #1 done. VAR=3
+calculating on dimension ... #0 #1 done. VAR=3 updated!
+calculating on dimension ... #0 #1 done. VAR=3
+calculating on dimension ... #0 #1 done. VAR=6 updated!
+calculating on dimension ... #0 #1 done. VAR=4 updated!
+calculating on dimension ... #0 #1 done. VAR=4
+#END# kgmbucket F=2 f=x:xb,y:yb i=./indat/dat2.csv k=id n=3,3 o=./outdat/out56.csv; IN=10 OUT=10; 2014/05/29 17:35:29
+calculating on dimension ... #0 #1 done. VAR=3 updated!
+calculating on dimension ... #0 #1 done. VAR=3
+calculating on dimension ... #0 #1 done. VAR=3 updated!
+calculating on dimension ... #0 #1 done. VAR=3
+calculating on dimension ... #0 #1 done. VAR=6 updated!
+calculating on dimension ... #0 #1 done. VAR=4 updated!
+calculating on dimension ... #0 #1 done. VAR=4
+#END# kgmbucket -x F=2 f=1:xb,2:yb i=./indat/dat2.csv k=0 n=3,3 o=./outdat/out56x.csv; IN=10 OUT=10; 2014/05/29 17:35:29
+calculating on dimension ... #0 #1 done. VAR=1 updated!
+calculating on dimension ... #0 #1 done. VAR=1
+calculating on dimension ... #0 #1 done. VAR=2 updated!
+calculating on dimension ... #0 #1 done. VAR=2
+calculating on dimension ... #0 #1 done. VAR=1 updated!
+calculating on dimension ... #0 #1 done. VAR=1
+calculating on dimension ... #0 #1 done. VAR=2 updated!
+calculating on dimension ... #0 #1 done. VAR=2
+calculating on dimension ... #0 #1 done. VAR=1 updated!
+calculating on dimension ... #0 #1 done. VAR=1
+calculating on dimension ... #0 #1 done. VAR=3 updated!
+calculating on dimension ... #0 #1 done. VAR=3
+#END# kgmbucket -nfn F=2 f=1,2 i=./indat/dat2nfn.csv k=0 n=3,3 o=./outdat/out56nfn.csv; IN=10 OUT=10; 2014/05/29 17:35:29
+calculating on dimension ... #0 #1 done. VAR=2 updated!
+calculating on dimension ... #0 #1 done. VAR=2
+calculating on dimension ... #0 #1 done. VAR=2 updated!
+calculating on dimension ... #0 #1 done. VAR=2
+calculating on dimension ... #0 #1 done. VAR=3 updated!
+calculating on dimension ... #0 #1 done. VAR=3
+#END# kgmbucket f=x:xb,y:yb i=./indat/dat4.csv k=id n=2,2 o=./outdat/out57.csv; IN=10 OUT=10; 2014/05/29 17:35:29
+calculating on dimension ... #0 #1 done. VAR=2 updated!
+calculating on dimension ... #0 #1 done. VAR=2
+calculating on dimension ... #0 #1 done. VAR=2 updated!
+calculating on dimension ... #0 #1 done. VAR=2
+calculating on dimension ... #0 #1 done. VAR=3 updated!
+calculating on dimension ... #0 #1 done. VAR=3
+#END# kgmbucket -x f=1:xb,2:yb i=./indat/dat4.csv k=0 n=2,2 o=./outdat/out57x.csv; IN=10 OUT=10; 2014/05/29 17:35:29
+calculating on dimension ... #0 #1 done. VAR=1 updated!
+calculating on dimension ... #0 #1 done. VAR=1
+calculating on dimension ... #0 #1 done. VAR=1 updated!
+calculating on dimension ... #0 #1 done. VAR=1
+calculating on dimension ... #0 #1 done. VAR=1 updated!
+calculating on dimension ... #0 #1 done. VAR=1
+calculating on dimension ... #0 #1 done. VAR=1 updated!
+calculating on dimension ... #0 #1 done. VAR=1
+calculating on dimension ... #0 #1 done. VAR=1 updated!
+calculating on dimension ... #0 #1 done. VAR=1
+calculating on dimension ... #0 #1 done. VAR=2 updated!
+calculating on dimension ... #0 #1 done. VAR=2
+#END# kgmbucket -nfn f=1,2 i=./indat/dat4nfn.csv k=0 n=2,2 o=./outdat/out57nfn.csv; IN=10 OUT=10; 2014/05/29 17:35:29
+calculating on dimension ... #0 #1 done. VAR=2 updated!
+calculating on dimension ... #0 #1 done. VAR=2
+calculating on dimension ... #0 #1 done. VAR=2 updated!
+calculating on dimension ... #0 #1 done. VAR=2
+calculating on dimension ... #0 #1 done. VAR=2 updated!
+calculating on dimension ... #0 #1 done. VAR=2
+calculating on dimension ... #0 #1 done. VAR=2 updated!
+calculating on dimension ... #0 #1 done. VAR=2
+#END# kgmbucket F=2 f=x:xb,y:yb i=./indat/dat5.csv k=id n=2,2 o=./outdat/out58.csv; IN=11 OUT=11; 2014/05/29 17:35:29
+calculating on dimension ... #0 #1 done. VAR=2 updated!
+calculating on dimension ... #0 #1 done. VAR=2
+calculating on dimension ... #0 #1 done. VAR=2 updated!
+calculating on dimension ... #0 #1 done. VAR=2
+calculating on dimension ... #0 #1 done. VAR=2 updated!
+calculating on dimension ... #0 #1 done. VAR=2
+calculating on dimension ... #0 #1 done. VAR=2 updated!
+calculating on dimension ... #0 #1 done. VAR=2
+#END# kgmbucket -x F=2 f=1:xb,2:yb i=./indat/dat5.csv k=0 n=2,2 o=./outdat/out58x.csv; IN=11 OUT=11; 2014/05/29 17:35:29
+calculating on dimension ... #0 #1 done. VAR=1 updated!
+calculating on dimension ... #0 #1 done. VAR=1
+calculating on dimension ... #0 #1 done. VAR=2 updated!
+calculating on dimension ... #0 #1 done. VAR=2
+calculating on dimension ... #0 #1 done. VAR=1 updated!
+calculating on dimension ... #0 #1 done. VAR=1
+calculating on dimension ... #0 #1 done. VAR=1 updated!
+calculating on dimension ... #0 #1 done. VAR=1
+calculating on dimension ... #0 #1 done. VAR=1 updated!
+calculating on dimension ... #0 #1 done. VAR=1
+calculating on dimension ... #0 #1 done. VAR=1 updated!
+calculating on dimension ... #0 #1 done. VAR=1
+calculating on dimension ... #0 #1 done. VAR=1 updated!
+calculating on dimension ... #0 #1 done. VAR=1
+#END# kgmbucket -nfn F=2 f=1,2 i=./indat/dat5nfn.csv k=0 n=2,2 o=./outdat/out58nfn.csv; IN=11 OUT=11; 2014/05/29 17:35:29

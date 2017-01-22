@@ -1,0 +1,443 @@
+#END# kgselstr f=商品 i=./indat/dat0.csv o=./outdat/out0.csv v=01,04,05; IN=0 OUT=0; 2014/06/10 02:06:43
+#END# kgselstr -x f=0 i=./indat/dat0.csv o=./outdat/out0x.csv v=01,04,05; IN=0 OUT=0; 2014/06/10 02:06:43
+#END# kgselstr -nfn f=0 i=./indat/dat0nfn.csv o=./outdat/out0nfn.csv v=01,04,05; IN=0 OUT=0; 2014/06/10 02:06:43
+#END# kgselstr -nfno f=商品 i=./indat/dat0.csv o=./outdat/out0nfno.csv v=01,04,05; IN=0 OUT=0; 2014/06/10 02:06:43
+#END# kgselstr f=商品 i=./indat/dat0.csv o=./outdat/out1.csv u=./outdat/out2.csv v=01,04,05; IN=0 OUT=0; 2014/06/10 02:06:43
+#END# kgselstr -x f=0 i=./indat/dat0.csv o=./outdat/out1x.csv u=./outdat/out2x.csv v=01,04,05; IN=0 OUT=0; 2014/06/10 02:06:43
+#END# kgselstr -nfn f=0 i=./indat/dat0nfn.csv o=./outdat/out1nfn.csv u=./outdat/out2nfn.csv v=01,04,05; IN=0 OUT=0; 2014/06/10 02:06:43
+#END# kgselstr -nfno f=商品 i=./indat/dat0.csv o=./outdat/out1nfno.csv u=./outdat/out2nfno.csv v=01,04,05; IN=0 OUT=0; 2014/06/10 02:06:43
+#END# kgselstr f=商品 i=./indat/dat1.csv o=./outdat/out3.csv v=01,04,05; IN=5 OUT=3; 2014/06/10 02:06:43
+#END# kgselstr -x f=0 i=./indat/dat1.csv o=./outdat/out3x.csv v=01,04,05; IN=5 OUT=3; 2014/06/10 02:06:43
+#END# kgselstr -nfn f=0 i=./indat/dat1nfn.csv o=./outdat/out3nfn.csv v=01,04,05; IN=5 OUT=3; 2014/06/10 02:06:43
+#END# kgselstr -nfno f=商品 i=./indat/dat1.csv o=./outdat/out3nfno.csv v=01,04,05; IN=5 OUT=3; 2014/06/10 02:06:43
+#END# kgselstr f=受注日,発送日 i=./indat/dat2.csv o=./outdat/out4.csv v=20090103,20090105; IN=5 OUT=4; 2014/06/10 02:06:43
+#END# kgselstr -x f=0,1 i=./indat/dat2.csv o=./outdat/out4x.csv v=20090103,20090105; IN=5 OUT=4; 2014/06/10 02:06:43
+#END# kgselstr -nfn f=0,1 i=./indat/dat2nfn.csv o=./outdat/out4nfn.csv v=20090103,20090105; IN=5 OUT=4; 2014/06/10 02:06:43
+#END# kgselstr -nfno f=受注日,発送日 i=./indat/dat2.csv o=./outdat/out4nfno.csv v=20090103,20090105; IN=5 OUT=4; 2014/06/10 02:06:43
+#END# kgselstr f=商品 i=./indat/dat1.csv o=./outdat/out5.csv u=./outdat/out6.csv v=01,04,05; IN=5 OUT=3; 2014/06/10 02:06:43
+#END# kgselstr -x f=0 i=./indat/dat1.csv o=./outdat/out5x.csv u=./outdat/out6x.csv v=01,04,05; IN=5 OUT=3; 2014/06/10 02:06:44
+#END# kgselstr -nfn f=0 i=./indat/dat1nfn.csv o=./outdat/out5nfn.csv u=./outdat/out6nfn.csv v=01,04,05; IN=5 OUT=3; 2014/06/10 02:06:44
+#END# kgselstr -nfno f=商品 i=./indat/dat1.csv o=./outdat/out5nfno.csv u=./outdat/out6nfno.csv v=01,04,05; IN=5 OUT=3; 2014/06/10 02:06:44
+#END# kgselstr f=受注日,発送日 i=./indat/dat2.csv o=./outdat/out7.csv u=./outdat/out8.csv v=20090103,20090105; IN=5 OUT=4; 2014/06/10 02:06:44
+#END# kgselstr -x f=0,1 i=./indat/dat2.csv o=./outdat/out7x.csv u=./outdat/out8x.csv v=20090103,20090105; IN=5 OUT=4; 2014/06/10 02:06:44
+#END# kgselstr -nfn f=0,1 i=./indat/dat2nfn.csv o=./outdat/out7nfn.csv u=./outdat/out8nfn.csv v=20090103,20090105; IN=5 OUT=4; 2014/06/10 02:06:44
+#END# kgselstr -nfno f=受注日,発送日 i=./indat/dat2.csv o=./outdat/out7nfno.csv u=./outdat/out8nfno.csv v=20090103,20090105; IN=5 OUT=4; 2014/06/10 02:06:44
+#END# kgselstr -r f=商品 i=./indat/dat1.csv o=./outdat/out9.csv v=01,04,05; IN=5 OUT=2; 2014/06/10 02:06:44
+#END# kgselstr -r -x f=0 i=./indat/dat1.csv o=./outdat/out9x.csv v=01,04,05; IN=5 OUT=2; 2014/06/10 02:06:44
+#END# kgselstr -nfn -r f=0 i=./indat/dat1nfn.csv o=./outdat/out9nfn.csv v=01,04,05; IN=5 OUT=2; 2014/06/10 02:06:44
+#END# kgselstr -nfno -r f=商品 i=./indat/dat1.csv o=./outdat/out9nfno.csv v=01,04,05; IN=5 OUT=2; 2014/06/10 02:06:44
+#END# kgselstr -r f=受注日,発送日 i=./indat/dat2.csv o=./outdat/out10.csv v=20090103,20090105; IN=5 OUT=1; 2014/06/10 02:06:44
+#END# kgselstr -r -x f=0,1 i=./indat/dat2.csv o=./outdat/out10x.csv v=20090103,20090105; IN=5 OUT=1; 2014/06/10 02:06:44
+#END# kgselstr -nfn -r f=0,1 i=./indat/dat2nfn.csv o=./outdat/out10nfn.csv v=20090103,20090105; IN=5 OUT=1; 2014/06/10 02:06:44
+#END# kgselstr -nfno -r f=受注日,発送日 i=./indat/dat2.csv o=./outdat/out10nfno.csv v=20090103,20090105; IN=5 OUT=1; 2014/06/10 02:06:44
+#END# kgselstr -r f=商品 i=./indat/dat1.csv o=./outdat/out11.csv u=./outdat/out12.csv v=01,04,05; IN=5 OUT=2; 2014/06/10 02:06:44
+#END# kgselstr -r -x f=0 i=./indat/dat1.csv o=./outdat/out11x.csv u=./outdat/out12x.csv v=01,04,05; IN=5 OUT=2; 2014/06/10 02:06:44
+#END# kgselstr -nfn -r f=0 i=./indat/dat1nfn.csv o=./outdat/out11nfn.csv u=./outdat/out12nfn.csv v=01,04,05; IN=5 OUT=2; 2014/06/10 02:06:44
+#END# kgselstr -nfno -r f=商品 i=./indat/dat1.csv o=./outdat/out11nfno.csv u=./outdat/out12nfno.csv v=01,04,05; IN=5 OUT=2; 2014/06/10 02:06:44
+#END# kgselstr -r f=受注日,発送日 i=./indat/dat2.csv o=./outdat/out13.csv u=./outdat/out14.csv v=20090103,20090105; IN=5 OUT=1; 2014/06/10 02:06:44
+#END# kgselstr -r -x f=0,1 i=./indat/dat2.csv o=./outdat/out13x.csv u=./outdat/out14x.csv v=20090103,20090105; IN=5 OUT=1; 2014/06/10 02:06:44
+#END# kgselstr -nfn -r f=0,1 i=./indat/dat2nfn.csv o=./outdat/out13nfn.csv u=./outdat/out14nfn.csv v=20090103,20090105; IN=5 OUT=1; 2014/06/10 02:06:44
+#END# kgselstr -nfno -r f=受注日,発送日 i=./indat/dat2.csv o=./outdat/out13nfno.csv u=./outdat/out14nfno.csv v=20090103,20090105; IN=5 OUT=1; 2014/06/10 02:06:44
+#END# kgselstr -F f=受注日,発送日 i=./indat/dat2.csv o=./outdat/out15.csv v=20090103,20090105; IN=5 OUT=1; 2014/06/10 02:06:44
+#END# kgselstr -F -x f=0,1 i=./indat/dat2.csv o=./outdat/out15x.csv v=20090103,20090105; IN=5 OUT=1; 2014/06/10 02:06:44
+#END# kgselstr -F -nfn f=0,1 i=./indat/dat2nfn.csv o=./outdat/out15nfn.csv v=20090103,20090105; IN=5 OUT=1; 2014/06/10 02:06:44
+#END# kgselstr -F -nfno f=受注日,発送日 i=./indat/dat2.csv o=./outdat/out15nfno.csv v=20090103,20090105; IN=5 OUT=1; 2014/06/10 02:06:44
+#END# kgselstr -F f=受注日,発送日 i=./indat/dat2.csv o=./outdat/out16.csv u=./outdat/out17.csv v=20090103,20090105; IN=5 OUT=1; 2014/06/10 02:06:44
+#END# kgselstr -F -x f=0,1 i=./indat/dat2.csv o=./outdat/out16x.csv u=./outdat/out17x.csv v=20090103,20090105; IN=5 OUT=1; 2014/06/10 02:06:44
+#END# kgselstr -F -nfn f=0,1 i=./indat/dat2nfn.csv o=./outdat/out16nfn.csv u=./outdat/out17nfn.csv v=20090103,20090105; IN=5 OUT=1; 2014/06/10 02:06:44
+#END# kgselstr -F -nfno f=受注日,発送日 i=./indat/dat2.csv o=./outdat/out16nfno.csv u=./outdat/out17nfno.csv v=20090103,20090105; IN=5 OUT=1; 2014/06/10 02:06:44
+#END# kgselstr -F -r f=受注日,発送日 i=./indat/dat2.csv o=./outdat/out18.csv v=20090103,20090105; IN=5 OUT=4; 2014/06/10 02:06:44
+#END# kgselstr -F -r -x f=0,1 i=./indat/dat2.csv o=./outdat/out18x.csv v=20090103,20090105; IN=5 OUT=4; 2014/06/10 02:06:44
+#END# kgselstr -F -nfn -r f=0,1 i=./indat/dat2nfn.csv o=./outdat/out18nfn.csv v=20090103,20090105; IN=5 OUT=4; 2014/06/10 02:06:44
+#END# kgselstr -F -nfno -r f=受注日,発送日 i=./indat/dat2.csv o=./outdat/out18nfno.csv v=20090103,20090105; IN=5 OUT=4; 2014/06/10 02:06:44
+#END# kgselstr -F -r f=受注日,発送日 i=./indat/dat2.csv o=./outdat/out19.csv u=./outdat/out20.csv v=20090103,20090105; IN=5 OUT=4; 2014/06/10 02:06:44
+#END# kgselstr -F -r -x f=0,1 i=./indat/dat2.csv o=./outdat/out19x.csv u=./outdat/out20x.csv v=20090103,20090105; IN=5 OUT=4; 2014/06/10 02:06:44
+#END# kgselstr -F -nfn -r f=0,1 i=./indat/dat2nfn.csv o=./outdat/out19nfn.csv u=./outdat/out20nfn.csv v=20090103,20090105; IN=5 OUT=4; 2014/06/10 02:06:44
+#END# kgselstr -F -nfno -r f=受注日,発送日 i=./indat/dat2.csv o=./outdat/out19nfno.csv u=./outdat/out20nfno.csv v=20090103,20090105; IN=5 OUT=4; 2014/06/10 02:06:44
+#END# kgselstr f=商品 i=./indat/dat3s.csv k=顧客 o=./outdat/out21.csv u=./outdat/out22.csv v=01,03; IN=5 OUT=3; 2014/06/10 02:06:44
+#END# kgselstr -x f=1 i=./indat/dat3s.csv k=0 o=./outdat/out21x.csv u=./outdat/out22x.csv v=01,03; IN=5 OUT=3; 2014/06/10 02:06:44
+#END# kgselstr -nfn f=1 i=./indat/dat3snfn.csv k=0 o=./outdat/out21nfn.csv u=./outdat/out22nfn.csv v=01,03; IN=5 OUT=3; 2014/06/10 02:06:44
+#END# kgselstr -nfno f=商品 i=./indat/dat3s.csv k=顧客 o=./outdat/out21nfno.csv u=./outdat/out22nfno.csv v=01,03; IN=5 OUT=3; 2014/06/10 02:06:44
+#END# kgselstr -q f=商品 i=./indat/dat3s.csv k=顧客 o=./outdat/out21q.csv u=./outdat/out22q.csv v=01,03; IN=5 OUT=3; 2014/06/10 02:06:44
+#END# kgselstr -q -x f=1 i=./indat/dat3s.csv k=0 o=./outdat/out21qx.csv u=./outdat/out22qx.csv v=01,03; IN=5 OUT=3; 2014/06/10 02:06:44
+#END# kgselstr -r f=商品 i=./indat/dat3s.csv k=顧客 o=./outdat/out23.csv u=./outdat/out24.csv v=01,03; IN=5 OUT=2; 2014/06/10 02:06:44
+#END# kgselstr -r -x f=1 i=./indat/dat3s.csv k=0 o=./outdat/out23x.csv u=./outdat/out24x.csv v=01,03; IN=5 OUT=2; 2014/06/10 02:06:44
+#END# kgselstr -nfn -r f=1 i=./indat/dat3snfn.csv k=0 o=./outdat/out23nfn.csv u=./outdat/out24nfn.csv v=01,03; IN=5 OUT=2; 2014/06/10 02:06:44
+#END# kgselstr -nfno -r f=商品 i=./indat/dat3s.csv k=顧客 o=./outdat/out23nfno.csv u=./outdat/out24nfno.csv v=01,03; IN=5 OUT=2; 2014/06/10 02:06:44
+#END# kgselstr f=受注日,発送日 i=./indat/dat4s.csv k=顧客 o=./outdat/out25.csv u=./outdat/out26.csv v=20090101,20090102; IN=10 OUT=7; 2014/06/10 02:06:44
+#END# kgselstr -x f=1,2 i=./indat/dat4s.csv k=0 o=./outdat/out25x.csv u=./outdat/out26x.csv v=20090101,20090102; IN=10 OUT=7; 2014/06/10 02:06:44
+#END# kgselstr -nfn f=1,2 i=./indat/dat4snfn.csv k=0 o=./outdat/out25nfn.csv u=./outdat/out26nfn.csv v=20090101,20090102; IN=10 OUT=7; 2014/06/10 02:06:44
+#END# kgselstr -nfno f=受注日,発送日 i=./indat/dat4s.csv k=顧客 o=./outdat/out25nfno.csv u=./outdat/out26nfno.csv v=20090101,20090102; IN=10 OUT=7; 2014/06/10 02:06:44
+#END# kgselstr -r f=受注日,発送日 i=./indat/dat4s.csv k=顧客 o=./outdat/out27.csv u=./outdat/out28.csv v=20090101,20090102; IN=10 OUT=3; 2014/06/10 02:06:44
+#END# kgselstr -r -x f=1,2 i=./indat/dat4s.csv k=0 o=./outdat/out27x.csv u=./outdat/out28x.csv v=20090101,20090102; IN=10 OUT=3; 2014/06/10 02:06:44
+#END# kgselstr -nfn -r f=1,2 i=./indat/dat4snfn.csv k=0 o=./outdat/out27nfn.csv u=./outdat/out28nfn.csv v=20090101,20090102; IN=10 OUT=3; 2014/06/10 02:06:44
+#END# kgselstr -nfno -r f=受注日,発送日 i=./indat/dat4s.csv k=顧客 o=./outdat/out27nfno.csv u=./outdat/out28nfno.csv v=20090101,20090102; IN=10 OUT=3; 2014/06/10 02:06:44
+#END# kgselstr -F f=受注日,発送日 i=./indat/dat4s.csv k=顧客 o=./outdat/out29.csv u=./outdat/out30.csv v=20090101,20090102; IN=10 OUT=5; 2014/06/10 02:06:44
+#END# kgselstr -F -x f=1,2 i=./indat/dat4s.csv k=0 o=./outdat/out29x.csv u=./outdat/out30x.csv v=20090101,20090102; IN=10 OUT=5; 2014/06/10 02:06:44
+#END# kgselstr -F -nfn f=1,2 i=./indat/dat4snfn.csv k=0 o=./outdat/out29nfn.csv u=./outdat/out30nfn.csv v=20090101,20090102; IN=10 OUT=5; 2014/06/10 02:06:44
+#END# kgselstr -F -nfno f=受注日,発送日 i=./indat/dat4s.csv k=顧客 o=./outdat/out29nfno.csv u=./outdat/out30nfno.csv v=20090101,20090102; IN=10 OUT=5; 2014/06/10 02:06:44
+#END# kgselstr -F -r f=受注日,発送日 i=./indat/dat4s.csv k=顧客 o=./outdat/out31.csv u=./outdat/out32.csv v=20090101,20090102; IN=10 OUT=5; 2014/06/10 02:06:44
+#END# kgselstr -F -r -x f=1,2 i=./indat/dat4s.csv k=0 o=./outdat/out31x.csv u=./outdat/out32x.csv v=20090101,20090102; IN=10 OUT=5; 2014/06/10 02:06:44
+#END# kgselstr -F -nfn -r f=1,2 i=./indat/dat4snfn.csv k=0 o=./outdat/out31nfn.csv u=./outdat/out32nfn.csv v=20090101,20090102; IN=10 OUT=5; 2014/06/10 02:06:44
+#END# kgselstr -F -nfno -r f=受注日,発送日 i=./indat/dat4s.csv k=顧客 o=./outdat/out31nfno.csv u=./outdat/out32nfno.csv v=20090101,20090102; IN=10 OUT=5; 2014/06/10 02:06:44
+#END# kgselstr -R f=商品 i=./indat/dat3s.csv k=顧客 o=./outdat/out33.csv u=./outdat/out34.csv v=04,05; IN=5 OUT=2; 2014/06/10 02:06:44
+#END# kgselstr -R -x f=1 i=./indat/dat3s.csv k=0 o=./outdat/out33x.csv u=./outdat/out34x.csv v=04,05; IN=5 OUT=2; 2014/06/10 02:06:44
+#END# kgselstr -R -nfn f=1 i=./indat/dat3snfn.csv k=0 o=./outdat/out33nfn.csv u=./outdat/out34nfn.csv v=04,05; IN=5 OUT=2; 2014/06/10 02:06:44
+#END# kgselstr -R -nfno f=商品 i=./indat/dat3s.csv k=顧客 o=./outdat/out33nfno.csv u=./outdat/out34nfno.csv v=04,05; IN=5 OUT=2; 2014/06/10 02:06:44
+#END# kgselstr -R -r f=商品 i=./indat/dat3s.csv k=顧客 o=./outdat/out35.csv u=./outdat/out36.csv v=04,05; IN=5 OUT=3; 2014/06/10 02:06:44
+#END# kgselstr -R -r -x f=1 i=./indat/dat3s.csv k=0 o=./outdat/out35x.csv u=./outdat/out36x.csv v=04,05; IN=5 OUT=3; 2014/06/10 02:06:44
+#END# kgselstr -R -nfn -r f=1 i=./indat/dat3snfn.csv k=0 o=./outdat/out35nfn.csv u=./outdat/out36nfn.csv v=04,05; IN=5 OUT=3; 2014/06/10 02:06:44
+#END# kgselstr -R -nfno -r f=商品 i=./indat/dat3s.csv k=顧客 o=./outdat/out35nfno.csv u=./outdat/out36nfno.csv v=04,05; IN=5 OUT=3; 2014/06/10 02:06:44
+#END# kgselstr -R f=受注日,発送日 i=./indat/dat4s.csv k=顧客 o=./outdat/out37.csv u=./outdat/out38.csv v=20090103,20090104,20090105,20090106; IN=10 OUT=5; 2014/06/10 02:06:44
+#END# kgselstr -R -x f=1,2 i=./indat/dat4s.csv k=0 o=./outdat/out37x.csv u=./outdat/out38x.csv v=20090103,20090104,20090105,20090106; IN=10 OUT=5; 2014/06/10 02:06:44
+#END# kgselstr -R -nfn f=1,2 i=./indat/dat4snfn.csv k=0 o=./outdat/out37nfn.csv u=./outdat/out38nfn.csv v=20090103,20090104,20090105,20090106; IN=10 OUT=5; 2014/06/10 02:06:44
+#END# kgselstr -R -nfno f=受注日,発送日 i=./indat/dat4s.csv k=顧客 o=./outdat/out37nfno.csv u=./outdat/out38nfno.csv v=20090103,20090104,20090105,20090106; IN=10 OUT=5; 2014/06/10 02:06:44
+#END# kgselstr -R -r f=受注日,発送日 i=./indat/dat4s.csv k=顧客 o=./outdat/out39.csv u=./outdat/out40.csv v=20090103,20090104,20090105,20090106; IN=10 OUT=5; 2014/06/10 02:06:44
+#END# kgselstr -R -r -x f=1,2 i=./indat/dat4s.csv k=0 o=./outdat/out39x.csv u=./outdat/out40x.csv v=20090103,20090104,20090105,20090106; IN=10 OUT=5; 2014/06/10 02:06:44
+#END# kgselstr -R -nfn -r f=1,2 i=./indat/dat4snfn.csv k=0 o=./outdat/out39nfn.csv u=./outdat/out40nfn.csv v=20090103,20090104,20090105,20090106; IN=10 OUT=5; 2014/06/10 02:06:44
+#END# kgselstr -R -nfno -r f=受注日,発送日 i=./indat/dat4s.csv k=顧客 o=./outdat/out39nfno.csv u=./outdat/out40nfno.csv v=20090103,20090104,20090105,20090106; IN=10 OUT=5; 2014/06/10 02:06:44
+#END# kgselstr -F -R f=受注日,発送日 i=./indat/dat4s.csv k=顧客 o=./outdat/out41.csv u=./outdat/out42.csv v=20090103,20090104,20090105,20090106; IN=10 OUT=3; 2014/06/10 02:06:44
+#END# kgselstr -F -R -x f=1,2 i=./indat/dat4s.csv k=0 o=./outdat/out41x.csv u=./outdat/out42x.csv v=20090103,20090104,20090105,20090106; IN=10 OUT=3; 2014/06/10 02:06:44
+#END# kgselstr -F -R -nfn f=1,2 i=./indat/dat4snfn.csv k=0 o=./outdat/out41nfn.csv u=./outdat/out42nfn.csv v=20090103,20090104,20090105,20090106; IN=10 OUT=3; 2014/06/10 02:06:44
+#END# kgselstr -F -R -nfno f=受注日,発送日 i=./indat/dat4s.csv k=顧客 o=./outdat/out41nfno.csv u=./outdat/out42nfno.csv v=20090103,20090104,20090105,20090106; IN=10 OUT=3; 2014/06/10 02:06:44
+#END# kgselstr -F -R -r f=受注日,発送日 i=./indat/dat4s.csv k=顧客 o=./outdat/out43.csv u=./outdat/out44.csv v=20090103,20090104,20090105,20090106; IN=10 OUT=7; 2014/06/10 02:06:44
+#END# kgselstr -F -R -r -x f=1,2 i=./indat/dat4s.csv k=0 o=./outdat/out43x.csv u=./outdat/out44x.csv v=20090103,20090104,20090105,20090106; IN=10 OUT=7; 2014/06/10 02:06:44
+#END# kgselstr -F -R -nfn -r f=1,2 i=./indat/dat4snfn.csv k=0 o=./outdat/out43nfn.csv u=./outdat/out44nfn.csv v=20090103,20090104,20090105,20090106; IN=10 OUT=7; 2014/06/10 02:06:44
+#END# kgselstr -F -R -nfno -r f=受注日,発送日 i=./indat/dat4s.csv k=顧客 o=./outdat/out43nfno.csv u=./outdat/out44nfno.csv v=20090103,20090104,20090105,20090106; IN=10 OUT=7; 2014/06/10 02:06:44
+#END# kgselstr -sub bufcount=2 f=商品 i=./indat/dat3s.csv k=顧客 o=./outdat/out161.csv u=./outdat/out162.csv v=1,3; IN=5 OUT=3; 2014/06/10 02:06:44
+#END# kgselstr -sub bufcount=-2 f=商品 i=./indat/dat3s.csv k=顧客 o=./outdat/out163.csv u=./outdat/out164.csv v=1,3; IN=5 OUT=3; 2014/06/10 02:06:44
+#END# kgselstr -sub f=商品 i=./indat/dat1.csv o=./outdat/out45.csv u=./outdat/out46.csv v=1,4,5; IN=5 OUT=3; 2014/06/10 02:06:44
+#END# kgselstr -sub -x f=0 i=./indat/dat1.csv o=./outdat/out45x.csv u=./outdat/out46x.csv v=1,4,5; IN=5 OUT=3; 2014/06/10 02:06:44
+#END# kgselstr -nfn -sub f=0 i=./indat/dat1nfn.csv o=./outdat/out45nfn.csv u=./outdat/out46nfn.csv v=1,4,5; IN=5 OUT=3; 2014/06/10 02:06:44
+#END# kgselstr -nfno -sub f=商品 i=./indat/dat1.csv o=./outdat/out45nfno.csv u=./outdat/out46nfno.csv v=1,4,5; IN=5 OUT=3; 2014/06/10 02:06:44
+#END# kgselstr -r -sub f=商品 i=./indat/dat1.csv o=./outdat/out47.csv u=./outdat/out48.csv v=1,4,5; IN=5 OUT=2; 2014/06/10 02:06:44
+#END# kgselstr -r -sub -x f=0 i=./indat/dat1.csv o=./outdat/out47x.csv u=./outdat/out48x.csv v=1,4,5; IN=5 OUT=2; 2014/06/10 02:06:44
+#END# kgselstr -nfn -r -sub f=0 i=./indat/dat1nfn.csv o=./outdat/out47nfn.csv u=./outdat/out48nfn.csv v=1,4,5; IN=5 OUT=2; 2014/06/10 02:06:44
+#END# kgselstr -sub f=受注日,発送日 i=./indat/dat2.csv o=./outdat/out49.csv u=./outdat/out50.csv v=03,05; IN=5 OUT=4; 2014/06/10 02:06:44
+#END# kgselstr -sub -x f=1,2 i=./indat/dat2.csv o=./outdat/out49x.csv u=./outdat/out50x.csv v=03,05; IN=5 OUT=4; 2014/06/10 02:06:44
+#END# kgselstr -nfn -sub f=1,2 i=./indat/dat2nfn.csv o=./outdat/out49nfn.csv u=./outdat/out50nfn.csv v=03,05; IN=5 OUT=4; 2014/06/10 02:06:44
+#END# kgselstr -r -sub f=受注日,発送日 i=./indat/dat2.csv o=./outdat/out51.csv u=./outdat/out52.csv v=03,05; IN=5 OUT=1; 2014/06/10 02:06:44
+#END# kgselstr -r -sub -x f=1,2 i=./indat/dat2.csv o=./outdat/out51x.csv u=./outdat/out52x.csv v=03,05; IN=5 OUT=1; 2014/06/10 02:06:44
+#END# kgselstr -nfn -r -sub f=1,2 i=./indat/dat2nfn.csv o=./outdat/out51nfn.csv u=./outdat/out52nfn.csv v=03,05; IN=5 OUT=1; 2014/06/10 02:06:44
+#END# kgselstr -sub f=商品 i=./indat/dat3s.csv k=顧客 o=./outdat/out53.csv u=./outdat/out54.csv v=1,3; IN=5 OUT=3; 2014/06/10 02:06:44
+#END# kgselstr -sub -x f=1 i=./indat/dat3s.csv k=0 o=./outdat/out53x.csv u=./outdat/out54x.csv v=1,3; IN=5 OUT=3; 2014/06/10 02:06:44
+#END# kgselstr -nfn -sub f=1 i=./indat/dat3snfn.csv k=0 o=./outdat/out53nfn.csv u=./outdat/out54nfn.csv v=1,3; IN=5 OUT=3; 2014/06/10 02:06:44
+#END# kgselstr -r -sub f=商品 i=./indat/dat3s.csv k=顧客 o=./outdat/out55.csv u=./outdat/out56.csv v=1,3; IN=5 OUT=2; 2014/06/10 02:06:44
+#END# kgselstr -r -sub -x f=1 i=./indat/dat3s.csv k=0 o=./outdat/out55x.csv u=./outdat/out56x.csv v=1,3; IN=5 OUT=2; 2014/06/10 02:06:44
+#END# kgselstr -nfn -r -sub f=1 i=./indat/dat3snfn.csv k=0 o=./outdat/out55nfn.csv u=./outdat/out56nfn.csv v=1,3; IN=5 OUT=2; 2014/06/10 02:06:44
+#END# kgselstr -R -sub f=商品 i=./indat/dat3s.csv k=顧客 o=./outdat/out57.csv u=./outdat/out58.csv v=4,5; IN=5 OUT=2; 2014/06/10 02:06:44
+#END# kgselstr -R -sub -x f=1 i=./indat/dat3s.csv k=0 o=./outdat/out57x.csv u=./outdat/out58x.csv v=4,5; IN=5 OUT=2; 2014/06/10 02:06:44
+#END# kgselstr -R -nfn -sub f=1 i=./indat/dat3snfn.csv k=0 o=./outdat/out57nfn.csv u=./outdat/out58nfn.csv v=4,5; IN=5 OUT=2; 2014/06/10 02:06:44
+#END# kgselstr -R -r -sub f=商品 i=./indat/dat3s.csv k=顧客 o=./outdat/out59.csv u=./outdat/out60.csv v=4,5; IN=5 OUT=3; 2014/06/10 02:06:44
+#END# kgselstr -R -r -sub -x f=1 i=./indat/dat3s.csv k=0 o=./outdat/out59x.csv u=./outdat/out60x.csv v=4,5; IN=5 OUT=3; 2014/06/10 02:06:44
+#END# kgselstr -R -nfn -r -sub f=1 i=./indat/dat3snfn.csv k=0 o=./outdat/out59nfn.csv u=./outdat/out60nfn.csv v=4,5; IN=5 OUT=3; 2014/06/10 02:06:44
+#END# kgselstr -sub f=受注日,発送日 i=./indat/dat4s.csv k=顧客 o=./outdat/out61.csv u=./outdat/out62.csv v=06; IN=10 OUT=3; 2014/06/10 02:06:44
+#END# kgselstr -sub -x f=1,2 i=./indat/dat4s.csv k=0 o=./outdat/out61x.csv u=./outdat/out62x.csv v=06; IN=10 OUT=3; 2014/06/10 02:06:44
+#END# kgselstr -nfn -sub f=1,2 i=./indat/dat4snfn.csv k=0 o=./outdat/out61nfn.csv u=./outdat/out62nfn.csv v=06; IN=10 OUT=3; 2014/06/10 02:06:44
+#END# kgselstr -r -sub f=受注日,発送日 i=./indat/dat4s.csv k=顧客 o=./outdat/out63.csv u=./outdat/out64.csv v=06; IN=10 OUT=7; 2014/06/10 02:06:44
+#END# kgselstr -r -sub -x f=1,2 i=./indat/dat4s.csv k=0 o=./outdat/out63x.csv u=./outdat/out64x.csv v=06; IN=10 OUT=7; 2014/06/10 02:06:44
+#END# kgselstr -nfn -r -sub f=1,2 i=./indat/dat4snfn.csv k=0 o=./outdat/out63nfn.csv u=./outdat/out64nfn.csv v=06; IN=10 OUT=7; 2014/06/10 02:06:44
+#END# kgselstr -F -sub f=受注日,発送日 i=./indat/dat4s.csv k=顧客 o=./outdat/out65.csv u=./outdat/out66.csv v=0101,0102; IN=10 OUT=5; 2014/06/10 02:06:44
+#END# kgselstr -F -sub -x f=1,2 i=./indat/dat4s.csv k=0 o=./outdat/out65x.csv u=./outdat/out66x.csv v=0101,0102; IN=10 OUT=5; 2014/06/10 02:06:44
+#END# kgselstr -F -nfn -sub f=1,2 i=./indat/dat4snfn.csv k=0 o=./outdat/out65nfn.csv u=./outdat/out66nfn.csv v=0101,0102; IN=10 OUT=5; 2014/06/10 02:06:44
+#END# kgselstr -F -r -sub f=受注日,発送日 i=./indat/dat4s.csv k=顧客 o=./outdat/out67.csv u=./outdat/out68.csv v=0101,0102; IN=10 OUT=5; 2014/06/10 02:06:44
+#END# kgselstr -F -r -sub -x f=1,2 i=./indat/dat4s.csv k=0 o=./outdat/out67x.csv u=./outdat/out68x.csv v=0101,0102; IN=10 OUT=5; 2014/06/10 02:06:44
+#END# kgselstr -F -nfn -r -sub f=1,2 i=./indat/dat4snfn.csv k=0 o=./outdat/out67nfn.csv u=./outdat/out68nfn.csv v=0101,0102; IN=10 OUT=5; 2014/06/10 02:06:44
+#END# kgselstr -R -sub f=受注日,発送日 i=./indat/dat4s.csv k=顧客 o=./outdat/out69.csv u=./outdat/out70.csv v=03,04,05,06; IN=10 OUT=5; 2014/06/10 02:06:44
+#END# kgselstr -R -sub -x f=1,2 i=./indat/dat4s.csv k=0 o=./outdat/out69x.csv u=./outdat/out70x.csv v=03,04,05,06; IN=10 OUT=5; 2014/06/10 02:06:44
+#END# kgselstr -R -nfn -sub f=1,2 i=./indat/dat4snfn.csv k=0 o=./outdat/out69nfn.csv u=./outdat/out70nfn.csv v=03,04,05,06; IN=10 OUT=5; 2014/06/10 02:06:44
+#END# kgselstr -R -r -sub f=受注日,発送日 i=./indat/dat4s.csv k=顧客 o=./outdat/out71.csv u=./outdat/out72.csv v=03,04,05,06; IN=10 OUT=5; 2014/06/10 02:06:44
+#END# kgselstr -R -r -sub -x f=1,2 i=./indat/dat4s.csv k=0 o=./outdat/out71x.csv u=./outdat/out72x.csv v=03,04,05,06; IN=10 OUT=5; 2014/06/10 02:06:44
+#END# kgselstr -R -nfn -r -sub f=1,2 i=./indat/dat4snfn.csv k=0 o=./outdat/out71nfn.csv u=./outdat/out72nfn.csv v=03,04,05,06; IN=10 OUT=5; 2014/06/10 02:06:44
+#END# kgselstr -F -R -sub f=受注日,発送日 i=./indat/dat4s.csv k=顧客 o=./outdat/out73.csv u=./outdat/out74.csv v=03,04,05,06; IN=10 OUT=3; 2014/06/10 02:06:44
+#END# kgselstr -F -R -sub -x f=1,2 i=./indat/dat4s.csv k=0 o=./outdat/out73x.csv u=./outdat/out74x.csv v=03,04,05,06; IN=10 OUT=3; 2014/06/10 02:06:44
+#END# kgselstr -F -R -nfn -sub f=1,2 i=./indat/dat4snfn.csv k=0 o=./outdat/out73nfn.csv u=./outdat/out74nfn.csv v=03,04,05,06; IN=10 OUT=3; 2014/06/10 02:06:44
+#END# kgselstr -F -R -r -sub f=受注日,発送日 i=./indat/dat4s.csv k=顧客 o=./outdat/out75.csv u=./outdat/out76.csv v=03,04,05,06; IN=10 OUT=7; 2014/06/10 02:06:44
+#END# kgselstr -F -R -r -sub -x f=1,2 i=./indat/dat4s.csv k=0 o=./outdat/out75x.csv u=./outdat/out76x.csv v=03,04,05,06; IN=10 OUT=7; 2014/06/10 02:06:45
+#END# kgselstr -F -R -nfn -r -sub f=1,2 i=./indat/dat4snfn.csv k=0 o=./outdat/out75nfn.csv u=./outdat/out76nfn.csv v=03,04,05,06; IN=10 OUT=7; 2014/06/10 02:06:45
+#END# kgselstr -sub f=商品 i=./indat/dat5.csv o=./outdat/out77.csv u=./outdat/out78.csv v=柿,桃,葡萄; IN=5 OUT=3; 2014/06/10 02:06:45
+#END# kgselstr -sub -x f=0 i=./indat/dat5.csv o=./outdat/out77x.csv u=./outdat/out78x.csv v=柿,桃,葡萄; IN=5 OUT=3; 2014/06/10 02:06:45
+#END# kgselstr -nfn -sub f=0 i=./indat/dat5nfn.csv o=./outdat/out77nfn.csv u=./outdat/out78nfn.csv v=柿,桃,葡萄; IN=5 OUT=3; 2014/06/10 02:06:45
+#END# kgselstr -nfno -sub f=商品 i=./indat/dat5.csv o=./outdat/out77nfno.csv u=./outdat/out78nfno.csv v=柿,桃,葡萄; IN=5 OUT=3; 2014/06/10 02:06:45
+#END# kgselstr -r -sub f=商品 i=./indat/dat5.csv o=./outdat/out79.csv u=./outdat/out80.csv v=柿,桃,葡萄; IN=5 OUT=2; 2014/06/10 02:06:45
+#END# kgselstr -r -sub -x f=0 i=./indat/dat5.csv o=./outdat/out79x.csv u=./outdat/out80x.csv v=柿,桃,葡萄; IN=5 OUT=2; 2014/06/10 02:06:45
+#END# kgselstr -nfn -r -sub f=0 i=./indat/dat5nfn.csv o=./outdat/out79nfn.csv u=./outdat/out80nfn.csv v=柿,桃,葡萄; IN=5 OUT=2; 2014/06/10 02:06:45
+#END# kgselstr -sub f=受注日,発送日 i=./indat/dat6.csv o=./outdat/out81.csv u=./outdat/out82.csv v=０３,０５; IN=5 OUT=4; 2014/06/10 02:06:45
+#END# kgselstr -sub -x f=1,2 i=./indat/dat6.csv o=./outdat/out81x.csv u=./outdat/out82x.csv v=０３,０５; IN=5 OUT=4; 2014/06/10 02:06:45
+#END# kgselstr -nfn -sub f=1,2 i=./indat/dat6nfn.csv o=./outdat/out81nfn.csv u=./outdat/out82nfn.csv v=０３,０５; IN=5 OUT=4; 2014/06/10 02:06:45
+#END# kgselstr -r -sub f=受注日,発送日 i=./indat/dat6.csv o=./outdat/out83.csv u=./outdat/out84.csv v=０３,０５; IN=5 OUT=1; 2014/06/10 02:06:45
+#END# kgselstr -r -sub -x f=1,2 i=./indat/dat6.csv o=./outdat/out83x.csv u=./outdat/out84x.csv v=０３,０５; IN=5 OUT=1; 2014/06/10 02:06:45
+#END# kgselstr -nfn -r -sub f=1,2 i=./indat/dat6nfn.csv o=./outdat/out83nfn.csv u=./outdat/out84nfn.csv v=０３,０５; IN=5 OUT=1; 2014/06/10 02:06:45
+#END# kgselstr -W -sub f=商品 i=./indat/dat7s.csv k=顧客 o=./outdat/out85.csv u=./outdat/out86.csv v=柿,葡萄; IN=5 OUT=3; 2014/06/10 02:06:45
+#END# kgselstr -W -sub -x f=1 i=./indat/dat7s.csv k=0 o=./outdat/out85x.csv u=./outdat/out86x.csv v=柿,葡萄; IN=5 OUT=3; 2014/06/10 02:06:45
+#END# kgselstr -W -nfn -sub f=1 i=./indat/dat7snfn.csv k=0 o=./outdat/out85nfn.csv u=./outdat/out86nfn.csv v=柿,葡萄; IN=5 OUT=3; 2014/06/10 02:06:45
+#END# kgselstr -W -r -sub f=商品 i=./indat/dat7s.csv k=顧客 o=./outdat/out87.csv u=./outdat/out88.csv v=柿,葡萄; IN=5 OUT=2; 2014/06/10 02:06:45
+#END# kgselstr -W -r -sub -x f=1 i=./indat/dat7s.csv k=0 o=./outdat/out87x.csv u=./outdat/out88x.csv v=柿,葡萄; IN=5 OUT=2; 2014/06/10 02:06:45
+#END# kgselstr -W -nfn -r -sub f=1 i=./indat/dat7snfn.csv k=0 o=./outdat/out87nfn.csv u=./outdat/out88nfn.csv v=柿,葡萄; IN=5 OUT=2; 2014/06/10 02:06:45
+#END# kgselstr -R -W -sub f=商品 i=./indat/dat7s.csv k=顧客 o=./outdat/out89.csv u=./outdat/out90.csv v=梨,苺; IN=5 OUT=2; 2014/06/10 02:06:45
+#END# kgselstr -R -W -sub -x f=1 i=./indat/dat7s.csv k=0 o=./outdat/out89x.csv u=./outdat/out90x.csv v=梨,苺; IN=5 OUT=2; 2014/06/10 02:06:45
+#END# kgselstr -R -W -nfn -sub f=1 i=./indat/dat7snfn.csv k=0 o=./outdat/out89nfn.csv u=./outdat/out90nfn.csv v=梨,苺; IN=5 OUT=2; 2014/06/10 02:06:45
+#END# kgselstr -R -W -r -sub f=商品 i=./indat/dat7s.csv k=顧客 o=./outdat/out91.csv u=./outdat/out92.csv v=梨,苺; IN=5 OUT=3; 2014/06/10 02:06:45
+#END# kgselstr -R -W -r -sub -x f=1 i=./indat/dat7s.csv k=0 o=./outdat/out91x.csv u=./outdat/out92x.csv v=梨,苺; IN=5 OUT=3; 2014/06/10 02:06:45
+#END# kgselstr -R -W -nfn -r -sub f=1 i=./indat/dat7snfn.csv k=0 o=./outdat/out91nfn.csv u=./outdat/out92nfn.csv v=梨,苺; IN=5 OUT=3; 2014/06/10 02:06:45
+#END# kgselstr -W -sub f=受注日,発送日 i=./indat/dat8s.csv k=顧客 o=./outdat/out93.csv u=./outdat/out94.csv v=０６; IN=10 OUT=3; 2014/06/10 02:06:45
+#END# kgselstr -W -sub -x f=1,2 i=./indat/dat8s.csv k=0 o=./outdat/out93x.csv u=./outdat/out94x.csv v=０６; IN=10 OUT=3; 2014/06/10 02:06:45
+#END# kgselstr -W -nfn -sub f=1,2 i=./indat/dat8snfn.csv k=0 o=./outdat/out93nfn.csv u=./outdat/out94nfn.csv v=０６; IN=10 OUT=3; 2014/06/10 02:06:45
+#END# kgselstr -W -r -sub f=受注日,発送日 i=./indat/dat8s.csv k=顧客 o=./outdat/out95.csv u=./outdat/out96.csv v=０６; IN=10 OUT=7; 2014/06/10 02:06:45
+#END# kgselstr -W -r -sub -x f=1,2 i=./indat/dat8s.csv k=0 o=./outdat/out95x.csv u=./outdat/out96x.csv v=０６; IN=10 OUT=7; 2014/06/10 02:06:45
+#END# kgselstr -W -nfn -r -sub f=1,2 i=./indat/dat8snfn.csv k=0 o=./outdat/out95nfn.csv u=./outdat/out96nfn.csv v=０６; IN=10 OUT=7; 2014/06/10 02:06:45
+#END# kgselstr -F -W -sub f=受注日,発送日 i=./indat/dat8s.csv k=顧客 o=./outdat/out97.csv u=./outdat/out98.csv v=１０１,１０２; IN=10 OUT=5; 2014/06/10 02:06:45
+#END# kgselstr -F -W -sub -x f=1,2 i=./indat/dat8s.csv k=0 o=./outdat/out97x.csv u=./outdat/out98x.csv v=１０１,１０２; IN=10 OUT=5; 2014/06/10 02:06:45
+#END# kgselstr -F -W -nfn -sub f=1,2 i=./indat/dat8snfn.csv k=0 o=./outdat/out97nfn.csv u=./outdat/out98nfn.csv v=１０１,１０２; IN=10 OUT=5; 2014/06/10 02:06:45
+#END# kgselstr -F -W -r -sub f=受注日,発送日 i=./indat/dat8s.csv k=顧客 o=./outdat/out99.csv u=./outdat/out100.csv v=１０１,１０２; IN=10 OUT=5; 2014/06/10 02:06:45
+#END# kgselstr -F -W -r -sub -x f=1,2 i=./indat/dat8s.csv k=0 o=./outdat/out99x.csv u=./outdat/out100x.csv v=１０１,１０２; IN=10 OUT=5; 2014/06/10 02:06:45
+#END# kgselstr -F -W -nfn -r -sub f=1,2 i=./indat/dat8snfn.csv k=0 o=./outdat/out99nfn.csv u=./outdat/out100nfn.csv v=１０１,１０２; IN=10 OUT=5; 2014/06/10 02:06:45
+#END# kgselstr -R -W -sub f=受注日,発送日 i=./indat/dat8s.csv k=顧客 o=./outdat/out101.csv u=./outdat/out102.csv v=０３,０４,０５,０６; IN=10 OUT=5; 2014/06/10 02:06:45
+#END# kgselstr -R -W -sub -x f=1,2 i=./indat/dat8s.csv k=0 o=./outdat/out101x.csv u=./outdat/out102x.csv v=０３,０４,０５,０６; IN=10 OUT=5; 2014/06/10 02:06:45
+#END# kgselstr -R -W -nfn -sub f=1,2 i=./indat/dat8snfn.csv k=0 o=./outdat/out101nfn.csv u=./outdat/out102nfn.csv v=０３,０４,０５,０６; IN=10 OUT=5; 2014/06/10 02:06:45
+#END# kgselstr -R -W -r -sub f=受注日,発送日 i=./indat/dat8s.csv k=顧客 o=./outdat/out103.csv u=./outdat/out104.csv v=０３,０４,０５,０６; IN=10 OUT=5; 2014/06/10 02:06:45
+#END# kgselstr -R -W -r -sub -x f=1,2 i=./indat/dat8s.csv k=0 o=./outdat/out103x.csv u=./outdat/out104x.csv v=０３,０４,０５,０６; IN=10 OUT=5; 2014/06/10 02:06:45
+#END# kgselstr -R -W -nfn -r -sub f=1,2 i=./indat/dat8snfn.csv k=0 o=./outdat/out103nfn.csv u=./outdat/out104nfn.csv v=０３,０４,０５,０６; IN=10 OUT=5; 2014/06/10 02:06:45
+#END# kgselstr -F -R -W -sub f=受注日,発送日 i=./indat/dat8s.csv k=顧客 o=./outdat/out105.csv u=./outdat/out106.csv v=０３,０４,０５,０６; IN=10 OUT=3; 2014/06/10 02:06:45
+#END# kgselstr -F -R -W -sub -x f=1,2 i=./indat/dat8s.csv k=0 o=./outdat/out105x.csv u=./outdat/out106x.csv v=０３,０４,０５,０６; IN=10 OUT=3; 2014/06/10 02:06:45
+#END# kgselstr -F -R -W -nfn -sub f=1,2 i=./indat/dat8snfn.csv k=0 o=./outdat/out105nfn.csv u=./outdat/out106nfn.csv v=０３,０４,０５,０６; IN=10 OUT=3; 2014/06/10 02:06:45
+#END# kgselstr -F -R -W -r -sub f=受注日,発送日 i=./indat/dat8s.csv k=顧客 o=./outdat/out107.csv u=./outdat/out108.csv v=０３,０４,０５,０６; IN=10 OUT=7; 2014/06/10 02:06:45
+#END# kgselstr -F -R -W -r -sub -x f=1,2 i=./indat/dat8s.csv k=0 o=./outdat/out107x.csv u=./outdat/out108x.csv v=０３,０４,０５,０６; IN=10 OUT=7; 2014/06/10 02:06:45
+#END# kgselstr -F -R -W -nfn -r -sub f=1,2 i=./indat/dat8snfn.csv k=0 o=./outdat/out107nfn.csv u=./outdat/out108nfn.csv v=０３,０４,０５,０６; IN=10 OUT=7; 2014/06/10 02:06:45
+#END# kgselstr -W -head f=商品 i=./indat/dat5.csv o=./outdat/out133.csv u=./outdat/out134.csv v=果物; IN=5 OUT=5; 2014/06/10 02:06:45
+#END# kgselstr -W -head -x f=0 i=./indat/dat5.csv o=./outdat/out133x.csv u=./outdat/out134x.csv v=果物; IN=5 OUT=5; 2014/06/10 02:06:45
+#END# kgselstr -W -head -nfn f=0 i=./indat/dat5nfn.csv o=./outdat/out133nfn.csv u=./outdat/out134nfn.csv v=果物; IN=5 OUT=5; 2014/06/10 02:06:45
+#END# kgselstr -W -head -nfno f=商品 i=./indat/dat5.csv o=./outdat/out133nfno.csv u=./outdat/out134nfno.csv v=果物; IN=5 OUT=5; 2014/06/10 02:06:45
+#END# kgselstr -W -head -r f=商品 i=./indat/dat5.csv o=./outdat/out135.csv u=./outdat/out136.csv v=果物; IN=5 OUT=0; 2014/06/10 02:06:45
+#END# kgselstr -W -head -r -x f=0 i=./indat/dat5.csv o=./outdat/out135x.csv u=./outdat/out136x.csv v=果物; IN=5 OUT=0; 2014/06/10 02:06:45
+#END# kgselstr -W -head -nfn -r f=0 i=./indat/dat5nfn.csv o=./outdat/out135nfn.csv u=./outdat/out136nfn.csv v=果物; IN=5 OUT=0; 2014/06/10 02:06:45
+#END# kgselstr -W -head -nfno -r f=商品 i=./indat/dat5.csv o=./outdat/out135nfno.csv u=./outdat/out136nfno.csv v=果物; IN=5 OUT=0; 2014/06/10 02:06:45
+#END# kgselstr -F -W -head f=受注日,発送日 i=./indat/dat8s.csv k=顧客 o=./outdat/out137.csv u=./outdat/out138.csv v=０１０１,０１０２; IN=10 OUT=5; 2014/06/10 02:06:45
+#END# kgselstr -F -W -head -x f=1,2 i=./indat/dat8s.csv k=0 o=./outdat/out137x.csv u=./outdat/out138x.csv v=０１０１,０１０２; IN=10 OUT=5; 2014/06/10 02:06:45
+#END# kgselstr -F -W -head -nfn f=1,2 i=./indat/dat8snfn.csv k=0 o=./outdat/out137nfn.csv u=./outdat/out138nfn.csv v=０１０１,０１０２; IN=10 OUT=5; 2014/06/10 02:06:45
+#END# kgselstr -F -W -head -nfno f=受注日,発送日 i=./indat/dat8s.csv k=顧客 o=./outdat/out137nfno.csv u=./outdat/out138nfno.csv v=０１０１,０１０２; IN=10 OUT=5; 2014/06/10 02:06:45
+#END# kgselstr -R -W -head f=受注日,発送日 i=./indat/dat11s.csv k=顧客 o=./outdat/out139.csv u=./outdat/out140.csv v=０３,０４,０５,０６; IN=10 OUT=7; 2014/06/10 02:06:45
+#END# kgselstr -R -W -head -r f=受注日,発送日 i=./indat/dat11s.csv k=顧客 o=./outdat/out141.csv u=./outdat/out142.csv v=０３,０４,０５,０６; IN=10 OUT=3; 2014/06/10 02:06:45
+#END# kgselstr -F -R -W -head f=受注日,発送日 i=./indat/dat11s.csv k=顧客 o=./outdat/out143.csv u=./outdat/out144.csv v=０９,０１; IN=10 OUT=3; 2014/06/10 02:06:45
+#END# kgselstr -F -R -W -head -r f=受注日,発送日 i=./indat/dat11s.csv k=顧客 o=./outdat/out145.csv u=./outdat/out146.csv v=０９,０１; IN=10 OUT=7; 2014/06/10 02:06:45
+#END# kgselstr -head f=商品 i=./indat/dat5.csv o=./outdat/out165.csv u=./outdat/out166.csv v=果物; IN=5 OUT=5; 2014/06/10 02:06:45
+#END# kgselstr -W -tail f=商品 i=./indat/dat5.csv o=./outdat/out147.csv u=./outdat/out148.csv v=梨,苺; IN=5 OUT=2; 2014/06/10 02:06:45
+#END# kgselstr -W -tail -x f=0 i=./indat/dat5.csv o=./outdat/out147x.csv u=./outdat/out148x.csv v=梨,苺; IN=5 OUT=2; 2014/06/10 02:06:45
+#END# kgselstr -W -nfn -tail f=0 i=./indat/dat5nfn.csv o=./outdat/out147nfn.csv u=./outdat/out148nfn.csv v=梨,苺; IN=5 OUT=2; 2014/06/10 02:06:45
+#END# kgselstr -W -nfno -tail f=商品 i=./indat/dat5.csv o=./outdat/out147nfno.csv u=./outdat/out148nfno.csv v=梨,苺; IN=5 OUT=2; 2014/06/10 02:06:45
+#END# kgselstr -W -r -tail f=商品 i=./indat/dat5.csv o=./outdat/out149.csv u=./outdat/out150.csv v=梨,苺; IN=5 OUT=3; 2014/06/10 02:06:45
+#END# kgselstr -F -W -tail f=受注日,発送日 i=./indat/dat8s.csv k=顧客 o=./outdat/out151.csv u=./outdat/out152.csv v=０１０１,０１０２; IN=10 OUT=5; 2014/06/10 02:06:45
+#END# kgselstr -R -W -tail f=受注日,発送日 i=./indat/dat11s.csv k=顧客 o=./outdat/out153.csv u=./outdat/out154.csv v=０３,０４,０５,０６; IN=10 OUT=5; 2014/06/10 02:06:45
+#END# kgselstr -R -W -r -tail f=受注日,発送日 i=./indat/dat11s.csv k=顧客 o=./outdat/out155.csv u=./outdat/out156.csv v=０３,０４,０５,０６; IN=10 OUT=5; 2014/06/10 02:06:45
+#END# kgselstr -F -R -W -tail f=受注日,発送日 i=./indat/dat11s.csv k=顧客 o=./outdat/out157.csv u=./outdat/out158.csv v=０１,０３,０４,０５; IN=10 OUT=2; 2014/06/10 02:06:45
+#END# kgselstr -F -R -W -r -tail f=受注日,発送日 i=./indat/dat11s.csv k=顧客 o=./outdat/out159.csv u=./outdat/out160.csv v=０１,０３,０４,０５; IN=10 OUT=8; 2014/06/10 02:06:45
+#END# kgselstr -tail f=商品 i=./indat/dat5.csv o=./outdat/out167.csv u=./outdat/out168.csv v=梨,苺; IN=5 OUT=2; 2014/06/10 02:06:45
+#END# kgselstr f=商品 i=./indat/dat9s.csv k=顧客 o=./outdat/out109.csv u=./outdat/out110.csv v=01; IN=7 OUT=3; 2014/06/10 02:06:45
+#END# kgselstr -x f=1 i=./indat/dat9s.csv k=0 o=./outdat/out109x.csv u=./outdat/out110x.csv v=01; IN=7 OUT=3; 2014/06/10 02:06:45
+#END# kgselstr -nfn f=1 i=./indat/dat9snfn.csv k=0 o=./outdat/out109nfn.csv u=./outdat/out110nfn.csv v=01; IN=7 OUT=3; 2014/06/10 02:06:45
+#END# kgselstr -r f=商品 i=./indat/dat9s.csv k=顧客 o=./outdat/out111.csv u=./outdat/out112.csv v=01; IN=7 OUT=4; 2014/06/10 02:06:45
+#END# kgselstr -r -x f=1 i=./indat/dat9s.csv k=0 o=./outdat/out111x.csv u=./outdat/out112x.csv v=01; IN=7 OUT=4; 2014/06/10 02:06:45
+#END# kgselstr -nfn -r f=1 i=./indat/dat9snfn.csv k=0 o=./outdat/out111nfn.csv u=./outdat/out112nfn.csv v=01; IN=7 OUT=4; 2014/06/10 02:06:45
+#END# kgselstr -R f=商品 i=./indat/dat9s.csv k=顧客 o=./outdat/out113.csv u=./outdat/out114.csv v=01,04,05; IN=7 OUT=4; 2014/06/10 02:06:45
+#END# kgselstr -R -x f=1 i=./indat/dat9s.csv k=0 o=./outdat/out113x.csv u=./outdat/out114x.csv v=01,04,05; IN=7 OUT=4; 2014/06/10 02:06:45
+#END# kgselstr -R -nfn f=1 i=./indat/dat9snfn.csv k=0 o=./outdat/out113nfn.csv u=./outdat/out114nfn.csv v=01,04,05; IN=7 OUT=4; 2014/06/10 02:06:45
+#END# kgselstr -R -r f=商品 i=./indat/dat9s.csv k=顧客 o=./outdat/out115.csv u=./outdat/out116.csv v=01,04,05; IN=7 OUT=3; 2014/06/10 02:06:45
+#END# kgselstr -R -r -x f=1 i=./indat/dat9s.csv k=0 o=./outdat/out115x.csv u=./outdat/out116x.csv v=01,04,05; IN=7 OUT=3; 2014/06/10 02:06:45
+#END# kgselstr -R -nfn -r f=1 i=./indat/dat9snfn.csv k=0 o=./outdat/out115nfn.csv u=./outdat/out116nfn.csv v=01,04,05; IN=7 OUT=3; 2014/06/10 02:06:45
+#END# kgselstr f=受注日,発送日 i=./indat/dat10s.csv k=顧客 o=./outdat/out117.csv u=./outdat/out118.csv v=20090101,20090102; IN=13 OUT=7; 2014/06/10 02:06:45
+#END# kgselstr -x f=1,2 i=./indat/dat10s.csv k=0 o=./outdat/out117x.csv u=./outdat/out118x.csv v=20090101,20090102; IN=13 OUT=7; 2014/06/10 02:06:45
+#END# kgselstr -nfn f=1,2 i=./indat/dat10snfn.csv k=0 o=./outdat/out117nfn.csv u=./outdat/out118nfn.csv v=20090101,20090102; IN=13 OUT=7; 2014/06/10 02:06:45
+#END# kgselstr -r f=受注日,発送日 i=./indat/dat10s.csv k=顧客 o=./outdat/out119.csv u=./outdat/out120.csv v=20090101,20090102; IN=13 OUT=6; 2014/06/10 02:06:45
+#END# kgselstr -r -x f=1,2 i=./indat/dat10s.csv k=0 o=./outdat/out119x.csv u=./outdat/out120x.csv v=20090101,20090102; IN=13 OUT=6; 2014/06/10 02:06:45
+#END# kgselstr -nfn -r f=1,2 i=./indat/dat10snfn.csv k=0 o=./outdat/out119nfn.csv u=./outdat/out120nfn.csv v=20090101,20090102; IN=13 OUT=6; 2014/06/10 02:06:45
+#END# kgselstr -F f=受注日,発送日 i=./indat/dat10s.csv k=顧客 o=./outdat/out121.csv u=./outdat/out122.csv v=20090101,20090102; IN=13 OUT=5; 2014/06/10 02:06:45
+#END# kgselstr -F -x f=1,2 i=./indat/dat10s.csv k=0 o=./outdat/out121x.csv u=./outdat/out122x.csv v=20090101,20090102; IN=13 OUT=5; 2014/06/10 02:06:45
+#END# kgselstr -F -nfn f=1,2 i=./indat/dat10snfn.csv k=0 o=./outdat/out121nfn.csv u=./outdat/out122nfn.csv v=20090101,20090102; IN=13 OUT=5; 2014/06/10 02:06:45
+#END# kgselstr -F -r f=受注日,発送日 i=./indat/dat10s.csv k=顧客 o=./outdat/out123.csv u=./outdat/out124.csv v=20090101,20090102; IN=13 OUT=8; 2014/06/10 02:06:45
+#END# kgselstr -F -r -x f=1,2 i=./indat/dat10s.csv k=0 o=./outdat/out123x.csv u=./outdat/out124x.csv v=20090101,20090102; IN=13 OUT=8; 2014/06/10 02:06:45
+#END# kgselstr -F -nfn -r f=1,2 i=./indat/dat10snfn.csv k=0 o=./outdat/out123nfn.csv u=./outdat/out124nfn.csv v=20090101,20090102; IN=13 OUT=8; 2014/06/10 02:06:45
+#END# kgselstr -R f=受注日,発送日 i=./indat/dat10s.csv k=顧客 o=./outdat/out125.csv u=./outdat/out126.csv v=20090103,20090104,20090105,20090106; IN=13 OUT=8; 2014/06/10 02:06:45
+#END# kgselstr -R -x f=1,2 i=./indat/dat10s.csv k=0 o=./outdat/out125x.csv u=./outdat/out126x.csv v=20090103,20090104,20090105,20090106; IN=13 OUT=8; 2014/06/10 02:06:45
+#END# kgselstr -R -nfn f=1,2 i=./indat/dat10snfn.csv k=0 o=./outdat/out125nfn.csv u=./outdat/out126nfn.csv v=20090103,20090104,20090105,20090106; IN=13 OUT=8; 2014/06/10 02:06:45
+#END# kgselstr -R -r f=受注日,発送日 i=./indat/dat10s.csv k=顧客 o=./outdat/out127.csv u=./outdat/out128.csv v=20090103,20090104,20090105,20090106; IN=13 OUT=5; 2014/06/10 02:06:45
+#END# kgselstr -R -r -x f=1,2 i=./indat/dat10s.csv k=0 o=./outdat/out127x.csv u=./outdat/out128x.csv v=20090103,20090104,20090105,20090106; IN=13 OUT=5; 2014/06/10 02:06:45
+#END# kgselstr -R -nfn -r f=1,2 i=./indat/dat10snfn.csv k=0 o=./outdat/out127nfn.csv u=./outdat/out128nfn.csv v=20090103,20090104,20090105,20090106; IN=13 OUT=5; 2014/06/10 02:06:45
+#END# kgselstr -F -R f=受注日,発送日 i=./indat/dat10s.csv k=顧客 o=./outdat/out129.csv u=./outdat/out130.csv v=20090103,20090104,20090105,20090106; IN=13 OUT=6; 2014/06/10 02:06:45
+#END# kgselstr -F -R -x f=1,2 i=./indat/dat10s.csv k=0 o=./outdat/out129x.csv u=./outdat/out130x.csv v=20090103,20090104,20090105,20090106; IN=13 OUT=6; 2014/06/10 02:06:45
+#END# kgselstr -F -R -nfn f=1,2 i=./indat/dat10snfn.csv k=0 o=./outdat/out129nfn.csv u=./outdat/out130nfn.csv v=20090103,20090104,20090105,20090106; IN=13 OUT=6; 2014/06/10 02:06:45
+#END# kgselstr -F -R -r f=受注日,発送日 i=./indat/dat10s.csv k=顧客 o=./outdat/out131.csv u=./outdat/out132.csv v=20090103,20090104,20090105,20090106; IN=13 OUT=7; 2014/06/10 02:06:45
+#END# kgselstr -F -R -r -x f=1,2 i=./indat/dat10s.csv k=0 o=./outdat/out131x.csv u=./outdat/out132x.csv v=20090103,20090104,20090105,20090106; IN=13 OUT=7; 2014/06/10 02:06:45
+#END# kgselstr -F -R -nfn -r f=1,2 i=./indat/dat10snfn.csv k=0 o=./outdat/out131nfn.csv u=./outdat/out132nfn.csv v=20090103,20090104,20090105,20090106; IN=13 OUT=7; 2014/06/10 02:06:45
+#END# kgselstr f=商品 i=./indat/dat3.csv k=顧客 o=./outdat/out221.csv u=./outdat/out222.csv v=01,03; IN=5 OUT=3; 2014/06/10 02:06:45
+#END# kgselstr -x f=1 i=./indat/dat3.csv k=0 o=./outdat/out221x.csv u=./outdat/out222x.csv v=01,03; IN=5 OUT=3; 2014/06/10 02:06:45
+#END# kgselstr -nfn f=1 i=./indat/dat3nfn.csv k=0 o=./outdat/out221nfn.csv u=./outdat/out222nfn.csv v=01,03; IN=5 OUT=3; 2014/06/10 02:06:45
+#END# kgselstr -nfno f=商品 i=./indat/dat3.csv k=顧客 o=./outdat/out221nfno.csv u=./outdat/out222nfno.csv v=01,03; IN=5 OUT=3; 2014/06/10 02:06:46
+#END# kgselstr -q f=商品 i=./indat/dat3.csv k=顧客 o=./outdat/out221q.csv u=./outdat/out222q.csv v=01,03; IN=5 OUT=3; 2014/06/10 02:06:46
+#END# kgselstr -q -x f=1 i=./indat/dat3.csv k=0 o=./outdat/out221qx.csv u=./outdat/out222qx.csv v=01,03; IN=5 OUT=3; 2014/06/10 02:06:46
+#END# kgselstr -r f=商品 i=./indat/dat3.csv k=顧客 o=./outdat/out223.csv u=./outdat/out224.csv v=01,03; IN=5 OUT=2; 2014/06/10 02:06:46
+#END# kgselstr -r -x f=1 i=./indat/dat3.csv k=0 o=./outdat/out223x.csv u=./outdat/out224x.csv v=01,03; IN=5 OUT=2; 2014/06/10 02:06:46
+#END# kgselstr -nfn -r f=1 i=./indat/dat3nfn.csv k=0 o=./outdat/out223nfn.csv u=./outdat/out224nfn.csv v=01,03; IN=5 OUT=2; 2014/06/10 02:06:46
+#END# kgselstr -nfno -r f=商品 i=./indat/dat3.csv k=顧客 o=./outdat/out223nfno.csv u=./outdat/out224nfno.csv v=01,03; IN=5 OUT=2; 2014/06/10 02:06:46
+#END# kgselstr f=受注日,発送日 i=./indat/dat4.csv k=顧客 o=./outdat/out225.csv u=./outdat/out226.csv v=20090101,20090102; IN=10 OUT=7; 2014/06/10 02:06:46
+#END# kgselstr -x f=1,2 i=./indat/dat4.csv k=0 o=./outdat/out225x.csv u=./outdat/out226x.csv v=20090101,20090102; IN=10 OUT=7; 2014/06/10 02:06:46
+#END# kgselstr -nfn f=1,2 i=./indat/dat4nfn.csv k=0 o=./outdat/out225nfn.csv u=./outdat/out226nfn.csv v=20090101,20090102; IN=10 OUT=6; 2014/06/10 02:06:46
+#END# kgselstr -nfno f=受注日,発送日 i=./indat/dat4.csv k=顧客 o=./outdat/out225nfno.csv u=./outdat/out226nfno.csv v=20090101,20090102; IN=10 OUT=7; 2014/06/10 02:06:46
+#END# kgselstr -r f=受注日,発送日 i=./indat/dat4.csv k=顧客 o=./outdat/out227.csv u=./outdat/out228.csv v=20090101,20090102; IN=10 OUT=3; 2014/06/10 02:06:46
+#END# kgselstr -r -x f=1,2 i=./indat/dat4.csv k=0 o=./outdat/out227x.csv u=./outdat/out228x.csv v=20090101,20090102; IN=10 OUT=3; 2014/06/10 02:06:46
+#END# kgselstr -nfn -r f=1,2 i=./indat/dat4nfn.csv k=0 o=./outdat/out227nfn.csv u=./outdat/out228nfn.csv v=20090101,20090102; IN=10 OUT=4; 2014/06/10 02:06:46
+#END# kgselstr -nfno -r f=受注日,発送日 i=./indat/dat4.csv k=顧客 o=./outdat/out227nfno.csv u=./outdat/out228nfno.csv v=20090101,20090102; IN=10 OUT=3; 2014/06/10 02:06:46
+#END# kgselstr -F f=受注日,発送日 i=./indat/dat4.csv k=顧客 o=./outdat/out229.csv u=./outdat/out230.csv v=20090101,20090102; IN=10 OUT=5; 2014/06/10 02:06:46
+#END# kgselstr -F -x f=1,2 i=./indat/dat4.csv k=0 o=./outdat/out229x.csv u=./outdat/out230x.csv v=20090101,20090102; IN=10 OUT=5; 2014/06/10 02:06:46
+#END# kgselstr -F -nfn f=1,2 i=./indat/dat4nfn.csv k=0 o=./outdat/out229nfn.csv u=./outdat/out230nfn.csv v=20090101,20090102; IN=10 OUT=2; 2014/06/10 02:06:46
+#END# kgselstr -F -nfno f=受注日,発送日 i=./indat/dat4.csv k=顧客 o=./outdat/out229nfno.csv u=./outdat/out230nfno.csv v=20090101,20090102; IN=10 OUT=5; 2014/06/10 02:06:46
+#END# kgselstr -F -r f=受注日,発送日 i=./indat/dat4.csv k=顧客 o=./outdat/out231.csv u=./outdat/out232.csv v=20090101,20090102; IN=10 OUT=5; 2014/06/10 02:06:46
+#END# kgselstr -F -r -x f=1,2 i=./indat/dat4.csv k=0 o=./outdat/out231x.csv u=./outdat/out232x.csv v=20090101,20090102; IN=10 OUT=5; 2014/06/10 02:06:46
+#END# kgselstr -F -nfn -r f=1,2 i=./indat/dat4nfn.csv k=0 o=./outdat/out231nfn.csv u=./outdat/out232nfn.csv v=20090101,20090102; IN=10 OUT=8; 2014/06/10 02:06:46
+#END# kgselstr -F -nfno -r f=受注日,発送日 i=./indat/dat4.csv k=顧客 o=./outdat/out231nfno.csv u=./outdat/out232nfno.csv v=20090101,20090102; IN=10 OUT=5; 2014/06/10 02:06:46
+#END# kgselstr -R f=商品 i=./indat/dat3.csv k=顧客 o=./outdat/out233.csv u=./outdat/out234.csv v=04,05; IN=5 OUT=2; 2014/06/10 02:06:46
+#END# kgselstr -R -x f=1 i=./indat/dat3.csv k=0 o=./outdat/out233x.csv u=./outdat/out234x.csv v=04,05; IN=5 OUT=2; 2014/06/10 02:06:46
+#END# kgselstr -R -nfn f=1 i=./indat/dat3nfn.csv k=0 o=./outdat/out233nfn.csv u=./outdat/out234nfn.csv v=04,05; IN=5 OUT=2; 2014/06/10 02:06:46
+#END# kgselstr -R -nfno f=商品 i=./indat/dat3.csv k=顧客 o=./outdat/out233nfno.csv u=./outdat/out234nfno.csv v=04,05; IN=5 OUT=2; 2014/06/10 02:06:46
+#END# kgselstr -R -r f=商品 i=./indat/dat3.csv k=顧客 o=./outdat/out235.csv u=./outdat/out236.csv v=04,05; IN=5 OUT=3; 2014/06/10 02:06:46
+#END# kgselstr -R -r -x f=1 i=./indat/dat3.csv k=0 o=./outdat/out235x.csv u=./outdat/out236x.csv v=04,05; IN=5 OUT=3; 2014/06/10 02:06:46
+#END# kgselstr -R -nfn -r f=1 i=./indat/dat3nfn.csv k=0 o=./outdat/out235nfn.csv u=./outdat/out236nfn.csv v=04,05; IN=5 OUT=3; 2014/06/10 02:06:46
+#END# kgselstr -R -nfno -r f=商品 i=./indat/dat3.csv k=顧客 o=./outdat/out235nfno.csv u=./outdat/out236nfno.csv v=04,05; IN=5 OUT=3; 2014/06/10 02:06:47
+#END# kgselstr -R f=受注日,発送日 i=./indat/dat4.csv k=顧客 o=./outdat/out237.csv u=./outdat/out238.csv v=20090103,20090104,20090105,20090106; IN=10 OUT=5; 2014/06/10 02:06:47
+#END# kgselstr -R -x f=1,2 i=./indat/dat4.csv k=0 o=./outdat/out237x.csv u=./outdat/out238x.csv v=20090103,20090104,20090105,20090106; IN=10 OUT=5; 2014/06/10 02:06:47
+#END# kgselstr -R -nfn f=1,2 i=./indat/dat4nfn.csv k=0 o=./outdat/out237nfn.csv u=./outdat/out238nfn.csv v=20090103,20090104,20090105,20090106; IN=10 OUT=8; 2014/06/10 02:06:47
+#END# kgselstr -R -nfno f=受注日,発送日 i=./indat/dat4.csv k=顧客 o=./outdat/out37nfno.csv u=./outdat/out38nfno.csv v=20090103,20090104,20090105,20090106; IN=10 OUT=5; 2014/06/10 02:06:47
+#END# kgselstr -R -r f=受注日,発送日 i=./indat/dat4.csv k=顧客 o=./outdat/out239.csv u=./outdat/out240.csv v=20090103,20090104,20090105,20090106; IN=10 OUT=5; 2014/06/10 02:06:47
+#END# kgselstr -R -r -x f=1,2 i=./indat/dat4.csv k=0 o=./outdat/out239x.csv u=./outdat/out240x.csv v=20090103,20090104,20090105,20090106; IN=10 OUT=5; 2014/06/10 02:06:47
+#END# kgselstr -R -nfn -r f=1,2 i=./indat/dat4nfn.csv k=0 o=./outdat/out239nfn.csv u=./outdat/out240nfn.csv v=20090103,20090104,20090105,20090106; IN=10 OUT=2; 2014/06/10 02:06:47
+#END# kgselstr -R -nfno -r f=受注日,発送日 i=./indat/dat4.csv k=顧客 o=./outdat/out239nfno.csv u=./outdat/out240nfno.csv v=20090103,20090104,20090105,20090106; IN=10 OUT=5; 2014/06/10 02:06:47
+#END# kgselstr -F -R f=受注日,発送日 i=./indat/dat4.csv k=顧客 o=./outdat/out241.csv u=./outdat/out242.csv v=20090103,20090104,20090105,20090106; IN=10 OUT=3; 2014/06/10 02:06:47
+#END# kgselstr -F -R -x f=1,2 i=./indat/dat4.csv k=0 o=./outdat/out241x.csv u=./outdat/out242x.csv v=20090103,20090104,20090105,20090106; IN=10 OUT=3; 2014/06/10 02:06:47
+#END# kgselstr -F -R -nfn f=1,2 i=./indat/dat4nfn.csv k=0 o=./outdat/out241nfn.csv u=./outdat/out242nfn.csv v=20090103,20090104,20090105,20090106; IN=10 OUT=4; 2014/06/10 02:06:47
+#END# kgselstr -F -R -nfno f=受注日,発送日 i=./indat/dat4.csv k=顧客 o=./outdat/out241nfno.csv u=./outdat/out242nfno.csv v=20090103,20090104,20090105,20090106; IN=10 OUT=3; 2014/06/10 02:06:47
+#END# kgselstr -F -R -r f=受注日,発送日 i=./indat/dat4.csv k=顧客 o=./outdat/out243.csv u=./outdat/out244.csv v=20090103,20090104,20090105,20090106; IN=10 OUT=7; 2014/06/10 02:06:47
+#END# kgselstr -F -R -r -x f=1,2 i=./indat/dat4.csv k=0 o=./outdat/out243x.csv u=./outdat/out244x.csv v=20090103,20090104,20090105,20090106; IN=10 OUT=7; 2014/06/10 02:06:47
+#END# kgselstr -F -R -nfn -r f=1,2 i=./indat/dat4nfn.csv k=0 o=./outdat/out243nfn.csv u=./outdat/out244nfn.csv v=20090103,20090104,20090105,20090106; IN=10 OUT=6; 2014/06/10 02:06:47
+#END# kgselstr -F -R -nfno -r f=受注日,発送日 i=./indat/dat4.csv k=顧客 o=./outdat/out243nfno.csv u=./outdat/out244nfno.csv v=20090103,20090104,20090105,20090106; IN=10 OUT=7; 2014/06/10 02:06:47
+#END# kgselstr -sub bufcount=2 f=商品 i=./indat/dat3.csv k=顧客 o=./outdat/out361.csv u=./outdat/out362.csv v=1,3; IN=5 OUT=3; 2014/06/10 02:06:47
+#END# kgselstr -sub bufcount=-2 f=商品 i=./indat/dat3.csv k=顧客 o=./outdat/out363.csv u=./outdat/out364.csv v=1,3; IN=5 OUT=3; 2014/06/10 02:06:47
+#END# kgselstr -sub f=商品 i=./indat/dat3.csv k=顧客 o=./outdat/out253.csv u=./outdat/out254.csv v=1,3; IN=5 OUT=3; 2014/06/10 02:06:47
+#END# kgselstr -sub -x f=1 i=./indat/dat3.csv k=0 o=./outdat/out253x.csv u=./outdat/out254x.csv v=1,3; IN=5 OUT=3; 2014/06/10 02:06:47
+#END# kgselstr -nfn -sub f=1 i=./indat/dat3nfn.csv k=0 o=./outdat/out253nfn.csv u=./outdat/out254nfn.csv v=1,3; IN=5 OUT=3; 2014/06/10 02:06:47
+#END# kgselstr -r -sub f=商品 i=./indat/dat3.csv k=顧客 o=./outdat/out255.csv u=./outdat/out256.csv v=1,3; IN=5 OUT=2; 2014/06/10 02:06:47
+#END# kgselstr -r -sub -x f=1 i=./indat/dat3.csv k=0 o=./outdat/out255x.csv u=./outdat/out256x.csv v=1,3; IN=5 OUT=2; 2014/06/10 02:06:47
+#END# kgselstr -nfn -r -sub f=1 i=./indat/dat3nfn.csv k=0 o=./outdat/out255nfn.csv u=./outdat/out256nfn.csv v=1,3; IN=5 OUT=2; 2014/06/10 02:06:47
+#END# kgselstr -R -sub f=商品 i=./indat/dat3.csv k=顧客 o=./outdat/out257.csv u=./outdat/out258.csv v=4,5; IN=5 OUT=2; 2014/06/10 02:06:47
+#END# kgselstr -R -sub -x f=1 i=./indat/dat3.csv k=0 o=./outdat/out257x.csv u=./outdat/out258x.csv v=4,5; IN=5 OUT=2; 2014/06/10 02:06:47
+#END# kgselstr -R -nfn -sub f=1 i=./indat/dat3nfn.csv k=0 o=./outdat/out257nfn.csv u=./outdat/out258nfn.csv v=4,5; IN=5 OUT=2; 2014/06/10 02:06:47
+#END# kgselstr -R -r -sub f=商品 i=./indat/dat3.csv k=顧客 o=./outdat/out259.csv u=./outdat/out260.csv v=4,5; IN=5 OUT=3; 2014/06/10 02:06:47
+#END# kgselstr -R -r -sub -x f=1 i=./indat/dat3.csv k=0 o=./outdat/out259x.csv u=./outdat/out260x.csv v=4,5; IN=5 OUT=3; 2014/06/10 02:06:47
+#END# kgselstr -R -nfn -r -sub f=1 i=./indat/dat3nfn.csv k=0 o=./outdat/out259nfn.csv u=./outdat/out260nfn.csv v=4,5; IN=5 OUT=3; 2014/06/10 02:06:47
+#END# kgselstr -sub f=受注日,発送日 i=./indat/dat4.csv k=顧客 o=./outdat/out261.csv u=./outdat/out262.csv v=06; IN=10 OUT=3; 2014/06/10 02:06:47
+#END# kgselstr -sub -x f=1,2 i=./indat/dat4.csv k=0 o=./outdat/out261x.csv u=./outdat/out262x.csv v=06; IN=10 OUT=3; 2014/06/10 02:06:47
+#END# kgselstr -nfn -sub f=1,2 i=./indat/dat4nfn.csv k=0 o=./outdat/out261nfn.csv u=./outdat/out262nfn.csv v=06; IN=10 OUT=2; 2014/06/10 02:06:47
+#END# kgselstr -r -sub f=受注日,発送日 i=./indat/dat4.csv k=顧客 o=./outdat/out263.csv u=./outdat/out264.csv v=06; IN=10 OUT=7; 2014/06/10 02:06:47
+#END# kgselstr -r -sub -x f=1,2 i=./indat/dat4.csv k=0 o=./outdat/out263x.csv u=./outdat/out264x.csv v=06; IN=10 OUT=7; 2014/06/10 02:06:47
+#END# kgselstr -nfn -r -sub f=1,2 i=./indat/dat4nfn.csv k=0 o=./outdat/out263nfn.csv u=./outdat/out264nfn.csv v=06; IN=10 OUT=8; 2014/06/10 02:06:47
+#END# kgselstr -F -sub f=受注日,発送日 i=./indat/dat4.csv k=顧客 o=./outdat/out265.csv u=./outdat/out266.csv v=0101,0102; IN=10 OUT=5; 2014/06/10 02:06:47
+#END# kgselstr -F -sub -x f=1,2 i=./indat/dat4.csv k=0 o=./outdat/out265x.csv u=./outdat/out266x.csv v=0101,0102; IN=10 OUT=5; 2014/06/10 02:06:48
+#END# kgselstr -F -nfn -sub f=1,2 i=./indat/dat4nfn.csv k=0 o=./outdat/out265nfn.csv u=./outdat/out266nfn.csv v=0101,0102; IN=10 OUT=2; 2014/06/10 02:06:48
+#END# kgselstr -F -r -sub f=受注日,発送日 i=./indat/dat4.csv k=顧客 o=./outdat/out267.csv u=./outdat/out268.csv v=0101,0102; IN=10 OUT=5; 2014/06/10 02:06:48
+#END# kgselstr -F -r -sub -x f=1,2 i=./indat/dat4.csv k=0 o=./outdat/out267x.csv u=./outdat/out268x.csv v=0101,0102; IN=10 OUT=5; 2014/06/10 02:06:48
+#END# kgselstr -F -nfn -r -sub f=1,2 i=./indat/dat4nfn.csv k=0 o=./outdat/out267nfn.csv u=./outdat/out268nfn.csv v=0101,0102; IN=10 OUT=8; 2014/06/10 02:06:48
+#END# kgselstr -R -sub f=受注日,発送日 i=./indat/dat4.csv k=顧客 o=./outdat/out269.csv u=./outdat/out270.csv v=03,04,05,06; IN=10 OUT=5; 2014/06/10 02:06:48
+#END# kgselstr -R -sub -x f=1,2 i=./indat/dat4.csv k=0 o=./outdat/out269x.csv u=./outdat/out270x.csv v=03,04,05,06; IN=10 OUT=5; 2014/06/10 02:06:48
+#END# kgselstr -R -nfn -sub f=1,2 i=./indat/dat4nfn.csv k=0 o=./outdat/out269nfn.csv u=./outdat/out270nfn.csv v=03,04,05,06; IN=10 OUT=8; 2014/06/10 02:06:48
+#END# kgselstr -R -r -sub f=受注日,発送日 i=./indat/dat4.csv k=顧客 o=./outdat/out271.csv u=./outdat/out272.csv v=03,04,05,06; IN=10 OUT=5; 2014/06/10 02:06:48
+#END# kgselstr -R -r -sub -x f=1,2 i=./indat/dat4.csv k=0 o=./outdat/out271x.csv u=./outdat/out272x.csv v=03,04,05,06; IN=10 OUT=5; 2014/06/10 02:06:48
+#END# kgselstr -R -nfn -r -sub f=1,2 i=./indat/dat4nfn.csv k=0 o=./outdat/out271nfn.csv u=./outdat/out272nfn.csv v=03,04,05,06; IN=10 OUT=2; 2014/06/10 02:06:48
+#END# kgselstr -F -R -sub f=受注日,発送日 i=./indat/dat4.csv k=顧客 o=./outdat/out273.csv u=./outdat/out274.csv v=03,04,05,06; IN=10 OUT=3; 2014/06/10 02:06:48
+#END# kgselstr -F -R -sub -x f=1,2 i=./indat/dat4.csv k=0 o=./outdat/out273x.csv u=./outdat/out274x.csv v=03,04,05,06; IN=10 OUT=3; 2014/06/10 02:06:48
+#END# kgselstr -F -R -nfn -sub f=1,2 i=./indat/dat4nfn.csv k=0 o=./outdat/out273nfn.csv u=./outdat/out274nfn.csv v=03,04,05,06; IN=10 OUT=4; 2014/06/10 02:06:48
+#END# kgselstr -F -R -r -sub f=受注日,発送日 i=./indat/dat4.csv k=顧客 o=./outdat/out275.csv u=./outdat/out276.csv v=03,04,05,06; IN=10 OUT=7; 2014/06/10 02:06:48
+#END# kgselstr -F -R -r -sub -x f=1,2 i=./indat/dat4.csv k=0 o=./outdat/out275x.csv u=./outdat/out276x.csv v=03,04,05,06; IN=10 OUT=7; 2014/06/10 02:06:48
+#END# kgselstr -F -R -nfn -r -sub f=1,2 i=./indat/dat4nfn.csv k=0 o=./outdat/out275nfn.csv u=./outdat/out276nfn.csv v=03,04,05,06; IN=10 OUT=6; 2014/06/10 02:06:48
+#END# kgselstr -W -sub f=商品 i=./indat/dat7.csv k=顧客 o=./outdat/out285.csv u=./outdat/out286.csv v=柿,葡萄; IN=5 OUT=3; 2014/06/10 02:06:48
+#END# kgselstr -W -sub -x f=1 i=./indat/dat7.csv k=0 o=./outdat/out285x.csv u=./outdat/out286x.csv v=柿,葡萄; IN=5 OUT=3; 2014/06/10 02:06:48
+#END# kgselstr -W -nfn -sub f=1 i=./indat/dat7nfn.csv k=0 o=./outdat/out285nfn.csv u=./outdat/out286nfn.csv v=柿,葡萄; IN=5 OUT=3; 2014/06/10 02:06:48
+#END# kgselstr -W -r -sub f=商品 i=./indat/dat7.csv k=顧客 o=./outdat/out287.csv u=./outdat/out288.csv v=柿,葡萄; IN=5 OUT=2; 2014/06/10 02:06:48
+#END# kgselstr -W -r -sub -x f=1 i=./indat/dat7.csv k=0 o=./outdat/out287x.csv u=./outdat/out288x.csv v=柿,葡萄; IN=5 OUT=2; 2014/06/10 02:06:48
+#END# kgselstr -W -nfn -r -sub f=1 i=./indat/dat7nfn.csv k=0 o=./outdat/out287nfn.csv u=./outdat/out288nfn.csv v=柿,葡萄; IN=5 OUT=2; 2014/06/10 02:06:48
+#END# kgselstr -R -W -sub f=商品 i=./indat/dat7.csv k=顧客 o=./outdat/out289.csv u=./outdat/out290.csv v=梨,苺; IN=5 OUT=2; 2014/06/10 02:06:48
+#END# kgselstr -R -W -sub -x f=1 i=./indat/dat7.csv k=0 o=./outdat/out289x.csv u=./outdat/out290x.csv v=梨,苺; IN=5 OUT=2; 2014/06/10 02:06:48
+#END# kgselstr -R -W -nfn -sub f=1 i=./indat/dat7nfn.csv k=0 o=./outdat/out289nfn.csv u=./outdat/out290nfn.csv v=梨,苺; IN=5 OUT=2; 2014/06/10 02:06:48
+#END# kgselstr -R -W -r -sub f=商品 i=./indat/dat7.csv k=顧客 o=./outdat/out291.csv u=./outdat/out292.csv v=梨,苺; IN=5 OUT=3; 2014/06/10 02:06:48
+#END# kgselstr -R -W -r -sub -x f=1 i=./indat/dat7.csv k=0 o=./outdat/out291x.csv u=./outdat/out292x.csv v=梨,苺; IN=5 OUT=3; 2014/06/10 02:06:48
+#END# kgselstr -R -W -nfn -r -sub f=1 i=./indat/dat7nfn.csv k=0 o=./outdat/out291nfn.csv u=./outdat/out292nfn.csv v=梨,苺; IN=5 OUT=3; 2014/06/10 02:06:48
+#END# kgselstr -W -sub f=受注日,発送日 i=./indat/dat8.csv k=顧客 o=./outdat/out293.csv u=./outdat/out294.csv v=０６; IN=10 OUT=3; 2014/06/10 02:06:48
+#END# kgselstr -W -sub -x f=1,2 i=./indat/dat8.csv k=0 o=./outdat/out293x.csv u=./outdat/out294x.csv v=０６; IN=10 OUT=3; 2014/06/10 02:06:48
+#END# kgselstr -W -nfn -sub f=1,2 i=./indat/dat8nfn.csv k=0 o=./outdat/out293nfn.csv u=./outdat/out294nfn.csv v=０６; IN=10 OUT=1; 2014/06/10 02:06:48
+#END# kgselstr -W -r -sub f=受注日,発送日 i=./indat/dat8.csv k=顧客 o=./outdat/out295.csv u=./outdat/out296.csv v=０６; IN=10 OUT=7; 2014/06/10 02:06:48
+#END# kgselstr -W -r -sub -x f=1,2 i=./indat/dat8.csv k=0 o=./outdat/out295x.csv u=./outdat/out296x.csv v=０６; IN=10 OUT=7; 2014/06/10 02:06:48
+#END# kgselstr -W -nfn -r -sub f=1,2 i=./indat/dat8nfn.csv k=0 o=./outdat/out295nfn.csv u=./outdat/out296nfn.csv v=０６; IN=10 OUT=9; 2014/06/10 02:06:48
+#END# kgselstr -F -W -sub f=受注日,発送日 i=./indat/dat8.csv k=顧客 o=./outdat/out297.csv u=./outdat/out298.csv v=１０１,１０２; IN=10 OUT=5; 2014/06/10 02:06:48
+#END# kgselstr -F -W -sub -x f=1,2 i=./indat/dat8.csv k=0 o=./outdat/out297x.csv u=./outdat/out298x.csv v=１０１,１０２; IN=10 OUT=5; 2014/06/10 02:06:48
+#END# kgselstr -F -W -nfn -sub f=1,2 i=./indat/dat8nfn.csv k=0 o=./outdat/out297nfn.csv u=./outdat/out298nfn.csv v=１０１,１０２; IN=10 OUT=1; 2014/06/10 02:06:48
+#END# kgselstr -F -W -r -sub f=受注日,発送日 i=./indat/dat8.csv k=顧客 o=./outdat/out299.csv u=./outdat/out300.csv v=１０１,１０２; IN=10 OUT=5; 2014/06/10 02:06:48
+#END# kgselstr -F -W -r -sub -x f=1,2 i=./indat/dat8.csv k=0 o=./outdat/out299x.csv u=./outdat/out300x.csv v=１０１,１０２; IN=10 OUT=5; 2014/06/10 02:06:48
+#END# kgselstr -F -W -nfn -r -sub f=1,2 i=./indat/dat8nfn.csv k=0 o=./outdat/out299nfn.csv u=./outdat/out300nfn.csv v=１０１,１０２; IN=10 OUT=9; 2014/06/10 02:06:48
+#END# kgselstr -R -W -sub f=受注日,発送日 i=./indat/dat8.csv k=顧客 o=./outdat/out301.csv u=./outdat/out302.csv v=０３,０４,０５,０６; IN=10 OUT=5; 2014/06/10 02:06:48
+#END# kgselstr -R -W -sub -x f=1,2 i=./indat/dat8.csv k=0 o=./outdat/out301x.csv u=./outdat/out302x.csv v=０３,０４,０５,０６; IN=10 OUT=5; 2014/06/10 02:06:49
+#END# kgselstr -R -W -nfn -sub f=1,2 i=./indat/dat8nfn.csv k=0 o=./outdat/out301nfn.csv u=./outdat/out302nfn.csv v=０３,０４,０５,０６; IN=10 OUT=9; 2014/06/10 02:06:49
+#END# kgselstr -R -W -r -sub f=受注日,発送日 i=./indat/dat8.csv k=顧客 o=./outdat/out303.csv u=./outdat/out304.csv v=０３,０４,０５,０６; IN=10 OUT=5; 2014/06/10 02:06:49
+#END# kgselstr -R -W -r -sub -x f=1,2 i=./indat/dat8.csv k=0 o=./outdat/out303x.csv u=./outdat/out304x.csv v=０３,０４,０５,０６; IN=10 OUT=5; 2014/06/10 02:06:49
+#END# kgselstr -R -W -nfn -r -sub f=1,2 i=./indat/dat8nfn.csv k=0 o=./outdat/out303nfn.csv u=./outdat/out304nfn.csv v=０３,０４,０５,０６; IN=10 OUT=1; 2014/06/10 02:06:49
+#END# kgselstr -F -R -W -sub f=受注日,発送日 i=./indat/dat8.csv k=顧客 o=./outdat/out305.csv u=./outdat/out306.csv v=０３,０４,０５,０６; IN=10 OUT=3; 2014/06/10 02:06:49
+#END# kgselstr -F -R -W -sub -x f=1,2 i=./indat/dat8.csv k=0 o=./outdat/out305x.csv u=./outdat/out306x.csv v=０３,０４,０５,０６; IN=10 OUT=3; 2014/06/10 02:06:49
+#END# kgselstr -F -R -W -nfn -sub f=1,2 i=./indat/dat8nfn.csv k=0 o=./outdat/out305nfn.csv u=./outdat/out306nfn.csv v=０３,０４,０５,０６; IN=10 OUT=3; 2014/06/10 02:06:49
+#END# kgselstr -F -R -W -r -sub f=受注日,発送日 i=./indat/dat8.csv k=顧客 o=./outdat/out307.csv u=./outdat/out308.csv v=０３,０４,０５,０６; IN=10 OUT=7; 2014/06/10 02:06:49
+#END# kgselstr -F -R -W -r -sub -x f=1,2 i=./indat/dat8.csv k=0 o=./outdat/out307x.csv u=./outdat/out308x.csv v=０３,０４,０５,０６; IN=10 OUT=7; 2014/06/10 02:06:49
+#END# kgselstr -F -R -W -nfn -r -sub f=1,2 i=./indat/dat8nfn.csv k=0 o=./outdat/out307nfn.csv u=./outdat/out308nfn.csv v=０３,０４,０５,０６; IN=10 OUT=7; 2014/06/10 02:06:49
+#END# kgselstr -F -W -head f=受注日,発送日 i=./indat/dat8.csv k=顧客 o=./outdat/out337.csv u=./outdat/out338.csv v=０１０１,０１０２; IN=10 OUT=5; 2014/06/10 02:06:49
+#END# kgselstr -F -W -head -x f=1,2 i=./indat/dat8.csv k=0 o=./outdat/out337x.csv u=./outdat/out338x.csv v=０１０１,０１０２; IN=10 OUT=5; 2014/06/10 02:06:49
+#END# kgselstr -F -W -head -nfn f=1,2 i=./indat/dat8nfn.csv k=0 o=./outdat/out337nfn.csv u=./outdat/out338nfn.csv v=０１０１,０１０２; IN=10 OUT=1; 2014/06/10 02:06:49
+#END# kgselstr -F -W -head -nfno f=受注日,発送日 i=./indat/dat8.csv k=顧客 o=./outdat/out337nfno.csv u=./outdat/out338nfno.csv v=０１０１,０１０２; IN=10 OUT=5; 2014/06/10 02:06:49
+#END# kgselstr -R -W -head f=受注日,発送日 i=./indat/dat11.csv k=顧客 o=./outdat/out339.csv u=./outdat/out340.csv v=０３,０４,０５,０６; IN=10 OUT=7; 2014/06/10 02:06:49
+#END# kgselstr -R -W -head -r f=受注日,発送日 i=./indat/dat11.csv k=顧客 o=./outdat/out341.csv u=./outdat/out342.csv v=０３,０４,０５,０６; IN=10 OUT=3; 2014/06/10 02:06:49
+#END# kgselstr -F -R -W -head f=受注日,発送日 i=./indat/dat11.csv k=顧客 o=./outdat/out343.csv u=./outdat/out344.csv v=０９,０１; IN=10 OUT=3; 2014/06/10 02:06:49
+#END# kgselstr -F -R -W -head -r f=受注日,発送日 i=./indat/dat11.csv k=顧客 o=./outdat/out345.csv u=./outdat/out346.csv v=０９,０１; IN=10 OUT=7; 2014/06/10 02:06:49
+#END# kgselstr -F -W -tail f=受注日,発送日 i=./indat/dat8.csv k=顧客 o=./outdat/out351.csv u=./outdat/out352.csv v=０１０１,０１０２; IN=10 OUT=5; 2014/06/10 02:06:49
+#END# kgselstr -R -W -tail f=受注日,発送日 i=./indat/dat11.csv k=顧客 o=./outdat/out353.csv u=./outdat/out354.csv v=０３,０４,０５,０６; IN=10 OUT=5; 2014/06/10 02:06:49
+#END# kgselstr -R -W -r -tail f=受注日,発送日 i=./indat/dat11.csv k=顧客 o=./outdat/out355.csv u=./outdat/out356.csv v=０３,０４,０５,０６; IN=10 OUT=5; 2014/06/10 02:06:49
+#END# kgselstr -F -R -W -tail f=受注日,発送日 i=./indat/dat11.csv k=顧客 o=./outdat/out357.csv u=./outdat/out358.csv v=０１,０３,０４,０５; IN=10 OUT=2; 2014/06/10 02:06:49
+#END# kgselstr -F -R -W -r -tail f=受注日,発送日 i=./indat/dat11.csv k=顧客 o=./outdat/out359.csv u=./outdat/out360.csv v=０１,０３,０４,０５; IN=10 OUT=8; 2014/06/10 02:06:49
+#END# kgselstr f=商品 i=./indat/dat9.csv k=顧客 o=./outdat/out309.csv u=./outdat/out310.csv v=01; IN=7 OUT=3; 2014/06/10 02:06:49
+#END# kgselstr -x f=1 i=./indat/dat9.csv k=0 o=./outdat/out309x.csv u=./outdat/out310x.csv v=01; IN=7 OUT=3; 2014/06/10 02:06:49
+#END# kgselstr -nfn f=1 i=./indat/dat9nfn.csv k=0 o=./outdat/out309nfn.csv u=./outdat/out310nfn.csv v=01; IN=7 OUT=2; 2014/06/10 02:06:49
+#END# kgselstr -r f=商品 i=./indat/dat9.csv k=顧客 o=./outdat/out311.csv u=./outdat/out312.csv v=01; IN=7 OUT=4; 2014/06/10 02:06:49
+#END# kgselstr -r -x f=1 i=./indat/dat9.csv k=0 o=./outdat/out311x.csv u=./outdat/out312x.csv v=01; IN=7 OUT=4; 2014/06/10 02:06:49
+#END# kgselstr -nfn -r f=1 i=./indat/dat9nfn.csv k=0 o=./outdat/out311nfn.csv u=./outdat/out312nfn.csv v=01; IN=7 OUT=5; 2014/06/10 02:06:49
+#END# kgselstr -R f=商品 i=./indat/dat9.csv k=顧客 o=./outdat/out313.csv u=./outdat/out314.csv v=01,04,05; IN=7 OUT=4; 2014/06/10 02:06:49
+#END# kgselstr -R -x f=1 i=./indat/dat9.csv k=0 o=./outdat/out313x.csv u=./outdat/out314x.csv v=01,04,05; IN=7 OUT=4; 2014/06/10 02:06:49
+#END# kgselstr -R -nfn f=1 i=./indat/dat9nfn.csv k=0 o=./outdat/out313nfn.csv u=./outdat/out314nfn.csv v=01,04,05; IN=7 OUT=4; 2014/06/10 02:06:49
+#END# kgselstr -R -r f=商品 i=./indat/dat9.csv k=顧客 o=./outdat/out315.csv u=./outdat/out316.csv v=01,04,05; IN=7 OUT=3; 2014/06/10 02:06:49
+#END# kgselstr -R -r -x f=1 i=./indat/dat9.csv k=0 o=./outdat/out315x.csv u=./outdat/out316x.csv v=01,04,05; IN=7 OUT=3; 2014/06/10 02:06:49
+#END# kgselstr -R -nfn -r f=1 i=./indat/dat9nfn.csv k=0 o=./outdat/out315nfn.csv u=./outdat/out316nfn.csv v=01,04,05; IN=7 OUT=3; 2014/06/10 02:06:49
+#END# kgselstr f=受注日,発送日 i=./indat/dat10.csv k=顧客 o=./outdat/out317.csv u=./outdat/out318.csv v=20090101,20090102; IN=13 OUT=7; 2014/06/10 02:06:49
+#END# kgselstr -x f=1,2 i=./indat/dat10.csv k=0 o=./outdat/out317x.csv u=./outdat/out318x.csv v=20090101,20090102; IN=13 OUT=7; 2014/06/10 02:06:50
+#END# kgselstr -nfn f=1,2 i=./indat/dat10nfn.csv k=0 o=./outdat/out317nfn.csv u=./outdat/out318nfn.csv v=20090101,20090102; IN=13 OUT=6; 2014/06/10 02:06:50
+#END# kgselstr -r f=受注日,発送日 i=./indat/dat10.csv k=顧客 o=./outdat/out319.csv u=./outdat/out320.csv v=20090101,20090102; IN=13 OUT=6; 2014/06/10 02:06:50
+#END# kgselstr -r -x f=1,2 i=./indat/dat10.csv k=0 o=./outdat/out319x.csv u=./outdat/out320x.csv v=20090101,20090102; IN=13 OUT=6; 2014/06/10 02:06:50
+#END# kgselstr -nfn -r f=1,2 i=./indat/dat10nfn.csv k=0 o=./outdat/out319nfn.csv u=./outdat/out320nfn.csv v=20090101,20090102; IN=13 OUT=7; 2014/06/10 02:06:50
+#END# kgselstr -F f=受注日,発送日 i=./indat/dat10.csv k=顧客 o=./outdat/out321.csv u=./outdat/out322.csv v=20090101,20090102; IN=13 OUT=5; 2014/06/10 02:06:50
+#END# kgselstr -F -x f=1,2 i=./indat/dat10.csv k=0 o=./outdat/out321x.csv u=./outdat/out322x.csv v=20090101,20090102; IN=13 OUT=5; 2014/06/10 02:06:50
+#END# kgselstr -F -nfn f=1,2 i=./indat/dat10nfn.csv k=0 o=./outdat/out321nfn.csv u=./outdat/out322nfn.csv v=20090101,20090102; IN=13 OUT=5; 2014/06/10 02:06:50
+#END# kgselstr -F -r f=受注日,発送日 i=./indat/dat10.csv k=顧客 o=./outdat/out323.csv u=./outdat/out324.csv v=20090101,20090102; IN=13 OUT=8; 2014/06/10 02:06:50
+#END# kgselstr -F -r -x f=1,2 i=./indat/dat10.csv k=0 o=./outdat/out323x.csv u=./outdat/out324x.csv v=20090101,20090102; IN=13 OUT=8; 2014/06/10 02:06:50
+#END# kgselstr -F -nfn -r f=1,2 i=./indat/dat10nfn.csv k=0 o=./outdat/out323nfn.csv u=./outdat/out324nfn.csv v=20090101,20090102; IN=13 OUT=8; 2014/06/10 02:06:50
+#END# kgselstr -R f=受注日,発送日 i=./indat/dat10.csv k=顧客 o=./outdat/out325.csv u=./outdat/out326.csv v=20090103,20090104,20090105,20090106; IN=13 OUT=8; 2014/06/10 02:06:50
+#END# kgselstr -R -x f=1,2 i=./indat/dat10.csv k=0 o=./outdat/out325x.csv u=./outdat/out326x.csv v=20090103,20090104,20090105,20090106; IN=13 OUT=8; 2014/06/10 02:06:50
+#END# kgselstr -R -nfn f=1,2 i=./indat/dat10nfn.csv k=0 o=./outdat/out325nfn.csv u=./outdat/out326nfn.csv v=20090103,20090104,20090105,20090106; IN=13 OUT=8; 2014/06/10 02:06:50
+#END# kgselstr -R -r f=受注日,発送日 i=./indat/dat10.csv k=顧客 o=./outdat/out327.csv u=./outdat/out328.csv v=20090103,20090104,20090105,20090106; IN=13 OUT=5; 2014/06/10 02:06:50
+#END# kgselstr -R -r -x f=1,2 i=./indat/dat10.csv k=0 o=./outdat/out327x.csv u=./outdat/out328x.csv v=20090103,20090104,20090105,20090106; IN=13 OUT=5; 2014/06/10 02:06:50
+#END# kgselstr -R -nfn -r f=1,2 i=./indat/dat10nfn.csv k=0 o=./outdat/out327nfn.csv u=./outdat/out328nfn.csv v=20090103,20090104,20090105,20090106; IN=13 OUT=5; 2014/06/10 02:06:50
+#END# kgselstr -F -R f=受注日,発送日 i=./indat/dat10.csv k=顧客 o=./outdat/out329.csv u=./outdat/out330.csv v=20090103,20090104,20090105,20090106; IN=13 OUT=6; 2014/06/10 02:06:50
+#END# kgselstr -F -R -x f=1,2 i=./indat/dat10.csv k=0 o=./outdat/out329x.csv u=./outdat/out330x.csv v=20090103,20090104,20090105,20090106; IN=13 OUT=6; 2014/06/10 02:06:50
+#END# kgselstr -F -R -nfn f=1,2 i=./indat/dat10nfn.csv k=0 o=./outdat/out329nfn.csv u=./outdat/out330nfn.csv v=20090103,20090104,20090105,20090106; IN=13 OUT=7; 2014/06/10 02:06:50
+#END# kgselstr -F -R -r f=受注日,発送日 i=./indat/dat10.csv k=顧客 o=./outdat/out331.csv u=./outdat/out332.csv v=20090103,20090104,20090105,20090106; IN=13 OUT=7; 2014/06/10 02:06:50
+#END# kgselstr -F -R -r -x f=1,2 i=./indat/dat10.csv k=0 o=./outdat/out331x.csv u=./outdat/out332x.csv v=20090103,20090104,20090105,20090106; IN=13 OUT=7; 2014/06/10 02:06:50
+#END# kgselstr -F -R -nfn -r f=1,2 i=./indat/dat10nfn.csv k=0 o=./outdat/out331nfn.csv u=./outdat/out332nfn.csv v=20090103,20090104,20090105,20090106; IN=13 OUT=6; 2014/06/10 02:06:50

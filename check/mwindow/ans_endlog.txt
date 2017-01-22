@@ -1,0 +1,189 @@
+#END# kgwindow i=./indat/dat0.csv o=./outdat/out0.csv t=2 wk=日付:date; IN=0 OUT=0; 2014/06/20 10:34:03
+#END# kgwindow -x i=./indat/dat0.csv o=./outdat/out0x.csv t=2 wk=0:date; IN=0 OUT=0; 2014/06/20 10:34:03
+#END# kgwindow -nfn i=./indat/dat0nfn.csv o=./outdat/out0nfn.csv t=2 wk=0; IN=0 OUT=0; 2014/06/20 10:34:03
+#END# kgwindow -nfno i=./indat/dat0.csv o=./outdat/out0nfno.csv t=2 wk=日付; IN=0 OUT=0; 2014/06/20 10:34:03
+#END# kgwindow -nfno -x i=./indat/dat0.csv o=./outdat/out0nfnox.csv t=2 wk=0; IN=0 OUT=0; 2014/06/20 10:34:03
+#END# kgwindow i=./indat/dat1s.csv o=./outdat/out1.csv t=2 wk=日付:date; IN=5 OUT=8; 2014/06/20 10:34:03
+#END# kgwindow -x i=./indat/dat1s.csv o=./outdat/out1x.csv t=2 wk=0:date; IN=5 OUT=8; 2014/06/20 10:34:03
+#END# kgwindow -nfn i=./indat/dat1snfn.csv o=./outdat/out1nfn.csv t=2 wk=0; IN=5 OUT=8; 2014/06/20 10:34:03
+#END# kgwindow -nfno i=./indat/dat1s.csv o=./outdat/out1nfno.csv t=2 wk=日付; IN=5 OUT=8; 2014/06/20 10:34:03
+#END# kgwindow -nfno -x i=./indat/dat1s.csv o=./outdat/out1nfnox.csv t=2 wk=0; IN=5 OUT=8; 2014/06/20 10:34:03
+#END# kgwindow -q i=./indat/dat1s.csv o=./outdat/out1q.csv t=2 wk=日付:date; IN=5 OUT=8; 2014/06/20 10:34:03
+#END# kgwindow -q -x i=./indat/dat1s.csv o=./outdat/out1qx.csv t=2 wk=0:date; IN=5 OUT=8; 2014/06/20 10:34:03
+#END# kgwindow i=./indat/dat1s.csv o=./outdat/out2.csv t=0 wk=日付:date; IN=5 OUT=5; 2014/06/20 10:34:03
+#END# kgwindow -x i=./indat/dat1s.csv o=./outdat/out2x.csv t=0 wk=0:date; IN=5 OUT=5; 2014/06/20 10:34:03
+#END# kgwindow -nfn i=./indat/dat1snfn.csv o=./outdat/out2nfn.csv t=0 wk=0; IN=5 OUT=5; 2014/06/20 10:34:03
+#END# kgwindow -nfno i=./indat/dat1s.csv o=./outdat/out2nfno.csv t=0 wk=日付; IN=5 OUT=5; 2014/06/20 10:34:03
+#END# kgwindow -nfno -x i=./indat/dat1s.csv o=./outdat/out2nfnox.csv t=0 wk=0; IN=5 OUT=5; 2014/06/20 10:34:03
+#END# kgwindow i=./indat/dat1s.csv o=./outdat/out3.csv t=-1 wk=日付:date; IN=5 OUT=5; 2014/06/20 10:34:03
+#END# kgwindow -x i=./indat/dat1s.csv o=./outdat/out3x.csv t=-1 wk=0:date; IN=5 OUT=5; 2014/06/20 10:34:03
+#END# kgwindow -nfn i=./indat/dat1snfn.csv o=./outdat/out3nfn.csv t=-1 wk=0; IN=5 OUT=5; 2014/06/20 10:34:03
+#END# kgwindow -nfno i=./indat/dat1s.csv o=./outdat/out3nfno.csv t=-1 wk=日付; IN=5 OUT=5; 2014/06/20 10:34:03
+#END# kgwindow -nfno -x i=./indat/dat1s.csv o=./outdat/out3nfnox.csv t=-1 wk=0; IN=5 OUT=5; 2014/06/20 10:34:03
+#END# kgwindow i=./indat/dat1s.csv o=./outdat/out4.csv t=1 wk=日付:date; IN=5 OUT=5; 2014/06/20 10:34:03
+#END# kgwindow -x i=./indat/dat1s.csv o=./outdat/out4x.csv t=1 wk=0:date; IN=5 OUT=5; 2014/06/20 10:34:03
+#END# kgwindow -nfn i=./indat/dat1snfn.csv o=./outdat/out4nfn.csv t=1 wk=0; IN=5 OUT=5; 2014/06/20 10:34:03
+#END# kgwindow -nfno i=./indat/dat1s.csv o=./outdat/out4nfno.csv t=1 wk=日付; IN=5 OUT=5; 2014/06/20 10:34:03
+#END# kgwindow -nfno -x i=./indat/dat1s.csv o=./outdat/out4nfnox.csv t=1 wk=0; IN=5 OUT=5; 2014/06/20 10:34:03
+#END# kgwindow i=./indat/dat1s.csv o=./outdat/out5.csv t=100 wk=日付:date; IN=5 OUT=0; 2014/06/20 10:34:03
+#END# kgwindow -x i=./indat/dat1s.csv o=./outdat/out5x.csv t=100 wk=0:date; IN=5 OUT=0; 2014/06/20 10:34:03
+#END# kgwindow -nfn i=./indat/dat1snfn.csv o=./outdat/out5nfn.csv t=100 wk=0; IN=5 OUT=0; 2014/06/20 10:34:03
+#END# kgwindow -nfno i=./indat/dat1s.csv o=./outdat/out5nfno.csv t=100 wk=日付; IN=5 OUT=0; 2014/06/20 10:34:03
+#END# kgwindow -nfno -x i=./indat/dat1s.csv o=./outdat/out5nfnox.csv t=100 wk=0; IN=5 OUT=0; 2014/06/20 10:34:03
+#END# kgwindow -n i=./indat/dat1s.csv o=./outdat/out6.csv t=100 wk=日付:date; IN=5 OUT=15; 2014/06/20 10:34:03
+#END# kgwindow -n -x i=./indat/dat1s.csv o=./outdat/out6x.csv t=100 wk=0:date; IN=5 OUT=15; 2014/06/20 10:34:03
+#END# kgwindow -n -nfn i=./indat/dat1snfn.csv o=./outdat/out6nfn.csv t=100 wk=0; IN=5 OUT=15; 2014/06/20 10:34:03
+#END# kgwindow -n -nfno i=./indat/dat1s.csv o=./outdat/out6nfno.csv t=100 wk=日付; IN=5 OUT=15; 2014/06/20 10:34:03
+#END# kgwindow -n -nfno -x i=./indat/dat1s.csv o=./outdat/out6nfnox.csv t=100 wk=0; IN=5 OUT=15; 2014/06/20 10:34:03
+#END# kgwindow i=./indat/dat1s.csv o=./outdat/out7.csv t=3 wk=日付:date,日付２:date2; IN=5 OUT=9; 2014/06/20 10:34:03
+#END# kgwindow -x i=./indat/dat1s.csv o=./outdat/out7x.csv t=3 wk=0:date,2:date2; IN=5 OUT=9; 2014/06/20 10:34:03
+#END# kgwindow -nfn i=./indat/dat1snfn.csv o=./outdat/out7nfn.csv t=3 wk=0,2; IN=5 OUT=9; 2014/06/20 10:34:03
+#END# kgwindow -nfno i=./indat/dat1s.csv o=./outdat/out7nfno.csv t=3 wk=日付,日付２; IN=5 OUT=9; 2014/06/20 10:34:03
+#END# kgwindow -nfno -x i=./indat/dat1s.csv o=./outdat/out7nfnox.csv t=3 wk=0,2; IN=5 OUT=9; 2014/06/20 10:34:03
+#END# kgwindow -r i=./indat/dat1s.csv o=./outdat/out8.csv t=2 wk=日付:date; IN=5 OUT=8; 2014/06/20 10:34:03
+#END# kgwindow -r -x i=./indat/dat1s.csv o=./outdat/out8x.csv t=2 wk=0:date; IN=5 OUT=8; 2014/06/20 10:34:03
+#END# kgwindow -nfn -r i=./indat/dat1snfn.csv o=./outdat/out8nfn.csv t=2 wk=0; IN=5 OUT=8; 2014/06/20 10:34:03
+#END# kgwindow -nfno -r i=./indat/dat1s.csv o=./outdat/out8nfno.csv t=2 wk=日付; IN=5 OUT=8; 2014/06/20 10:34:03
+#END# kgwindow -nfno -r -x i=./indat/dat1s.csv o=./outdat/out8nfnox.csv t=2 wk=0; IN=5 OUT=8; 2014/06/20 10:34:03
+#END# kgwindow -n i=./indat/dat1s.csv o=./outdat/out9.csv t=100 wk=日付:date,日付２:date2; IN=5 OUT=15; 2014/06/20 10:34:03
+#END# kgwindow -n -x i=./indat/dat1s.csv o=./outdat/out9x.csv t=100 wk=0:date,2:date2; IN=5 OUT=15; 2014/06/20 10:34:03
+#END# kgwindow -n -nfn i=./indat/dat1snfn.csv o=./outdat/out9nfn.csv t=100 wk=0,2; IN=5 OUT=15; 2014/06/20 10:34:03
+#END# kgwindow -n -nfno i=./indat/dat1s.csv o=./outdat/out9nfno.csv t=100 wk=日付,日付２; IN=5 OUT=15; 2014/06/20 10:34:03
+#END# kgwindow -n -nfno -x i=./indat/dat1s.csv o=./outdat/out9nfnox.csv t=100 wk=0,2; IN=5 OUT=15; 2014/06/20 10:34:03
+#END# kgwindow -n -r i=./indat/dat1s.csv o=./outdat/out10.csv t=100 wk=日付:date,日付２:date2; IN=5 OUT=15; 2014/06/20 10:34:03
+#END# kgwindow -n -r -x i=./indat/dat1s.csv o=./outdat/out10x.csv t=100 wk=0:date,2:date2; IN=5 OUT=15; 2014/06/20 10:34:03
+#END# kgwindow -n -nfn -r i=./indat/dat1snfn.csv o=./outdat/out10nfn.csv t=100 wk=0,2; IN=5 OUT=15; 2014/06/20 10:34:04
+#END# kgwindow -n -nfno -r i=./indat/dat1s.csv o=./outdat/out10nfno.csv t=100 wk=日付,日付２; IN=5 OUT=15; 2014/06/20 10:34:04
+#END# kgwindow -n -nfno -r -x i=./indat/dat1s.csv o=./outdat/out10nfnox.csv t=100 wk=0,2; IN=5 OUT=15; 2014/06/20 10:34:04
+#END# kgwindow i=./indat/dat2s.csv o=./outdat/out18.csv t=3 wk=日付:date,日付２:date2; IN=5 OUT=9; 2014/06/20 10:34:04
+#END# kgwindow -x i=./indat/dat2s.csv o=./outdat/out18x.csv t=3 wk=0:date,2:date2; IN=5 OUT=9; 2014/06/20 10:34:04
+#END# kgwindow -nfn i=./indat/dat2snfn.csv o=./outdat/out18nfn.csv t=3 wk=0,2; IN=5 OUT=9; 2014/06/20 10:34:04
+#END# kgwindow -nfno i=./indat/dat2s.csv o=./outdat/out18nfno.csv t=3 wk=日付,日付２; IN=5 OUT=9; 2014/06/20 10:34:04
+#END# kgwindow -nfno -x i=./indat/dat2s.csv o=./outdat/out18nfnox.csv t=3 wk=0,2; IN=5 OUT=9; 2014/06/20 10:34:04
+#END# kgwindow i=./indat/dat2s.csv o=./outdat/out11.csv t=3 wk=日付:date,その他:other; IN=5 OUT=9; 2014/06/20 10:34:04
+#END# kgwindow -x i=./indat/dat2s.csv o=./outdat/out11x.csv t=3 wk=0:date,3:other; IN=5 OUT=9; 2014/06/20 10:34:04
+#END# kgwindow -nfn i=./indat/dat2snfn.csv o=./outdat/out11nfn.csv t=3 wk=0,3; IN=5 OUT=9; 2014/06/20 10:34:04
+#END# kgwindow -nfno i=./indat/dat2s.csv o=./outdat/out11nfno.csv t=3 wk=日付,その他; IN=5 OUT=9; 2014/06/20 10:34:04
+#END# kgwindow -nfno -x i=./indat/dat2s.csv o=./outdat/out11nfnox.csv t=3 wk=0,3; IN=5 OUT=9; 2014/06/20 10:34:04
+#END# kgwindow -n -r i=./indat/dat2s.csv o=./outdat/out12.csv t=100 wk=日付:date,日付２:date2; IN=5 OUT=15; 2014/06/20 10:34:04
+#END# kgwindow -n -r -x i=./indat/dat2s.csv o=./outdat/out12x.csv t=100 wk=0:date,2:date2; IN=5 OUT=15; 2014/06/20 10:34:04
+#END# kgwindow -n -nfn -r i=./indat/dat2snfn.csv o=./outdat/out12nfn.csv t=100 wk=0,2; IN=5 OUT=15; 2014/06/20 10:34:04
+#END# kgwindow -n -nfno -r i=./indat/dat2s.csv o=./outdat/out12nfno.csv t=100 wk=日付,日付２; IN=5 OUT=15; 2014/06/20 10:34:04
+#END# kgwindow -n -nfno -r -x i=./indat/dat2s.csv o=./outdat/out12nfnox.csv t=100 wk=0,2; IN=5 OUT=15; 2014/06/20 10:34:04
+#END# kgwindow i=./indat/dat3s.csv k=分類 o=./outdat/out13.csv t=2 wk=日付:date; IN=12 OUT=16; 2014/06/20 10:34:04
+#END# kgwindow -x i=./indat/dat3s.csv k=0 o=./outdat/out13x.csv t=2 wk=1:date; IN=12 OUT=16; 2014/06/20 10:34:04
+#END# kgwindow -nfn i=./indat/dat3snfn.csv k=0 o=./outdat/out13nfn.csv t=2 wk=1; IN=12 OUT=16; 2014/06/20 10:34:04
+#END# kgwindow -nfno i=./indat/dat3s.csv k=分類 o=./outdat/out13nfno.csv t=2 wk=日付:date; IN=12 OUT=16; 2014/06/20 10:34:04
+#END# kgwindow -nfno -x i=./indat/dat3s.csv k=0 o=./outdat/out13nfnox.csv t=2 wk=1; IN=12 OUT=16; 2014/06/20 10:34:04
+#END# kgwindow i=./indat/dat4s.csv k=分類,分類２ o=./outdat/out14.csv t=2 wk=日付:date; IN=12 OUT=10; 2014/06/20 10:34:04
+#END# kgwindow -x i=./indat/dat4s.csv k=0,1 o=./outdat/out14x.csv t=2 wk=2:date; IN=12 OUT=10; 2014/06/20 10:34:04
+#END# kgwindow -nfn i=./indat/dat4snfn.csv k=0,1 o=./outdat/out14nfn.csv t=2 wk=2; IN=12 OUT=10; 2014/06/20 10:34:04
+#END# kgwindow -nfno i=./indat/dat4s.csv k=分類,分類２ o=./outdat/out14nfno.csv t=2 wk=日付:date; IN=12 OUT=10; 2014/06/20 10:34:04
+#END# kgwindow -nfno -x i=./indat/dat4s.csv k=0,1 o=./outdat/out14nfnox.csv t=2 wk=2; IN=12 OUT=10; 2014/06/20 10:34:04
+#END# kgwindow -r i=./indat/dat4s.csv k=分類,分類２ o=./outdat/out15.csv t=3 wk=日付:date; IN=12 OUT=3; 2014/06/20 10:34:04
+#END# kgwindow -r -x i=./indat/dat4s.csv k=0,1 o=./outdat/out15x.csv t=3 wk=2:date; IN=12 OUT=3; 2014/06/20 10:34:04
+#END# kgwindow -nfn -r i=./indat/dat4snfn.csv k=0,1 o=./outdat/out15nfn.csv t=3 wk=2; IN=12 OUT=3; 2014/06/20 10:34:04
+#END# kgwindow -nfno -r i=./indat/dat4s.csv k=分類,分類２ o=./outdat/out15nfno.csv t=3 wk=日付:date; IN=12 OUT=3; 2014/06/20 10:34:04
+#END# kgwindow -nfno -r -x i=./indat/dat4s.csv k=0,1 o=./outdat/out15nfnox.csv t=3 wk=2; IN=12 OUT=3; 2014/06/20 10:34:04
+#END# kgwindow -n i=./indat/dat4s.csv k=分類,分類２ o=./outdat/out16.csv t=3 wk=日付:date,値:val; IN=12 OUT=18; 2014/06/20 10:34:04
+#END# kgwindow -n -x i=./indat/dat4s.csv k=0,1 o=./outdat/out16x.csv t=3 wk=2:date,3:val; IN=12 OUT=18; 2014/06/20 10:34:04
+#END# kgwindow -n -nfn i=./indat/dat4snfn.csv k=0,1 o=./outdat/out16nfn.csv t=3 wk=2,3; IN=12 OUT=18; 2014/06/20 10:34:04
+#END# kgwindow -n -nfno i=./indat/dat4s.csv k=分類,分類２ o=./outdat/out16nfno.csv t=3 wk=日付:date,値:val; IN=12 OUT=18; 2014/06/20 10:34:04
+#END# kgwindow -n -nfno -x i=./indat/dat4s.csv k=0,1 o=./outdat/out16nfnox.csv t=3 wk=2,3; IN=12 OUT=18; 2014/06/20 10:34:04
+#END# kgwindow -n -r i=./indat/dat4s.csv k=分類,分類２ o=./outdat/out17.csv t=3 wk=日付:date,値:val; IN=12 OUT=18; 2014/06/20 10:34:04
+#END# kgwindow -n -r -x i=./indat/dat4s.csv k=0,1 o=./outdat/out17x.csv t=3 wk=2:date,3:val; IN=12 OUT=18; 2014/06/20 10:34:04
+#END# kgwindow -n -nfn -r i=./indat/dat4snfn.csv k=0,1 o=./outdat/out17nfn.csv t=3 wk=2,3; IN=12 OUT=18; 2014/06/20 10:34:04
+#END# kgwindow -n -nfno -r i=./indat/dat4s.csv k=分類,分類２ o=./outdat/out17nfno.csv t=3 wk=日付:date,値:val; IN=12 OUT=18; 2014/06/20 10:34:04
+#END# kgwindow -n -nfno -r -x i=./indat/dat4s.csv k=0,1 o=./outdat/out17nfnox.csv t=3 wk=2,3; IN=12 OUT=18; 2014/06/20 10:34:04
+#END# kgwindow i=./indat/dat1.csv o=./outdat/out31.csv t=2 wk=日付:date; IN=5 OUT=8; 2014/06/20 10:34:04
+#END# kgwindow -x i=./indat/dat1.csv o=./outdat/out31x.csv t=2 wk=0:date; IN=5 OUT=8; 2014/06/20 10:34:04
+#END# kgwindow -nfn i=./indat/dat1nfn.csv o=./outdat/out31nfn.csv t=2 wk=0; IN=5 OUT=8; 2014/06/20 10:34:04
+#END# kgwindow -nfno i=./indat/dat1.csv o=./outdat/out31nfno.csv t=2 wk=日付; IN=5 OUT=8; 2014/06/20 10:34:04
+#END# kgwindow -nfno -x i=./indat/dat1.csv o=./outdat/out31nfnox.csv t=2 wk=0; IN=5 OUT=8; 2014/06/20 10:34:04
+#END# kgwindow -q i=./indat/dat1.csv o=./outdat/out31q.csv t=2 wk=日付:date; IN=5 OUT=8; 2014/06/20 10:34:04
+#END# kgwindow -q -x i=./indat/dat1.csv o=./outdat/out31qx.csv t=2 wk=0:date; IN=5 OUT=8; 2014/06/20 10:34:04
+#END# kgwindow i=./indat/dat1.csv o=./outdat/out32.csv t=0 wk=日付:date; IN=5 OUT=5; 2014/06/20 10:34:04
+#END# kgwindow -x i=./indat/dat1.csv o=./outdat/out32x.csv t=0 wk=0:date; IN=5 OUT=5; 2014/06/20 10:34:04
+#END# kgwindow -nfn i=./indat/dat1nfn.csv o=./outdat/out32nfn.csv t=0 wk=0; IN=5 OUT=5; 2014/06/20 10:34:04
+#END# kgwindow -nfno i=./indat/dat1.csv o=./outdat/out32nfno.csv t=0 wk=日付; IN=5 OUT=5; 2014/06/20 10:34:04
+#END# kgwindow -nfno -x i=./indat/dat1.csv o=./outdat/out32nfnox.csv t=0 wk=0; IN=5 OUT=5; 2014/06/20 10:34:04
+#END# kgwindow i=./indat/dat1.csv o=./outdat/out33.csv t=-1 wk=日付:date; IN=5 OUT=5; 2014/06/20 10:34:04
+#END# kgwindow -x i=./indat/dat1.csv o=./outdat/out33x.csv t=-1 wk=0:date; IN=5 OUT=5; 2014/06/20 10:34:04
+#END# kgwindow -nfn i=./indat/dat1nfn.csv o=./outdat/out33nfn.csv t=-1 wk=0; IN=5 OUT=5; 2014/06/20 10:34:05
+#END# kgwindow -nfno i=./indat/dat1.csv o=./outdat/out33nfno.csv t=-1 wk=日付; IN=5 OUT=5; 2014/06/20 10:34:05
+#END# kgwindow -nfno -x i=./indat/dat1.csv o=./outdat/out33nfnox.csv t=-1 wk=0; IN=5 OUT=5; 2014/06/20 10:34:05
+#END# kgwindow i=./indat/dat1.csv o=./outdat/out34.csv t=1 wk=日付:date; IN=5 OUT=5; 2014/06/20 10:34:05
+#END# kgwindow -x i=./indat/dat1.csv o=./outdat/out34x.csv t=1 wk=0:date; IN=5 OUT=5; 2014/06/20 10:34:05
+#END# kgwindow -nfn i=./indat/dat1nfn.csv o=./outdat/out34nfn.csv t=1 wk=0; IN=5 OUT=5; 2014/06/20 10:34:05
+#END# kgwindow -nfno i=./indat/dat1.csv o=./outdat/out34nfno.csv t=1 wk=日付; IN=5 OUT=5; 2014/06/20 10:34:05
+#END# kgwindow -nfno -x i=./indat/dat1.csv o=./outdat/out34nfnox.csv t=1 wk=0; IN=5 OUT=5; 2014/06/20 10:34:05
+#END# kgwindow i=./indat/dat1.csv o=./outdat/out35.csv t=100 wk=日付:date; IN=5 OUT=0; 2014/06/20 10:34:05
+#END# kgwindow -x i=./indat/dat1.csv o=./outdat/out35x.csv t=100 wk=0:date; IN=5 OUT=0; 2014/06/20 10:34:05
+#END# kgwindow -nfn i=./indat/dat1nfn.csv o=./outdat/out35nfn.csv t=100 wk=0; IN=5 OUT=0; 2014/06/20 10:34:05
+#END# kgwindow -nfno i=./indat/dat1.csv o=./outdat/out35nfno.csv t=100 wk=日付; IN=5 OUT=0; 2014/06/20 10:34:05
+#END# kgwindow -nfno -x i=./indat/dat1.csv o=./outdat/out35nfnox.csv t=100 wk=0; IN=5 OUT=0; 2014/06/20 10:34:05
+#END# kgwindow -n i=./indat/dat1.csv o=./outdat/out36.csv t=100 wk=日付:date; IN=5 OUT=15; 2014/06/20 10:34:05
+#END# kgwindow -n -x i=./indat/dat1.csv o=./outdat/out36x.csv t=100 wk=0:date; IN=5 OUT=15; 2014/06/20 10:34:05
+#END# kgwindow -n -nfn i=./indat/dat1nfn.csv o=./outdat/out36nfn.csv t=100 wk=0; IN=5 OUT=15; 2014/06/20 10:34:05
+#END# kgwindow -n -nfno i=./indat/dat1.csv o=./outdat/out36nfno.csv t=100 wk=日付; IN=5 OUT=15; 2014/06/20 10:34:05
+#END# kgwindow -n -nfno -x i=./indat/dat1.csv o=./outdat/out36nfnox.csv t=100 wk=0; IN=5 OUT=15; 2014/06/20 10:34:05
+#END# kgwindow i=./indat/dat1.csv o=./outdat/out37.csv t=3 wk=日付:date,日付２:date2; IN=5 OUT=9; 2014/06/20 10:34:05
+#END# kgwindow -x i=./indat/dat1.csv o=./outdat/out37x.csv t=3 wk=0:date,2:date2; IN=5 OUT=9; 2014/06/20 10:34:05
+#END# kgwindow -nfn i=./indat/dat1nfn.csv o=./outdat/out37nfn.csv t=3 wk=0,2; IN=5 OUT=9; 2014/06/20 10:34:05
+#END# kgwindow -nfno i=./indat/dat1.csv o=./outdat/out37nfno.csv t=3 wk=日付,日付２; IN=5 OUT=9; 2014/06/20 10:34:05
+#END# kgwindow -nfno -x i=./indat/dat1.csv o=./outdat/out37nfnox.csv t=3 wk=0,2; IN=5 OUT=9; 2014/06/20 10:34:05
+#END# kgwindow -r i=./indat/dat1.csv o=./outdat/out38.csv t=2 wk=日付:date; IN=5 OUT=8; 2014/06/20 10:34:05
+#END# kgwindow -r -x i=./indat/dat1.csv o=./outdat/out38x.csv t=2 wk=0:date; IN=5 OUT=8; 2014/06/20 10:34:05
+#END# kgwindow -nfn -r i=./indat/dat1nfn.csv o=./outdat/out38nfn.csv t=2 wk=0; IN=5 OUT=8; 2014/06/20 10:34:05
+#END# kgwindow -nfno -r i=./indat/dat1.csv o=./outdat/out38nfno.csv t=2 wk=日付; IN=5 OUT=8; 2014/06/20 10:34:05
+#END# kgwindow -nfno -r -x i=./indat/dat1.csv o=./outdat/out38nfnox.csv t=2 wk=0; IN=5 OUT=8; 2014/06/20 10:34:05
+#END# kgwindow -n i=./indat/dat1.csv o=./outdat/out39.csv t=100 wk=日付:date,日付２:date2; IN=5 OUT=15; 2014/06/20 10:34:05
+#END# kgwindow -n -x i=./indat/dat1.csv o=./outdat/out39x.csv t=100 wk=0:date,2:date2; IN=5 OUT=15; 2014/06/20 10:34:05
+#END# kgwindow -n -nfn i=./indat/dat1nfn.csv o=./outdat/out39nfn.csv t=100 wk=0,2; IN=5 OUT=15; 2014/06/20 10:34:05
+#END# kgwindow -n -nfno i=./indat/dat1.csv o=./outdat/out39nfno.csv t=100 wk=日付,日付２; IN=5 OUT=15; 2014/06/20 10:34:05
+#END# kgwindow -n -nfno -x i=./indat/dat1.csv o=./outdat/out39nfnox.csv t=100 wk=0,2; IN=5 OUT=15; 2014/06/20 10:34:05
+#END# kgwindow -n -r i=./indat/dat1.csv o=./outdat/out40.csv t=100 wk=日付:date,日付２:date2; IN=5 OUT=15; 2014/06/20 10:34:05
+#END# kgwindow -n -r -x i=./indat/dat1.csv o=./outdat/out40x.csv t=100 wk=0:date,2:date2; IN=5 OUT=15; 2014/06/20 10:34:05
+#END# kgwindow -n -nfn -r i=./indat/dat1nfn.csv o=./outdat/out40nfn.csv t=100 wk=0,2; IN=5 OUT=15; 2014/06/20 10:34:05
+#END# kgwindow -n -nfno -r i=./indat/dat1.csv o=./outdat/out40nfno.csv t=100 wk=日付,日付２; IN=5 OUT=15; 2014/06/20 10:34:05
+#END# kgwindow -n -nfno -r -x i=./indat/dat1.csv o=./outdat/out40nfnox.csv t=100 wk=0,2; IN=5 OUT=15; 2014/06/20 10:34:06
+#END# kgwindow i=./indat/dat2.csv o=./outdat/out48.csv t=3 wk=日付:date,日付２:date2; IN=5 OUT=9; 2014/06/20 10:34:06
+#END# kgwindow -x i=./indat/dat2.csv o=./outdat/out48x.csv t=3 wk=0:date,2:date2; IN=5 OUT=9; 2014/06/20 10:34:06
+#END# kgwindow -nfn i=./indat/dat2nfn.csv o=./outdat/out48nfn.csv t=3 wk=0,2; IN=5 OUT=9; 2014/06/20 10:34:06
+#END# kgwindow -nfno i=./indat/dat2.csv o=./outdat/out48nfno.csv t=3 wk=日付,日付２; IN=5 OUT=9; 2014/06/20 10:34:06
+#END# kgwindow -nfno -x i=./indat/dat2.csv o=./outdat/out48nfnox.csv t=3 wk=0,2; IN=5 OUT=9; 2014/06/20 10:34:06
+#END# kgwindow i=./indat/dat2.csv o=./outdat/out41.csv t=3 wk=日付:date,その他:other; IN=5 OUT=9; 2014/06/20 10:34:06
+#END# kgwindow -x i=./indat/dat2.csv o=./outdat/out41x.csv t=3 wk=0:date,3:other; IN=5 OUT=9; 2014/06/20 10:34:06
+#END# kgwindow -nfn i=./indat/dat2nfn.csv o=./outdat/out41nfn.csv t=3 wk=0,3; IN=5 OUT=9; 2014/06/20 10:34:06
+#END# kgwindow -nfno i=./indat/dat2.csv o=./outdat/out41nfno.csv t=3 wk=日付,その他; IN=5 OUT=9; 2014/06/20 10:34:06
+#END# kgwindow -nfno -x i=./indat/dat2.csv o=./outdat/out41nfnox.csv t=3 wk=0,3; IN=5 OUT=9; 2014/06/20 10:34:06
+#END# kgwindow -n -r i=./indat/dat2.csv o=./outdat/out42.csv t=100 wk=日付:date,日付２:date2; IN=5 OUT=15; 2014/06/20 10:34:06
+#END# kgwindow -n -r -x i=./indat/dat2.csv o=./outdat/out42x.csv t=100 wk=0:date,2:date2; IN=5 OUT=15; 2014/06/20 10:34:06
+#END# kgwindow -n -nfn -r i=./indat/dat2nfn.csv o=./outdat/out42nfn.csv t=100 wk=0,2; IN=5 OUT=15; 2014/06/20 10:34:06
+#END# kgwindow -n -nfno -r i=./indat/dat2.csv o=./outdat/out42nfno.csv t=100 wk=日付,日付２; IN=5 OUT=15; 2014/06/20 10:34:06
+#END# kgwindow -n -nfno -r -x i=./indat/dat2.csv o=./outdat/out42nfnox.csv t=100 wk=0,2; IN=5 OUT=15; 2014/06/20 10:34:06
+#END# kgwindow i=./indat/dat3.csv k=分類 o=./outdat/out43.csv t=2 wk=日付:date; IN=12 OUT=16; 2014/06/20 10:34:06
+#END# kgwindow -x i=./indat/dat3.csv k=0 o=./outdat/out43x.csv t=2 wk=1:date; IN=12 OUT=16; 2014/06/20 10:34:06
+#END# kgwindow -nfn i=./indat/dat3nfn.csv k=0 o=./outdat/out43nfn.csv t=2 wk=1; IN=12 OUT=12; 2014/06/20 10:34:06
+#END# kgwindow -nfno i=./indat/dat3.csv k=分類 o=./outdat/out43nfno.csv t=2 wk=日付:date; IN=12 OUT=16; 2014/06/20 10:34:06
+#END# kgwindow -nfno -x i=./indat/dat3.csv k=0 o=./outdat/out43nfnox.csv t=2 wk=1; IN=12 OUT=16; 2014/06/20 10:34:06
+#END# kgwindow i=./indat/dat4.csv k=分類,分類２ o=./outdat/out44.csv t=2 wk=日付:date; IN=12 OUT=10; 2014/06/20 10:34:06
+#END# kgwindow -x i=./indat/dat4.csv k=0,1 o=./outdat/out44x.csv t=2 wk=2:date; IN=12 OUT=10; 2014/06/20 10:34:06
+#END# kgwindow -nfn i=./indat/dat4nfn.csv k=0,1 o=./outdat/out44nfn.csv t=2 wk=2; IN=12 OUT=8; 2014/06/20 10:34:06
+#END# kgwindow -nfno i=./indat/dat4.csv k=分類,分類２ o=./outdat/out44nfno.csv t=2 wk=日付:date; IN=12 OUT=10; 2014/06/20 10:34:06
+#END# kgwindow -nfno -x i=./indat/dat4.csv k=0,1 o=./outdat/out44nfnox.csv t=2 wk=2; IN=12 OUT=10; 2014/06/20 10:34:06
+#END# kgwindow -r i=./indat/dat4.csv k=分類,分類２ o=./outdat/out45.csv t=3 wk=日付:date; IN=12 OUT=3; 2014/06/20 10:34:06
+#END# kgwindow -r -x i=./indat/dat4.csv k=0,1 o=./outdat/out45x.csv t=3 wk=2:date; IN=12 OUT=3; 2014/06/20 10:34:06
+#END# kgwindow -nfn -r i=./indat/dat4nfn.csv k=0,1 o=./outdat/out45nfn.csv t=3 wk=2; IN=12 OUT=0; 2014/06/20 10:34:06
+#END# kgwindow -nfno -r i=./indat/dat4.csv k=分類,分類２ o=./outdat/out45nfno.csv t=3 wk=日付:date; IN=12 OUT=3; 2014/06/20 10:34:06
+#END# kgwindow -nfno -r -x i=./indat/dat4.csv k=0,1 o=./outdat/out45nfnox.csv t=3 wk=2; IN=12 OUT=3; 2014/06/20 10:34:06
+#END# kgwindow -n i=./indat/dat4.csv k=分類,分類２ o=./outdat/out46.csv t=3 wk=日付:date,値:val; IN=12 OUT=18; 2014/06/20 10:34:06
+#END# kgwindow -n -x i=./indat/dat4.csv k=0,1 o=./outdat/out46x.csv t=3 wk=2:date,3:val; IN=12 OUT=18; 2014/06/20 10:34:06
+#END# kgwindow -n -nfn i=./indat/dat4nfn.csv k=0,1 o=./outdat/out46nfn.csv t=3 wk=2,3; IN=12 OUT=16; 2014/06/20 10:34:06
+#END# kgwindow -n -nfno i=./indat/dat4.csv k=分類,分類２ o=./outdat/out46nfno.csv t=3 wk=日付:date,値:val; IN=12 OUT=18; 2014/06/20 10:34:06
+#END# kgwindow -n -nfno -x i=./indat/dat4.csv k=0,1 o=./outdat/out46nfnox.csv t=3 wk=2,3; IN=12 OUT=18; 2014/06/20 10:34:06
+#END# kgwindow -n -r i=./indat/dat4.csv k=分類,分類２ o=./outdat/out47.csv t=3 wk=日付:date,値:val; IN=12 OUT=18; 2014/06/20 10:34:07
+#END# kgwindow -n -r -x i=./indat/dat4.csv k=0,1 o=./outdat/out47x.csv t=3 wk=2:date,3:val; IN=12 OUT=18; 2014/06/20 10:34:07
+#END# kgwindow -n -nfn -r i=./indat/dat4nfn.csv k=0,1 o=./outdat/out47nfn.csv t=3 wk=2,3; IN=12 OUT=16; 2014/06/20 10:34:07
+#END# kgwindow -n -nfno -r i=./indat/dat4.csv k=分類,分類２ o=./outdat/out47nfno.csv t=3 wk=日付:date,値:val; IN=12 OUT=18; 2014/06/20 10:34:07
+#END# kgwindow -n -nfno -r -x i=./indat/dat4.csv k=0,1 o=./outdat/out47nfnox.csv t=3 wk=2,3; IN=12 OUT=18; 2014/06/20 10:34:07

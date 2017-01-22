@@ -1,0 +1,50 @@
+#END# kguniq i=./indat/dat0s.csv k=日付 o=./outdat/out1.csv; IN=0 OUT=0; 2014/06/16 13:53:43
+#END# kguniq -x i=./indat/dat0s.csv k=0 o=./outdat/out1x.csv; IN=0 OUT=0; 2014/06/16 13:53:43
+#END# kguniq -nfn i=./indat/dat0snfn.csv k=0 o=./outdat/out1nfn.csv; IN=0 OUT=0; 2014/06/16 13:53:43
+#END# kguniq -nfno i=./indat/dat0s.csv k=日付 o=./outdat/out1nfno.csv; IN=0 OUT=0; 2014/06/16 13:53:43
+#END# kguniq i=./indat/dat0s.csv k=日付,顧客 o=./outdat/out2.csv; IN=0 OUT=0; 2014/06/16 13:53:43
+#END# kguniq i=./indat/dat1s.csv k=日付 o=./outdat/out3.csv; IN=5 OUT=3; 2014/06/16 13:53:43
+#END# kguniq -x i=./indat/dat1s.csv k=0 o=./outdat/out3x.csv; IN=5 OUT=3; 2014/06/16 13:53:43
+#END# kguniq -nfn i=./indat/dat1snfn.csv k=0 o=./outdat/out3nfn.csv; IN=5 OUT=3; 2014/06/16 13:53:43
+#END# kguniq -nfno i=./indat/dat1s.csv k=日付 o=./outdat/out3nfno.csv; IN=5 OUT=3; 2014/06/16 13:53:43
+#END# kguniq i=./indat/dat1s.csv k=日付,顧客 o=./outdat/out4.csv; IN=5 OUT=4; 2014/06/16 13:53:43
+#END# kguniq -x i=./indat/dat1s.csv k=0,1 o=./outdat/out4x.csv; IN=5 OUT=4; 2014/06/16 13:53:43
+#END# kguniq -nfn i=./indat/dat1snfn.csv k=0,1 o=./outdat/out4nfn.csv; IN=5 OUT=4; 2014/06/16 13:53:43
+#END# kguniq -nfno i=./indat/dat1s.csv k=日付,顧客 o=./outdat/out4nfno.csv; IN=5 OUT=4; 2014/06/16 13:53:43
+#END# kguniq i=./indat/dat2s.csv k=日付 o=./outdat/out5.csv; IN=5 OUT=3; 2014/06/16 13:53:43
+#END# kguniq -x i=./indat/dat2s.csv k=0 o=./outdat/out5x.csv; IN=5 OUT=3; 2014/06/16 13:53:43
+#END# kguniq -nfn i=./indat/dat2snfn.csv k=0 o=./outdat/out5nfn.csv; IN=5 OUT=3; 2014/06/16 13:53:43
+#END# kguniq -nfno i=./indat/dat2s.csv k=日付 o=./outdat/out5nfno.csv; IN=5 OUT=3; 2014/06/16 13:53:43
+#END# kguniq i=./indat/dat2s.csv k=日付,顧客 o=./outdat/out6.csv; IN=5 OUT=4; 2014/06/16 13:53:43
+#END# kguniq -x i=./indat/dat2s.csv k=0,1 o=./outdat/out6x.csv; IN=5 OUT=4; 2014/06/16 13:53:43
+#END# kguniq -nfn i=./indat/dat2snfn.csv k=0,1 o=./outdat/out6nfn.csv; IN=5 OUT=4; 2014/06/16 13:53:43
+#END# kguniq -nfno i=./indat/dat2s.csv k=日付,顧客 o=./outdat/out6nfno.csv; IN=5 OUT=4; 2014/06/16 13:53:43
+#END# kguniq i=./indat/dat2s.csv k=顧客 o=./outdat/out7.csv; IN=5 OUT=3; 2014/06/16 13:53:43
+#END# kguniq -x i=./indat/dat2s.csv k=1 o=./outdat/out7x.csv; IN=5 OUT=3; 2014/06/16 13:53:43
+#END# kguniq -nfn i=./indat/dat2snfn.csv k=1 o=./outdat/out7nfn.csv; IN=5 OUT=4; 2014/06/16 13:53:43
+#END# kguniq -nfno i=./indat/dat2s.csv k=顧客 o=./outdat/out7nfno.csv; IN=5 OUT=3; 2014/06/16 13:53:43
+#END# kguniq i=./indat/dat0.csv k=日付 o=./outdat/out11.csv; IN=0 OUT=0; 2014/06/16 13:53:43
+#END# kguniq -x i=./indat/dat0.csv k=0 o=./outdat/out11x.csv; IN=0 OUT=0; 2014/06/16 13:53:43
+#END# kguniq -nfn i=./indat/dat0nfn.csv k=0 o=./outdat/out11nfn.csv; IN=0 OUT=0; 2014/06/16 13:53:43
+#END# kguniq -nfno i=./indat/dat0.csv k=日付 o=./outdat/out11nfno.csv; IN=0 OUT=0; 2014/06/16 13:53:43
+#END# kguniq i=./indat/dat0.csv k=日付,顧客 o=./outdat/out12.csv; IN=0 OUT=0; 2014/06/16 13:53:43
+#END# kguniq i=./indat/dat1.csv k=日付 o=./outdat/out13.csv; IN=5 OUT=3; 2014/06/16 13:53:44
+#END# kguniq -x i=./indat/dat1.csv k=0 o=./outdat/out13x.csv; IN=5 OUT=3; 2014/06/16 13:53:44
+#END# kguniq -nfn i=./indat/dat1nfn.csv k=0 o=./outdat/out13nfn.csv; IN=5 OUT=4; 2014/06/16 13:53:44
+#END# kguniq -nfno i=./indat/dat1.csv k=日付 o=./outdat/out13nfno.csv; IN=5 OUT=3; 2014/06/16 13:53:44
+#END# kguniq i=./indat/dat1.csv k=日付,顧客 o=./outdat/out14.csv; IN=5 OUT=4; 2014/06/16 13:53:44
+#END# kguniq -x i=./indat/dat1.csv k=0,1 o=./outdat/out14x.csv; IN=5 OUT=4; 2014/06/16 13:53:44
+#END# kguniq -nfn i=./indat/dat1nfn.csv k=0,1 o=./outdat/out14nfn.csv; IN=5 OUT=5; 2014/06/16 13:53:44
+#END# kguniq -nfno i=./indat/dat1.csv k=日付,顧客 o=./outdat/out14nfno.csv; IN=5 OUT=4; 2014/06/16 13:53:44
+#END# kguniq i=./indat/dat2.csv k=日付 o=./outdat/out15.csv; IN=5 OUT=3; 2014/06/16 13:53:44
+#END# kguniq -x i=./indat/dat2.csv k=0 o=./outdat/out15x.csv; IN=5 OUT=3; 2014/06/16 13:53:44
+#END# kguniq -nfn i=./indat/dat2nfn.csv k=0 o=./outdat/out15nfn.csv; IN=5 OUT=4; 2014/06/16 13:53:44
+#END# kguniq -nfno i=./indat/dat2.csv k=日付 o=./outdat/out15nfno.csv; IN=5 OUT=3; 2014/06/16 13:53:44
+#END# kguniq i=./indat/dat2.csv k=日付,顧客 o=./outdat/out16.csv; IN=5 OUT=4; 2014/06/16 13:53:44
+#END# kguniq -x i=./indat/dat2.csv k=0,1 o=./outdat/out16x.csv; IN=5 OUT=4; 2014/06/16 13:53:44
+#END# kguniq -nfn i=./indat/dat2nfn.csv k=0,1 o=./outdat/out16nfn.csv; IN=5 OUT=5; 2014/06/16 13:53:44
+#END# kguniq -nfno i=./indat/dat2.csv k=日付,顧客 o=./outdat/out16nfno.csv; IN=5 OUT=4; 2014/06/16 13:53:44
+#END# kguniq i=./indat/dat2.csv k=顧客 o=./outdat/out17.csv; IN=5 OUT=3; 2014/06/16 13:53:44
+#END# kguniq -x i=./indat/dat2.csv k=1 o=./outdat/out17x.csv; IN=5 OUT=3; 2014/06/16 13:53:44
+#END# kguniq -nfn i=./indat/dat2nfn.csv k=1 o=./outdat/out17nfn.csv; IN=5 OUT=4; 2014/06/16 13:53:44
+#END# kguniq -nfno i=./indat/dat2.csv k=顧客 o=./outdat/out17nfno.csv; IN=5 OUT=3; 2014/06/16 13:53:44

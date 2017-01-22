@@ -1,0 +1,25 @@
+#END# kgsep2 O=./outdat/sep0 a=fileName i=./indat/dat0s.csv k=商品 o=./outdat/tbl0.csv; IN=0 OUT=0; 2014/06/10 12:35:42
+#END# kgsep2 -x O=./outdat/sep0x a=fileName i=./indat/dat0s.csv k=0 o=./outdat/tbl0x.csv; IN=0 OUT=0; 2014/06/10 12:35:42
+#END# kgsep2 -nfn O=./outdat/sep0nfn a=fileName i=./indat/dat0snfn.csv k=0 o=./outdat/tbl0nfn.csv; IN=0 OUT=0; 2014/06/10 12:35:42
+#END# kgsep2 O=./outdat/sep1 a=fileName i=./indat/dat1s.csv k=日付 o=./outdat/tbl1.csv; IN=5 OUT=3; 2014/06/10 12:35:42
+#END# kgsep2 -x O=./outdat/sep1x a=fileName i=./indat/dat1s.csv k=1 o=./outdat/tbl1x.csv; IN=5 OUT=3; 2014/06/10 12:35:42
+#END# kgsep2 -nfn O=./outdat/sep1nfn a=fileName i=./indat/dat1snfn.csv k=1 o=./outdat/tbl1nfn.csv; IN=5 OUT=3; 2014/06/10 12:35:42
+#END# kgsep2 -q O=./outdat/sep1q a=fileName i=./indat/dat1s.csv k=日付 o=./outdat/tbl1q.csv; IN=5 OUT=3; 2014/06/10 12:35:42
+#END# kgsep2 -q -x O=./outdat/sep1qx a=fileName i=./indat/dat1s.csv k=1 o=./outdat/tbl1qx.csv; IN=5 OUT=3; 2014/06/10 12:35:42
+#END# kgsep2 O=./outdat/sep2 a=fileName i=./indat/dat2s.csv k=商品,日付 o=./outdat/tbl2.csv; IN=9 OUT=5; 2014/06/10 12:35:42
+#END# kgsep2 -x O=./outdat/sep2x a=fileName i=./indat/dat2s.csv k=0,1 o=./outdat/tbl2x.csv; IN=9 OUT=5; 2014/06/10 12:35:42
+#END# kgsep2 -nfn O=./outdat/sep2nfn a=fileName i=./indat/dat2snfn.csv k=0,1 o=./outdat/tbl2nfn.csv; IN=9 OUT=5; 2014/06/10 12:35:42
+#END# kgsep2 -p O=./outdat/sep3 a=fileName i=./indat/dat2s.csv k=商品,日付 o=./outdat/tbl3.csv; IN=9 OUT=5; 2014/06/10 12:35:42
+#END# kgsep2 -p -x O=./outdat/sep3x a=fileName i=./indat/dat2s.csv k=0,1 o=./outdat/tbl3x.csv; IN=9 OUT=5; 2014/06/10 12:35:42
+#END# kgsep2 -nfn -p O=./outdat/sep3nfn a=fileName i=./indat/dat2snfn.csv k=0,1 o=./outdat/tbl3nfn.csv; IN=9 OUT=5; 2014/06/10 12:35:42
+#END# kgsep2 O=./outdat/sep1r a=fileName i=./indat/dat1.csv k=日付 o=./outdat/tbl1r.csv; IN=5 OUT=3; 2014/06/10 12:35:43
+#END# kgsep2 -x O=./outdat/sep1rx a=fileName i=./indat/dat1.csv k=1 o=./outdat/tbl1rx.csv; IN=5 OUT=3; 2014/06/10 12:35:43
+#END# kgsep2 -nfn O=./outdat/sep1rnfn a=fileName i=./indat/dat1nfn.csv k=1 o=./outdat/tbl1rnfn.csv; IN=5 OUT=4; 2014/06/10 12:35:43
+#END# kgsep2 -q O=./outdat/sep1rq a=fileName i=./indat/dat1.csv k=日付 o=./outdat/tbl1rq.csv; IN=5 OUT=4; 2014/06/10 12:35:43
+#END# kgsep2 -q -x O=./outdat/sep1rqx a=fileName i=./indat/dat1.csv k=1 o=./outdat/tbl1rqx.csv; IN=5 OUT=4; 2014/06/10 12:35:43
+#END# kgsep2 O=./outdat/sep2r a=fileName i=./indat/dat2.csv k=商品,日付 o=./outdat/tbl2r.csv; IN=9 OUT=5; 2014/06/10 12:35:43
+#END# kgsep2 -x O=./outdat/sep2rx a=fileName i=./indat/dat2.csv k=0,1 o=./outdat/tbl2rx.csv; IN=9 OUT=5; 2014/06/10 12:35:43
+#END# kgsep2 -nfn O=./outdat/sep2rnfn a=fileName i=./indat/dat2nfn.csv k=0,1 o=./outdat/tbl2rnfn.csv; IN=9 OUT=6; 2014/06/10 12:35:43
+#END# kgsep2 -p O=./outdat/sep3r a=fileName i=./indat/dat2.csv k=商品,日付 o=./outdat/tbl3r.csv; IN=9 OUT=5; 2014/06/10 12:35:43
+#END# kgsep2 -p -x O=./outdat/sep3rx a=fileName i=./indat/dat2.csv k=0,1 o=./outdat/tbl3rx.csv; IN=9 OUT=5; 2014/06/10 12:35:43
+#END# kgsep2 -nfn -p O=./outdat/sep3rnfn a=fileName i=./indat/dat2nfn.csv k=0,1 o=./outdat/tbl3rnfn.csv; IN=9 OUT=6; 2014/06/10 12:35:43

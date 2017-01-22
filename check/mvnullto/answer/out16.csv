@@ -1,0 +1,8 @@
+key,tra1,tra2
+a,known_known_known_unknown,a1_a2_a4_
+b,,a3_a6__a7_
+c,known_unknown_known_known,a8_a11__a9_a10_
+d,known_known_known,a96_a95_a94_a93_
+e,known_unknown_unknown_known_known,_a196_a195__a194_a193_
+f,known_known_unknown_unknown_known,
+g,unknown_known_unknown_known_unknown_known,a396_a395_a394_a393

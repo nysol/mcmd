@@ -1,0 +1,587 @@
+#END# kgcal a=百円増 c=${金額}+100 i=./indat/dat.csv o=./outdat/out1001.csv; IN=26 OUT=26; 2013/10/23 15:25:21
+#END# kgcal a=百円引 c=${金額}-100 i=./indat/dat.csv o=./outdat/out1002.csv; IN=26 OUT=26; 2013/10/23 15:25:21
+#END# kgcal a=三倍金額 c=${金額}*3 i=./indat/dat.csv o=./outdat/out1003.csv; IN=26 OUT=26; 2013/10/23 15:25:21
+#END# kgcal a=単価 c=${金額}/${数量} i=./indat/dat.csv o=./outdat/out1004.csv; IN=26 OUT=26; 2013/10/23 15:25:21
+#END# kgcal a=500円以下 c=${金額}<=500 i=./indat/dat.csv o=./outdat/out1005.csv; IN=26 OUT=26; 2013/10/23 15:25:21
+#END# kgcal a=500未満 c=${金額}<500 i=./indat/dat.csv o=./outdat/out1006.csv; IN=26 OUT=26; 2013/10/23 15:25:21
+#END# kgcal a=500円以上 c=${金額}>=500 i=./indat/dat.csv o=./outdat/out1007.csv; IN=26 OUT=26; 2013/10/23 15:25:21
+#END# kgcal a=500円より大きい c=${金額}>500 i=./indat/dat.csv o=./outdat/out1008.csv; IN=26 OUT=26; 2013/10/23 15:25:21
+#END# kgcal a=500円ではないもの c=${金額}!=500 i=./indat/dat.csv o=./outdat/out1009.csv; IN=26 OUT=26; 2013/10/23 15:25:21
+#END# kgcal a=500円のもの c=${金額}==500 i=./indat/dat.csv o=./outdat/out1010.csv; IN=26 OUT=26; 2013/10/23 15:25:21
+#END# kgcal a=上半期 c=$d{日付} <= 0d20020531 i=./indat/dat.csv o=./outdat/out1011.csv; IN=26 OUT=26; 2013/10/23 15:25:21
+#END# kgcal a=上半期 c=$d{日付} < 0d20020601 i=./indat/dat.csv o=./outdat/out1012.csv; IN=26 OUT=26; 2013/10/23 15:25:21
+#END# kgcal a=下半期 c=$d{日付} >= 0d20020601 i=./indat/dat.csv o=./outdat/out1013.csv; IN=26 OUT=26; 2013/10/23 15:25:21
+#END# kgcal a=下半期 c=$d{日付} > 0d20020531 i=./indat/dat.csv o=./outdat/out1014.csv; IN=26 OUT=26; 2013/10/23 15:25:21
+#END# kgcal a=９月２６日 c=$d{日付} == 0d20020926 i=./indat/dat.csv o=./outdat/out1015.csv; IN=26 OUT=26; 2013/10/23 15:25:21
+#END# kgcal a=９月２６日以外 c=$d{日付} != 0d20020926 i=./indat/dat.csv o=./outdat/out1016.csv; IN=26 OUT=26; 2013/10/23 15:25:21
+#END# kgcal a=300円以下、500円以上 c=${金額}>=500 || ${金額}<=300 i=./indat/dat.csv o=./outdat/out1017.csv; IN=26 OUT=26; 2013/10/23 15:25:21
+#END# kgcal a=300円以上、500円以下 c=${金額}<=500 && ${金額}>=300 i=./indat/dat.csv o=./outdat/out1018.csv; IN=26 OUT=26; 2013/10/23 15:25:21
+#END# kgcal a=A店であるかどうか c=($s{店} == "A") i=./indat/dat.csv o=./outdat/out1019.csv; IN=26 OUT=26; 2013/10/23 15:25:21
+#END# kgcal a=1ダース価格 c=((${金額}/${数量})*12) i=./indat/dat.csv o=./outdat/out1020.csv; IN=26 OUT=26; 2013/10/23 15:25:21
+#END# kgcal a=年齢 c=age(0d19791106,$d{日付}) i=./indat/dat.csv o=./outdat/out1021.csv; IN=26 OUT=26; 2013/10/23 15:25:22
+#END# kgcal a=年 c=year($d{日付}) i=./indat/dat.csv o=./outdat/out1022-1.csv; IN=26 OUT=26; 2013/10/23 15:25:22
+#END# kgcal a=月 c=month($d{日付}) i=./indat/dat.csv o=./outdat/out1022-2.csv; IN=26 OUT=26; 2013/10/23 15:25:22
+#END# kgcal a=日 c=day($d{日付}) i=./indat/dat.csv o=./outdat/out1022-3.csv; IN=26 OUT=26; 2013/10/23 15:25:22
+#END# kgcal a=曜日 c=dowe($d{日付}) i=./indat/dat.csv o=./outdat/out1022-4.csv; IN=26 OUT=26; 2013/10/23 15:25:22
+#END# kgcal a=曜日 c=dow($d{日付}) i=./indat/dat.csv o=./outdat/out1022-5.csv; IN=26 OUT=26; 2013/10/23 15:25:22
+#END# kgcal a=半年後日付 c=$d{日付}+92 i=./indat/dat.csv o=./outdat/out1023.csv; IN=26 OUT=26; 2013/10/23 15:25:22
+#END# kgcal a=21世紀以後の日数 c=($d{日付} - 0d20010101) i=./indat/dat.csv o=./outdat/out1024.csv; IN=26 OUT=26; 2013/10/23 15:25:22
+#END# kgcal a=時 c=hour($t{時間}) i=./indat/dat.csv o=./outdat/out1025-1.csv; IN=26 OUT=26; 2013/10/23 15:25:22
+#END# kgcal a=分 c=minute($t{時間}) i=./indat/dat.csv o=./outdat/out1025-2.csv; IN=26 OUT=26; 2013/10/23 15:25:22
+#END# kgcal a=秒 c=second($t{時間}) i=./indat/dat.csv o=./outdat/out1025-3.csv; IN=26 OUT=26; 2013/10/23 15:25:22
+#END# kgcal a=時間2 c=right(t2s(($t{時間}+10)),6) i=./indat/dat.csv o=./outdat/out1026.csv; IN=26 OUT=26; 2013/10/23 15:25:22
+#END# kgcal a=時間差 c=(0t055015 - $t{時間}) i=./indat/dat.csv o=./outdat/out1027.csv; IN=26 OUT=26; 2013/10/23 15:25:22
+#END# kgcal a=今日の日付 c=today() i=./indat/dat.csv o=./outdat/out1028.csv; IN=26 OUT=26; 2013/10/23 15:25:22
+#END# kgcal a=今の時間 c=right(t2s(now()),6) i=./indat/dat.csv o=./outdat/out1029.csv; IN=26 OUT=26; 2013/10/23 15:25:22
+#END# kgcal a=1の位を切り上げ c=ceil(${金額},10) i=./indat/dat.csv o=./outdat/out1030.csv; IN=26 OUT=26; 2013/10/23 15:25:22
+#END# kgcal a=１の位を切り捨て c=floor(${金額},10) i=./indat/dat.csv o=./outdat/out1031.csv; IN=26 OUT=26; 2013/10/23 15:25:22
+#END# kgcal a=1の位四捨五入 c=round(${金額},10) i=./indat/dat.csv o=./outdat/out1032.csv; IN=26 OUT=26; 2013/10/23 15:25:22
+#END# kgcal a=金額の平方根 c=sqrt(${金額}) i=./indat/dat.csv o=./outdat/out1033.csv; IN=26 OUT=26; 2013/10/23 15:25:22
+#END# kgcal a=新金額 c=${金額}-400 i=./indat/dat.csv o=./outdat/out1034-1.csv; IN=26 OUT=26; 2013/10/23 15:25:22
+#END# kgcal a=金額絶対値 c=abs(${金額}) i=./indat/dat6.csv o=./outdat/out1034.csv; IN=26 OUT=26; 2013/10/23 15:25:22
+#END# kgcal a=数量巾乗 c=power(${数量},3) i=./indat/dat.csv o=./outdat/out1035.csv; IN=26 OUT=26; 2013/10/23 15:25:22
+#END# kgcal a=金額＋ c=sum(${金額},10,20,"-n") i=./indat/dat.csv o=./outdat/out1036.csv; IN=26 OUT=26; 2013/10/23 15:25:22
+#END# kgcal a=金額＋ c=sum(${金額},10,20) i=./indat/dat.csv o=./outdat/out1059.csv; IN=26 OUT=26; 2013/10/23 15:25:22
+#END# kgcal a=金額巾 c=exp(${数量}) i=./indat/dat.csv o=./outdat/out1037.csv; IN=26 OUT=26; 2013/10/23 15:25:22
+#END# kgcal a=数量自然対数 c=ln(${数量}) i=./indat/dat.csv o=./outdat/out1038.csv; IN=26 OUT=26; 2013/10/23 15:25:22
+#END# kgcal a=数量対数５ c=log(${数量},5) i=./indat/dat.csv o=./outdat/out1039.csv; IN=26 OUT=26; 2013/10/23 15:25:22
+#END# kgcal a=数量対数2 c=log2(${数量}) i=./indat/dat.csv o=./outdat/out1040.csv; IN=26 OUT=26; 2013/10/23 15:25:22
+#END# kgcal a=数量対数10 c=log10(${数量}) i=./indat/dat.csv o=./outdat/out1041.csv; IN=26 OUT=26; 2013/10/23 15:25:22
+#END# kgcal a=pi c=pi() i=./indat/dat.csv o=./outdat/out1042.csv; IN=26 OUT=26; 2013/10/23 15:25:22
+#END# kgcal a=乱数 c=randi(100,110,2) i=./indat/dat.csv o=./outdat/out1043.csv; IN=26 OUT=26; 2013/10/23 15:25:22
+#END# kgcal a=乱数 c=nrand(100,20,2) i=./indat/dat.csv o=./outdat/out1044.csv; IN=26 OUT=26; 2013/10/23 15:25:22
+#END# kgcal a=新数値 c=round(${数値2},1) i=./indat/dat3.csv o=./outdat/out1044-1.csv; IN=16 OUT=16; 2013/10/23 15:25:22
+#END# kgcal a=新数値 c=round(${数値2},0.001) i=./indat/dat3.csv o=./outdat/out1044-2.csv; IN=16 OUT=16; 2013/10/23 15:25:22
+#END# kgcal a=新数値 c=round(${数値2},0.000001) i=./indat/dat3.csv o=./outdat/out1044-3.csv; IN=16 OUT=16; 2013/10/23 15:25:22
+#END# kgcal a=新数値 c=floor(${数値2},0.1) i=./indat/dat3.csv o=./outdat/out1044-4.csv; IN=16 OUT=16; 2013/10/23 15:25:22
+#END# kgcal a=新数値 c=floor(${数値2},0.000001) i=./indat/dat3.csv o=./outdat/out1044-5.csv; IN=16 OUT=16; 2013/10/23 15:25:22
+#END# kgcal a=新数値 c=floor(${数値2},1) i=./indat/dat3.csv o=./outdat/out1044-6.csv; IN=16 OUT=16; 2013/10/23 15:25:22
+#END# kgcal a=新数値 c=floor(${数値2},10) i=./indat/dat3.csv o=./outdat/out1044-7.csv; IN=16 OUT=16; 2013/10/23 15:25:22
+#END# kgcal a=新数値 c=floor(${数値2},1000) i=./indat/dat3.csv o=./outdat/out1044-8.csv; IN=16 OUT=16; 2013/10/23 15:25:22
+#END# kgcal a=新数値 c=ceil(${数値2},0.1) i=./indat/dat3.csv o=./outdat/out1044-9.csv; IN=16 OUT=16; 2013/10/23 15:25:22
+#END# kgcal a=新数値 c=ceil(${数値2},0.000001) i=./indat/dat3.csv o=./outdat/out1044-10.csv; IN=16 OUT=16; 2013/10/23 15:25:22
+#END# kgcal a=新数値 c=ceil(${数値2},1) i=./indat/dat3.csv o=./outdat/out1044-11.csv; IN=16 OUT=16; 2013/10/23 15:25:22
+#END# kgcal a=新数値 c=ceil(${数値2},10) i=./indat/dat3.csv o=./outdat/out1044-12.csv; IN=16 OUT=16; 2013/10/23 15:25:22
+#END# kgcal a=新数値 c=ceil(${数値2},1000) i=./indat/dat3.csv o=./outdat/out1044-13.csv; IN=16 OUT=16; 2013/10/23 15:25:22
+#END# kgcal a=新数値 c=round(${数値2},0.1) i=./indat/dat3.csv o=./outdat/out1044-14.csv; IN=16 OUT=16; 2013/10/23 15:25:22
+#END# kgcal a=新数値 c=round(${数値2},0.000001) i=./indat/dat3.csv o=./outdat/out1044-15.csv; IN=16 OUT=16; 2013/10/23 15:25:22
+#END# kgcal a=新数値 c=round(${数値2},1) i=./indat/dat3.csv o=./outdat/out1044-16.csv; IN=16 OUT=16; 2013/10/23 15:25:22
+#END# kgcal a=新数値 c=round(${数値2},10) i=./indat/dat3.csv o=./outdat/out1044-17.csv; IN=16 OUT=16; 2013/10/23 15:25:22
+#END# kgcal a=新数値 c=round(${数値2},1000) i=./indat/dat3.csv o=./outdat/out1044-18.csv; IN=16 OUT=16; 2013/10/23 15:25:22
+#END# kgcal a=数値min c=min(${数値1},${数値2},"-n") i=./indat/dat3.csv o=./outdat/out1044-19.csv; IN=16 OUT=16; 2013/10/23 15:25:22
+#END# kgcal a=数値min c=min(${数値?},"-n") i=./indat/dat3.csv o=./outdat/out1044-20.csv; IN=16 OUT=16; 2013/10/23 15:25:22
+#END# kgcal a=数値max c=max(${数値1},${数値2},"-n") i=./indat/dat3.csv o=./outdat/out1044-21.csv; IN=16 OUT=16; 2013/10/23 15:25:22
+#END# kgcal a=数値max c=max(${数値*},"-n") i=./indat/dat3.csv o=./outdat/out1044-22.csv; IN=16 OUT=16; 2013/10/23 15:25:22
+#END# kgcal a=数値min c=min(${数値1},${数値2}) i=./indat/dat3.csv o=./outdat/out1044-23.csv; IN=16 OUT=16; 2013/10/23 15:25:22
+#END# kgcal a=数値min c=min(${数値?}) i=./indat/dat3.csv o=./outdat/out1044-24.csv; IN=16 OUT=16; 2013/10/23 15:25:22
+#END# kgcal a=数値max c=max(${数値1},${数値2}) i=./indat/dat3.csv o=./outdat/out1044-25.csv; IN=16 OUT=16; 2013/10/23 15:25:22
+#END# kgcal a=数値max c=max(${数値*}) i=./indat/dat3.csv o=./outdat/out1044-26.csv; IN=16 OUT=16; 2013/10/23 15:25:22
+#END# kgcal a=日時 c=cat("/",$s{日付},$s{時間}) i=./indat/dat.csv o=./outdat/out1045.csv; IN=26 OUT=26; 2013/10/23 15:25:22
+#END# kgcal a=商品バイト数 c=length($s{商品}) i=./indat/dat.csv o=./outdat/out1046.csv; IN=26 OUT=26; 2013/10/23 15:25:22
+#END# kgcal a=固定長文 c=fixlen("N",5,"R","Y") i=./indat/dat.csv o=./outdat/out1047.csv; IN=26 OUT=26; 2013/10/23 15:25:22
+#END# kgcal a=正規マッチ c=regexpos($s{正規},"BB") i=./indat/regedat.csv o=./outdat/out1048.csv; IN=4 OUT=4; 2013/10/23 15:25:22
+#END# kgcal a=マッチ文字数 c=regexlen($s{正規},"AC") i=./indat/regedat.csv o=./outdat/out1050.csv; IN=4 OUT=4; 2013/10/23 15:25:22
+#END# kgcal a=400円より大きいか否か c=if(${金額}>400,"Y","N") i=./indat/dat.csv o=./outdat/out1051.csv; IN=26 OUT=26; 2013/10/23 15:25:22
+#END# kgcal a=400円より大きいか c=not(${金額}>400) i=./indat/dat.csv o=./outdat/out1052.csv; IN=26 OUT=26; 2013/10/23 15:25:22
+#END# kgcal a=処理番号 c=line() i=./indat/dat.csv o=./outdat/out1053.csv; IN=26 OUT=26; 2013/10/23 15:25:22
+#END# kgcal a=項目数 c=fldsize() i=./indat/dat.csv o=./outdat/out1054.csv; IN=26 OUT=26; 2013/10/23 15:25:22
+#END# kgcal a=先頭の商品 c=top() i=./indat/dat.csv o=./outdat/out1058.csv; IN=26 OUT=26; 2013/10/23 15:25:22
+#END# kgcal a=x c=(10>9) || (9<10) i=./indat/dat_cal2.csv o=./outdat/out01.csv; IN=3 OUT=3; 2013/10/23 15:25:22
+#END# kgcal a=x c=(3>2) || (3<2) i=./indat/dat_cal2.csv o=./outdat/out02.csv; IN=3 OUT=3; 2013/10/23 15:25:22
+#END# kgcal a=x c=(10>9) && (10<9) i=./indat/dat_cal2.csv o=./outdat/out03.csv; IN=3 OUT=3; 2013/10/23 15:25:22
+#END# kgcal a=x c=if(top(),1,1+#{}) i=./indat/dat_cal2.csv o=./outdat/out04.csv; IN=3 OUT=3; 2013/10/23 15:25:22
+#END# kgcal a=x c=1+#{} i=./indat/dat_cal2.csv o=./outdat/out05.csv; IN=3 OUT=3; 2013/10/23 15:25:22
+#END# kgcal a=x c=${num1}+#{num1} i=./indat/dat_cal.csv o=./outdat/out06.csv; IN=4 OUT=4; 2013/10/23 15:25:22
+#END# kgcal a=x c=year(0t20081014121010) i=./indat/dat_cal2.csv o=./outdat/out07.csv; IN=3 OUT=3; 2013/10/23 15:25:22
+#END# kgcal a=x c=month(0t20081014121010) i=./indat/dat_cal2.csv o=./outdat/out74.csv; IN=3 OUT=3; 2013/10/23 15:25:22
+#END# kgcal a=x c=monthe(0t20081014121010) i=./indat/dat_cal2.csv o=./outdat/out75.csv; IN=3 OUT=3; 2013/10/23 15:25:22
+#END# kgcal a=x c=monthes(0t20081014121010) i=./indat/dat_cal2.csv o=./outdat/out76.csv; IN=3 OUT=3; 2013/10/23 15:25:22
+#END# kgcal a=x c=day(0t20081014121010) i=./indat/dat_cal2.csv o=./outdat/out77.csv; IN=3 OUT=3; 2013/10/23 15:25:22
+#END# kgcal a=x c=week(0t20081014121010) i=./indat/dat_cal2.csv o=./outdat/out78.csv; IN=3 OUT=3; 2013/10/23 15:25:22
+#END# kgcal a=x c=dow(0t20081014121010) i=./indat/dat_cal2.csv o=./outdat/out79.csv; IN=3 OUT=3; 2013/10/23 15:25:22
+#END# kgcal a=x c=dowe(0t20081014121010) i=./indat/dat_cal2.csv o=./outdat/out80.csv; IN=3 OUT=3; 2013/10/23 15:25:22
+#END# kgcal a=x c=dowes(0t20081014121010) i=./indat/dat_cal2.csv o=./outdat/out81.csv; IN=3 OUT=3; 2013/10/23 15:25:22
+#END# kgcal a=x c=hours(0t20081014121010) i=./indat/dat_cal2.csv o=./outdat/out82.csv; IN=3 OUT=3; 2013/10/23 15:25:22
+#END# kgcal a=x c=minutes(0t20081014121010) i=./indat/dat_cal2.csv o=./outdat/out83.csv; IN=3 OUT=3; 2013/10/23 15:25:22
+#END# kgcal a=x c=seconds(0t20081014121010) i=./indat/dat_cal2.csv o=./outdat/out84.csv; IN=3 OUT=3; 2013/10/23 15:25:22
+#END# kgcal a=x c=year(0d20081014) i=./indat/dat_cal2.csv o=./outdat/out85.csv; IN=3 OUT=3; 2013/10/23 15:25:22
+#END# kgcal a=x c=month(0d20081014) i=./indat/dat_cal2.csv o=./outdat/out86.csv; IN=3 OUT=3; 2013/10/23 15:25:23
+#END# kgcal a=x c=monthe(0d20081014) i=./indat/dat_cal2.csv o=./outdat/out87.csv; IN=3 OUT=3; 2013/10/23 15:25:23
+#END# kgcal a=x c=monthes(0d20081014) i=./indat/dat_cal2.csv o=./outdat/out88.csv; IN=3 OUT=3; 2013/10/23 15:25:23
+#END# kgcal a=x c=day(0d20081014) i=./indat/dat_cal2.csv o=./outdat/out89.csv; IN=3 OUT=3; 2013/10/23 15:25:23
+#END# kgcal a=x c=week(0d20081014) i=./indat/dat_cal2.csv o=./outdat/out90.csv; IN=3 OUT=3; 2013/10/23 15:25:23
+#END# kgcal a=x c=dow(0d20081014) i=./indat/dat_cal2.csv o=./outdat/out91.csv; IN=3 OUT=3; 2013/10/23 15:25:23
+#END# kgcal a=x c=dowe(0d20081014) i=./indat/dat_cal2.csv o=./outdat/out92.csv; IN=3 OUT=3; 2013/10/23 15:25:23
+#END# kgcal a=x c=dowes(0d20081014) i=./indat/dat_cal2.csv o=./outdat/out93.csv; IN=3 OUT=3; 2013/10/23 15:25:23
+#END# kgcal a=x c=line() i=./indat/dat_cal2.csv o=./outdat/out94.csv; IN=3 OUT=3; 2013/10/23 15:25:23
+#END# kgcal a=x c=fldsize() i=./indat/dat_cal2.csv o=./outdat/out95.csv; IN=3 OUT=3; 2013/10/23 15:25:23
+#END# kgcal a=x c=top() i=./indat/dat_cal.csv o=./outdat/out96.csv; IN=4 OUT=4; 2013/10/23 15:25:23
+#END# kgcal a=x c=heron(1,1,5,1,5,3) i=./indat/dat_cal2.csv o=./outdat/out97.csv; IN=3 OUT=3; 2013/10/23 15:25:23
+#END# kgcal a=x c=dist("euclid",1,2,3,4,2,3,4,5) i=./indat/dat_cal2.csv o=./outdat/out98.csv; IN=3 OUT=3; 2013/10/23 15:25:23
+#END# kgcal a=x c=dist("cityblock",1,2,3,4,2,3,4,5) i=./indat/dat_cal2.csv o=./outdat/out99.csv; IN=3 OUT=3; 2013/10/23 15:25:23
+#END# kgcal a=x c=dist("hamming","1","2","3","4","1","3","3","5") i=./indat/dat_cal2.csv o=./outdat/out100.csv; IN=3 OUT=3; 2013/10/23 15:25:23
+#END# kgcal a=x c=radian(180) i=./indat/dat_cal2.csv o=./outdat/out101.csv; IN=3 OUT=3; 2013/10/23 15:25:23
+#END# kgcal a=x c=degree(pi()) i=./indat/dat_cal2.csv o=./outdat/out102.csv; IN=3 OUT=3; 2013/10/23 15:25:23
+#END# kgcal a=x c=radian(degree(pi())) i=./indat/dat_cal2.csv o=./outdat/out103.csv; IN=3 OUT=3; 2013/10/23 15:25:23
+#END# kgcal a=x c=asin(0.7143) i=./indat/dat_cal2.csv o=./outdat/out104.csv; IN=3 OUT=3; 2013/10/23 15:25:23
+#END# kgcal a=x c=acos(0.7143) i=./indat/dat_cal2.csv o=./outdat/out105.csv; IN=3 OUT=3; 2013/10/23 15:25:23
+#END# kgcal a=x c=atan(0.7143) i=./indat/dat_cal2.csv o=./outdat/out106.csv; IN=3 OUT=3; 2013/10/23 15:25:23
+#END# kgcal a=x c=atan2(1,1) i=./indat/dat_cal2.csv o=./outdat/out107.csv; IN=3 OUT=3; 2013/10/23 15:25:23
+#END# kgcal a=x c=sin(1.047) i=./indat/dat_cal2.csv o=./outdat/out108.csv; IN=3 OUT=3; 2013/10/23 15:25:23
+#END# kgcal a=x c=cos(1.047) i=./indat/dat_cal2.csv o=./outdat/out109.csv; IN=3 OUT=3; 2013/10/23 15:25:23
+#END# kgcal a=x c=tan(1.047) i=./indat/dat_cal2.csv o=./outdat/out110.csv; IN=3 OUT=3; 2013/10/23 15:25:23
+#END# kgcal a=x c=sinh(1.047) i=./indat/dat_cal2.csv o=./outdat/out111.csv; IN=3 OUT=3; 2013/10/23 15:25:23
+#END# kgcal a=x c=cosh(1.047) i=./indat/dat_cal2.csv o=./outdat/out112.csv; IN=3 OUT=3; 2013/10/23 15:25:23
+#END# kgcal a=x c=tanh(1.047) i=./indat/dat_cal2.csv o=./outdat/out113.csv; IN=3 OUT=3; 2013/10/23 15:25:23
+#END# kgcal a=x c=product(1,2,3,4,5) i=./indat/dat_cal2.csv o=./outdat/out114.csv; IN=3 OUT=3; 2013/10/23 15:25:23
+#END# kgcal a=x c=product(1,2,3,4,0) i=./indat/dat_cal2.csv o=./outdat/out115.csv; IN=3 OUT=3; 2013/10/23 15:25:23
+#END# kgcal a=x c=sign(-10) i=./indat/dat_cal2.csv o=./outdat/out116.csv; IN=3 OUT=3; 2013/10/23 15:25:23
+#END# kgcal a=x c=sign(10) i=./indat/dat_cal2.csv o=./outdat/out117.csv; IN=3 OUT=3; 2013/10/23 15:25:23
+#END# kgcal a=x c=sign(0) i=./indat/dat_cal2.csv o=./outdat/out118.csv; IN=3 OUT=3; 2013/10/23 15:25:23
+#END# kgcal a=x c=gcd(12,16) i=./indat/dat_cal2.csv o=./outdat/out119.csv; IN=3 OUT=3; 2013/10/23 15:25:23
+#END# kgcal a=x c=gcd(-12,16) i=./indat/dat_cal2.csv o=./outdat/out120.csv; IN=3 OUT=3; 2013/10/23 15:25:23
+#END# kgcal a=x c=gcd(-12,-16) i=./indat/dat_cal2.csv o=./outdat/out121.csv; IN=3 OUT=3; 2013/10/23 15:25:23
+#END# kgcal a=x c=gcd(0,16) i=./indat/dat_cal2.csv o=./outdat/out122.csv; IN=3 OUT=3; 2013/10/23 15:25:23
+#END# kgcal a=x c=lcm(0,16) i=./indat/dat_cal2.csv o=./outdat/out123.csv; IN=3 OUT=3; 2013/10/23 15:25:23
+#END# kgcal a=x c=lcm(12,16) i=./indat/dat_cal2.csv o=./outdat/out124.csv; IN=3 OUT=3; 2013/10/23 15:25:23
+#END# kgcal a=x c=lcm(-12,16) i=./indat/dat_cal2.csv o=./outdat/out125.csv; IN=3 OUT=3; 2013/10/23 15:25:23
+#END# kgcal a=x c=factorial(5) i=./indat/dat_cal2.csv o=./outdat/out126.csv; IN=3 OUT=3; 2013/10/23 15:25:23
+#END# kgcal a=x c=factorial(0) i=./indat/dat_cal2.csv o=./outdat/out127.csv; IN=3 OUT=3; 2013/10/23 15:25:23
+#END# kgcal a=x c=factorial(-0.5)*factorial(-0.5) i=./indat/dat_cal2.csv o=./outdat/out128.csv; IN=3 OUT=3; 2013/10/23 15:25:23
+#END# kgcal a=x c=hasspace("abcdef") i=./indat/dat_cal2.csv o=./outdat/out129.csv; IN=3 OUT=3; 2013/10/23 15:25:23
+#END# kgcal a=x c=hasspace("abc def") i=./indat/dat_cal2.csv o=./outdat/out130.csv; IN=3 OUT=3; 2013/10/23 15:25:23
+#END# kgcal a=x c=isnull("a*") i=./indat/dat_cal2.csv o=./outdat/out131.csv; IN=3 OUT=3; 2013/10/23 15:25:23
+#END# kgcal a=x c=isnull("*") i=./indat/dat_cal2.csv o=./outdat/out132.csv; IN=3 OUT=3; 2013/10/23 15:25:23
+#END# kgcal a=x c=matchas("bc","a","xy","abc") i=./indat/dat_cal2.csv o=./outdat/out133.csv; IN=3 OUT=3; 2013/10/23 15:25:23
+#END# kgcal a=x c=matchas("bc","abc","bcd") i=./indat/dat_cal2.csv o=./outdat/out134.csv; IN=3 OUT=3; 2013/10/23 15:25:23
+#END# kgcal a=x c=matchs("bc","a","xy","abc") i=./indat/dat_cal2.csv o=./outdat/out135.csv; IN=3 OUT=3; 2013/10/23 15:25:23
+#END# kgcal a=x c=matchs("bc","a","ac") i=./indat/dat_cal2.csv o=./outdat/out136.csv; IN=3 OUT=3; 2013/10/23 15:25:23
+#END# kgcal a=x c=capitalize("aBcD!") i=./indat/dat_cal2.csv o=./outdat/out137.csv; IN=3 OUT=3; 2013/10/23 15:25:23
+#END# kgcal a=x c=tolower("aBcD!") i=./indat/dat_cal2.csv o=./outdat/out138.csv; IN=3 OUT=3; 2013/10/23 15:25:23
+#END# kgcal a=x c=toupper("aBcD!") i=./indat/dat_cal2.csv o=./outdat/out139.csv; IN=3 OUT=3; 2013/10/23 15:25:23
+#END# kgcal a=x c=fixlen("abc",2,"L","#") i=./indat/dat_cal2.csv o=./outdat/out140.csv; IN=3 OUT=3; 2013/10/23 15:25:23
+#END# kgcal a=x c=fixlen("abc",2,"R","#") i=./indat/dat_cal2.csv o=./outdat/out141.csv; IN=3 OUT=3; 2013/10/23 15:25:23
+#END# kgcal a=x c=fixlen("abc",5,"L"," ") i=./indat/dat_cal2.csv o=./outdat/out142.csv; IN=3 OUT=3; 2013/10/23 15:25:23
+#END# kgcal a=x c=fixlen("abc",5,"R"," ") i=./indat/dat_cal2.csv o=./outdat/out143.csv; IN=3 OUT=3; 2013/10/23 15:25:23
+#END# kgcal a=x c=fixlen("abc",5,"L","#") i=./indat/dat_cal2.csv o=./outdat/out144.csv; IN=3 OUT=3; 2013/10/23 15:25:23
+#END# kgcal a=x c=fixlen("abc",5,"R","#") i=./indat/dat_cal2.csv o=./outdat/out145.csv; IN=3 OUT=3; 2013/10/23 15:25:23
+#END# kgcal a=x c=regexstr("aaabcccddbd","bc+") i=./indat/dat_cal2.csv o=./outdat/out146.csv; IN=3 OUT=3; 2013/10/23 15:25:23
+#END# kgcal a=x c=regexpfx("aaabcccddbd","bc+") i=./indat/dat_cal2.csv o=./outdat/out147.csv; IN=3 OUT=3; 2013/10/23 15:25:23
+#END# kgcal a=x c=regexsfx("aaabcccddbd","bc+") i=./indat/dat_cal2.csv o=./outdat/out148.csv; IN=3 OUT=3; 2013/10/23 15:25:23
+#END# kgcal a=x c=regexpos("aaabcddbd","bc+") i=./indat/dat_cal2.csv o=./outdat/out149.csv; IN=3 OUT=3; 2013/10/23 15:25:23
+#END# kgcal a=x c=regexpos("acccccbabccd","bc+") i=./indat/dat_cal2.csv o=./outdat/out150.csv; IN=3 OUT=3; 2013/10/23 15:25:23
+#END# kgcal a=x c=regexpos("accdaabcccccbabccd","bc+") i=./indat/dat_cal2.csv o=./outdat/out151.csv; IN=3 OUT=3; 2013/10/23 15:25:23
+#END# kgcal a=x c=regexlen("abcbd","bc+") i=./indat/dat_cal2.csv o=./outdat/out152.csv; IN=3 OUT=3; 2013/10/23 15:25:23
+#END# kgcal a=x c=regexlen("abcccccbabccd","bc+") i=./indat/dat_cal2.csv o=./outdat/out153.csv; IN=3 OUT=3; 2013/10/23 15:25:23
+#END# kgcal a=x c=regexlen("abccdaabcccccbabccd","bc+") i=./indat/dat_cal2.csv o=./outdat/out154.csv; IN=3 OUT=3; 2013/10/23 15:25:23
+#END# kgcal a=x c=regexrepw("あああ","あ+","い") i=./indat/dat_cal2.csv o=./outdat/out155.csv; IN=3 OUT=3; 2013/10/23 15:25:23
+#END# kgcal a=x c=regexrepw("あああ","あ","い") i=./indat/dat_cal2.csv o=./outdat/out156.csv; IN=3 OUT=3; 2013/10/23 15:25:23
+#END# kgcal a=x c=regexrep("abcbd","bc","x") i=./indat/dat_cal2.csv o=./outdat/out157.csv; IN=3 OUT=3; 2013/10/23 15:25:23
+#END# kgcal a=x c=regexrep("abcbd","b[cd]","x") i=./indat/dat_cal2.csv o=./outdat/out158.csv; IN=3 OUT=3; 2013/10/23 15:25:23
+#END# kgcal a=x c=regexrep("abbc","b","x") i=./indat/dat_cal2.csv o=./outdat/out159.csv; IN=3 OUT=3; 2013/10/23 15:25:23
+#END# kgcal a=x c=regexm("abc","a") i=./indat/dat_cal2.csv o=./outdat/out160.csv; IN=3 OUT=3; 2013/10/23 15:25:23
+#END# kgcal a=x c=regexm("あああ","あ+") i=./indat/dat_cal2.csv o=./outdat/out161.csv; IN=3 OUT=3; 2013/10/23 15:25:23
+#END# kgcal a=x c=regexmw("あああ","あ+") i=./indat/dat_cal2.csv o=./outdat/out162.csv; IN=3 OUT=3; 2013/10/23 15:25:23
+#END# kgcal a=x c=regexm("aaa","a+") i=./indat/dat_cal2.csv o=./outdat/out163.csv; IN=3 OUT=3; 2013/10/23 15:25:23
+#END# kgcal a=x c=regexs("あああ","あ") i=./indat/dat_cal2.csv o=./outdat/out164.csv; IN=3 OUT=3; 2013/10/23 15:25:23
+#END# kgcal a=x c=regexsw("あああ","あ") i=./indat/dat_cal2.csv o=./outdat/out165.csv; IN=3 OUT=3; 2013/10/23 15:25:23
+#END# kgcal a=x c=regexs("aaa","a+") i=./indat/dat_cal2.csv o=./outdat/out166.csv; IN=3 OUT=3; 2013/10/23 15:25:23
+#END# kgcal a=x c=regexs("aaa","b") i=./indat/dat_cal2.csv o=./outdat/out167.csv; IN=3 OUT=3; 2013/10/23 15:25:23
+#END# kgcal a=x c=nrand(100,10) i=./indat/dat_cal2.csv o=./outdat/out168.csv; IN=3 OUT=3; 2013/10/23 15:25:23
+#END# kgcal a=x c=nrand(0,1,1) i=./indat/dat_cal2.csv o=./outdat/out169.csv; IN=3 OUT=3; 2013/10/23 15:25:23
+#END# kgcal a=x c=randi(1,4) i=./indat/dat_cal2.csv o=./outdat/out170.csv; IN=3 OUT=3; 2013/10/23 15:25:23
+#END# kgcal a=x c=randi(1,4,1) i=./indat/dat_cal2.csv o=./outdat/out171.csv; IN=3 OUT=3; 2013/10/23 15:25:23
+#END# kgcal a=x c=leftw("ＡＢxＣ",3) i=./indat/dat_cal2.csv o=./outdat/out172.csv; IN=3 OUT=3; 2013/10/23 15:25:23
+#END# kgcal a=x c=left("abcde",2) i=./indat/dat_cal2.csv o=./outdat/out173.csv; IN=3 OUT=3; 2013/10/23 15:25:23
+#END# kgcal a=x c=rightw("ＡＢxＣ",3) i=./indat/dat_cal2.csv o=./outdat/out174.csv; IN=3 OUT=3; 2013/10/23 15:25:23
+#END# kgcal a=x c=right("abcde",2) i=./indat/dat_cal2.csv o=./outdat/out175.csv; IN=3 OUT=3; 2013/10/23 15:25:23
+#END# kgcal a=x c=midw("ＡＢxＣ",2,10) i=./indat/dat_cal2.csv o=./outdat/out176.csv; IN=3 OUT=3; 2013/10/23 15:25:23
+#END# kgcal a=x c=midw("ＡＢxＣ",1,2) i=./indat/dat_cal2.csv o=./outdat/out177.csv; IN=3 OUT=3; 2013/10/23 15:25:23
+#END# kgcal a=x c=mid("abcde",2,10) i=./indat/dat_cal2.csv o=./outdat/out178.csv; IN=3 OUT=3; 2013/10/23 15:25:23
+#END# kgcal a=x c=mid("abcde",0,2) i=./indat/dat_cal2.csv o=./outdat/out179.csv; IN=3 OUT=3; 2013/10/23 15:25:23
+#END# kgcal a=x c=length("ＡＢxＣ") i=./indat/dat_cal2.csv o=./outdat/out180.csv; IN=3 OUT=3; 2013/10/23 15:25:23
+#END# kgcal a=x c=length("abc") i=./indat/dat_cal2.csv o=./outdat/out181.csv; IN=3 OUT=3; 2013/10/23 15:25:23
+#END# kgcal a=x c=lengthw("ＡＢxＣ") i=./indat/dat_cal2.csv o=./outdat/out182.csv; IN=3 OUT=3; 2013/10/23 15:25:23
+#END# kgcal a=x c=lengthw("abc") i=./indat/dat_cal2.csv o=./outdat/out183.csv; IN=3 OUT=3; 2013/10/23 15:25:24
+#END# kgcal a=x c=sqsum(1,2,3,4,5) i=./indat/dat_cal2.csv o=./outdat/out184.csv; IN=3 OUT=3; 2013/10/23 15:25:24
+#END# kgcal a=x c=sqrt(0) i=./indat/dat_cal2.csv o=./outdat/out185.csv; IN=3 OUT=3; 2013/10/23 15:25:24
+#END# kgcal a=x c=sqrt(-1) i=./indat/dat_cal2.csv o=./outdat/out186.csv; IN=3 OUT=3; 2013/10/23 15:25:24
+#END# kgcal a=x c=sqrt(2) i=./indat/dat_cal2.csv o=./outdat/out187.csv; IN=3 OUT=3; 2013/10/23 15:25:24
+#END# kgcal a=x c=abs(-2) i=./indat/dat_cal2.csv o=./outdat/out188.csv; IN=3 OUT=3; 2013/10/23 15:25:24
+#END# kgcal a=x c=abs(2) i=./indat/dat_cal2.csv o=./outdat/out189.csv; IN=3 OUT=3; 2013/10/23 15:25:24
+#END# kgcal a=x c=abs(0) i=./indat/dat_cal2.csv o=./outdat/out190.csv; IN=3 OUT=3; 2013/10/23 15:25:24
+#END# kgcal a=x c=exp(0) i=./indat/dat_cal2.csv o=./outdat/out191.csv; IN=3 OUT=3; 2013/10/23 15:25:24
+#END# kgcal a=x c=exp(1) i=./indat/dat_cal2.csv o=./outdat/out192.csv; IN=3 OUT=3; 2013/10/23 15:25:24
+#END# kgcal a=x c=exp(-2) i=./indat/dat_cal2.csv o=./outdat/out193.csv; IN=3 OUT=3; 2013/10/23 15:25:24
+#END# kgcal a=x c=log(2,8) i=./indat/dat_cal2.csv o=./outdat/out194.csv; IN=3 OUT=3; 2013/10/23 15:25:24
+#END# kgcal a=x c=log2(8) i=./indat/dat_cal2.csv o=./outdat/out195.csv; IN=3 OUT=3; 2013/10/23 15:25:24
+#END# kgcal a=x c=log(10,1000) i=./indat/dat_cal2.csv o=./outdat/out196.csv; IN=3 OUT=3; 2013/10/23 15:25:24
+#END# kgcal a=x c=log10(1000) i=./indat/dat_cal2.csv o=./outdat/out197.csv; IN=3 OUT=3; 2013/10/23 15:25:24
+#END# kgcal a=x c=pi() i=./indat/dat_cal2.csv o=./outdat/out198.csv; IN=3 OUT=3; 2013/10/23 15:25:24
+#END# kgcal a=x c=e() i=./indat/dat_cal2.csv o=./outdat/out200.csv; IN=3 OUT=3; 2013/10/23 15:25:24
+#END# kgcal a=x c=power(10,2) i=./indat/dat_cal2.csv o=./outdat/out201.csv; IN=3 OUT=3; 2013/10/23 15:25:24
+#END# kgcal a=x c=power(10,-2) i=./indat/dat_cal2.csv o=./outdat/out202.csv; IN=3 OUT=3; 2013/10/23 15:25:24
+#END# kgcal a=x c=power(10,1000) i=./indat/dat_cal2.csv o=./outdat/out203.csv; IN=3 OUT=3; 2013/10/23 15:25:24
+#END# kgcal a=x c=round(-2.1,1) i=./indat/dat_cal2.csv o=./outdat/out204.csv; IN=3 OUT=3; 2013/10/23 15:25:24
+#END# kgcal a=x c=floor(-2.1,1) i=./indat/dat_cal2.csv o=./outdat/out205.csv; IN=3 OUT=3; 2013/10/23 15:25:24
+#END# kgcal a=x c=ceil(-2.1,1) i=./indat/dat_cal2.csv o=./outdat/out206.csv; IN=3 OUT=3; 2013/10/23 15:25:24
+#END# kgcal a=x c=round(2.1,1) i=./indat/dat_cal2.csv o=./outdat/out207.csv; IN=3 OUT=3; 2013/10/23 15:25:24
+#END# kgcal a=x c=floor(2.1,1) i=./indat/dat_cal2.csv o=./outdat/out208.csv; IN=3 OUT=3; 2013/10/23 15:25:24
+#END# kgcal a=x c=ceil(2.1,1) i=./indat/dat_cal2.csv o=./outdat/out209.csv; IN=3 OUT=3; 2013/10/23 15:25:24
+#END# kgcal a=x c=round(2.5,1) i=./indat/dat_cal2.csv o=./outdat/out210.csv; IN=3 OUT=3; 2013/10/23 15:25:24
+#END# kgcal a=x c=sqsum(1,2,3,4,5) i=./indat/dat_cal2.csv o=./outdat/out211.csv; IN=3 OUT=3; 2013/10/23 15:25:24
+#END# kgcal a=x c=min(1,2,3,4,5) i=./indat/dat_cal2.csv o=./outdat/out212.csv; IN=3 OUT=3; 2013/10/23 15:25:24
+#END# kgcal a=x c=max(1,2,3,4,5) i=./indat/dat_cal2.csv o=./outdat/out213.csv; IN=3 OUT=3; 2013/10/23 15:25:24
+#END# kgcal a=x c=avg(1,2,3,4,5) i=./indat/dat_cal2.csv o=./outdat/out214.csv; IN=3 OUT=3; 2013/10/23 15:25:24
+#END# kgcal a=x c=sum(1,2,3,4,5) i=./indat/dat_cal2.csv o=./outdat/out215.csv; IN=3 OUT=3; 2013/10/23 15:25:24
+#END# kgcal a=x c=fract(12.5) i=./indat/dat_cal2.csv o=./outdat/out216.csv; IN=3 OUT=3; 2013/10/23 15:25:24
+#END# kgcal a=x c=int(12.5) i=./indat/dat_cal2.csv o=./outdat/out217.csv; IN=3 OUT=3; 2013/10/23 15:25:24
+#END# kgcal a=x c=format(uxt(0t20070207000000),"%.0f") i=./indat/dat_cal2.csv o=./outdat/out218.csv; IN=3 OUT=3; 2013/10/23 15:25:24
+#END# kgcal a=x c=uxt2t(uxt(0t20070207000000)) i=./indat/dat_cal2.csv o=./outdat/out219.csv; IN=3 OUT=3; 2013/10/23 15:25:24
+#END# kgcal a=x c=uxt2t(1170774000) i=./indat/dat_cal2.csv o=./outdat/out220.csv; IN=3 OUT=3; 2013/10/23 15:25:24
+#END# kgcal a=x c=uxt2t(0) i=./indat/dat_cal2.csv o=./outdat/out221.csv; IN=3 OUT=3; 2013/10/23 15:25:24
+#END# kgcal a=x c=format(julian(0t20090101000000),"%f") i=./indat/dat_cal2.csv o=./outdat/out222.csv; IN=3 OUT=3; 2013/10/23 15:25:24
+#END# kgcal a=x c=format(julian(0d20090101),"%.0f") i=./indat/dat_cal2.csv o=./outdat/out223.csv; IN=3 OUT=3; 2013/10/23 15:25:24
+#END# kgcal a=x c=julian2d(julian(0d20090101)) i=./indat/dat_cal2.csv o=./outdat/out224.csv; IN=3 OUT=3; 2013/10/23 15:25:24
+#END# kgcal a=x c=julian(0d20090101) i=./indat/dat_cal2.csv o=./outdat/out225.csv; IN=3 OUT=3; 2013/10/23 15:25:24
+#END# kgcal a=x c=julian2t(2454832.5) i=./indat/dat_cal2.csv o=./outdat/out226.csv; IN=3 OUT=3; 2013/10/23 15:25:24
+#END# kgcal a=x c=julian2t(julian(0t20090101000000)) i=./indat/dat_cal2.csv o=./outdat/out227.csv; IN=3 OUT=3; 2013/10/23 15:25:24
+#END# kgcal a=x c=julian(0t20090101000000) i=./indat/dat_cal2.csv o=./outdat/out228.csv; IN=3 OUT=3; 2013/10/23 15:25:24
+#END# kgcal a=x c=0b0 ^^ 0b1 i=./indat/dat_cal2.csv o=./outdat/out229.csv; IN=3 OUT=3; 2013/10/23 15:25:24
+#END# kgcal a=x c=0b1 ^^ 0b0 i=./indat/dat_cal2.csv o=./outdat/out230.csv; IN=3 OUT=3; 2013/10/23 15:25:24
+#END# kgcal a=x c=0b1 ^^ 0b1 i=./indat/dat_cal2.csv o=./outdat/out231.csv; IN=3 OUT=3; 2013/10/23 15:25:24
+#END# kgcal a=x c=0b0 ^^ 0b0 i=./indat/dat_cal2.csv o=./outdat/out232.csv; IN=3 OUT=3; 2013/10/23 15:25:24
+#END# kgcal a=x c=and(0b1,0b1,0b1,0b1) i=./indat/dat_cal2.csv o=./outdat/out233.csv; IN=3 OUT=3; 2013/10/23 15:25:24
+#END# kgcal a=x c=and(0b1,0b0,0b0,0b0) i=./indat/dat_cal2.csv o=./outdat/out234.csv; IN=3 OUT=3; 2013/10/23 15:25:24
+#END# kgcal a=x c=or(0b0,0b0,0b0,0b0) i=./indat/dat_cal2.csv o=./outdat/out235.csv; IN=3 OUT=3; 2013/10/23 15:25:24
+#END# kgcal a=x c=or(0b1,0b0,0b0,0b0) i=./indat/dat_cal2.csv o=./outdat/out236.csv; IN=3 OUT=3; 2013/10/23 15:25:24
+#END# kgcal a=x c=not(0b0) i=./indat/dat_cal2.csv o=./outdat/out237.csv; IN=3 OUT=3; 2013/10/23 15:25:24
+#END# kgcal a=x c=not(0b1) i=./indat/dat_cal2.csv o=./outdat/out238.csv; IN=3 OUT=3; 2013/10/23 15:25:24
+#END# kgcal a=x c=(10>9) || (10<9) i=./indat/dat_cal2.csv o=./outdat/out239.csv; IN=3 OUT=3; 2013/10/23 15:25:24
+#END# kgcal a=x c=(10>9) && (10<9) i=./indat/dat_cal2.csv o=./outdat/out240.csv; IN=3 OUT=3; 2013/10/23 15:25:24
+#END# kgcal a=x c=0b1 i=./indat/dat_cal2.csv o=./outdat/out241.csv; IN=3 OUT=3; 2013/10/23 15:25:24
+#END# kgcal a=x c=0b0 i=./indat/dat_cal2.csv o=./outdat/out242.csv; IN=3 OUT=3; 2013/10/23 15:25:24
+#END# kgcal a=x c=0t195700<0t195700 i=./indat/dat_cal2.csv o=./outdat/out243.csv; IN=3 OUT=3; 2013/10/23 15:25:24
+#END# kgcal a=x c=0t195700>0t195700 i=./indat/dat_cal2.csv o=./outdat/out244.csv; IN=3 OUT=3; 2013/10/23 15:25:24
+#END# kgcal a=x c=0t195700<=0t195700 i=./indat/dat_cal2.csv o=./outdat/out245.csv; IN=3 OUT=3; 2013/10/23 15:25:24
+#END# kgcal a=x c=0t195700>=0t195700 i=./indat/dat_cal2.csv o=./outdat/out246.csv; IN=3 OUT=3; 2013/10/23 15:25:24
+#END# kgcal a=x c=0t195700!=0t195700 i=./indat/dat_cal2.csv o=./outdat/out247.csv; IN=3 OUT=3; 2013/10/23 15:25:25
+#END# kgcal a=x c=0t195700==0t195700 i=./indat/dat_cal2.csv o=./outdat/out248.csv; IN=3 OUT=3; 2013/10/23 15:25:25
+#END# kgcal a=x c=0d20080923<0d20080923 i=./indat/dat_cal2.csv o=./outdat/out249.csv; IN=3 OUT=3; 2013/10/23 15:25:25
+#END# kgcal a=x c=0d20080923>0d20080923 i=./indat/dat_cal2.csv o=./outdat/out250.csv; IN=3 OUT=3; 2013/10/23 15:25:25
+#END# kgcal a=x c=0d20080923<=0d20080923 i=./indat/dat_cal2.csv o=./outdat/out251.csv; IN=3 OUT=3; 2013/10/23 15:25:25
+#END# kgcal a=x c=0d20080923>=0d20080923 i=./indat/dat_cal2.csv o=./outdat/out252.csv; IN=3 OUT=3; 2013/10/23 15:25:25
+#END# kgcal a=x c=0d20080923!=0d20080923 i=./indat/dat_cal2.csv o=./outdat/out253.csv; IN=3 OUT=3; 2013/10/23 15:25:25
+#END# kgcal a=x c=0d20080923==0d20080923 i=./indat/dat_cal2.csv o=./outdat/out254.csv; IN=3 OUT=3; 2013/10/23 15:25:25
+#END# kgcal a=x c="abc"<"abc" i=./indat/dat_cal2.csv o=./outdat/out255.csv; IN=3 OUT=3; 2013/10/23 15:25:25
+#END# kgcal a=x c="abc">"abc" i=./indat/dat_cal2.csv o=./outdat/out256.csv; IN=3 OUT=3; 2013/10/23 15:25:25
+#END# kgcal a=x c="abc"<="abc" i=./indat/dat_cal2.csv o=./outdat/out257.csv; IN=3 OUT=3; 2013/10/23 15:25:25
+#END# kgcal a=x c="abc">="abc" i=./indat/dat_cal2.csv o=./outdat/out258.csv; IN=3 OUT=3; 2013/10/23 15:25:25
+#END# kgcal a=x c="abc"!="abc" i=./indat/dat_cal2.csv o=./outdat/out259.csv; IN=3 OUT=3; 2013/10/23 15:25:25
+#END# kgcal a=x c="abc"=="abc" i=./indat/dat_cal2.csv o=./outdat/out260.csv; IN=3 OUT=3; 2013/10/23 15:25:25
+#END# kgcal a=x c=10>10 i=./indat/dat_cal2.csv o=./outdat/out261.csv; IN=3 OUT=3; 2013/10/23 15:25:25
+#END# kgcal a=x c=10<10 i=./indat/dat_cal2.csv o=./outdat/out262.csv; IN=3 OUT=3; 2013/10/23 15:25:25
+#END# kgcal a=x c=10<=10 i=./indat/dat_cal2.csv o=./outdat/out263.csv; IN=3 OUT=3; 2013/10/23 15:25:25
+#END# kgcal a=x c=10>=10 i=./indat/dat_cal2.csv o=./outdat/out264.csv; IN=3 OUT=3; 2013/10/23 15:25:25
+#END# kgcal a=x c=10==10 i=./indat/dat_cal2.csv o=./outdat/out265.csv; IN=3 OUT=3; 2013/10/23 15:25:25
+#END# kgcal a=x c=10!=10 i=./indat/dat_cal2.csv o=./outdat/out266.csv; IN=3 OUT=3; 2013/10/23 15:25:25
+#END# kgcal a=x c=10.5%3.2 i=./indat/dat_cal2.csv o=./outdat/out267.csv; IN=3 OUT=3; 2013/10/23 15:25:25
+#END# kgcal a=x c=10.5%3 i=./indat/dat_cal2.csv o=./outdat/out268.csv; IN=3 OUT=3; 2013/10/23 15:25:25
+#END# kgcal a=x c=10%3 i=./indat/dat_cal2.csv o=./outdat/out269.csv; IN=3 OUT=3; 2013/10/23 15:25:25
+#END# kgcal a=x c=1.5e+200/1.1e-200 i=./indat/dat_cal2.csv o=./outdat/out270.csv; IN=3 OUT=3; 2013/10/23 15:25:25
+#END# kgcal a=x c=10==(10/3*3) i=./indat/dat_cal2.csv o=./outdat/out271.csv; IN=3 OUT=3; 2013/10/23 15:25:25
+#END# kgcal a=x c=10/3*3 i=./indat/dat_cal2.csv o=./outdat/out272.csv; IN=3 OUT=3; 2013/10/23 15:25:25
+#END# kgcal a=x c=0t121010-0t121000 i=./indat/dat_cal2.csv o=./outdat/out273.csv; IN=3 OUT=3; 2013/10/23 15:25:25
+#END# kgcal a=x c=0t235959+1 i=./indat/dat_cal2.csv o=./outdat/out274.csv; IN=3 OUT=3; 2013/10/23 15:25:25
+#END# kgcal a=x c=0t121010-10 i=./indat/dat_cal2.csv o=./outdat/out275.csv; IN=3 OUT=3; 2013/10/23 15:25:25
+#END# kgcal a=x c=0t121010+10 i=./indat/dat_cal2.csv o=./outdat/out276.csv; IN=3 OUT=3; 2013/10/23 15:25:25
+#END# kgcal a=x c=0d20080910-0d20080909 i=./indat/dat_cal2.csv o=./outdat/out277.csv; IN=3 OUT=3; 2013/10/23 15:25:25
+#END# kgcal a=x c=0d20080910-0d20080909 i=./indat/dat_cal2.csv o=./outdat/out278.csv; IN=3 OUT=3; 2013/10/23 15:25:25
+#END# kgcal a=x c=0d20080910-1000 i=./indat/dat_cal2.csv o=./outdat/out279.csv; IN=3 OUT=3; 2013/10/23 15:25:25
+#END# kgcal a=x c=0d20080910+10 i=./indat/dat_cal2.csv o=./outdat/out280.csv; IN=3 OUT=3; 2013/10/23 15:25:25
+#END# kgcal a=x c=10==${num1} i=./indat/dat_cal.csv o=./outdat/out281.csv; IN=4 OUT=4; 2013/10/23 15:25:25
+#END# kgcal -x a=x c=10==${1} i=./indat/dat_cal.csv o=./outdat/out281x.csv; IN=4 OUT=4; 2013/10/23 15:25:25
+#END# kgcal -nfn c=10==${1} i=./indat/dat_calnfn.csv o=./outdat/out281nfn.csv; IN=4 OUT=4; 2013/10/23 15:25:25
+#END# kgcal a=x c=$t{time1}+${num1} i=./indat/dat_cal.csv o=./outdat/out282.csv; IN=4 OUT=4; 2013/10/23 15:25:25
+#END# kgcal -x a=x c=$t{5}+${2} i=./indat/dat_cal.csv o=./outdat/out282x.csv; IN=4 OUT=4; 2013/10/23 15:25:25
+#END# kgcal -nfn c=$t{5}+${2} i=./indat/dat_calnfn.csv o=./outdat/out282nfn.csv; IN=4 OUT=4; 2013/10/23 15:25:25
+#END# kgcal a=x c=$d{date1}+${num1} i=./indat/dat_cal.csv o=./outdat/out283.csv; IN=4 OUT=4; 2013/10/23 15:25:25
+#END# kgcal -x a=x c=$d{3}+${1} i=./indat/dat_cal.csv o=./outdat/out283x.csv; IN=4 OUT=4; 2013/10/23 15:25:25
+#END# kgcal -nfn c=$d{3}+${1} i=./indat/dat_calnfn.csv o=./outdat/out283nfn.csv; IN=4 OUT=4; 2013/10/23 15:25:25
+#END# kgcal a=x c=0d20080920+${num1} i=./indat/dat_cal.csv o=./outdat/out284.csv; IN=4 OUT=4; 2013/10/23 15:25:25
+#END# kgcal -x a=x c=0d20080920+${1} i=./indat/dat_cal.csv o=./outdat/out284x.csv; IN=4 OUT=4; 2013/10/23 15:25:25
+#END# kgcal -nfn c=0d20080920+${1} i=./indat/dat_calnfn.csv o=./outdat/out284nfn.csv; IN=4 OUT=4; 2013/10/23 15:25:25
+#END# kgcal a=x c=$d{date1}+10 i=./indat/dat_cal.csv o=./outdat/out285.csv; IN=4 OUT=4; 2013/10/23 15:25:25
+#END# kgcal -x a=x c=$d{3}+10 i=./indat/dat_cal.csv o=./outdat/out285x.csv; IN=4 OUT=4; 2013/10/23 15:25:25
+#END# kgcal -nfn c=$d{3}+10 i=./indat/dat_calnfn.csv o=./outdat/out285nfn.csv; IN=4 OUT=4; 2013/10/23 15:25:25
+#END# kgcal a=x c=0d20080920 i=./indat/dat_cal.csv o=./outdat/out286.csv; IN=4 OUT=4; 2013/10/23 15:25:25
+#END# kgcal a=x c=0d20080920+10 i=./indat/dat_cal.csv o=./outdat/out287.csv; IN=4 OUT=4; 2013/10/23 15:25:25
+#END# kgcal a=x c=$s{key}+"abc" i=./indat/dat_cal.csv o=./outdat/out288.csv; IN=4 OUT=4; 2013/10/23 15:25:25
+#END# kgcal -x a=x c=$s{0}+"abc" i=./indat/dat_cal.csv o=./outdat/out288x.csv; IN=4 OUT=4; 2013/10/23 15:25:25
+#END# kgcal -nfn c=$s{0}+"abc" i=./indat/dat_calnfn.csv o=./outdat/out288nfn.csv; IN=4 OUT=4; 2013/10/23 15:25:25
+#END# kgcal a=x c=$s{key} i=./indat/dat_cal.csv o=./outdat/out289.csv; IN=4 OUT=4; 2013/10/23 15:25:25
+#END# kgcal -x a=x c=$s{0} i=./indat/dat_cal.csv o=./outdat/out289x.csv; IN=4 OUT=4; 2013/10/23 15:25:26
+#END# kgcal -nfn c=$s{0} i=./indat/dat_calnfn.csv o=./outdat/out289nfn.csv; IN=4 OUT=4; 2013/10/23 15:25:26
+#END# kgcal a=x c=${num1}+${num2} i=./indat/dat_cal.csv o=./outdat/out290.csv; IN=4 OUT=4; 2013/10/23 15:25:26
+#END# kgcal -x a=x c=${1}+${2} i=./indat/dat_cal.csv o=./outdat/out290x.csv; IN=4 OUT=4; 2013/10/23 15:25:26
+#END# kgcal -nfn c=${1}+${2} i=./indat/dat_calnfn.csv o=./outdat/out290nfn.csv; IN=4 OUT=4; 2013/10/23 15:25:26
+#END# kgcal a=x c=${num1} i=./indat/dat_cal.csv o=./outdat/out291.csv; IN=4 OUT=4; 2013/10/23 15:25:26
+#END# kgcal -x a=x c=${1} i=./indat/dat_cal.csv o=./outdat/out291x.csv; IN=4 OUT=4; 2013/10/23 15:25:26
+#END# kgcal -nfn c=${1} i=./indat/dat_calnfn.csv o=./outdat/out291nfn.csv; IN=4 OUT=4; 2013/10/23 15:25:26
+#END# kgcal a=x c=$s{str}-"ba" i=./indat/dat_cal.csv o=./outdat/out292.csv; IN=4 OUT=4; 2013/10/23 15:25:26
+#END# kgcal -x a=x c=$s{7}-"ba" i=./indat/dat_cal.csv o=./outdat/out292x.csv; IN=4 OUT=4; 2013/10/23 15:25:26
+#END# kgcal -nfn c=$s{7}-"ba" i=./indat/dat_calnfn.csv o=./outdat/out292nfn.csv; IN=4 OUT=4; 2013/10/23 15:25:26
+#END# kgcal a=x c=$s{str2}-$s{str} i=./indat/dat_cal.csv o=./outdat/out293.csv; IN=4 OUT=4; 2013/10/23 15:25:26
+#END# kgcal -x a=x c=$s{9}-$s{7} i=./indat/dat_cal.csv o=./outdat/out293x.csv; IN=4 OUT=4; 2013/10/23 15:25:26
+#END# kgcal -nfn c=$s{9}-$s{7} i=./indat/dat_calnfn.csv o=./outdat/out293nfn.csv; IN=4 OUT=4; 2013/10/23 15:25:26
+#END# kgcal a=x c=${num1}*${num2} i=./indat/dat_cal.csv o=./outdat/out294.csv; IN=4 OUT=4; 2013/10/23 15:25:26
+#END# kgcal -x a=x c=${1}*${2} i=./indat/dat_cal.csv o=./outdat/out294x.csv; IN=4 OUT=4; 2013/10/23 15:25:26
+#END# kgcal -nfn c=${1}*${2} i=./indat/dat_calnfn.csv o=./outdat/out294nfn.csv; IN=4 OUT=4; 2013/10/23 15:25:26
+#END# kgcal a=x c=${num1}/${num2} i=./indat/dat_cal.csv o=./outdat/out295.csv; IN=4 OUT=4; 2013/10/23 15:25:26
+#END# kgcal -x a=x c=${1}/${2} i=./indat/dat_cal.csv o=./outdat/out295x.csv; IN=4 OUT=4; 2013/10/23 15:25:26
+#END# kgcal -nfn c=${1}/${2} i=./indat/dat_calnfn.csv o=./outdat/out295nfn.csv; IN=4 OUT=4; 2013/10/23 15:25:26
+#END# kgcal a=x c=${num1}%${num2} i=./indat/dat_cal.csv o=./outdat/out296.csv; IN=4 OUT=4; 2013/10/23 15:25:26
+#END# kgcal -x a=x c=${1}%${2} i=./indat/dat_cal.csv o=./outdat/out296x.csv; IN=4 OUT=4; 2013/10/23 15:25:26
+#END# kgcal -nfn c=${1}%${2} i=./indat/dat_calnfn.csv o=./outdat/out296nfn.csv; IN=4 OUT=4; 2013/10/23 15:25:26
+#END# kgcal a=x c=if(${num1}>10,$s{str},$s{str2}) i=./indat/dat_cal.csv o=./outdat/out297.csv; IN=4 OUT=4; 2013/10/23 15:25:26
+#END# kgcal -x a=x c=if(${1}>10,$s{7},$s{9}) i=./indat/dat_cal.csv o=./outdat/out297x.csv; IN=4 OUT=4; 2013/10/23 15:25:26
+#END# kgcal -nfn c=if(${1}>10,$s{7},$s{9}) i=./indat/dat_calnfn.csv o=./outdat/out297nfn.csv; IN=4 OUT=4; 2013/10/23 15:25:26
+#END# kgcal a=x c=if($s{key}=="x",$d{date1},$d{date2}) i=./indat/dat_cal.csv o=./outdat/out298.csv; IN=4 OUT=4; 2013/10/23 15:25:26
+#END# kgcal -x a=x c=if($s{0}=="x",$d{3},$d{5}) i=./indat/dat_cal.csv o=./outdat/out298x.csv; IN=4 OUT=4; 2013/10/23 15:25:26
+#END# kgcal -nfn c=if($s{0}=="x",$d{3},$d{5}) i=./indat/dat_calnfn.csv o=./outdat/out298nfn.csv; IN=4 OUT=4; 2013/10/23 15:25:26
+#END# kgcal a=x c=if($s{key}=="y",$t{time1},$t{time2}) i=./indat/dat_cal.csv o=./outdat/out299.csv; IN=4 OUT=4; 2013/10/23 15:25:26
+#END# kgcal -x a=x c=if($s{0}=="y",$t{4},$t{6}) i=./indat/dat_cal.csv o=./outdat/out299x.csv; IN=4 OUT=4; 2013/10/23 15:25:26
+#END# kgcal -nfn c=if($s{0}=="y",$t{4},$t{6}) i=./indat/dat_calnfn.csv o=./outdat/out299nfn.csv; IN=4 OUT=4; 2013/10/23 15:25:26
+#END# kgcal a=x c=isnull(${num1}) i=./indat/dat_cal.csv o=./outdat/out300.csv; IN=4 OUT=4; 2013/10/23 15:25:26
+#END# kgcal -x a=x c=isnull(${2}) i=./indat/dat_cal.csv o=./outdat/out300x.csv; IN=4 OUT=4; 2013/10/23 15:25:26
+#END# kgcal -nfn c=isnull(${2}) i=./indat/dat_calnfn.csv o=./outdat/out300nfn.csv; IN=4 OUT=4; 2013/10/23 15:25:26
+#END# kgcal a=x c=isnull($d{date1}) i=./indat/dat_cal.csv o=./outdat/out301.csv; IN=4 OUT=4; 2013/10/23 15:25:26
+#END# kgcal -x a=x c=isnull($d{3}) i=./indat/dat_cal.csv o=./outdat/out301x.csv; IN=4 OUT=4; 2013/10/23 15:25:26
+#END# kgcal -nfn c=isnull($d{3}) i=./indat/dat_calnfn.csv o=./outdat/out301nfn.csv; IN=4 OUT=4; 2013/10/23 15:25:26
+#END# kgcal a=x c=isnull($t{time1}) i=./indat/dat_cal.csv o=./outdat/out302.csv; IN=4 OUT=4; 2013/10/23 15:25:26
+#END# kgcal -x a=x c=isnull($t{5}) i=./indat/dat_cal.csv o=./outdat/out302x.csv; IN=4 OUT=4; 2013/10/23 15:25:26
+#END# kgcal -nfn c=isnull($t{5}) i=./indat/dat_calnfn.csv o=./outdat/out302nfn.csv; IN=4 OUT=4; 2013/10/23 15:25:26
+#END# kgcal a=x c=isnull($s{str}) i=./indat/dat_cal.csv o=./outdat/out303.csv; IN=4 OUT=4; 2013/10/23 15:25:26
+#END# kgcal -x a=x c=isnull($s{7}) i=./indat/dat_cal.csv o=./outdat/out303x.csv; IN=4 OUT=4; 2013/10/23 15:25:26
+#END# kgcal -nfn c=isnull($s{7}) i=./indat/dat_calnfn.csv o=./outdat/out303nfn.csv; IN=4 OUT=4; 2013/10/23 15:25:26
+#END# kgcal a=x c=isnull($b{num1}) i=./indat/dat_cal.csv o=./outdat/out304.csv; IN=4 OUT=4; 2013/10/23 15:25:26
+#END# kgcal -x a=x c=isnull($b{1}) i=./indat/dat_cal.csv o=./outdat/out304x.csv; IN=4 OUT=4; 2013/10/23 15:25:26
+#END# kgcal -nfn c=isnull($b{1}) i=./indat/dat_calnfn.csv o=./outdat/out304nfn.csv; IN=4 OUT=4; 2013/10/23 15:25:26
+#END# kgcal a=x c=s2n($s{str}) i=./indat/dat_cal.csv o=./outdat/out305.csv; IN=4 OUT=4; 2013/10/23 15:25:26
+#END# kgcal -x a=x c=s2n($s{7}) i=./indat/dat_cal.csv o=./outdat/out305x.csv; IN=4 OUT=4; 2013/10/23 15:25:26
+#END# kgcal -nfn c=s2n($s{7}) i=./indat/dat_calnfn.csv o=./outdat/out305nfn.csv; IN=4 OUT=4; 2013/10/23 15:25:26
+#END# kgcal a=x c=s2d($s{str}) i=./indat/dat_cal.csv o=./outdat/out306.csv; IN=4 OUT=4; 2013/10/23 15:25:26
+#END# kgcal -x a=x c=s2d($s{7}) i=./indat/dat_cal.csv o=./outdat/out306x.csv; IN=4 OUT=4; 2013/10/23 15:25:26
+#END# kgcal -nfn c=s2d($s{7}) i=./indat/dat_calnfn.csv o=./outdat/out306nfn.csv; IN=4 OUT=4; 2013/10/23 15:25:26
+#END# kgcal a=x c=s2t($s{str}) i=./indat/dat_cal.csv o=./outdat/out307.csv; IN=4 OUT=4; 2013/10/23 15:25:26
+#END# kgcal -x a=x c=s2t($s{7}) i=./indat/dat_cal.csv o=./outdat/out307x.csv; IN=4 OUT=4; 2013/10/23 15:25:26
+#END# kgcal -nfn c=s2t($s{7}) i=./indat/dat_calnfn.csv o=./outdat/out307nfn.csv; IN=4 OUT=4; 2013/10/23 15:25:26
+#END# kgcal a=x c=n2s(${num1}) i=./indat/dat_cal.csv o=./outdat/out308.csv; IN=4 OUT=4; 2013/10/23 15:25:26
+#END# kgcal -x a=x c=n2s(${1}) i=./indat/dat_cal.csv o=./outdat/out308x.csv; IN=4 OUT=4; 2013/10/23 15:25:26
+#END# kgcal -nfn c=n2s(${1}) i=./indat/dat_calnfn.csv o=./outdat/out308nfn.csv; IN=4 OUT=4; 2013/10/23 15:25:26
+#END# kgcal a=x c=d2s($d{date1}) i=./indat/dat_cal.csv o=./outdat/out309.csv; IN=4 OUT=4; 2013/10/23 15:25:26
+#END# kgcal -x a=x c=d2s($d{3}) i=./indat/dat_cal.csv o=./outdat/out309x.csv; IN=4 OUT=4; 2013/10/23 15:25:26
+#END# kgcal -nfn c=d2s($d{3}) i=./indat/dat_calnfn.csv o=./outdat/out309nfn.csv; IN=4 OUT=4; 2013/10/23 15:25:26
+#END# kgcal a=x c=time($t{time1}) i=./indat/dat_cal.csv o=./outdat/out310.csv; IN=4 OUT=4; 2013/10/23 15:25:26
+#END# kgcal -x a=x c=time($t{4}) i=./indat/dat_cal.csv o=./outdat/out310x.csv; IN=4 OUT=4; 2013/10/23 15:25:26
+#END# kgcal -nfn c=time($t{4}) i=./indat/dat_calnfn.csv o=./outdat/out310nfn.csv; IN=4 OUT=4; 2013/10/23 15:25:26
+#END# kgcal a=x c=b2n($b{num1}) i=./indat/dat_cal.csv o=./outdat/out311.csv; IN=4 OUT=4; 2013/10/23 15:25:26
+#END# kgcal -x a=x c=b2n($b{1}) i=./indat/dat_cal.csv o=./outdat/out311x.csv; IN=4 OUT=4; 2013/10/23 15:25:26
+#END# kgcal -nfn c=b2n($b{1}) i=./indat/dat_calnfn.csv o=./outdat/out311nfn.csv; IN=4 OUT=4; 2013/10/23 15:25:26
+#END# kgcal a=x c=b2s($b{str}) i=./indat/dat_cal.csv o=./outdat/out312.csv; IN=4 OUT=4; 2013/10/23 15:25:26
+#END# kgcal -x a=x c=b2s($b{8}) i=./indat/dat_cal.csv o=./outdat/out312x.csv; IN=4 OUT=4; 2013/10/23 15:25:26
+#END# kgcal -nfn c=b2s($b{8}) i=./indat/dat_calnfn.csv o=./outdat/out312nfn.csv; IN=4 OUT=4; 2013/10/23 15:25:26
+#END# kgcal a=x c=n2b(${num1}) i=./indat/dat_cal.csv o=./outdat/out313.csv; IN=4 OUT=4; 2013/10/23 15:25:26
+#END# kgcal -x a=x c=n2b(${1}) i=./indat/dat_cal.csv o=./outdat/out313x.csv; IN=4 OUT=4; 2013/10/23 15:25:26
+#END# kgcal -nfn c=n2b(${1}) i=./indat/dat_calnfn.csv o=./outdat/out313nfn.csv; IN=4 OUT=4; 2013/10/23 15:25:26
+#END# kgcal a=x c=s2b($s{str}) i=./indat/dat_cal.csv o=./outdat/out314.csv; IN=4 OUT=4; 2013/10/23 15:25:26
+#END# kgcal -x a=x c=s2b($s{8}) i=./indat/dat_cal.csv o=./outdat/out314x.csv; IN=4 OUT=4; 2013/10/23 15:25:26
+#END# kgcal -nfn c=s2b($s{8}) i=./indat/dat_calnfn.csv o=./outdat/out314nfn.csv; IN=4 OUT=4; 2013/10/23 15:25:26
+#END# kgcal a=x c=today() i=./indat/dat_cal.csv o=./outdat/out315.csv; IN=4 OUT=4; 2013/10/23 15:25:26
+#END# kgcal a=x c=now() i=./indat/dat_cal.csv o=./outdat/out316.csv; IN=4 OUT=4; 2013/10/23 15:25:26
+#END# kgcal a=x c=leapyear($d{date1}) i=./indat/dat_cal.csv o=./outdat/out317.csv; IN=4 OUT=4; 2013/10/23 15:25:26
+#END# kgcal -x a=x c=leapyear($d{3}) i=./indat/dat_cal.csv o=./outdat/out317x.csv; IN=4 OUT=4; 2013/10/23 15:25:26
+#END# kgcal -nfn c=leapyear($d{3}) i=./indat/dat_calnfn.csv o=./outdat/out317nfn.csv; IN=4 OUT=4; 2013/10/23 15:25:26
+#END# kgcal a=x c=leapyear($t{time1}) i=./indat/dat_cal.csv o=./outdat/out318.csv; IN=4 OUT=4; 2013/10/23 15:25:26
+#END# kgcal -x a=x c=leapyear($t{4}) i=./indat/dat_cal.csv o=./outdat/out318x.csv; IN=4 OUT=4; 2013/10/23 15:25:26
+#END# kgcal -nfn c=leapyear($t{4}) i=./indat/dat_calnfn.csv o=./outdat/out318nfn.csv; IN=4 OUT=4; 2013/10/23 15:25:26
+#END# kgcal a=x c=uxt2d(uxt($d{date1})) i=./indat/dat_cal.csv o=./outdat/out319.csv; IN=4 OUT=4; 2013/10/23 15:25:27
+#END# kgcal -x a=x c=uxt2d(uxt($d{3})) i=./indat/dat_cal.csv o=./outdat/out319x.csv; IN=4 OUT=4; 2013/10/23 15:25:27
+#END# kgcal -nfn c=uxt2d(uxt($d{3})) i=./indat/dat_calnfn.csv o=./outdat/out319nfn.csv; IN=4 OUT=4; 2013/10/23 15:25:27
+#END# kgcal a=x c=uxt2d(0) i=./indat/dat_cal.csv o=./outdat/out320.csv; IN=4 OUT=4; 2013/10/23 15:25:27
+#END# kgcal a=x c=factorial(10) i=./indat/dat_cal.csv o=./outdat/out321.csv; IN=4 OUT=4; 2013/10/23 15:25:27
+#END# kgcal a=x c=cat("_",$s{str},$s{str2}) i=./indat/dat_cal.csv o=./outdat/out322.csv; IN=4 OUT=4; 2013/10/23 15:25:27
+#END# kgcal -x a=x c=cat("_",$s{7},$s{9}) i=./indat/dat_cal.csv o=./outdat/out322x.csv; IN=4 OUT=4; 2013/10/23 15:25:27
+#END# kgcal -nfn c=cat("_",$s{7},$s{9}) i=./indat/dat_calnfn.csv o=./outdat/out322nfn.csv; IN=4 OUT=4; 2013/10/23 15:25:27
+#END# kgcal a=x c=radian(180) i=./indat/dat_cal2.csv o=./outdat/out326.csv; IN=3 OUT=3; 2013/10/23 15:25:27
+#END# kgcal a=x c=degree(2*pi()) i=./indat/dat_cal2.csv o=./outdat/out327.csv; IN=3 OUT=3; 2013/10/23 15:25:27
+#END# kgcal a=x c=$s{01}=="00a" i=./indat/dat_cal.csv o=./outdat/out328.csv; IN=4 OUT=4; 2013/10/23 15:25:27
+#END# kgcal -x a=x c=$s{10}=="00a" i=./indat/dat_cal.csv o=./outdat/out328x.csv; IN=4 OUT=4; 2013/10/23 15:25:27
+#END# kgcal -nfn c=$s{10}=="00a" i=./indat/dat_calnfn.csv o=./outdat/out328nfn.csv; IN=4 OUT=4; 2013/10/23 15:25:27
+#END# kgcal a=x c=diffyear($d{date1},$d{date2}) i=./indat/dat_cal.csv o=./outdat/out329.csv; IN=4 OUT=4; 2013/10/23 15:25:27
+#END# kgcal a=x c=diffmonth($d{date1},$d{date2}) i=./indat/dat_cal.csv o=./outdat/out330.csv; IN=4 OUT=4; 2013/10/23 15:25:27
+#END# kgcal a=x c=diffday($d{date1},$d{date2}) i=./indat/dat_cal.csv o=./outdat/out331.csv; IN=4 OUT=4; 2013/10/23 15:25:27
+#END# kgcal a=x c=diffyear(s2t($s{date1}+$s{time1}),s2t($s{date2}+$s{time2})) i=./indat/dat_cal.csv o=./outdat/out332.csv; IN=4 OUT=4; 2013/10/23 15:25:27
+#END# kgcal a=x c=diffmonth(s2t($s{date1}+$s{time1}),s2t($s{date2}+$s{time2})) i=./indat/dat_cal.csv o=./outdat/out333.csv; IN=4 OUT=4; 2013/10/23 15:25:27
+#END# kgcal a=x c=diffday(s2t($s{date1}+$s{time1}),s2t($s{date2}+$s{time2})) i=./indat/dat_cal.csv o=./outdat/out334.csv; IN=4 OUT=4; 2013/10/23 15:25:27
+#END# kgcal a=x c=diffhour(s2t($s{date1}+$s{time1}),s2t($s{date2}+$s{time2})) i=./indat/dat_cal.csv o=./outdat/out335.csv; IN=4 OUT=4; 2013/10/23 15:25:27
+#END# kgcal a=x c=diffminute(s2t($s{date1}+$s{time1}),s2t($s{date2}+$s{time2})) i=./indat/dat_cal.csv o=./outdat/out336.csv; IN=4 OUT=4; 2013/10/23 15:25:27
+#END# kgcal a=x c=diffsecond(s2t($s{date1}+$s{time1}),s2t($s{date2}+$s{time2})) i=./indat/dat_cal.csv o=./outdat/out337.csv; IN=4 OUT=4; 2013/10/23 15:25:27
+#END# kgcal a=x c=tseconds($t{time1}) i=./indat/dat_cal.csv o=./outdat/out338.csv; IN=4 OUT=4; 2013/10/23 15:25:27
+#END# kgcal a=x c=avg(${num1},${num2},"-n") i=./indat/dat_cal.csv o=./outdat/out339.csv; IN=4 OUT=4; 2013/10/23 15:25:27
+#END# kgcal a=x c=sqsum(${num1},${num2},"-n") i=./indat/dat_cal.csv o=./outdat/out340.csv; IN=4 OUT=4; 2013/10/23 15:25:27
+#END# kgcal a=x c=product(${num1},${num2},"-n") i=./indat/dat_cal.csv o=./outdat/out341.csv; IN=4 OUT=4; 2013/10/23 15:25:27
+#END# kgcal a=x c=avg(${num1},${num2},nulln(),"-n") i=./indat/dat_cal.csv o=./outdat/out342.csv; IN=4 OUT=4; 2013/10/23 15:25:27
+#END# kgcal a=x c=sqsum(${num1},${num2},nulln(),"-n") i=./indat/dat_cal.csv o=./outdat/out343.csv; IN=4 OUT=4; 2013/10/23 15:25:27
+#END# kgcal a=x c=product(${num1},${num2},nulln(),"-n") i=./indat/dat_cal.csv o=./outdat/out344.csv; IN=4 OUT=4; 2013/10/23 15:25:27
+#END# kgcal a=x c=distgps(34.701909,135.4949770,35.681382,139.766084) i=./indat/dat_cal.csv o=./outdat/out345.csv; IN=4 OUT=4; 2013/10/23 15:25:27
+#END# kgcal a=x c=rand(1) i=./indat/dat_cal.csv o=./outdat/out346.csv; IN=4 OUT=4; 2013/10/23 15:25:27
+#END# kgcal a=x c=rand() i=./indat/dat_cal.csv o=./outdat/out347.csv; IN=4 OUT=4; 2013/10/23 15:25:27
+#END# kgcal a=x c=berrand(rand(1),2) i=./indat/dat_cal.csv o=./outdat/out348.csv; IN=4 OUT=4; 2013/10/23 15:25:27
+#END# kgcal a=x c=binomdist(randi(1,1000,1),1000,0.5) i=./indat/dat_cal.csv o=./outdat/out349.csv; IN=4 OUT=4; 2013/10/23 15:25:27
+#END# kgcal a=x c=fixlenw($s{wstr},2,"L","#") i=./indat/dat_cal.csv o=./outdat/out350.csv; IN=4 OUT=4; 2013/10/23 15:25:27
+#END# kgcal a=x c=fixlenw($s{wstr},2,"R","#") i=./indat/dat_cal.csv o=./outdat/out351.csv; IN=4 OUT=4; 2013/10/23 15:25:27
+#END# kgcal a=x c=fixlenw($s{wstr},5,"L"," ") i=./indat/dat_cal.csv o=./outdat/out352.csv; IN=4 OUT=4; 2013/10/23 15:25:27
+#END# kgcal a=x c=fixlenw($s{wstr},5,"R"," ") i=./indat/dat_cal.csv o=./outdat/out353.csv; IN=4 OUT=4; 2013/10/23 15:25:27
+#END# kgcal a=x c=fixlenw($s{wstr},5,"L","#") i=./indat/dat_cal.csv o=./outdat/out354.csv; IN=4 OUT=4; 2013/10/23 15:25:27
+#END# kgcal a=x c=fixlenw($s{wstr},5,"R","#") i=./indat/dat_cal.csv o=./outdat/out355.csv; IN=4 OUT=4; 2013/10/23 15:25:27
+#END# kgcal a=x c=hasspacew("abcdef") i=./indat/dat_cal.csv o=./outdat/out356.csv; IN=4 OUT=4; 2013/10/23 15:25:27
+#END# kgcal a=x c=hasspacew("abc def") i=./indat/dat_cal.csv o=./outdat/out357.csv; IN=4 OUT=4; 2013/10/23 15:25:27
+#END# kgcal a=x c=hasspacew("abc　def") i=./indat/dat_cal.csv o=./outdat/out358.csv; IN=4 OUT=4; 2013/10/23 15:25:27
+#END# kgcal a=x c=strchr($s{str},"c") i=./indat/dat_cal.csv o=./outdat/out359.csv; IN=4 OUT=4; 2013/10/23 15:25:27
+#END# kgcal a=x c=strchr($s{str},"e") i=./indat/dat_cal.csv o=./outdat/out360.csv; IN=4 OUT=4; 2013/10/23 15:25:27
+#END# kgcal a=x c=regexlenw($s{wstr},"あ") i=./indat/dat_cal.csv o=./outdat/out361.csv; IN=4 OUT=4; 2013/10/23 15:25:27
+#END# kgcal a=x c=regexlenw($s{wstr},"し.*$") i=./indat/dat_cal.csv o=./outdat/out362.csv; IN=4 OUT=4; 2013/10/23 15:25:27
+#END# kgcal a=x c=regexposw($s{wstr},"あ") i=./indat/dat_cal.csv o=./outdat/out363.csv; IN=4 OUT=4; 2013/10/23 15:25:27
+#END# kgcal a=x c=regexposw($s{wstr},"し$") i=./indat/dat_cal.csv o=./outdat/out364.csv; IN=4 OUT=4; 2013/10/23 15:25:27
+#END# kgcal a=x c=regexstrw($s{wstr},"あ") i=./indat/dat_cal.csv o=./outdat/out365.csv; IN=4 OUT=4; 2013/10/23 15:25:27
+#END# kgcal a=x c=regexstrw($s{wstr},"し$") i=./indat/dat_cal.csv o=./outdat/out366.csv; IN=4 OUT=4; 2013/10/23 15:25:28
+#END# kgcal a=x c=regexpfxw($s{wstr},"あ") i=./indat/dat_cal.csv o=./outdat/out367.csv; IN=4 OUT=4; 2013/10/23 15:25:28
+#END# kgcal a=x c=regexpfxw($s{wstr},"し$") i=./indat/dat_cal.csv o=./outdat/out368.csv; IN=4 OUT=4; 2013/10/23 15:25:28
+#END# kgcal a=x c=regexsfxw($s{wstr},"あ") i=./indat/dat_cal.csv o=./outdat/out369.csv; IN=4 OUT=4; 2013/10/23 15:25:28
+#END# kgcal a=x c=regexsfxw($s{wstr},"し$") i=./indat/dat_cal.csv o=./outdat/out370.csv; IN=4 OUT=4; 2013/10/23 15:25:28
+#END# kgcal a=x c=bottom() i=./indat/dat_cal.csv o=./outdat/out371.csv; IN=4 OUT=4; 2013/10/23 15:25:28
+#END# kgcal a=x c=countnull(${num1},#{num1},nulln()) i=./indat/dat_cal.csv o=./outdat/out372.csv; IN=4 OUT=4; 2013/10/23 15:25:28
+#END# kgcal a=x c=countnull($s{str},#s{str},nulls()) i=./indat/dat_cal.csv o=./outdat/out373.csv; IN=4 OUT=4; 2013/10/23 15:25:28
+#END# kgcal a=x c=countnull($t{time1},#t{time1},nullt()) i=./indat/dat_cal.csv o=./outdat/out374.csv; IN=4 OUT=4; 2013/10/23 15:25:28
+#END# kgcal a=x c=countnull($d{date1},#d{date1},nulld()) i=./indat/dat_cal.csv o=./outdat/out375.csv; IN=4 OUT=4; 2013/10/23 15:25:28
+#END# kgcal a=x c=countnull($b{a},#b{a},nullb()) i=./indat/dat4.csv o=./outdat/out376.csv; IN=4 OUT=4; 2013/10/23 15:25:28
+#END# kgcal a=x c=age(s2t($s{date1}+$s{time1}),s2t($s{date2}+$s{time2})) i=./indat/dat_cal.csv o=./outdat/out377.csv; IN=4 OUT=4; 2013/10/23 15:25:28
+#END# kgcal a=x c=10^2 i=./indat/dat_cal2.csv o=./outdat/out378.csv; IN=3 OUT=3; 2013/10/23 15:25:28
+#END# kgcal a=x c=berrand(rand(1),-1) i=./indat/dat_cal.csv o=./outdat/out379.csv; IN=4 OUT=4; 2013/10/23 15:25:28
+#END# kgcal a=x c=binomdist(randi(1,10000,1),10000,0.5) i=./indat/dat_cal.csv o=./outdat/out380.csv; IN=4 OUT=4; 2013/10/23 15:25:28
+#END# kgcal a=x c=matcha("bc","bc","bc","bc") i=./indat/dat_cal2.csv o=./outdat/out381.csv; IN=3 OUT=3; 2013/10/23 15:25:28
+#END# kgcal a=x c=matcha("bc","bc","bcd") i=./indat/dat_cal2.csv o=./outdat/out382.csv; IN=3 OUT=3; 2013/10/23 15:25:28
+#END# kgcal a=x c=match("a","a","b","c") i=./indat/dat_cal2.csv o=./outdat/out383.csv; IN=3 OUT=3; 2013/10/23 15:25:28
+#END# kgcal a=x c=match("a","ba","ac") i=./indat/dat_cal2.csv o=./outdat/out384.csv; IN=3 OUT=3; 2013/10/23 15:25:28
+#END# kgcal a=x c=argsize($s{num*}) i=./indat/dat_cal.csv o=./outdat/out385.csv; IN=4 OUT=4; 2013/10/23 15:25:28
+#END# kgcal a=x c=date(0t20080920121315) i=./indat/dat_cal.csv o=./outdat/out386.csv; IN=4 OUT=4; 2013/10/23 15:25:28
+#END# kgcal a=x c=years(0t20080920121315) i=./indat/dat_cal.csv o=./outdat/out387.csv; IN=4 OUT=4; 2013/10/23 15:25:28
+#END# kgcal a=x c=years(0d20080920) i=./indat/dat_cal.csv o=./outdat/out388.csv; IN=4 OUT=4; 2013/10/23 15:25:28
+#END# kgcal a=x c=months(0t20080920121315) i=./indat/dat_cal.csv o=./outdat/out389.csv; IN=4 OUT=4; 2013/10/23 15:25:28
+#END# kgcal a=x c=months(0d20080920) i=./indat/dat_cal.csv o=./outdat/out390.csv; IN=4 OUT=4; 2013/10/23 15:25:28
+#END# kgcal a=x c=days(0t20080920121315) i=./indat/dat_cal.csv o=./outdat/out391.csv; IN=4 OUT=4; 2013/10/23 15:25:28
+#END# kgcal a=x c=days(0d20080920) i=./indat/dat_cal.csv o=./outdat/out392.csv; IN=4 OUT=4; 2013/10/23 15:25:28
+#END# kgcal a=曜日 c=dowj($d{日付}) i=./indat/dat.csv o=./outdat/out393.csv; IN=26 OUT=26; 2013/10/23 15:25:28
+#END# kgcal a=曜日 c=dowj(s2t($s{date1}+$s{time1})) i=./indat/dat_cal.csv o=./outdat/out394.csv; IN=4 OUT=4; 2013/10/23 15:25:28
+#END# kgcal a=週 c=week111($d{日付}) i=./indat/dat.csv o=./outdat/out395.csv; IN=26 OUT=26; 2013/10/23 15:25:28
+#END# kgcal a=週 c=week111(s2t($s{date1}+$s{time1})) i=./indat/dat_cal.csv o=./outdat/out396.csv; IN=4 OUT=4; 2013/10/23 15:25:28
+#END# kgcal a=rls c=$s{str1}-$s{str2} i=./indat/dat5.csv o=./outdat/out397.csv; IN=7 OUT=7; 2013/10/23 15:25:28
+#END# kgcal a=rls c=$d{date1}-${num2} i=./indat/dat5.csv o=./outdat/out398.csv; IN=7 OUT=7; 2013/10/23 15:25:28
+#END# kgcal a=rls c=$t{dt1}-${num2} i=./indat/dat5.csv o=./outdat/out399.csv; IN=7 OUT=7; 2013/10/23 15:25:28
+#END# kgcal a=rls c=${num1}%${num2} i=./indat/dat5.csv o=./outdat/out400.csv; IN=7 OUT=7; 2013/10/23 15:25:28
+#END# kgcal a=rls c=${num1}^${num2} i=./indat/dat5.csv o=./outdat/out401.csv; IN=7 OUT=7; 2013/10/23 15:25:28
+#END# kgcal a=rls c=$t{time1}>=$t{time2} i=./indat/dat5.csv o=./outdat/out402.csv; IN=7 OUT=7; 2013/10/23 15:25:28
+#END# kgcal a=rls c=$t{time1}>$t{time2} i=./indat/dat5.csv o=./outdat/out403.csv; IN=7 OUT=7; 2013/10/23 15:25:28
+#END# kgcal a=rls c=$t{time1}<=$t{time2} i=./indat/dat5.csv o=./outdat/out404.csv; IN=7 OUT=7; 2013/10/23 15:25:28
+#END# kgcal a=rls c=$t{time1}<$t{time2} i=./indat/dat5.csv o=./outdat/out405.csv; IN=7 OUT=7; 2013/10/23 15:25:28
+#END# kgcal a=rls c=$t{time1}==$t{time2} i=./indat/dat5.csv o=./outdat/out406.csv; IN=7 OUT=7; 2013/10/23 15:25:28
+#END# kgcal a=rls c=$t{time1}!=$t{time2} i=./indat/dat5.csv o=./outdat/out407.csv; IN=7 OUT=7; 2013/10/23 15:25:28
+#END# kgcal a=rls c=$b{bool1}^^$b{bool2} i=./indat/dat5.csv o=./outdat/out408.csv; IN=7 OUT=7; 2013/10/23 15:25:28
+#END# kgcal a=rls c=if($b{bool1},${num1},${num2}) i=./indat/dat5.csv o=./outdat/out409.csv; IN=7 OUT=7; 2013/10/23 15:25:28
+#END# kgcal a=rls c=if($b{bool1},$d{date1},$d{date2}) i=./indat/dat5.csv o=./outdat/out410.csv; IN=7 OUT=7; 2013/10/23 15:25:28
+#END# kgcal a=rls c=if($b{bool1},$t{dt1},$t{dt2}) i=./indat/dat5.csv o=./outdat/out411.csv; IN=7 OUT=7; 2013/10/23 15:25:28
+#END# kgcal a=rls c=and($b{bool1},$b{bool2}) i=./indat/dat5.csv o=./outdat/out412.csv; IN=7 OUT=7; 2013/10/23 15:25:28
+#END# kgcal a=rls c=or($b{bool1},$b{bool2}) i=./indat/dat5.csv o=./outdat/out413.csv; IN=7 OUT=7; 2013/10/23 15:25:28
+#END# kgcal a=rls c=isnull($s{str1}) i=./indat/dat5.csv o=./outdat/out414.csv; IN=7 OUT=7; 2013/10/23 15:25:28
+#END# kgcal a=rls c=s2d($s{date1}) i=./indat/dat5.csv o=./outdat/out415.csv; IN=7 OUT=7; 2013/10/23 15:25:28
+#END# kgcal a=rls c=n2s(${num1}) i=./indat/dat5.csv o=./outdat/out416.csv; IN=7 OUT=7; 2013/10/23 15:25:28
+#END# kgcal a=rls c=n2b(${bool1}) i=./indat/dat5.csv o=./outdat/out417.csv; IN=7 OUT=7; 2013/10/23 15:25:28
+#END# kgcal a=rls c=format(${num1},"%.3f") i=./indat/dat5.csv o=./outdat/out418.csv; IN=7 OUT=7; 2013/10/23 15:25:28
+#END# kgcal a=rls c=date($t{dt1}) i=./indat/dat5.csv o=./outdat/out419.csv; IN=7 OUT=7; 2013/10/23 15:25:28
+#END# kgcal a=rls c=time($t{time1}) i=./indat/dat5.csv o=./outdat/out420.csv; IN=7 OUT=7; 2013/10/23 15:25:28
+#END# kgcal a=rls c=julian($d{date1}) i=./indat/dat5.csv o=./outdat/out421.csv; IN=7 OUT=7; 2013/10/23 15:25:28
+#END# kgcal a=rls c=julian($t{dt1}) i=./indat/dat5.csv o=./outdat/out422.csv; IN=7 OUT=7; 2013/10/23 15:25:28
+#END# kgcal a=rls c=julian2t(${num1}) i=./indat/dat5.csv o=./outdat/out423.csv; IN=7 OUT=7; 2013/10/23 15:25:28
+#END# kgcal a=rls c=uxt($t{dt1}) i=./indat/dat5.csv o=./outdat/out425.csv; IN=7 OUT=7; 2013/10/23 15:25:28
+#END# kgcal a=rls c=uxt2t(${num1}) i=./indat/dat5.csv o=./outdat/out426.csv; IN=7 OUT=7; 2013/10/23 15:25:28
+#END# kgcal a=rls c=year($t{dt1}) i=./indat/dat5.csv o=./outdat/out427.csv; IN=7 OUT=7; 2013/10/23 15:25:28
+#END# kgcal a=rls c=years($d{date1}) i=./indat/dat5.csv o=./outdat/out428.csv; IN=7 OUT=7; 2013/10/23 15:25:28
+#END# kgcal a=rls c=years($t{dt1}) i=./indat/dat5.csv o=./outdat/out429.csv; IN=7 OUT=7; 2013/10/23 15:25:28
+#END# kgcal a=rls c=month($t{dt1}) i=./indat/dat5.csv o=./outdat/out430.csv; IN=7 OUT=7; 2013/10/23 15:25:28
+#END# kgcal a=rls c=months($d{date1}) i=./indat/dat5.csv o=./outdat/out431.csv; IN=7 OUT=7; 2013/10/23 15:25:28
+#END# kgcal a=rls c=months($t{dt1}) i=./indat/dat5.csv o=./outdat/out432.csv; IN=7 OUT=7; 2013/10/23 15:25:28
+#END# kgcal a=rls c=monthe($d{date1}) i=./indat/dat5.csv o=./outdat/out434.csv; IN=7 OUT=7; 2013/10/23 15:25:28
+#END# kgcal a=rls c=monthe($t{dt1}) i=./indat/dat5.csv o=./outdat/out435.csv; IN=7 OUT=7; 2013/10/23 15:25:28
+#END# kgcal a=rls c=monthes($d{date1}) i=./indat/dat5.csv o=./outdat/out436.csv; IN=7 OUT=7; 2013/10/23 15:25:28
+#END# kgcal a=rls c=monthes($t{dt1}) i=./indat/dat5.csv o=./outdat/out437.csv; IN=7 OUT=7; 2013/10/23 15:25:28
+#END# kgcal a=rls c=day($t{dt1}) i=./indat/dat5.csv o=./outdat/out438.csv; IN=7 OUT=7; 2013/10/23 15:25:28
+#END# kgcal a=rls c=days($d{date1}) i=./indat/dat5.csv o=./outdat/out439.csv; IN=7 OUT=7; 2013/10/23 15:25:28
+#END# kgcal a=rls c=days($t{dt1}) i=./indat/dat5.csv o=./outdat/out440.csv; IN=7 OUT=7; 2013/10/23 15:25:28
+#END# kgcal a=rls c=week($d{date1}) i=./indat/dat5.csv o=./outdat/out441.csv; IN=7 OUT=7; 2013/10/23 15:25:28
+#END# kgcal a=rls c=week($t{dt1}) i=./indat/dat5.csv o=./outdat/out442.csv; IN=7 OUT=7; 2013/10/23 15:25:28
+#END# kgcal a=rls c=dow($t{dt1}) i=./indat/dat5.csv o=./outdat/out443.csv; IN=7 OUT=7; 2013/10/23 15:25:28
+#END# kgcal a=rls c=dowe($t{dt1}) i=./indat/dat5.csv o=./outdat/out444.csv; IN=7 OUT=7; 2013/10/23 15:25:29
+#END# kgcal a=rls c=dowes($d{date1}) i=./indat/dat5.csv o=./outdat/out445.csv; IN=7 OUT=7; 2013/10/23 15:25:29
+#END# kgcal a=rls c=dowes($t{dt1}) i=./indat/dat5.csv o=./outdat/out446.csv; IN=7 OUT=7; 2013/10/23 15:25:29
+#END# kgcal a=rls c=minutes($t{time1}) i=./indat/dat5.csv o=./outdat/out447.csv; IN=7 OUT=7; 2013/10/23 15:25:29
+#END# kgcal a=rls c=seconds($t{time1}) i=./indat/dat5.csv o=./outdat/out448.csv; IN=7 OUT=7; 2013/10/23 15:25:29
+#END# kgcal a=rls c=avg(${num1},${num2}) i=./indat/dat5.csv o=./outdat/out449.csv; IN=7 OUT=7; 2013/10/23 15:25:29
+#END# kgcal a=rls c=sqsum(${num1},${num2}) i=./indat/dat5.csv o=./outdat/out450.csv; IN=7 OUT=7; 2013/10/23 15:25:29
+#END# kgcal a=rls c=factorial(${num1}) i=./indat/dat5.csv o=./outdat/out451.csv; IN=7 OUT=7; 2013/10/23 15:25:29
+#END# kgcal a=rls c=gcd(${num1},${num2}) i=./indat/dat5.csv o=./outdat/out452.csv; IN=7 OUT=7; 2013/10/23 15:25:29
+#END# kgcal a=rls c=lcm(${num1},${num2}) i=./indat/dat5.csv o=./outdat/out453.csv; IN=7 OUT=7; 2013/10/23 15:25:29
+#END# kgcal a=rls c=fract(${num1}) i=./indat/dat5.csv o=./outdat/out454.csv; IN=7 OUT=7; 2013/10/23 15:25:29
+#END# kgcal a=rls c=int(${num1}) i=./indat/dat5.csv o=./outdat/out455.csv; IN=7 OUT=7; 2013/10/23 15:25:29
+#END# kgcal a=rls c=round(${num1}) i=./indat/dat5.csv o=./outdat/out456.csv; IN=7 OUT=7; 2013/10/23 15:25:29
+#END# kgcal a=rls c=floor(${num1}) i=./indat/dat5.csv o=./outdat/out457.csv; IN=7 OUT=7; 2013/10/23 15:25:29
+#END# kgcal a=rls c=ceil(${num1}) i=./indat/dat5.csv o=./outdat/out458.csv; IN=7 OUT=7; 2013/10/23 15:25:29
+#END# kgcal a=rls c=product(${num1},${num2}) i=./indat/dat5.csv o=./outdat/out459.csv; IN=7 OUT=7; 2013/10/23 15:25:29
+#END# kgcal a=rls c=dist("euclid",${num1},${num2},100,200) i=./indat/dat5.csv o=./outdat/out460.csv; IN=7 OUT=7; 2013/10/23 15:25:29
+#END# kgcal a=rls c=dist("hamming",$s{str1},$s{str2},"a","a") i=./indat/dat5.csv o=./outdat/out461.csv; IN=7 OUT=7; 2013/10/23 15:25:29
+#END# kgcal a=rls c=distgps(nulln(),80,70,10) i=./indat/dat5.csv o=./outdat/out462.csv; IN=7 OUT=7; 2013/10/23 15:25:29
+#END# kgcal a=rls c=distgps(200,200,200,200) i=./indat/dat5.csv o=./outdat/out463.csv; IN=7 OUT=7; 2013/10/23 15:25:29
+#END# kgcal a=rls c=distgps(100,100,100,100) i=./indat/dat5.csv o=./outdat/out464.csv; IN=7 OUT=7; 2013/10/23 15:25:29
+#END# kgcal a=rls c=heron(${num1},${num2},nulln(),4,5,6) i=./indat/dat5.csv o=./outdat/out465.csv; IN=7 OUT=7; 2013/10/23 15:25:29
+#END# kgcal a=rls c=randi(nulln(),${num2},1) i=./indat/dat5.csv o=./outdat/out466.csv; IN=7 OUT=7; 2013/10/23 15:25:29
+#END# kgcal a=rls c=randi(100,1,1) i=./indat/dat5.csv o=./outdat/out467.csv; IN=7 OUT=7; 2013/10/23 15:25:29
+#END# kgcal a=rls c=rand(nulln()) i=./indat/dat5.csv o=./outdat/out468.csv; IN=7 OUT=7; 2013/10/23 15:25:29
+#END# kgcal a=x c=nrand(nulln(),1,1) i=./indat/dat5.csv o=./outdat/out469.csv; IN=7 OUT=7; 2013/10/23 15:25:29
+#END# kgcal a=x c=berrand(2,1) i=./indat/dat5.csv o=./outdat/out470.csv; IN=7 OUT=7; 2013/10/23 15:25:29
+#END# kgcal a=x c=berrand(nulln(),1) i=./indat/dat5.csv o=./outdat/out471.csv; IN=7 OUT=7; 2013/10/23 15:25:29
+#END# kgcal a=x c=binomdist(50,100,0.5) i=./indat/dat5.csv o=./outdat/out472.csv; IN=7 OUT=7; 2013/10/23 15:25:29
+#END# kgcal a=x c=binomdist(nulln(),100,1) i=./indat/dat5.csv o=./outdat/out473.csv; IN=7 OUT=7; 2013/10/23 15:25:29
+#END# kgcal a=x c=sign(${num1}) i=./indat/dat5.csv o=./outdat/out474.csv; IN=7 OUT=7; 2013/10/23 15:25:29
+#END# kgcal a=x c=acos(${num1}) i=./indat/dat5.csv o=./outdat/out475.csv; IN=7 OUT=7; 2013/10/23 15:25:29
+#END# kgcal a=x c=asin(${num1}) i=./indat/dat5.csv o=./outdat/out476.csv; IN=7 OUT=7; 2013/10/23 15:25:29
+#END# kgcal a=x c=atan2(${num1},${num2}) i=./indat/dat5.csv o=./outdat/out477.csv; IN=7 OUT=7; 2013/10/23 15:25:29
+#END# kgcal a=x c=cos(${num1}) i=./indat/dat5.csv o=./outdat/out478.csv; IN=7 OUT=7; 2013/10/23 15:25:29
+#END# kgcal a=x c=sin(${num1}) i=./indat/dat5.csv o=./outdat/out479.csv; IN=7 OUT=7; 2013/10/23 15:25:29
+#END# kgcal a=x c=tan(${num1}) i=./indat/dat5.csv o=./outdat/out480.csv; IN=7 OUT=7; 2013/10/23 15:25:29
+#END# kgcal a=x c=degree(${num1}) i=./indat/dat5.csv o=./outdat/out481.csv; IN=7 OUT=7; 2013/10/23 15:25:29
+#END# kgcal a=x c=radian(${num1}) i=./indat/dat5.csv o=./outdat/out482.csv; IN=7 OUT=7; 2013/10/23 15:25:29
+#END# kgcal a=x c=cosh(${num1}) i=./indat/dat5.csv o=./outdat/out483.csv; IN=7 OUT=7; 2013/10/23 15:25:29
+#END# kgcal a=x c=sinh(${num1}) i=./indat/dat5.csv o=./outdat/out484.csv; IN=7 OUT=7; 2013/10/23 15:25:29
+#END# kgcal a=x c=tanh(${num1}) i=./indat/dat5.csv o=./outdat/out485.csv; IN=7 OUT=7; 2013/10/23 15:25:29
+#END# kgcal a=x c=cat(nulls(),$s{str1},$s{str2}) i=./indat/dat5.csv o=./outdat/out486.csv; IN=7 OUT=7; 2013/10/23 15:25:29
+#END# kgcal a=x c=cat("_",$s{str1},$s{str2}) i=./indat/dat5.csv o=./outdat/out487.csv; IN=7 OUT=7; 2013/10/23 15:25:29
+#END# kgcal a=x c=fixlenw($s{str1},5,"L","_") i=./indat/dat5.csv o=./outdat/out488.csv; IN=7 OUT=7; 2013/10/23 15:25:29
+#END# kgcal a=x c=rightw($s{str1},1) i=./indat/dat5.csv o=./outdat/out489.csv; IN=7 OUT=7; 2013/10/23 15:25:29
+#END# kgcal a=x c=leftw($s{str1},1) i=./indat/dat5.csv o=./outdat/out490.csv; IN=7 OUT=7; 2013/10/23 15:25:29
+#END# kgcal a=x c=mid($s{str1},1,1) i=./indat/dat5.csv o=./outdat/out491.csv; IN=7 OUT=7; 2013/10/23 15:25:29
+#END# kgcal a=x c=if(top(),$s{str1},#s{}+$s{str1}) i=./indat/dat5.csv o=./outdat/out492.csv; IN=7 OUT=7; 2013/10/23 15:25:29
+#END# kgcal a=x c=if(top(),$t{dt1},#t{}+${num1}) i=./indat/dat5.csv o=./outdat/out493.csv; IN=7 OUT=7; 2013/10/23 15:25:29
+#END# kgcal a=x c=if(top(),$d{date1},#d{}+${num1}) i=./indat/dat5.csv o=./outdat/out494.csv; IN=7 OUT=7; 2013/10/23 15:25:29
+#END# kgcal a=x c=d2t($d{date1}) i=./indat/dat5.csv o=./outdat/out495.csv; IN=7 OUT=7; 2013/10/23 15:25:29
+#END# kgcal a=x c=t2d($t{dt1}) i=./indat/dat5.csv o=./outdat/out496.csv; IN=7 OUT=7; 2013/10/23 15:25:29
+#END# kgcal a=x c=b2s($b{bool1}) i=./indat/dat5.csv o=./outdat/out497.csv; IN=7 OUT=7; 2013/10/23 15:25:29

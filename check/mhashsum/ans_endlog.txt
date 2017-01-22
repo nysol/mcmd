@@ -1,0 +1,51 @@
+#END# kghashsum f=数量,金額 i=./indat/dat0.csv k=顧客 o=./outdat/out0.csv; IN=0 OUT=0; 2014/05/28 02:23:44
+#END# kghashsum -x f=1,2 i=./indat/dat0.csv k=0 o=./outdat/out0x.csv; IN=0 OUT=0; 2014/05/28 02:23:44
+#END# kghashsum -nfn f=1,2 i=./indat/dat0nfn.csv k=0 o=./outdat/out0nfn.csv; IN=0 OUT=0; 2014/05/28 02:23:44
+#END# kghashsum f=数量,金額 i=./indat/dat1.csv k=顧客 o=./outdat/out1.csv; IN=5 OUT=2; 2014/05/28 02:23:44
+#END# kghashsum -x f=1,2 i=./indat/dat1.csv k=0 o=./outdat/out1x.csv; IN=5 OUT=2; 2014/05/28 02:23:44
+#END# kghashsum -nfn f=1,2 i=./indat/dat1nfn.csv k=0 o=./outdat/out1nfn.csv; IN=5 OUT=2; 2014/05/28 02:23:44
+#END# kghashsum f=金額,数量 i=./indat/dat1.csv k=顧客 o=./outdat/out2.csv; IN=5 OUT=2; 2014/05/28 02:23:44
+#END# kghashsum -x f=1,2 i=./indat/dat1.csv k=0 o=./outdat/out2x.csv; IN=5 OUT=2; 2014/05/28 02:23:44
+#END# kghashsum -nfn f=1,2 i=./indat/dat1nfn.csv k=0 o=./outdat/out2nfn.csv; IN=5 OUT=2; 2014/05/28 02:23:44
+#END# kghashsum f=数量,金額 i=./indat/dat1.csv o=./outdat/out3.csv; IN=5 OUT=1; 2014/05/28 02:23:44
+#END# kghashsum -x f=1,2 i=./indat/dat1.csv o=./outdat/out3x.csv; IN=5 OUT=1; 2014/05/28 02:23:44
+#END# kghashsum -nfn f=1,2 i=./indat/dat1nfn.csv o=./outdat/out3nfn.csv; IN=5 OUT=1; 2014/05/28 02:23:44
+#END# kghashsum f=数量,金額 i=./indat/dat2.csv k=顧客 o=./outdat/out4.csv; IN=8 OUT=3; 2014/05/28 02:23:44
+#END# kghashsum -x f=1,2 i=./indat/dat2.csv k=0 o=./outdat/out4x.csv; IN=8 OUT=3; 2014/05/28 02:23:44
+#END# kghashsum -nfn f=1,2 i=./indat/dat2nfn.csv k=0 o=./outdat/out4nfn.csv; IN=8 OUT=3; 2014/05/28 02:23:44
+#END# kghashsum f=数量,金額 i=./indat/dat2.csv o=./outdat/out5.csv; IN=8 OUT=1; 2014/05/28 02:23:44
+#END# kghashsum -x f=1,2 i=./indat/dat2.csv o=./outdat/out5x.csv; IN=8 OUT=1; 2014/05/28 02:23:44
+#END# kghashsum -nfn f=1,2 i=./indat/dat2nfn.csv o=./outdat/out5nfn.csv; IN=8 OUT=1; 2014/05/28 02:23:44
+#END# kghashsum -n f=数量,金額 i=./indat/dat2.csv k=顧客 o=./outdat/out6.csv; IN=8 OUT=3; 2014/05/28 02:23:44
+#END# kghashsum -n -x f=1,2 i=./indat/dat2.csv k=0 o=./outdat/out6x.csv; IN=8 OUT=3; 2014/05/28 02:23:44
+#END# kghashsum -n -nfn f=1,2 i=./indat/dat2nfn.csv k=0 o=./outdat/out6nfn.csv; IN=8 OUT=3; 2014/05/28 02:23:44
+#END# kghashsum -n f=数量,金額 i=./indat/dat2.csv o=./outdat/out7.csv; IN=8 OUT=1; 2014/05/28 02:23:44
+#END# kghashsum -n -x f=1,2 i=./indat/dat2.csv o=./outdat/out7x.csv; IN=8 OUT=1; 2014/05/28 02:23:44
+#END# kghashsum -n -nfn f=1,2 i=./indat/dat2nfn.csv o=./outdat/out7nfn.csv; IN=8 OUT=1; 2014/05/28 02:23:44
+#END# kghashsum f=数量,金額 hs=101 i=./indat/dat0.csv k=顧客 o=./outdat/out8.csv; IN=0 OUT=0; 2014/05/28 02:23:44
+#END# kghashsum -x f=1,2 hs=101 i=./indat/dat0.csv k=0 o=./outdat/out8x.csv; IN=0 OUT=0; 2014/05/28 02:23:44
+#END# kghashsum -nfn f=1,2 hs=101 i=./indat/dat0nfn.csv k=0 o=./outdat/out8nfn.csv; IN=0 OUT=0; 2014/05/28 02:23:44
+#END# kghashsum f=数量,金額 hs=101 i=./indat/dat1.csv k=顧客 o=./outdat/out9.csv; IN=5 OUT=2; 2014/05/28 02:23:44
+#END# kghashsum -x f=1,2 hs=101 i=./indat/dat1.csv k=0 o=./outdat/out9x.csv; IN=5 OUT=2; 2014/05/28 02:23:44
+#END# kghashsum -nfn f=1,2 hs=101 i=./indat/dat1nfn.csv k=0 o=./outdat/out9nfn.csv; IN=5 OUT=2; 2014/05/28 02:23:44
+#END# kghashsum f=金額,数量 hs=101 i=./indat/dat1.csv k=顧客 o=./outdat/out10.csv; IN=5 OUT=2; 2014/05/28 02:23:44
+#END# kghashsum -x f=1,2 hs=101 i=./indat/dat1.csv k=0 o=./outdat/out10x.csv; IN=5 OUT=2; 2014/05/28 02:23:44
+#END# kghashsum -nfn f=1,2 hs=101 i=./indat/dat1nfn.csv k=0 o=./outdat/out10nfn.csv; IN=5 OUT=2; 2014/05/28 02:23:44
+#END# kghashsum f=数量,金額 hs=101 i=./indat/dat1.csv o=./outdat/out11.csv; IN=5 OUT=1; 2014/05/28 02:23:44
+#END# kghashsum -x f=1,2 hs=101 i=./indat/dat1.csv o=./outdat/out11x.csv; IN=5 OUT=1; 2014/05/28 02:23:44
+#END# kghashsum -nfn f=1,2 hs=101 i=./indat/dat1nfn.csv o=./outdat/out11nfn.csv; IN=5 OUT=1; 2014/05/28 02:23:44
+#END# kghashsum f=数量,金額 hs=101 i=./indat/dat2.csv k=顧客 o=./outdat/out12.csv; IN=8 OUT=3; 2014/05/28 02:23:44
+#END# kghashsum -x f=1,2 hs=101 i=./indat/dat2.csv k=0 o=./outdat/out12x.csv; IN=8 OUT=3; 2014/05/28 02:23:44
+#END# kghashsum -nfn f=1,2 hs=101 i=./indat/dat2nfn.csv k=0 o=./outdat/out12nfn.csv; IN=8 OUT=3; 2014/05/28 02:23:44
+#END# kghashsum f=数量,金額 hs=101 i=./indat/dat2.csv o=./outdat/out13.csv; IN=8 OUT=1; 2014/05/28 02:23:44
+#END# kghashsum -x f=1,2 hs=101 i=./indat/dat2.csv o=./outdat/out13x.csv; IN=8 OUT=1; 2014/05/28 02:23:44
+#END# kghashsum -nfn f=1,2 hs=101 i=./indat/dat2nfn.csv o=./outdat/out13nfn.csv; IN=8 OUT=1; 2014/05/28 02:23:44
+#END# kghashsum -n f=数量,金額 hs=101 i=./indat/dat2.csv k=顧客 o=./outdat/out14.csv; IN=8 OUT=3; 2014/05/28 02:23:44
+#END# kghashsum -n -x f=1,2 hs=101 i=./indat/dat2.csv k=0 o=./outdat/out14x.csv; IN=8 OUT=3; 2014/05/28 02:23:44
+#END# kghashsum -n -nfn f=1,2 hs=101 i=./indat/dat2nfn.csv k=0 o=./outdat/out14nfn.csv; IN=8 OUT=3; 2014/05/28 02:23:44
+#END# kghashsum -n f=数量,金額 hs=101 i=./indat/dat2.csv o=./outdat/out15.csv; IN=8 OUT=1; 2014/05/28 02:23:44
+#END# kghashsum -n -x f=1,2 hs=101 i=./indat/dat2.csv o=./outdat/out15x.csv; IN=8 OUT=1; 2014/05/28 02:23:44
+#END# kghashsum -n -nfn f=1,2 hs=101 i=./indat/dat2nfn.csv o=./outdat/out15nfn.csv; IN=8 OUT=1; 2014/05/28 02:23:44
+#END# kghashsum f=数量,金額 i=./indat/dat1s.csv k=顧客 o=./outdat/out16.csv; IN=5 OUT=2; 2014/05/28 02:23:44
+#END# kghashsum -x f=1,2 i=./indat/dat1s.csv k=0 o=./outdat/out16x.csv; IN=5 OUT=2; 2014/05/28 02:23:44
+#END# kghashsum -nfn f=1,2 i=./indat/dat1snfn.csv k=0 o=./outdat/out16nfn.csv; IN=5 OUT=2; 2014/05/28 02:23:44

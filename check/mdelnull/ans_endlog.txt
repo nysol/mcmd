@@ -1,0 +1,282 @@
+#END# kgdelnull f=数量,金額 i=./indat/dat0s.csv o=./outdat/out0.csv; IN=0 OUT=0; 2014/05/27 13:01:38
+#END# kgdelnull -x f=1,2 i=./indat/dat0s.csv o=./outdat/out0x.csv; IN=0 OUT=0; 2014/05/27 13:01:38
+#END# kgdelnull -nfn f=1,2 i=./indat/dat0snfn.csv o=./outdat/out0nfn.csv; IN=0 OUT=0; 2014/05/27 13:01:38
+#END# kgdelnull -nfno f=数量,金額 i=./indat/dat0s.csv o=./outdat/out0nfno.csv; IN=0 OUT=0; 2014/05/27 13:01:38
+#END# kgdelnull f=数量,金額 i=./indat/dat0s.csv o=./outdat/out1.csv u=./outdat/out2.csv; IN=0 OUT=0; 2014/05/27 13:01:38
+#END# kgdelnull -x f=1,2 i=./indat/dat0s.csv o=./outdat/out1x.csv u=./outdat/out2x.csv; IN=0 OUT=0; 2014/05/27 13:01:38
+#END# kgdelnull -nfn f=1,2 i=./indat/dat0snfn.csv o=./outdat/out1nfn.csv u=./outdat/out2nfn.csv; IN=0 OUT=0; 2014/05/27 13:01:38
+#END# kgdelnull f=数量 i=./indat/dat1s.csv o=./outdat/out3.csv; IN=5 OUT=4; 2014/05/27 13:01:38
+#END# kgdelnull -x f=1 i=./indat/dat1s.csv o=./outdat/out3x.csv; IN=5 OUT=4; 2014/05/27 13:01:38
+#END# kgdelnull -nfn f=1 i=./indat/dat1snfn.csv o=./outdat/out3nfn.csv; IN=5 OUT=4; 2014/05/27 13:01:38
+#END# kgdelnull -nfno f=数量 i=./indat/dat1s.csv o=./outdat/out3nfno.csv; IN=5 OUT=4; 2014/05/27 13:01:38
+#END# kgdelnull f=数量,金額 i=./indat/dat1s.csv o=./outdat/out4.csv; IN=5 OUT=3; 2014/05/27 13:01:38
+#END# kgdelnull -x f=1,2 i=./indat/dat1s.csv o=./outdat/out4x.csv; IN=5 OUT=3; 2014/05/27 13:01:38
+#END# kgdelnull -nfn f=1,2 i=./indat/dat1snfn.csv o=./outdat/out4nfn.csv; IN=5 OUT=3; 2014/05/27 13:01:38
+#END# kgdelnull f=数量 i=./indat/dat1s.csv o=./outdat/out5.csv u=./outdat/out6.csv; IN=5 OUT=4; 2014/05/27 13:01:38
+#END# kgdelnull -x f=1 i=./indat/dat1s.csv o=./outdat/out5x.csv u=./outdat/out6x.csv; IN=5 OUT=4; 2014/05/27 13:01:38
+#END# kgdelnull -nfn f=1 i=./indat/dat1snfn.csv o=./outdat/out5nfn.csv u=./outdat/out6nfn.csv; IN=5 OUT=4; 2014/05/27 13:01:38
+#END# kgdelnull -nfno f=数量 i=./indat/dat1s.csv o=./outdat/out5nfno.csv u=./outdat/out6nfno.csv; IN=5 OUT=4; 2014/05/27 13:01:38
+#END# kgdelnull f=数量,金額 i=./indat/dat1s.csv o=./outdat/out7.csv u=./outdat/out8.csv; IN=5 OUT=3; 2014/05/27 13:01:38
+#END# kgdelnull -x f=1,2 i=./indat/dat1s.csv o=./outdat/out7x.csv u=./outdat/out8x.csv; IN=5 OUT=3; 2014/05/27 13:01:38
+#END# kgdelnull -nfn f=1,2 i=./indat/dat1snfn.csv o=./outdat/out7nfn.csv u=./outdat/out8nfn.csv; IN=5 OUT=3; 2014/05/27 13:01:38
+#END# kgdelnull -r f=数量 i=./indat/dat1s.csv o=./outdat/out9.csv; IN=5 OUT=1; 2014/05/27 13:01:38
+#END# kgdelnull -r -x f=1 i=./indat/dat1s.csv o=./outdat/out9x.csv; IN=5 OUT=1; 2014/05/27 13:01:38
+#END# kgdelnull -nfn -r f=1 i=./indat/dat1snfn.csv o=./outdat/out9nfn.csv; IN=5 OUT=1; 2014/05/27 13:01:38
+#END# kgdelnull -nfno -r f=数量 i=./indat/dat1s.csv o=./outdat/out9nfno.csv; IN=5 OUT=1; 2014/05/27 13:01:38
+#END# kgdelnull -r f=数量,金額 i=./indat/dat1s.csv o=./outdat/out10.csv; IN=5 OUT=2; 2014/05/27 13:01:38
+#END# kgdelnull -r -x f=1,2 i=./indat/dat1s.csv o=./outdat/out10x.csv; IN=5 OUT=2; 2014/05/27 13:01:38
+#END# kgdelnull -nfn -r f=1,2 i=./indat/dat1snfn.csv o=./outdat/out10nfn.csv; IN=5 OUT=2; 2014/05/27 13:01:38
+#END# kgdelnull -nfno -r f=数量,金額 i=./indat/dat1s.csv o=./outdat/out10nfno.csv; IN=5 OUT=2; 2014/05/27 13:01:38
+#END# kgdelnull -r f=数量 i=./indat/dat1s.csv o=./outdat/out11.csv u=./outdat/out12.csv; IN=5 OUT=1; 2014/05/27 13:01:38
+#END# kgdelnull -r -x f=1 i=./indat/dat1s.csv o=./outdat/out11x.csv u=./outdat/out12x.csv; IN=5 OUT=1; 2014/05/27 13:01:38
+#END# kgdelnull -nfn -r f=1 i=./indat/dat1snfn.csv o=./outdat/out11nfn.csv u=./outdat/out12nfn.csv; IN=5 OUT=1; 2014/05/27 13:01:38
+#END# kgdelnull -nfno -r f=数量 i=./indat/dat1s.csv o=./outdat/out11nfno.csv u=./outdat/out12nfno.csv; IN=5 OUT=1; 2014/05/27 13:01:38
+#END# kgdelnull -r f=数量,金額 i=./indat/dat1s.csv o=./outdat/out13.csv u=./outdat/out14.csv; IN=5 OUT=2; 2014/05/27 13:01:38
+#END# kgdelnull -r -x f=1,2 i=./indat/dat1s.csv o=./outdat/out13x.csv u=./outdat/out14x.csv; IN=5 OUT=2; 2014/05/27 13:01:38
+#END# kgdelnull -nfn -r f=1,2 i=./indat/dat1snfn.csv o=./outdat/out13nfn.csv u=./outdat/out14nfn.csv; IN=5 OUT=2; 2014/05/27 13:01:38
+#END# kgdelnull -F f=数量,金額 i=./indat/dat2s.csv o=./outdat/out15.csv; IN=5 OUT=4; 2014/05/27 13:01:38
+#END# kgdelnull -F -x f=1,2 i=./indat/dat2s.csv o=./outdat/out15x.csv; IN=5 OUT=4; 2014/05/27 13:01:38
+#END# kgdelnull -F -nfn f=1,2 i=./indat/dat2snfn.csv o=./outdat/out15nfn.csv; IN=5 OUT=4; 2014/05/27 13:01:38
+#END# kgdelnull -F -nfno f=数量,金額 i=./indat/dat2s.csv o=./outdat/out15nfno.csv; IN=5 OUT=4; 2014/05/27 13:01:38
+#END# kgdelnull -F f=数量,金額 i=./indat/dat2s.csv o=./outdat/out16.csv u=./outdat/out17.csv; IN=5 OUT=4; 2014/05/27 13:01:38
+#END# kgdelnull -F -x f=1,2 i=./indat/dat2s.csv o=./outdat/out16x.csv u=./outdat/out17x.csv; IN=5 OUT=4; 2014/05/27 13:01:38
+#END# kgdelnull -F -nfn f=1,2 i=./indat/dat2snfn.csv o=./outdat/out16nfn.csv u=./outdat/out17nfn.csv; IN=5 OUT=4; 2014/05/27 13:01:38
+#END# kgdelnull -F -r f=数量,金額 i=./indat/dat2s.csv o=./outdat/out18.csv; IN=5 OUT=1; 2014/05/27 13:01:38
+#END# kgdelnull -F -r -x f=1,2 i=./indat/dat2s.csv o=./outdat/out18x.csv; IN=5 OUT=1; 2014/05/27 13:01:38
+#END# kgdelnull -F -nfn -r f=1,2 i=./indat/dat2snfn.csv o=./outdat/out18nfn.csv; IN=5 OUT=1; 2014/05/27 13:01:38
+#END# kgdelnull -F -r f=数量,金額 i=./indat/dat2s.csv o=./outdat/out19.csv u=./outdat/out20.csv; IN=5 OUT=1; 2014/05/27 13:01:38
+#END# kgdelnull -F -r -x f=1,2 i=./indat/dat2s.csv o=./outdat/out19x.csv u=./outdat/out20x.csv; IN=5 OUT=1; 2014/05/27 13:01:38
+#END# kgdelnull -F -nfn -r f=1,2 i=./indat/dat2snfn.csv o=./outdat/out19nfn.csv u=./outdat/out20nfn.csv; IN=5 OUT=1; 2014/05/27 13:01:38
+#END# kgdelnull f=数量 i=./indat/dat1s.csv k=顧客 o=./outdat/out21.csv; IN=5 OUT=3; 2014/05/27 13:01:38
+#END# kgdelnull -x f=1 i=./indat/dat1s.csv k=0 o=./outdat/out21x.csv; IN=5 OUT=3; 2014/05/27 13:01:38
+#END# kgdelnull -nfn f=1 i=./indat/dat1snfn.csv k=0 o=./outdat/out21nfn.csv; IN=5 OUT=3; 2014/05/27 13:01:38
+#END# kgdelnull -nfno f=数量 i=./indat/dat1s.csv k=顧客 o=./outdat/out21nfno.csv; IN=5 OUT=3; 2014/05/27 13:01:38
+#END# kgdelnull -q f=数量 i=./indat/dat1s.csv k=顧客 o=./outdat/out21q.csv; IN=5 OUT=3; 2014/05/27 13:01:38
+#END# kgdelnull -nfn -q f=1 i=./indat/dat1snfn.csv k=0 o=./outdat/out21qnfn.csv; IN=5 OUT=3; 2014/05/27 13:01:38
+#END# kgdelnull f=数量,金額 i=./indat/dat1s.csv k=顧客 o=./outdat/out22.csv; IN=5 OUT=1; 2014/05/27 13:01:38
+#END# kgdelnull -x f=1,2 i=./indat/dat1s.csv k=0 o=./outdat/out22x.csv; IN=5 OUT=1; 2014/05/27 13:01:38
+#END# kgdelnull -nfn f=1,2 i=./indat/dat1snfn.csv k=0 o=./outdat/out22nfn.csv; IN=5 OUT=1; 2014/05/27 13:01:38
+#END# kgdelnull f=数量 i=./indat/dat1s.csv k=顧客 o=./outdat/out23.csv u=./outdat/out24.csv; IN=5 OUT=3; 2014/05/27 13:01:38
+#END# kgdelnull -x f=1 i=./indat/dat1s.csv k=0 o=./outdat/out23x.csv u=./outdat/out24x.csv; IN=5 OUT=3; 2014/05/27 13:01:38
+#END# kgdelnull -nfn f=1 i=./indat/dat1snfn.csv k=0 o=./outdat/out23nfn.csv u=./outdat/out24nfn.csv; IN=5 OUT=3; 2014/05/27 13:01:38
+#END# kgdelnull f=数量,金額 i=./indat/dat1s.csv k=顧客 o=./outdat/out25.csv u=./outdat/out26.csv; IN=5 OUT=1; 2014/05/27 13:01:38
+#END# kgdelnull -x f=1,2 i=./indat/dat1s.csv k=0 o=./outdat/out25x.csv u=./outdat/out26x.csv; IN=5 OUT=1; 2014/05/27 13:01:38
+#END# kgdelnull -nfn f=1,2 i=./indat/dat1snfn.csv k=0 o=./outdat/out25nfn.csv u=./outdat/out26nfn.csv; IN=5 OUT=1; 2014/05/27 13:01:38
+#END# kgdelnull -r f=数量 i=./indat/dat1s.csv k=顧客 o=./outdat/out27.csv; IN=5 OUT=2; 2014/05/27 13:01:38
+#END# kgdelnull -r -x f=1 i=./indat/dat1s.csv k=0 o=./outdat/out27x.csv; IN=5 OUT=2; 2014/05/27 13:01:38
+#END# kgdelnull -nfn -r f=1 i=./indat/dat1snfn.csv k=0 o=./outdat/out27nfn.csv; IN=5 OUT=2; 2014/05/27 13:01:38
+#END# kgdelnull -r f=数量,金額 i=./indat/dat1s.csv k=顧客 o=./outdat/out28.csv; IN=5 OUT=4; 2014/05/27 13:01:38
+#END# kgdelnull -r -x f=1,2 i=./indat/dat1s.csv k=0 o=./outdat/out28x.csv; IN=5 OUT=4; 2014/05/27 13:01:38
+#END# kgdelnull -nfn -r f=1,2 i=./indat/dat1snfn.csv k=0 o=./outdat/out28nfn.csv; IN=5 OUT=4; 2014/05/27 13:01:38
+#END# kgdelnull -r f=数量 i=./indat/dat1s.csv k=顧客 o=./outdat/out29.csv u=./outdat/out30.csv; IN=5 OUT=2; 2014/05/27 13:01:38
+#END# kgdelnull -r -x f=1 i=./indat/dat1s.csv k=0 o=./outdat/out29x.csv u=./outdat/out30x.csv; IN=5 OUT=2; 2014/05/27 13:01:38
+#END# kgdelnull -nfn -r f=1 i=./indat/dat1snfn.csv k=0 o=./outdat/out29nfn.csv u=./outdat/out30nfn.csv; IN=5 OUT=2; 2014/05/27 13:01:38
+#END# kgdelnull -r f=数量,金額 i=./indat/dat1s.csv k=顧客 o=./outdat/out31.csv u=./outdat/out32.csv; IN=5 OUT=4; 2014/05/27 13:01:38
+#END# kgdelnull -r -x f=1,2 i=./indat/dat1s.csv k=0 o=./outdat/out31x.csv u=./outdat/out32x.csv; IN=5 OUT=4; 2014/05/27 13:01:38
+#END# kgdelnull -nfn -r f=1,2 i=./indat/dat1snfn.csv k=0 o=./outdat/out31nfn.csv u=./outdat/out32nfn.csv; IN=5 OUT=4; 2014/05/27 13:01:38
+#END# kgdelnull -F f=数量,金額 i=./indat/dat2s.csv k=顧客 o=./outdat/out33.csv; IN=5 OUT=3; 2014/05/27 13:01:38
+#END# kgdelnull -F -x f=1,2 i=./indat/dat2s.csv k=0 o=./outdat/out33x.csv; IN=5 OUT=3; 2014/05/27 13:01:38
+#END# kgdelnull -F -nfn f=1,2 i=./indat/dat2snfn.csv k=0 o=./outdat/out33nfn.csv; IN=5 OUT=3; 2014/05/27 13:01:38
+#END# kgdelnull -F f=数量,金額 i=./indat/dat2s.csv k=顧客 o=./outdat/out34.csv u=./outdat/out35.csv; IN=5 OUT=3; 2014/05/27 13:01:38
+#END# kgdelnull -F -x f=1,2 i=./indat/dat2s.csv k=0 o=./outdat/out34x.csv u=./outdat/out35x.csv; IN=5 OUT=3; 2014/05/27 13:01:38
+#END# kgdelnull -F -nfn f=1,2 i=./indat/dat2snfn.csv k=0 o=./outdat/out34nfn.csv u=./outdat/out35nfn.csv; IN=5 OUT=3; 2014/05/27 13:01:38
+#END# kgdelnull -F -r f=数量,金額 i=./indat/dat2s.csv k=顧客 o=./outdat/out36.csv; IN=5 OUT=2; 2014/05/27 13:01:38
+#END# kgdelnull -F -r -x f=1,2 i=./indat/dat2s.csv k=0 o=./outdat/out36x.csv; IN=5 OUT=2; 2014/05/27 13:01:38
+#END# kgdelnull -F -nfn -r f=1,2 i=./indat/dat2snfn.csv k=0 o=./outdat/out36nfn.csv; IN=5 OUT=2; 2014/05/27 13:01:38
+#END# kgdelnull -F -r f=数量,金額 i=./indat/dat2s.csv k=顧客 o=./outdat/out37.csv u=./outdat/out38.csv; IN=5 OUT=2; 2014/05/27 13:01:38
+#END# kgdelnull -F -r -x f=1,2 i=./indat/dat2s.csv k=0 o=./outdat/out37x.csv u=./outdat/out38x.csv; IN=5 OUT=2; 2014/05/27 13:01:38
+#END# kgdelnull -F -nfn -r f=1,2 i=./indat/dat2snfn.csv k=0 o=./outdat/out37nfn.csv u=./outdat/out38nfn.csv; IN=5 OUT=2; 2014/05/27 13:01:38
+#END# kgdelnull -R f=数量 i=./indat/dat3s.csv k=顧客 o=./outdat/out39.csv; IN=7 OUT=5; 2014/05/27 13:01:38
+#END# kgdelnull -R -x f=1 i=./indat/dat3s.csv k=0 o=./outdat/out39x.csv; IN=7 OUT=5; 2014/05/27 13:01:38
+#END# kgdelnull -R -nfn f=1 i=./indat/dat3snfn.csv k=0 o=./outdat/out39nfn.csv; IN=7 OUT=5; 2014/05/27 13:01:38
+#END# kgdelnull -R -nfno f=数量 i=./indat/dat3s.csv k=顧客 o=./outdat/out39nfno.csv; IN=7 OUT=5; 2014/05/27 13:01:38
+#END# kgdelnull -R f=数量,金額 i=./indat/dat3s.csv k=顧客 o=./outdat/out40.csv; IN=7 OUT=3; 2014/05/27 13:01:38
+#END# kgdelnull -R -x f=1,2 i=./indat/dat3s.csv k=0 o=./outdat/out40x.csv; IN=7 OUT=3; 2014/05/27 13:01:38
+#END# kgdelnull -R -nfn f=1,2 i=./indat/dat3snfn.csv k=0 o=./outdat/out40nfn.csv; IN=7 OUT=3; 2014/05/27 13:01:38
+#END# kgdelnull -R f=数量 i=./indat/dat3s.csv k=顧客 o=./outdat/out41.csv u=./outdat/out42.csv; IN=7 OUT=5; 2014/05/27 13:01:38
+#END# kgdelnull -R -x f=1 i=./indat/dat3s.csv k=0 o=./outdat/out41x.csv u=./outdat/out42x.csv; IN=7 OUT=5; 2014/05/27 13:01:38
+#END# kgdelnull -R -nfn f=1 i=./indat/dat3snfn.csv k=0 o=./outdat/out41nfn.csv u=./outdat/out42nfn.csv; IN=7 OUT=5; 2014/05/27 13:01:38
+#END# kgdelnull -R f=数量,金額 i=./indat/dat3s.csv k=顧客 o=./outdat/out43.csv u=./outdat/out44.csv; IN=7 OUT=3; 2014/05/27 13:01:38
+#END# kgdelnull -R -x f=1,2 i=./indat/dat3s.csv k=0 o=./outdat/out43x.csv u=./outdat/out44x.csv; IN=7 OUT=3; 2014/05/27 13:01:38
+#END# kgdelnull -R -nfn f=1,2 i=./indat/dat3snfn.csv k=0 o=./outdat/out43nfn.csv u=./outdat/out44nfn.csv; IN=7 OUT=3; 2014/05/27 13:01:38
+#END# kgdelnull -R -r f=数量 i=./indat/dat3s.csv k=顧客 o=./outdat/out45.csv; IN=7 OUT=2; 2014/05/27 13:01:38
+#END# kgdelnull -R -r -x f=1 i=./indat/dat3s.csv k=0 o=./outdat/out45x.csv; IN=7 OUT=2; 2014/05/27 13:01:38
+#END# kgdelnull -R -nfn -r f=1 i=./indat/dat3snfn.csv k=0 o=./outdat/out45nfn.csv; IN=7 OUT=2; 2014/05/27 13:01:38
+#END# kgdelnull -R -r f=数量,金額 i=./indat/dat3s.csv k=顧客 o=./outdat/out46.csv; IN=7 OUT=4; 2014/05/27 13:01:38
+#END# kgdelnull -R -r -x f=1,2 i=./indat/dat3s.csv k=0 o=./outdat/out46x.csv; IN=7 OUT=4; 2014/05/27 13:01:38
+#END# kgdelnull -R -nfn -r f=1,2 i=./indat/dat3snfn.csv k=0 o=./outdat/out46nfn.csv; IN=7 OUT=4; 2014/05/27 13:01:38
+#END# kgdelnull -R -r f=数量 i=./indat/dat3s.csv k=顧客 o=./outdat/out47.csv u=./outdat/out48.csv; IN=7 OUT=2; 2014/05/27 13:01:38
+#END# kgdelnull -R -r -x f=1 i=./indat/dat3s.csv k=0 o=./outdat/out47x.csv u=./outdat/out48x.csv; IN=7 OUT=2; 2014/05/27 13:01:38
+#END# kgdelnull -R -nfn -r f=1 i=./indat/dat3snfn.csv k=0 o=./outdat/out47nfn.csv u=./outdat/out48nfn.csv; IN=7 OUT=2; 2014/05/27 13:01:38
+#END# kgdelnull -R -r f=数量,金額 i=./indat/dat3s.csv k=顧客 o=./outdat/out49.csv u=./outdat/out50.csv; IN=7 OUT=4; 2014/05/27 13:01:38
+#END# kgdelnull -R -r -x f=1,2 i=./indat/dat3s.csv k=0 o=./outdat/out49x.csv u=./outdat/out50x.csv; IN=7 OUT=4; 2014/05/27 13:01:38
+#END# kgdelnull -R -nfn -r f=1,2 i=./indat/dat3snfn.csv k=0 o=./outdat/out49nfn.csv u=./outdat/out50nfn.csv; IN=7 OUT=4; 2014/05/27 13:01:38
+#END# kgdelnull -F -R f=数量,金額 i=./indat/dat4s.csv k=顧客 o=./outdat/out51.csv; IN=7 OUT=5; 2014/05/27 13:01:38
+#END# kgdelnull -F -R -x f=1,2 i=./indat/dat4s.csv k=0 o=./outdat/out51x.csv; IN=7 OUT=5; 2014/05/27 13:01:38
+#END# kgdelnull -F -R -nfn f=1,2 i=./indat/dat4snfn.csv k=0 o=./outdat/out51nfn.csv; IN=7 OUT=5; 2014/05/27 13:01:38
+#END# kgdelnull -F -R f=数量,金額 i=./indat/dat4s.csv k=顧客 o=./outdat/out52.csv u=./outdat/out53.csv; IN=7 OUT=5; 2014/05/27 13:01:38
+#END# kgdelnull -F -R -x f=1,2 i=./indat/dat4s.csv k=0 o=./outdat/out52x.csv u=./outdat/out53x.csv; IN=7 OUT=5; 2014/05/27 13:01:38
+#END# kgdelnull -F -R -nfn f=1,2 i=./indat/dat4snfn.csv k=0 o=./outdat/out52nfn.csv u=./outdat/out53nfn.csv; IN=7 OUT=5; 2014/05/27 13:01:38
+#END# kgdelnull -F -R -r f=数量,金額 i=./indat/dat4s.csv k=顧客 o=./outdat/out54.csv; IN=7 OUT=2; 2014/05/27 13:01:38
+#END# kgdelnull -F -R -r -x f=1,2 i=./indat/dat4s.csv k=0 o=./outdat/out54x.csv; IN=7 OUT=2; 2014/05/27 13:01:38
+#END# kgdelnull -F -R -nfn -r f=1,2 i=./indat/dat4snfn.csv k=0 o=./outdat/out54nfn.csv; IN=7 OUT=2; 2014/05/27 13:01:38
+#END# kgdelnull -F -R -r f=数量,金額 i=./indat/dat4s.csv k=顧客 o=./outdat/out55.csv u=./outdat/out56.csv; IN=7 OUT=2; 2014/05/27 13:01:38
+#END# kgdelnull -F -R -r -x f=1,2 i=./indat/dat4s.csv k=0 o=./outdat/out55x.csv u=./outdat/out56x.csv; IN=7 OUT=2; 2014/05/27 13:01:38
+#END# kgdelnull -F -R -nfn -r f=1,2 i=./indat/dat4snfn.csv k=0 o=./outdat/out55nfn.csv u=./outdat/out56nfn.csv; IN=7 OUT=2; 2014/05/27 13:01:38
+#END# kgdelnull f=数量 i=./indat/dat5s.csv k=顧客 o=./outdat/out57.csv; IN=5 OUT=3; 2014/05/27 13:01:38
+#END# kgdelnull -x f=1 i=./indat/dat5s.csv k=0 o=./outdat/out57x.csv; IN=5 OUT=3; 2014/05/27 13:01:38
+#END# kgdelnull -nfn f=1 i=./indat/dat5snfn.csv k=0 o=./outdat/out57nfn.csv; IN=5 OUT=3; 2014/05/27 13:01:38
+#END# kgdelnull -nfno f=数量 i=./indat/dat5s.csv k=顧客 o=./outdat/out57nfno.csv; IN=5 OUT=3; 2014/05/27 13:01:38
+#END# kgdelnull f=数量,金額 i=./indat/dat5s.csv k=顧客 o=./outdat/out58.csv; IN=5 OUT=1; 2014/05/27 13:01:38
+#END# kgdelnull -x f=1,2 i=./indat/dat5s.csv k=0 o=./outdat/out58x.csv; IN=5 OUT=1; 2014/05/27 13:01:38
+#END# kgdelnull -nfn f=1,2 i=./indat/dat5snfn.csv k=0 o=./outdat/out58nfn.csv; IN=5 OUT=1; 2014/05/27 13:01:38
+#END# kgdelnull f=数量 i=./indat/dat5s.csv k=顧客 o=./outdat/out59.csv u=./outdat/out60.csv; IN=5 OUT=3; 2014/05/27 13:01:38
+#END# kgdelnull -x f=1 i=./indat/dat5s.csv k=0 o=./outdat/out59x.csv u=./outdat/out60x.csv; IN=5 OUT=3; 2014/05/27 13:01:38
+#END# kgdelnull -nfn f=1 i=./indat/dat5snfn.csv k=0 o=./outdat/out59nfn.csv u=./outdat/out60nfn.csv; IN=5 OUT=3; 2014/05/27 13:01:38
+#END# kgdelnull f=数量,金額 i=./indat/dat5s.csv k=顧客 o=./outdat/out61.csv u=./outdat/out62.csv; IN=5 OUT=1; 2014/05/27 13:01:38
+#END# kgdelnull -x f=1,2 i=./indat/dat5s.csv k=0 o=./outdat/out61x.csv u=./outdat/out62x.csv; IN=5 OUT=1; 2014/05/27 13:01:38
+#END# kgdelnull -nfn f=1,2 i=./indat/dat5snfn.csv k=0 o=./outdat/out61nfn.csv u=./outdat/out62nfn.csv; IN=5 OUT=1; 2014/05/27 13:01:38
+#END# kgdelnull -r f=数量 i=./indat/dat5s.csv k=顧客 o=./outdat/out63.csv; IN=5 OUT=2; 2014/05/27 13:01:38
+#END# kgdelnull -r -x f=1 i=./indat/dat5s.csv k=0 o=./outdat/out63x.csv; IN=5 OUT=2; 2014/05/27 13:01:38
+#END# kgdelnull -nfn -r f=1 i=./indat/dat5snfn.csv k=0 o=./outdat/out63nfn.csv; IN=5 OUT=2; 2014/05/27 13:01:38
+#END# kgdelnull -r f=数量,金額 i=./indat/dat5s.csv k=顧客 o=./outdat/out64.csv; IN=5 OUT=4; 2014/05/27 13:01:38
+#END# kgdelnull -r -x f=1,2 i=./indat/dat5s.csv k=0 o=./outdat/out64x.csv; IN=5 OUT=4; 2014/05/27 13:01:38
+#END# kgdelnull -nfn -r f=1,2 i=./indat/dat5snfn.csv k=0 o=./outdat/out64nfn.csv; IN=5 OUT=4; 2014/05/27 13:01:39
+#END# kgdelnull -r f=数量 i=./indat/dat5s.csv k=顧客 o=./outdat/out65.csv u=./outdat/out66.csv; IN=5 OUT=2; 2014/05/27 13:01:39
+#END# kgdelnull -r -x f=1 i=./indat/dat5s.csv k=0 o=./outdat/out65x.csv u=./outdat/out66x.csv; IN=5 OUT=2; 2014/05/27 13:01:39
+#END# kgdelnull -nfn -r f=1 i=./indat/dat5snfn.csv k=0 o=./outdat/out65nfn.csv u=./outdat/out66nfn.csv; IN=5 OUT=2; 2014/05/27 13:01:39
+#END# kgdelnull -r f=数量,金額 i=./indat/dat5s.csv k=顧客 o=./outdat/out67.csv u=./outdat/out68.csv; IN=5 OUT=4; 2014/05/27 13:01:39
+#END# kgdelnull -r -x f=1,2 i=./indat/dat5s.csv k=0 o=./outdat/out67x.csv u=./outdat/out68x.csv; IN=5 OUT=4; 2014/05/27 13:01:39
+#END# kgdelnull -nfn -r f=1,2 i=./indat/dat5snfn.csv k=0 o=./outdat/out67nfn.csv u=./outdat/out68nfn.csv; IN=5 OUT=4; 2014/05/27 13:01:39
+#END# kgdelnull -F f=数量,金額 i=./indat/dat6s.csv k=顧客 o=./outdat/out69.csv; IN=5 OUT=3; 2014/05/27 13:01:39
+#END# kgdelnull -F -x f=1,2 i=./indat/dat6s.csv k=0 o=./outdat/out69x.csv; IN=5 OUT=3; 2014/05/27 13:01:39
+#END# kgdelnull -F -nfn f=1,2 i=./indat/dat6snfn.csv k=0 o=./outdat/out69nfn.csv; IN=5 OUT=3; 2014/05/27 13:01:39
+#END# kgdelnull -F f=数量,金額 i=./indat/dat6s.csv k=顧客 o=./outdat/out70.csv u=./outdat/out71.csv; IN=5 OUT=3; 2014/05/27 13:01:39
+#END# kgdelnull -F -x f=1,2 i=./indat/dat6s.csv k=0 o=./outdat/out70x.csv u=./outdat/out71x.csv; IN=5 OUT=3; 2014/05/27 13:01:39
+#END# kgdelnull -F -nfn f=1,2 i=./indat/dat6snfn.csv k=0 o=./outdat/out70nfn.csv u=./outdat/out71nfn.csv; IN=5 OUT=3; 2014/05/27 13:01:39
+#END# kgdelnull -F -r f=数量,金額 i=./indat/dat6s.csv k=顧客 o=./outdat/out72.csv; IN=5 OUT=2; 2014/05/27 13:01:39
+#END# kgdelnull -F -r -x f=1,2 i=./indat/dat6s.csv k=0 o=./outdat/out72x.csv; IN=5 OUT=2; 2014/05/27 13:01:39
+#END# kgdelnull -F -nfn -r f=1,2 i=./indat/dat6snfn.csv k=0 o=./outdat/out72nfn.csv; IN=5 OUT=2; 2014/05/27 13:01:39
+#END# kgdelnull -F -r f=数量,金額 i=./indat/dat6s.csv k=顧客 o=./outdat/out73.csv u=./outdat/out74.csv; IN=5 OUT=2; 2014/05/27 13:01:39
+#END# kgdelnull -F -r -x f=1,2 i=./indat/dat6s.csv k=0 o=./outdat/out73x.csv u=./outdat/out74x.csv; IN=5 OUT=2; 2014/05/27 13:01:39
+#END# kgdelnull -F -nfn -r f=1,2 i=./indat/dat6snfn.csv k=0 o=./outdat/out73nfn.csv u=./outdat/out74nfn.csv; IN=5 OUT=2; 2014/05/27 13:01:39
+#END# kgdelnull -R f=数量 i=./indat/dat7s.csv k=顧客 o=./outdat/out75.csv; IN=7 OUT=5; 2014/05/27 13:01:39
+#END# kgdelnull -R -x f=1 i=./indat/dat7s.csv k=0 o=./outdat/out75x.csv; IN=7 OUT=5; 2014/05/27 13:01:39
+#END# kgdelnull -R -nfn f=1 i=./indat/dat7snfn.csv k=0 o=./outdat/out75nfn.csv; IN=7 OUT=5; 2014/05/27 13:01:39
+#END# kgdelnull -R f=数量,金額 i=./indat/dat7s.csv k=顧客 o=./outdat/out76.csv; IN=7 OUT=3; 2014/05/27 13:01:39
+#END# kgdelnull -R -x f=1,2 i=./indat/dat7s.csv k=0 o=./outdat/out76x.csv; IN=7 OUT=3; 2014/05/27 13:01:39
+#END# kgdelnull -R -nfn f=1,2 i=./indat/dat7snfn.csv k=0 o=./outdat/out76nfn.csv; IN=7 OUT=3; 2014/05/27 13:01:39
+#END# kgdelnull -R f=数量 i=./indat/dat7s.csv k=顧客 o=./outdat/out77.csv u=./outdat/out78.csv; IN=7 OUT=5; 2014/05/27 13:01:39
+#END# kgdelnull -R -x f=1 i=./indat/dat7s.csv k=0 o=./outdat/out77x.csv u=./outdat/out78x.csv; IN=7 OUT=5; 2014/05/27 13:01:39
+#END# kgdelnull -R -nfn f=1 i=./indat/dat7snfn.csv k=0 o=./outdat/out77nfn.csv u=./outdat/out78nfn.csv; IN=7 OUT=5; 2014/05/27 13:01:39
+#END# kgdelnull -R f=数量,金額 i=./indat/dat7s.csv k=顧客 o=./outdat/out79.csv u=./outdat/out80.csv; IN=7 OUT=3; 2014/05/27 13:01:39
+#END# kgdelnull -R -x f=1,2 i=./indat/dat7s.csv k=0 o=./outdat/out79x.csv u=./outdat/out80x.csv; IN=7 OUT=3; 2014/05/27 13:01:39
+#END# kgdelnull -R -nfn f=1,2 i=./indat/dat7snfn.csv k=0 o=./outdat/out79nfn.csv u=./outdat/out80nfn.csv; IN=7 OUT=3; 2014/05/27 13:01:39
+#END# kgdelnull -R -r f=数量 i=./indat/dat7s.csv k=顧客 o=./outdat/out81.csv; IN=7 OUT=2; 2014/05/27 13:01:39
+#END# kgdelnull -R -r -x f=1 i=./indat/dat7s.csv k=0 o=./outdat/out81x.csv; IN=7 OUT=2; 2014/05/27 13:01:39
+#END# kgdelnull -R -nfn -r f=1 i=./indat/dat7snfn.csv k=0 o=./outdat/out81nfn.csv; IN=7 OUT=2; 2014/05/27 13:01:39
+#END# kgdelnull -R -r f=数量,金額 i=./indat/dat7s.csv k=顧客 o=./outdat/out82.csv; IN=7 OUT=4; 2014/05/27 13:01:39
+#END# kgdelnull -R -r -x f=1,2 i=./indat/dat7s.csv k=0 o=./outdat/out82x.csv; IN=7 OUT=4; 2014/05/27 13:01:39
+#END# kgdelnull -R -nfn -r f=1,2 i=./indat/dat7snfn.csv k=0 o=./outdat/out82nfn.csv; IN=7 OUT=4; 2014/05/27 13:01:39
+#END# kgdelnull -R -r f=数量 i=./indat/dat7s.csv k=顧客 o=./outdat/out83.csv u=./outdat/out84.csv; IN=7 OUT=2; 2014/05/27 13:01:39
+#END# kgdelnull -R -r -x f=1 i=./indat/dat7s.csv k=0 o=./outdat/out83x.csv u=./outdat/out84x.csv; IN=7 OUT=2; 2014/05/27 13:01:39
+#END# kgdelnull -R -nfn -r f=1 i=./indat/dat7snfn.csv k=0 o=./outdat/out83nfn.csv u=./outdat/out84nfn.csv; IN=7 OUT=2; 2014/05/27 13:01:39
+#END# kgdelnull -R -r f=数量,金額 i=./indat/dat7s.csv k=顧客 o=./outdat/out85.csv u=./outdat/out86.csv; IN=7 OUT=4; 2014/05/27 13:01:39
+#END# kgdelnull -R -r -x f=1,2 i=./indat/dat7s.csv k=0 o=./outdat/out85x.csv u=./outdat/out86x.csv; IN=7 OUT=4; 2014/05/27 13:01:39
+#END# kgdelnull -R -nfn -r f=1,2 i=./indat/dat7snfn.csv k=0 o=./outdat/out85nfn.csv u=./outdat/out86nfn.csv; IN=7 OUT=4; 2014/05/27 13:01:39
+#END# kgdelnull -F -R f=数量,金額 i=./indat/dat8s.csv k=顧客 o=./outdat/out87.csv; IN=7 OUT=5; 2014/05/27 13:01:39
+#END# kgdelnull -F -R -x f=1,2 i=./indat/dat8s.csv k=0 o=./outdat/out87x.csv; IN=7 OUT=5; 2014/05/27 13:01:39
+#END# kgdelnull -F -R -nfn f=1,2 i=./indat/dat8snfn.csv k=0 o=./outdat/out87nfn.csv; IN=7 OUT=5; 2014/05/27 13:01:39
+#END# kgdelnull -F -R f=数量,金額 i=./indat/dat8s.csv k=顧客 o=./outdat/out88.csv u=./outdat/out89.csv; IN=7 OUT=5; 2014/05/27 13:01:39
+#END# kgdelnull -F -R -x f=1,2 i=./indat/dat8s.csv k=0 o=./outdat/out88x.csv u=./outdat/out89x.csv; IN=7 OUT=5; 2014/05/27 13:01:39
+#END# kgdelnull -F -R -nfn f=1,2 i=./indat/dat8snfn.csv k=0 o=./outdat/out88nfn.csv u=./outdat/out89nfn.csv; IN=7 OUT=5; 2014/05/27 13:01:39
+#END# kgdelnull -F -R -r f=数量,金額 i=./indat/dat8s.csv k=顧客 o=./outdat/out90.csv; IN=7 OUT=2; 2014/05/27 13:01:39
+#END# kgdelnull -F -R -r -x f=1,2 i=./indat/dat8s.csv k=0 o=./outdat/out90x.csv; IN=7 OUT=2; 2014/05/27 13:01:39
+#END# kgdelnull -F -R -nfn -r f=1,2 i=./indat/dat8snfn.csv k=0 o=./outdat/out90nfn.csv; IN=7 OUT=2; 2014/05/27 13:01:39
+#END# kgdelnull -F -R -r f=数量,金額 i=./indat/dat8s.csv k=顧客 o=./outdat/out91.csv u=./outdat/out92.csv; IN=7 OUT=2; 2014/05/27 13:01:39
+#END# kgdelnull -F -R -r -x f=1,2 i=./indat/dat8s.csv k=0 o=./outdat/out91x.csv u=./outdat/out92x.csv; IN=7 OUT=2; 2014/05/27 13:01:39
+#END# kgdelnull -F -R -nfn -r f=1,2 i=./indat/dat8snfn.csv k=0 o=./outdat/out91nfn.csv u=./outdat/out92nfn.csv; IN=7 OUT=2; 2014/05/27 13:01:39
+#END# kgdelnull bufcount=-1 f=数量 i=./indat/dat5s.csv k=顧客 o=./outdat/out93.csv; IN=5 OUT=3; 2014/05/27 13:01:39
+#END# kgdelnull -x bufcount=-1 f=1 i=./indat/dat5s.csv k=0 o=./outdat/out93x.csv; IN=5 OUT=3; 2014/05/27 13:01:39
+#END# kgdelnull -nfn bufcount=-1 f=1 i=./indat/dat5snfn.csv k=0 o=./outdat/out93nfn.csv; IN=5 OUT=3; 2014/05/27 13:01:39
+#END# kgdelnull -nfno bufcount=-1 f=数量 i=./indat/dat5s.csv k=顧客 o=./outdat/out93nfno.csv; IN=5 OUT=3; 2014/05/27 13:01:39
+#END# kgdelnull f=数量,金額 i=./indat/dat0.csv k=顧客 o=./outdat/out99.csv; IN=0 OUT=0; 2014/05/27 13:01:39
+#END# kgdelnull -x f=1,2 i=./indat/dat0.csv k=0 o=./outdat/out99x.csv; IN=0 OUT=0; 2014/05/27 13:01:39
+#END# kgdelnull -nfn f=1,2 i=./indat/dat0nfn.csv k=0 o=./outdat/out99nfn.csv; IN=0 OUT=0; 2014/05/27 13:01:39
+#END# kgdelnull f=数量 i=./indat/dat1.csv k=顧客 o=./outdat/out100.csv; IN=5 OUT=3; 2014/05/27 13:01:39
+#END# kgdelnull -x f=1 i=./indat/dat1.csv k=0 o=./outdat/out100x.csv; IN=5 OUT=3; 2014/05/27 13:01:39
+#END# kgdelnull -nfn f=1 i=./indat/dat1nfn.csv k=0 o=./outdat/out100nfn.csv; IN=5 OUT=4; 2014/05/27 13:01:39
+#END# kgdelnull -q f=数量 i=./indat/dat1.csv k=顧客 o=./outdat/out100q.csv; IN=5 OUT=4; 2014/05/27 13:01:39
+#END# kgdelnull -nfn -q f=1 i=./indat/dat1nfn.csv k=0 o=./outdat/out100qnfn.csv; IN=5 OUT=4; 2014/05/27 13:01:39
+#END# kgdelnull f=数量,金額 i=./indat/dat1.csv k=顧客 o=./outdat/out101.csv u=./outdat/out102.csv; IN=5 OUT=1; 2014/05/27 13:01:39
+#END# kgdelnull -x f=1,2 i=./indat/dat1.csv k=0 o=./outdat/out101x.csv u=./outdat/out102x.csv; IN=5 OUT=1; 2014/05/27 13:01:39
+#END# kgdelnull -nfn f=1,2 i=./indat/dat1nfn.csv k=0 o=./outdat/out101nfn.csv u=./outdat/out102nfn.csv; IN=5 OUT=3; 2014/05/27 13:01:39
+#END# kgdelnull -r f=数量 i=./indat/dat1.csv k=顧客 o=./outdat/out103.csv; IN=5 OUT=2; 2014/05/27 13:01:39
+#END# kgdelnull -r -x f=1 i=./indat/dat1.csv k=0 o=./outdat/out103x.csv; IN=5 OUT=2; 2014/05/27 13:01:39
+#END# kgdelnull -nfn -r f=1 i=./indat/dat1nfn.csv k=0 o=./outdat/out103nfn.csv; IN=5 OUT=1; 2014/05/27 13:01:39
+#END# kgdelnull -r f=数量,金額 i=./indat/dat1.csv k=顧客 o=./outdat/out104.csv u=./outdat/out105.csv; IN=5 OUT=4; 2014/05/27 13:01:39
+#END# kgdelnull -r -x f=1,2 i=./indat/dat1.csv k=0 o=./outdat/out104x.csv u=./outdat/out105x.csv; IN=5 OUT=4; 2014/05/27 13:01:39
+#END# kgdelnull -nfn -r f=1,2 i=./indat/dat1nfn.csv k=0 o=./outdat/out104nfn.csv u=./outdat/out105nfn.csv; IN=5 OUT=2; 2014/05/27 13:01:39
+#END# kgdelnull -F f=数量,金額 i=./indat/dat2.csv k=顧客 o=./outdat/out106.csv; IN=5 OUT=3; 2014/05/27 13:01:39
+#END# kgdelnull -F -x f=1,2 i=./indat/dat2.csv k=0 o=./outdat/out106x.csv; IN=5 OUT=3; 2014/05/27 13:01:39
+#END# kgdelnull -F -nfn f=1,2 i=./indat/dat2nfn.csv k=0 o=./outdat/out106nfn.csv; IN=5 OUT=4; 2014/05/27 13:01:39
+#END# kgdelnull -F -r f=数量,金額 i=./indat/dat2.csv k=顧客 o=./outdat/out107.csv u=./outdat/out108.csv; IN=5 OUT=2; 2014/05/27 13:01:39
+#END# kgdelnull -F -r -x f=1,2 i=./indat/dat2.csv k=0 o=./outdat/out107x.csv u=./outdat/out108x.csv; IN=5 OUT=2; 2014/05/27 13:01:39
+#END# kgdelnull -F -nfn -r f=1,2 i=./indat/dat2nfn.csv k=0 o=./outdat/out107nfn.csv u=./outdat/out108nfn.csv; IN=5 OUT=1; 2014/05/27 13:01:39
+#END# kgdelnull -R f=数量 i=./indat/dat3.csv k=顧客 o=./outdat/out109.csv; IN=7 OUT=5; 2014/05/27 13:01:39
+#END# kgdelnull -R -x f=1 i=./indat/dat3.csv k=0 o=./outdat/out109x.csv; IN=7 OUT=5; 2014/05/27 13:01:39
+#END# kgdelnull -R -nfn f=1 i=./indat/dat3nfn.csv k=0 o=./outdat/out109nfn.csv; IN=7 OUT=5; 2014/05/27 13:01:39
+#END# kgdelnull -R f=数量,金額 i=./indat/dat3.csv k=顧客 o=./outdat/out110.csv u=./outdat/out111.csv; IN=7 OUT=3; 2014/05/27 13:01:39
+#END# kgdelnull -R -x f=1,2 i=./indat/dat3.csv k=0 o=./outdat/out110x.csv u=./outdat/out111x.csv; IN=7 OUT=3; 2014/05/27 13:01:40
+#END# kgdelnull -R -nfn f=1,2 i=./indat/dat3nfn.csv k=0 o=./outdat/out110nfn.csv u=./outdat/out111nfn.csv; IN=7 OUT=3; 2014/05/27 13:01:40
+#END# kgdelnull -R -r f=数量 i=./indat/dat3.csv k=顧客 o=./outdat/out112.csv; IN=7 OUT=2; 2014/05/27 13:01:40
+#END# kgdelnull -R -r -x f=1 i=./indat/dat3.csv k=0 o=./outdat/out112x.csv; IN=7 OUT=2; 2014/05/27 13:01:40
+#END# kgdelnull -R -nfn -r f=1 i=./indat/dat3nfn.csv k=0 o=./outdat/out112nfn.csv; IN=7 OUT=2; 2014/05/27 13:01:40
+#END# kgdelnull -R -r f=数量,金額 i=./indat/dat3.csv k=顧客 o=./outdat/out113.csv u=./outdat/out114.csv; IN=7 OUT=4; 2014/05/27 13:01:40
+#END# kgdelnull -R -r -x f=1,2 i=./indat/dat3.csv k=0 o=./outdat/out113x.csv u=./outdat/out114x.csv; IN=7 OUT=4; 2014/05/27 13:01:40
+#END# kgdelnull -R -nfn -r f=1,2 i=./indat/dat3nfn.csv k=0 o=./outdat/out113nfn.csv u=./outdat/out114nfn.csv; IN=7 OUT=4; 2014/05/27 13:01:40
+#END# kgdelnull -F -R f=数量,金額 i=./indat/dat4.csv k=顧客 o=./outdat/out115.csv; IN=7 OUT=5; 2014/05/27 13:01:40
+#END# kgdelnull -F -R -x f=1,2 i=./indat/dat4.csv k=0 o=./outdat/out115x.csv; IN=7 OUT=5; 2014/05/27 13:01:40
+#END# kgdelnull -F -R -nfn f=1,2 i=./indat/dat4nfn.csv k=0 o=./outdat/out115nfn.csv; IN=7 OUT=4; 2014/05/27 13:01:40
+#END# kgdelnull -F -R -r f=数量,金額 i=./indat/dat4.csv k=顧客 o=./outdat/out116.csv u=./outdat/out117.csv; IN=7 OUT=2; 2014/05/27 13:01:40
+#END# kgdelnull -F -R -r -x f=1,2 i=./indat/dat4.csv k=0 o=./outdat/out116x.csv u=./outdat/out117x.csv; IN=7 OUT=2; 2014/05/27 13:01:40
+#END# kgdelnull -F -R -nfn -r f=1,2 i=./indat/dat4nfn.csv k=0 o=./outdat/out116nfn.csv u=./outdat/out117nfn.csv; IN=7 OUT=3; 2014/05/27 13:01:40
+#END# kgdelnull f=数量 i=./indat/dat5.csv k=顧客 o=./outdat/out118.csv; IN=5 OUT=3; 2014/05/27 13:01:40
+#END# kgdelnull -x f=1 i=./indat/dat5.csv k=0 o=./outdat/out118x.csv; IN=5 OUT=3; 2014/05/27 13:01:40
+#END# kgdelnull -nfn f=1 i=./indat/dat5nfn.csv k=0 o=./outdat/out118nfn.csv; IN=5 OUT=4; 2014/05/27 13:01:40
+#END# kgdelnull f=数量,金額 i=./indat/dat5.csv k=顧客 o=./outdat/out119.csv u=./outdat/out120.csv; IN=5 OUT=1; 2014/05/27 13:01:40
+#END# kgdelnull -x f=1,2 i=./indat/dat5.csv k=0 o=./outdat/out119x.csv u=./outdat/out120x.csv; IN=5 OUT=1; 2014/05/27 13:01:40
+#END# kgdelnull -nfn f=1,2 i=./indat/dat5nfn.csv k=0 o=./outdat/out119nfn.csv u=./outdat/out120nfn.csv; IN=5 OUT=3; 2014/05/27 13:01:40
+#END# kgdelnull -r f=数量 i=./indat/dat5.csv k=顧客 o=./outdat/out121.csv; IN=5 OUT=2; 2014/05/27 13:01:40
+#END# kgdelnull -r -x f=1 i=./indat/dat5.csv k=0 o=./outdat/out121x.csv; IN=5 OUT=2; 2014/05/27 13:01:40
+#END# kgdelnull -nfn -r f=1 i=./indat/dat5nfn.csv k=0 o=./outdat/out121nfn.csv; IN=5 OUT=1; 2014/05/27 13:01:40
+#END# kgdelnull -r f=数量,金額 i=./indat/dat5.csv k=顧客 o=./outdat/out122.csv u=./outdat/out123.csv; IN=5 OUT=4; 2014/05/27 13:01:40
+#END# kgdelnull -r -x f=1,2 i=./indat/dat5.csv k=0 o=./outdat/out122x.csv u=./outdat/out123x.csv; IN=5 OUT=4; 2014/05/27 13:01:40
+#END# kgdelnull -nfn -r f=1,2 i=./indat/dat5nfn.csv k=0 o=./outdat/out122nfn.csv u=./outdat/out123nfn.csv; IN=5 OUT=2; 2014/05/27 13:01:40
+#END# kgdelnull -F f=数量,金額 i=./indat/dat6.csv k=顧客 o=./outdat/out124.csv; IN=5 OUT=3; 2014/05/27 13:01:40
+#END# kgdelnull -F -x f=1,2 i=./indat/dat6.csv k=0 o=./outdat/out124x.csv; IN=5 OUT=3; 2014/05/27 13:01:40
+#END# kgdelnull -F -nfn f=1,2 i=./indat/dat6nfn.csv k=0 o=./outdat/out124nfn.csv; IN=5 OUT=4; 2014/05/27 13:01:40
+#END# kgdelnull -F -r f=数量,金額 i=./indat/dat6.csv k=顧客 o=./outdat/out125.csv u=./outdat/out126.csv; IN=5 OUT=2; 2014/05/27 13:01:40
+#END# kgdelnull -F -r -x f=1,2 i=./indat/dat6.csv k=0 o=./outdat/out125x.csv u=./outdat/out126x.csv; IN=5 OUT=2; 2014/05/27 13:01:40
+#END# kgdelnull -F -nfn -r f=1,2 i=./indat/dat6nfn.csv k=0 o=./outdat/out125nfn.csv u=./outdat/out126nfn.csv; IN=5 OUT=1; 2014/05/27 13:01:40
+#END# kgdelnull -R f=数量 i=./indat/dat7.csv k=顧客 o=./outdat/out127.csv; IN=7 OUT=5; 2014/05/27 13:01:40
+#END# kgdelnull -R -x f=1 i=./indat/dat7.csv k=0 o=./outdat/out127x.csv; IN=7 OUT=5; 2014/05/27 13:01:40
+#END# kgdelnull -R -nfn f=1 i=./indat/dat7nfn.csv k=0 o=./outdat/out127nfn.csv; IN=7 OUT=4; 2014/05/27 13:01:40
+#END# kgdelnull -R f=数量,金額 i=./indat/dat7.csv k=顧客 o=./outdat/out128.csv u=./outdat/out129.csv; IN=7 OUT=3; 2014/05/27 13:01:40
+#END# kgdelnull -R -x f=1,2 i=./indat/dat7.csv k=0 o=./outdat/out128x.csv u=./outdat/out129x.csv; IN=7 OUT=3; 2014/05/27 13:01:40
+#END# kgdelnull -R -nfn f=1,2 i=./indat/dat7nfn.csv k=0 o=./outdat/out128nfn.csv u=./outdat/out129nfn.csv; IN=7 OUT=3; 2014/05/27 13:01:40
+#END# kgdelnull -R -r f=数量 i=./indat/dat7.csv k=顧客 o=./outdat/out130.csv; IN=7 OUT=2; 2014/05/27 13:01:40
+#END# kgdelnull -R -r -x f=1 i=./indat/dat7.csv k=0 o=./outdat/out130x.csv; IN=7 OUT=2; 2014/05/27 13:01:40
+#END# kgdelnull -R -nfn -r f=1 i=./indat/dat7nfn.csv k=0 o=./outdat/out130nfn.csv; IN=7 OUT=3; 2014/05/27 13:01:40
+#END# kgdelnull -R -r f=数量,金額 i=./indat/dat7.csv k=顧客 o=./outdat/out131.csv u=./outdat/out132.csv; IN=7 OUT=4; 2014/05/27 13:01:40
+#END# kgdelnull -R -r -x f=1,2 i=./indat/dat7.csv k=0 o=./outdat/out131x.csv u=./outdat/out132x.csv; IN=7 OUT=4; 2014/05/27 13:01:40
+#END# kgdelnull -R -nfn -r f=1,2 i=./indat/dat7nfn.csv k=0 o=./outdat/out131nfn.csv u=./outdat/out132nfn.csv; IN=7 OUT=4; 2014/05/27 13:01:40
+#END# kgdelnull -F -R f=数量,金額 i=./indat/dat8.csv k=顧客 o=./outdat/out133.csv; IN=7 OUT=5; 2014/05/27 13:01:41
+#END# kgdelnull -F -R -x f=1,2 i=./indat/dat8.csv k=0 o=./outdat/out133x.csv; IN=7 OUT=5; 2014/05/27 13:01:41
+#END# kgdelnull -F -R -nfn f=1,2 i=./indat/dat8nfn.csv k=0 o=./outdat/out133nfn.csv; IN=7 OUT=4; 2014/05/27 13:01:41
+#END# kgdelnull -F -R -r f=数量,金額 i=./indat/dat8.csv k=顧客 o=./outdat/out134.csv u=./outdat/out135.csv; IN=7 OUT=2; 2014/05/27 13:01:41
+#END# kgdelnull -F -R -r -x f=1,2 i=./indat/dat8.csv k=0 o=./outdat/out134x.csv u=./outdat/out135x.csv; IN=7 OUT=2; 2014/05/27 13:01:41
+#END# kgdelnull -F -R -nfn -r f=1,2 i=./indat/dat8nfn.csv k=0 o=./outdat/out134nfn.csv u=./outdat/out135nfn.csv; IN=7 OUT=3; 2014/05/27 13:01:41
+#END# kgdelnull bufcount=-1 f=数量 i=./indat/dat5.csv k=顧客 o=./outdat/out136.csv; IN=5 OUT=3; 2014/05/27 13:01:41
+#END# kgdelnull -x bufcount=-1 f=1 i=./indat/dat5.csv k=0 o=./outdat/out136x.csv; IN=5 OUT=3; 2014/05/27 13:01:41
+#END# kgdelnull -nfn bufcount=-1 f=1 i=./indat/dat5nfn.csv k=0 o=./outdat/out136nfn.csv; IN=5 OUT=4; 2014/05/27 13:01:41

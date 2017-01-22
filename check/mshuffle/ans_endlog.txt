@@ -1,0 +1,6 @@
+#END# kgshuffle d=./outdat/out1 f=店 i=./indat/dat1.csv n=3; IN=26 OUT=26; 2017/01/15 16:50:31
+#END# kgshuffle -x d=./outdat/outx1 f=0 i=./indat/dat1.csv n=3; IN=26 OUT=26; 2017/01/15 16:50:31
+#END# kgshuffle -nfn d=./outdat/outnfn1 f=0 i=./indat/dat1nfn.csv n=3; IN=26 OUT=26; 2017/01/15 16:50:31
+#END# kgshuffle d=./outdat/out2 f=細分類,店 i=./indat/dat1.csv n=3; IN=26 OUT=26; 2017/01/15 16:50:31
+#END# kgshuffle -x d=./outdat/outx2 f=4,0 i=./indat/dat1.csv n=3; IN=26 OUT=26; 2017/01/15 16:50:31
+#END# kgshuffle -nfn d=./outdat/outnfn2 f=4,0 i=./indat/dat1nfn.csv n=3; IN=26 OUT=26; 2017/01/15 16:50:31

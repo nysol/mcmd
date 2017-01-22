@@ -1,0 +1,14 @@
+#END# kgsetstr a=基準日 i=./indat/dat0.csv o=./outdat/out0.csv v=20070101; IN=0 OUT=0; 2014/06/10 12:46:40
+#END# kgsetstr -x a=基準日 i=./indat/dat0.csv o=./outdat/out0x.csv v=20070101; IN=0 OUT=0; 2014/06/10 12:46:40
+#END# kgsetstr -nfn i=./indat/dat0nfn.csv o=./outdat/out0nfn.csv v=20070101; IN=0 OUT=0; 2014/06/10 12:46:40
+#END# kgsetstr a=基準日 i=./indat/dat1.csv o=./outdat/out1.csv v=20070101; IN=5 OUT=5; 2014/06/10 12:46:40
+#END# kgsetstr -x a=基準日 i=./indat/dat1.csv o=./outdat/out1x.csv v=20070101; IN=5 OUT=5; 2014/06/10 12:46:40
+#END# kgsetstr -nfn i=./indat/dat1nfn.csv o=./outdat/out1nfn.csv v=20070101; IN=5 OUT=5; 2014/06/10 12:46:40
+#END# kgsetstr a=基準日,基準月,基準年 i=./indat/dat1.csv o=./outdat/out2.csv v=20070101,200701,2007; IN=5 OUT=5; 2014/06/10 12:46:40
+#END# kgsetstr -x a=基準日,基準月,基準年 i=./indat/dat1.csv o=./outdat/out2x.csv v=20070101,200701,2007; IN=5 OUT=5; 2014/06/10 12:46:40
+#END# kgsetstr -nfn i=./indat/dat1nfn.csv o=./outdat/out2nfn.csv v=20070101,200701,2007; IN=5 OUT=5; 2014/06/10 12:46:40
+#END# kgsetstr a=基準日,基準月,基準年 i=./indat/dat1s.csv o=./outdat/out3.csv v=20070101,200701,2007; IN=5 OUT=5; 2014/06/10 12:46:40
+#END# kgsetstr -x a=基準日,基準月,基準年 i=./indat/dat1s.csv o=./outdat/out3x.csv v=20070101,200701,2007; IN=5 OUT=5; 2014/06/10 12:46:40
+#END# kgsetstr -nfn i=./indat/dat1snfn.csv o=./outdat/out3nfn.csv v=20070101,200701,2007; IN=5 OUT=5; 2014/06/10 12:46:40
+#END# kgsetstr a=基準日,基準月,基準年 i=./indat/dat1ss.csv o=./outdat/out4.csv v=20070101,200701,2007; IN=5 OUT=5; 2014/06/10 12:46:40
+#END# kgsetstr -x a=基準日,基準月,基準年 i=./indat/dat1ss.csv o=./outdat/out4x.csv v=20070101,200701,2007; IN=5 OUT=5; 2014/06/10 12:46:40

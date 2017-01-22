@@ -1,0 +1,14 @@
+@RELATION	顧客_購買データ
+
+@ATTRIBUTE	顧客	string
+@ATTRIBUTE	日付	date yyyyMMdd
+@ATTRIBUTE	数量	numeric
+@ATTRIBUTE	金額	numeric
+@ATTRIBUTE	商品	{A,B}
+
+@DATA
+No.1,20081201,1,10,A
+No.2,20081202,2,20,A
+No.3,20081203,3,30,A
+No.4,20081201,4,40,B
+No.5,20081203,5,50,B

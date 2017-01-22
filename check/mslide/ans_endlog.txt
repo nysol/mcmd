@@ -1,0 +1,314 @@
+#END# kgslide f=日付:次日付 i=./indat/dat0s.csv k=顧客 o=./outdat/out01.csv s=日付; IN=0 OUT=0; 2014/06/11 13:48:13
+#END# kgslide -nfno f=日付:次日付 i=./indat/dat0s.csv k=顧客 o=./outdat/out01nfno.csv s=日付; IN=0 OUT=0; 2014/06/11 13:48:13
+#END# kgslide -x f=1:次日付 i=./indat/dat0s.csv k=0 o=./outdat/out01x.csv s=1; IN=0 OUT=0; 2014/06/11 13:48:13
+#END# kgslide -nfn f=1 i=./indat/dat0snfn.csv k=0 o=./outdat/out01nfn.csv s=1; IN=0 OUT=0; 2014/06/11 13:48:13
+#END# kgslide -nfno -x f=1 i=./indat/dat0s.csv k=0 o=./outdat/out01nfnox.csv s=1; IN=0 OUT=0; 2014/06/11 13:48:13
+#END# kgslide f=日付:次日付 i=./indat/dat1s.csv k=顧客 o=./outdat/out02.csv s=日付; IN=5 OUT=3; 2014/06/11 13:48:13
+#END# kgslide -nfno f=日付:次日付 i=./indat/dat1s.csv k=顧客 o=./outdat/out02nfno.csv s=日付; IN=5 OUT=3; 2014/06/11 13:48:13
+#END# kgslide -x f=1:次日付 i=./indat/dat1s.csv k=0 o=./outdat/out02x.csv s=1; IN=5 OUT=3; 2014/06/11 13:48:13
+#END# kgslide -nfn f=1 i=./indat/dat1snfn.csv k=0 o=./outdat/out02nfn.csv s=1; IN=5 OUT=3; 2014/06/11 13:48:13
+#END# kgslide -nfno -x f=1 i=./indat/dat1s.csv k=0 o=./outdat/out02nfnox.csv s=1; IN=5 OUT=3; 2014/06/11 13:48:13
+#END# kgslide -q f=日付:次日付 i=./indat/dat1s.csv k=顧客 o=./outdat/out02q.csv s=日付; IN=5 OUT=3; 2014/06/11 13:48:13
+#END# kgslide -q -x f=1:次日付 i=./indat/dat1s.csv k=0 o=./outdat/out02qx.csv s=1; IN=5 OUT=3; 2014/06/11 13:48:13
+#END# kgslide f=日付:次日付 i=./indat/dat2s.csv k=顧客 o=./outdat/out03.csv s=日付; IN=8 OUT=5; 2014/06/11 13:48:13
+#END# kgslide -nfno f=日付:次日付 i=./indat/dat2s.csv k=顧客 o=./outdat/out03nfno.csv s=日付; IN=8 OUT=5; 2014/06/11 13:48:13
+#END# kgslide -x f=1:次日付 i=./indat/dat2s.csv k=0 o=./outdat/out03x.csv s=1; IN=8 OUT=5; 2014/06/11 13:48:13
+#END# kgslide -nfn f=1 i=./indat/dat2snfn.csv k=0 o=./outdat/out03nfn.csv s=1; IN=8 OUT=5; 2014/06/11 13:48:13
+#END# kgslide -nfno -x f=1 i=./indat/dat2s.csv k=0 o=./outdat/out03nfnox.csv s=1; IN=8 OUT=5; 2014/06/11 13:48:13
+#END# kgslide f=日付:次日付 i=./indat/dat0s.csv o=./outdat/out04.csv s=顧客; IN=0 OUT=0; 2014/06/11 13:48:13
+#END# kgslide -nfno f=日付:次日付 i=./indat/dat0s.csv o=./outdat/out04nfno.csv s=顧客; IN=0 OUT=0; 2014/06/11 13:48:13
+#END# kgslide -x f=1:次日付 i=./indat/dat0s.csv o=./outdat/out04x.csv s=0; IN=0 OUT=0; 2014/06/11 13:48:13
+#END# kgslide -nfn f=1 i=./indat/dat0snfn.csv o=./outdat/out04nfn.csv s=0; IN=0 OUT=0; 2014/06/11 13:48:13
+#END# kgslide -nfno -x f=1 i=./indat/dat0s.csv o=./outdat/out04nfnox.csv s=0; IN=0 OUT=0; 2014/06/11 13:48:13
+#END# kgslide f=日付:次日付 i=./indat/dat1ss.csv o=./outdat/out05.csv s=日付; IN=5 OUT=4; 2014/06/11 13:48:13
+#END# kgslide -nfno f=日付:次日付 i=./indat/dat1ss.csv o=./outdat/out05nfno.csv s=日付; IN=5 OUT=4; 2014/06/11 13:48:13
+#END# kgslide -x f=1:次日付 i=./indat/dat1ss.csv o=./outdat/out05x.csv s=1; IN=5 OUT=4; 2014/06/11 13:48:13
+#END# kgslide -nfn f=1 i=./indat/dat1ssnfn.csv o=./outdat/out05nfn.csv s=1; IN=5 OUT=4; 2014/06/11 13:48:13
+#END# kgslide -nfno -x f=1 i=./indat/dat1ss.csv o=./outdat/out05nfnox.csv s=1; IN=5 OUT=4; 2014/06/11 13:48:13
+#END# kgslide f=日付:次日付 i=./indat/dat2ss.csv o=./outdat/out06.csv s=日付; IN=8 OUT=7; 2014/06/11 13:48:14
+#END# kgslide -nfno f=日付:次日付 i=./indat/dat2ss.csv o=./outdat/out06nfno.csv s=日付; IN=8 OUT=7; 2014/06/11 13:48:14
+#END# kgslide -x f=1:次日付 i=./indat/dat2ss.csv o=./outdat/out06x.csv s=1; IN=8 OUT=7; 2014/06/11 13:48:14
+#END# kgslide -nfn f=1 i=./indat/dat2ssnfn.csv o=./outdat/out06nfn.csv s=1; IN=8 OUT=7; 2014/06/11 13:48:14
+#END# kgslide -nfno -x f=1 i=./indat/dat2ss.csv o=./outdat/out06nfnox.csv s=1; IN=8 OUT=7; 2014/06/11 13:48:14
+#END# kgslide -n f=日付:次日付 i=./indat/dat0s.csv k=顧客 o=./outdat/out07.csv s=日付; IN=0 OUT=0; 2014/06/11 13:48:14
+#END# kgslide -n -nfno f=日付:次日付 i=./indat/dat0s.csv k=顧客 o=./outdat/out07nfno.csv s=日付; IN=0 OUT=0; 2014/06/11 13:48:14
+#END# kgslide -n -x f=1:次日付 i=./indat/dat0s.csv k=0 o=./outdat/out07x.csv s=1; IN=0 OUT=0; 2014/06/11 13:48:14
+#END# kgslide -n -nfn f=1 i=./indat/dat0snfn.csv k=0 o=./outdat/out07nfn.csv s=1; IN=0 OUT=0; 2014/06/11 13:48:14
+#END# kgslide -n -nfno -x f=1 i=./indat/dat0s.csv k=0 o=./outdat/out07nfnox.csv s=1; IN=0 OUT=0; 2014/06/11 13:48:14
+#END# kgslide -n f=日付:次日付 i=./indat/dat1s.csv k=顧客 o=./outdat/out08.csv s=日付; IN=5 OUT=5; 2014/06/11 13:48:14
+#END# kgslide -n -nfno f=日付:次日付 i=./indat/dat1s.csv k=顧客 o=./outdat/out08nfno.csv s=日付; IN=5 OUT=5; 2014/06/11 13:48:14
+#END# kgslide -n -x f=1:次日付 i=./indat/dat1s.csv k=0 o=./outdat/out08x.csv s=1; IN=5 OUT=5; 2014/06/11 13:48:14
+#END# kgslide -n -nfn f=1 i=./indat/dat1snfn.csv k=0 o=./outdat/out08nfn.csv s=1; IN=5 OUT=5; 2014/06/11 13:48:14
+#END# kgslide -n -nfno -x f=1 i=./indat/dat1s.csv k=0 o=./outdat/out08nfnox.csv s=1; IN=5 OUT=5; 2014/06/11 13:48:14
+#END# kgslide -n f=日付:次日付 i=./indat/dat2s.csv k=顧客 o=./outdat/out09.csv s=日付; IN=8 OUT=8; 2014/06/11 13:48:14
+#END# kgslide -n -nfno f=日付:次日付 i=./indat/dat2s.csv k=顧客 o=./outdat/out09nfno.csv s=日付; IN=8 OUT=8; 2014/06/11 13:48:14
+#END# kgslide -n -x f=1:次日付 i=./indat/dat2s.csv k=0 o=./outdat/out09x.csv s=1; IN=8 OUT=8; 2014/06/11 13:48:14
+#END# kgslide -n -nfn f=1 i=./indat/dat2snfn.csv k=0 o=./outdat/out09nfn.csv s=1; IN=8 OUT=8; 2014/06/11 13:48:14
+#END# kgslide -n -nfno -x f=1 i=./indat/dat2s.csv k=0 o=./outdat/out09nfnox.csv s=1; IN=8 OUT=8; 2014/06/11 13:48:14
+#END# kgslide -n f=日付:次日付 i=./indat/dat1ss.csv o=./outdat/out10.csv s=日付; IN=5 OUT=5; 2014/06/11 13:48:14
+#END# kgslide -n -nfno f=日付:次日付 i=./indat/dat1ss.csv o=./outdat/out10nfno.csv s=日付; IN=5 OUT=5; 2014/06/11 13:48:14
+#END# kgslide -n -x f=1:次日付 i=./indat/dat1ss.csv o=./outdat/out10x.csv s=1; IN=5 OUT=5; 2014/06/11 13:48:14
+#END# kgslide -n -nfn f=1 i=./indat/dat1ssnfn.csv o=./outdat/out10nfn.csv s=1; IN=5 OUT=5; 2014/06/11 13:48:14
+#END# kgslide -n -nfno -x f=1 i=./indat/dat1ss.csv o=./outdat/out10nfnox.csv s=1; IN=5 OUT=5; 2014/06/11 13:48:14
+#END# kgslide -n f=日付:次日付 i=./indat/dat2ss.csv o=./outdat/out11.csv s=日付; IN=8 OUT=8; 2014/06/11 13:48:14
+#END# kgslide -n -nfno f=日付:次日付 i=./indat/dat2ss.csv o=./outdat/out11nfno.csv s=日付; IN=8 OUT=8; 2014/06/11 13:48:14
+#END# kgslide -n -x f=1:次日付 i=./indat/dat2ss.csv o=./outdat/out11x.csv s=1; IN=8 OUT=8; 2014/06/11 13:48:14
+#END# kgslide -n -nfn f=1 i=./indat/dat2ssnfn.csv o=./outdat/out11nfn.csv s=1; IN=8 OUT=8; 2014/06/11 13:48:14
+#END# kgslide -n -nfno -x f=1 i=./indat/dat2ss.csv o=./outdat/out11nfnox.csv s=1; IN=8 OUT=8; 2014/06/11 13:48:14
+#END# kgslide -r f=日付:次日付 i=./indat/dat1ss.csv o=./outdat/out12.csv s=日付; IN=5 OUT=4; 2014/06/11 13:48:14
+#END# kgslide -nfno -r f=日付:次日付 i=./indat/dat1ss.csv o=./outdat/out12nfno.csv s=日付; IN=5 OUT=4; 2014/06/11 13:48:14
+#END# kgslide -r -x f=1:次日付 i=./indat/dat1ss.csv o=./outdat/out12x.csv s=1; IN=5 OUT=4; 2014/06/11 13:48:14
+#END# kgslide -nfn -r f=1 i=./indat/dat1ssnfn.csv o=./outdat/out12nfn.csv s=1; IN=5 OUT=4; 2014/06/11 13:48:14
+#END# kgslide -nfno -r -x f=1 i=./indat/dat1ss.csv o=./outdat/out12nfnox.csv s=1; IN=5 OUT=4; 2014/06/11 13:48:14
+#END# kgslide -r f=日付:次日付 i=./indat/dat2ss.csv o=./outdat/out13.csv s=日付; IN=8 OUT=7; 2014/06/11 13:48:14
+#END# kgslide -nfno -r f=日付:次日付 i=./indat/dat2ss.csv o=./outdat/out13nfno.csv s=日付; IN=8 OUT=7; 2014/06/11 13:48:14
+#END# kgslide -r -x f=1:次日付 i=./indat/dat2ss.csv o=./outdat/out13x.csv s=1; IN=8 OUT=7; 2014/06/11 13:48:14
+#END# kgslide -nfn -r f=1 i=./indat/dat2ssnfn.csv o=./outdat/out13nfn.csv s=1; IN=8 OUT=7; 2014/06/11 13:48:14
+#END# kgslide -nfno -r -x f=1 i=./indat/dat2ss.csv o=./outdat/out13nfnox.csv s=1; IN=8 OUT=7; 2014/06/11 13:48:14
+#END# kgslide -r f=日付:次日付 i=./indat/dat1s.csv k=顧客 o=./outdat/out14.csv s=日付; IN=5 OUT=3; 2014/06/11 13:48:14
+#END# kgslide -nfno -r f=日付:次日付 i=./indat/dat1s.csv k=顧客 o=./outdat/out14nfno.csv s=日付; IN=5 OUT=3; 2014/06/11 13:48:14
+#END# kgslide -r -x f=1:次日付 i=./indat/dat1s.csv k=0 o=./outdat/out14x.csv s=1; IN=5 OUT=3; 2014/06/11 13:48:14
+#END# kgslide -nfn -r f=1 i=./indat/dat1snfn.csv k=0 o=./outdat/out14nfn.csv s=1; IN=5 OUT=3; 2014/06/11 13:48:14
+#END# kgslide -nfno -r -x f=1 i=./indat/dat1s.csv k=0 o=./outdat/out14nfnox.csv s=1; IN=5 OUT=3; 2014/06/11 13:48:14
+#END# kgslide -r f=日付:次日付 i=./indat/dat2s.csv k=顧客 o=./outdat/out15.csv s=日付; IN=8 OUT=5; 2014/06/11 13:48:14
+#END# kgslide -nfno -r f=日付:次日付 i=./indat/dat2s.csv k=顧客 o=./outdat/out15nfno.csv s=日付; IN=8 OUT=5; 2014/06/11 13:48:14
+#END# kgslide -r -x f=1:次日付 i=./indat/dat2s.csv k=0 o=./outdat/out15x.csv s=1; IN=8 OUT=5; 2014/06/11 13:48:14
+#END# kgslide -nfn -r f=1 i=./indat/dat2snfn.csv k=0 o=./outdat/out15nfn.csv s=1; IN=8 OUT=5; 2014/06/11 13:48:14
+#END# kgslide -nfno -r -x f=1 i=./indat/dat2s.csv k=0 o=./outdat/out15nfnox.csv s=1; IN=8 OUT=5; 2014/06/11 13:48:14
+#END# kgslide -n -r f=日付:次日付 i=./indat/dat1s.csv k=顧客 o=./outdat/out16.csv s=日付; IN=5 OUT=5; 2014/06/11 13:48:14
+#END# kgslide -n -nfno -r f=日付:次日付 i=./indat/dat1s.csv k=顧客 o=./outdat/out16nfno.csv s=日付; IN=5 OUT=5; 2014/06/11 13:48:14
+#END# kgslide -n -r -x f=1:次日付 i=./indat/dat1s.csv k=0 o=./outdat/out16x.csv s=1; IN=5 OUT=5; 2014/06/11 13:48:14
+#END# kgslide -n -nfn -r f=1 i=./indat/dat1snfn.csv k=0 o=./outdat/out16nfn.csv s=1; IN=5 OUT=5; 2014/06/11 13:48:14
+#END# kgslide -n -nfno -r -x f=1 i=./indat/dat1s.csv k=0 o=./outdat/out16nfnox.csv s=1; IN=5 OUT=5; 2014/06/11 13:48:14
+#END# kgslide -n -r f=日付:次日付 i=./indat/dat2s.csv k=顧客 o=./outdat/out17.csv s=日付; IN=8 OUT=8; 2014/06/11 13:48:14
+#END# kgslide -n -nfno -r f=日付:次日付 i=./indat/dat2s.csv k=顧客 o=./outdat/out17nfno.csv s=日付; IN=8 OUT=8; 2014/06/11 13:48:14
+#END# kgslide -n -r -x f=1:次日付 i=./indat/dat2s.csv k=0 o=./outdat/out17x.csv s=1; IN=8 OUT=8; 2014/06/11 13:48:14
+#END# kgslide -n -nfn -r f=1 i=./indat/dat2snfn.csv k=0 o=./outdat/out17nfn.csv s=1; IN=8 OUT=8; 2014/06/11 13:48:14
+#END# kgslide -n -nfno -r -x f=1 i=./indat/dat2s.csv k=0 o=./outdat/out17nfnox.csv s=1; IN=8 OUT=8; 2014/06/11 13:48:14
+#END# kgslide -r f=日付:次日付 i=./indat/dat3ss.csv o=./outdat/out18.csv s=日付 t=3; IN=17 OUT=14; 2014/06/11 13:48:14
+#END# kgslide -nfno -r f=日付:次日付 i=./indat/dat3ss.csv o=./outdat/out18nfno.csv s=日付 t=3; IN=17 OUT=14; 2014/06/11 13:48:14
+#END# kgslide -r -x f=1:次日付 i=./indat/dat3ss.csv o=./outdat/out18x.csv s=1 t=3; IN=17 OUT=14; 2014/06/11 13:48:14
+#END# kgslide -nfn -r f=1 i=./indat/dat3ssnfn.csv o=./outdat/out18nfn.csv s=1 t=3; IN=17 OUT=14; 2014/06/11 13:48:14
+#END# kgslide -nfno -r -x f=1 i=./indat/dat3ss.csv o=./outdat/out18nfnox.csv s=1 t=3; IN=17 OUT=14; 2014/06/11 13:48:15
+#END# kgslide -r f=日付:次日付 i=./indat/dat3s.csv k=顧客 o=./outdat/out19.csv s=日付 t=3; IN=17 OUT=5; 2014/06/11 13:48:15
+#END# kgslide -nfno -r f=日付:次日付 i=./indat/dat3s.csv k=顧客 o=./outdat/out19nfno.csv s=日付 t=3; IN=17 OUT=5; 2014/06/11 13:48:15
+#END# kgslide -r -x f=1:次日付 i=./indat/dat3s.csv k=0 o=./outdat/out19x.csv s=1 t=3; IN=17 OUT=5; 2014/06/11 13:48:15
+#END# kgslide -nfn -r f=1 i=./indat/dat3snfn.csv k=0 o=./outdat/out19nfn.csv s=1 t=3; IN=17 OUT=5; 2014/06/11 13:48:15
+#END# kgslide -nfno -r -x f=1 i=./indat/dat3s.csv k=0 o=./outdat/out19nfnox.csv s=1 t=3; IN=17 OUT=5; 2014/06/11 13:48:15
+#END# kgslide -n -r f=日付:次日付 i=./indat/dat3s.csv k=顧客 o=./outdat/out20.csv s=日付 t=3; IN=17 OUT=17; 2014/06/11 13:48:15
+#END# kgslide -n -nfno -r f=日付:次日付 i=./indat/dat3s.csv k=顧客 o=./outdat/out20nfno.csv s=日付 t=3; IN=17 OUT=17; 2014/06/11 13:48:15
+#END# kgslide -n -r -x f=1:次日付 i=./indat/dat3s.csv k=0 o=./outdat/out20x.csv s=1 t=3; IN=17 OUT=17; 2014/06/11 13:48:15
+#END# kgslide -n -nfn -r f=1 i=./indat/dat3snfn.csv k=0 o=./outdat/out20nfn.csv s=1 t=3; IN=17 OUT=17; 2014/06/11 13:48:15
+#END# kgslide -n -nfno -r -x f=1 i=./indat/dat3s.csv k=0 o=./outdat/out20nfnox.csv s=1 t=3; IN=17 OUT=17; 2014/06/11 13:48:15
+#END# kgslide -l -r f=日付:次日付 i=./indat/dat3ss.csv o=./outdat/out21.csv s=日付 t=3; IN=17 OUT=14; 2014/06/11 13:48:15
+#END# kgslide -l -nfno -r f=日付:次日付 i=./indat/dat3ss.csv o=./outdat/out21nfno.csv s=日付 t=3; IN=17 OUT=14; 2014/06/11 13:48:15
+#END# kgslide -l -r -x f=1:次日付 i=./indat/dat3ss.csv o=./outdat/out21x.csv s=1 t=3; IN=17 OUT=14; 2014/06/11 13:48:15
+#END# kgslide -l -nfn -r f=1 i=./indat/dat3ssnfn.csv o=./outdat/out21nfn.csv s=1 t=3; IN=17 OUT=14; 2014/06/11 13:48:15
+#END# kgslide -l -nfno -r -x f=1 i=./indat/dat3ss.csv o=./outdat/out21nfnox.csv s=1 t=3; IN=17 OUT=14; 2014/06/11 13:48:15
+#END# kgslide -l -r f=日付:次日付 i=./indat/dat3s.csv k=顧客 o=./outdat/out22.csv s=日付 t=3; IN=17 OUT=5; 2014/06/11 13:48:15
+#END# kgslide -l -nfno -r f=日付:次日付 i=./indat/dat3s.csv k=顧客 o=./outdat/out22nfno.csv s=日付 t=3; IN=17 OUT=5; 2014/06/11 13:48:15
+#END# kgslide -l -r -x f=1:次日付 i=./indat/dat3s.csv k=0 o=./outdat/out22x.csv s=1 t=3; IN=17 OUT=5; 2014/06/11 13:48:15
+#END# kgslide -l -nfn -r f=1 i=./indat/dat3snfn.csv k=0 o=./outdat/out22nfn.csv s=1 t=3; IN=17 OUT=5; 2014/06/11 13:48:15
+#END# kgslide -l -nfno -r -x f=1 i=./indat/dat3s.csv k=0 o=./outdat/out22nfnox.csv s=1 t=3; IN=17 OUT=5; 2014/06/11 13:48:15
+#END# kgslide -l -n -r f=日付:次日付 i=./indat/dat3s.csv k=顧客 o=./outdat/out23.csv s=日付 t=3; IN=17 OUT=17; 2014/06/11 13:48:15
+#END# kgslide -l -n -nfno -r f=日付:次日付 i=./indat/dat3s.csv k=顧客 o=./outdat/out23nfno.csv s=日付 t=3; IN=17 OUT=17; 2014/06/11 13:48:15
+#END# kgslide -l -n -r -x f=1:次日付 i=./indat/dat3s.csv k=0 o=./outdat/out23x.csv s=1 t=3; IN=17 OUT=17; 2014/06/11 13:48:15
+#END# kgslide -l -n -nfn -r f=1 i=./indat/dat3snfn.csv k=0 o=./outdat/out23nfn.csv s=1 t=3; IN=17 OUT=17; 2014/06/11 13:48:15
+#END# kgslide -l -n -nfno -r -x f=1 i=./indat/dat3s.csv k=0 o=./outdat/out23nfnox.csv s=1 t=3; IN=17 OUT=17; 2014/06/11 13:48:15
+#END# kgslide -l -n -r f=日付 i=./indat/dat3s.csv k=顧客 o=./outdat/out24.csv s=日付 t=3; IN=17 OUT=17; 2014/06/11 13:48:15
+#END# kgslide -l -n -nfno -r f=日付 i=./indat/dat3s.csv k=顧客 o=./outdat/out24nfno.csv s=日付 t=3; IN=17 OUT=17; 2014/06/11 13:48:15
+#END# kgslide -l -n -r -x f=1 i=./indat/dat3s.csv k=0 o=./outdat/out24x.csv s=1 t=3; IN=17 OUT=17; 2014/06/11 13:48:15
+#END# kgslide -l -n -nfn -r f=1 i=./indat/dat3snfn.csv k=0 o=./outdat/out24nfn.csv s=1 t=3; IN=17 OUT=17; 2014/06/11 13:48:15
+#END# kgslide -l -n -nfno -r -x f=1 i=./indat/dat3s.csv k=0 o=./outdat/out24nfnox.csv s=1 t=3; IN=17 OUT=17; 2014/06/11 13:48:15
+#END# kgslide f=日付:次日付,顧客:次顧客 i=./indat/dat3ss.csv o=./outdat/out25.csv s=日付 t=3; IN=17 OUT=14; 2014/06/11 13:48:15
+#END# kgslide -nfno f=日付:次日付,顧客:次顧客 i=./indat/dat3ss.csv o=./outdat/out25nfno.csv s=日付 t=3; IN=17 OUT=14; 2014/06/11 13:48:15
+#END# kgslide -x f=1,0 i=./indat/dat3ss.csv o=./outdat/out25x.csv s=1 t=3; IN=17 OUT=14; 2014/06/11 13:48:15
+#END# kgslide -nfn f=1,0 i=./indat/dat3ssnfn.csv o=./outdat/out25nfn.csv s=1 t=3; IN=17 OUT=14; 2014/06/11 13:48:15
+#END# kgslide -nfno -x f=1,0 i=./indat/dat3ss.csv o=./outdat/out25nfnox.csv s=1 t=3; IN=17 OUT=14; 2014/06/11 13:48:15
+#END# kgslide f=日付:次日付,顧客:次顧客 i=./indat/dat3s.csv k=顧客 o=./outdat/out26.csv s=日付 t=3; IN=17 OUT=5; 2014/06/11 13:48:15
+#END# kgslide -nfno f=日付:次日付,顧客:次顧客 i=./indat/dat3s.csv k=顧客 o=./outdat/out26nfno.csv s=日付 t=3; IN=17 OUT=5; 2014/06/11 13:48:15
+#END# kgslide -x f=1,0 i=./indat/dat3s.csv k=0 o=./outdat/out26x.csv s=1 t=3; IN=17 OUT=5; 2014/06/11 13:48:15
+#END# kgslide -nfn f=1,0 i=./indat/dat3snfn.csv k=0 o=./outdat/out26nfn.csv s=1 t=3; IN=17 OUT=5; 2014/06/11 13:48:15
+#END# kgslide -nfno -x f=1,0 i=./indat/dat3s.csv k=0 o=./outdat/out26nfnox.csv s=1 t=3; IN=17 OUT=5; 2014/06/11 13:48:15
+#END# kgslide -r f=日付:次日付,顧客:次顧客 i=./indat/dat3ss.csv o=./outdat/out27.csv s=日付 t=3; IN=17 OUT=14; 2014/06/11 13:48:15
+#END# kgslide -nfno -r f=日付:次日付,顧客:次顧客 i=./indat/dat3ss.csv o=./outdat/out27nfno.csv s=日付 t=3; IN=17 OUT=14; 2014/06/11 13:48:15
+#END# kgslide -r -x f=1,0 i=./indat/dat3ss.csv o=./outdat/out27x.csv s=1 t=3; IN=17 OUT=14; 2014/06/11 13:48:15
+#END# kgslide -nfn -r f=1,0 i=./indat/dat3ssnfn.csv o=./outdat/out27nfn.csv s=1 t=3; IN=17 OUT=14; 2014/06/11 13:48:15
+#END# kgslide -nfno -r -x f=1,0 i=./indat/dat3ss.csv o=./outdat/out27nfnox.csv s=1 t=3; IN=17 OUT=14; 2014/06/11 13:48:15
+#END# kgslide -l f=日付:次日付,顧客:次顧客 i=./indat/dat3s.csv k=顧客 o=./outdat/out28.csv s=日付 t=3; IN=17 OUT=5; 2014/06/11 13:48:15
+#END# kgslide -l -nfno f=日付:次日付,顧客:次顧客 i=./indat/dat3s.csv k=顧客 o=./outdat/out28nfno.csv s=日付 t=3; IN=17 OUT=5; 2014/06/11 13:48:15
+#END# kgslide -l -x f=1,0 i=./indat/dat3s.csv k=0 o=./outdat/out28x.csv s=1 t=3; IN=17 OUT=5; 2014/06/11 13:48:15
+#END# kgslide -l -nfn f=1,0 i=./indat/dat3snfn.csv k=0 o=./outdat/out28nfn.csv s=1 t=3; IN=17 OUT=5; 2014/06/11 13:48:15
+#END# kgslide -l -nfno -x f=1,0 i=./indat/dat3s.csv k=0 o=./outdat/out28nfnox.csv s=1 t=3; IN=17 OUT=5; 2014/06/11 13:48:15
+#END# kgslide -l -r f=日付:次日付,顧客:次顧客 i=./indat/dat3s.csv k=顧客 o=./outdat/out29.csv s=日付 t=3; IN=17 OUT=5; 2014/06/11 13:48:15
+#END# kgslide -l -nfno -r f=日付:次日付,顧客:次顧客 i=./indat/dat3s.csv k=顧客 o=./outdat/out29nfno.csv s=日付 t=3; IN=17 OUT=5; 2014/06/11 13:48:15
+#END# kgslide -l -r -x f=1,0 i=./indat/dat3s.csv k=0 o=./outdat/out29x.csv s=1 t=3; IN=17 OUT=5; 2014/06/11 13:48:15
+#END# kgslide -l -nfn -r f=1,0 i=./indat/dat3snfn.csv k=0 o=./outdat/out29nfn.csv s=1 t=3; IN=17 OUT=5; 2014/06/11 13:48:15
+#END# kgslide -l -nfno -r -x f=1,0 i=./indat/dat3s.csv k=0 o=./outdat/out29nfnox.csv s=1 t=3; IN=17 OUT=5; 2014/06/11 13:48:15
+#END# kgslide -l -n -r f=日付:次日付,顧客:次顧客 i=./indat/dat3s.csv k=顧客 o=./outdat/out30.csv s=日付 t=3; IN=17 OUT=17; 2014/06/11 13:48:15
+#END# kgslide -l -n -nfno -r f=日付:次日付,顧客:次顧客 i=./indat/dat3s.csv k=顧客 o=./outdat/out30nfno.csv s=日付 t=3; IN=17 OUT=17; 2014/06/11 13:48:15
+#END# kgslide -l -n -r -x f=1,0 i=./indat/dat3s.csv k=0 o=./outdat/out30x.csv s=1 t=3; IN=17 OUT=17; 2014/06/11 13:48:15
+#END# kgslide -l -n -nfn -r f=1,0 i=./indat/dat3snfn.csv k=0 o=./outdat/out30nfn.csv s=1 t=3; IN=17 OUT=17; 2014/06/11 13:48:15
+#END# kgslide -l -n -nfno -r -x f=1,0 i=./indat/dat3s.csv k=0 o=./outdat/out30nfnox.csv s=1 t=3; IN=17 OUT=17; 2014/06/11 13:48:15
+#END# kgslide -l -n -r f=日付,顧客:次顧客,値 i=./indat/dat3s.csv k=顧客 o=./outdat/out31.csv s=日付 t=3; IN=17 OUT=17; 2014/06/11 13:48:15
+#END# kgslide -l -n -nfno -r f=日付,顧客:次顧客,値 i=./indat/dat3s.csv k=顧客 o=./outdat/out31nfno.csv s=日付 t=3; IN=17 OUT=17; 2014/06/11 13:48:15
+#END# kgslide -l -n -r -x f=1,0:次顧客,2 i=./indat/dat3s.csv k=0 o=./outdat/out31x.csv s=1 t=3; IN=17 OUT=17; 2014/06/11 13:48:15
+#END# kgslide -l -n -nfn -r f=1,0,2 i=./indat/dat3snfn.csv k=0 o=./outdat/out31nfn.csv s=1 t=3; IN=17 OUT=17; 2014/06/11 13:48:15
+#END# kgslide -l -n -nfno -r -x f=1,0:次顧客,2 i=./indat/dat3s.csv k=0 o=./outdat/out31nfnox.csv s=1 t=3; IN=17 OUT=17; 2014/06/11 13:48:15
+#END# kgslide -l f=日付,顧客:次顧客,値 i=./indat/dat3ss.csv o=./outdat/out32.csv s=日付 t=3; IN=17 OUT=14; 2014/06/11 13:48:15
+#END# kgslide -l -nfno f=日付,顧客:次顧客,値 i=./indat/dat3ss.csv o=./outdat/out32nfno.csv s=日付 t=3; IN=17 OUT=14; 2014/06/11 13:48:15
+#END# kgslide -l -x f=1,0:次顧客,2 i=./indat/dat3ss.csv o=./outdat/out32x.csv s=1 t=3; IN=17 OUT=14; 2014/06/11 13:48:15
+#END# kgslide -l -nfn f=1,0,2 i=./indat/dat3ssnfn.csv o=./outdat/out32nfn.csv s=1 t=3; IN=17 OUT=14; 2014/06/11 13:48:15
+#END# kgslide -l -nfno -x f=1,0:次顧客,2 i=./indat/dat3ss.csv o=./outdat/out32nfnox.csv s=1 t=3; IN=17 OUT=14; 2014/06/11 13:48:15
+#END# kgslide f=日付:次日付 i=./indat/dat0.csv k=顧客 o=./outdat/out101.csv s=日付; IN=0 OUT=0; 2014/06/11 13:48:15
+#END# kgslide -nfno f=日付:次日付 i=./indat/dat0.csv k=顧客 o=./outdat/out101nfno.csv s=日付; IN=0 OUT=0; 2014/06/11 13:48:15
+#END# kgslide -x f=1:次日付 i=./indat/dat0.csv k=0 o=./outdat/out101x.csv s=1; IN=0 OUT=0; 2014/06/11 13:48:15
+#END# kgslide -nfn f=1 i=./indat/dat0nfn.csv k=0 o=./outdat/out101nfn.csv s=1; IN=0 OUT=0; 2014/06/11 13:48:16
+#END# kgslide -nfno -x f=1 i=./indat/dat0.csv k=0 o=./outdat/out101nfnox.csv s=1; IN=0 OUT=0; 2014/06/11 13:48:16
+#END# kgslide f=日付:次日付 i=./indat/dat1.csv k=顧客 o=./outdat/out102.csv s=日付; IN=5 OUT=3; 2014/06/11 13:48:16
+#END# kgslide -nfno f=日付:次日付 i=./indat/dat1.csv k=顧客 o=./outdat/out102nfno.csv s=日付; IN=5 OUT=3; 2014/06/11 13:48:16
+#END# kgslide -x f=1:次日付 i=./indat/dat1.csv k=0 o=./outdat/out102x.csv s=1; IN=5 OUT=3; 2014/06/11 13:48:16
+#END# kgslide -nfn f=1 i=./indat/dat1nfn.csv k=0 o=./outdat/out102nfn.csv s=1; IN=5 OUT=2; 2014/06/11 13:48:16
+#END# kgslide -nfno -x f=1 i=./indat/dat1.csv k=0 o=./outdat/out102nfnox.csv s=1; IN=5 OUT=3; 2014/06/11 13:48:16
+#END# kgslide -q f=日付:次日付 i=./indat/dat1.csv k=顧客 o=./outdat/out102q.csv s=日付; IN=5 OUT=2; 2014/06/11 13:48:16
+#END# kgslide -q -x f=1:次日付 i=./indat/dat1.csv k=0 o=./outdat/out102qx.csv s=1; IN=5 OUT=2; 2014/06/11 13:48:16
+#END# kgslide f=日付:次日付 i=./indat/dat2.csv k=顧客 o=./outdat/out103.csv s=日付; IN=8 OUT=5; 2014/06/11 13:48:16
+#END# kgslide -nfno f=日付:次日付 i=./indat/dat2.csv k=顧客 o=./outdat/out103nfno.csv s=日付; IN=8 OUT=5; 2014/06/11 13:48:16
+#END# kgslide -x f=1:次日付 i=./indat/dat2.csv k=0 o=./outdat/out103x.csv s=1; IN=8 OUT=5; 2014/06/11 13:48:16
+#END# kgslide -nfn f=1 i=./indat/dat2nfn.csv k=0 o=./outdat/out103nfn.csv s=1; IN=8 OUT=4; 2014/06/11 13:48:16
+#END# kgslide -nfno -x f=1 i=./indat/dat2.csv k=0 o=./outdat/out103nfnox.csv s=1; IN=8 OUT=5; 2014/06/11 13:48:16
+#END# kgslide f=日付:次日付 i=./indat/dat1.csv o=./outdat/out105.csv s=日付; IN=5 OUT=4; 2014/06/11 13:48:16
+#END# kgslide -nfno f=日付:次日付 i=./indat/dat1.csv o=./outdat/out105nfno.csv s=日付; IN=5 OUT=4; 2014/06/11 13:48:16
+#END# kgslide -x f=1:次日付 i=./indat/dat1.csv o=./outdat/out105x.csv s=1; IN=5 OUT=4; 2014/06/11 13:48:16
+#END# kgslide -nfn f=1 i=./indat/dat1nfn.csv o=./outdat/out105nfn.csv s=1; IN=5 OUT=4; 2014/06/11 13:48:16
+#END# kgslide -nfno -x f=1 i=./indat/dat1.csv o=./outdat/out105nfnox.csv s=1; IN=5 OUT=4; 2014/06/11 13:48:16
+#END# kgslide f=日付:次日付 i=./indat/dat2.csv o=./outdat/out106.csv s=日付; IN=8 OUT=7; 2014/06/11 13:48:16
+#END# kgslide -nfno f=日付:次日付 i=./indat/dat2.csv o=./outdat/out106nfno.csv s=日付; IN=8 OUT=7; 2014/06/11 13:48:16
+#END# kgslide -x f=1:次日付 i=./indat/dat2.csv o=./outdat/out106x.csv s=1; IN=8 OUT=7; 2014/06/11 13:48:16
+#END# kgslide -nfn f=1 i=./indat/dat2nfn.csv o=./outdat/out106nfn.csv s=1; IN=8 OUT=7; 2014/06/11 13:48:16
+#END# kgslide -nfno -x f=1 i=./indat/dat2.csv o=./outdat/out106nfnox.csv s=1; IN=8 OUT=7; 2014/06/11 13:48:16
+#END# kgslide -n f=日付:次日付 i=./indat/dat1.csv k=顧客 o=./outdat/out108.csv s=日付; IN=5 OUT=5; 2014/06/11 13:48:16
+#END# kgslide -n -nfno f=日付:次日付 i=./indat/dat1.csv k=顧客 o=./outdat/out108nfno.csv s=日付; IN=5 OUT=5; 2014/06/11 13:48:16
+#END# kgslide -n -x f=1:次日付 i=./indat/dat1.csv k=0 o=./outdat/out108x.csv s=1; IN=5 OUT=5; 2014/06/11 13:48:16
+#END# kgslide -n -nfn f=1 i=./indat/dat1nfn.csv k=0 o=./outdat/out108nfn.csv s=1; IN=5 OUT=5; 2014/06/11 13:48:16
+#END# kgslide -n -nfno -x f=1 i=./indat/dat1.csv k=0 o=./outdat/out108nfnox.csv s=1; IN=5 OUT=5; 2014/06/11 13:48:16
+#END# kgslide -n f=日付:次日付 i=./indat/dat2.csv k=顧客 o=./outdat/out109.csv s=日付; IN=8 OUT=8; 2014/06/11 13:48:16
+#END# kgslide -n -nfno f=日付:次日付 i=./indat/dat2.csv k=顧客 o=./outdat/out109nfno.csv s=日付; IN=8 OUT=8; 2014/06/11 13:48:16
+#END# kgslide -n -x f=1:次日付 i=./indat/dat2.csv k=0 o=./outdat/out109x.csv s=1; IN=8 OUT=8; 2014/06/11 13:48:16
+#END# kgslide -n -nfn f=1 i=./indat/dat2nfn.csv k=0 o=./outdat/out109nfn.csv s=1; IN=8 OUT=8; 2014/06/11 13:48:16
+#END# kgslide -n -nfno -x f=1 i=./indat/dat2.csv k=0 o=./outdat/out109nfnox.csv s=1; IN=8 OUT=8; 2014/06/11 13:48:16
+#END# kgslide -n f=日付:次日付 i=./indat/dat1.csv o=./outdat/out110.csv s=日付; IN=5 OUT=5; 2014/06/11 13:48:16
+#END# kgslide -n -nfno f=日付:次日付 i=./indat/dat1.csv o=./outdat/out110nfno.csv s=日付; IN=5 OUT=5; 2014/06/11 13:48:16
+#END# kgslide -n -x f=1:次日付 i=./indat/dat1.csv o=./outdat/out110x.csv s=1; IN=5 OUT=5; 2014/06/11 13:48:16
+#END# kgslide -n -nfn f=1 i=./indat/dat1nfn.csv o=./outdat/out110nfn.csv s=1; IN=5 OUT=5; 2014/06/11 13:48:16
+#END# kgslide -n -nfno -x f=1 i=./indat/dat1.csv o=./outdat/out110nfnox.csv s=1; IN=5 OUT=5; 2014/06/11 13:48:16
+#END# kgslide -n f=日付:次日付 i=./indat/dat2.csv o=./outdat/out111.csv s=日付; IN=8 OUT=8; 2014/06/11 13:48:16
+#END# kgslide -n -nfno f=日付:次日付 i=./indat/dat2.csv o=./outdat/out111nfno.csv s=日付; IN=8 OUT=8; 2014/06/11 13:48:16
+#END# kgslide -n -x f=1:次日付 i=./indat/dat2.csv o=./outdat/out111x.csv s=1; IN=8 OUT=8; 2014/06/11 13:48:17
+#END# kgslide -n -nfn f=1 i=./indat/dat2nfn.csv o=./outdat/out111nfn.csv s=1; IN=8 OUT=8; 2014/06/11 13:48:17
+#END# kgslide -n -nfno -x f=1 i=./indat/dat2.csv o=./outdat/out111nfnox.csv s=1; IN=8 OUT=8; 2014/06/11 13:48:17
+#END# kgslide -r f=日付:次日付 i=./indat/dat1.csv o=./outdat/out112.csv s=日付; IN=5 OUT=4; 2014/06/11 13:48:17
+#END# kgslide -nfno -r f=日付:次日付 i=./indat/dat1.csv o=./outdat/out112nfno.csv s=日付; IN=5 OUT=4; 2014/06/11 13:48:17
+#END# kgslide -r -x f=1:次日付 i=./indat/dat1.csv o=./outdat/out112x.csv s=1; IN=5 OUT=4; 2014/06/11 13:48:17
+#END# kgslide -nfn -r f=1 i=./indat/dat1nfn.csv o=./outdat/out112nfn.csv s=1; IN=5 OUT=4; 2014/06/11 13:48:17
+#END# kgslide -nfno -r -x f=1 i=./indat/dat1.csv o=./outdat/out112nfnox.csv s=1; IN=5 OUT=4; 2014/06/11 13:48:17
+#END# kgslide -r f=日付:次日付 i=./indat/dat2.csv o=./outdat/out113.csv s=日付; IN=8 OUT=7; 2014/06/11 13:48:17
+#END# kgslide -nfno -r f=日付:次日付 i=./indat/dat2.csv o=./outdat/out113nfno.csv s=日付; IN=8 OUT=7; 2014/06/11 13:48:17
+#END# kgslide -r -x f=1:次日付 i=./indat/dat2.csv o=./outdat/out113x.csv s=1; IN=8 OUT=7; 2014/06/11 13:48:17
+#END# kgslide -nfn -r f=1 i=./indat/dat2nfn.csv o=./outdat/out113nfn.csv s=1; IN=8 OUT=7; 2014/06/11 13:48:17
+#END# kgslide -nfno -r -x f=1 i=./indat/dat2.csv o=./outdat/out113nfnox.csv s=1; IN=8 OUT=7; 2014/06/11 13:48:17
+#END# kgslide -r f=日付:次日付 i=./indat/dat1.csv k=顧客 o=./outdat/out114.csv s=日付; IN=5 OUT=3; 2014/06/11 13:48:17
+#END# kgslide -nfno -r f=日付:次日付 i=./indat/dat1.csv k=顧客 o=./outdat/out114nfno.csv s=日付; IN=5 OUT=3; 2014/06/11 13:48:17
+#END# kgslide -r -x f=1:次日付 i=./indat/dat1.csv k=0 o=./outdat/out114x.csv s=1; IN=5 OUT=3; 2014/06/11 13:48:17
+#END# kgslide -nfn -r f=1 i=./indat/dat1nfn.csv k=0 o=./outdat/out114nfn.csv s=1; IN=5 OUT=2; 2014/06/11 13:48:17
+#END# kgslide -nfno -r -x f=1 i=./indat/dat1.csv k=0 o=./outdat/out114nfnox.csv s=1; IN=5 OUT=3; 2014/06/11 13:48:17
+#END# kgslide -r f=日付:次日付 i=./indat/dat2.csv k=顧客 o=./outdat/out115.csv s=日付; IN=8 OUT=5; 2014/06/11 13:48:17
+#END# kgslide -nfno -r f=日付:次日付 i=./indat/dat2.csv k=顧客 o=./outdat/out115nfno.csv s=日付; IN=8 OUT=5; 2014/06/11 13:48:17
+#END# kgslide -r -x f=1:次日付 i=./indat/dat2.csv k=0 o=./outdat/out115x.csv s=1; IN=8 OUT=5; 2014/06/11 13:48:17
+#END# kgslide -nfn -r f=1 i=./indat/dat2nfn.csv k=0 o=./outdat/out115nfn.csv s=1; IN=8 OUT=4; 2014/06/11 13:48:17
+#END# kgslide -nfno -r -x f=1 i=./indat/dat2.csv k=0 o=./outdat/out115nfnox.csv s=1; IN=8 OUT=5; 2014/06/11 13:48:17
+#END# kgslide -n -r f=日付:次日付 i=./indat/dat1.csv k=顧客 o=./outdat/out116.csv s=日付; IN=5 OUT=5; 2014/06/11 13:48:17
+#END# kgslide -n -nfno -r f=日付:次日付 i=./indat/dat1.csv k=顧客 o=./outdat/out116nfno.csv s=日付; IN=5 OUT=5; 2014/06/11 13:48:17
+#END# kgslide -n -r -x f=1:次日付 i=./indat/dat1.csv k=0 o=./outdat/out116x.csv s=1; IN=5 OUT=5; 2014/06/11 13:48:17
+#END# kgslide -n -nfn -r f=1 i=./indat/dat1nfn.csv k=0 o=./outdat/out116nfn.csv s=1; IN=5 OUT=5; 2014/06/11 13:48:17
+#END# kgslide -n -nfno -r -x f=1 i=./indat/dat1.csv k=0 o=./outdat/out116nfnox.csv s=1; IN=5 OUT=5; 2014/06/11 13:48:17
+#END# kgslide -n -r f=日付:次日付 i=./indat/dat2.csv k=顧客 o=./outdat/out117.csv s=日付; IN=8 OUT=8; 2014/06/11 13:48:17
+#END# kgslide -n -nfno -r f=日付:次日付 i=./indat/dat2.csv k=顧客 o=./outdat/out117nfno.csv s=日付; IN=8 OUT=8; 2014/06/11 13:48:17
+#END# kgslide -n -r -x f=1:次日付 i=./indat/dat2.csv k=0 o=./outdat/out117x.csv s=1; IN=8 OUT=8; 2014/06/11 13:48:17
+#END# kgslide -n -nfn -r f=1 i=./indat/dat2nfn.csv k=0 o=./outdat/out117nfn.csv s=1; IN=8 OUT=8; 2014/06/11 13:48:17
+#END# kgslide -n -nfno -r -x f=1 i=./indat/dat2.csv k=0 o=./outdat/out117nfnox.csv s=1; IN=8 OUT=8; 2014/06/11 13:48:17
+#END# kgslide -r f=日付:次日付 i=./indat/dat3.csv o=./outdat/out118.csv s=日付 t=3; IN=17 OUT=14; 2014/06/11 13:48:17
+#END# kgslide -nfno -r f=日付:次日付 i=./indat/dat3.csv o=./outdat/out118nfno.csv s=日付 t=3; IN=17 OUT=14; 2014/06/11 13:48:17
+#END# kgslide -r -x f=1:次日付 i=./indat/dat3.csv o=./outdat/out118x.csv s=1 t=3; IN=17 OUT=14; 2014/06/11 13:48:17
+#END# kgslide -nfn -r f=1 i=./indat/dat3nfn.csv o=./outdat/out118nfn.csv s=1 t=3; IN=17 OUT=14; 2014/06/11 13:48:17
+#END# kgslide -nfno -r -x f=1 i=./indat/dat3.csv o=./outdat/out118nfnox.csv s=1 t=3; IN=17 OUT=14; 2014/06/11 13:48:17
+#END# kgslide -r f=日付:次日付 i=./indat/dat3.csv k=顧客 o=./outdat/out119.csv s=日付 t=3; IN=17 OUT=5; 2014/06/11 13:48:18
+#END# kgslide -nfno -r f=日付:次日付 i=./indat/dat3.csv k=顧客 o=./outdat/out119nfno.csv s=日付 t=3; IN=17 OUT=5; 2014/06/11 13:48:18
+#END# kgslide -r -x f=1:次日付 i=./indat/dat3.csv k=0 o=./outdat/out119x.csv s=1 t=3; IN=17 OUT=5; 2014/06/11 13:48:18
+#END# kgslide -nfn -r f=1 i=./indat/dat3nfn.csv k=0 o=./outdat/out119nfn.csv s=1 t=3; IN=17 OUT=2; 2014/06/11 13:48:18
+#END# kgslide -nfno -r -x f=1 i=./indat/dat3.csv k=0 o=./outdat/out119nfnox.csv s=1 t=3; IN=17 OUT=5; 2014/06/11 13:48:18
+#END# kgslide -n -r f=日付:次日付 i=./indat/dat3.csv k=顧客 o=./outdat/out120.csv s=日付 t=3; IN=17 OUT=17; 2014/06/11 13:48:18
+#END# kgslide -n -nfno -r f=日付:次日付 i=./indat/dat3.csv k=顧客 o=./outdat/out120nfno.csv s=日付 t=3; IN=17 OUT=17; 2014/06/11 13:48:18
+#END# kgslide -n -r -x f=1:次日付 i=./indat/dat3.csv k=0 o=./outdat/out120x.csv s=1 t=3; IN=17 OUT=17; 2014/06/11 13:48:18
+#END# kgslide -n -nfn -r f=1 i=./indat/dat3nfn.csv k=0 o=./outdat/out120nfn.csv s=1 t=3; IN=17 OUT=17; 2014/06/11 13:48:18
+#END# kgslide -n -nfno -r -x f=1 i=./indat/dat3.csv k=0 o=./outdat/out120nfnox.csv s=1 t=3; IN=17 OUT=17; 2014/06/11 13:48:18
+#END# kgslide -l -r f=日付:次日付 i=./indat/dat3.csv o=./outdat/out121.csv s=日付 t=3; IN=17 OUT=14; 2014/06/11 13:48:18
+#END# kgslide -l -nfno -r f=日付:次日付 i=./indat/dat3.csv o=./outdat/out121nfno.csv s=日付 t=3; IN=17 OUT=14; 2014/06/11 13:48:18
+#END# kgslide -l -r -x f=1:次日付 i=./indat/dat3.csv o=./outdat/out121x.csv s=1 t=3; IN=17 OUT=14; 2014/06/11 13:48:18
+#END# kgslide -l -nfn -r f=1 i=./indat/dat3nfn.csv o=./outdat/out121nfn.csv s=1 t=3; IN=17 OUT=14; 2014/06/11 13:48:18
+#END# kgslide -l -nfno -r -x f=1 i=./indat/dat3.csv o=./outdat/out121nfnox.csv s=1 t=3; IN=17 OUT=14; 2014/06/11 13:48:18
+#END# kgslide -l -r f=日付:次日付 i=./indat/dat3.csv k=顧客 o=./outdat/out122.csv s=日付 t=3; IN=17 OUT=5; 2014/06/11 13:48:18
+#END# kgslide -l -nfno -r f=日付:次日付 i=./indat/dat3.csv k=顧客 o=./outdat/out122nfno.csv s=日付 t=3; IN=17 OUT=5; 2014/06/11 13:48:18
+#END# kgslide -l -r -x f=1:次日付 i=./indat/dat3.csv k=0 o=./outdat/out122x.csv s=1 t=3; IN=17 OUT=5; 2014/06/11 13:48:18
+#END# kgslide -l -nfn -r f=1 i=./indat/dat3nfn.csv k=0 o=./outdat/out122nfn.csv s=1 t=3; IN=17 OUT=2; 2014/06/11 13:48:18
+#END# kgslide -l -nfno -r -x f=1 i=./indat/dat3.csv k=0 o=./outdat/out122nfnox.csv s=1 t=3; IN=17 OUT=5; 2014/06/11 13:48:18
+#END# kgslide -l -n -r f=日付:次日付 i=./indat/dat3.csv k=顧客 o=./outdat/out123.csv s=日付 t=3; IN=17 OUT=17; 2014/06/11 13:48:18
+#END# kgslide -l -n -nfno -r f=日付:次日付 i=./indat/dat3.csv k=顧客 o=./outdat/out123nfno.csv s=日付 t=3; IN=17 OUT=17; 2014/06/11 13:48:18
+#END# kgslide -l -n -r -x f=1:次日付 i=./indat/dat3.csv k=0 o=./outdat/out123x.csv s=1 t=3; IN=17 OUT=17; 2014/06/11 13:48:18
+#END# kgslide -l -n -nfn -r f=1 i=./indat/dat3nfn.csv k=0 o=./outdat/out123nfn.csv s=1 t=3; IN=17 OUT=17; 2014/06/11 13:48:18
+#END# kgslide -l -n -nfno -r -x f=1 i=./indat/dat3.csv k=0 o=./outdat/out123nfnox.csv s=1 t=3; IN=17 OUT=17; 2014/06/11 13:48:18
+#END# kgslide -l -n -r f=日付 i=./indat/dat3.csv k=顧客 o=./outdat/out124.csv s=日付 t=3; IN=17 OUT=17; 2014/06/11 13:48:18
+#END# kgslide -l -n -nfno -r f=日付 i=./indat/dat3.csv k=顧客 o=./outdat/out124nfno.csv s=日付 t=3; IN=17 OUT=17; 2014/06/11 13:48:18
+#END# kgslide -l -n -r -x f=1 i=./indat/dat3.csv k=0 o=./outdat/out124x.csv s=1 t=3; IN=17 OUT=17; 2014/06/11 13:48:18
+#END# kgslide -l -n -nfn -r f=1 i=./indat/dat3nfn.csv k=0 o=./outdat/out124nfn.csv s=1 t=3; IN=17 OUT=17; 2014/06/11 13:48:18
+#END# kgslide -l -n -nfno -r -x f=1 i=./indat/dat3.csv k=0 o=./outdat/out124nfnox.csv s=1 t=3; IN=17 OUT=17; 2014/06/11 13:48:18
+#END# kgslide f=日付:次日付,顧客:次顧客 i=./indat/dat3.csv o=./outdat/out125.csv s=日付 t=3; IN=17 OUT=14; 2014/06/11 13:48:18
+#END# kgslide -nfno f=日付:次日付,顧客:次顧客 i=./indat/dat3.csv o=./outdat/out125nfno.csv s=日付 t=3; IN=17 OUT=14; 2014/06/11 13:48:18
+#END# kgslide -x f=1,0 i=./indat/dat3.csv o=./outdat/out125x.csv s=1 t=3; IN=17 OUT=14; 2014/06/11 13:48:18
+#END# kgslide -nfn f=1,0 i=./indat/dat3nfn.csv o=./outdat/out125nfn.csv s=1 t=3; IN=17 OUT=14; 2014/06/11 13:48:18
+#END# kgslide -nfno -x f=1,0 i=./indat/dat3.csv o=./outdat/out125nfnox.csv s=1 t=3; IN=17 OUT=14; 2014/06/11 13:48:18
+#END# kgslide f=日付:次日付,顧客:次顧客 i=./indat/dat3.csv k=顧客 o=./outdat/out126.csv s=日付 t=3; IN=17 OUT=5; 2014/06/11 13:48:18
+#END# kgslide -nfno f=日付:次日付,顧客:次顧客 i=./indat/dat3.csv k=顧客 o=./outdat/out126nfno.csv s=日付 t=3; IN=17 OUT=5; 2014/06/11 13:48:18
+#END# kgslide -x f=1,0 i=./indat/dat3.csv k=0 o=./outdat/out126x.csv s=1 t=3; IN=17 OUT=5; 2014/06/11 13:48:18
+#END# kgslide -nfn f=1,0 i=./indat/dat3nfn.csv k=0 o=./outdat/out126nfn.csv s=1 t=3; IN=17 OUT=2; 2014/06/11 13:48:18
+#END# kgslide -nfno -x f=1,0 i=./indat/dat3.csv k=0 o=./outdat/out126nfnox.csv s=1 t=3; IN=17 OUT=5; 2014/06/11 13:48:19
+#END# kgslide -r f=日付:次日付,顧客:次顧客 i=./indat/dat3.csv o=./outdat/out127.csv s=日付 t=3; IN=17 OUT=14; 2014/06/11 13:48:19
+#END# kgslide -nfno -r f=日付:次日付,顧客:次顧客 i=./indat/dat3.csv o=./outdat/out127nfno.csv s=日付 t=3; IN=17 OUT=14; 2014/06/11 13:48:19
+#END# kgslide -r -x f=1,0 i=./indat/dat3.csv o=./outdat/out127x.csv s=1 t=3; IN=17 OUT=14; 2014/06/11 13:48:19
+#END# kgslide -nfn -r f=1,0 i=./indat/dat3nfn.csv o=./outdat/out127nfn.csv s=1 t=3; IN=17 OUT=14; 2014/06/11 13:48:19
+#END# kgslide -nfno -r -x f=1,0 i=./indat/dat3.csv o=./outdat/out127nfnox.csv s=1 t=3; IN=17 OUT=14; 2014/06/11 13:48:19
+#END# kgslide -l f=日付:次日付,顧客:次顧客 i=./indat/dat3.csv k=顧客 o=./outdat/out128.csv s=日付 t=3; IN=17 OUT=5; 2014/06/11 13:48:19
+#END# kgslide -l -nfno f=日付:次日付,顧客:次顧客 i=./indat/dat3.csv k=顧客 o=./outdat/out128nfno.csv s=日付 t=3; IN=17 OUT=5; 2014/06/11 13:48:19
+#END# kgslide -l -x f=1,0 i=./indat/dat3.csv k=0 o=./outdat/out128x.csv s=1 t=3; IN=17 OUT=5; 2014/06/11 13:48:19
+#END# kgslide -l -nfn f=1,0 i=./indat/dat3nfn.csv k=0 o=./outdat/out128nfn.csv s=1 t=3; IN=17 OUT=2; 2014/06/11 13:48:19
+#END# kgslide -l -nfno -x f=1,0 i=./indat/dat3.csv k=0 o=./outdat/out128nfnox.csv s=1 t=3; IN=17 OUT=5; 2014/06/11 13:48:19
+#END# kgslide -l -r f=日付:次日付,顧客:次顧客 i=./indat/dat3.csv k=顧客 o=./outdat/out129.csv s=日付 t=3; IN=17 OUT=5; 2014/06/11 13:48:19
+#END# kgslide -l -nfno -r f=日付:次日付,顧客:次顧客 i=./indat/dat3.csv k=顧客 o=./outdat/out129nfno.csv s=日付 t=3; IN=17 OUT=5; 2014/06/11 13:48:19
+#END# kgslide -l -r -x f=1,0 i=./indat/dat3.csv k=0 o=./outdat/out129x.csv s=1 t=3; IN=17 OUT=5; 2014/06/11 13:48:19
+#END# kgslide -l -nfn -r f=1,0 i=./indat/dat3nfn.csv k=0 o=./outdat/out129nfn.csv s=1 t=3; IN=17 OUT=2; 2014/06/11 13:48:19
+#END# kgslide -l -nfno -r -x f=1,0 i=./indat/dat3.csv k=0 o=./outdat/out129nfnox.csv s=1 t=3; IN=17 OUT=5; 2014/06/11 13:48:19
+#END# kgslide -l -n -r f=日付:次日付,顧客:次顧客 i=./indat/dat3.csv k=顧客 o=./outdat/out130.csv s=日付 t=3; IN=17 OUT=17; 2014/06/11 13:48:19
+#END# kgslide -l -n -nfno -r f=日付:次日付,顧客:次顧客 i=./indat/dat3.csv k=顧客 o=./outdat/out130nfno.csv s=日付 t=3; IN=17 OUT=17; 2014/06/11 13:48:19
+#END# kgslide -l -n -r -x f=1,0 i=./indat/dat3.csv k=0 o=./outdat/out130x.csv s=1 t=3; IN=17 OUT=17; 2014/06/11 13:48:19
+#END# kgslide -l -n -nfn -r f=1,0 i=./indat/dat3nfn.csv k=0 o=./outdat/out130nfn.csv s=1 t=3; IN=17 OUT=17; 2014/06/11 13:48:19
+#END# kgslide -l -n -nfno -r -x f=1,0 i=./indat/dat3.csv k=0 o=./outdat/out130nfnox.csv s=1 t=3; IN=17 OUT=17; 2014/06/11 13:48:19
+#END# kgslide -l -n -r f=日付,顧客:次顧客,値 i=./indat/dat3.csv k=顧客 o=./outdat/out131.csv s=日付 t=3; IN=17 OUT=17; 2014/06/11 13:48:19
+#END# kgslide -l -n -nfno -r f=日付,顧客:次顧客,値 i=./indat/dat3.csv k=顧客 o=./outdat/out131nfno.csv s=日付 t=3; IN=17 OUT=17; 2014/06/11 13:48:19
+#END# kgslide -l -n -r -x f=1,0:次顧客,2 i=./indat/dat3.csv k=0 o=./outdat/out131x.csv s=1 t=3; IN=17 OUT=17; 2014/06/11 13:48:19
+#END# kgslide -l -n -nfn -r f=1,0,2 i=./indat/dat3nfn.csv k=0 o=./outdat/out131nfn.csv s=1 t=3; IN=17 OUT=17; 2014/06/11 13:48:19
+#END# kgslide -l -n -nfno -r -x f=1,0:次顧客,2 i=./indat/dat3.csv k=0 o=./outdat/out131nfnox.csv s=1 t=3; IN=17 OUT=17; 2014/06/11 13:48:19
+#END# kgslide -l f=日付,顧客:次顧客,値 i=./indat/dat3.csv o=./outdat/out132.csv s=日付 t=3; IN=17 OUT=14; 2014/06/11 13:48:19
+#END# kgslide -l -nfno f=日付,顧客:次顧客,値 i=./indat/dat3.csv o=./outdat/out132nfno.csv s=日付 t=3; IN=17 OUT=14; 2014/06/11 13:48:19
+#END# kgslide -l -x f=1,0:次顧客,2 i=./indat/dat3.csv o=./outdat/out132x.csv s=1 t=3; IN=17 OUT=14; 2014/06/11 13:48:19
+#END# kgslide -l -nfn f=1,0,2 i=./indat/dat3nfn.csv o=./outdat/out132nfn.csv s=1 t=3; IN=17 OUT=14; 2014/06/11 13:48:19
+#END# kgslide -l -nfno -x f=1,0:次顧客,2 i=./indat/dat3.csv o=./outdat/out132nfnox.csv s=1 t=3; IN=17 OUT=14; 2014/06/11 13:48:19

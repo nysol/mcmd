@@ -1,0 +1,212 @@
+#END# kgstats c=count f=数量,金額 i=./indat/dat0.csv o=./outdat/out01.csv; IN=0 OUT=0; 2014/06/11 17:41:51
+#END# kgstats c=count f=数量,金額 i=./indat/dat1s.csv o=./outdat/out02.csv; IN=6 OUT=1; 2014/06/11 17:41:51
+#END# kgstats -x c=count f=1,2 i=./indat/dat1s.csv o=./outdat/out02x.csv; IN=6 OUT=1; 2014/06/11 17:41:51
+#END# kgstats -nfn c=count f=1,2 i=./indat/dat1snfn.csv o=./outdat/out02nfn.csv; IN=6 OUT=1; 2014/06/11 17:41:51
+#END# kgstats -q c=count f=数量,金額 i=./indat/dat1s.csv o=./outdat/out02q.csv; IN=6 OUT=1; 2014/06/11 17:41:51
+#END# kgstats -q -x c=count f=1,2 i=./indat/dat1s.csv o=./outdat/out02qx.csv; IN=6 OUT=1; 2014/06/11 17:41:51
+#END# kgstats c=ucount f=数量,金額 i=./indat/dat1s.csv o=./outdat/out03.csv; IN=6 OUT=1; 2014/06/11 17:41:51
+#END# kgstats -x c=ucount f=1,2 i=./indat/dat1s.csv o=./outdat/out03x.csv; IN=6 OUT=1; 2014/06/11 17:41:51
+#END# kgstats -nfn c=ucount f=1,2 i=./indat/dat1snfn.csv o=./outdat/out03nfn.csv; IN=6 OUT=1; 2014/06/11 17:41:51
+#END# kgstats c=sum f=数量,金額 i=./indat/dat1s.csv o=./outdat/out04.csv; IN=6 OUT=1; 2014/06/11 17:41:51
+#END# kgstats -x c=sum f=1,2 i=./indat/dat1s.csv o=./outdat/out04x.csv; IN=6 OUT=1; 2014/06/11 17:41:51
+#END# kgstats -nfn c=sum f=1,2 i=./indat/dat1snfn.csv o=./outdat/out04nfn.csv; IN=6 OUT=1; 2014/06/11 17:41:51
+#END# kgstats c=mean f=数量,金額 i=./indat/dat1s.csv o=./outdat/out05.csv; IN=6 OUT=1; 2014/06/11 17:41:51
+#END# kgstats -x c=mean f=1,2 i=./indat/dat1s.csv o=./outdat/out05x.csv; IN=6 OUT=1; 2014/06/11 17:41:51
+#END# kgstats -nfn c=mean f=1,2 i=./indat/dat1snfn.csv o=./outdat/out05nfn.csv; IN=6 OUT=1; 2014/06/11 17:41:51
+#END# kgstats c=devsq f=数量,金額 i=./indat/dat1s.csv o=./outdat/out06.csv; IN=6 OUT=1; 2014/06/11 17:41:51
+#END# kgstats -x c=devsq f=1,2 i=./indat/dat1s.csv o=./outdat/out06x.csv; IN=6 OUT=1; 2014/06/11 17:41:51
+#END# kgstats -nfn c=devsq f=1,2 i=./indat/dat1snfn.csv o=./outdat/out06nfn.csv; IN=6 OUT=1; 2014/06/11 17:41:51
+#END# kgstats c=var f=数量,金額 i=./indat/dat1s.csv o=./outdat/out07.csv; IN=6 OUT=1; 2014/06/11 17:41:51
+#END# kgstats -x c=var f=1,2 i=./indat/dat1s.csv o=./outdat/out07x.csv; IN=6 OUT=1; 2014/06/11 17:41:51
+#END# kgstats -nfn c=var f=1,2 i=./indat/dat1snfn.csv o=./outdat/out07nfn.csv; IN=6 OUT=1; 2014/06/11 17:41:51
+#END# kgstats c=uvar f=数量,金額 i=./indat/dat1s.csv o=./outdat/out08.csv; IN=6 OUT=1; 2014/06/11 17:41:51
+#END# kgstats -x c=uvar f=1,2 i=./indat/dat1s.csv o=./outdat/out08x.csv; IN=6 OUT=1; 2014/06/11 17:41:51
+#END# kgstats -nfn c=uvar f=1,2 i=./indat/dat1snfn.csv o=./outdat/out08nfn.csv; IN=6 OUT=1; 2014/06/11 17:41:51
+#END# kgstats c=sd f=数量,金額 i=./indat/dat1s.csv o=./outdat/out09.csv; IN=6 OUT=1; 2014/06/11 17:41:51
+#END# kgstats -x c=sd f=1,2 i=./indat/dat1s.csv o=./outdat/out09x.csv; IN=6 OUT=1; 2014/06/11 17:41:51
+#END# kgstats -nfn c=sd f=1,2 i=./indat/dat1snfn.csv o=./outdat/out09nfn.csv; IN=6 OUT=1; 2014/06/11 17:41:51
+#END# kgstats c=usd f=数量,金額 i=./indat/dat1s.csv o=./outdat/out10.csv; IN=6 OUT=1; 2014/06/11 17:41:51
+#END# kgstats -x c=usd f=1,2 i=./indat/dat1s.csv o=./outdat/out10x.csv; IN=6 OUT=1; 2014/06/11 17:41:51
+#END# kgstats -nfn c=usd f=1,2 i=./indat/dat1snfn.csv o=./outdat/out10nfn.csv; IN=6 OUT=1; 2014/06/11 17:41:51
+#END# kgstats c=USD f=数量,金額 i=./indat/dat1s.csv o=./outdat/out11.csv; IN=6 OUT=1; 2014/06/11 17:41:51
+#END# kgstats -x c=USD f=1,2 i=./indat/dat1s.csv o=./outdat/out11x.csv; IN=6 OUT=1; 2014/06/11 17:41:51
+#END# kgstats -nfn c=USD f=1,2 i=./indat/dat1snfn.csv o=./outdat/out11nfn.csv; IN=6 OUT=1; 2014/06/11 17:41:51
+#END# kgstats c=cv f=数量,金額 i=./indat/dat1s.csv o=./outdat/out12.csv; IN=6 OUT=1; 2014/06/11 17:41:51
+#END# kgstats -x c=cv f=1,2 i=./indat/dat1s.csv o=./outdat/out12x.csv; IN=6 OUT=1; 2014/06/11 17:41:51
+#END# kgstats -nfn c=cv f=1,2 i=./indat/dat1snfn.csv o=./outdat/out12nfn.csv; IN=6 OUT=1; 2014/06/11 17:41:51
+#END# kgstats c=mode f=数量,金額 i=./indat/dat1s.csv o=./outdat/out13.csv; IN=6 OUT=1; 2014/06/11 17:41:51
+#END# kgstats -x c=mode f=1,2 i=./indat/dat1s.csv o=./outdat/out13x.csv; IN=6 OUT=1; 2014/06/11 17:41:51
+#END# kgstats -nfn c=mode f=1,2 i=./indat/dat1snfn.csv o=./outdat/out13nfn.csv; IN=6 OUT=1; 2014/06/11 17:41:51
+#END# kgstats c=min f=数量,金額 i=./indat/dat1s.csv o=./outdat/out14.csv; IN=6 OUT=1; 2014/06/11 17:41:51
+#END# kgstats -x c=min f=1,2 i=./indat/dat1s.csv o=./outdat/out14x.csv; IN=6 OUT=1; 2014/06/11 17:41:51
+#END# kgstats -nfn c=min f=1,2 i=./indat/dat1snfn.csv o=./outdat/out14nfn.csv; IN=6 OUT=1; 2014/06/11 17:41:51
+#END# kgstats c=max f=数量,金額 i=./indat/dat1s.csv o=./outdat/out15.csv; IN=6 OUT=1; 2014/06/11 17:41:51
+#END# kgstats -x c=max f=1,2 i=./indat/dat1s.csv o=./outdat/out15x.csv; IN=6 OUT=1; 2014/06/11 17:41:51
+#END# kgstats -nfn c=max f=1,2 i=./indat/dat1snfn.csv o=./outdat/out15nfn.csv; IN=6 OUT=1; 2014/06/11 17:41:51
+#END# kgstats c=range f=数量,金額 i=./indat/dat1s.csv o=./outdat/out16.csv; IN=6 OUT=1; 2014/06/11 17:41:51
+#END# kgstats -x c=range f=1,2 i=./indat/dat1s.csv o=./outdat/out16x.csv; IN=6 OUT=1; 2014/06/11 17:41:51
+#END# kgstats -nfn c=range f=1,2 i=./indat/dat1snfn.csv o=./outdat/out16nfn.csv; IN=6 OUT=1; 2014/06/11 17:41:51
+#END# kgstats c=median f=数量,金額 i=./indat/dat1s.csv o=./outdat/out17.csv; IN=6 OUT=1; 2014/06/11 17:41:51
+#END# kgstats -x c=median f=1,2 i=./indat/dat1s.csv o=./outdat/out17x.csv; IN=6 OUT=1; 2014/06/11 17:41:51
+#END# kgstats -nfn c=median f=1,2 i=./indat/dat1snfn.csv o=./outdat/out17nfn.csv; IN=6 OUT=1; 2014/06/11 17:41:51
+#END# kgstats c=qtile1 f=数量,金額 i=./indat/dat1s.csv o=./outdat/out18.csv; IN=6 OUT=1; 2014/06/11 17:41:51
+#END# kgstats -x c=qtile1 f=1,2 i=./indat/dat1s.csv o=./outdat/out18x.csv; IN=6 OUT=1; 2014/06/11 17:41:51
+#END# kgstats -nfn c=qtile1 f=1,2 i=./indat/dat1snfn.csv o=./outdat/out18nfn.csv; IN=6 OUT=1; 2014/06/11 17:41:51
+#END# kgstats c=qtile3 f=数量,金額 i=./indat/dat1s.csv o=./outdat/out19.csv; IN=6 OUT=1; 2014/06/11 17:41:51
+#END# kgstats -x c=qtile3 f=1,2 i=./indat/dat1s.csv o=./outdat/out19x.csv; IN=6 OUT=1; 2014/06/11 17:41:52
+#END# kgstats -nfn c=qtile3 f=1,2 i=./indat/dat1snfn.csv o=./outdat/out19nfn.csv; IN=6 OUT=1; 2014/06/11 17:41:52
+#END# kgstats c=qrange f=数量,金額 i=./indat/dat1s.csv o=./outdat/out20.csv; IN=6 OUT=1; 2014/06/11 17:41:52
+#END# kgstats -x c=qrange f=1,2 i=./indat/dat1s.csv o=./outdat/out20x.csv; IN=6 OUT=1; 2014/06/11 17:41:52
+#END# kgstats -nfn c=qrange f=1,2 i=./indat/dat1snfn.csv o=./outdat/out20nfn.csv; IN=6 OUT=1; 2014/06/11 17:41:52
+#END# kgstats c=skew f=数量,金額 i=./indat/dat1s.csv o=./outdat/out21.csv; IN=6 OUT=1; 2014/06/11 17:41:52
+#END# kgstats -x c=skew f=1,2 i=./indat/dat1s.csv o=./outdat/out21x.csv; IN=6 OUT=1; 2014/06/11 17:41:52
+#END# kgstats -nfn c=skew f=1,2 i=./indat/dat1snfn.csv o=./outdat/out21nfn.csv; IN=6 OUT=1; 2014/06/11 17:41:52
+#END# kgstats c=uskew f=数量,金額 i=./indat/dat1s.csv o=./outdat/out22.csv; IN=6 OUT=1; 2014/06/11 17:41:52
+#END# kgstats -x c=uskew f=1,2 i=./indat/dat1s.csv o=./outdat/out22x.csv; IN=6 OUT=1; 2014/06/11 17:41:52
+#END# kgstats -nfn c=uskew f=1,2 i=./indat/dat1snfn.csv o=./outdat/out22nfn.csv; IN=6 OUT=1; 2014/06/11 17:41:52
+#END# kgstats c=kurt f=数量,金額 i=./indat/dat1s.csv o=./outdat/out23.csv; IN=6 OUT=1; 2014/06/11 17:41:52
+#END# kgstats -x c=kurt f=1,2 i=./indat/dat1s.csv o=./outdat/out23x.csv; IN=6 OUT=1; 2014/06/11 17:41:52
+#END# kgstats -nfn c=kurt f=1,2 i=./indat/dat1snfn.csv o=./outdat/out23nfn.csv; IN=6 OUT=1; 2014/06/11 17:41:52
+#END# kgstats c=ukurt f=数量,金額 i=./indat/dat1s.csv o=./outdat/out24.csv; IN=6 OUT=1; 2014/06/11 17:41:52
+#END# kgstats -x c=ukurt f=1,2 i=./indat/dat1s.csv o=./outdat/out24x.csv; IN=6 OUT=1; 2014/06/11 17:41:52
+#END# kgstats -nfn c=ukurt f=1,2 i=./indat/dat1snfn.csv o=./outdat/out24nfn.csv; IN=6 OUT=1; 2014/06/11 17:41:52
+#END# kgstats c=count f=数量,金額 i=./indat/dat1s.csv k=顧客 o=./outdat/out25.csv; IN=6 OUT=3; 2014/06/11 17:41:52
+#END# kgstats -x c=count f=1,2 i=./indat/dat1s.csv k=0 o=./outdat/out25x.csv; IN=6 OUT=3; 2014/06/11 17:41:52
+#END# kgstats -nfn c=count f=1,2 i=./indat/dat1snfn.csv k=0 o=./outdat/out25nfn.csv; IN=6 OUT=3; 2014/06/11 17:41:52
+#END# kgstats c=ucount f=数量,金額 i=./indat/dat1s.csv k=顧客 o=./outdat/out26.csv; IN=6 OUT=3; 2014/06/11 17:41:52
+#END# kgstats -x c=ucount f=1,2 i=./indat/dat1s.csv k=0 o=./outdat/out26x.csv; IN=6 OUT=3; 2014/06/11 17:41:52
+#END# kgstats -nfn c=ucount f=1,2 i=./indat/dat1snfn.csv k=0 o=./outdat/out26nfn.csv; IN=6 OUT=3; 2014/06/11 17:41:52
+#END# kgstats c=sum f=数量,金額 i=./indat/dat1s.csv k=顧客 o=./outdat/out27.csv; IN=6 OUT=3; 2014/06/11 17:41:52
+#END# kgstats -x c=sum f=1,2 i=./indat/dat1s.csv k=0 o=./outdat/out27x.csv; IN=6 OUT=3; 2014/06/11 17:41:52
+#END# kgstats -nfn c=sum f=1,2 i=./indat/dat1snfn.csv k=0 o=./outdat/out27nfn.csv; IN=6 OUT=3; 2014/06/11 17:41:52
+#END# kgstats c=mean f=数量,金額 i=./indat/dat1s.csv k=顧客 o=./outdat/out28.csv; IN=6 OUT=3; 2014/06/11 17:41:52
+#END# kgstats -x c=mean f=1,2 i=./indat/dat1s.csv k=0 o=./outdat/out28x.csv; IN=6 OUT=3; 2014/06/11 17:41:52
+#END# kgstats -nfn c=mean f=1,2 i=./indat/dat1snfn.csv k=0 o=./outdat/out28nfn.csv; IN=6 OUT=3; 2014/06/11 17:41:52
+#END# kgstats c=devsq f=数量,金額 i=./indat/dat1s.csv k=顧客 o=./outdat/out29.csv; IN=6 OUT=3; 2014/06/11 17:41:52
+#END# kgstats -x c=devsq f=1,2 i=./indat/dat1s.csv k=0 o=./outdat/out29x.csv; IN=6 OUT=3; 2014/06/11 17:41:52
+#END# kgstats -nfn c=devsq f=1,2 i=./indat/dat1snfn.csv k=0 o=./outdat/out29nfn.csv; IN=6 OUT=3; 2014/06/11 17:41:52
+#END# kgstats c=var f=数量,金額 i=./indat/dat1s.csv k=顧客 o=./outdat/out30.csv; IN=6 OUT=3; 2014/06/11 17:41:52
+#END# kgstats -x c=var f=1,2 i=./indat/dat1s.csv k=0 o=./outdat/out30x.csv; IN=6 OUT=3; 2014/06/11 17:41:52
+#END# kgstats -nfn c=var f=1,2 i=./indat/dat1snfn.csv k=0 o=./outdat/out30nfn.csv; IN=6 OUT=3; 2014/06/11 17:41:52
+#END# kgstats c=uvar f=数量,金額 i=./indat/dat1s.csv k=顧客 o=./outdat/out31.csv; IN=6 OUT=3; 2014/06/11 17:41:52
+#END# kgstats -x c=uvar f=1,2 i=./indat/dat1s.csv k=0 o=./outdat/out31x.csv; IN=6 OUT=3; 2014/06/11 17:41:52
+#END# kgstats -nfn c=uvar f=1,2 i=./indat/dat1snfn.csv k=0 o=./outdat/out31nfn.csv; IN=6 OUT=3; 2014/06/11 17:41:52
+#END# kgstats c=sd f=数量,金額 i=./indat/dat1s.csv k=顧客 o=./outdat/out32.csv; IN=6 OUT=3; 2014/06/11 17:41:52
+#END# kgstats -x c=sd f=1,2 i=./indat/dat1s.csv k=0 o=./outdat/out32x.csv; IN=6 OUT=3; 2014/06/11 17:41:52
+#END# kgstats -nfn c=sd f=1,2 i=./indat/dat1snfn.csv k=0 o=./outdat/out32nfn.csv; IN=6 OUT=3; 2014/06/11 17:41:52
+#END# kgstats c=usd f=数量,金額 i=./indat/dat1s.csv k=顧客 o=./outdat/out33.csv; IN=6 OUT=3; 2014/06/11 17:41:52
+#END# kgstats -x c=usd f=1,2 i=./indat/dat1s.csv k=0 o=./outdat/out33x.csv; IN=6 OUT=3; 2014/06/11 17:41:52
+#END# kgstats -nfn c=usd f=1,2 i=./indat/dat1snfn.csv k=0 o=./outdat/out33nfn.csv; IN=6 OUT=3; 2014/06/11 17:41:52
+#END# kgstats c=USD f=数量,金額 i=./indat/dat1s.csv k=顧客 o=./outdat/out34.csv; IN=6 OUT=3; 2014/06/11 17:41:52
+#END# kgstats -x c=USD f=1,2 i=./indat/dat1s.csv k=0 o=./outdat/out34x.csv; IN=6 OUT=3; 2014/06/11 17:41:52
+#END# kgstats -nfn c=USD f=1,2 i=./indat/dat1snfn.csv k=0 o=./outdat/out34nfn.csv; IN=6 OUT=3; 2014/06/11 17:41:52
+#END# kgstats c=cv f=数量,金額 i=./indat/dat1s.csv k=顧客 o=./outdat/out35.csv; IN=6 OUT=3; 2014/06/11 17:41:52
+#END# kgstats -x c=cv f=1,2 i=./indat/dat1s.csv k=0 o=./outdat/out35x.csv; IN=6 OUT=3; 2014/06/11 17:41:52
+#END# kgstats -nfn c=cv f=1,2 i=./indat/dat1snfn.csv k=0 o=./outdat/out35nfn.csv; IN=6 OUT=3; 2014/06/11 17:41:52
+#END# kgstats c=mode f=数量,金額 i=./indat/dat1s.csv k=顧客 o=./outdat/out36.csv; IN=6 OUT=3; 2014/06/11 17:41:52
+#END# kgstats -x c=mode f=1,2 i=./indat/dat1s.csv k=0 o=./outdat/out36x.csv; IN=6 OUT=3; 2014/06/11 17:41:52
+#END# kgstats -nfn c=mode f=1,2 i=./indat/dat1snfn.csv k=0 o=./outdat/out36nfn.csv; IN=6 OUT=3; 2014/06/11 17:41:52
+#END# kgstats c=min f=数量,金額 i=./indat/dat1s.csv k=顧客 o=./outdat/out37.csv; IN=6 OUT=3; 2014/06/11 17:41:52
+#END# kgstats -x c=min f=1,2 i=./indat/dat1s.csv k=0 o=./outdat/out37x.csv; IN=6 OUT=3; 2014/06/11 17:41:52
+#END# kgstats -nfn c=min f=1,2 i=./indat/dat1snfn.csv k=0 o=./outdat/out37nfn.csv; IN=6 OUT=3; 2014/06/11 17:41:52
+#END# kgstats c=max f=数量,金額 i=./indat/dat1s.csv k=顧客 o=./outdat/out38.csv; IN=6 OUT=3; 2014/06/11 17:41:52
+#END# kgstats -x c=max f=1,2 i=./indat/dat1s.csv k=0 o=./outdat/out38x.csv; IN=6 OUT=3; 2014/06/11 17:41:52
+#END# kgstats -nfn c=max f=1,2 i=./indat/dat1snfn.csv k=0 o=./outdat/out38nfn.csv; IN=6 OUT=3; 2014/06/11 17:41:52
+#END# kgstats c=range f=数量,金額 i=./indat/dat1s.csv k=顧客 o=./outdat/out39.csv; IN=6 OUT=3; 2014/06/11 17:41:52
+#END# kgstats -x c=range f=1,2 i=./indat/dat1s.csv k=0 o=./outdat/out39x.csv; IN=6 OUT=3; 2014/06/11 17:41:52
+#END# kgstats -nfn c=range f=1,2 i=./indat/dat1snfn.csv k=0 o=./outdat/out39nfn.csv; IN=6 OUT=3; 2014/06/11 17:41:52
+#END# kgstats c=median f=数量,金額 i=./indat/dat1s.csv k=顧客 o=./outdat/out40.csv; IN=6 OUT=3; 2014/06/11 17:41:52
+#END# kgstats -x c=median f=1,2 i=./indat/dat1s.csv k=0 o=./outdat/out40x.csv; IN=6 OUT=3; 2014/06/11 17:41:52
+#END# kgstats -nfn c=median f=1,2 i=./indat/dat1snfn.csv k=0 o=./outdat/out40nfn.csv; IN=6 OUT=3; 2014/06/11 17:41:52
+#END# kgstats c=qtile1 f=数量,金額 i=./indat/dat1s.csv k=顧客 o=./outdat/out41.csv; IN=6 OUT=3; 2014/06/11 17:41:52
+#END# kgstats -x c=qtile1 f=1,2 i=./indat/dat1s.csv k=0 o=./outdat/out41x.csv; IN=6 OUT=3; 2014/06/11 17:41:52
+#END# kgstats -nfn c=qtile1 f=1,2 i=./indat/dat1snfn.csv k=0 o=./outdat/out41nfn.csv; IN=6 OUT=3; 2014/06/11 17:41:52
+#END# kgstats c=qtile3 f=数量,金額 i=./indat/dat1s.csv k=顧客 o=./outdat/out42.csv; IN=6 OUT=3; 2014/06/11 17:41:52
+#END# kgstats -x c=qtile3 f=1,2 i=./indat/dat1s.csv k=0 o=./outdat/out42x.csv; IN=6 OUT=3; 2014/06/11 17:41:52
+#END# kgstats -nfn c=qtile3 f=1,2 i=./indat/dat1snfn.csv k=0 o=./outdat/out42nfn.csv; IN=6 OUT=3; 2014/06/11 17:41:52
+#END# kgstats c=qrange f=数量,金額 i=./indat/dat1s.csv k=顧客 o=./outdat/out43.csv; IN=6 OUT=3; 2014/06/11 17:41:52
+#END# kgstats -x c=qrange f=1,2 i=./indat/dat1s.csv k=0 o=./outdat/out43x.csv; IN=6 OUT=3; 2014/06/11 17:41:52
+#END# kgstats -nfn c=qrange f=1,2 i=./indat/dat1snfn.csv k=0 o=./outdat/out43nfn.csv; IN=6 OUT=3; 2014/06/11 17:41:52
+#END# kgstats c=skew f=数量,金額 i=./indat/dat1s.csv k=顧客 o=./outdat/out44.csv; IN=6 OUT=3; 2014/06/11 17:41:52
+#END# kgstats -x c=skew f=1,2 i=./indat/dat1s.csv k=0 o=./outdat/out44x.csv; IN=6 OUT=3; 2014/06/11 17:41:52
+#END# kgstats -nfn c=skew f=1,2 i=./indat/dat1snfn.csv k=0 o=./outdat/out44nfn.csv; IN=6 OUT=3; 2014/06/11 17:41:52
+#END# kgstats c=uskew f=数量,金額 i=./indat/dat1s.csv k=顧客 o=./outdat/out45.csv; IN=6 OUT=3; 2014/06/11 17:41:52
+#END# kgstats -x c=uskew f=1,2 i=./indat/dat1s.csv k=0 o=./outdat/out45x.csv; IN=6 OUT=3; 2014/06/11 17:41:52
+#END# kgstats -nfn c=uskew f=1,2 i=./indat/dat1snfn.csv k=0 o=./outdat/out45nfn.csv; IN=6 OUT=3; 2014/06/11 17:41:52
+#END# kgstats c=kurt f=数量,金額 i=./indat/dat1s.csv k=顧客 o=./outdat/out46.csv; IN=6 OUT=3; 2014/06/11 17:41:52
+#END# kgstats -x c=kurt f=1,2 i=./indat/dat1s.csv k=0 o=./outdat/out46x.csv; IN=6 OUT=3; 2014/06/11 17:41:52
+#END# kgstats -nfn c=kurt f=1,2 i=./indat/dat1snfn.csv k=0 o=./outdat/out46nfn.csv; IN=6 OUT=3; 2014/06/11 17:41:52
+#END# kgstats c=ukurt f=数量,金額 i=./indat/dat1s.csv k=顧客 o=./outdat/out47.csv; IN=6 OUT=3; 2014/06/11 17:41:52
+#END# kgstats -x c=ukurt f=1,2 i=./indat/dat1s.csv k=0 o=./outdat/out47x.csv; IN=6 OUT=3; 2014/06/11 17:41:52
+#END# kgstats -nfn c=ukurt f=1,2 i=./indat/dat1snfn.csv k=0 o=./outdat/out47nfn.csv; IN=6 OUT=3; 2014/06/11 17:41:52
+#END# kgstats c=count f=数量,金額 i=./indat/dat1.csv k=顧客 o=./outdat/out125.csv; IN=6 OUT=3; 2014/06/11 17:41:52
+#END# kgstats -x c=count f=1,2 i=./indat/dat1.csv k=0 o=./outdat/out125x.csv; IN=6 OUT=3; 2014/06/11 17:41:52
+#END# kgstats -nfn c=count f=1,2 i=./indat/dat1nfn.csv k=0 o=./outdat/out125nfn.csv; IN=6 OUT=4; 2014/06/11 17:41:52
+#END# kgstats -q c=count f=数量,金額 i=./indat/dat1.csv k=顧客 o=./outdat/out125q.csv; IN=6 OUT=4; 2014/06/11 17:41:52
+#END# kgstats -q -x c=count f=1,2 i=./indat/dat1.csv k=0 o=./outdat/out125qx.csv; IN=6 OUT=4; 2014/06/11 17:41:52
+#END# kgstats c=ucount f=数量,金額 i=./indat/dat1.csv k=顧客 o=./outdat/out126.csv; IN=6 OUT=3; 2014/06/11 17:41:52
+#END# kgstats -x c=ucount f=1,2 i=./indat/dat1.csv k=0 o=./outdat/out126x.csv; IN=6 OUT=3; 2014/06/11 17:41:52
+#END# kgstats -nfn c=ucount f=1,2 i=./indat/dat1nfn.csv k=0 o=./outdat/out126nfn.csv; IN=6 OUT=4; 2014/06/11 17:41:52
+#END# kgstats c=sum f=数量,金額 i=./indat/dat1.csv k=顧客 o=./outdat/out127.csv; IN=6 OUT=3; 2014/06/11 17:41:52
+#END# kgstats -x c=sum f=1,2 i=./indat/dat1.csv k=0 o=./outdat/out127x.csv; IN=6 OUT=3; 2014/06/11 17:41:52
+#END# kgstats -nfn c=sum f=1,2 i=./indat/dat1nfn.csv k=0 o=./outdat/out127nfn.csv; IN=6 OUT=4; 2014/06/11 17:41:52
+#END# kgstats c=mean f=数量,金額 i=./indat/dat1.csv k=顧客 o=./outdat/out128.csv; IN=6 OUT=3; 2014/06/11 17:41:52
+#END# kgstats -x c=mean f=1,2 i=./indat/dat1.csv k=0 o=./outdat/out128x.csv; IN=6 OUT=3; 2014/06/11 17:41:52
+#END# kgstats -nfn c=mean f=1,2 i=./indat/dat1nfn.csv k=0 o=./outdat/out128nfn.csv; IN=6 OUT=4; 2014/06/11 17:41:52
+#END# kgstats c=devsq f=数量,金額 i=./indat/dat1.csv k=顧客 o=./outdat/out129.csv; IN=6 OUT=3; 2014/06/11 17:41:52
+#END# kgstats -x c=devsq f=1,2 i=./indat/dat1.csv k=0 o=./outdat/out129x.csv; IN=6 OUT=3; 2014/06/11 17:41:52
+#END# kgstats -nfn c=devsq f=1,2 i=./indat/dat1nfn.csv k=0 o=./outdat/out129nfn.csv; IN=6 OUT=4; 2014/06/11 17:41:52
+#END# kgstats c=var f=数量,金額 i=./indat/dat1.csv k=顧客 o=./outdat/out130.csv; IN=6 OUT=3; 2014/06/11 17:41:52
+#END# kgstats -x c=var f=1,2 i=./indat/dat1.csv k=0 o=./outdat/out130x.csv; IN=6 OUT=3; 2014/06/11 17:41:53
+#END# kgstats -nfn c=var f=1,2 i=./indat/dat1nfn.csv k=0 o=./outdat/out130nfn.csv; IN=6 OUT=4; 2014/06/11 17:41:53
+#END# kgstats c=uvar f=数量,金額 i=./indat/dat1.csv k=顧客 o=./outdat/out131.csv; IN=6 OUT=3; 2014/06/11 17:41:53
+#END# kgstats -x c=uvar f=1,2 i=./indat/dat1.csv k=0 o=./outdat/out131x.csv; IN=6 OUT=3; 2014/06/11 17:41:53
+#END# kgstats -nfn c=uvar f=1,2 i=./indat/dat1nfn.csv k=0 o=./outdat/out131nfn.csv; IN=6 OUT=4; 2014/06/11 17:41:53
+#END# kgstats c=sd f=数量,金額 i=./indat/dat1.csv k=顧客 o=./outdat/out132.csv; IN=6 OUT=3; 2014/06/11 17:41:53
+#END# kgstats -x c=sd f=1,2 i=./indat/dat1.csv k=0 o=./outdat/out132x.csv; IN=6 OUT=3; 2014/06/11 17:41:53
+#END# kgstats -nfn c=sd f=1,2 i=./indat/dat1nfn.csv k=0 o=./outdat/out132nfn.csv; IN=6 OUT=4; 2014/06/11 17:41:53
+#END# kgstats c=usd f=数量,金額 i=./indat/dat1.csv k=顧客 o=./outdat/out133.csv; IN=6 OUT=3; 2014/06/11 17:41:53
+#END# kgstats -x c=usd f=1,2 i=./indat/dat1.csv k=0 o=./outdat/out133x.csv; IN=6 OUT=3; 2014/06/11 17:41:53
+#END# kgstats -nfn c=usd f=1,2 i=./indat/dat1nfn.csv k=0 o=./outdat/out133nfn.csv; IN=6 OUT=4; 2014/06/11 17:41:53
+#END# kgstats c=USD f=数量,金額 i=./indat/dat1.csv k=顧客 o=./outdat/out134.csv; IN=6 OUT=3; 2014/06/11 17:41:53
+#END# kgstats -x c=USD f=1,2 i=./indat/dat1.csv k=0 o=./outdat/out134x.csv; IN=6 OUT=3; 2014/06/11 17:41:53
+#END# kgstats -nfn c=USD f=1,2 i=./indat/dat1nfn.csv k=0 o=./outdat/out134nfn.csv; IN=6 OUT=4; 2014/06/11 17:41:53
+#END# kgstats c=cv f=数量,金額 i=./indat/dat1.csv k=顧客 o=./outdat/out135.csv; IN=6 OUT=3; 2014/06/11 17:41:53
+#END# kgstats -x c=cv f=1,2 i=./indat/dat1.csv k=0 o=./outdat/out135x.csv; IN=6 OUT=3; 2014/06/11 17:41:53
+#END# kgstats -nfn c=cv f=1,2 i=./indat/dat1nfn.csv k=0 o=./outdat/out135nfn.csv; IN=6 OUT=4; 2014/06/11 17:41:53
+#END# kgstats c=mode f=数量,金額 i=./indat/dat1.csv k=顧客 o=./outdat/out136.csv; IN=6 OUT=3; 2014/06/11 17:41:53
+#END# kgstats -x c=mode f=1,2 i=./indat/dat1.csv k=0 o=./outdat/out136x.csv; IN=6 OUT=3; 2014/06/11 17:41:53
+#END# kgstats -nfn c=mode f=1,2 i=./indat/dat1nfn.csv k=0 o=./outdat/out136nfn.csv; IN=6 OUT=4; 2014/06/11 17:41:53
+#END# kgstats c=min f=数量,金額 i=./indat/dat1.csv k=顧客 o=./outdat/out137.csv; IN=6 OUT=3; 2014/06/11 17:41:53
+#END# kgstats -x c=min f=1,2 i=./indat/dat1.csv k=0 o=./outdat/out137x.csv; IN=6 OUT=3; 2014/06/11 17:41:53
+#END# kgstats -nfn c=min f=1,2 i=./indat/dat1nfn.csv k=0 o=./outdat/out137nfn.csv; IN=6 OUT=4; 2014/06/11 17:41:53
+#END# kgstats c=max f=数量,金額 i=./indat/dat1.csv k=顧客 o=./outdat/out138.csv; IN=6 OUT=3; 2014/06/11 17:41:53
+#END# kgstats -x c=max f=1,2 i=./indat/dat1.csv k=0 o=./outdat/out138x.csv; IN=6 OUT=3; 2014/06/11 17:41:53
+#END# kgstats -nfn c=max f=1,2 i=./indat/dat1nfn.csv k=0 o=./outdat/out138nfn.csv; IN=6 OUT=4; 2014/06/11 17:41:53
+#END# kgstats c=range f=数量,金額 i=./indat/dat1.csv k=顧客 o=./outdat/out139.csv; IN=6 OUT=3; 2014/06/11 17:41:53
+#END# kgstats -x c=range f=1,2 i=./indat/dat1.csv k=0 o=./outdat/out139x.csv; IN=6 OUT=3; 2014/06/11 17:41:53
+#END# kgstats -nfn c=range f=1,2 i=./indat/dat1nfn.csv k=0 o=./outdat/out139nfn.csv; IN=6 OUT=4; 2014/06/11 17:41:53
+#END# kgstats c=median f=数量,金額 i=./indat/dat1.csv k=顧客 o=./outdat/out140.csv; IN=6 OUT=3; 2014/06/11 17:41:53
+#END# kgstats -x c=median f=1,2 i=./indat/dat1.csv k=0 o=./outdat/out140x.csv; IN=6 OUT=3; 2014/06/11 17:41:53
+#END# kgstats -nfn c=median f=1,2 i=./indat/dat1nfn.csv k=0 o=./outdat/out140nfn.csv; IN=6 OUT=4; 2014/06/11 17:41:53
+#END# kgstats c=qtile1 f=数量,金額 i=./indat/dat1.csv k=顧客 o=./outdat/out141.csv; IN=6 OUT=3; 2014/06/11 17:41:53
+#END# kgstats -x c=qtile1 f=1,2 i=./indat/dat1.csv k=0 o=./outdat/out141x.csv; IN=6 OUT=3; 2014/06/11 17:41:53
+#END# kgstats -nfn c=qtile1 f=1,2 i=./indat/dat1nfn.csv k=0 o=./outdat/out141nfn.csv; IN=6 OUT=4; 2014/06/11 17:41:53
+#END# kgstats c=qtile3 f=数量,金額 i=./indat/dat1.csv k=顧客 o=./outdat/out142.csv; IN=6 OUT=3; 2014/06/11 17:41:53
+#END# kgstats -x c=qtile3 f=1,2 i=./indat/dat1.csv k=0 o=./outdat/out142x.csv; IN=6 OUT=3; 2014/06/11 17:41:53
+#END# kgstats -nfn c=qtile3 f=1,2 i=./indat/dat1nfn.csv k=0 o=./outdat/out142nfn.csv; IN=6 OUT=4; 2014/06/11 17:41:53
+#END# kgstats c=qrange f=数量,金額 i=./indat/dat1.csv k=顧客 o=./outdat/out143.csv; IN=6 OUT=3; 2014/06/11 17:41:53
+#END# kgstats -x c=qrange f=1,2 i=./indat/dat1.csv k=0 o=./outdat/out143x.csv; IN=6 OUT=3; 2014/06/11 17:41:53
+#END# kgstats -nfn c=qrange f=1,2 i=./indat/dat1nfn.csv k=0 o=./outdat/out143nfn.csv; IN=6 OUT=4; 2014/06/11 17:41:53
+#END# kgstats c=skew f=数量,金額 i=./indat/dat1.csv k=顧客 o=./outdat/out144.csv; IN=6 OUT=3; 2014/06/11 17:41:53
+#END# kgstats -x c=skew f=1,2 i=./indat/dat1.csv k=0 o=./outdat/out144x.csv; IN=6 OUT=3; 2014/06/11 17:41:53
+#END# kgstats -nfn c=skew f=1,2 i=./indat/dat1nfn.csv k=0 o=./outdat/out144nfn.csv; IN=6 OUT=4; 2014/06/11 17:41:53
+#END# kgstats c=uskew f=数量,金額 i=./indat/dat1.csv k=顧客 o=./outdat/out145.csv; IN=6 OUT=3; 2014/06/11 17:41:54
+#END# kgstats -x c=uskew f=1,2 i=./indat/dat1.csv k=0 o=./outdat/out145x.csv; IN=6 OUT=3; 2014/06/11 17:41:54
+#END# kgstats -nfn c=uskew f=1,2 i=./indat/dat1nfn.csv k=0 o=./outdat/out145nfn.csv; IN=6 OUT=4; 2014/06/11 17:41:54
+#END# kgstats c=kurt f=数量,金額 i=./indat/dat1.csv k=顧客 o=./outdat/out146.csv; IN=6 OUT=3; 2014/06/11 17:41:54
+#END# kgstats -x c=kurt f=1,2 i=./indat/dat1.csv k=0 o=./outdat/out146x.csv; IN=6 OUT=3; 2014/06/11 17:41:54
+#END# kgstats -nfn c=kurt f=1,2 i=./indat/dat1nfn.csv k=0 o=./outdat/out146nfn.csv; IN=6 OUT=4; 2014/06/11 17:41:54
+#END# kgstats c=ukurt f=数量,金額 i=./indat/dat1.csv k=顧客 o=./outdat/out147.csv; IN=6 OUT=3; 2014/06/11 17:41:54
+#END# kgstats -x c=ukurt f=1,2 i=./indat/dat1.csv k=0 o=./outdat/out147x.csv; IN=6 OUT=3; 2014/06/11 17:41:54
+#END# kgstats -nfn c=ukurt f=1,2 i=./indat/dat1nfn.csv k=0 o=./outdat/out147nfn.csv; IN=6 OUT=4; 2014/06/11 17:41:54

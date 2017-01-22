@@ -1,0 +1,58 @@
+#END# kgsim c=covar,ucovar,pearson,spearman,kendall,euclid,cosine,cityblock,hamming,chi,phi,jaccard,support,lift f=x,y,z i=./indat/dat1.csv o=./outdat/out01.csv; IN=4 OUT=3; 2014/06/10 15:36:24
+#END# kgsim -x c=covar,ucovar,pearson,spearman,kendall,euclid,cosine,cityblock,hamming,chi,phi,jaccard,support,lift f=0,1,2 i=./indat/dat1.csv o=./outdat/out01x.csv; IN=4 OUT=3; 2014/06/10 15:36:24
+#END# kgsim -nfn c=covar,ucovar,pearson,spearman,kendall,euclid,cosine,cityblock,hamming,chi,phi,jaccard,support,lift f=0,1,2 i=./indat/dat1nfn.csv o=./outdat/out01nfn.csv; IN=4 OUT=3; 2014/06/10 15:36:24
+#END# kgsim -nfno c=covar,ucovar,pearson,spearman,kendall,euclid,cosine,cityblock,hamming,chi,phi,jaccard,support,lift f=x,y,z i=./indat/dat1.csv o=./outdat/out01nfno.csv; IN=4 OUT=3; 2014/06/10 15:36:24
+#END# kgsim -d c=pearson,cosine f=x,y,z i=./indat/dat1.csv o=./outdat/out02.csv; IN=4 OUT=9; 2014/06/10 15:36:24
+#END# kgsim -d -x c=pearson,cosine f=0,1,2 i=./indat/dat1.csv o=./outdat/out02x.csv; IN=4 OUT=9; 2014/06/10 15:36:24
+#END# kgsim -d -nfn c=pearson,cosine f=0,1,2 i=./indat/dat1nfn.csv o=./outdat/out02nfn.csv; IN=4 OUT=9; 2014/06/10 15:36:24
+#END# kgsim c=pearson,cosine f=x,y,z i=./indat/dat2s.csv k=key o=./outdat/out03.csv; IN=6 OUT=6; 2014/06/10 15:36:24
+#END# kgsim -x c=pearson,cosine f=1,2,3 i=./indat/dat2s.csv k=0 o=./outdat/out03x.csv; IN=6 OUT=6; 2014/06/10 15:36:24
+#END# kgsim -nfn c=pearson,cosine f=1,2,3 i=./indat/dat2snfn.csv k=0 o=./outdat/out03nfn.csv; IN=6 OUT=6; 2014/06/10 15:36:24
+#END# kgsim c=hamming,phi f=x,y,z i=./indat/dat4.csv o=./outdat/out04.csv; IN=4 OUT=3; 2014/06/10 15:36:24
+#END# kgsim -x c=hamming,phi f=0,1,2 i=./indat/dat4.csv o=./outdat/out04x.csv; IN=4 OUT=3; 2014/06/10 15:36:24
+#END# kgsim -nfn c=hamming,phi f=0,1,2 i=./indat/dat4nfn.csv o=./outdat/out04nfn.csv; IN=4 OUT=3; 2014/06/10 15:36:24
+#END# kgsim a=変数1,変数2 c=hamming:ハミング距離,phi:ファイ係数 f=x,y,z i=./indat/dat4.csv o=./outdat/out05.csv; IN=4 OUT=3; 2014/06/10 15:36:24
+#END# kgsim -x a=変数1,変数2 c=hamming:ハミング距離,phi:ファイ係数 f=0,1,2 i=./indat/dat4.csv o=./outdat/out05x.csv; IN=4 OUT=3; 2014/06/10 15:36:24
+#END# kgsim -nfn c=hamming:ハミング距離,phi:ファイ係数 f=0,1,2 i=./indat/dat4nfn.csv o=./outdat/out05nfn.csv; IN=4 OUT=3; 2014/06/10 15:36:24
+#END# kgsim c=hamming,chi,phi,jaccard,support,lift f=x,y,z i=./indat/dat4.csv o=./outdat/out06.csv; IN=4 OUT=3; 2014/06/10 15:36:24
+#END# kgsim -x c=hamming,chi,phi,jaccard,support,lift f=0,1,2 i=./indat/dat4.csv o=./outdat/out06x.csv; IN=4 OUT=3; 2014/06/10 15:36:24
+#END# kgsim -nfn c=hamming,chi,phi,jaccard,support,lift f=0,1,2 i=./indat/dat4nfn.csv o=./outdat/out06nfn.csv; IN=4 OUT=3; 2014/06/10 15:36:24
+#END# kgsim c=oddsRatio,yuleQ,yuleY,kappa,convMax,convMin f=x,y,z i=./indat/dat4.csv o=./outdat/out12.csv; IN=4 OUT=3; 2014/06/10 15:36:24
+#END# kgsim c=oddsRatio,yuleQ,yuleY,kappa,convMax,convMin f=x,y,z i=./indat/dat5s.csv o=./outdat/out14.csv; IN=8 OUT=3; 2014/06/10 15:36:24
+#END# kgsim c=oddsRatio,yuleQ,yuleY,kappa,convMax,convMin f=x,y,z i=./indat/dat3s.csv o=./outdat/out15.csv; IN=7 OUT=3; 2014/06/10 15:36:24
+#END# kgsim c=oddsRatio,yuleQ,yuleY,kappa,convMax,convMin f=x,y,z i=./indat/dat4.csv o=./outdat/out13.csv precision=3; IN=4 OUT=3; 2014/06/10 15:36:24
+#END# kgsim bufcount=3 c=oddsRatio,yuleQ,yuleY,kappa,convMax,convMin f=x,y,z i=./indat/dat4.csv o=./outdat/out16.csv; IN=4 OUT=3; 2014/06/10 15:36:24
+#END# kgsim bufcount=-3 c=oddsRatio,yuleQ,yuleY,kappa,convMax,convMin f=x,y,z i=./indat/dat4.csv o=./outdat/out17.csv; IN=4 OUT=3; 2014/06/10 15:36:24
+#END# kgsim c=hamming,chi,phi,jaccard,support,lift f=x,y,z i=./indat/dat5s.csv k=key o=./outdat/out07.csv; IN=8 OUT=6; 2014/06/10 15:36:24
+#END# kgsim -x c=hamming,chi,phi,jaccard,support,lift f=1,2,3 i=./indat/dat5s.csv k=0 o=./outdat/out07x.csv; IN=8 OUT=6; 2014/06/10 15:36:24
+#END# kgsim -nfn c=hamming,chi,phi,jaccard,support,lift f=1,2,3 i=./indat/dat5snfn.csv k=0 o=./outdat/out07nfn.csv; IN=8 OUT=6; 2014/06/10 15:36:24
+#END# kgsim c=covar,ucovar,pearson,spearman,kendall,euclid,cosine,cityblock,hamming,chi,phi,jaccard,support,lift f=x,y,z i=./indat/dat2s.csv k=key o=./outdat/out08.csv; IN=6 OUT=6; 2014/06/10 15:36:24
+#END# kgsim -x c=covar,ucovar,pearson,spearman,kendall,euclid,cosine,cityblock,hamming,chi,phi,jaccard,support,lift f=1,2,3 i=./indat/dat2s.csv k=0 o=./outdat/out08x.csv; IN=6 OUT=6; 2014/06/10 15:36:24
+#END# kgsim -nfn c=covar,ucovar,pearson,spearman,kendall,euclid,cosine,cityblock,hamming,chi,phi,jaccard,support,lift f=1,2,3 i=./indat/dat2snfn.csv k=0 o=./outdat/out08nfn.csv; IN=6 OUT=6; 2014/06/10 15:36:25
+#END# kgsim -d c=covar,ucovar,pearson,spearman,kendall,euclid,cosine,cityblock,hamming,chi,phi,jaccard,support,lift f=x,y,z i=./indat/dat2s.csv k=key o=./outdat/out09.csv; IN=6 OUT=18; 2014/06/10 15:36:25
+#END# kgsim -d -x c=covar,ucovar,pearson,spearman,kendall,euclid,cosine,cityblock,hamming,chi,phi,jaccard,support,lift f=1,2,3 i=./indat/dat2s.csv k=0 o=./outdat/out09x.csv; IN=6 OUT=18; 2014/06/10 15:36:25
+#END# kgsim -d -nfn c=covar,ucovar,pearson,spearman,kendall,euclid,cosine,cityblock,hamming,chi,phi,jaccard,support,lift f=1,2,3 i=./indat/dat2snfn.csv k=0 o=./outdat/out09nfn.csv; IN=6 OUT=18; 2014/06/10 15:36:25
+#END# kgsim c=covar,ucovar,pearson,spearman,kendall,euclid,cosine,cityblock,hamming,chi,phi,jaccard,support,lift f=x,y,z i=./indat/dat3s.csv k=key o=./outdat/out10.csv; IN=7 OUT=6; 2014/06/10 15:36:25
+#END# kgsim -x c=covar,ucovar,pearson,spearman,kendall,euclid,cosine,cityblock,hamming,chi,phi,jaccard,support,lift f=1,2,3 i=./indat/dat3s.csv k=0 o=./outdat/out10x.csv; IN=7 OUT=6; 2014/06/10 15:36:25
+#END# kgsim -nfn c=covar,ucovar,pearson,spearman,kendall,euclid,cosine,cityblock,hamming,chi,phi,jaccard,support,lift f=1,2,3 i=./indat/dat3snfn.csv k=0 o=./outdat/out10nfn.csv; IN=7 OUT=6; 2014/06/10 15:36:25
+#END# kgsim c=covar,ucovar,pearson,spearman,kendall,euclid,cosine,cityblock,hamming,chi,phi,jaccard,support,lift f=x,y,z i=./indat/dat0s.csv k=key o=./outdat/out11.csv; IN=0 OUT=0; 2014/06/10 15:36:25
+#END# kgsim -x c=covar,ucovar,pearson,spearman,kendall,euclid,cosine,cityblock,hamming,chi,phi,jaccard,support,lift f=1,2,3 i=./indat/dat0s.csv k=0 o=./outdat/out11x.csv; IN=0 OUT=0; 2014/06/10 15:36:25
+#END# kgsim -nfn c=covar,ucovar,pearson,spearman,kendall,euclid,cosine,cityblock,hamming,chi,phi,jaccard,support,lift f=1,2,3 i=./indat/dat0snfn.csv k=0 o=./outdat/out11nfn.csv; IN=0 OUT=0; 2014/06/10 15:36:25
+#END# kgsim c=pearson,cosine f=x,y,z i=./indat/dat2.csv k=key o=./outdat/out23.csv; IN=6 OUT=6; 2014/06/10 15:36:25
+#END# kgsim -x c=pearson,cosine f=1,2,3 i=./indat/dat2.csv k=0 o=./outdat/out23x.csv; IN=6 OUT=6; 2014/06/10 15:36:25
+#END# kgsim -nfn c=pearson,cosine f=1,2,3 i=./indat/dat2nfn.csv k=0 o=./outdat/out23nfn.csv; IN=6 OUT=12; 2014/06/10 15:36:25
+#END# kgsim c=hamming,chi,phi,jaccard,support,lift f=x,y,z i=./indat/dat5.csv k=key o=./outdat/out27.csv; IN=8 OUT=6; 2014/06/10 15:36:25
+#END# kgsim -x c=hamming,chi,phi,jaccard,support,lift f=1,2,3 i=./indat/dat5.csv k=0 o=./outdat/out27x.csv; IN=8 OUT=6; 2014/06/10 15:36:25
+#END# kgsim -nfn c=hamming,chi,phi,jaccard,support,lift f=1,2,3 i=./indat/dat5nfn.csv k=0 o=./outdat/out27nfn.csv; IN=8 OUT=12; 2014/06/10 15:36:25
+#END# kgsim c=covar,ucovar,pearson,spearman,kendall,euclid,cosine,cityblock,hamming,chi,phi,jaccard,support,lift f=x,y,z i=./indat/dat2.csv k=key o=./outdat/out28.csv; IN=6 OUT=6; 2014/06/10 15:36:25
+#END# kgsim -x c=covar,ucovar,pearson,spearman,kendall,euclid,cosine,cityblock,hamming,chi,phi,jaccard,support,lift f=1,2,3 i=./indat/dat2.csv k=0 o=./outdat/out28x.csv; IN=6 OUT=6; 2014/06/10 15:36:25
+#END# kgsim -nfn c=covar,ucovar,pearson,spearman,kendall,euclid,cosine,cityblock,hamming,chi,phi,jaccard,support,lift f=1,2,3 i=./indat/dat2nfn.csv k=0 o=./outdat/out28nfn.csv; IN=6 OUT=12; 2014/06/10 15:36:25
+#END# kgsim -d c=covar,ucovar,pearson,spearman,kendall,euclid,cosine,cityblock,hamming,chi,phi,jaccard,support,lift f=x,y,z i=./indat/dat2.csv k=key o=./outdat/out29.csv; IN=6 OUT=18; 2014/06/10 15:36:25
+#END# kgsim -d -x c=covar,ucovar,pearson,spearman,kendall,euclid,cosine,cityblock,hamming,chi,phi,jaccard,support,lift f=1,2,3 i=./indat/dat2.csv k=0 o=./outdat/out29x.csv; IN=6 OUT=18; 2014/06/10 15:36:25
+#END# kgsim -d -nfn c=covar,ucovar,pearson,spearman,kendall,euclid,cosine,cityblock,hamming,chi,phi,jaccard,support,lift f=1,2,3 i=./indat/dat2nfn.csv k=0 o=./outdat/out29nfn.csv; IN=6 OUT=36; 2014/06/10 15:36:25
+#END# kgsim c=covar,ucovar,pearson,spearman,kendall,euclid,cosine,cityblock,hamming,chi,phi,jaccard,support,lift f=x,y,z i=./indat/dat3.csv k=key o=./outdat/out30.csv; IN=7 OUT=6; 2014/06/10 15:36:25
+#END# kgsim -x c=covar,ucovar,pearson,spearman,kendall,euclid,cosine,cityblock,hamming,chi,phi,jaccard,support,lift f=1,2,3 i=./indat/dat3.csv k=0 o=./outdat/out30x.csv; IN=7 OUT=6; 2014/06/10 15:36:25
+#END# kgsim -nfn c=covar,ucovar,pearson,spearman,kendall,euclid,cosine,cityblock,hamming,chi,phi,jaccard,support,lift f=1,2,3 i=./indat/dat3nfn.csv k=0 o=./outdat/out30nfn.csv; IN=7 OUT=12; 2014/06/10 15:36:25
+#END# kgsim c=covar,ucovar,pearson,spearman,kendall,euclid,cosine,cityblock,hamming,chi,phi,jaccard,support,lift f=x,y,z i=./indat/dat0.csv k=key o=./outdat/out31.csv; IN=0 OUT=0; 2014/06/10 15:36:25
+#END# kgsim -x c=covar,ucovar,pearson,spearman,kendall,euclid,cosine,cityblock,hamming,chi,phi,jaccard,support,lift f=1,2,3 i=./indat/dat0.csv k=0 o=./outdat/out31x.csv; IN=0 OUT=0; 2014/06/10 15:36:25
+#END# kgsim -nfn c=covar,ucovar,pearson,spearman,kendall,euclid,cosine,cityblock,hamming,chi,phi,jaccard,support,lift f=1,2,3 i=./indat/dat0nfn.csv k=0 o=./outdat/out31nfn.csv; IN=0 OUT=0; 2014/06/10 15:36:25

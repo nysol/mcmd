@@ -1,0 +1,65 @@
+#END# kgaccum f=数量:数量累計,金額:金額累計 i=./indat/dat0.csv k=顧客 o=./outdat/out0.csv s=日付; IN=0 OUT=0; 2014/05/21 15:40:53
+#END# kgaccum -x f=2:数量累計,3:金額累計 i=./indat/dat0.csv k=0 o=./outdat/out0x.csv s=1; IN=0 OUT=0; 2014/05/21 15:40:53
+#END# kgaccum -nfn f=2,3 i=./indat/dat0nfn.csv k=0 o=./outdat/out0nfn.csv s=1; IN=0 OUT=0; 2014/05/21 15:40:53
+#END# kgaccum -nfno f=数量:数量累計,金額:金額累計 i=./indat/dat0.csv k=顧客 o=./outdat/out0nfno.csv s=日付; IN=0 OUT=0; 2014/05/21 15:40:53
+#END# kgaccum f=数量:数量累計,金額:金額累計 i=./indat/dat0s.csv k=顧客 o=./outdat/out0s.csv s=日付; IN=0 OUT=0; 2014/05/21 15:40:53
+#END# kgaccum f=数量:数量累計 i=./indat/dat1.csv k=顧客 o=./outdat/out1.csv s=日付; IN=5 OUT=5; 2014/05/21 15:40:53
+#END# kgaccum -x f=2:数量累計 i=./indat/dat1.csv k=0 o=./outdat/out1x.csv s=1; IN=5 OUT=5; 2014/05/21 15:40:53
+#END# kgaccum -nfn f=2 i=./indat/dat1nfn.csv k=0 o=./outdat/out1nfn.csv s=1; IN=5 OUT=5; 2014/05/21 15:40:53
+#END# kgaccum -nfno f=数量:数量累計 i=./indat/dat1.csv k=顧客 o=./outdat/out1nfno.csv s=日付; IN=5 OUT=5; 2014/05/21 15:40:53
+#END# kgaccum f=数量:数量累計 i=./indat/dat1s.csv k=顧客 o=./outdat/out1s.csv s=日付; IN=5 OUT=5; 2014/05/21 15:40:53
+#END# kgaccum f=数量:数量累計,金額:金額累計 i=./indat/dat1.csv k=顧客 o=./outdat/out2.csv s=日付; IN=5 OUT=5; 2014/05/21 15:40:53
+#END# kgaccum -x f=2:数量累計,3:金額累計 i=./indat/dat1.csv k=0 o=./outdat/out2x.csv s=1; IN=5 OUT=5; 2014/05/21 15:40:53
+#END# kgaccum -nfn f=2,3 i=./indat/dat1nfn.csv k=0 o=./outdat/out2nfn.csv s=1; IN=5 OUT=5; 2014/05/21 15:40:53
+#END# kgaccum -nfno f=数量:数量累計,金額:金額累計 i=./indat/dat1.csv k=顧客 o=./outdat/out2nfno.csv s=日付; IN=5 OUT=5; 2014/05/21 15:40:53
+#END# kgaccum f=数量:数量累計,金額:金額累計 i=./indat/dat1s.csv k=顧客 o=./outdat/out2s.csv s=日付; IN=5 OUT=5; 2014/05/21 15:40:53
+#END# kgaccum f=数量:数量累計,金額:金額累計 i=./indat/dat1.csv o=./outdat/out3.csv s=日付; IN=5 OUT=5; 2014/05/21 15:40:53
+#END# kgaccum -x f=2:数量累計,3:金額累計 i=./indat/dat1.csv o=./outdat/out3x.csv s=1; IN=5 OUT=5; 2014/05/21 15:40:53
+#END# kgaccum -nfn f=2,3 i=./indat/dat1nfn.csv o=./outdat/out3nfn.csv s=1; IN=5 OUT=5; 2014/05/21 15:40:53
+#END# kgaccum -nfno f=数量:数量累計,金額:金額累計 i=./indat/dat1.csv o=./outdat/out3nfno.csv s=日付; IN=5 OUT=5; 2014/05/21 15:40:53
+#END# kgaccum f=数量:数量累計,金額:金額累計 i=./indat/dat1s.csv o=./outdat/out3s.csv s=日付; IN=5 OUT=5; 2014/05/21 15:40:53
+#END# kgaccum f=数量:数量累計 i=./indat/dat3.csv k=顧客,日付 o=./outdat/out4.csv s=時間; IN=9 OUT=9; 2014/05/21 15:40:53
+#END# kgaccum -x f=3:数量累計 i=./indat/dat3.csv k=0,1 o=./outdat/out4x.csv s=2; IN=9 OUT=9; 2014/05/21 15:40:53
+#END# kgaccum -nfn f=3 i=./indat/dat3nfn.csv k=0,1 o=./outdat/out4nfn.csv s=2; IN=9 OUT=9; 2014/05/21 15:40:53
+#END# kgaccum -nfno f=数量:数量累計 i=./indat/dat3.csv k=顧客,日付 o=./outdat/out4nfno.csv s=時間; IN=9 OUT=9; 2014/05/21 15:40:53
+#END# kgaccum f=数量:数量累計 i=./indat/dat3s.csv k=顧客,日付 o=./outdat/out4s.csv s=時間; IN=9 OUT=9; 2014/05/21 15:40:53
+#END# kgaccum f=数量:数量累計,金額:金額累計 i=./indat/dat3.csv k=顧客,日付 o=./outdat/out5.csv s=時間; IN=9 OUT=9; 2014/05/21 15:40:53
+#END# kgaccum -x f=3:数量累計,4:金額累計 i=./indat/dat3.csv k=0,1 o=./outdat/out5x.csv s=2; IN=9 OUT=9; 2014/05/21 15:40:53
+#END# kgaccum -nfn f=3,4 i=./indat/dat3nfn.csv k=0,1 o=./outdat/out5nfn.csv s=2; IN=9 OUT=9; 2014/05/21 15:40:53
+#END# kgaccum -nfno f=数量:数量累計,金額:金額累計 i=./indat/dat3.csv k=顧客,日付 o=./outdat/out5nfno.csv s=時間; IN=9 OUT=9; 2014/05/21 15:40:53
+#END# kgaccum f=数量:数量累計,金額:金額累計 i=./indat/dat3s.csv k=顧客,日付 o=./outdat/out5s.csv s=時間; IN=9 OUT=9; 2014/05/21 15:40:53
+#END# kgaccum f=数量:数量累計,金額:金額累計 i=./indat/dat2.csv o=./outdat/out6.csv s=日付; IN=5 OUT=5; 2014/05/21 15:40:53
+#END# kgaccum -x f=2:数量累計,3:金額累計 i=./indat/dat2.csv o=./outdat/out6x.csv s=1; IN=5 OUT=5; 2014/05/21 15:40:53
+#END# kgaccum -nfn f=2,3 i=./indat/dat2nfn.csv o=./outdat/out6nfn.csv s=1; IN=5 OUT=5; 2014/05/21 15:40:53
+#END# kgaccum -nfno f=数量:数量累計,金額:金額累計 i=./indat/dat2.csv o=./outdat/out6nfno.csv s=日付; IN=5 OUT=5; 2014/05/21 15:40:53
+#END# kgaccum f=数量:数量累計,金額:金額累計 i=./indat/dat2s.csv o=./outdat/out6s.csv s=日付; IN=5 OUT=5; 2014/05/21 15:40:53
+#END# kgaccum f=数量:数量累計,金額:金額累計 i=./indat/dat2.csv k=顧客 o=./outdat/out7.csv s=日付; IN=5 OUT=5; 2014/05/21 15:40:53
+#END# kgaccum -x f=2:数量累計,3:金額累計 i=./indat/dat2.csv k=0 o=./outdat/out7x.csv s=1; IN=5 OUT=5; 2014/05/21 15:40:53
+#END# kgaccum -nfn f=2,3 i=./indat/dat2nfn.csv k=0 o=./outdat/out7nfn.csv s=1; IN=5 OUT=5; 2014/05/21 15:40:53
+#END# kgaccum -nfno f=数量:数量累計,金額:金額累計 i=./indat/dat2.csv k=顧客 o=./outdat/out7nfno.csv s=日付; IN=5 OUT=5; 2014/05/21 15:40:53
+#END# kgaccum f=数量:数量累計,金額:金額累計 i=./indat/dat2s.csv k=顧客 o=./outdat/out7s.csv s=日付; IN=5 OUT=5; 2014/05/21 15:40:53
+#END# kgaccum f=数量:数量累計,金額:金額累計 i=./indat/dat4.csv k=顧客,日付 o=./outdat/out8.csv s=時間; IN=9 OUT=9; 2014/05/21 15:40:53
+#END# kgaccum -x f=3:数量累計,4:金額累計 i=./indat/dat4.csv k=0,1 o=./outdat/out8x.csv s=2; IN=9 OUT=9; 2014/05/21 15:40:53
+#END# kgaccum -nfn f=3,4 i=./indat/dat4nfn.csv k=0,1 o=./outdat/out8nfn.csv s=2; IN=9 OUT=9; 2014/05/21 15:40:54
+#END# kgaccum -nfno f=数量:数量累計,金額:金額累計 i=./indat/dat4.csv k=顧客,日付 o=./outdat/out8nfno.csv s=時間; IN=9 OUT=9; 2014/05/21 15:40:54
+#END# kgaccum f=数量:数量累計,金額:金額累計 i=./indat/dat4s.csv k=顧客,日付 o=./outdat/out8s.csv s=時間; IN=9 OUT=9; 2014/05/21 15:40:54
+#END# kgaccum f=数量:数量累計,金額:金額累計 i=./indat/dat1.csv k=顧客 o=./outdat/out9.csv s=日付%n; IN=5 OUT=5; 2014/05/21 15:40:54
+#END# kgaccum -x f=2:数量累計,3:金額累計 i=./indat/dat1.csv k=0 o=./outdat/out9x.csv s=1%n; IN=5 OUT=5; 2014/05/21 15:40:54
+#END# kgaccum -nfn f=2,3 i=./indat/dat1nfn.csv k=0 o=./outdat/out9nfn.csv s=1%n; IN=5 OUT=5; 2014/05/21 15:40:54
+#END# kgaccum -nfno f=数量:数量累計,金額:金額累計 i=./indat/dat1.csv k=顧客 o=./outdat/out9nfno.csv s=日付%n; IN=5 OUT=5; 2014/05/21 15:40:54
+#END# kgaccum f=数量:数量累計,金額:金額累計 i=./indat/dat1.csv k=顧客 o=./outdat/out10.csv s=日付%nr; IN=5 OUT=5; 2014/05/21 15:40:54
+#END# kgaccum -x f=2:数量累計,3:金額累計 i=./indat/dat1.csv k=0 o=./outdat/out10x.csv s=1%nr; IN=5 OUT=5; 2014/05/21 15:40:54
+#END# kgaccum -nfn f=2,3 i=./indat/dat1nfn.csv k=0 o=./outdat/out10nfn.csv s=1%nr; IN=5 OUT=5; 2014/05/21 15:40:54
+#END# kgaccum -nfno f=数量:数量累計,金額:金額累計 i=./indat/dat1.csv k=顧客 o=./outdat/out10nfno.csv s=日付%nr; IN=5 OUT=5; 2014/05/21 15:40:54
+#END# kgaccum f=数量:数量累計,金額:金額累計 i=./indat/dat1.csv k=顧客 o=./outdat/out11.csv s=日付%r; IN=5 OUT=5; 2014/05/21 15:40:54
+#END# kgaccum -x f=2:数量累計,3:金額累計 i=./indat/dat1.csv k=0 o=./outdat/out11x.csv s=1%r; IN=5 OUT=5; 2014/05/21 15:40:54
+#END# kgaccum -nfn f=2,3 i=./indat/dat1nfn.csv k=0 o=./outdat/out11nfn.csv s=1%r; IN=5 OUT=5; 2014/05/21 15:40:54
+#END# kgaccum -nfno f=数量:数量累計,金額:金額累計 i=./indat/dat1.csv k=顧客 o=./outdat/out11nfno.csv s=日付%r; IN=5 OUT=5; 2014/05/21 15:40:54
+#END# kgaccum f=数量:数量累計,金額:金額累計 i=./indat/dat4.csv k=顧客 o=./outdat/out12.csv s=日付,時間; IN=9 OUT=9; 2014/05/21 15:40:54
+#END# kgaccum -x f=3:数量累計,4:金額累計 i=./indat/dat4.csv k=0 o=./outdat/out12x.csv s=1,2; IN=9 OUT=9; 2014/05/21 15:40:54
+#END# kgaccum -nfn f=3,4 i=./indat/dat4nfn.csv k=0 o=./outdat/out12nfn.csv s=1,2; IN=9 OUT=9; 2014/05/21 15:40:54
+#END# kgaccum -nfno f=数量:数量累計,金額:金額累計 i=./indat/dat4.csv k=顧客 o=./outdat/out12nfno.csv s=日付,時間; IN=9 OUT=9; 2014/05/21 15:40:54
+#END# kgaccum -q f=数量:数量累計,金額:金額累計 i=./indat/dat1.csv k=顧客 o=./outdat/out13.csv s=日付%n; IN=5 OUT=5; 2014/05/21 15:40:54
+#END# kgaccum -q -x f=2:数量累計,3:金額累計 i=./indat/dat1.csv k=0 o=./outdat/out13x.csv s=1%n; IN=5 OUT=5; 2014/05/21 15:40:54
+#END# kgaccum -nfn -q f=2,3 i=./indat/dat1nfn.csv k=0 o=./outdat/out13nfn.csv s=1%n; IN=5 OUT=5; 2014/05/21 15:40:54
+#END# kgaccum -nfno -q f=数量:数量累計,金額:金額累計 i=./indat/dat1.csv k=顧客 o=./outdat/out13nfno.csv s=日付%n; IN=5 OUT=5; 2014/05/21 15:40:54

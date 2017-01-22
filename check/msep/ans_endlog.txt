@@ -1,0 +1,25 @@
+#END# kgsep d=./outdat/${日付}.csv i=./indat/dat0s.csv; IN=0 OUT=0; 2014/06/10 02:48:19
+#END# kgsep -x d=./outdat/${1}x.csv i=./indat/dat0s.csv; IN=0 OUT=0; 2014/06/10 02:48:19
+#END# kgsep -nfn d=./outdat/${1}nfn.csv i=./indat/dat0snfn.csv; IN=0 OUT=0; 2014/06/10 02:48:19
+#END# kgsep d=./outdat/out${日付}.csv i=./indat/dat1s.csv; IN=5 OUT=2; 2014/06/10 02:48:19
+#END# kgsep -x d=./outdat/out${1}x.csv i=./indat/dat1s.csv; IN=5 OUT=2; 2014/06/10 02:48:19
+#END# kgsep -nfn d=./outdat/out${1}nfn.csv i=./indat/dat1snfn.csv; IN=5 OUT=2; 2014/06/10 02:48:19
+#END# kgsep -q d=./outdat/out${日付}q.csv i=./indat/dat1s.csv; IN=5 OUT=2; 2014/06/10 02:48:20
+#END# kgsep -q -x d=./outdat/out${1}qx.csv i=./indat/dat1s.csv; IN=5 OUT=2; 2014/06/10 02:48:20
+#END# kgsep d=./outdat/out-${商品}-${日付}.csv i=./indat/dat2s.csv; IN=9 OUT=1; 2014/06/10 02:48:20
+#END# kgsep -x d=./outdat/out-${0}-${1}x.csv i=./indat/dat2s.csv; IN=9 OUT=1; 2014/06/10 02:48:20
+#END# kgsep -nfn d=./outdat/out-${0}-${1}nfn.csv i=./indat/dat2snfn.csv; IN=9 OUT=1; 2014/06/10 02:48:20
+#END# kgsep -p d=./outdat/${商品}/out${日付}.csv i=./indat/dat2s.csv; IN=9 OUT=1; 2014/06/10 02:48:20
+#END# kgsep -p -x d=./outdat/${0}/out${1}x.csv i=./indat/dat2s.csv; IN=9 OUT=1; 2014/06/10 02:48:20
+#END# kgsep -nfn -p d=./outdat/${0}/out${1}nfn.csv i=./indat/dat2snfn.csv; IN=9 OUT=1; 2014/06/10 02:48:20
+#END# kgsep d=./outdat/outr${日付}.csv i=./indat/dat1.csv; IN=5 OUT=2; 2014/06/10 02:48:20
+#END# kgsep -x d=./outdat/outr${1}x.csv i=./indat/dat1.csv; IN=5 OUT=2; 2014/06/10 02:48:20
+#END# kgsep -nfn d=./outdat/outr${1}nfn.csv i=./indat/dat1nfn.csv; IN=5 OUT=1; 2014/06/10 02:48:20
+#END# kgsep -q d=./outdat/outr${日付}q.csv i=./indat/dat1.csv; IN=5 OUT=1; 2014/06/10 02:48:20
+#END# kgsep -q -x d=./outdat/outr${1}qx.csv i=./indat/dat1.csv; IN=5 OUT=1; 2014/06/10 02:48:20
+#END# kgsep d=./outdat/outr-${商品}-${日付}.csv i=./indat/dat2.csv; IN=9 OUT=1; 2014/06/10 02:48:20
+#END# kgsep -x d=./outdat/outr-${0}-${1}x.csv i=./indat/dat2.csv; IN=9 OUT=1; 2014/06/10 02:48:20
+#END# kgsep -nfn d=./outdat/outr-${0}-${1}nfn.csv i=./indat/dat2nfn.csv; IN=9 OUT=1; 2014/06/10 02:48:20
+#END# kgsep -p d=./outdat/${商品}/outr${日付}.csv i=./indat/dat2.csv; IN=9 OUT=1; 2014/06/10 02:48:20
+#END# kgsep -p -x d=./outdat/${0}/outr${1}x.csv i=./indat/dat2.csv; IN=9 OUT=1; 2014/06/10 02:48:20
+#END# kgsep -nfn -p d=./outdat/${0}/outr${1}nfn.csv i=./indat/dat2nfn.csv; IN=9 OUT=1; 2014/06/10 02:48:20

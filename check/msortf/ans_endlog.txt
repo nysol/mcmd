@@ -1,0 +1,108 @@
+#END# kgsortf f=商品,日付,数量,金額 i=./indat/dat0.csv o=./outdat/out01.csv; IN=0 OUT=0; 2014/06/11 14:18:56
+#END# kgsortf -x f=0,1,2,3 i=./indat/dat0.csv o=./outdat/out01x.csv; IN=0 OUT=0; 2014/06/11 14:18:56
+#END# kgsortf -nfn f=0,1,2,3 i=./indat/dat0nfn.csv o=./outdat/out01nfn.csv; IN=0 OUT=0; 2014/06/11 14:18:56
+#END# kgsortf f=商品 i=./indat/dat1.csv o=./outdat/out02.csv; IN=6 OUT=6; 2014/06/11 14:18:56
+#END# kgsortf -x f=0 i=./indat/dat1.csv o=./outdat/out02x.csv; IN=6 OUT=6; 2014/06/11 14:18:56
+#END# kgsortf -nfn f=0 i=./indat/dat1nfn.csv o=./outdat/out02nfn.csv; IN=6 OUT=6; 2014/06/11 14:18:56
+#END# kgsortf -nfno f=商品 i=./indat/dat1.csv o=./outdat/out02nfno.csv; IN=6 OUT=6; 2014/06/11 14:18:56
+#END# kgsortf f=商品,日付 i=./indat/dat1.csv o=./outdat/out03.csv; IN=6 OUT=6; 2014/06/11 14:18:56
+#END# kgsortf -x f=0,1 i=./indat/dat1.csv o=./outdat/out03x.csv; IN=6 OUT=6; 2014/06/11 14:18:56
+#END# kgsortf -nfn f=0,1 i=./indat/dat1nfn.csv o=./outdat/out03nfn.csv; IN=6 OUT=6; 2014/06/11 14:18:56
+#END# kgsortf f=商品,日付,数量 i=./indat/dat1.csv o=./outdat/out04.csv; IN=6 OUT=6; 2014/06/11 14:18:56
+#END# kgsortf -x f=0,1,2 i=./indat/dat1.csv o=./outdat/out04x.csv; IN=6 OUT=6; 2014/06/11 14:18:56
+#END# kgsortf -nfn f=0,1,2 i=./indat/dat1nfn.csv o=./outdat/out04nfn.csv; IN=6 OUT=6; 2014/06/11 14:18:56
+#END# kgsortf f=商品,日付,数量,金額 i=./indat/dat1.csv o=./outdat/out05.csv; IN=6 OUT=6; 2014/06/11 14:18:56
+#END# kgsortf -x f=0,1,2,3 i=./indat/dat1.csv o=./outdat/out05x.csv; IN=6 OUT=6; 2014/06/11 14:18:56
+#END# kgsortf -nfn f=0,1,2,3 i=./indat/dat1nfn.csv o=./outdat/out05nfn.csv; IN=6 OUT=6; 2014/06/11 14:18:56
+#END# kgsortf f=商品,数量%n,金額%n i=./indat/dat1.csv o=./outdat/out06.csv; IN=6 OUT=6; 2014/06/11 14:18:56
+#END# kgsortf -x f=0,2%n,3%n i=./indat/dat1.csv o=./outdat/out06x.csv; IN=6 OUT=6; 2014/06/11 14:18:56
+#END# kgsortf -nfn f=0,2%n,3%n i=./indat/dat1nfn.csv o=./outdat/out06nfn.csv; IN=6 OUT=6; 2014/06/11 14:18:56
+#END# kgsortf f=金額%nr i=./indat/dat1.csv o=./outdat/out07.csv; IN=6 OUT=6; 2014/06/11 14:18:56
+#END# kgsortf -x f=3%nr i=./indat/dat1.csv o=./outdat/out07x.csv; IN=6 OUT=6; 2014/06/11 14:18:56
+#END# kgsortf -nfn f=3%nr i=./indat/dat1nfn.csv o=./outdat/out07nfn.csv; IN=6 OUT=6; 2014/06/11 14:18:56
+#END# kgsortf f=数量%nr i=./indat/dat1.csv o=./outdat/out08.csv; IN=6 OUT=6; 2014/06/11 14:18:56
+#END# kgsortf -x f=2%nr i=./indat/dat1.csv o=./outdat/out08x.csv; IN=6 OUT=6; 2014/06/11 14:18:56
+#END# kgsortf -nfn f=2%nr i=./indat/dat1nfn.csv o=./outdat/out08nfn.csv; IN=6 OUT=6; 2014/06/11 14:18:56
+#END# kgsortf f=数量%nr,金額%nr i=./indat/dat1.csv o=./outdat/out09.csv; IN=6 OUT=6; 2014/06/11 14:18:56
+#END# kgsortf -x f=2%nr,3%nr i=./indat/dat1.csv o=./outdat/out09x.csv; IN=6 OUT=6; 2014/06/11 14:18:56
+#END# kgsortf -nfn f=2%nr,3%nr i=./indat/dat1nfn.csv o=./outdat/out09nfn.csv; IN=6 OUT=6; 2014/06/11 14:18:56
+#END# kgsortf f=数量%nr,金額%n i=./indat/dat1.csv o=./outdat/out10.csv; IN=6 OUT=6; 2014/06/11 14:18:56
+#END# kgsortf -x f=2%nr,3%n i=./indat/dat1.csv o=./outdat/out10x.csv; IN=6 OUT=6; 2014/06/11 14:18:57
+#END# kgsortf -nfn f=2%nr,3%n i=./indat/dat1nfn.csv o=./outdat/out10nfn.csv; IN=6 OUT=6; 2014/06/11 14:18:57
+#END# kgsortf f=数量%n,金額%nr i=./indat/dat1.csv o=./outdat/out11.csv; IN=6 OUT=6; 2014/06/11 14:18:57
+#END# kgsortf -x f=2%n,3%nr i=./indat/dat1.csv o=./outdat/out11x.csv; IN=6 OUT=6; 2014/06/11 14:18:57
+#END# kgsortf -nfn f=2%n,3%nr i=./indat/dat1nfn.csv o=./outdat/out11nfn.csv; IN=6 OUT=6; 2014/06/11 14:18:57
+#END# kgsortf f=商品%r i=./indat/dat1.csv o=./outdat/out12.csv; IN=6 OUT=6; 2014/06/11 14:18:57
+#END# kgsortf -x f=0%r i=./indat/dat1.csv o=./outdat/out12x.csv; IN=6 OUT=6; 2014/06/11 14:18:57
+#END# kgsortf -nfn f=0%r i=./indat/dat1nfn.csv o=./outdat/out12nfn.csv; IN=6 OUT=6; 2014/06/11 14:18:57
+#END# kgsortf f=商品%nr i=./indat/dat1.csv o=./outdat/out13.csv; IN=6 OUT=6; 2014/06/11 14:18:57
+#END# kgsortf -x f=0%nr i=./indat/dat1.csv o=./outdat/out13x.csv; IN=6 OUT=6; 2014/06/11 14:18:57
+#END# kgsortf -nfn f=0%nr i=./indat/dat1nfn.csv o=./outdat/out13nfn.csv; IN=6 OUT=6; 2014/06/11 14:18:57
+#END# kgsortf f=商品%r,日付 i=./indat/dat1.csv o=./outdat/out14.csv; IN=6 OUT=6; 2014/06/11 14:18:57
+#END# kgsortf -x f=0%r,1 i=./indat/dat1.csv o=./outdat/out14x.csv; IN=6 OUT=6; 2014/06/11 14:18:57
+#END# kgsortf -nfn f=0%r,1 i=./indat/dat1nfn.csv o=./outdat/out14nfn.csv; IN=6 OUT=6; 2014/06/11 14:18:57
+#END# kgsortf f=商品,日付%r i=./indat/dat1.csv o=./outdat/out15.csv; IN=6 OUT=6; 2014/06/11 14:18:57
+#END# kgsortf -x f=0,1%r i=./indat/dat1.csv o=./outdat/out15x.csv; IN=6 OUT=6; 2014/06/11 14:18:57
+#END# kgsortf -nfn f=0,1%r i=./indat/dat1nfn.csv o=./outdat/out15nfn.csv; IN=6 OUT=6; 2014/06/11 14:18:57
+#END# kgsortf f=商品%r,日付%r i=./indat/dat1.csv o=./outdat/out16.csv; IN=6 OUT=6; 2014/06/11 14:18:57
+#END# kgsortf -x f=0%r,1%r i=./indat/dat1.csv o=./outdat/out16x.csv; IN=6 OUT=6; 2014/06/11 14:18:57
+#END# kgsortf -nfn f=0%r,1%r i=./indat/dat1nfn.csv o=./outdat/out16nfn.csv; IN=6 OUT=6; 2014/06/11 14:18:57
+#END# kgsortf f=商品 i=./indat/dat2.csv o=./outdat/out17.csv; IN=6 OUT=6; 2014/06/11 14:18:57
+#END# kgsortf -x f=0 i=./indat/dat2.csv o=./outdat/out17x.csv; IN=6 OUT=6; 2014/06/11 14:18:57
+#END# kgsortf -nfn f=0 i=./indat/dat2nfn.csv o=./outdat/out17nfn.csv; IN=6 OUT=6; 2014/06/11 14:18:57
+#END# kgsortf f=商品,日付 i=./indat/dat2.csv o=./outdat/out18.csv; IN=6 OUT=6; 2014/06/11 14:18:57
+#END# kgsortf -x f=0,1 i=./indat/dat2.csv o=./outdat/out18x.csv; IN=6 OUT=6; 2014/06/11 14:18:57
+#END# kgsortf -nfn f=0,1 i=./indat/dat2nfn.csv o=./outdat/out18nfn.csv; IN=6 OUT=6; 2014/06/11 14:18:57
+#END# kgsortf f=商品,日付,数量 i=./indat/dat2.csv o=./outdat/out19.csv; IN=6 OUT=6; 2014/06/11 14:18:57
+#END# kgsortf -x f=0,1,2 i=./indat/dat2.csv o=./outdat/out19x.csv; IN=6 OUT=6; 2014/06/11 14:18:57
+#END# kgsortf -nfn f=0,1,2 i=./indat/dat2nfn.csv o=./outdat/out19nfn.csv; IN=6 OUT=6; 2014/06/11 14:18:57
+#END# kgsortf f=商品,日付,数量,金額 i=./indat/dat2.csv o=./outdat/out20.csv; IN=6 OUT=6; 2014/06/11 14:18:57
+#END# kgsortf -x f=0,1,2,3 i=./indat/dat2.csv o=./outdat/out20x.csv; IN=6 OUT=6; 2014/06/11 14:18:57
+#END# kgsortf -nfn f=0,1,2,3 i=./indat/dat2nfn.csv o=./outdat/out20nfn.csv; IN=6 OUT=6; 2014/06/11 14:18:57
+#END# kgsortf f=商品,数量%n,金額%n i=./indat/dat2.csv o=./outdat/out21.csv; IN=6 OUT=6; 2014/06/11 14:18:57
+#END# kgsortf -x f=0,2%n,3%n i=./indat/dat2.csv o=./outdat/out21x.csv; IN=6 OUT=6; 2014/06/11 14:18:57
+#END# kgsortf -nfn f=0,2%n,3%n i=./indat/dat2nfn.csv o=./outdat/out21nfn.csv; IN=6 OUT=6; 2014/06/11 14:18:57
+#END# kgsortf f=金額%nr i=./indat/dat2.csv o=./outdat/out22.csv; IN=6 OUT=6; 2014/06/11 14:18:57
+#END# kgsortf -x f=3%nr i=./indat/dat2.csv o=./outdat/out22x.csv; IN=6 OUT=6; 2014/06/11 14:18:57
+#END# kgsortf -nfn f=3%nr i=./indat/dat2nfn.csv o=./outdat/out22nfn.csv; IN=6 OUT=6; 2014/06/11 14:18:57
+#END# kgsortf f=数量%nr i=./indat/dat2.csv o=./outdat/out23.csv; IN=6 OUT=6; 2014/06/11 14:18:57
+#END# kgsortf -x f=2%nr i=./indat/dat2.csv o=./outdat/out23x.csv; IN=6 OUT=6; 2014/06/11 14:18:57
+#END# kgsortf -nfn f=2%nr i=./indat/dat2nfn.csv o=./outdat/out23nfn.csv; IN=6 OUT=6; 2014/06/11 14:18:57
+#END# kgsortf f=数量%nr,金額%nr i=./indat/dat2.csv o=./outdat/out24.csv; IN=6 OUT=6; 2014/06/11 14:18:57
+#END# kgsortf -x f=2%nr,3%nr i=./indat/dat2.csv o=./outdat/out24x.csv; IN=6 OUT=6; 2014/06/11 14:18:57
+#END# kgsortf -nfn f=2%nr,3%nr i=./indat/dat2nfn.csv o=./outdat/out24nfn.csv; IN=6 OUT=6; 2014/06/11 14:18:57
+#END# kgsortf f=数量%nr,金額%n i=./indat/dat2.csv o=./outdat/out25.csv; IN=6 OUT=6; 2014/06/11 14:18:57
+#END# kgsortf -x f=2%nr,3%n i=./indat/dat2.csv o=./outdat/out25x.csv; IN=6 OUT=6; 2014/06/11 14:18:57
+#END# kgsortf -nfn f=2%nr,3%n i=./indat/dat2nfn.csv o=./outdat/out25nfn.csv; IN=6 OUT=6; 2014/06/11 14:18:57
+#END# kgsortf f=数量%n,金額%nr i=./indat/dat2.csv o=./outdat/out26.csv; IN=6 OUT=6; 2014/06/11 14:18:57
+#END# kgsortf -x f=2%n,3%nr i=./indat/dat2.csv o=./outdat/out26x.csv; IN=6 OUT=6; 2014/06/11 14:18:57
+#END# kgsortf -nfn f=2%n,3%nr i=./indat/dat2nfn.csv o=./outdat/out26nfn.csv; IN=6 OUT=6; 2014/06/11 14:18:57
+#END# kgsortf f=商品%r i=./indat/dat2.csv o=./outdat/out27.csv; IN=6 OUT=6; 2014/06/11 14:18:57
+#END# kgsortf -x f=0%r i=./indat/dat2.csv o=./outdat/out27x.csv; IN=6 OUT=6; 2014/06/11 14:18:57
+#END# kgsortf -nfn f=0%r i=./indat/dat2nfn.csv o=./outdat/out27nfn.csv; IN=6 OUT=6; 2014/06/11 14:18:57
+#END# kgsortf f=商品%nr i=./indat/dat2.csv o=./outdat/out28.csv; IN=6 OUT=6; 2014/06/11 14:18:57
+#END# kgsortf -x f=0%nr i=./indat/dat2.csv o=./outdat/out28x.csv; IN=6 OUT=6; 2014/06/11 14:18:57
+#END# kgsortf -nfn f=0%nr i=./indat/dat2nfn.csv o=./outdat/out28nfn.csv; IN=6 OUT=6; 2014/06/11 14:18:57
+#END# kgsortf f=商品%r,日付 i=./indat/dat2.csv o=./outdat/out29.csv; IN=6 OUT=6; 2014/06/11 14:18:57
+#END# kgsortf -x f=0%r,1 i=./indat/dat2.csv o=./outdat/out29x.csv; IN=6 OUT=6; 2014/06/11 14:18:57
+#END# kgsortf -nfn f=0%r,1 i=./indat/dat2nfn.csv o=./outdat/out29nfn.csv; IN=6 OUT=6; 2014/06/11 14:18:57
+#END# kgsortf f=商品,日付%r i=./indat/dat2.csv o=./outdat/out30.csv; IN=6 OUT=6; 2014/06/11 14:18:57
+#END# kgsortf -x f=0,1%r i=./indat/dat2.csv o=./outdat/out30x.csv; IN=6 OUT=6; 2014/06/11 14:18:57
+#END# kgsortf -nfn f=0,1%r i=./indat/dat2nfn.csv o=./outdat/out30nfn.csv; IN=6 OUT=6; 2014/06/11 14:18:57
+#END# kgsortf f=商品%r,日付%r i=./indat/dat2.csv o=./outdat/out31.csv; IN=6 OUT=6; 2014/06/11 14:18:57
+#END# kgsortf -x f=0%r,1%r i=./indat/dat2.csv o=./outdat/out31x.csv; IN=6 OUT=6; 2014/06/11 14:18:57
+#END# kgsortf -nfn f=0%r,1%r i=./indat/dat2nfn.csv o=./outdat/out31nfn.csv; IN=6 OUT=6; 2014/06/11 14:18:57
+#END# kgsortf blocks=1 f=商品 i=./indat/dat2.csv o=./outdat/out31-1.csv; IN=6 OUT=6; 2014/06/11 14:18:57
+#END# kgsortf f=商品%r,日付%r i=./indat/dat2.csv o=./outdat/out36.csv pways=3; IN=6 OUT=6; 2014/06/11 14:18:57
+#END# kgsortf f=item i=./indat/dat3.csv o=./outdat/out32.csv; IN=10000 OUT=10000; 2014/06/11 14:18:57
+#END# kgsortf f=item%r i=./indat/dat3.csv o=./outdat/out33.csv; IN=10000 OUT=10000; 2014/06/11 14:18:57
+#END# kgsortf f=item%n i=./indat/dat3n.csv o=./outdat/out34.csv; IN=10000 OUT=10000; 2014/06/11 14:18:57
+#END# kgsortf f=item%nr i=./indat/dat3n.csv o=./outdat/out35.csv; IN=10000 OUT=10000; 2014/06/11 14:18:57
+#END# kgsortf f=item i=./indat/dat5.csv o=./outdat/out42.csv; IN=10000 OUT=10000; 2014/06/11 14:18:57
+#END# kgsortf f=item%r i=./indat/dat6.csv o=./outdat/out43.csv; IN=10000 OUT=10000; 2014/06/11 14:18:57
+#END# kgsortf f=item i=./indat/dat3.csv maxlines=100 o=./outdat/out37.csv; IN=10000 OUT=10000; 2014/06/11 14:18:57
+#END# kgsortf f=item i=./indat/dat4.csv o=./outdat/out38.csv; IN=9 OUT=9; 2014/06/11 14:18:57
+#END# kgsortf f=item%r i=./indat/dat4.csv o=./outdat/out39.csv; IN=9 OUT=9; 2014/06/11 14:18:57
+#END# kgsortf f=item%n i=./indat/dat4.csv o=./outdat/out40.csv; IN=9 OUT=9; 2014/06/11 14:18:57
+#END# kgsortf f=item%nr i=./indat/dat4.csv o=./outdat/out41.csv; IN=9 OUT=9; 2014/06/11 14:18:57
+#END# kgsortf f=日付,金額%nr i=./indat/dat7.csv o=./outdat/out44.csv; IN=6 OUT=6; 2014/06/11 14:18:57

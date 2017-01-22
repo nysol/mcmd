@@ -1,0 +1,2 @@
+SUBDIRS = kgmod mod cmd 
+

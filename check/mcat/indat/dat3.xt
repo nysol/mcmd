@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmltbl version="1.00">
+<header>
+<title>
+顧客購買履歴データ
+</title>
+<comment>
+人工データ
+</comment>
+<field no="1">
+<name>店</name>
+</field>
+<field no="2">
+<name>数値1</name>
+</field>
+<field no="3">
+<name>数値2</name>
+</field>
+</header>
+<body><![CDATA[
+B 8 10
+B 8 *
+B * 10
+B * *
+B 5 0.221
+B 5 -0.221
+B 5 271.543
+B 5 -271.543
+C 0 0
+C 2 0.0000
+C 9 0.000001
+C 9 -0.000001
+C 9 -10.123456789
+C 2 10.123456789
+C 3 123456789
+C 8 -123456789
+]]></body>
+</xmltbl>

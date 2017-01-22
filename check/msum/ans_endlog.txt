@@ -1,0 +1,43 @@
+#END# kgsum f=数量,金額 i=./indat/dat0s.csv k=顧客 o=./outdat/out01.csv; IN=0 OUT=0; 2014/06/11 18:05:00
+#END# kgsum -x f=1,2 i=./indat/dat0s.csv k=0 o=./outdat/out01x.csv; IN=0 OUT=0; 2014/06/11 18:05:00
+#END# kgsum -nfn f=1,2 i=./indat/dat0snfn.csv k=0 o=./outdat/out01nfn.csv; IN=0 OUT=0; 2014/06/11 18:05:00
+#END# kgsum f=数量,金額 i=./indat/dat1s.csv k=顧客 o=./outdat/out02.csv; IN=5 OUT=2; 2014/06/11 18:05:00
+#END# kgsum -x f=1,2 i=./indat/dat1s.csv k=0 o=./outdat/out02x.csv; IN=5 OUT=2; 2014/06/11 18:05:00
+#END# kgsum -nfn f=1,2 i=./indat/dat1snfn.csv k=0 o=./outdat/out02nfn.csv; IN=5 OUT=2; 2014/06/11 18:05:00
+#END# kgsum -q f=数量,金額 i=./indat/dat1s.csv k=顧客 o=./outdat/out02q.csv; IN=5 OUT=2; 2014/06/11 18:05:00
+#END# kgsum -q -x f=1,2 i=./indat/dat1s.csv k=0 o=./outdat/out02qx.csv; IN=5 OUT=2; 2014/06/11 18:05:00
+#END# kgsum f=金額,数量 i=./indat/dat1s.csv k=顧客 o=./outdat/out03.csv; IN=5 OUT=2; 2014/06/11 18:05:00
+#END# kgsum -x f=2,1 i=./indat/dat1s.csv k=0 o=./outdat/out03x.csv; IN=5 OUT=2; 2014/06/11 18:05:00
+#END# kgsum -nfn f=2,1 i=./indat/dat1snfn.csv k=0 o=./outdat/out03nfn.csv; IN=5 OUT=2; 2014/06/11 18:05:00
+#END# kgsum f=数量,金額 i=./indat/dat1s.csv o=./outdat/out04.csv; IN=5 OUT=1; 2014/06/11 18:05:00
+#END# kgsum -x f=1,2 i=./indat/dat1s.csv o=./outdat/out04x.csv; IN=5 OUT=1; 2014/06/11 18:05:00
+#END# kgsum -nfn f=1,2 i=./indat/dat1snfn.csv o=./outdat/out04nfn.csv; IN=5 OUT=1; 2014/06/11 18:05:00
+#END# kgsum f=数量,金額 i=./indat/dat2s.csv k=顧客 o=./outdat/out05.csv; IN=8 OUT=3; 2014/06/11 18:05:00
+#END# kgsum -x f=1,2 i=./indat/dat2s.csv k=0 o=./outdat/out05x.csv; IN=8 OUT=3; 2014/06/11 18:05:00
+#END# kgsum -nfn f=1,2 i=./indat/dat2snfn.csv k=0 o=./outdat/out05nfn.csv; IN=8 OUT=3; 2014/06/11 18:05:00
+#END# kgsum f=数量,金額 i=./indat/dat2s.csv o=./outdat/out06.csv; IN=8 OUT=1; 2014/06/11 18:05:00
+#END# kgsum -x f=1,2 i=./indat/dat2s.csv o=./outdat/out06x.csv; IN=8 OUT=1; 2014/06/11 18:05:00
+#END# kgsum -nfn f=1,2 i=./indat/dat2snfn.csv o=./outdat/out06nfn.csv; IN=8 OUT=1; 2014/06/11 18:05:00
+#END# kgsum -n f=数量,金額 i=./indat/dat2s.csv k=顧客 o=./outdat/out07.csv; IN=8 OUT=3; 2014/06/11 18:05:00
+#END# kgsum -n -x f=1,2 i=./indat/dat2s.csv k=0 o=./outdat/out07x.csv; IN=8 OUT=3; 2014/06/11 18:05:00
+#END# kgsum -n -nfn f=1,2 i=./indat/dat2snfn.csv k=0 o=./outdat/out07nfn.csv; IN=8 OUT=3; 2014/06/11 18:05:00
+#END# kgsum -n f=数量,金額 i=./indat/dat2s.csv o=./outdat/out08.csv; IN=8 OUT=1; 2014/06/11 18:05:00
+#END# kgsum -n -x f=1,2 i=./indat/dat2s.csv o=./outdat/out08x.csv; IN=8 OUT=1; 2014/06/11 18:05:00
+#END# kgsum -n -nfn f=1,2 i=./indat/dat2snfn.csv o=./outdat/out08nfn.csv; IN=8 OUT=1; 2014/06/11 18:05:00
+#END# kgsum f=数量,金額 i=./indat/dat0.csv k=顧客 o=./outdat/out51.csv; IN=0 OUT=0; 2014/06/11 18:05:00
+#END# kgsum -x f=1,2 i=./indat/dat0.csv k=0 o=./outdat/out51x.csv; IN=0 OUT=0; 2014/06/11 18:05:00
+#END# kgsum -nfn f=1,2 i=./indat/dat0nfn.csv k=0 o=./outdat/out51nfn.csv; IN=0 OUT=0; 2014/06/11 18:05:00
+#END# kgsum f=数量,金額 i=./indat/dat1.csv k=顧客 o=./outdat/out52.csv; IN=5 OUT=2; 2014/06/11 18:05:00
+#END# kgsum -x f=1,2 i=./indat/dat1.csv k=0 o=./outdat/out52x.csv; IN=5 OUT=2; 2014/06/11 18:05:00
+#END# kgsum -nfn f=1,2 i=./indat/dat1nfn.csv k=0 o=./outdat/out52nfn.csv; IN=5 OUT=4; 2014/06/11 18:05:00
+#END# kgsum -q f=数量,金額 i=./indat/dat1.csv k=顧客 o=./outdat/out52q.csv; IN=5 OUT=4; 2014/06/11 18:05:00
+#END# kgsum -q -x f=1,2 i=./indat/dat1.csv k=0 o=./outdat/out52qx.csv; IN=5 OUT=4; 2014/06/11 18:05:00
+#END# kgsum f=金額,数量 i=./indat/dat1.csv k=顧客 o=./outdat/out53.csv; IN=5 OUT=2; 2014/06/11 18:05:00
+#END# kgsum -x f=2,1 i=./indat/dat1.csv k=0 o=./outdat/out53x.csv; IN=5 OUT=2; 2014/06/11 18:05:00
+#END# kgsum -nfn f=2,1 i=./indat/dat1nfn.csv k=0 o=./outdat/out53nfn.csv; IN=5 OUT=4; 2014/06/11 18:05:00
+#END# kgsum f=数量,金額 i=./indat/dat2.csv k=顧客 o=./outdat/out55.csv; IN=8 OUT=3; 2014/06/11 18:05:00
+#END# kgsum -x f=1,2 i=./indat/dat2.csv k=0 o=./outdat/out55x.csv; IN=8 OUT=3; 2014/06/11 18:05:00
+#END# kgsum -nfn f=1,2 i=./indat/dat2nfn.csv k=0 o=./outdat/out55nfn.csv; IN=8 OUT=4; 2014/06/11 18:05:00
+#END# kgsum -n f=数量,金額 i=./indat/dat2.csv k=顧客 o=./outdat/out57.csv; IN=8 OUT=3; 2014/06/11 18:05:00
+#END# kgsum -n -x f=1,2 i=./indat/dat2.csv k=0 o=./outdat/out57x.csv; IN=8 OUT=3; 2014/06/11 18:05:00
+#END# kgsum -n -nfn f=1,2 i=./indat/dat2nfn.csv k=0 o=./outdat/out57nfn.csv; IN=8 OUT=4; 2014/06/11 18:05:00
