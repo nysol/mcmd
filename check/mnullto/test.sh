@@ -63,10 +63,14 @@ ${pfxc}mnullto      f=生年月日:生年月日登録状況 O=値あり -A -p i=
 ${pfxc}mnullto -x   f=1:生年月日登録状況        O=値あり -A -p i=./indat/dat1.csv    o=./outdat/out13x.csv
 ${pfxc}mnullto -nfn f=1                         O=値あり -A -p i=./indat/dat1nfn.csv o=./outdat/out13nfn.csv
 
+# k= -p
+
+${pfxc}mnullto      k=key s=seq -p f=fld i=./indat/dat3.csv    o=./outdat/out20.csv
+${pfxc}mnullto -x   k=0 s=1 -p f=2       i=./indat/dat3s.csv    o=./outdat/out20x.csv
+${pfxc}mnullto -nfn k=0 s=1 -p f=2       i=./indat/dat3snfn.csv o=./outdat/out20nfn.csv
 
 
 #ソートデータ
-
 ${pfxc}mnullto      f=生年月日,血液型 v=値なし i=./indat/dat2s.csv    o=./outdat/out16.csv
 ${pfxc}mnullto -x   f=1,2             v=値なし i=./indat/dat2s.csv    o=./outdat/out16x.csv
 ${pfxc}mnullto -nfn f=1,2             v=値なし i=./indat/dat2snfn.csv o=./outdat/out16nfn.csv

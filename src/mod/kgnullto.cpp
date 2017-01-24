@@ -55,12 +55,15 @@ kgNullto::kgNullto(void)
 void kgNullto::setArgs(void)
 {
 	// パラメータチェック
-	_args.paramcheck("f=,i=,o=,O=,v=,-A,-p",kgArgs::COMMON|kgArgs::IODIFF);
+	_args.paramcheck("k=,s=,f=,i=,o=,O=,v=,-A,-p",kgArgs::COMMON|kgArgs::IODIFF);
 
 	// 入出力ファイルオープン
 	_iFile.open(_args.toString("i=",false), _env, _nfn_i);
 	_oFile.open(_args.toString("o=",false), _env, _nfn_o);
 	_iFile.read_header();
+
+	// k= 項目引数のセット
+	vector<kgstr_t> vs = _args.toStringVector("k=",false);
 
 	// -A（追加）,-p(前行文字列での置換) フラグセット
 	_add_flg 		= _args.toBool("-A");
@@ -79,6 +82,18 @@ void kgNullto::setArgs(void)
 
 	if(_prv_flg && !_vField.empty()){ throw kgError("-p cannot be specified with v=");}
 	if(!_prv_flg && _vField.empty()){ throw kgError("-p or v= must be specified"); }
+
+	vector<kgstr_t> vss = _args.toStringVector("s=",false);
+	bool seqflg = _args.toBool("-q");
+	if(_nfn_i) { seqflg = true; }
+
+	if(!seqflg && (!vs.empty()||!vss.empty())){ 
+		vector<kgstr_t> vsk	= vs;
+		vsk.insert(vsk.end(),vss.begin(),vss.end());
+		sortingRun(&_iFile,vsk);
+	}
+	_kField.set(vs,  &_iFile, _fldByNum);
+
 }
 // -----------------------------------------------------------------------------
 // 実行
@@ -87,6 +102,9 @@ int kgNullto::run(void) try
 {
 	// パラメータセット＆入出力ファイルオープン
 	setArgs();
+
+	// 入力ファイルにkey項目番号をセットする．
+	_iFile.setKey(_kField.getNum());
 
 	//出力項目名出力 追加 or 置換
 	if(_add_flg) { _oFile.writeFldName(_iFile,_fField,true);}
@@ -108,8 +126,17 @@ int kgNullto::run(void) try
 	char** stock = o_stock_ap.get();
 
 	while( EOF != _iFile.read() ){
+
+		if( _iFile.keybreak() ){
+			if((_iFile.status() & kgCSV::End )) break;
+			if(_prv_flg){
+				for(size_t i=0 ; i<_fField.size();i++){			
+					 prvRec.at(i)="";
+				}
+			}
+		}
 		for(size_t i=0 ; i<_fField.size();i++){
-			char* val=_iFile.getVal(_fField.num(i));
+			char* val=_iFile.getNewVal(_fField.num(i));
 			if(*val=='\0'){
 				if(_prv_flg){ *(stock+i) = const_cast<char*>(prvRec.at(i).c_str());}
 				else				{ *(stock+i) = const_cast<char*>(_vField.c_str());}
@@ -121,13 +148,14 @@ int kgNullto::run(void) try
 			}
 		}
 		if(_add_flg){
-			_oFile.writeFld(_iFile.getFld(),_iFile.fldSize(),stock,_fField.size());		
+			_oFile.writeFld(_iFile.getNewFld(),_iFile.fldSize(),stock,_fField.size());		
 		}else{
-			_oFile.writeFld(_iFile.getFld(),_fField.getFlg_p(),stock);
+			_oFile.writeFld(_iFile.getNewFld(),_fField.getFlg_p(),stock);
 		}
 	}
 
 	// 終了処理
+	th_cancel();
 	_iFile.close();
 	_oFile.close();
 	successEnd();

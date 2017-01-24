@@ -21,7 +21,7 @@
 // =============================================================================
 #pragma once
 #include <string>
-#include <kgmod.h>
+#include <kgmodincludesort.h>
 #include <kgArgFld.h>
 #include <kgCSV.h>
 #include <kgCSVout.h>
@@ -30,11 +30,12 @@ using namespace kglib;
 
 namespace kgmod { ////////////////////////////////////////////// start namespace
 
-class kgNullto : public kgMod 
+class kgNullto : public kgModIncludeSort
 {
 	// 引数
-	kgCSVfld _iFile;  // i=
+	kgCSVkey _iFile;  // i=
 	kgCSVout _oFile;  // o=
+	kgArgFld _kField;  // k=
 	kgArgFld _fField; // f=
 	kgstr_t	 _OField;	// O=:NULL以外の置換文字列
 	kgstr_t	 _vField;	// v=:置換文字列
