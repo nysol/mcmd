@@ -34,6 +34,9 @@
 #ifndef KGLIB_VERSON
  #define KGLIB_VERSON "0:0:0"
 #endif
+#ifndef KGMOD_VERSON
+ #define KGMOD_VERSON "0:0:0"
+#endif
 
 
 
@@ -67,6 +70,7 @@ kgMod::kgMod(void) :  _status( 0 ){
 	_docL		 = "";
 	_localhelp = false;
 	_libversion = KGLIB_VERSON;
+	_modversion = KGMOD_VERSON;
 	_existNullIN  = false;
 	_existNullOUT = false;
 	_existNullKEY = false;

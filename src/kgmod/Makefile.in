@@ -320,7 +320,7 @@ target_alias = @target_alias@
 top_build_prefix = @top_build_prefix@
 top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
-AM_CXXFLAGS = -I../ -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64 -DKGLIB_VERSON=\"$(CORE_MAJOR_VERSION):$(CORE_SO_VERSION)\"
+AM_CXXFLAGS = -I../ -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64 -DKGLIB_VERSON=\"$(CORE_MAJOR_VERSION):$(CORE_SO_VERSION)\" -DKGMOD_VERSON=\"$(MOD_MAJOR_VERSION):$(MOD_SO_VERSION)\"
 lib_LTLIBRARIES = libkgmod@CORE_MAJOR_VERSION@.la
 libkgmod@CORE_MAJOR_VERSION@_la_LDFLAGS = -version-info $(CORE_SO_VERSION) -single_module 
 libkgmod@CORE_MAJOR_VERSION@_la_SOURCES = \

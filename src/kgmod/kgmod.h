@@ -40,6 +40,7 @@ class kgMod
 	const char*  _doc; 		 // デフォルトヘルプドキュメント
 	const char*  _title; 	 // デフォルトモジュールタイトル
 	const char*  _libversion; // バージョン
+	const char*  _modversion; // MODバージョン
 	const char*  _docL; 		 // ローカルヘルプドキュメント
 	const char*  _titleL; 	 // ローカルモジュールタイトル
 
@@ -111,10 +112,10 @@ class kgMod
 
 	string lver(void){ 
 		if(!strcmp(_version,"###VERSION###")){
-			return  string("lib Version ") + _libversion + string(": mod Version 0") ;
+			return  string("lib Version ") + _libversion + string(": mod Version ") + _modversion ;
 		}
 		else{
-			return  string("lib Version ") + _libversion + string(": mod Vesion ") + _version ;
+			return  string("lib Version ") + _libversion + string(": mod Vesion ") + _modversion + string(": cmdmod Version ") + _version ;
 		}
 	}
 
