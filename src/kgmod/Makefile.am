@@ -33,7 +33,7 @@ kgTempfile.cpp \
 kgVal.cpp \
 kgWildcard.cpp \
 kgmodincludesort.cpp \
-kgSortf.cpp \
+kgsortf.cpp \
 kgmod.cpp \
 kgArgFld.h \
 kgArgs.h \
@@ -55,7 +55,7 @@ kgWildcard.h \
 kgItermios.h \
 kgTextarea.h \
 kgmodincludesort.h \
-kgSortf.h \
+kgsortf.h \
 kgConfig.h \
 ../help/jp/kgsortfHelp.h \
 ../help/en/kgsortfHelp.h \
