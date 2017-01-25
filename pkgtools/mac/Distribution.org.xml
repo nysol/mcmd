@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<installer-gui-script minSpecVersion="1">
+		<title>The NYSOL Tools</title>
+		<license file="License"></license>
+    <pkg-ref id="jp.nysolcore.pkg"/>
+    <options customize="never" require-scripts="false"/>
+    <choices-outline>
+        <line choice="default">
+            <line choice="jp.nysolcore.pkg"/>
+        </line>
+    </choices-outline>
+    <choice id="default"/>
+    <choice id="jp.nysolcore.pkg" visible="false">
+        <pkg-ref id="jp.nysolcore.pkg"/>
+    </choice>
+    <pkg-ref id="jp.nysolcore.pkg" version="###VERSION###" onConclusion="none">nysolcore-###VERSION###.pkg</pkg-ref>
+</installer-gui-script>
