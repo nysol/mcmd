@@ -1,7 +1,1 @@
-
-#pfxc=/opt/local/bin/
-#pfxc=~/kgmod/jindoji/mcmd/
-#pfxc=~/nysol/MCMD/trunk/mcmd/
-#pfxc2=~/nysol/MCMD/trunk/mcmd2/
-pfxc=/Users/nain/work/mcmd/cmd/
-dat=~/nysol/test/tutorialscp/indat/dat_en/
+pfxc=

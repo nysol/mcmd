@@ -1,6 +1,10 @@
 #                                               -*- Autoconf -*-
 # Process this file with autoconf to produce a configure script.
-# regenerate　configure : run aclocal ; autoreconf -i ; automake --add-missing
+# generate　configure :
+# run 
+#  aclocal ; autoreconf -i ; automake --add-missing 
+#  or
+#  autoreconf -i ; automake --add-missing
 
 AC_PREREQ([2.69])
 AC_INIT(nysol_mcmd, 3.0, info@nysol.jp)
