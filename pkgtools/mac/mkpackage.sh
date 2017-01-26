@@ -22,7 +22,7 @@ cd ./build/tarsrc/$Dname
 make
 make DESTDIR=$CurD/build/dist install 
 cd $CurD
-cp License ./build/dist/
+cp ../License ./build/dist/
 
 
 pkgbuild --identifier jp.nysolcore.pkg --version $Pver --root ./build/dist --install-location / ./build/$nname.pkg
