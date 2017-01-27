@@ -87,8 +87,10 @@ void kgtexFormatInfoTTL::set(char *dt,FILE * wfp,kgArgFld& kfld){
 			if(!*_tag[pos]){
 				char *q = skip(p,"%\n");
 				if (*q == '%'){
-					fldset(p-1-_formatData,q+1-_formatData,kfld.csv()->fldNum(kgstr_t(p,q)));
-					p = q;
+					if(p!=q){
+						fldset(p-1-_formatData,q+1-_formatData,kfld.csv()->fldNum(kgstr_t(p,q)));
+						p = q;
+					}
 				}
 			}
 			else{ //exist keyword
