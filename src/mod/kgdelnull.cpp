@@ -51,7 +51,7 @@ kgDelnull::kgDelnull(void)
 void kgDelnull::setArgs(void)
 {
 	// パラメータチェック
-	_args.paramcheck("i=,o=,u=,k=,f=,-F,-R,-r,bufcount=,-q");
+	_args.paramcheck("i=,o=,u=,k=,f=,-F,-R,-r,bufcount=,-q",kgArgs::COMMON|kgArgs::IODIFF|kgArgs::NULL_KEY);
 
 	// 入出力ファイルオープン&バッファ設定
 	_iFile.open(_args.toString("i=",false),_env,_nfn_i);

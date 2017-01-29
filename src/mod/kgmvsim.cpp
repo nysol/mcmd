@@ -828,7 +828,7 @@ kgMvsim::kgMvsim(void){
 // -----------------------------------------------------------------------------
 void kgMvsim::setArgs(void){
 	// パラメータチェック
-	_args.paramcheck("f=,i=,o=,k=,c=,skip=,t=,a=,-n,s=,-q");
+	_args.paramcheck("f=,i=,o=,k=,c=,skip=,t=,a=,-n,s=,-q",kgArgs::ALLPARAM);
 
 	// 入出力ファイルオープン
 	_iFile.open(_args.toString("i=",false), _env,_nfn_i);
@@ -939,7 +939,10 @@ int kgMvsim::run(void) try {
 			bool nuldata=false;
 			for(size_t i=0; i<fldSize; i++){
 				inpchar[i] =_iFile.getBlkVal(_fField.num(i));
-				if(*inpchar[i]=='\0'){ nuldata = true;}
+				if(*inpchar[i]=='\0'){ 
+					nuldata = true;
+					if(_assertNullIN) { _existNullIN  = true;}
+				}
 			}
 			// null値の処理
 			// 通常:skip -n有り:NULLデータを含むブロックはNULL
@@ -950,13 +953,21 @@ int kgMvsim::run(void) try {
 			kmvb->calc(result,inpchar);
 			if(kmvb->stocksize()>_skip){
 				_oFile.writeFld(_iFile.fldSize(),_iFile.getBlkFld(),false);
-				if(nullchkcnt==0){ _oFile.writeVal(result,true);}
-				else             { _oFile.writeEol();}
+				if(nullchkcnt==0){ 
+					if(_assertNullOUT && result.null() ){ _existNullOUT = true; }
+					_oFile.writeVal(result,true);
+				}
+				else{
+					if(_assertNullOUT){ _existNullOUT = true; }
+					_oFile.writeEol();
+				}
 			}
 			if(nullchkcnt>0){ nullchkcnt--;}
 		}
 		kmvb->clear();
 	}
+	//ASSERT keynull_CHECK
+	if(_assertNullKEY) { _existNullKEY = _iFile.keynull(); }
 	// 終了処理(メッセージ出力,thread pipe終了通知)
 	th_cancel();
 	_iFile.close();

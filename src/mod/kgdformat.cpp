@@ -164,7 +164,7 @@ kgDformat::kgDformat(void)
 void kgDformat::setArgs(void)
 {
 	// パラメータチェック
-	_args.paramcheck("f=,i=,o=,c=,-A");
+	_args.paramcheck("f=,i=,o=,c=,-A",kgArgs::COMMON|kgArgs::IODIFF|kgArgs::NULL_IN|kgArgs::NULL_OUT);
 
 	// 入出力ファイルオープン
 	_iFile.open(_args.toString("i=",false), _env, _nfn_i);
