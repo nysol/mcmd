@@ -154,7 +154,9 @@ int kgMseldsp::run(void) try
 	}
 	_width*=2;
 	if(cnt<=0){ throw kgError("seldata 0 line"); }
-	if(_height<=0){ _height=cnt; }
+	if(_height<=0) { _height=cnt; }
+	if(_height>cnt){ _height=cnt; }
+	
 	_outinfo.resize(cnt,false); 
 	// 初期描画
 	kgTermiosEX scrn;
