@@ -95,9 +95,11 @@ void kgCross::setFldName(string tName)
 		toFile.writeFld(_iFile.fldSize(),_iFile.getFld());
 		char *ck_str = _iFile.getVal(_sField.num(0));
 		if(*ck_str=='\0') continue;
-		if( newfld.find(ck_str) == newfld.end() ){
-			if(_numsort){ newfld_n.insert(ck_str);}
-			else				{	newfld.insert(ck_str);}
+		if(_numsort){
+			if( newfld_n.find(ck_str) == newfld_n.end() ){ newfld_n.insert(ck_str); }
+		}
+		else{
+			if( newfld.find(ck_str) == newfld.end() ){ newfld.insert(ck_str); }
 		}
 	}
 	// 出力項目セット(無変更部分)
