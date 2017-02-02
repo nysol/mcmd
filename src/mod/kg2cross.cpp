@@ -88,7 +88,7 @@ void kg2Cross::setFldName(string tName)
 	// ダミーがあればセット
 	for(size_t i=0; i<_fixfld.size(); i++){
 		if(_numsort){
-			if( newfld_n.find(_fixfld[i]) == newfld.end() ){
+			if( newfld_n.find(_fixfld[i]) == newfld_n.end() ){
 				 newfld_n.insert(_fixfld[i]);
 			}
 		}else{
@@ -102,7 +102,7 @@ void kg2Cross::setFldName(string tName)
 		char *ck_str = _iFile.getVal(_sField.num(0));
 		if(*ck_str=='\0') continue;
 		if(_numsort){
-			if( newfld_n.find(ck_str) == newfld.end() ){
+			if( newfld_n.find(ck_str) == newfld_n.end() ){
 				 newfld_n.insert(ck_str);
 			}
 		}else{
