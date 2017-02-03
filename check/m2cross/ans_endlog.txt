@@ -1,0 +1,69 @@
+#END# kg2cross f=数量 i=./indat/dat0s.csv k=商品 o=./outdat/out0.csv s=日付; IN=0 OUT=0; 2017/02/03 17:51:28
+#END# kg2cross -x f=2 i=./indat/dat0s.csv k=0 o=./outdat/out0x.csv s=1; IN=0 OUT=0; 2017/02/03 17:51:28
+#END# kg2cross -nfn f=2 i=./indat/dat0snfn.csv k=0 o=./outdat/out0nfn.csv s=1; IN=0 OUT=0; 2017/02/03 17:51:28
+#END# kg2cross -nfno f=数量 i=./indat/dat0s.csv k=商品 o=./outdat/out0nfno.csv s=日付; IN=0 OUT=0; 2017/02/03 17:51:28
+#END# kg2cross f=数量 i=./indat/dat1s.csv k=商品 o=./outdat/out1.csv s=日付; IN=5 OUT=2; 2017/02/03 17:51:28
+#END# kg2cross -x f=2 i=./indat/dat1s.csv k=0 o=./outdat/out1x.csv s=1; IN=5 OUT=2; 2017/02/03 17:51:28
+#END# kg2cross -nfn f=2 i=./indat/dat1snfn.csv k=0 o=./outdat/out1nfn.csv s=1; IN=5 OUT=2; 2017/02/03 17:51:28
+#END# kg2cross -nfno f=数量 i=./indat/dat1s.csv k=商品 o=./outdat/out1nfno.csv s=日付; IN=5 OUT=2; 2017/02/03 17:51:28
+#END# kg2cross -q f=数量 i=./indat/dat1s.csv k=商品 o=./outdat/out1q.csv s=日付; IN=5 OUT=2; 2017/02/03 17:51:28
+#END# kg2cross -nfn -q f=2 i=./indat/dat1snfn.csv k=0 o=./outdat/out1qnfn.csv s=1; IN=5 OUT=2; 2017/02/03 17:51:28
+#END# kg2cross f=数量 fixfld=000 i=./indat/dat1s.csv k=商品 o=./outdat/out2.csv s=日付; IN=5 OUT=2; 2017/02/03 17:51:28
+#END# kg2cross -x f=2 fixfld=000 i=./indat/dat1s.csv k=0 o=./outdat/out2x.csv s=1; IN=5 OUT=2; 2017/02/03 17:51:28
+#END# kg2cross f=数量 i=./indat/dat1s.csv k=商品 o=./outdat/out3.csv s=日付%r; IN=5 OUT=2; 2017/02/03 17:51:28
+#END# kg2cross -x f=2 i=./indat/dat1s.csv k=0 o=./outdat/out3x.csv s=1%r; IN=5 OUT=2; 2017/02/03 17:51:28
+#END# kg2cross -nfn f=2 i=./indat/dat1snfn.csv k=0 o=./outdat/out3nfn.csv s=1%r; IN=5 OUT=2; 2017/02/03 17:51:28
+#END# kg2cross -nfno f=数量 i=./indat/dat1s.csv k=商品 o=./outdat/out3nfno.csv s=日付%r; IN=5 OUT=2; 2017/02/03 17:51:28
+#END# kg2cross f=数量 i=./indat/dat1s.csv k=商品 o=./outdat/out5.csv s=日付%n; IN=5 OUT=2; 2017/02/03 17:51:28
+#END# kg2cross -x f=2 i=./indat/dat1s.csv k=0 o=./outdat/out5x.csv s=1%n; IN=5 OUT=2; 2017/02/03 17:51:28
+#END# kg2cross -nfn f=2 i=./indat/dat1snfn.csv k=0 o=./outdat/out5nfn.csv s=1%n; IN=5 OUT=2; 2017/02/03 17:51:28
+#END# kg2cross f=数量 i=./indat/dat1s.csv k=商品 o=./outdat/out7.csv s=日付%nr; IN=5 OUT=2; 2017/02/03 17:51:28
+#END# kg2cross -x f=2 i=./indat/dat1s.csv k=0 o=./outdat/out7x.csv s=1%nr; IN=5 OUT=2; 2017/02/03 17:51:28
+#END# kg2cross -nfn f=2 i=./indat/dat1snfn.csv k=0 o=./outdat/out7nfn.csv s=1%nr; IN=5 OUT=2; 2017/02/03 17:51:28
+#END# kg2cross f=数量 i=./indat/dat0.csv k=商品 o=./outdat/out31.csv s=日付; IN=0 OUT=0; 2017/02/03 17:51:28
+#END# kg2cross -x f=2 i=./indat/dat0.csv k=0 o=./outdat/out31x.csv s=1; IN=0 OUT=0; 2017/02/03 17:51:28
+#END# kg2cross -nfn f=2 i=./indat/dat0nfn.csv k=0 o=./outdat/out31nfn.csv s=1; IN=0 OUT=0; 2017/02/03 17:51:28
+#END# kg2cross -nfno f=数量 i=./indat/dat0.csv k=商品 o=./outdat/out31nfno.csv s=日付; IN=0 OUT=0; 2017/02/03 17:51:28
+#END# kg2cross f=数量 i=./indat/dat1.csv k=商品 o=./outdat/out32.csv s=日付; IN=5 OUT=2; 2017/02/03 17:51:28
+#END# kg2cross -x f=2 i=./indat/dat1.csv k=0 o=./outdat/out32x.csv s=1; IN=5 OUT=2; 2017/02/03 17:51:28
+#END# kg2cross -nfn f=2 i=./indat/dat1nfn.csv k=0 o=./outdat/out32nfn.csv s=1; IN=5 OUT=4; 2017/02/03 17:51:28
+#END# kg2cross -nfno f=数量 i=./indat/dat1.csv k=商品 o=./outdat/out32nfno.csv s=日付; IN=5 OUT=2; 2017/02/03 17:51:28
+#END# kg2cross -q f=数量 i=./indat/dat1.csv k=商品 o=./outdat/out32q.csv s=日付; IN=5 OUT=4; 2017/02/03 17:51:28
+#END# kg2cross -nfn -q f=2 i=./indat/dat1nfn.csv k=0 o=./outdat/out32qnfn.csv s=1; IN=5 OUT=4; 2017/02/03 17:51:28
+#END# kg2cross f=数量 i=./indat/dat1.csv k=商品 o=./outdat/out34.csv s=日付%r; IN=5 OUT=2; 2017/02/03 17:51:28
+#END# kg2cross -x f=2 i=./indat/dat1.csv k=0 o=./outdat/out34x.csv s=1%r; IN=5 OUT=2; 2017/02/03 17:51:28
+#END# kg2cross -nfn f=2 i=./indat/dat1nfn.csv k=0 o=./outdat/out34nfn.csv s=1%r; IN=5 OUT=4; 2017/02/03 17:51:28
+#END# kg2cross -nfno f=数量 i=./indat/dat1.csv k=商品 o=./outdat/out34nfno.csv s=日付%r; IN=5 OUT=2; 2017/02/03 17:51:28
+#END# kg2cross f=数量 i=./indat/dat1.csv k=商品 o=./outdat/out36.csv s=日付%n; IN=5 OUT=2; 2017/02/03 17:51:28
+#END# kg2cross -x f=2 i=./indat/dat1.csv k=0 o=./outdat/out36x.csv s=1%n; IN=5 OUT=2; 2017/02/03 17:51:28
+#END# kg2cross -nfn f=2 i=./indat/dat1nfn.csv k=0 o=./outdat/out36nfn.csv s=1%n; IN=5 OUT=4; 2017/02/03 17:51:28
+#END# kg2cross f=数量 i=./indat/dat1.csv k=商品 o=./outdat/out38.csv s=日付%nr; IN=5 OUT=2; 2017/02/03 17:51:28
+#END# kg2cross -x f=2 i=./indat/dat1.csv k=0 o=./outdat/out38x.csv s=1%nr; IN=5 OUT=2; 2017/02/03 17:51:28
+#END# kg2cross -nfn f=2 i=./indat/dat1nfn.csv k=0 o=./outdat/out38nfn.csv s=1%nr; IN=5 OUT=4; 2017/02/03 17:51:28
+#END# kg2cross f=数量 i=./indat/dat4.csv k=商品 o=./outdat/out42.csv s=日付; IN=5 OUT=3; 2017/02/03 17:51:28
+#END# kg2cross -x f=2 i=./indat/dat4.csv k=0 o=./outdat/out42x.csv s=1; IN=5 OUT=3; 2017/02/03 17:51:28
+#END# kg2cross -nfn f=2 i=./indat/dat4nfn.csv k=0 o=./outdat/out42nfn.csv s=1; IN=5 OUT=5; 2017/02/03 17:51:28
+#END# kg2cross -nfno f=数量 i=./indat/dat4.csv k=商品 o=./outdat/out42nfno.csv s=日付; IN=5 OUT=3; 2017/02/03 17:51:28
+#END# kg2cross f=数量 i=./indat/dat5.csv k=商品 o=./outdat/out43.csv s=日付; IN=5 OUT=2; 2017/02/03 17:51:28
+#END# kg2cross -x f=2 i=./indat/dat5.csv k=0 o=./outdat/out43x.csv s=1; IN=5 OUT=2; 2017/02/03 17:51:28
+#END# kg2cross -nfn f=2 i=./indat/dat5nfn.csv k=0 o=./outdat/out43nfn.csv s=1; IN=5 OUT=4; 2017/02/03 17:51:28
+#END# kg2cross f=数量 i=./indat/dat6.csv k=商品 o=./outdat/out44.csv s=日付; IN=5 OUT=2; 2017/02/03 17:51:28
+#END# kg2cross -x f=2 i=./indat/dat6.csv k=0 o=./outdat/out44x.csv s=1; IN=5 OUT=2; 2017/02/03 17:51:28
+#END# kg2cross -nfn f=2 i=./indat/dat6nfn.csv k=0 o=./outdat/out44nfn.csv s=1; IN=5 OUT=3; 2017/02/03 17:51:28
+#END# kg2cross f=数量 i=./indat/dat7.csv k=商品 o=./outdat/out45.csv s=日付; IN=5 OUT=3; 2017/02/03 17:51:28
+#END# kg2cross -x f=2 i=./indat/dat7.csv k=0 o=./outdat/out45x.csv s=1; IN=5 OUT=3; 2017/02/03 17:51:28
+#END# kg2cross -nfn f=2 i=./indat/dat7nfn.csv k=0 o=./outdat/out45nfn.csv s=1; IN=5 OUT=4; 2017/02/03 17:51:28
+#END# kg2cross -nfno f=数量 i=./indat/dat7.csv k=商品 o=./outdat/out45nfno.csv s=日付; IN=5 OUT=3; 2017/02/03 17:51:28
+#END# kg2cross f=数量 i=./indat/dat7.csv k=商品 o=./outdat/out46.csv s=日付 v=null; IN=5 OUT=3; 2017/02/03 17:51:28
+#END# kg2cross -x f=2 i=./indat/dat7.csv k=0 o=./outdat/out46x.csv s=1 v=null; IN=5 OUT=3; 2017/02/03 17:51:28
+#END# kg2cross -nfn f=2 i=./indat/dat7nfn.csv k=0 o=./outdat/out46nfn.csv s=1 v=null; IN=5 OUT=4; 2017/02/03 17:51:28
+#END# kg2cross -nfno f=数量 i=./indat/dat7.csv k=商品 o=./outdat/out46nfno.csv s=日付 v=null; IN=5 OUT=3; 2017/02/03 17:51:29
+#END# kg2cross a=head,数量 f=1,11,13,2 i=./indat/dat10.csv o=./outdat/out100.csv; IN=0 OUT=0; 2017/02/03 17:51:29
+#END# kg2cross -x a=head,数量 f=2-5 i=./indat/dat10.csv o=./outdat/out100x.csv; IN=0 OUT=0; 2017/02/03 17:51:29
+#END# kg2cross -nfn a=head,数量 f=2-5 i=./indat/dat10nfn.csv o=./outdat/out100nfn.csv; IN=0 OUT=0; 2017/02/03 17:51:29
+#END# kg2cross a=head,数量 f=1,11,13,2 i=./indat/dat11.csv o=./outdat/out101.csv; IN=2 OUT=8; 2017/02/03 17:51:29
+#END# kg2cross -x a=head,数量 f=2-5 i=./indat/dat11.csv o=./outdat/out101x.csv; IN=2 OUT=8; 2017/02/03 17:51:29
+#END# kg2cross -nfn a=head,数量 f=2-5 i=./indat/dat11nfn.csv o=./outdat/out101nfn.csv; IN=2 OUT=8; 2017/02/03 17:51:29
+#END# kg2cross a=head,数量 f=1,11,13,2 i=./indat/dat11.csv o=./outdat/out102.csv v=null; IN=2 OUT=8; 2017/02/03 17:51:29
+#END# kg2cross -x a=head,数量 f=2-5 i=./indat/dat11.csv o=./outdat/out102x.csv v=null; IN=2 OUT=8; 2017/02/03 17:51:29
+#END# kg2cross -nfn a=head,数量 f=2-5 i=./indat/dat11nfn.csv o=./outdat/out102nfn.csv v=null; IN=2 OUT=8; 2017/02/03 17:51:29
