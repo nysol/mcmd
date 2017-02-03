@@ -1,0 +1,3 @@
+#END# kgxml2csv f=@att:b_att,c@p:c_p,c@p%f:c_p_f,d:d,/a:a i=./indat/dat1.xml k=/a/b o=./outdat/out1.csv; IN=10 OUT=3; 2017/02/04 00:32:41
+#END# kgxml2csv f=/a/b@att:b_att,/a/b/c@p:c_p,/a/b/c@p%f:c_p_f,/a/b/d:d,/a:a i=./indat/dat1.xml k=/a/b o=./outdat/out2.csv; IN=10 OUT=3; 2017/02/04 00:32:41
+#END# kgxml2csv f=/a/b@att:b_att,/a/b/c@p:c_p,/a/b/c@p%f:c_p_f,/a/b/d:d,/a:a i=./indat/dat1.xml k=/a o=./outdat/out3.csv; IN=10 OUT=1; 2017/02/04 00:32:41
