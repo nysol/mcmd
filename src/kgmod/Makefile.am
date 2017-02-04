@@ -1,6 +1,32 @@
 
 AM_CXXFLAGS = -I../ -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64 -DKGLIB_VERSON=\"$(CORE_MAJOR_VERSION):$(CORE_SO_VERSION)\" -DKGMOD_VERSON=\"$(MOD_MAJOR_VERSION):$(MOD_SO_VERSION)\"
 
+
+include_HEADERS= \
+kgArgFld.h \
+kgArgs.h \
+kgCSV.h \
+kgCSVout.h \
+kgCSVutils.h \
+kgCalParser.h \
+kgEnv.h \
+kgError.h \
+kgFldBuffer.h \
+kgFldHash.h \
+kgFunction.h \
+kgMessage.h \
+kgMethod.h \
+kgRange.h \
+kgTempfile.h \
+kgVal.h \
+kgWildcard.h \
+kgItermios.h \
+kgTextarea.h \
+kgmodincludesort.h \
+kgsortf.h \
+kgConfig.h \
+kgmod.h 
+
 ## Define a libtool archive target "libexample-@EXAMPLE_API_VERSION@.la", with
 ## @EXAMPLE_API_VERSION@ substituted into the generated Makefile at configure
 ## time.
