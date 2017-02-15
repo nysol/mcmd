@@ -40,6 +40,7 @@ class kgCat : public kgMod
 	kgCSVout _oFile; 						// o=
 	vector<kgstr_t> _fvstr;			// f=:項目名
 	kgArgFld _fField;						// f=:kgargfldクラス
+	vector<size_t> _kv;			// f=:項目名
 
 	vector<kgstr_t> _fldNames;
 	size_t _fldSize;

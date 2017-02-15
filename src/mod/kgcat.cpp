@@ -53,7 +53,7 @@ kgCat::kgCat(void)
 void kgCat::setArgs(void)
 {
 	// パラメータチェック
-	_args.paramcheck("i=,o=,f=,-skip,-nostop,-force,-skip_fnf,-add_fname,-stdin",
+	_args.paramcheck("i=,o=,f=,-skip,-nostop,-force,-skip_fnf,-add_fname,-stdin,kv=",
 				kgArgs::COMMON|kgArgs::IODIFF|kgArgs::NULL_IN);
 
 	// 項目名指定
@@ -86,6 +86,13 @@ void kgCat::setArgs(void)
 
 	// o= 出力ファイルオープン
 	_oFile.open(_args.toString("o=",false), _env, _nfn_o);
+
+	vector<kgstr_t> vskv = _args.toStringVector("kv=",false);
+	if (vskv.size()!=0) {
+		for ( size_t i=0 ;i < vskv.size();i++){
+			_kv.push_back(aToSizeT(vskv[i].c_str()));
+		}
+	}
 
 }
 // -----------------------------------------------------------------------------
@@ -139,11 +146,29 @@ void kgCat::output(kgCSVfld* csv)
 			}
 		}
 	}
+	// ファイル名スプリット
+	vector<vector <kgstr_t> > fsplit;
+	string fn = csv->fileName();
+	fsplit = splitToken2(fn, '/','_'); 
+	int endpos = fsplit.size()-1;
+
 	// 出力実行
 	while( EOF != csv->read() ){
 		_iCnt++;
 		if(_assertNullIN) { if(csv->isNull(outFldNo) ){_existNullIN  = true; } }
-		if (_add_fn){
+		if(_kv.size()!=0){
+			_oFile.writeFld(csv->getFld(),&outFldNo,false);
+			if (_add_fn){ _oFile.writeStr(csv->fileName().c_str(), false ); }
+			for(size_t i=0;i<_kv.size();i++){
+				int pos =  endpos - _kv[i];
+				if(pos<0 || fsplit[pos].size()<2){
+					_oFile.writeStr("", i == _kv.size()-1);
+				}
+				else{
+					_oFile.writeStr(fsplit.at(pos).at(1).c_str(), i == _kv.size()-1 );
+				}
+			}
+		}else if (_add_fn){
 			_oFile.writeFld(csv->getFld(),&outFldNo,false);
 			_oFile.writeStr(csv->fileName().c_str(), true );
 		}else{
@@ -209,7 +234,21 @@ int kgCat::run(void) try
 
 	// 項目名の出力
 	vector<kgstr_t> fldtNames = _fldNames;
-	if(_add_fn){ fldtNames.push_back("fileName"); }
+	if(_add_fn){ 
+		fldtNames.push_back("fileName"); 
+	}
+	if(_kv.size()!=0){
+		// ファイル名スプリット
+		vector<vector <kgstr_t> >  fsplit;
+		string fn = _iFilename.at(_inf_pos);
+		fsplit = splitToken2(fn, '/','_'); 
+		int endpos = fsplit.size()-1;
+		for(size_t i=0;i<_kv.size();i++){
+			int pos =  endpos - _kv[i];
+			if(pos<0){ throw kgError("kv key not found");}
+			fldtNames.push_back(fsplit[pos][0]); 
+		}
+	}
 	if(!_nfn_o){ _oFile.writeFldName(fldtNames);  }
 
 	// データの出力
