@@ -52,6 +52,8 @@ class kgCat : public kgMod
 	bool _stop;
 	bool _skip;
 	bool _skip_fnf; // file not found でerror終了する
+	bool _zskip;    // ０バイトファイルはskipする
+
 	bool _add_fn;   // 項目にファイル名の追加
 	bool _is_f;			// f=指定あり
 	size_t  _inf_pos;	// オープンするファイルナンバー
@@ -60,7 +62,7 @@ class kgCat : public kgMod
 	void setArgs(void);
 
 	// 処理ファイルセット&アンセット
-	void readFile_set(kgstr_t fname);
+	int readFile_set(kgstr_t fname);
 	void readFile_unset(void);
 
 	// 出力

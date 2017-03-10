@@ -53,7 +53,7 @@ kgCat::kgCat(void)
 void kgCat::setArgs(void)
 {
 	// パラメータチェック
-	_args.paramcheck("i=,o=,f=,-skip,-nostop,-force,-skip_fnf,-add_fname,-stdin,kv=",
+	_args.paramcheck("i=,flist=,o=,f=,-skip,-nostop,-force,-skip_fnf,-add_fname,-stdin,kv=,-skip_zero",
 				kgArgs::COMMON|kgArgs::IODIFF|kgArgs::NULL_IN);
 
 	// 項目名指定
@@ -71,6 +71,8 @@ void kgCat::setArgs(void)
 	_stdin    = _args.toBool("-stdin");
 	_force		= _args.toBool("-force");
 	_skip 		= _args.toBool("-skip");
+	_zskip 		= _args.toBool("-skip_zero");
+	
 	_stop			= !(_force || _skip || _args.toBool("-nostop"));
 	_is_f     = !_fvstr.empty();
 	if(_skip && _force){ throw kgError("choose one from -force or -skip");}
@@ -81,6 +83,21 @@ void kgCat::setArgs(void)
 	// ファイルが一つもなければエラー
 	// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 	vector<kgstr_t> vs = _args.toStringVector("i=",false);
+	vector< vector<kgstr_t> > vsf = _args.toStringVecVec("flist=",':',2,false);
+	if(!vsf.empty()){
+		for(size_t i=0;i<vsf[0].size();i++){
+			kgCSVfld iFileL;
+			kgArgFld fFieldL;	
+			iFileL.open(vsf[0][i], _env,_nfn_i);
+			iFileL.read_header();
+
+			fFieldL.set(vsf[1][i], &iFileL, _fldByNum);
+			// ファイルリスト読み込み
+			while( EOF != iFileL.read() ){ vs.push_back(iFileL.getVal(fFieldL.num(0))); }
+			iFileL.close();
+		}
+	}
+	
 	_iFilename = kgFilesearch(vs,_skip_fnf,_stdin);
 	if(_iFilename.empty()){ throw kgError("all files on i= are not found");	}
 
@@ -165,7 +182,10 @@ void kgCat::output(kgCSVfld* csv)
 					_oFile.writeStr("", i == _kv.size()-1);
 				}
 				else{
-					_oFile.writeStr(fsplit.at(pos).at(1).c_str(), i == _kv.size()-1 );
+					for(size_t j=1;j<fsplit[pos].size();j+=2){
+						_oFile.writeStr(fsplit.at(pos).at(j).c_str(), i == _kv.size()-1 &&  j==fsplit[pos].size()-1 );
+					}
+
 				}
 			}
 		}else if (_add_fn){
@@ -180,15 +200,22 @@ void kgCat::output(kgCSVfld* csv)
 // 処理ファイルセット
 //  fnameで指定されたファイルのヘッダまで読み込む
 // -----------------------------------------------------------------------------
-void kgCat::readFile_set(kgstr_t fname)
+int kgCat::readFile_set(kgstr_t fname)
 {
 	if(fname=="")	{ _iCsv = &_iFile; }
 	else					{ _iCsv = new kgCSVfld;}
 	if( _iCsv->opened()==false ){
 		_iCsv->open(fname, _env, _nfn_i);
-		_iCsv->read_header();
+		try {
+			_iCsv->read_header();
+		}catch(kgError& err){
+			if( _zskip && err.message(0).find("no data found :")!=string::npos ){
+				return 1;
+			}
+			throw err;
+		}
 	}
-	return;
+	return 0;
 }
 // -----------------------------------------------------------------------------
 // 処理ファイル解除
@@ -215,7 +242,10 @@ int kgCat::run(void) try
 	// データがある最初ファイルの項目名or項目数を基準とする
 	// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 	for( _inf_pos = 0; _inf_pos<_iFilename.size(); _inf_pos++ ){
-		readFile_set( _iFilename.at(_inf_pos) );
+		if(readFile_set( _iFilename.at(_inf_pos) )){
+			readFile_unset();
+			continue;
+		}
 		if(0==_iCsv->fldSize()){ 
 			readFile_unset();
 			continue;
@@ -246,14 +276,19 @@ int kgCat::run(void) try
 		for(size_t i=0;i<_kv.size();i++){
 			int pos =  endpos - _kv[i];
 			if(pos<0){ throw kgError("kv key not found");}
-			fldtNames.push_back(fsplit[pos][0]); 
+			for(size_t j=0;j<fsplit[pos].size();j+=2){
+				fldtNames.push_back(fsplit[pos][j]);
+			}
 		}
 	}
 	if(!_nfn_o){ _oFile.writeFldName(fldtNames);  }
 
 	// データの出力
 	for( ; _inf_pos<_iFilename.size(); _inf_pos++ ){
-		readFile_set( _iFilename.at(_inf_pos) );
+		if(readFile_set( _iFilename.at(_inf_pos) )){
+			readFile_unset();
+			continue;
+		}
 		if(_iCsv->fldSize()!=0) { output(_iCsv); }
 		readFile_unset();
 	}

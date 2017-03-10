@@ -242,8 +242,13 @@ class kgTermiosEX
 	}
 
 	// 文字列カラー出力
-	void outputCLR(char *d,int fclr=KGI_CLR_RED,int bclr=KGI_CLR_GREEN){ //d:出力文字列
-		printf("\e[3%d;4%dm%s\e[39;49m",fclr,bclr,d);
+	void outputCLR(char *d,int fclr=KGI_CLR_RED,int bclr=KGI_CLR_GREEN,bool bold=false){ //d:出力文字列
+		if(bold){
+			printf("\e[1;3%d;4%dm%s\e[0;39;49m",fclr,bclr,d);
+		}
+		else{
+			printf("\e[3%d;4%dm%s\e[39;49m",fclr,bclr,d);
+		}
 		flush();
 	}
 	

@@ -17,6 +17,7 @@
 
  ////////// LICENSE INFO ////////////////////*/
 #include <kgmod.h>
+#include <map>
 using namespace std;
 using namespace kglib;
 using namespace kglib;
@@ -29,6 +30,10 @@ class kgDsp : public kgMod
 	int _y_val;
 	kgstr_t _str_s;
 	kgstr_t _i_s;
+	map<kgstr_t,int> _colorMap;
+	int _fc,_bgc;
+	bool _bold;
+
 	// 引数セット
 	void setArgs(void);
 public:

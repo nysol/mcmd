@@ -40,6 +40,14 @@ kgDsp::kgDsp(void)
 	#ifdef JPN_FORMAT
 		#include <help/jp/kgdspHelp.h>
 	#endif
+	_colorMap["black"] = KGI_CLR_BLACK;
+	_colorMap["red"] = KGI_CLR_RED;
+	_colorMap["green"] = KGI_CLR_GREEN;
+	_colorMap["yellow"] = KGI_CLR_YELLOW;
+	_colorMap["blue"] = KGI_CLR_BLUE;
+	_colorMap["magenda"] = KGI_CLR_MAGENDA;
+	_colorMap["cyan"] = KGI_CLR_CYAN;
+	_colorMap["white"] = KGI_CLR_WHITE;
 
 }
 
@@ -49,13 +57,26 @@ kgDsp::kgDsp(void)
 void kgDsp::setArgs(void)
 {
 	// パラメータチェック
-	_args.paramcheck("x=,y=,str=,i=");
+	_args.paramcheck("x=,y=,str=,i=,bg=,fc=,-bold");
 	_x_val =  atoi(_args.toString("x=",true).c_str());
 	_y_val =  atoi(_args.toString("y=",true).c_str());
 	_str_s =  _args.toString("str=",false);
 	_i_s   =  _args.toString("i=",false);
+	_bold  =  _args.toBool("-bold");
+	kgstr_t bgVal  =  _args.toString("bg=",false);
+	kgstr_t fcVal  =  _args.toString("fc=",false);
+
+
 	if(_str_s.size()==0&&_i_s.size()==0){
 		throw kgError("necessary i= or str=");
+	}
+	_bgc =  KGI_CLR_DEFAULT;
+	_fc  =  KGI_CLR_DEFAULT;
+	if( _colorMap.find(bgVal) !=  _colorMap.end() ){
+		_bgc =  _colorMap[bgVal];
+	}
+	if( _colorMap.find(fcVal) !=  _colorMap.end() ){
+		_fc =  _colorMap[fcVal];
 	}
 }
 // -----------------------------------------------------------------------------
@@ -105,14 +126,14 @@ int kgDsp::run(void) try
 		if(*q=='\n'){
 			*q='\0';
 			scrn.move(_x_val,_y_val+cnt);
-			scrn.output(p);
+			scrn.outputCLR(p,_fc,_bgc,_bold);
 			cnt++;
 			p=q+1;
 		}
 	}
 	if(q!=p){
 		scrn.move(_x_val,_y_val+cnt);
-		scrn.output(p);
+		scrn.outputCLR(p,_fc,_bgc,_bold);
 	}
 
 	return 0;
