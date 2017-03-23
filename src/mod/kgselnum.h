@@ -69,6 +69,14 @@ class kgRangeParam
 
 	void dataSet(kgstr_t& st,kgstr_t& et)
 	{
+		// スペース除去	
+		size_t pos;
+		while((pos = st.find_first_of(" 　\t")) != kgstr_t::npos){
+    	st.erase(pos, 1);
+		}	
+		while((pos = et.find_first_of(" 　\t")) != kgstr_t::npos){
+    	et.erase(pos, 1);
+    }
 		const char *p = st.c_str();
 		const char *q = et.c_str();
 		size_t plen = strlen(p);
