@@ -42,7 +42,7 @@ kgChkcsv::kgChkcsv(void)
 	_name    = "kgchkcsv";
 	_version = "###VERSION###";
 	_in_rec  =0;
-
+	_bominc  = false;
 	#include <help/en/kgchkcsvHelp.h>
 	_titleL = _title;
 	_docL   = _doc;
@@ -132,6 +132,7 @@ void kgChkcsv::showInfo(RecInfo &ri, vector<FldInfo> &fi)
 	*_ofp << "# ? : KGMODにて扱えない問題点(?の後の文字は解説参照)" << endl;
 	*_ofp << "# よって、左端が全て#になればOK" << endl;
 	*_ofp << "#===================================================" << endl;
+	if(_bominc){ *_ofp << "?l 先頭にBOMが含まれている" << endl; }
 	*_ofp << "############################ ヘッダー情報(1行目) ###" << endl;
 	if(ri.maxFldCnt==0){
 		*_ofp << "# なし" << endl;
@@ -285,6 +286,8 @@ void kgChkcsv::showInfo(RecInfo &ri, vector<FldInfo> &fi)
 	*_ofp << "#      ex) NG: xxx,\"oo\"oo\",xxx  -> OK: xxx,\"oo\"\"oo\",xxx" << endl;
 	*_ofp << "#      RFC4180には準拠していない。" << endl;
 	*_ofp << "#  【対処方法】kgchkcsvにて上記の変換を行う。" << endl;
+	*_ofp << "# ?l : 先頭にBOMが含まれている" << endl;
+	*_ofp << "#  【対処方法】kgchkcsvにてBOMは除去される。" << endl;
 	*_ofp << "#-------------------------------------------------------------" << endl;
 }
 // -----------------------------------------------------------------------------
@@ -495,6 +498,10 @@ int kgChkcsv::run(void) try
   	// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
 		size_t recLen = getRec(rec,_fp,&prevc);
 		if(recLen == 0){ break; }
+
+		if(_in_rec==1 && recLen >= 3){//BOMチェック
+			if((unsigned char)*rec==0xEF && (unsigned char)*(rec+1)==0xBB && (unsigned char)*(rec+2) == 0xBF){ _bominc	= true; }
+		}
     if(_diag){ setRecStat(rec,recLen,recInfo);}
   	// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
   	//fld(項目)関連情報の設定
@@ -536,14 +543,16 @@ int kgChkcsv::run(void) try
   	// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
 		if(_in_rec==1){
 			recInfo.fldNameCnt=fldCnt;
-			if(_diag&&!_nfn_i){
-				for(unsigned int i=0; i<fldCnt; i++){
-					string s=string(strdata[i]);
-					recInfo.fldName.push_back(s);
+			if(_diag){
+				if(!_nfn_i){
+					for(unsigned int i=0; i<fldCnt; i++){
+						string s=string(strdata[i]);
+						recInfo.fldName.push_back(s);
+        	}
         }
         continue;
       }else{
-				if( _fldname.size()){
+				if(_fldname.size()){
 					recInfo.fldNameCnt=_fldname.size();
 					_oFile.writeFldName(_fldname);
 					if(!_nfn_i){ continue; }
@@ -552,8 +561,14 @@ int kgChkcsv::run(void) try
 					if(!_nfn_i){//１行目が項目名
 						if(!_nfn_o){
 							for(unsigned int i=0; i<fldCnt; i++){
-								if(i<fldCnt-1) _oFile.	writeStr( strdata[i], false);
-								else           _oFile.writeStr( strdata[i]);
+								char *p = strdata[i];
+								if(i==0 && _bominc){ p = p+3; }
+								if(i<fldCnt-1){
+									_oFile.writeStr(p, false);
+								}
+								else{
+									_oFile.writeStr(p);
+								}
 							}
 							_oFile.writeEolNC();
 						}
@@ -574,7 +589,12 @@ int kgChkcsv::run(void) try
 				size_t i=0;
 				for(i=0; i<fldCnt; i++){ 
 					if(_assertNullOUT){ if(*strdata[i]=='\0') { _existNullOUT = true;} }
-					_oFile.writeStr( strdata[i], false); 
+					if(_in_rec==1 && _bominc && i==0){
+						_oFile.writeStr( strdata[i]+3, false); 
+					}
+					else{
+						_oFile.writeStr( strdata[i], false); 
+					}
 				}
 				for(; i<recInfo.fldNameCnt-1; i++){ _oFile.writeDlm(); }
 				_oFile.writeEol();
@@ -582,8 +602,13 @@ int kgChkcsv::run(void) try
 			else{
 				for(size_t i=0; i<recInfo.fldNameCnt; i++){
 					if(_assertNullOUT){ if(*strdata[i]=='\0') { _existNullOUT = true;} }
-					if(i==recInfo.fldNameCnt-1) { _oFile.writeStr( strdata[i], true); }
-					else                        { _oFile.writeStr( strdata[i], false); }
+					
+					if(_in_rec==1 && _bominc && i==0){
+						_oFile.writeStr( strdata[i]+3, i==recInfo.fldNameCnt-1);
+					}
+					else{					
+						_oFile.writeStr( strdata[i], i==recInfo.fldNameCnt-1);
+					}
 				}
 			}
     }		

@@ -175,6 +175,7 @@ class kgChkcsv : public kgMod {
 	size_t _in_rec;
 	//
 	bool _zeroflg;
+	bool _bominc;
 
 	// 引数セット
 	void setArgs(void);
