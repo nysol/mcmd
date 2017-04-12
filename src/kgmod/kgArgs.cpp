@@ -23,6 +23,8 @@
 #include <kgArgs.h>
 #include <kgMethod.h>
 #include <string.h>
+#include <cstdlib>
+
 
 using namespace kglib;
 using namespace std;
@@ -245,6 +247,18 @@ void kgArgs::paramcheck(const char *cstr, int addCommonArgs)
 	  _available.insert("-assert_nullout");
 	}
 
+	if(addCommonArgs & NULL_OUT){
+	  _available.insert("-assert_nullout");
+	}
+	_available.insert("-params");
+
+	if(keyVal_.find("-params")!=keyVal_.end()){
+		set<string>::iterator i;
+		for(i=_available.begin(); i!=_available.end(); i++){
+			cout << *i << endl;
+		}
+		_Exit(0);
+	}
 	// セットされたパラメータと使用可能パラメータにあるかチェック
 	for(map<string,kgstr_t>::const_iterator i=keyVal_.begin() ;i!=keyVal_.end();i++){
 		if(_available.find(i->first)==_available.end()){
