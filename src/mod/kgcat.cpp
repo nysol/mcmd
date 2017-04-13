@@ -97,7 +97,6 @@ void kgCat::setArgs(void)
 			iFileL.close();
 		}
 	}
-	
 	_iFilename = kgFilesearch(vs,_skip_fnf,_stdin);
 	if(_iFilename.empty()){ throw kgError("all files on i= are not found");	}
 

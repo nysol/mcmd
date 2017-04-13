@@ -31,6 +31,7 @@ void kgVal::type(char type){
 		case 'B': _v.b=false ; break;
 		case 'D': _v.d=NULL  ; break;
 		case 'T': _v.t=NULL  ; break;
+		case 'U': _v.u=NULL  ; break;
 	}
 }
 

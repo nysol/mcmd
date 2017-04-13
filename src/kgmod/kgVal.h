@@ -46,6 +46,7 @@ class kgVal
   	bool   b; // type=B 
   	date*  d; // type=D 
   	ptime* t; // type=T 
+  	ptime* u; // type=u 
 	} _v;
 
 public:
@@ -59,12 +60,14 @@ public:
 	void b(bool   v) {_v.b=v; _null=false;}
 	void d(date*  v) {_v.d=v; _null=false;}
 	void t(ptime* v) {_v.t=v; _null=false;}
+	void u(ptime* v) {_v.u=v; _null=false;}
 
 	double r(void) const {return _v.r;}
 	char*  s(void) const {return _v.s;}
 	bool   b(void) const {return _v.b;}
 	date*  d(void) const {return _v.d;}
 	ptime* t(void) const {return _v.t;}
+	ptime* u(void) const {return _v.u;}
 
 	void type(char type);
 	void null(bool null) { 
@@ -91,6 +94,8 @@ public:
 				break;
 			case 'T':
 					this->t(from->t());
+			case 'U':
+					this->u(from->u());
 				break;		
 		}
 		this->null(from->null());

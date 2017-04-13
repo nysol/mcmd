@@ -56,6 +56,12 @@ public:
 	static const int pfieldIDtime = 14;
 	static const int pfieldIDbool = 15;
 
+	static const int constIDutime  = 16;
+	static const int fieldIDutime  = 17;
+	static const int pfieldIDutime = 18;
+
+
+
 	template<typename ScannerT> struct definition{
 
 		// 項目値用(文字列,整数,実数,日付,時刻,bool)
@@ -64,6 +70,7 @@ public:
 		rule<ScannerT, parser_context<>, parser_tag<fieldIDdate> > field_date;
 		rule<ScannerT, parser_context<>, parser_tag<fieldIDtime> > field_time;
 		rule<ScannerT, parser_context<>, parser_tag<fieldIDbool> > field_bool;
+		rule<ScannerT, parser_context<>, parser_tag<fieldIDutime> > field_utime;
 
 		// 前行項目値用(文字列,整数,実数,日付,時刻,bool)
 		rule<ScannerT, parser_context<>, parser_tag<pfieldIDstr > > pfield_str;
@@ -71,6 +78,7 @@ public:
 		rule<ScannerT, parser_context<>, parser_tag<pfieldIDdate> > pfield_date;
 		rule<ScannerT, parser_context<>, parser_tag<pfieldIDtime> > pfield_time;
 		rule<ScannerT, parser_context<>, parser_tag<pfieldIDbool> > pfield_bool;
+		rule<ScannerT, parser_context<>, parser_tag<pfieldIDutime> > pfield_utime;
 
 		// 定数値用(文字列,整数,実数,日付,時刻,bool)
 		rule<ScannerT, parser_context<>, parser_tag<constIDstr > > const_str;
@@ -78,6 +86,7 @@ public:
 		rule<ScannerT, parser_context<>, parser_tag<constIDdate> > const_date;
 		rule<ScannerT, parser_context<>, parser_tag<constIDtime> > const_time;
 		rule<ScannerT, parser_context<>, parser_tag<constIDbool> > const_bool;
+		rule<ScannerT, parser_context<>, parser_tag<constIDutime> > const_utime;
 
 		//関数・演算子用
 		rule<ScannerT, parser_context<>, parser_tag<exprID> >
@@ -114,6 +123,11 @@ public:
 				>> lexeme_d[leaf_node_d[ *(anychar_p-'}') ]]
 				>> discard_node_d[ch_p('}') >> *space_p];
 
+			// マイクロ時刻項目指定
+			field_utime = discard_node_d[*space_p >> str_p("$u{")]
+				>> lexeme_d[leaf_node_d[ *(anychar_p-'}') ]]
+				>> discard_node_d[ch_p('}') >> *space_p];
+
 			// bool項目指定
 			field_bool = discard_node_d[*space_p >> str_p("$b{")]
 				>> lexeme_d[leaf_node_d[ *(anychar_p-'}') ]]
@@ -146,6 +160,12 @@ public:
 				>> lexeme_d[leaf_node_d[ *(anychar_p-'}') | eps_p ]]
 				>> discard_node_d[ch_p('}') >> *space_p];
 
+			// 小数点時刻項目指定
+			pfield_utime = discard_node_d[*space_p >> str_p("#u{")]
+				>> lexeme_d[leaf_node_d[ *(anychar_p-'}') | eps_p ]]
+				>> discard_node_d[ch_p('}') >> *space_p];
+
+
 			// bool項目指定
 			pfield_bool = discard_node_d[*space_p >> str_p("#b{")]
 				>> lexeme_d[leaf_node_d[ *(anychar_p-'}') | eps_p ]]
@@ -177,9 +197,15 @@ public:
 				>> discard_node_d[*space_p];
 
 			// 時刻の指定
+//			const_time = discard_node_d[*space_p >> str_p("0t")]
+//				>> lexeme_d[leaf_node_d[repeat_p(14)[digit_p] | repeat_p(6)[digit_p] ]]
+//				>> discard_node_d[*space_p];
+
+			// 小数点時刻の指定
 			const_time = discard_node_d[*space_p >> str_p("0t")]
-				>> lexeme_d[leaf_node_d[repeat_p(14)[digit_p] | repeat_p(6)[digit_p] ]]
+				>> lexeme_d[leaf_node_d[ ( (repeat_p(14)[digit_p] | repeat_p(6)[digit_p] ) >> ch_p('.') >> repeat_p(1,6)[digit_p]) | repeat_p(14)[digit_p] | repeat_p(6)[digit_p] ]]
 				>> discard_node_d[*space_p];
+
 
 			// boolの指定
 			const_bool = discard_node_d[*space_p >> str_p("0b")]
@@ -271,10 +297,10 @@ public:
 			                 discard_node_d[*space_p]
 			               ];
 
-			fctr = function2  | function1  | const_date | const_time  |
- 			       const_bool | const_real | const_str  |
-			       field_str  | field_real | field_date | field_time | field_bool |
-						 pfield_str |pfield_real |pfield_date |pfield_time |pfield_bool |
+			fctr = function2  | function1  | const_date | const_utime | const_time  |
+ 			       const_bool | const_real | const_str  | 
+			       field_str  | field_real | field_date | field_time | field_bool | field_utime |
+						 pfield_str |pfield_real |pfield_date |pfield_time |pfield_bool |pfield_utime |
 			       inner_node_d[discard_node_d[*space_p]>>'('>>discard_node_d[*space_p]>>expr>>')'>>discard_node_d[*space_p]>>discard_node_d[*space_p]];		
 		}
 		rule<ScannerT, parser_context<>, parser_tag<exprID> >

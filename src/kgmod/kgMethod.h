@@ -69,6 +69,10 @@ bool date_set(const char * str,int *y,int *d,int *m);
 bool time_set(const char * str,int *h,int *m,int *s);
 bool ptime_set(const char * str,int *yr, int *mo, int *dy, int *hr,int *mi,int *sc);
 
+bool putime_set(const char * str,int *yr, int *mo, int *dy, int *hr,int *mi,int *sc,int *usc,int resolv);
+bool utime_set(const char * str,int *h,int *m,int *s,int *usc,int resolv);
+
+
 bool kgDiv(double* val, char* a, char* b);
 int gcd(int a, int b);
 int lcm(int a, int b);

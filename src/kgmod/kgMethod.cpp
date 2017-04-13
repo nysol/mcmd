@@ -896,7 +896,48 @@ bool kglib::time_set(const char * str,int *h,int *m,int *s)
 	return true;
 }
 // -----------------------------------------------------------------------------
-// 文字列としての日付を年月日時分秒マイクロ秒の整数変数にセットする関数
+// 文字列としての日付を時,分,秒の整数変数にセットする関数
+// 返値：trueで成功, falseで変換失敗
+// 利用関数例: kgFunction_constant_time::initialize(string str)
+// -----------------------------------------------------------------------------
+bool kglib::utime_set(const char * str,int *h,int *m,int *s,int *us, int resolv)
+{
+	size_t dtlen = 7; 
+	// 分解能によって取得する桁数変更 最大6桁
+	size_t flenMax = 6; 
+	
+	if(flenMax > resolv){ flenMax = resolv; }
+	size_t len = strlen(str);
+	if(len<=dtlen){ return false;}
+	
+	size_t flen = len - dtlen; 
+	if(flen > flenMax) flen = flenMax;
+
+	char h_str[8],m_str[8],s_str[8],us_str[16];
+	strncpy(h_str,str  ,2);
+	strncpy(m_str,str+2,2);
+	strncpy(s_str,str+4,2);
+	strncpy(us_str,str+dtlen,flen);
+
+	// 桁合わせ
+	for(size_t i=flen;i<resolv;i++){
+		us_str[i] = '0';
+	}
+
+	*(h_str+2)='\0';
+	*(m_str+2)='\0';
+	*(s_str+2)='\0';
+	*(us_str+resolv)='\0';
+	*h = atoi(h_str);
+	*m = atoi(m_str);
+	*s = atoi(s_str);
+	*us = atoi(us_str);
+	return true;
+}
+
+
+// -----------------------------------------------------------------------------
+// 文字列としての日付を年月日時分秒の整数変数にセットする関数
 // 返値：trueで成功, false以外で変換失敗
 // 利用関数例: kgFunction_constant_time::initialize(string str)
 // -----------------------------------------------------------------------------
@@ -906,6 +947,7 @@ bool kglib::ptime_set(const char * str,int *yr, int *mo, int *dy, int *hr,int *m
 	if(len!=14){ return false;}
 	char yr_str[6],mo_str[6],dy_str[6];
 	char hr_str[6],mi_str[6],sc_str[6];
+
 	strncpy(yr_str,str,   4);
 	strncpy(mo_str,str+ 4,2);
 	strncpy(dy_str,str+ 6,2);
@@ -926,6 +968,57 @@ bool kglib::ptime_set(const char * str,int *yr, int *mo, int *dy, int *hr,int *m
 	*sc = atoi(sc_str);
 	return true;
 }
+// -----------------------------------------------------------------------------
+// 文字列としての日付を年月日時分秒.小数点以下の整数変数にセットする関数
+// 返値：trueで成功, false以外で変換失敗
+// 利用関数例: kgFunction_constant_time::initialize(string str)
+// -----------------------------------------------------------------------------
+bool kglib::putime_set(const char * str,int *yr, int *mo, int *dy, int *hr,int *mi,int *sc,int *usc ,int resolv)
+{
+	size_t dtlen = 15; 
+	// 分解能によって取得する桁数変更 最大6桁
+	size_t flenMax = 6; 
+
+	if(flenMax > resolv){ flenMax = resolv; }
+	size_t len = strlen(str);
+	if(len<=dtlen){ return false;}
+
+	size_t flen = len - dtlen; 
+	if(flen > flenMax) flen = flenMax;
+
+	char yr_str[8],mo_str[8],dy_str[8];
+	char hr_str[8],mi_str[8],sc_str[8];
+	char usc_str[16];
+	strncpy(yr_str,str,   4);
+	strncpy(mo_str,str+ 4,2);
+	strncpy(dy_str,str+ 6,2);
+	strncpy(hr_str,str+ 8,2);
+	strncpy(mi_str,str+10,2);
+	strncpy(sc_str,str+12,2);
+	strncpy(usc_str,str+dtlen,flen);
+	// 桁合わせ
+	for(size_t i=flen;i<resolv;i++){
+		usc_str[i] = '0';
+	}
+	*(yr_str+4)='\0';
+	*(mo_str+2)='\0';
+	*(dy_str+2)='\0';
+	*(hr_str+2)='\0';
+	*(mi_str+2)='\0';
+	*(sc_str+2)='\0';
+	*(usc_str+resolv)='\0';
+	*yr = atoi(yr_str);
+	*mo = atoi(mo_str);
+	*dy = atoi(dy_str);
+	*hr = atoi(hr_str);
+	*mi = atoi(mi_str);
+	*sc = atoi(sc_str);
+	*usc = atoi(usc_str);
+
+	return true;
+}
+
+
 // -----------------------------------------------------------------------------
 // null値考慮型割り算
 // -----------------------------------------------------------------------------

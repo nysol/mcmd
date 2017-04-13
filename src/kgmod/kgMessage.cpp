@@ -87,18 +87,35 @@ string kgMsg::header(void){
 // 時刻取得
 // -----------------------------------------------------------------------------
 string kgMsg::getTime(void){
-	time_t t;
-	struct tm *ltm;
-	time(&t);             
-	ltm = localtime(&t);  
+	//time_t t;
+	//struct tm *ltm;
+	//time(&t);             
+	//ltm = localtime(&t);  
 
 	char buf[128];
-	sprintf(buf,"%04d/%02d/%02d %02d:%02d:%02d",
-		ltm->tm_year+1900, ltm->tm_mon+1, ltm->tm_mday,
-		ltm->tm_hour, ltm->tm_min, ltm->tm_sec);
-
 	ostringstream ss;
-	ss << buf;
+	boost::posix_time::ptime _now = microsec_clock::local_time();
+	
+	if(env_->msgTimebyfsec()){
+		sprintf(buf,"%04d/%02d/%02d ",
+			static_cast<int>(_now.date().year()),
+			static_cast<int>(_now.date().month()),
+			static_cast<int>(_now.date().day())
+		);
+		ss << buf << to_simple_string(_now.time_of_day());
+	
+	}
+	else{
+		sprintf(buf,"%04d/%02d/%02d %02d:%02d:%02d",
+			static_cast<int>(_now.date().year()),
+			static_cast<int>(_now.date().month()),
+			static_cast<int>(_now.date().day()),
+			static_cast<int>(_now.time_of_day().hours()),
+			static_cast<int>(_now.time_of_day().minutes()),
+			static_cast<int>(_now.time_of_day().seconds())
+		);
+		ss << buf;
+	}
 	return ss.str();
 }
 // -----------------------------------------------------------------------------

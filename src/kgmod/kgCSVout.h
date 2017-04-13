@@ -147,7 +147,10 @@ public:
 	void writeDate(const boost::gregorian::date& val, const bool eol);
 	void writeDate(const boost::gregorian::date& val);
 	void writeTime(const boost::posix_time::ptime& val, const bool eol);
+//	void writeUtime(const boost::posix_time::ptime& val, const bool eol);
 	void writeTime(const boost::posix_time::ptime& val);
+//	void writeUtime(const boost::posix_time::ptime& val);
+
 	void writeVal(const kgVal& val, bool eol);
 	void writeVal(const kgVal& val);
 	

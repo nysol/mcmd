@@ -120,6 +120,19 @@ class kgFunction_const_time : public kgFunction
 	virtual void initialize(kgstr_t& str);
 };
 // -------------------------------------------------------------------------
+// 時刻
+// -------------------------------------------------------------------------
+class kgFunction_const_utime : public kgFunction
+{
+	kgAutoPtr1<ptime> _ap;
+	public:
+	kgFunction_const_utime(void)
+		{_result.type('T');_name="const";_minArgc=0;_maxArgc=0;}
+	virtual void initialize(kgstr_t& str);
+};
+
+
+// -------------------------------------------------------------------------
 // bool
 // -------------------------------------------------------------------------
 class kgFunction_const_bool : public kgFunction
@@ -749,6 +762,16 @@ class kgFunction_if_time : public kgFunction
 	virtual void run(void);
 };
 
+// -----------------------------------------------------------------------------
+// if(bool,bool,bol)  => bool
+// -----------------------------------------------------------------------------
+class kgFunction_if_bool : public kgFunction
+{
+	public:
+	kgFunction_if_bool(void)
+	{_result.type('B');_name="if";_minArgc=3;_maxArgc=3;}
+	virtual void run(void);
+};
 // ============================================================================
 // NULL値関連関数クラス
 // ============================================================================
@@ -1053,11 +1076,23 @@ class kgFunction_now : public kgFunction
 };
 
 // -----------------------------------------------------------------------------
+// now() => 時刻 
+// -----------------------------------------------------------------------------
+class kgFunction_unow : public kgFunction
+{
+  boost::posix_time::ptime _unow;
+	public:
+	kgFunction_unow(void)
+	{_result.type('T');_name="unow";_minArgc=0;_maxArgc=0;}
+	virtual void initialize(kgstr_t& str);
+};
+
+// -----------------------------------------------------------------------------
 // time(時刻) => 文字列
 // -----------------------------------------------------------------------------
 class kgFunction_time_str : public kgFunction
 {
-	char _buf[16];
+	char _buf[32];
 	public:
 	kgFunction_time_str(void)
 	{_result.type('S');_name="time";_minArgc=1;_maxArgc=1;}
@@ -1304,6 +1339,19 @@ class kgFunction_diffsecond_t : public kgFunction
 	public:
 	kgFunction_diffsecond_t(void)
 	{_result.type('N');_name="diffsecond";_minArgc=2;_maxArgc=2;}
+	virtual void run(void);
+};
+
+// -----------------------------------------------------------------------------
+// diffsecond(時刻1,時刻2) => 数値 : 
+//  時刻の引き算(時刻1-時刻2)
+//	それぞれ秒差を計算する
+// -----------------------------------------------------------------------------
+class kgFunction_diffusecond_t : public kgFunction
+{
+	public:
+	kgFunction_diffusecond_t(void)
+	{_result.type('N');_name="diffusecond";_minArgc=2;_maxArgc=2;}
 	virtual void run(void);
 };
 
@@ -1693,14 +1741,36 @@ class kgFunction_second_t : public kgFunction
 	virtual void run(void);
 };
 // -----------------------------------------------------------------------------
+// usecond(時刻) => 数値 : 秒抽出マイクロ対応
+// -----------------------------------------------------------------------------
+class kgFunction_usecond_t : public kgFunction
+{
+	public:
+	kgFunction_usecond_t(void)
+	{_result.type('N');_name="usecond";_minArgc=1;_maxArgc=1;}
+	virtual void run(void);
+};
+
+// -----------------------------------------------------------------------------
 // seconds(時刻) => 数値 : 秒抽出
 // -----------------------------------------------------------------------------
 class kgFunction_seconds_t : public kgFunction
 {
-	char _buf[8];
+	char _buf[16];
 	public:
 	kgFunction_seconds_t(void)
 	{_result.type('S');_name="seconds";_minArgc=1;_maxArgc=1;}
+	virtual void run(void);
+};
+// -----------------------------------------------------------------------------
+// seconds(時刻) => 数値 : 秒抽出
+// -----------------------------------------------------------------------------
+class kgFunction_useconds_t : public kgFunction
+{
+	char _buf[32];
+	public:
+	kgFunction_useconds_t(void)
+	{_result.type('S');_name="useconds";_minArgc=1;_maxArgc=1;}
 	virtual void run(void);
 };
 // -----------------------------------------------------------------------------
@@ -1713,6 +1783,17 @@ class kgFunction_tseconds_t : public kgFunction
 	{_result.type('N');_name="tseconds";_minArgc=1;_maxArgc=1;}
 	virtual void run(void);
 };
+// -----------------------------------------------------------------------------
+// tseconds(時刻) => 数値 : トータルの秒数計算
+// -----------------------------------------------------------------------------
+class kgFunction_tuseconds_t : public kgFunction
+{
+	public:
+	kgFunction_tuseconds_t(void)
+	{_result.type('N');_name="tuseconds";_minArgc=1;_maxArgc=1;}
+	virtual void run(void);
+};
+
 // ============================================================================
 // 数値関連クラス
 // ============================================================================
@@ -2069,7 +2150,7 @@ class kgFunction_heron : public kgFunction
 	unsigned int _dim;
 	public:
 	kgFunction_heron(void)
-	{_result.type('N');_name="heron";_minArgc=4;_maxArgc=KG_MAX_CAL_TERMS;}
+	{_result.type('N');_name="heron";_minArgc=3;_maxArgc=KG_MAX_CAL_TERMS;}
 	virtual void run(void);
 	virtual void preprocess(void);
 };
@@ -2787,10 +2868,14 @@ class kgFunction_argsize : public kgFunction
 class kgFuncMap 
 {
 	typedef map<std::string, boost::function<kgFunction* ()> > func_map_t;
-	func_map_t _func_map; //keyword - 関数対応表
+
+	func_map_t    _func_map; //keyword - 関数対応表
+	vector<std::string> _func_vecREG;//正規表現
+
 	kgAutoPtr1<kgFunction> _ap[KG_MAX_CAL_TERMS]; //関数クラスのアドレスを格納するスマートポインタ
 	int _usedCnt; // 使用関数クラス数
 
+	kgFunction* getSUB(const string& id);
 public:
 	// コンストラクタ(インデックスの作成)
 	kgFuncMap(void);

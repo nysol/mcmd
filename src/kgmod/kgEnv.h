@@ -43,6 +43,8 @@ class kgEnv {
 	bool    _fldByNum;     // 項目番号で指定する
 	bool    recursiveMsg_; // 再帰的にmodのエラーメッセージを出すかどうか
 
+	bool    msgTimebyfsec_; // fractional_secondsによる時刻表示
+	
 	bool    sigact_;       // シグナルトラップ起動中かどうか(true:起動中, false:なし)
 	int     blockCount_;   // キー単位ごとに処理する際に使用するバッファ数
 
@@ -66,6 +68,7 @@ public:
 	bool    recursiveMsg(void)		const{ return recursiveMsg_; }
 	int     getBlockCount(void)		const{ return blockCount_; }
 	bool    sigactcheck(void)			const{ return sigact_; }
+	bool    msgTimebyfsec(void)			const{ return msgTimebyfsec_; }
 
 	// 有効桁数セット
 	void    precision(int p);

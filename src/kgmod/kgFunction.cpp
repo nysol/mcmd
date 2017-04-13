@@ -45,14 +45,21 @@ namespace
 		int h0 = t0->time_of_day().hours();
 		int n0 = t0->time_of_day().minutes();
 		int s0 = t0->time_of_day().seconds();
+		int us0 = t0->time_of_day().fractional_seconds();
+
 		int y1 = t1->date().year();
 		int m1 = t1->date().month();
 		int d1 = t1->date().day();
 		int h1 = t1->time_of_day().hours();
 		int n1 = t1->time_of_day().minutes();
 		int s1 = t1->time_of_day().seconds();
+		int us1 = t1->time_of_day().fractional_seconds();
+		
 		int fract=( m0*100000000+d0*1000000+h0*10000+n0*100+s0
 				       -m1*100000000-d1*1000000-h1*10000-n1*100-s1);
+		if(fract==0){
+			fract = us0 - us1;
+		}
 		if(fract<0) return y0-y1-1;
 		else        return y0-y1;
 	}
@@ -80,14 +87,19 @@ namespace
 		int h0 = t0->time_of_day().hours();
 		int n0 = t0->time_of_day().minutes();
 		int s0 = t0->time_of_day().seconds();
+		int us0 = t0->time_of_day().fractional_seconds();
 		int y1 = t1->date().year();
 		int m1 = t1->date().month();
 		int d1 = t1->date().day();
 		int h1 = t1->time_of_day().hours();
 		int n1 = t1->time_of_day().minutes();
 		int s1 = t1->time_of_day().seconds();
+		int us1 = t1->time_of_day().fractional_seconds();
 		int fract=( d0*1000000+h0*10000+n0*100+s0
 				       -d1*1000000-h1*10000-n1*100-s1);
+		if(fract==0){
+			fract = us0 - us1;
+		}
 		if(fract<0) return (y0-y1)*12+(m0-m1)-1;
 		else        return (y0-y1)*12+(m0-m1);
 	}
@@ -112,11 +124,16 @@ namespace
 		int h0 = t0->time_of_day().hours();
 		int n0 = t0->time_of_day().minutes();
 		int s0 = t0->time_of_day().seconds();
+		int us0 = t0->time_of_day().fractional_seconds();
 		int h1 = t1->time_of_day().hours();
 		int n1 = t1->time_of_day().minutes();
 		int s1 = t1->time_of_day().seconds();
+		int us1 = t1->time_of_day().fractional_seconds();
 		int fract=( h0*10000+n0*100+s0
 				       -h1*10000-n1*100-s1);
+		if(fract==0){
+			fract = us0 - us1;
+		}
 		date_duration dd= t0->date() - t1->date();
 		if(fract<0) return dd.days()-1;
 		else        return dd.days();
@@ -131,34 +148,59 @@ namespace
 	// ptimeのメモリを確保するのでその管理は呼び出しもとで行う
 	ptime* s2ptime(const char *str)
 	{
-		int yr,mo,dy,hr,mi,sc;
-		size_t l = strlen(str);
+	
+		int yr,mo,dy,hr,mi,sc,usec;
+		const char *p ; //"."位置
+		size_t len = strlen(str);
+		for(p=str;*p;p++){ 
+			if(*p == '.') { break; }
+		}
+		size_t ilen = (p - str);
+		size_t flen = 0;
+		if(*p=='.'){ flen = len - (ilen+1); }
 		// 時分秒の場合(len:6)は本日日付を利用してptimeを求める
 		// 年月日の場合(len:8)は12:00:00を利用してptimeを求める
-		if(l==6){
-			if( time_set(str,&hr,&mi,&sc) ){
-				try {
-					return new ptime( day_clock::local_day(), hours(hr)+minutes(mi)+seconds(sc) );
-				}catch(...){
-					return NULL;
+		try {
+			if(ilen==6){
+				if(flen==0){
+					if( time_set(str,&hr,&mi,&sc) ){
+						return new ptime( day_clock::local_day(), time_duration(hr,mi,sc));
+					}
+				}
+				else{
+					if( utime_set(str,&hr,&mi,&sc,&usec,time_duration::num_fractional_digits()) ){
+						return new ptime( day_clock::local_day(), time_duration(hr,mi,sc,usec) );
+					}
 				}
 			}
-		}else if(l==8){
-			if( date_set(str,&yr,&mo,&dy)){
-				try {
-					return new ptime( date(yr,mo,dy), hours(12)+minutes(0)+seconds(0) );
-				}catch(...){
-					return NULL;
+			else if(ilen==8){
+				if(flen==0){
+					if( date_set(str,&yr,&mo,&dy)){
+						return new ptime( date(yr,mo,dy), hours(12)+minutes(0)+seconds(0) );
+					}
+				}
+				else{
+					return NULL ; //format error
 				}
 			}
-		}else if(l==14){
-			if(ptime_set(str,&yr,&mo,&dy,&hr,&mi,&sc)){
-				try {
-					return new ptime( date(yr,mo,dy), hours(hr)+minutes(mi)+seconds(sc) );
-				}catch(...){
-					return NULL;
+			else if(ilen==14){
+				if(flen==0){
+					if(ptime_set(str,&yr,&mo,&dy,&hr,&mi,&sc)){
+						return new ptime( date(yr,mo,dy), time_duration(hr,mi,sc));
+					}
+				}
+				else{
+					if(putime_set(str,&yr,&mo,&dy,&hr,&mi,&sc,&usec,time_duration::num_fractional_digits())){
+						return new ptime( date(yr,mo,dy), time_duration(hr,mi,sc,usec));
+					}
 				}
 			}
+			else{
+				return NULL;
+			}
+		}
+		catch(...){
+			return NULL;
 		}
 		return NULL;
 	}
@@ -250,6 +292,20 @@ void kgFunction_const_time::initialize(kgstr_t& str)
 		_result.null(true);
 	}
 }
+// -------------------------------------------------------------------------
+// 時刻定数セット::初期設定(定数格納)
+// -------------------------------------------------------------------------
+void kgFunction_const_utime::initialize(kgstr_t& str)
+{
+	ptime* t = s2ptime(str.c_str());
+	if(t!=NULL){
+	  _ap.set(t);
+		_result.t(_ap.get());
+	}else{
+		_result.null(true);
+	}
+}
+
 // -------------------------------------------------------------------------
 // bool定数セット
 // -------------------------------------------------------------------------
@@ -460,8 +516,10 @@ void kgFunction_add_sec::run(void)
 		_result.null(true);
 	}else{
 		try {
+			double i;
+			double fract = modf(_args.at(1)->r(), &i);
     	_ap.set( 
-    		new ptime(*_args.at(0)->t()+seconds(static_cast<int>(_args.at(1)->r()))) 
+    		new ptime(*_args.at(0)->t()+time_duration(0,0,i, fract * time_duration::ticks_per_second())) 
     	);
 			_result.t(_ap.get());
 		}catch(...){
@@ -541,8 +599,11 @@ void kgFunction_sub_sec::run(void)
 		_result.null(true);
 	}else{
 		try {
-    	_ap.set( new ptime(
-				*_args.at(0)->t()-seconds(static_cast<int>(_args.at(1)->r()))) );
+			double i;
+			double fract = modf(_args.at(1)->r(), &i);
+    	_ap.set( 
+    		new ptime(*_args.at(0)->t()-time_duration(0,0,i, fract * time_duration::ticks_per_second())) 
+    	);
 			_result.t(_ap.get());
 		}catch(...){
 			_result.null(true);
@@ -570,7 +631,7 @@ void kgFunction_sub_time::run(void)
 		_result.null(true);
 	}else{
 		time_duration td( *_args.at(0)->t() - *_args.at(1)->t() );
-		_result.r( static_cast<double>(td.total_seconds()) );
+		_result.r( static_cast<double>(td.total_seconds())+ static_cast<double>(td.fractional_seconds())/time_duration::ticks_per_second() );
 	}
 }
 // -----------------------------------------------------------------------------
@@ -1099,6 +1160,23 @@ void kgFunction_if_time::run(void){
 	}
 }
 // -----------------------------------------------------------------------------
+// 論理関数 if(B,T,T)
+// -----------------------------------------------------------------------------
+void kgFunction_if_bool::run(void){
+	if( _args.at(0)->null() ){
+		_result.null(true);
+	}else{
+		if( _args.at(0)->b() ){
+			if( _args.at(1)->null() ) _result.null(true);
+ 			else                      _result.b(_args.at(1)->b());
+		}else{
+			if( _args.at(2)->null() ) _result.null(true);
+			else                      _result.b(_args.at(2)->b());
+		}
+	}
+}
+
+// -----------------------------------------------------------------------------
 // 論理関数 and(B,B,...,B)
 // -----------------------------------------------------------------------------
 void kgFunction_multi_and::run(void)
@@ -1422,6 +1500,15 @@ void kgFunction_now::initialize(kgstr_t& str)
 	_result.t(&_now);
 }
 // -----------------------------------------------------------------------------
+// 現在時刻
+// -----------------------------------------------------------------------------
+void kgFunction_unow::initialize(kgstr_t& str)
+{
+	_unow=microsec_clock::local_time();
+	_result.t(&_unow);
+}
+
+// -----------------------------------------------------------------------------
 // 時刻->日付文字列
 // -----------------------------------------------------------------------------
 void kgFunction_date_str::run(void)
@@ -1450,9 +1537,28 @@ void kgFunction_time_str::run(void)
 		int h = _args.at(0)->t()->time_of_day().hours();
 		int m = _args.at(0)->t()->time_of_day().minutes();
 		int s = _args.at(0)->t()->time_of_day().seconds();
-		sprintf( _buf,"%02d%02d%02d", h,m,s);
+		long long us = _args.at(0)->t()->time_of_day().fractional_seconds();
+		
+		if(us==0){
+			sprintf( _buf,"%02d%02d%02d", h,m,s);
+		}
+		else{
+			char fmt[32];
+			sprintf(fmt,"%%02d%%02d%%02d.%%0%dlld",_args.at(0)->t()->time_of_day().num_fractional_digits() );
+			sprintf(_buf,fmt,
+				_args.at(0)->t()->time_of_day().hours()  ,
+				_args.at(0)->t()->time_of_day().minutes(),
+				_args.at(0)->t()->time_of_day().seconds(),
+				_args.at(0)->t()->time_of_day().fractional_seconds()
+    	);  
+    	//後ろ０クリア
+			for(char *p = _buf+strlen(_buf)-1 ; p>_buf && *p=='0' ;p-- ){
+				*p='\0';
+			}
+		}
 		_result.s(_buf);
 	}
+
 }
 // -----------------------------------------------------------------------------
 // 閏年判定:date
@@ -1497,9 +1603,17 @@ void kgFunction_t2julian::run(void)
 	if( _args.at(0)->null() ){
 		_result.null(true);
 	}else{
+		// 精度対策
 		_result.r(
-			static_cast<double>(_args.at(0)->t()->date().julian_day()) + 
-			static_cast<double>(_args.at(0)->t()->time_of_day().total_seconds()) / 86400.0
+			static_cast<double>( _args.at(0)->t()->date().julian_day() ) + 
+			static_cast<double>
+				( 
+					( _args.at(0)->t()->time_of_day().total_seconds() * time_duration::ticks_per_second() 		
+		      + _args.at(0)->t()->time_of_day().fractional_seconds() )
+        	- 43200 * time_duration::ticks_per_second() 
+        ) 
+        / 
+        static_cast<double>( 86400 * time_duration::ticks_per_second() )
 		);
 	}
 }
@@ -1531,11 +1645,12 @@ void kgFunction_julian2t::run(void)
 	if( _args.at(0)->null() ){
 		_result.null(true);
 	}else{
+		double i,f;
 		try {
-			date d( gregorian_calendar::from_julian_day_number(
-				( static_cast<unsigned long>(_args.at(0)->r())) )
-			);
-			ptime t( d, hours(0)+minutes(0)+seconds(0) );
+			f = modf(_args.at(0)->r(), &i);
+			date d( gregorian_calendar::from_julian_day_number( static_cast<unsigned long>(i) ) );
+			f = modf(f*86400, &i);
+			ptime t( d, time_duration(12,0,i,f*time_duration::ticks_per_second()) );
     	_ap.set( new ptime(t) );
 			_result.t(_ap.get());
 		}catch(...){
@@ -1732,6 +1847,23 @@ void kgFunction_diffsecond_t::run(void){
 	double diff =  static_cast<double>(td.total_seconds());
 	_result.r(diff);
 }
+
+// -----------------------------------------------------------------------------
+// diffusecond(T1,T2) 時間の引き算(T2-T1) マイクロ対応
+// -----------------------------------------------------------------------------
+void kgFunction_diffusecond_t::run(void){
+	if( _args.at(0)->null() || _args.at(1)->null()  ){
+		_result.null(true);
+		return;
+	}
+	time_duration td= *_args.at(0)->t() - *_args.at(1)->t(); 
+//	double diff =  static_cast<double>( td.total_microseconds() );
+	double diff = static_cast<double>( td.total_seconds()*time_duration::ticks_per_second() +  td.fractional_seconds() )/ time_duration::ticks_per_second();
+	_result.r(diff);
+}
+
+
+
 // -----------------------------------------------------------------------------
 // year(DorT) 年を抽出
 // -----------------------------------------------------------------------------
@@ -2125,6 +2257,20 @@ void kgFunction_second_t::run(void)
 	}
 }
 // -----------------------------------------------------------------------------
+// useconds(時刻) => 数値 : 秒抽出マイクロ秒対応
+// -----------------------------------------------------------------------------
+void kgFunction_usecond_t::run(void)
+{
+	if( _args.at(0)->null() ){
+		_result.null(true);
+	}else{
+//	double diff = static_cast<double>( td.total_seconds()*time_duration::ticks_per_second() +  td.fractional_seconds() )/ time_duration::ticks_per_second();
+		_result.r( 
+			static_cast<double>( _args.at(0)->t()->time_of_day().seconds() * time_duration::ticks_per_second() +  _args.at(0)->t()->time_of_day().fractional_seconds() ) / time_duration::ticks_per_second()
+		);
+	}
+}
+// -----------------------------------------------------------------------------
 // seconds(時刻) => 数値 : 秒抽出
 // -----------------------------------------------------------------------------
 void kgFunction_seconds_t::run(void)
@@ -2133,6 +2279,24 @@ void kgFunction_seconds_t::run(void)
 		_result.null(true);
 	}else{
 		sprintf( _buf,"%02d", _args.at(0)->t()->time_of_day().seconds());
+		_result.s(_buf);
+	}
+}
+
+// -----------------------------------------------------------------------------
+// seconds(時刻) => 数値 : 秒抽出マイクロ対応
+// -----------------------------------------------------------------------------
+void kgFunction_useconds_t::run(void)
+{
+	if( _args.at(0)->null() ){
+		_result.null(true);
+	}else{
+		char fmt[32];
+		sprintf(fmt,"%%02d.%%0%dlld",time_duration::num_fractional_digits() );
+		sprintf(_buf,fmt, 
+			_args.at(0)->t()->time_of_day().seconds(),
+			_args.at(0)->t()->time_of_day().fractional_seconds()
+		);
 		_result.s(_buf);
 	}
 }
@@ -2147,6 +2311,23 @@ void kgFunction_tseconds_t::run(void)
 		_result.r( static_cast<double>(_args.at(0)->t()->time_of_day().total_seconds()) );
 	}
 }
+// -----------------------------------------------------------------------------
+// tseconds(時刻) => 数値 : トータルの秒数計算
+// -----------------------------------------------------------------------------
+void kgFunction_tuseconds_t::run(void)
+{
+	if( _args.at(0)->null() ){
+		_result.null(true);
+	}else{
+		_result.r( 
+			static_cast<double>( 
+			_args.at(0)->t()->time_of_day().total_seconds() * time_duration::ticks_per_second() 
+			+ _args.at(0)->t()->time_of_day().fractional_seconds() 
+			) / time_duration::ticks_per_second()
+		);
+	}
+}
+
 // ============================================================================
 // 数値関連クラス
 // ============================================================================
@@ -3853,12 +4034,16 @@ void kgFunction_argsize::run(void)
 // ------- コンストラクタ(インデックスの作成)
 kgFuncMap::kgFuncMap(void){
 	_usedCnt=0;
+
+	// 可変引数は_func_vecREGにも登録
+
 	// 定数
 	_func_map["CS"   ]= lambda::bind(lambda::new_ptr<kgFunction_const_str >());
 	_func_map["CN"   ]= lambda::bind(lambda::new_ptr<kgFunction_const_real>());
 	_func_map["CD"   ]= lambda::bind(lambda::new_ptr<kgFunction_const_date>());
 	_func_map["CT"   ]= lambda::bind(lambda::new_ptr<kgFunction_const_time>());
 	_func_map["CB"   ]= lambda::bind(lambda::new_ptr<kgFunction_const_bool>());
+//	_func_map["CU"   ]= lambda::bind(lambda::new_ptr<kgFunction_const_utime>());
 
 	// 項目
 	_func_map["FS"  ]= lambda::bind(lambda::new_ptr<kgFunction_field_str >());
@@ -3875,78 +4060,89 @@ kgFuncMap::kgFuncMap(void){
 	_func_map["PB"  ]= lambda::bind(lambda::new_ptr<kgFunction_pfield_bool>());
 
 	// 算術演算子
-	_func_map["+_S" ]= lambda::bind(lambda::new_ptr<kgFunction_add_str >());
-	_func_map["+_N" ]= lambda::bind(lambda::new_ptr<kgFunction_add_real>());
+	_func_map["+_SS"]= lambda::bind(lambda::new_ptr<kgFunction_add_str >());
+	_func_map["+_NN"]= lambda::bind(lambda::new_ptr<kgFunction_add_real>());
 	_func_map["+_DN"]= lambda::bind(lambda::new_ptr<kgFunction_add_day >());
 	_func_map["+_TN"]= lambda::bind(lambda::new_ptr<kgFunction_add_sec >());
-	_func_map["-_S" ]= lambda::bind(lambda::new_ptr<kgFunction_sub_str >());
-	_func_map["-_N" ]= lambda::bind(lambda::new_ptr<kgFunction_sub_real>());
+	_func_map["-_SS"]= lambda::bind(lambda::new_ptr<kgFunction_sub_str >());
+	_func_map["-_NN"]= lambda::bind(lambda::new_ptr<kgFunction_sub_real>());
 	_func_map["-_DN"]= lambda::bind(lambda::new_ptr<kgFunction_sub_day >());
 	_func_map["-_TN"]= lambda::bind(lambda::new_ptr<kgFunction_sub_sec >());
-	_func_map["-_D" ]= lambda::bind(lambda::new_ptr<kgFunction_sub_date>());
-	_func_map["-_T" ]= lambda::bind(lambda::new_ptr<kgFunction_sub_time>());
-	_func_map["*_N" ]= lambda::bind(lambda::new_ptr<kgFunction_mul_real>());
-	_func_map["/_N" ]= lambda::bind(lambda::new_ptr<kgFunction_div_real>());
-	_func_map["%_N" ]= lambda::bind(lambda::new_ptr<kgFunction_mod_real>());
-	_func_map["^_N" ]= lambda::bind(lambda::new_ptr<kgFunction_pow_real>());
+	_func_map["-_DD"]= lambda::bind(lambda::new_ptr<kgFunction_sub_date>());
+	_func_map["-_TT"]= lambda::bind(lambda::new_ptr<kgFunction_sub_time>());
+	_func_map["*_NN"]= lambda::bind(lambda::new_ptr<kgFunction_mul_real>());
+	_func_map["/_NN"]= lambda::bind(lambda::new_ptr<kgFunction_div_real>());
+	_func_map["%_NN"]= lambda::bind(lambda::new_ptr<kgFunction_mod_real>());
+	_func_map["^_NN"]= lambda::bind(lambda::new_ptr<kgFunction_pow_real>());
 
 	// 関係演算子
-	_func_map[">=_S"]= lambda::bind(lambda::new_ptr<kgFunction_ge_str  >());
-	_func_map[">=_N"]= lambda::bind(lambda::new_ptr<kgFunction_ge_real >());
-	_func_map[">=_D"]= lambda::bind(lambda::new_ptr<kgFunction_ge_date >());
-	_func_map[">=_T"]= lambda::bind(lambda::new_ptr<kgFunction_ge_time >());
-	_func_map["<=_S"]= lambda::bind(lambda::new_ptr<kgFunction_le_str  >());
-	_func_map["<=_N"]= lambda::bind(lambda::new_ptr<kgFunction_le_real >());
-	_func_map["<=_D"]= lambda::bind(lambda::new_ptr<kgFunction_le_date >());
-	_func_map["<=_T"]= lambda::bind(lambda::new_ptr<kgFunction_le_time >());
-	_func_map[">_S" ]= lambda::bind(lambda::new_ptr<kgFunction_gt_str  >());
-	_func_map[">_N" ]= lambda::bind(lambda::new_ptr<kgFunction_gt_real >());
-	_func_map[">_D" ]= lambda::bind(lambda::new_ptr<kgFunction_gt_date >());
-	_func_map[">_T" ]= lambda::bind(lambda::new_ptr<kgFunction_gt_time >());
-	_func_map["<_S" ]= lambda::bind(lambda::new_ptr<kgFunction_lt_str  >());
-	_func_map["<_N" ]= lambda::bind(lambda::new_ptr<kgFunction_lt_real >());
-	_func_map["<_D" ]= lambda::bind(lambda::new_ptr<kgFunction_lt_date >());
-	_func_map["<_T" ]= lambda::bind(lambda::new_ptr<kgFunction_lt_time >());
-	_func_map["==_S"]= lambda::bind(lambda::new_ptr<kgFunction_eq_str  >());
-	_func_map["==_N"]= lambda::bind(lambda::new_ptr<kgFunction_eq_real >());
-	_func_map["==_D"]= lambda::bind(lambda::new_ptr<kgFunction_eq_date >());
-	_func_map["==_T"]= lambda::bind(lambda::new_ptr<kgFunction_eq_time >());
-	_func_map["!=_S"]= lambda::bind(lambda::new_ptr<kgFunction_ne_str  >());
-	_func_map["!=_N"]= lambda::bind(lambda::new_ptr<kgFunction_ne_real >());
-	_func_map["!=_D"]= lambda::bind(lambda::new_ptr<kgFunction_ne_date >());
-	_func_map["!=_T"]= lambda::bind(lambda::new_ptr<kgFunction_ne_time >());
+	_func_map[">=_SS"]= lambda::bind(lambda::new_ptr<kgFunction_ge_str  >());
+	_func_map[">=_NN"]= lambda::bind(lambda::new_ptr<kgFunction_ge_real >());
+	_func_map[">=_DD"]= lambda::bind(lambda::new_ptr<kgFunction_ge_date >());
+	_func_map[">=_TT"]= lambda::bind(lambda::new_ptr<kgFunction_ge_time >());
+	_func_map["<=_SS"]= lambda::bind(lambda::new_ptr<kgFunction_le_str  >());
+	_func_map["<=_NN"]= lambda::bind(lambda::new_ptr<kgFunction_le_real >());
+	_func_map["<=_DD"]= lambda::bind(lambda::new_ptr<kgFunction_le_date >());
+	_func_map["<=_TT"]= lambda::bind(lambda::new_ptr<kgFunction_le_time >());
+	_func_map[">_SS" ]= lambda::bind(lambda::new_ptr<kgFunction_gt_str  >());
+	_func_map[">_NN" ]= lambda::bind(lambda::new_ptr<kgFunction_gt_real >());
+	_func_map[">_DD" ]= lambda::bind(lambda::new_ptr<kgFunction_gt_date >());
+	_func_map[">_TT" ]= lambda::bind(lambda::new_ptr<kgFunction_gt_time >());
+	_func_map["<_SS" ]= lambda::bind(lambda::new_ptr<kgFunction_lt_str  >());
+	_func_map["<_NN" ]= lambda::bind(lambda::new_ptr<kgFunction_lt_real >());
+	_func_map["<_DD" ]= lambda::bind(lambda::new_ptr<kgFunction_lt_date >());
+	_func_map["<_TT" ]= lambda::bind(lambda::new_ptr<kgFunction_lt_time >());
+	_func_map["==_SS"]= lambda::bind(lambda::new_ptr<kgFunction_eq_str  >());
+	_func_map["==_NN"]= lambda::bind(lambda::new_ptr<kgFunction_eq_real >());
+	_func_map["==_DD"]= lambda::bind(lambda::new_ptr<kgFunction_eq_date >());
+	_func_map["==_TT"]= lambda::bind(lambda::new_ptr<kgFunction_eq_time >());
+	_func_map["!=_SS"]= lambda::bind(lambda::new_ptr<kgFunction_ne_str  >());
+	_func_map["!=_NN"]= lambda::bind(lambda::new_ptr<kgFunction_ne_real >());
+	_func_map["!=_DD"]= lambda::bind(lambda::new_ptr<kgFunction_ne_date >());
+	_func_map["!=_TT"]= lambda::bind(lambda::new_ptr<kgFunction_ne_time >());
 
 	// 論理演算子
-	_func_map["&&_B"]= lambda::bind(lambda::new_ptr<kgFunction_and     >());
-	_func_map["||_B"]= lambda::bind(lambda::new_ptr<kgFunction_or      >());
-	_func_map["^^_B"]= lambda::bind(lambda::new_ptr<kgFunction_xor     >());
+	_func_map["&&_BB" ]= lambda::bind(lambda::new_ptr<kgFunction_and     >());
+	_func_map["and_B*"]= lambda::bind(lambda::new_ptr<kgFunction_multi_and>());
+	_func_map["||_BB" ]= lambda::bind(lambda::new_ptr<kgFunction_or      >());
+	_func_map["or_B*" ]= lambda::bind(lambda::new_ptr<kgFunction_multi_or >());
+	_func_map["^^_BB" ]= lambda::bind(lambda::new_ptr<kgFunction_xor     >());
+	_func_map["not_B*"]= lambda::bind(lambda::new_ptr<kgFunction_not     >());
+
+	_func_vecREG.push_back("and_B*");
+	_func_vecREG.push_back("or_B*");
+	_func_vecREG.push_back("not_B*");
 
 	// 論理関数
-	_func_map["if_BN"   ]= lambda::bind(lambda::new_ptr<kgFunction_if_real >());
-	_func_map["if_BS"   ]= lambda::bind(lambda::new_ptr<kgFunction_if_str  >());
-	_func_map["if_BD"   ]= lambda::bind(lambda::new_ptr<kgFunction_if_date >());
-	_func_map["if_BT"   ]= lambda::bind(lambda::new_ptr<kgFunction_if_time >());
-	_func_map["and_B"   ]= lambda::bind(lambda::new_ptr<kgFunction_multi_and>());
-	_func_map["or_B"    ]= lambda::bind(lambda::new_ptr<kgFunction_multi_or >());
-	_func_map["not_B"   ]= lambda::bind(lambda::new_ptr<kgFunction_not     >());
+	_func_map["if_BNN"]= lambda::bind(lambda::new_ptr<kgFunction_if_real >());
+	_func_map["if_BSS"]= lambda::bind(lambda::new_ptr<kgFunction_if_str  >());
+	_func_map["if_BDD"]= lambda::bind(lambda::new_ptr<kgFunction_if_date >());
+	_func_map["if_BTT"]= lambda::bind(lambda::new_ptr<kgFunction_if_time >());
+	_func_map["if_BBB"]= lambda::bind(lambda::new_ptr<kgFunction_if_bool >());
 
 
 	//NULL値関連
-	_func_map["isnull_S"]= lambda::bind(lambda::new_ptr<kgFunction_isnull_s>());
-	_func_map["isnull_N"]= lambda::bind(lambda::new_ptr<kgFunction_isnull_n>());
-	_func_map["isnull_D"]= lambda::bind(lambda::new_ptr<kgFunction_isnull_d>());
-	_func_map["isnull_T"]= lambda::bind(lambda::new_ptr<kgFunction_isnull_t>());
-	_func_map["isnull_B"]= lambda::bind(lambda::new_ptr<kgFunction_isnull_b>());
 	_func_map["nulls_"]= lambda::bind(lambda::new_ptr<kgFunction_const_nulls>());
 	_func_map["nulln_"]= lambda::bind(lambda::new_ptr<kgFunction_const_nulln>());
 	_func_map["nulld_"]= lambda::bind(lambda::new_ptr<kgFunction_const_nulld>());
 	_func_map["nullt_"]= lambda::bind(lambda::new_ptr<kgFunction_const_nullt>());
 	_func_map["nullb_"]= lambda::bind(lambda::new_ptr<kgFunction_const_nullb>());
-	_func_map["countnull_S"]= lambda::bind(lambda::new_ptr<kgFunction_countnull_s>());
-	_func_map["countnull_N"]= lambda::bind(lambda::new_ptr<kgFunction_countnull>());
-	_func_map["countnull_D"]= lambda::bind(lambda::new_ptr<kgFunction_countnull>());
-	_func_map["countnull_T"]= lambda::bind(lambda::new_ptr<kgFunction_countnull>());
-	_func_map["countnull_B"]= lambda::bind(lambda::new_ptr<kgFunction_countnull>());
+	_func_map["isnull_S"]= lambda::bind(lambda::new_ptr<kgFunction_isnull_s>());
+	_func_map["isnull_N"]= lambda::bind(lambda::new_ptr<kgFunction_isnull_n>());
+	_func_map["isnull_D"]= lambda::bind(lambda::new_ptr<kgFunction_isnull_d>());
+	_func_map["isnull_T"]= lambda::bind(lambda::new_ptr<kgFunction_isnull_t>());
+	_func_map["isnull_B"]= lambda::bind(lambda::new_ptr<kgFunction_isnull_b>());
+	_func_map["countnull_S*"]= lambda::bind(lambda::new_ptr<kgFunction_countnull_s>());
+	_func_map["countnull_N*"]= lambda::bind(lambda::new_ptr<kgFunction_countnull>());
+	_func_map["countnull_D*"]= lambda::bind(lambda::new_ptr<kgFunction_countnull>());
+	_func_map["countnull_T*"]= lambda::bind(lambda::new_ptr<kgFunction_countnull>());
+	_func_map["countnull_B*"]= lambda::bind(lambda::new_ptr<kgFunction_countnull>());
+
+	_func_vecREG.push_back("countnull_S*");
+	_func_vecREG.push_back("countnull_N*");
+	_func_vecREG.push_back("countnull_D*");
+	_func_vecREG.push_back("countnull_T*");
+	_func_vecREG.push_back("countnull_B*");
 
 	// 変換関数
 	_func_map["s2n_S"     ]= lambda::bind(lambda::new_ptr<kgFunction_s2n        >());
@@ -3964,181 +4160,244 @@ kgFuncMap::kgFuncMap(void){
 	_func_map["format_NS" ]= lambda::bind(lambda::new_ptr<kgFunction_format_real>());
 
 	// 日付関数
-	_func_map["today_"      ]= lambda::bind(lambda::new_ptr<kgFunction_today     >());
-	_func_map["now_"        ]= lambda::bind(lambda::new_ptr<kgFunction_now       >());
-	_func_map["time_T"      ]= lambda::bind(lambda::new_ptr<kgFunction_time_str  >());
-	_func_map["date_T"      ]= lambda::bind(lambda::new_ptr<kgFunction_date_str  >());
+	_func_map["today_"]= lambda::bind(lambda::new_ptr<kgFunction_today     >());
+	_func_map["now_"  ]= lambda::bind(lambda::new_ptr<kgFunction_now       >());
+	_func_map["unow_"  ]= lambda::bind(lambda::new_ptr<kgFunction_unow       >());
+	_func_map["time_T"]= lambda::bind(lambda::new_ptr<kgFunction_time_str  >());
+	_func_map["date_T"]= lambda::bind(lambda::new_ptr<kgFunction_date_str  >());
 	
-	
-	
-	_func_map["leapyear_D"  ]= lambda::bind(lambda::new_ptr<kgFunction_leapyear_d>());
-	_func_map["leapyear_T"  ]= lambda::bind(lambda::new_ptr<kgFunction_leapyear_t>());
+	_func_map["leapyear_D"]= lambda::bind(lambda::new_ptr<kgFunction_leapyear_d>());
+	_func_map["leapyear_T"]= lambda::bind(lambda::new_ptr<kgFunction_leapyear_t>());
 
 	_func_map["julian_D"  ]= lambda::bind(lambda::new_ptr<kgFunction_d2julian  >());
 	_func_map["julian_T"  ]= lambda::bind(lambda::new_ptr<kgFunction_t2julian  >());
-	_func_map["julian2d_N"  ]= lambda::bind(lambda::new_ptr<kgFunction_julian2d  >());
-	_func_map["julian2t_N"  ]= lambda::bind(lambda::new_ptr<kgFunction_julian2t  >());
+	_func_map["julian2d_N"]= lambda::bind(lambda::new_ptr<kgFunction_julian2d  >());
+	_func_map["julian2t_N"]= lambda::bind(lambda::new_ptr<kgFunction_julian2t  >());
 
-	_func_map["uxt_D"       ]= lambda::bind(lambda::new_ptr<kgFunction_d2uxt     >());
-	_func_map["uxt_T"       ]= lambda::bind(lambda::new_ptr<kgFunction_t2uxt     >());
-	_func_map["uxt2d_N"     ]= lambda::bind(lambda::new_ptr<kgFunction_uxt2d     >());
-	_func_map["uxt2t_N"     ]= lambda::bind(lambda::new_ptr<kgFunction_uxt2t     >());
+	_func_map["uxt_D"  ]= lambda::bind(lambda::new_ptr<kgFunction_d2uxt     >());
+	_func_map["uxt_T"  ]= lambda::bind(lambda::new_ptr<kgFunction_t2uxt     >());
+	_func_map["uxt2d_N"]= lambda::bind(lambda::new_ptr<kgFunction_uxt2d     >());
+	_func_map["uxt2t_N"]= lambda::bind(lambda::new_ptr<kgFunction_uxt2t     >());
 
+	_func_map["age_DD"]= lambda::bind(lambda::new_ptr<kgFunction_age_d     >());
+	_func_map["age_TT"]= lambda::bind(lambda::new_ptr<kgFunction_age_t     >());
 
-	_func_map["age_D"       ]= lambda::bind(lambda::new_ptr<kgFunction_age_d     >());
-	_func_map["year_D"      ]= lambda::bind(lambda::new_ptr<kgFunction_year_d    >());
-	_func_map["years_D"     ]= lambda::bind(lambda::new_ptr<kgFunction_years_d   >());
-	_func_map["month_D"     ]= lambda::bind(lambda::new_ptr<kgFunction_month_d   >());
-	_func_map["months_D"    ]= lambda::bind(lambda::new_ptr<kgFunction_months_d  >());
-	_func_map["monthe_D"    ]= lambda::bind(lambda::new_ptr<kgFunction_emonth_d  >());
-	_func_map["monthes_D"   ]= lambda::bind(lambda::new_ptr<kgFunction_esmonth_d >());
-	_func_map["day_D"       ]= lambda::bind(lambda::new_ptr<kgFunction_day_d     >());
-	_func_map["days_D"      ]= lambda::bind(lambda::new_ptr<kgFunction_days_d    >());
-	_func_map["week_D"      ]= lambda::bind(lambda::new_ptr<kgFunction_week_d    >());
-	_func_map["week111_D"   ]= lambda::bind(lambda::new_ptr<kgFunction_week111_d >());
-	_func_map["dow_D"       ]= lambda::bind(lambda::new_ptr<kgFunction_dow_d     >());
-	_func_map["dowe_D"      ]= lambda::bind(lambda::new_ptr<kgFunction_edow_d    >());
-	_func_map["dowes_D"     ]= lambda::bind(lambda::new_ptr<kgFunction_esdow_d   >());
-	_func_map["dowj_D"      ]= lambda::bind(lambda::new_ptr<kgFunction_dowj_d    >());
-	_func_map["age_T"       ]= lambda::bind(lambda::new_ptr<kgFunction_age_t     >());
-	_func_map["year_T"      ]= lambda::bind(lambda::new_ptr<kgFunction_year_t    >());
-	_func_map["years_T"     ]= lambda::bind(lambda::new_ptr<kgFunction_years_t   >());
-	_func_map["month_T"     ]= lambda::bind(lambda::new_ptr<kgFunction_month_t   >());
-	_func_map["months_T"    ]= lambda::bind(lambda::new_ptr<kgFunction_months_t  >());
-	_func_map["monthe_T"    ]= lambda::bind(lambda::new_ptr<kgFunction_emonth_t  >());
-	_func_map["monthes_T"   ]= lambda::bind(lambda::new_ptr<kgFunction_esmonth_t >());
-	_func_map["day_T"       ]= lambda::bind(lambda::new_ptr<kgFunction_day_t     >());
-	_func_map["days_T"      ]= lambda::bind(lambda::new_ptr<kgFunction_days_t    >());
-	_func_map["week_T"      ]= lambda::bind(lambda::new_ptr<kgFunction_week_t    >());
-	_func_map["week111_T"   ]= lambda::bind(lambda::new_ptr<kgFunction_week111_t >());
-	_func_map["dow_T"       ]= lambda::bind(lambda::new_ptr<kgFunction_dow_t     >());
-	_func_map["dowe_T"      ]= lambda::bind(lambda::new_ptr<kgFunction_edow_t    >());
-	_func_map["dowes_T"     ]= lambda::bind(lambda::new_ptr<kgFunction_esdow_t   >());
-	_func_map["dowj_T"      ]= lambda::bind(lambda::new_ptr<kgFunction_dowj_t    >());
-	_func_map["hour_T"      ]= lambda::bind(lambda::new_ptr<kgFunction_hour_t    >());
-	_func_map["hours_T"     ]= lambda::bind(lambda::new_ptr<kgFunction_hours_t   >());
-	_func_map["minute_T"    ]= lambda::bind(lambda::new_ptr<kgFunction_minute_t  >());
-	_func_map["minutes_T"   ]= lambda::bind(lambda::new_ptr<kgFunction_minutes_t >());
-	_func_map["second_T"    ]= lambda::bind(lambda::new_ptr<kgFunction_second_t  >());
-	_func_map["seconds_T"   ]= lambda::bind(lambda::new_ptr<kgFunction_seconds_t >());
-	_func_map["tseconds_T"  ]= lambda::bind(lambda::new_ptr<kgFunction_tseconds_t>());
+	_func_map["diffyear_TT"  ]= lambda::bind(lambda::new_ptr<kgFunction_diffyear_t  >());
+	_func_map["diffyear_DD"  ]= lambda::bind(lambda::new_ptr<kgFunction_diffyear_d  >());
+	_func_map["diffmonth_TT" ]= lambda::bind(lambda::new_ptr<kgFunction_diffmonth_t >());
+	_func_map["diffmonth_DD" ]= lambda::bind(lambda::new_ptr<kgFunction_diffmonth_d >());
+	_func_map["diffday_TT"   ]= lambda::bind(lambda::new_ptr<kgFunction_diffday_t   >());
+	_func_map["diffday_DD"   ]= lambda::bind(lambda::new_ptr<kgFunction_diffday_d   >());
+	_func_map["diffhour_TT"  ]= lambda::bind(lambda::new_ptr<kgFunction_diffhour_t  >());
+	_func_map["diffminute_TT"]= lambda::bind(lambda::new_ptr<kgFunction_diffminute_t>());
+	_func_map["diffsecond_TT"]= lambda::bind(lambda::new_ptr<kgFunction_diffsecond_t>());
 
-	_func_map["diffyear_T"  ]= lambda::bind(lambda::new_ptr<kgFunction_diffyear_t  >());
-	_func_map["diffyear_D"  ]= lambda::bind(lambda::new_ptr<kgFunction_diffyear_d  >());
-	_func_map["diffmonth_T" ]= lambda::bind(lambda::new_ptr<kgFunction_diffmonth_t >());
-	_func_map["diffmonth_D" ]= lambda::bind(lambda::new_ptr<kgFunction_diffmonth_d >());
-	_func_map["diffday_T"   ]= lambda::bind(lambda::new_ptr<kgFunction_diffday_t   >());
-	_func_map["diffday_D"   ]= lambda::bind(lambda::new_ptr<kgFunction_diffday_d   >());
-	_func_map["diffhour_T"  ]= lambda::bind(lambda::new_ptr<kgFunction_diffhour_t  >());
-	_func_map["diffminute_T"]= lambda::bind(lambda::new_ptr<kgFunction_diffminute_t>());
-	_func_map["diffsecond_T"]= lambda::bind(lambda::new_ptr<kgFunction_diffsecond_t>());
+	_func_map["year_D"    ]= lambda::bind(lambda::new_ptr<kgFunction_year_d    >());
+	_func_map["year_T"    ]= lambda::bind(lambda::new_ptr<kgFunction_year_t    >());
+	_func_map["years_D"   ]= lambda::bind(lambda::new_ptr<kgFunction_years_d   >());
+	_func_map["years_T"   ]= lambda::bind(lambda::new_ptr<kgFunction_years_t   >());
+	_func_map["month_D"   ]= lambda::bind(lambda::new_ptr<kgFunction_month_d   >());
+	_func_map["month_T"   ]= lambda::bind(lambda::new_ptr<kgFunction_month_t   >());
+	_func_map["months_D"  ]= lambda::bind(lambda::new_ptr<kgFunction_months_d  >());
+	_func_map["months_T"  ]= lambda::bind(lambda::new_ptr<kgFunction_months_t  >());
+	_func_map["monthe_D"  ]= lambda::bind(lambda::new_ptr<kgFunction_emonth_d  >());
+	_func_map["monthe_T"  ]= lambda::bind(lambda::new_ptr<kgFunction_emonth_t  >());
+	_func_map["monthes_D" ]= lambda::bind(lambda::new_ptr<kgFunction_esmonth_d >());
+	_func_map["monthes_T" ]= lambda::bind(lambda::new_ptr<kgFunction_esmonth_t >());
+	_func_map["day_D"     ]= lambda::bind(lambda::new_ptr<kgFunction_day_d     >());
+	_func_map["day_T"     ]= lambda::bind(lambda::new_ptr<kgFunction_day_t     >());
+	_func_map["days_D"    ]= lambda::bind(lambda::new_ptr<kgFunction_days_d    >());
+	_func_map["days_T"    ]= lambda::bind(lambda::new_ptr<kgFunction_days_t    >());
+	_func_map["week_D"    ]= lambda::bind(lambda::new_ptr<kgFunction_week_d    >());
+	_func_map["week_T"    ]= lambda::bind(lambda::new_ptr<kgFunction_week_t    >());
+	_func_map["week111_D" ]= lambda::bind(lambda::new_ptr<kgFunction_week111_d >());
+	_func_map["week111_T" ]= lambda::bind(lambda::new_ptr<kgFunction_week111_t >());
+	_func_map["dow_D"     ]= lambda::bind(lambda::new_ptr<kgFunction_dow_d     >());
+	_func_map["dow_T"     ]= lambda::bind(lambda::new_ptr<kgFunction_dow_t     >());
+	_func_map["dowe_D"    ]= lambda::bind(lambda::new_ptr<kgFunction_edow_d    >());
+	_func_map["dowe_T"    ]= lambda::bind(lambda::new_ptr<kgFunction_edow_t    >());
+	_func_map["dowes_D"   ]= lambda::bind(lambda::new_ptr<kgFunction_esdow_d   >());
+	_func_map["dowes_T"   ]= lambda::bind(lambda::new_ptr<kgFunction_esdow_t   >());
+	_func_map["dowj_D"    ]= lambda::bind(lambda::new_ptr<kgFunction_dowj_d    >());
+	_func_map["dowj_T"    ]= lambda::bind(lambda::new_ptr<kgFunction_dowj_t    >());
+	_func_map["hour_T"    ]= lambda::bind(lambda::new_ptr<kgFunction_hour_t    >());
+	_func_map["hours_T"   ]= lambda::bind(lambda::new_ptr<kgFunction_hours_t   >());
+	_func_map["minute_T"  ]= lambda::bind(lambda::new_ptr<kgFunction_minute_t  >());
+	_func_map["minutes_T" ]= lambda::bind(lambda::new_ptr<kgFunction_minutes_t >());
+	_func_map["second_T"  ]= lambda::bind(lambda::new_ptr<kgFunction_second_t  >());
+	_func_map["seconds_T" ]= lambda::bind(lambda::new_ptr<kgFunction_seconds_t >());
+	_func_map["tseconds_T"]= lambda::bind(lambda::new_ptr<kgFunction_tseconds_t>());
+
+	_func_map["diffusecond_TT"]= lambda::bind(lambda::new_ptr<kgFunction_diffusecond_t>());
+	_func_map["usecond_T"  ]= lambda::bind(lambda::new_ptr<kgFunction_usecond_t  >());
+	_func_map["useconds_T" ]= lambda::bind(lambda::new_ptr<kgFunction_useconds_t >());
+	_func_map["tuseconds_T"]= lambda::bind(lambda::new_ptr<kgFunction_tuseconds_t>());
 
 	// 数学関数
-	_func_map["fract_N"     ]= lambda::bind(lambda::new_ptr<kgFunction_fract     >());
-	_func_map["int_N"       ]= lambda::bind(lambda::new_ptr<kgFunction_int       >());
-	_func_map["sum_N"       ]= lambda::bind(lambda::new_ptr<kgFunction_sum       >());
-	_func_map["sum_NS"      ]= lambda::bind(lambda::new_ptr<kgFunction_sum_N     >());
-	_func_map["product_N"   ]= lambda::bind(lambda::new_ptr<kgFunction_product   >());
-	_func_map["product_NS"  ]= lambda::bind(lambda::new_ptr<kgFunction_product_N >());
-	_func_map["avg_N"       ]= lambda::bind(lambda::new_ptr<kgFunction_avg       >());
-	_func_map["avg_NS"      ]= lambda::bind(lambda::new_ptr<kgFunction_avg_N     >());
-	_func_map["min_N"       ]= lambda::bind(lambda::new_ptr<kgFunction_min       >());
-	_func_map["min_NS"      ]= lambda::bind(lambda::new_ptr<kgFunction_min_N     >());
-	_func_map["max_N"       ]= lambda::bind(lambda::new_ptr<kgFunction_max       >());
-	_func_map["max_NS"      ]= lambda::bind(lambda::new_ptr<kgFunction_max_N     >());
-	_func_map["sqsum_N"     ]= lambda::bind(lambda::new_ptr<kgFunction_sqsum     >());
-	_func_map["sqsum_NS"    ]= lambda::bind(lambda::new_ptr<kgFunction_sqsum_N   >());
-	_func_map["sqrt_N"      ]= lambda::bind(lambda::new_ptr<kgFunction_sqrt      >());
-	_func_map["abs_N"       ]= lambda::bind(lambda::new_ptr<kgFunction_abs       >());
-	_func_map["exp_N"       ]= lambda::bind(lambda::new_ptr<kgFunction_exp       >());
-	_func_map["ln_N"        ]= lambda::bind(lambda::new_ptr<kgFunction_ln        >());
-	_func_map["log_N"       ]= lambda::bind(lambda::new_ptr<kgFunction_log       >());
-	_func_map["log2_N"      ]= lambda::bind(lambda::new_ptr<kgFunction_log2      >());
-	_func_map["log10_N"     ]= lambda::bind(lambda::new_ptr<kgFunction_log10     >());
-	_func_map["pi_"         ]= lambda::bind(lambda::new_ptr<kgFunction_pi        >());
-	_func_map["e_"          ]= lambda::bind(lambda::new_ptr<kgFunction_e         >());
-	_func_map["power_N"     ]= lambda::bind(lambda::new_ptr<kgFunction_power     >());
+	_func_map["sum_N*"       ]= lambda::bind(lambda::new_ptr<kgFunction_sum       >());
+	_func_map["sum_N*S"      ]= lambda::bind(lambda::new_ptr<kgFunction_sum_N     >());
+	_func_map["avg_N*"       ]= lambda::bind(lambda::new_ptr<kgFunction_avg       >());
+	_func_map["avg_N*S"      ]= lambda::bind(lambda::new_ptr<kgFunction_avg_N     >());
+	_func_map["sqsum_N*"     ]= lambda::bind(lambda::new_ptr<kgFunction_sqsum     >());
+	_func_map["sqsum_N*S"    ]= lambda::bind(lambda::new_ptr<kgFunction_sqsum_N   >());
+	_func_map["factorial_N"  ]= lambda::bind(lambda::new_ptr<kgFunction_factorial >());
+	_func_map["gcd_NN"       ]= lambda::bind(lambda::new_ptr<kgFunction_gcd       >());
+	_func_map["lcm_NN"       ]= lambda::bind(lambda::new_ptr<kgFunction_lcm       >());
+	_func_map["sqrt_N"       ]= lambda::bind(lambda::new_ptr<kgFunction_sqrt      >());
+	_func_map["fract_N"      ]= lambda::bind(lambda::new_ptr<kgFunction_fract     >());
+	_func_map["int_N"        ]= lambda::bind(lambda::new_ptr<kgFunction_int       >());
+	_func_map["min_N*"       ]= lambda::bind(lambda::new_ptr<kgFunction_min       >());
+	_func_map["min_N*S"      ]= lambda::bind(lambda::new_ptr<kgFunction_min_N     >());
+	_func_map["max_N*"       ]= lambda::bind(lambda::new_ptr<kgFunction_max       >());
+	_func_map["max_N*S"      ]= lambda::bind(lambda::new_ptr<kgFunction_max_N     >());
+	_func_map["abs_N"        ]= lambda::bind(lambda::new_ptr<kgFunction_abs       >());
 	_func_map["round_N"     ]= lambda::bind(lambda::new_ptr<kgFunction_round     >());
-	_func_map["floor_N"     ]= lambda::bind(lambda::new_ptr<kgFunction_floor     >());
-	_func_map["ceil_N"      ]= lambda::bind(lambda::new_ptr<kgFunction_ceil      >());
-	_func_map["randi_N"     ]= lambda::bind(lambda::new_ptr<kgFunction_rand      >());
-	_func_map["rand_N"      ]= lambda::bind(lambda::new_ptr<kgFunction_rand_real >());
-	_func_map["rand_"       ]= lambda::bind(lambda::new_ptr<kgFunction_rand_real >());
-	_func_map["nrand_N"     ]= lambda::bind(lambda::new_ptr<kgFunction_nrand     >());
-	_func_map["berrand_N"   ]= lambda::bind(lambda::new_ptr<kgFunction_berrand   >());
-	_func_map["factorial_N" ]= lambda::bind(lambda::new_ptr<kgFunction_factorial >());
-	_func_map["gcd_N"       ]= lambda::bind(lambda::new_ptr<kgFunction_gcd       >());
-	_func_map["lcm_N"       ]= lambda::bind(lambda::new_ptr<kgFunction_lcm       >());
-	_func_map["sign_N"      ]= lambda::bind(lambda::new_ptr<kgFunction_sign      >());
-	_func_map["dist_SN"     ]= lambda::bind(lambda::new_ptr<kgFunction_dist      >());
-	_func_map["dist_S"      ]= lambda::bind(lambda::new_ptr<kgFunction_disth     >());
-	_func_map["distgps_N"   ]= lambda::bind(lambda::new_ptr<kgFunction_distgps   >());
-	_func_map["heron_N"     ]= lambda::bind(lambda::new_ptr<kgFunction_heron     >());
-	_func_map["binomdist_N" ]= lambda::bind(lambda::new_ptr<kgFunction_binomdist >());
+	_func_map["round_NN"     ]= lambda::bind(lambda::new_ptr<kgFunction_round     >());
+	_func_map["power_NN"     ]= lambda::bind(lambda::new_ptr<kgFunction_power     >());
+	_func_map["floor_N"      ]= lambda::bind(lambda::new_ptr<kgFunction_floor     >());
+	_func_map["floor_NN"     ]= lambda::bind(lambda::new_ptr<kgFunction_floor     >());
+	_func_map["ceil_N"       ]= lambda::bind(lambda::new_ptr<kgFunction_ceil      >());
+	_func_map["ceil_NN"      ]= lambda::bind(lambda::new_ptr<kgFunction_ceil      >());
+	_func_map["exp_N"        ]= lambda::bind(lambda::new_ptr<kgFunction_exp       >());
+	_func_map["ln_N"         ]= lambda::bind(lambda::new_ptr<kgFunction_ln        >());
+	_func_map["log_NN"       ]= lambda::bind(lambda::new_ptr<kgFunction_log       >());
+	_func_map["log2_N"       ]= lambda::bind(lambda::new_ptr<kgFunction_log2      >());
+	_func_map["log10_N"      ]= lambda::bind(lambda::new_ptr<kgFunction_log10     >());
+	_func_map["product_N*"   ]= lambda::bind(lambda::new_ptr<kgFunction_product   >());
+	_func_map["product_N*S"  ]= lambda::bind(lambda::new_ptr<kgFunction_product_N >());
+	_func_map["sign_N"       ]= lambda::bind(lambda::new_ptr<kgFunction_sign      >());
+	_func_map["dist_SNNNN*"  ]= lambda::bind(lambda::new_ptr<kgFunction_dist      >());
+	_func_map["dist_SSSSS*"  ]= lambda::bind(lambda::new_ptr<kgFunction_disth     >());
+	_func_map["distgps_NNNN" ]= lambda::bind(lambda::new_ptr<kgFunction_distgps   >());
+	_func_map["heron_NNN*"   ]= lambda::bind(lambda::new_ptr<kgFunction_heron     >());
+	_func_map["pi_"          ]= lambda::bind(lambda::new_ptr<kgFunction_pi        >());
+	_func_map["e_"           ]= lambda::bind(lambda::new_ptr<kgFunction_e         >());
+	_func_map["randi_NN"     ]= lambda::bind(lambda::new_ptr<kgFunction_rand      >());
+	_func_map["randi_NNN"    ]= lambda::bind(lambda::new_ptr<kgFunction_rand      >());
+	_func_map["rand_N"       ]= lambda::bind(lambda::new_ptr<kgFunction_rand_real >());
+	_func_map["rand_"        ]= lambda::bind(lambda::new_ptr<kgFunction_rand_real >());
+	_func_map["nrand_NN"     ]= lambda::bind(lambda::new_ptr<kgFunction_nrand     >());
+	_func_map["nrand_NNN"    ]= lambda::bind(lambda::new_ptr<kgFunction_nrand     >());
+	_func_map["berrand_N"    ]= lambda::bind(lambda::new_ptr<kgFunction_berrand   >());
+	_func_map["berrand_NN"   ]= lambda::bind(lambda::new_ptr<kgFunction_berrand   >());
+	_func_map["binomdist_NNN"]= lambda::bind(lambda::new_ptr<kgFunction_binomdist >());
+
+	_func_vecREG.push_back("sum_N*");
+	_func_vecREG.push_back("sum_N*S");
+	_func_vecREG.push_back("avg_N*");
+	_func_vecREG.push_back("avg_N*S");
+	_func_vecREG.push_back("sqsum_N*");
+	_func_vecREG.push_back("sqsum_N*S");
+	_func_vecREG.push_back("min_N*");
+	_func_vecREG.push_back("min_N*S");
+	_func_vecREG.push_back("max_N*");
+	_func_vecREG.push_back("max_N*S");
+	_func_vecREG.push_back("product_N*");
+	_func_vecREG.push_back("product_N*S");
+	_func_vecREG.push_back("dist_SNNNN*");
+	_func_vecREG.push_back("dist_SSSSS*");
+	_func_vecREG.push_back("heron_NNN*");
 
 	// 三角関数
-	_func_map["radian_N"    ]= lambda::bind(lambda::new_ptr<kgFunction_radian    >());
-	_func_map["degree_N"    ]= lambda::bind(lambda::new_ptr<kgFunction_degree    >());
-	_func_map["sin_N"       ]= lambda::bind(lambda::new_ptr<kgFunction_sin       >());
-	_func_map["asin_N"      ]= lambda::bind(lambda::new_ptr<kgFunction_asin      >());
-	_func_map["sinh_N"      ]= lambda::bind(lambda::new_ptr<kgFunction_sinh      >());
-	_func_map["cos_N"       ]= lambda::bind(lambda::new_ptr<kgFunction_cos       >());
-	_func_map["acos_N"      ]= lambda::bind(lambda::new_ptr<kgFunction_acos      >());
-	_func_map["cosh_N"      ]= lambda::bind(lambda::new_ptr<kgFunction_cosh      >());
-	_func_map["tan_N"       ]= lambda::bind(lambda::new_ptr<kgFunction_tan       >());
-	_func_map["atan_N"      ]= lambda::bind(lambda::new_ptr<kgFunction_atan      >());
-	_func_map["tanh_N"      ]= lambda::bind(lambda::new_ptr<kgFunction_tanh      >());
-	_func_map["atan2_N"     ]= lambda::bind(lambda::new_ptr<kgFunction_atan2     >());
+	_func_map["acos_N"   ]= lambda::bind(lambda::new_ptr<kgFunction_acos      >());
+	_func_map["asin_N"   ]= lambda::bind(lambda::new_ptr<kgFunction_asin      >());
+	_func_map["atan_N"   ]= lambda::bind(lambda::new_ptr<kgFunction_atan      >());
+	_func_map["atan2_NN" ]= lambda::bind(lambda::new_ptr<kgFunction_atan2     >());
+	_func_map["cos_N"    ]= lambda::bind(lambda::new_ptr<kgFunction_cos       >());
+	_func_map["sin_N"    ]= lambda::bind(lambda::new_ptr<kgFunction_sin       >());
+	_func_map["tan_N"    ]= lambda::bind(lambda::new_ptr<kgFunction_tan       >());
+	_func_map["degree_N" ]= lambda::bind(lambda::new_ptr<kgFunction_degree    >());
+	_func_map["radian_N" ]= lambda::bind(lambda::new_ptr<kgFunction_radian    >());
+	_func_map["sinh_N"   ]= lambda::bind(lambda::new_ptr<kgFunction_sinh      >());
+	_func_map["cosh_N"   ]= lambda::bind(lambda::new_ptr<kgFunction_cosh      >());
+	_func_map["tanh_N"   ]= lambda::bind(lambda::new_ptr<kgFunction_tanh      >());
 
 	// 文字列関数
+  _func_map["cat_SS*"     ]= lambda::bind(lambda::new_ptr<kgFunction_cat       >());
 	_func_map["length_S"    ]= lambda::bind(lambda::new_ptr<kgFunction_length    >());
 	_func_map["lengthw_S"   ]= lambda::bind(lambda::new_ptr<kgFunction_lengthw   >());
-  _func_map["mid_SN"      ]= lambda::bind(lambda::new_ptr<kgFunction_mid       >());
-  _func_map["midw_SN"     ]= lambda::bind(lambda::new_ptr<kgFunction_midw      >());
+  _func_map["fixlen_SNSS" ]= lambda::bind(lambda::new_ptr<kgFunction_fixlen    >());
+  _func_map["fixlenw_SNSS"]= lambda::bind(lambda::new_ptr<kgFunction_fixlenw   >());
   _func_map["right_SN"    ]= lambda::bind(lambda::new_ptr<kgFunction_right     >());
   _func_map["rightw_SN"   ]= lambda::bind(lambda::new_ptr<kgFunction_rightw    >());
   _func_map["left_SN"     ]= lambda::bind(lambda::new_ptr<kgFunction_left      >());
   _func_map["leftw_SN"    ]= lambda::bind(lambda::new_ptr<kgFunction_leftw     >());
+  _func_map["mid_SNN"     ]= lambda::bind(lambda::new_ptr<kgFunction_mid       >());
+  _func_map["midw_SNN"    ]= lambda::bind(lambda::new_ptr<kgFunction_midw      >());
   _func_map["toupper_S"   ]= lambda::bind(lambda::new_ptr<kgFunction_toupper   >());
   _func_map["tolower_S"   ]= lambda::bind(lambda::new_ptr<kgFunction_tolower   >());
   _func_map["capitalize_S"]= lambda::bind(lambda::new_ptr<kgFunction_capitalize>());
+  _func_map["match_SS*"   ]= lambda::bind(lambda::new_ptr<kgFunction_match    >());
+  _func_map["matcha_SS*"  ]= lambda::bind(lambda::new_ptr<kgFunction_matcha   >());
+  _func_map["matchs_SS*"  ]= lambda::bind(lambda::new_ptr<kgFunction_matchs    >());
+  _func_map["matchas_SS*" ]= lambda::bind(lambda::new_ptr<kgFunction_matchas   >());
   _func_map["hasspace_S"  ]= lambda::bind(lambda::new_ptr<kgFunction_hasspace  >());
   _func_map["hasspacew_S" ]= lambda::bind(lambda::new_ptr<kgFunction_hasspacew >());
-  _func_map["match_S"     ]= lambda::bind(lambda::new_ptr<kgFunction_match    >());
-  _func_map["matcha_S"    ]= lambda::bind(lambda::new_ptr<kgFunction_matcha   >());
-  _func_map["matchs_S"    ]= lambda::bind(lambda::new_ptr<kgFunction_matchs    >());
-  _func_map["matchas_S"   ]= lambda::bind(lambda::new_ptr<kgFunction_matchas   >());
-  _func_map["cat_S"       ]= lambda::bind(lambda::new_ptr<kgFunction_cat       >());
-  _func_map["strchr_S"    ]= lambda::bind(lambda::new_ptr<kgFunction_strchr    >());
-  _func_map["fixlen_SNS"  ]= lambda::bind(lambda::new_ptr<kgFunction_fixlen    >());
-  _func_map["fixlenw_SNS" ]= lambda::bind(lambda::new_ptr<kgFunction_fixlenw   >());
+  _func_map["strchr_SS"   ]= lambda::bind(lambda::new_ptr<kgFunction_strchr    >());
+
+	_func_vecREG.push_back("cat_SS*");
+	_func_vecREG.push_back("match_SS*");
+	_func_vecREG.push_back("matcha_SS*");
+	_func_vecREG.push_back("matchs_SS*");
+	_func_vecREG.push_back("matchas_SS*");
 
 
 	// 正規表現関数
-  _func_map["regexs_S"    ]= lambda::bind(lambda::new_ptr<kgFunction_regexs    >());
-  _func_map["regexsw_S"   ]= lambda::bind(lambda::new_ptr<kgFunction_regexsw   >());
-  _func_map["regexm_S"    ]= lambda::bind(lambda::new_ptr<kgFunction_regexm    >());
-  _func_map["regexmw_S"   ]= lambda::bind(lambda::new_ptr<kgFunction_regexmw   >());
-  _func_map["regexrep_S"  ]= lambda::bind(lambda::new_ptr<kgFunction_regexrep  >());
-  _func_map["regexrepw_S" ]= lambda::bind(lambda::new_ptr<kgFunction_regexrepw >());
-  _func_map["regexlen_S"  ]= lambda::bind(lambda::new_ptr<kgFunction_regexlen  >());
-  _func_map["regexlenw_S" ]= lambda::bind(lambda::new_ptr<kgFunction_regexlenw >());
-  _func_map["regexpos_S"  ]= lambda::bind(lambda::new_ptr<kgFunction_regexpos  >());
-  _func_map["regexposw_S" ]= lambda::bind(lambda::new_ptr<kgFunction_regexposw >());
-  _func_map["regexstr_S"  ]= lambda::bind(lambda::new_ptr<kgFunction_regexstr  >());
-  _func_map["regexstrw_S" ]= lambda::bind(lambda::new_ptr<kgFunction_regexstrw >());
-  _func_map["regexpfx_S"  ]= lambda::bind(lambda::new_ptr<kgFunction_regexpfx  >());
-  _func_map["regexpfxw_S" ]= lambda::bind(lambda::new_ptr<kgFunction_regexpfxw >());
-  _func_map["regexsfx_S"  ]= lambda::bind(lambda::new_ptr<kgFunction_regexsfx  >());
-  _func_map["regexsfxw_S" ]= lambda::bind(lambda::new_ptr<kgFunction_regexsfxw >());
+  _func_map["regexs_SS"    ]= lambda::bind(lambda::new_ptr<kgFunction_regexs    >());
+  _func_map["regexsw_SS"   ]= lambda::bind(lambda::new_ptr<kgFunction_regexsw   >());
+  _func_map["regexm_SS"    ]= lambda::bind(lambda::new_ptr<kgFunction_regexm    >());
+  _func_map["regexmw_SS"   ]= lambda::bind(lambda::new_ptr<kgFunction_regexmw   >());
+  _func_map["regexrep_SSS" ]= lambda::bind(lambda::new_ptr<kgFunction_regexrep  >());
+  _func_map["regexrepw_SSS"]= lambda::bind(lambda::new_ptr<kgFunction_regexrepw >());
+  _func_map["regexlen_SS"  ]= lambda::bind(lambda::new_ptr<kgFunction_regexlen  >());
+  _func_map["regexlenw_SS" ]= lambda::bind(lambda::new_ptr<kgFunction_regexlenw >());
+  _func_map["regexpos_SS"  ]= lambda::bind(lambda::new_ptr<kgFunction_regexpos  >());
+  _func_map["regexposw_SS" ]= lambda::bind(lambda::new_ptr<kgFunction_regexposw >());
+  _func_map["regexstr_SS"  ]= lambda::bind(lambda::new_ptr<kgFunction_regexstr  >());
+  _func_map["regexstrw_SS" ]= lambda::bind(lambda::new_ptr<kgFunction_regexstrw >());
+  _func_map["regexpfx_SS"  ]= lambda::bind(lambda::new_ptr<kgFunction_regexpfx  >());
+  _func_map["regexpfxw_SS" ]= lambda::bind(lambda::new_ptr<kgFunction_regexpfxw >());
+  _func_map["regexsfx_SS"  ]= lambda::bind(lambda::new_ptr<kgFunction_regexsfx  >());
+  _func_map["regexsfxw_SS" ]= lambda::bind(lambda::new_ptr<kgFunction_regexsfxw >());
 
 	// 行，列関数
   _func_map["top_"        ]= lambda::bind(lambda::new_ptr<kgFunction_top       >());
   _func_map["bottom_"     ]= lambda::bind(lambda::new_ptr<kgFunction_bottom    >());
   _func_map["line_"       ]= lambda::bind(lambda::new_ptr<kgFunction_line      >());
   _func_map["fldsize_"    ]= lambda::bind(lambda::new_ptr<kgFunction_fldsize   >());
-  _func_map["argsize_S"   ]= lambda::bind(lambda::new_ptr<kgFunction_argsize   >());
+  _func_map["argsize_S*"  ]= lambda::bind(lambda::new_ptr<kgFunction_argsize   >());
+	_func_vecREG.push_back("argsize_S*");
 
+}
+
+kgFunction* kgFuncMap::getSUB(const string& id){
+
+	// オリジナル と trim後の両方チェックする
+	func_map_t::const_iterator m_org = _func_map.find(id);
+	if( m_org!=_func_map.end() ){
+		if(_usedCnt >= KG_MAX_CAL_TERMS){
+			throw kgError("too many functions or fields specified");
+		}
+		_ap[_usedCnt].set( m_org->second() ); 
+		return _ap[_usedCnt++].get();
+	}
+	for(size_t i=0;i<_func_vecREG.size();i++){
+		boost::xpressive::cregex reg = cregex::compile(_func_vecREG[i]);
+		if( regex_match(id.c_str() ,reg)){
+			func_map_t::const_iterator m_org = _func_map.find(_func_vecREG[i]);
+			if( m_org!=_func_map.end() ){
+				if(_usedCnt >= KG_MAX_CAL_TERMS){
+					throw kgError("too many functions or fields specified");
+				}
+				_ap[_usedCnt].set( m_org->second() );
+				return _ap[_usedCnt++].get();
+			}
+		}
+	}
+	ostringstream oss;
+	oss << "unknown function or operator: " << id;
+	throw kgError(oss.str());
+	return NULL;
 }
 
 // -----------------------------------------------------------------------------
@@ -4148,34 +4407,7 @@ kgFuncMap::kgFuncMap(void){
 // -----------------------------------------------------------------------------
 kgFunction* kgFuncMap::get(const string& id)
 {
-	if(!id.empty()){
-		string trimedID;
-		bool typeFlg = false;
-		char prv='\0';
-		for(const char *p = id.c_str();*p;p++){
-			if(typeFlg && prv==*p ){ continue;}
-			if(*p=='_'){ typeFlg=true;}
-			trimedID.push_back(*p);
-			prv=*p;
-		}
-		func_map_t::const_iterator m = _func_map.find(trimedID);
-		if( m!=_func_map.end() ){
-			if(_usedCnt >= KG_MAX_CAL_TERMS){
-				throw kgError("too many functions or fields specified");
-			}
-			// 登録クラスのインスタンス化
-			_ap[_usedCnt].set( m->second() ); 
-			return _ap[_usedCnt++].get();
-		}else{
-			ostringstream oss;
-			if(id == trimedID){
-				oss << "unknown function or operator: " << id;
-			}else{
-				oss << "unknown function or operator: " << id << "(" << trimedID << ")";
-			}
-			throw kgError(oss.str());
-		}
-  }
-	return NULL; 
+	if(id.empty()){ return NULL; }	
+	return getSUB(id);
 }
 

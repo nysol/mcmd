@@ -66,10 +66,31 @@ void kgCal::setArgs(void)
 
 	// c= 式を文字列として取得
 	_expr    = _args.toString("c=",true);
+	//簡易パース(),
+	size_t brackets=0;
+	size_t pos=0;
+	for(size_t i=0; i<_expr.size();i++){
+		if(_expr[i]=='(')			 {brackets++;}
+		else if (_expr[i]==')'){brackets--;}
+		else if (_expr[i]==',' && brackets==0){
+			_exprs.push_back(kgstr_t(_expr,pos,i-pos));
+			pos=i+1;
+		}
+	}
+	_exprs.push_back(kgstr_t(_expr,pos,_expr.size()-pos));
+
 
 	// a= 出力項目名
-	_newFld  = _args.toString("a=",false);
-	if(_newFld.empty()&& _nfn_o==false){ throw kgError("parameter a= is mandatory");}
+	_newFlds  = _args.toStringVector("a=",false);
+	if(_newFlds.size()!=_exprs.size()&& _nfn_o==false){ 
+		throw kgError("the number of arguments on a= and c= must be same");
+	}
+//	if(_newFld.empty()&& _nfn_o==false){ 
+//		throw kgError("parameter a= is mandatory");
+//	}
+	_prvRsls.resize(_exprs.size());
+
+
 }
 // -----------------------------------------------------------------------------
 //	各行の計算の実行
@@ -152,34 +173,37 @@ void kgCal::chkFuncArgc( tree_node_iter_t const &iter )
 // -----------------------------------------------------------------------------
 // ノードに関数(クラス)のアドレスの設定しクラスを初期化する
 // -----------------------------------------------------------------------------
-char kgCal::setFuncType( tree_node_iter_t const &iter )
+char kgCal::setFuncType( tree_node_iter_t const &iter ,kgVal* pre)
 {
 	// 関数名,定数値,項目名
 	kgstr_t str(iter->value.begin(), iter->value.end());
 
 	// parse時にセットされたIDに従ってクラスを実体化させる
 	kgFunction* kgf;
-	     if(iter->value.id()==kgCalParser::constIDstr ){kgf=_funcMap.get("CS");}
-	else if(iter->value.id()==kgCalParser::constIDreal){kgf=_funcMap.get("CN");}
-	else if(iter->value.id()==kgCalParser::constIDdate){kgf=_funcMap.get("CD");}
-	else if(iter->value.id()==kgCalParser::constIDtime){kgf=_funcMap.get("CT");}
-	else if(iter->value.id()==kgCalParser::constIDbool){kgf=_funcMap.get("CB");}
-	else if(iter->value.id()==kgCalParser::fieldIDstr ){kgf=_funcMap.get("FS");}
-	else if(iter->value.id()==kgCalParser::fieldIDreal){kgf=_funcMap.get("FN");}
-	else if(iter->value.id()==kgCalParser::fieldIDdate){kgf=_funcMap.get("FD");}
-	else if(iter->value.id()==kgCalParser::fieldIDtime){kgf=_funcMap.get("FT");}
-	else if(iter->value.id()==kgCalParser::fieldIDbool){kgf=_funcMap.get("FB");}
-	else if(iter->value.id()==kgCalParser::pfieldIDstr ){kgf=_funcMap.get("PS");}
-	else if(iter->value.id()==kgCalParser::pfieldIDreal){kgf=_funcMap.get("PN");}
-	else if(iter->value.id()==kgCalParser::pfieldIDdate){kgf=_funcMap.get("PD");}
-	else if(iter->value.id()==kgCalParser::pfieldIDtime){kgf=_funcMap.get("PT");}
-	else if(iter->value.id()==kgCalParser::pfieldIDbool){kgf=_funcMap.get("PB");}
+	     if(iter->value.id()==kgCalParser::constIDstr )  {kgf=_funcMap.get("CS");}
+	else if(iter->value.id()==kgCalParser::constIDreal)  {kgf=_funcMap.get("CN");}
+	else if(iter->value.id()==kgCalParser::constIDdate)  {kgf=_funcMap.get("CD");}
+	else if(iter->value.id()==kgCalParser::constIDtime)  {kgf=_funcMap.get("CT");}
+	else if(iter->value.id()==kgCalParser::constIDutime) {kgf=_funcMap.get("CU");}
+	else if(iter->value.id()==kgCalParser::constIDbool)  {kgf=_funcMap.get("CB");}
+	else if(iter->value.id()==kgCalParser::fieldIDstr )  {kgf=_funcMap.get("FS");}
+	else if(iter->value.id()==kgCalParser::fieldIDreal)  {kgf=_funcMap.get("FN");}
+	else if(iter->value.id()==kgCalParser::fieldIDdate)  {kgf=_funcMap.get("FD");}
+	else if(iter->value.id()==kgCalParser::fieldIDtime)  {kgf=_funcMap.get("FT");}
+	else if(iter->value.id()==kgCalParser::fieldIDutime) {kgf=_funcMap.get("FU");}
+	else if(iter->value.id()==kgCalParser::fieldIDbool)  {kgf=_funcMap.get("FB");}
+	else if(iter->value.id()==kgCalParser::pfieldIDstr ) {kgf=_funcMap.get("PS");}
+	else if(iter->value.id()==kgCalParser::pfieldIDreal) {kgf=_funcMap.get("PN");}
+	else if(iter->value.id()==kgCalParser::pfieldIDdate) {kgf=_funcMap.get("PD");}
+	else if(iter->value.id()==kgCalParser::pfieldIDtime) {kgf=_funcMap.get("PT");}
+	else if(iter->value.id()==kgCalParser::pfieldIDutime){kgf=_funcMap.get("PU");}
+	else if(iter->value.id()==kgCalParser::pfieldIDbool) {kgf=_funcMap.get("PB");}
 	else{
 		// 関数と演算子のidを作る (ex. "+_FF")
 		string id=str+"_";
 		// 子ノードの個数分再帰呼び出し
 		for(unsigned int j=0; j<iter->children.size(); j++) {
-			id.push_back( setFuncType(iter->children.begin()+j) );
+			id.push_back( setFuncType(iter->children.begin()+j ,pre));
  		}
 		kgf=_funcMap.get(id);
 	}
@@ -189,7 +213,7 @@ char kgCal::setFuncType( tree_node_iter_t const &iter )
 	// 項目値取得のためにkgFunctionのメンバーとして登録する
 	kgf->_csv=&_iFile;
 	kgf->_fldno=_fldByNum;
-	kgf->_prvRsl=&_prvRsl;
+	kgf->_prvRsl= pre;
 
 	// 関数の初期化(返値タイプのセット,定数,変数のセット)
 	kgf->initialize(str);
@@ -200,40 +224,18 @@ char kgCal::setFuncType( tree_node_iter_t const &iter )
 // -----------------------------------------------------------------------------
 // 結果出力:元データ＋kgval
 // -----------------------------------------------------------------------------
-void kgCal::writeFld(char** fld,int size, kgVal& val)
+void kgCal::writeFld(char** fld,int size, vector<kgVal*>& val)
 {
 	for(int i=0; i<size; i++){
 		_oFile.writeStr( *(fld+i), false );
 	}
-	_oFile.writeVal(val,true);
+	for(int i=0; i<val.size(); i++){
+		_oFile.writeVal(*val[i],i==val.size()-1);
+	}	
 }
 // -----------------------------------------------------------------------------
 // 前回データセット
 // -----------------------------------------------------------------------------
-void kgCal::prersl_set(kgVal *rls){
-	_prvRsl.set(rls);
-	if(!_prvRsl.null()){
-		try {
-			// 文字列,時間,日付の場合はデータを複製しておく
-			switch(_prvRsl.type()){
-				case 'S':
-					strcpy(_prv_s_p,rls->s());
-					_prvRsl.s(_prv_s_p);
-					break;
-				case 'D':
-  				_prv_d_ap.set( new date(*(rls->d())) );
-					_prvRsl.d(_prv_d_ap.get());
-					break;
-				case 'T':
-  				_prv_t_ap.set( new ptime(*(rls->t())) );
-					_prvRsl.t(_prv_t_ap.get());
-					break;
-			}
-		}catch(...){
-			_prvRsl.null(true);
-		}
-	}
-}
 
 // -----------------------------------------------------------------------------
 // 実行
@@ -243,45 +245,48 @@ int kgCal::run(void) try
 	// パラメータセット＆入出力ファイルオープン
 	setArgs();
 
-	// 項目名を展開する(ワイルドカードと番号指定)
-	_expr=evalCalFldName(_expr, _iFile,_fldByNum);
-
-	// ast_parse : BOOSTライブラリの構文木を生成する関数
-	//	引数 : 解析する対象文字列, パーサー, スキップするパーサー
+	typedef tree_parse_info< std::string::const_iterator ,node_val_data_factory<void *> > info_t;
+	vector<info_t> infos(_exprs.size());
+	vector<kgVal*> results(_exprs.size()); 
 	kgCalParser parser;
-	tree_parse_info< std::string::const_iterator ,node_val_data_factory<void *> >info
-		= ast_parse< node_val_data_factory<void *>,std::string::const_iterator >
-			(_expr.begin(),_expr.end(),parser,nothing_p);
 
-	// 構文木作成失敗
-	if(!info.full){
-		ostringstream ss;
-		ss << "parse error in "  << _expr << " (KGLIB)";
-		throw kgError(ss.str());
-		return 1;
+	// 項目名を展開する(ワイルドカードと番号指定)
+	for(size_t i=0 ; i<_exprs.size();i++){
+		_exprs[i]=evalCalFldName(_exprs[i], _iFile,_fldByNum);
+		// ast_parse : BOOSTライブラリの構文木を生成する関数
+		//	引数 : 解析する対象文字列, パーサー, スキップするパーサー
+		infos[i]
+			= ast_parse< node_val_data_factory<void *>,std::string::const_iterator >
+			(_exprs[i].begin(),_exprs[i].end(),parser,nothing_p);
+		// 構文木作成失敗
+		if(!infos[i].full){
+			ostringstream ss;
+			ss << "parse error in "  << _expr << " (KGLIB)";
+			throw kgError(ss.str());
+			return 1;
+		}
+		// 各ノードに
+		// インスタンス(関数,演算子,定数,項目値のクラス)
+		// 引数を割り合て、引数チェック、前処理を行う
+		// 	最終結果_resultのアドレスはtopノードの_result
+		// 前行結果の初期値はNull
+		setFuncType(infos[i].trees.begin(),_prvRsls.getVal(i));
+		setFuncArg(infos[i].trees.begin());
+		chkFuncArgc(infos[i].trees.begin());
+		runPreProcess(infos[i].trees.begin());
+		results[i] =
+ 			&static_cast<kgFunction*>(infos[i].trees.begin()->value.value())->_result;
 	}
-
-	// 各ノードに
-	// インスタンス(関数,演算子,定数,項目値のクラス)
-	// 引数を割り合て、引数チェック、前処理を行う
-	// 	最終結果_resultのアドレスはtopノードの_result
-	// 前行結果の初期値はNull
-	_prvRsl.null(true);
-	setFuncType(info.trees.begin());
-	setFuncArg(info.trees.begin());
-	chkFuncArgc(info.trees.begin());
-	runPreProcess(info.trees.begin());
-	kgVal* result =
- 		&static_cast<kgFunction*>(info.trees.begin()->value.value())->_result;
-
 	// 項目名の出力＆計算の実行＆データ出力
-	_oFile.writeFldName(_iFile, _newFld);
+	_oFile.writeFldName(_iFile, _newFlds);
 	while( EOF != _iFile.read() ){
 		if((_iFile.status() & kgCSV::End )) break;
-		calculate(info.trees.begin());
-		writeFld(_iFile.getNewFld(), _iFile.fldSize(), *result);
-		if(_assertNullOUT && result->null()){ _existNullOUT = true;}
-		prersl_set(result);
+		for(size_t i=0 ; i<_exprs.size();i++){
+			calculate(infos[i].trees.begin());
+			if(_assertNullOUT && results[i]->null()){ _existNullOUT = true;}
+			_prvRsls.setVal(results[i],i);
+		}
+		writeFld(_iFile.getNewFld(), _iFile.fldSize(), results);
 	}
 
 	// 終了処理

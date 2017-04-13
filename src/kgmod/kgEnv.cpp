@@ -90,6 +90,14 @@ kgEnv::kgEnv(void)
 		else if(*envStr=='5') verboseLevel=5; //  + debugメッセージ出力
 	}
 
+	envStr=getenv("KG_msgTimebyfsec");
+	if( envStr != NULL ){
+		msgTimebyfsec_ = true;
+	}else{
+		msgTimebyfsec_ = false;
+	}
+
+
 	// 作業ディレクトリ
 	envStr=getenv("KG_TmpPath");
 	if( envStr != NULL ){

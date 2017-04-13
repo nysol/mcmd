@@ -423,7 +423,7 @@ void kgCSVout::writeDate(const boost::gregorian::date& val,bool eol){
 // -----------------------------------------------------------------------------
 // date_time項目の出力
 // -----------------------------------------------------------------------------
-void kgCSVout::writeTime(const boost::posix_time::ptime& val){
+/*void kgCSVout::writeTime(const boost::posix_time::ptime& val){
 	char buf[128];
 	sprintf(buf,"%04d%02d%02d%02d%02d%02d",
 	  static_cast<int>(val.date().year() ),
@@ -433,11 +433,41 @@ void kgCSVout::writeTime(const boost::posix_time::ptime& val){
 	                   val.time_of_day().minutes(),
                      val.time_of_day().seconds());
 	writeStrNdq(buf);
+}*/
+// -----------------------------------------------------------------------------
+// date_time項目の出力
+// -----------------------------------------------------------------------------
+void kgCSVout::writeTime(const boost::posix_time::ptime& val){
+	char buf[128];
+	if ( val.time_of_day().fractional_seconds()==0 ){
+		sprintf(buf,"%04d%02d%02d%02d%02d%02d",
+	  static_cast<int>(val.date().year() ),
+	  static_cast<int>(val.date().month()),
+	  static_cast<int>(val.date().day()  ),
+	                   val.time_of_day().hours()  ,
+	                   val.time_of_day().minutes(),
+                     val.time_of_day().seconds()
+                     );
+  }else{
+		char fmt[128];
+		sprintf(fmt,"%%04d%%02d%%02d%%02d%%02d%%02d.%%0%dlld",val.time_of_day().num_fractional_digits() );
+		sprintf(buf,fmt,
+		  static_cast<int>(val.date().year() ),
+		  static_cast<int>(val.date().month()),
+	 		static_cast<int>(val.date().day()  ),
+			val.time_of_day().hours()  ,
+			val.time_of_day().minutes(),
+			val.time_of_day().seconds(),
+			val.time_of_day().fractional_seconds()
+    );  
+  }      
+	writeStrNdq(buf);
 }
+
 // -----------------------------------------------------------------------------
 // date_time項目の出力:区切り文字付加
 // -----------------------------------------------------------------------------
-void kgCSVout::writeTime(const boost::posix_time::ptime& val, const bool eol){
+/*void kgCSVout::writeTime(const boost::posix_time::ptime& val, const bool eol){
 	char buf[128];
 	sprintf(buf,"%04d%02d%02d%02d%02d%02d",
 	  static_cast<int>(val.date().year() ),
@@ -448,6 +478,44 @@ void kgCSVout::writeTime(const boost::posix_time::ptime& val, const bool eol){
                      val.time_of_day().seconds());
 	writeStrNdq(buf, eol);
 }
+*/
+// -----------------------------------------------------------------------------
+// date_time項目の出力:区切り文字付加
+// -----------------------------------------------------------------------------
+void kgCSVout::writeTime(const boost::posix_time::ptime& val, const bool eol){
+	char buf[128];
+	
+	if ( val.time_of_day().fractional_seconds()==0 ){
+		sprintf(buf,"%04d%02d%02d%02d%02d%02d",
+	  static_cast<int>(val.date().year() ),
+	  static_cast<int>(val.date().month()),
+	  static_cast<int>(val.date().day()  ),
+	                   val.time_of_day().hours()  ,
+	                   val.time_of_day().minutes(),
+                     val.time_of_day().seconds()
+                     );
+  }else{
+
+		char fmt[128];
+		sprintf(fmt,"%%04d%%02d%%02d%%02d%%02d%%02d.%%0%dlld",val.time_of_day().num_fractional_digits() );
+		sprintf(buf,fmt,
+		  static_cast<int>(val.date().year() ),
+		  static_cast<int>(val.date().month()),
+	 		static_cast<int>(val.date().day()  ),
+			val.time_of_day().hours()  ,
+			val.time_of_day().minutes(),
+			val.time_of_day().seconds(),
+			val.time_of_day().fractional_seconds()
+    );  
+    //後ろ０クリア
+    for(char *p = buf+strlen(buf)-1 ; p>buf && *p=='0' ;p-- ){
+    	*p='\0';
+    }
+  }      
+	writeStrNdq(buf, eol);
+}
+
+
 // -----------------------------------------------------------------------------
 // kgVal項目の出力
 // -----------------------------------------------------------------------------
@@ -467,6 +535,8 @@ void kgCSVout::writeVal(const kgVal& val){
 		writeDate(*val.d()); break;
 	case 'T': // time
 		writeTime(*val.t()); break;
+	case 'U': // time
+		writeTime(*val.u()); break;
 	default:
 		writeStr(""); break;
 	}

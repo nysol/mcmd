@@ -37,6 +37,56 @@ using namespace boost::spirit::classic;
 
 namespace kgmod { ////////////////////////////////////////////// start namespace
 
+class kgCal_PreRSL{
+	vector<kgVal>   _prvResults;
+	vector< kgAutoPtr1<ptime> > _prvtimeRsls;
+	vector< kgAutoPtr1<date> >  _prvdateRsls;
+	vector< kgAutoPtr2<char> >  _prvcharRsls;
+	public:
+		void resize(size_t i){
+			_prvResults.resize(i);
+			_prvtimeRsls.resize(i);
+			_prvdateRsls.resize(i);
+			_prvcharRsls.resize(i);
+			for(size_t j=0;j<_prvResults.size();j++){
+				_prvResults[j].null(true);
+			}
+		}
+		kgVal* getVal(size_t i){
+			return &_prvResults[i];
+		}
+		void setVal(kgVal *rls,size_t pos){
+			char * p;
+			_prvResults[pos].set(rls);
+			if(!_prvResults[pos].null()){
+				try {
+					// 文字列,時間,日付の場合はデータを複製しておく
+					switch(_prvResults[pos].type()){
+					case 'S':
+						_prvcharRsls[pos].set(new char[KG_MAX_STR_LEN]);
+						p = _prvcharRsls[pos].get();
+						strcpy(p,rls->s());
+						_prvResults[pos].s(p);
+						break;
+					case 'D':
+						_prvdateRsls[pos].set( new date(*(rls->d())) );
+						_prvResults[pos].d(_prvdateRsls[pos].get());
+						break;
+					case 'T':
+  					_prvtimeRsls[pos].set( new ptime(*(rls->t())) );
+						_prvResults[pos].t(_prvtimeRsls[pos].get());
+						break;
+					}
+				}catch(...){
+					_prvResults[pos].null(true);
+				}
+			}
+		}
+};
+
+
+
+
 class kgCal:public kgMod {
 	// 引数
 	kgArgFld  _kField; // k=
@@ -47,7 +97,13 @@ class kgCal:public kgMod {
 	kgVal     _prvRsl;// 前行の結果:初期値はNULL
 	kgAutoPtr1 <ptime> _prv_t_ap;
 	kgAutoPtr1 <date> _prv_d_ap;
-	char  _prv_s_p[KG_MAX_STR_LEN];
+//	char  _prv_s_p[KG_MAX_STR_LEN];
+
+	vector<kgstr_t> _exprs;   // c=
+	vector<kgstr_t> _newFlds;   // c=
+	//vector<kgVal>   _prvRsls;// 前行の結果:初期値はNULL
+
+	kgCal_PreRSL _prvRsls;
 
 	kgFuncMap _funcMap;
 
@@ -71,13 +127,13 @@ class kgCal:public kgMod {
 	void chkFuncArgc( tree_node_iter_t const &iter );
 
 	// ノードに関数(クラス)のアドレスの設定しクラスを初期化する
-	char setFuncType( tree_node_iter_t const &iter );
+	char setFuncType( tree_node_iter_t const &iter ,kgVal* pre);
 
 	// CSV項目出力
-	void writeFld(char** fld,int size, kgVal& val);
+	void writeFld(char** fld,int size, vector<kgVal*>& val);
 
 	//前回データセット
-	void prersl_set(kgVal *rls);
+	//void prersl_set(kgVal *rls);
 
 public:
 	// コンストラクタ
