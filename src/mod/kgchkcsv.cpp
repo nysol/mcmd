@@ -57,7 +57,7 @@ kgChkcsv::kgChkcsv(void)
 void kgChkcsv::setArgs(void)
 {
 	// パラメータチェック
-	_args.paramcheck("i=,o=,a=,-diag,-r",kgArgs::COMMON|kgArgs::NULL_OUT);
+	_args.paramcheck("i=,o=,a=,-diag,-diagl,-r",kgArgs::COMMON|kgArgs::NULL_OUT);
 
 	// 入出力ファイルオープン
 	_iFileName = _args.toString("i=",false);
@@ -80,7 +80,7 @@ void kgChkcsv::setArgs(void)
 	}
 
 	// -diag チェック内容表示フラグセット
-	_diag = _args.toBool("-diag");
+	_diag = _args.toBool("-diag") || _args.toBool("-diagl");
 
 	//出力ファイル設定
 	if(_diag){
@@ -121,7 +121,7 @@ void kgChkcsv::setArgs(void)
 // -----------------------------------------------------------------------------
 // diag表示
 // -----------------------------------------------------------------------------
-void kgChkcsv::showInfo(RecInfo &ri, vector<FldInfo> &fi)
+void kgChkcsv::showInfol(RecInfo &ri, vector<FldInfo> &fi)
 {
 	*_ofp << "#===================================================" << endl;
 	*_ofp << "# CSVファイル診断 " << endl;
@@ -290,6 +290,187 @@ void kgChkcsv::showInfo(RecInfo &ri, vector<FldInfo> &fi)
 	*_ofp << "#  【対処方法】kgchkcsvにてBOMは除去される。" << endl;
 	*_ofp << "#-------------------------------------------------------------" << endl;
 }
+
+// -----------------------------------------------------------------------------
+// diag表示
+// -----------------------------------------------------------------------------
+void kgChkcsv::showInfo(RecInfo &ri, vector<FldInfo> &fi)
+{
+
+	*_ofp<< "#===================================================" << endl;
+	*_ofp<< "# diagnosis for the CSV file " << endl;
+	*_ofp<< "# file name : " << _iFileName << endl;
+	*_ofp<< "#---------------------------------------------------" << endl;
+	*_ofp<< "# meaning of the first charactor on each line" << endl;
+	*_ofp<< "# # : commnet or resutl with no error" << endl;
+	*_ofp<< "#   : that is, mcmd can handle the CSV file if all lines begin with '#'" << endl;
+	*_ofp<< "# ? : error that mcmd cannot handle" << endl;
+	*_ofp<< "#   : refer the 'explanation' section for the meaning of the alphabet next of '?'" << endl;
+	*_ofp<< "#===================================================" << endl;
+	if(_bominc){ *_ofp << "?l It has BOM (Bite Order Mark) at the beginning of data." << endl; }
+	*_ofp<< "############################ CSV header for field names(first line) ###" << endl;
+	if(ri.maxFldCnt==0){
+		*_ofp<< "# no error" << endl;
+	}else{
+		*_ofp<< "# the number of fields : " << ri.fldNameCnt << endl;
+		if(!_nfn_i){
+			*_ofp<< "# fieldNo.  name" << endl;
+			for(unsigned int i=0; i<ri.fldNameCnt; i++){
+				*_ofp<< "# " << i+1 << "   " << ri.fldName.at(i) << endl;
+			}
+		}
+	}
+	if(!_nfn_i){
+		for(unsigned int i=0; i<ri.fldNameCnt-1; i++){
+			for(unsigned int j=i+1; j<ri.fldNameCnt; j++){
+				if( ri.fldName.at(i)==ri.fldName.at(j) ){
+					*_ofp<< "?a duplicate field names : [" << i << "] " << ri.fldName.at(i) << " , [" << j << "] " << ri.fldName.at(j) << endl ;
+				}
+			}
+		}
+		for(unsigned int i=0; i<ri.fldNameCnt; i++){
+			if(chkFldName(ri.fldName.at(i))==false){
+				*_ofp<< "?b invalid field name : [" << i << "] " << ri.fldName.at(i)  << endl ;
+			}
+		}
+	}
+	*_ofp<< "#"<< endl;
+	*_ofp<< "############## about EOL(End Of Line) (including a CSV header) ##" << endl;
+	if(ri.recCnt==0 && ri.maxFldCnt==0){
+		*_ofp<< "# no data found" << endl;
+	}else{
+		ri.lf.show	("# the number of lines with LF",0,_ofp,_nfn_i);
+		ri.cr.show	("?c the number of lines with CR",0,_ofp,_nfn_i);
+		ri.crlf.show("?c the number of lines with CRLF",0,_ofp,_nfn_i);
+		ri.null.show("?d no EOL found at the end of file",0,_ofp,_nfn_i);
+	}
+	*_ofp<< "#"<< endl;
+	if(ri.maxFldCnt==0){ ri.minLen=0;}
+	*_ofp<< "################# about data lines (no including a CSV header) ###"<< endl;
+	if(ri.recCnt==0){
+		*_ofp<< "# no data found" << endl;
+	}else{
+
+		*_ofp<< "# the number of lines : "  << ri.recCnt  << endl;
+		*_ofp<< "# data volume in byte : "  << ri.sumLen    << endl;
+		*_ofp<< "# the average number of lines : "  << ri.avgLen   << endl;
+		*_ofp<< "# the maximum number of lines : "  << ri.maxLen;
+		*_ofp<< " (LineNo:"<< ri.maxLenLineNo << ")" << endl;
+		*_ofp<< "# the maximum number of lines : " << ri.minLen;
+		*_ofp<< " (LineNo:" << ri.minLenLineNo << ")" << endl;
+		ri.zero.show			("?e the number of lines having \\0",0,_ofp,_nfn_i);
+		ri.overMaxLen.show("?f the number of charactors per line exceeding the limit",0,_ofp,_nfn_i);
+		*_ofp << "# note: EOL charactor is counted in the numbers" << endl;
+
+	}
+	*_ofp<< "#" << endl;
+	*_ofp<< "################################# aoubt the number of fields ###" << endl;
+	if(ri.fldCntCnt>0){
+		*_ofp<< "?g lines with different number of fields are detected" << endl;
+		for(unsigned int i=0; i<ri.fldCntCnt; i++){
+			*_ofp<< "?g  # of fields:" << ri.fldCnt[i]<< " (LineNo:" << ri.fldCntLineNo[i] << ")"  << endl;
+		}
+	}else{
+		if(ri.maxFldCnt==0) { *_ofp<< "# no fields found"<< endl;}
+    else								{	*_ofp<< "# all lines have same number of fields:" << ri.fldNameCnt << endl; }
+	}
+	*_ofp<< "#" << endl;
+	*_ofp<< "####################################### about field ###" << endl;
+	if(ri.maxFldCnt==0){
+		*_ofp<< "# no fields" << endl;
+		*_ofp<< "#" << endl;
+	}
+	for(size_t i=0; i<ri.maxFldCnt; i++){
+		if(i<ri.fldNameCnt&&!_nfn_i) { 
+			*_ofp<< "#  fieldNo[" << i+1 << "] name[" <<  ri.fldName.at(i) << "]" << endl;
+		}else{
+			*_ofp<< "#  fieldNo[" << i+1 << "]"<< endl;
+		}
+
+		fi[i].null.show			("#    # of lines in NULL",1,_ofp,_nfn_i);
+		fi[i].ctrl.show			("?h   # of lines with control charactors",0,_ofp,_nfn_i);
+		fi[i].dq0.show			("#    # of lines not enclosed with double quotation",1,_ofp,_nfn_i);
+		fi[i].dq0_dq.show		("?j    | # of lines having double quotation as a data",0,_ofp,_nfn_i);
+		fi[i].dq0_fspc.show	("#     | # of lines having spaces at the beginning",0,_ofp,_nfn_i);
+		fi[i].dq0_bspc.show	("#     | # of lines having spaces at the end",0,_ofp,_nfn_i);
+		fi[i].dq0_ftab.show	("?i    | # of lines having TAB at the beginning",0,_ofp,_nfn_i);
+		fi[i].dq0_btab.show	("?i    | # of lines having TAB at the end",0,_ofp,_nfn_i);
+		fi[i].dq0_mtab.show	("?i    | # of lines having TAB",0,_ofp,_nfn_i);
+		fi[i].dq1.show			("#    # of lines enclosed with double quotation",1,_ofp,_nfn_i);
+		fi[i].dq1_comma.show("#     | # of lines having COMMA",0,_ofp,_nfn_i);
+		fi[i].dq1_lf.show		("#     | # of lines having LF",0,_ofp,_nfn_i);
+		fi[i].dq1_cr.show		("?c    | # of lines having LF CR",0,_ofp,_nfn_i);
+		fi[i].dq1_crlf.show	("?c    | # of lines having LF CRLF",0,_ofp,_nfn_i);
+		fi[i].dq1_dq.show		("?k    | # of lines having single double quotation as a data",0,_ofp,_nfn_i);
+		fi[i].dq1_dqdq.show	("#     | # of lines having consecutive two double quotation as a data",0,_ofp,_nfn_i);
+		fi[i].dq1_fspc.show	("#     | # of lines having spaces at the beginning",0,_ofp,_nfn_i);
+		fi[i].dq1_bspc.show	("#     | # of lines having spaces at the end",0,_ofp,_nfn_i);
+		fi[i].dq1_ftab.show	("?i    | # of lines having TAB at the beginning",0,_ofp,_nfn_i);
+		fi[i].dq1_btab.show	("?i    | # of lines having TAB at the end",0,_ofp,_nfn_i);
+		fi[i].dq1_mtab.show	("?i    | # of lines having TAB",0,_ofp,_nfn_i);
+		*_ofp<< "#"<< endl;
+	}
+
+
+	*_ofp<< "################################### explanation ###" << endl;
+	*_ofp<< "# ?a : It cannot assign the field if there are duplicat name of fields." << endl;
+	*_ofp<< "#  [how to] Specify a complete set of field names like 'mchkcsv a=x,y,z'" << endl;
+	*_ofp<< "# ?b : MCMD has a valid set of charactors for a field name." << endl;
+	*_ofp<< "#  [how to]Specify a complete set of field names like 'mchkcsv a=x,y,z'" << endl;
+	*_ofp<< "# ?c : MCMD can handle only lines with LF as a EOL." << endl;
+	*_ofp<< "#      This is MCMD original restriction, conforming to RFC4180." << endl;
+	*_ofp<< "#  [how to] Run mchkcsv command that convert CR,CRLF to LF." << endl;
+	*_ofp<< "#" << endl;
+	*_ofp<< "# ?d : The last line does not have a EOL charactor." << endl;
+	*_ofp<< "#      It does not conform to RFC4180." << endl;
+	*_ofp<< "#  [how to] Run mchkcsv command add LF at the end." << endl;
+	*_ofp<< "#" << endl;
+	*_ofp<< "# ?e : Data file has '\\0' charactor." << endl;
+	*_ofp<< "#      The data may not be a text." << endl;
+	*_ofp<< "#      It does not conform to RFC4180." << endl;
+	*_ofp<< "#  [how to] Run mchkcsv that convert the charactor to \"&#x00;\"." << endl;
+	*_ofp<< "#           Run mchkcsv command with '-r' option that delete '\\0' characotr." << endl;
+	*_ofp<< "#" << endl;
+	*_ofp<< "# ?f : The number of charactors per line exceed the limit MCMD can handle." << endl;
+	*_ofp<< "#      MCMD can handle a line less than or equal to " << ri.maxRecLen << " bytes of charactors." << endl;
+	*_ofp<< "#  [how to] Change a enviroment variable KG_MaxRecLen." << endl;
+	*_ofp<< "#        ex) export KG_MaxRecLen=2048000" << endl;
+	*_ofp<< "#      You cannot specify the number greater than " << KG_LimitRecLen << " bytes." << endl;
+	*_ofp<< "#      This is MCMD original restriction, conforming to RFC4180." << endl;
+	*_ofp<< "#" << endl;
+	*_ofp<< "# ?g : MCMD can handle only a CSV data that all lines have same number of fields." << endl;
+	*_ofp<< "#      This is MCMD original restriction, conforming to RFC4180." << endl;
+	*_ofp<< "#  [how to]" << endl;
+	*_ofp<< "#       1) Use mchkcsv command that aligns all lines with same number of the field name header." << endl;
+	*_ofp<< "#            Exceeded field value will be cut off, and it will add a NULL value for missing field." << endl;
+	*_ofp<< "#       2) Use mchkcsv command with a= parameter." << endl;
+	*_ofp<< "#            It uses the field names on a= parameter just as a header line (the header line will be skipped)." << endl;
+	*_ofp<< "#" << endl;
+	*_ofp<< "# ?h : Field value include a control charactors (0x01~0x1F,0x7F)." << endl;
+	*_ofp<< "#      The data may not be a text." << endl;
+	*_ofp<< "#      It does not conform to RFC4180." << endl;
+	*_ofp<< "#  [how to] Run mchkcsv that convert the charactor to text like \"&#x01;\"." << endl;
+	*_ofp<< "#           Run mchkcsv command with '-r' option that delete the control characotrs." << endl;
+	*_ofp<< "#" << endl;
+	*_ofp<< "# ?i : TAB cannot be used." << endl;
+	*_ofp<< "#      It does not conform to RFC4180." << endl;
+	*_ofp<< "#  [how to] Run mchkcsv that convert the TAB to \"&#x09;\"." << endl;
+	*_ofp<< "#           Run mchkcsv command with '-r' option that delete the TAB." << endl;
+	*_ofp<< "#" << endl;
+	*_ofp<< "# ?j : Double quotation charactor is found in a value not enclosed by double quotation." << endl;
+	*_ofp<< "#        ex) NG: xxx,oo\"oo,xxx  -> OK: xxx,\"oo\"\"oo\",xxx" << endl;
+	*_ofp<< "#      It does not conform to RFC4180." << endl;
+	*_ofp<< "#  [how to] Run mchkcsv that makes convertion in the above example." << endl;
+	*_ofp<< "#" << endl;
+	*_ofp<< "# ?k : Double quotation charactor is found in a value enclosed by double quotation." << endl;
+	*_ofp<< "#      ex) NG: xxx,\"oo\"oo\",xxx  -> OK: xxx,\"oo\"\"oo\",xxx" << endl;
+	*_ofp<< "#      It does not conform to RFC4180." << endl;
+	*_ofp<< "#  [how to] Run mchkcsv that makes convertion in the above example." << endl;
+	*_ofp<< "# ?l : It has BOM (Bite Order Mark) at the beginning of data." << endl;
+	*_ofp<< "#  [how to] Run mchkcsv command that remove the BOM." << endl;
+	*_ofp<< "#-------------------------------------------------------------" << endl;
+}
+
 // -----------------------------------------------------------------------------
 //  record関連情報の設定
 // -----------------------------------------------------------------------------
@@ -622,7 +803,11 @@ int kgChkcsv::run(void) try
     for(size_t i=0; i<recInfo.maxFldCnt; i++){
 			fldInfo[i].summary_cal();
 		}
-    showInfo(recInfo,fldInfo);
+		if(_args.toBool("-diagl")){	
+	    showInfol(recInfo,fldInfo);
+	  }else{
+	    showInfo(recInfo,fldInfo);
+	  }
   }
 	// 終了処理
 	if(_ffp.is_open()){ _ffp.close();}

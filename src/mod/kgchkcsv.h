@@ -167,7 +167,7 @@ class kgChkcsv : public kgMod {
 
 	ifstream _ffp;	// ファイルストリーム(標準入力用)
 	istream* _fp;	  // ファイルストリーム
-	
+
 	ofstream _offp;// ファイルストリーム(-diag標準出力用)
 	ostream* _ofp;// ファイルストリーム(-diag用)
 
@@ -186,6 +186,7 @@ class kgChkcsv : public kgMod {
 	void setFldCntCnt(int firstfldCnt,int fldCnt,RecInfo &ri);
 
 	void showInfo(RecInfo &ri, vector<FldInfo> &fi);
+	void showInfol(RecInfo &ri, vector<FldInfo> &fi);
 
 public:
 	// コンストラクタ
