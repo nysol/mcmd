@@ -61,6 +61,10 @@
 // 再帰メッセージ出力フラグ
 #define KG_RecursiveMsg true
 
+
+// 再帰メッセージ出力フラグ
+#define KG_msgTimebyfsec false
+
 // KGMODが内部で扱うデフォルトの文字列encoding
 #define KG_DEFAULT_ENC "ja_JP.UTF-8"
 

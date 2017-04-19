@@ -92,9 +92,10 @@ kgEnv::kgEnv(void)
 
 	envStr=getenv("KG_msgTimebyfsec");
 	if( envStr != NULL ){
-		msgTimebyfsec_ = true;
+		if(!strcmp(envStr,"true")){ msgTimebyfsec_ = true;}
+		else{ msgTimebyfsec_ = KG_msgTimebyfsec;}
 	}else{
-		msgTimebyfsec_ = false;
+		msgTimebyfsec_ = KG_msgTimebyfsec;
 	}
 
 
