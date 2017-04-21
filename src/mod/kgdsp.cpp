@@ -65,6 +65,8 @@ void kgDsp::setArgs(void)
 	_bold  =  _args.toBool("-bold");
 	kgstr_t bgVal  =  _args.toString("bg=",false);
 	kgstr_t fcVal  =  _args.toString("fc=",false);
+	if(_x_val<=0) { _x_val=1; } 
+	if(_y_val<=0) { _y_val=1; } 
 
 
 	if(_str_s.size()==0&&_i_s.size()==0){

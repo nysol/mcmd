@@ -21,7 +21,7 @@
 #include <kgError.h>
 #include <kgItermios.h>
 #include <kgTextarea.h>
-#include <kgscrn.h>
+#include <kgminput.h>
 using namespace std;
 using namespace kglib;
 using namespace kgmod;
@@ -36,16 +36,16 @@ struct posInfo{
 // -----------------------------------------------------------------------------
 // コンストラクタ(モジュール名，バージョン登録,パラメータ)
 // -----------------------------------------------------------------------------
-kgScrn::kgScrn(void)
+kgMinput::kgMinput(void)
 {
-	_name    = "kgscrn";
+	_name    = "kgminput";
 	_version = "###VERSION###";
 
-	#include <help/en/kgscrnHelp.h>
+	#include <help/en/kgminputHelp.h>
 	_titleL = _title;
 	_docL   = _doc;
 	#ifdef JPN_FORMAT
-		#include <help/jp/kgscrnHelp.h>
+		#include <help/jp/kgminputHelp.h>
 	#endif
 
 }
@@ -53,7 +53,7 @@ kgScrn::kgScrn(void)
 // -----------------------------------------------------------------------------
 // パラメータセット＆入出力ファイルオープン
 // -----------------------------------------------------------------------------
-void kgScrn::setArgs(void)
+void kgMinput::setArgs(void)
 {
 	// パラメータチェック
 	_args.paramcheck("i=,f=,o=");
@@ -66,7 +66,7 @@ void kgScrn::setArgs(void)
 
 
 // fflush利用する
-int kgScrn::run(void) try
+int kgMinput::run(void) try
 {
 
 	// パラメータセット&出力ファイルオープン

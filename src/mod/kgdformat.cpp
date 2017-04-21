@@ -80,6 +80,17 @@ kgstr_t kgTimeparser::extraction(char * cstr , bool err )
 			setflg = tf.set(cpos,len,kgTimeFormat::SEC);
 			cpos+=len;
 		}
+		else if(pattrn[i]=='s'){
+			int len = numlength(cpos,2);
+			setflg = tf.set(cpos,len,kgTimeFormat::SEC);
+			cpos+=len;
+			if(setflg && *cpos=='.'){
+				cpos++;
+				int len = numlength(cpos,6);
+				setflg = tf.set(cpos,len,kgTimeFormat::USEC);
+				cpos+=len;
+			}
+		}
 		if (!setflg){ return "";}
 	}
 	if(*cpos!='\0'){ return "";}
@@ -120,6 +131,9 @@ void kgTimeparser::compile(const char *str)
 					_outpat |= kgTimeFormat::MIN;
 					break;
 				case 'S':
+					_outpat |= kgTimeFormat::SEC;
+					break;
+				case 's':
 					_outpat |= kgTimeFormat::SEC;
 					break;
 				default:

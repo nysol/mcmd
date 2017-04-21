@@ -51,7 +51,7 @@ mpaste \
 mproduct \
 mrand \
 mrjoin \
-mscrn \
+mminput \
 msed \
 msel \
 mmseldsp \
@@ -151,7 +151,7 @@ mcsv2tex_LDADD = $(top_srcdir)/src/kgmod/libkgmod@CORE_MAJOR_VERSION@.la $(top_b
 mcut_SOURCES = mcut.cpp
 mcut_LDADD = $(top_srcdir)/src/kgmod/libkgmod@CORE_MAJOR_VERSION@.la $(top_builddir)/src/mod/libmcmd@MOD_MAJOR_VERSION@.la
 
-mdata_SOURCES = mdata.cpp mdata.h dat/iris_dat.h dat/abalone_dat.h dat/man0.h dat/man1.h dat/tutorial_jp_dat.h dat/tutorial_jp_cust.h dat/tutorial_jp_syo.h dat/tutorial_jp_jicfs1.h dat/tutorial_jp_jicfs2.h dat/tutorial_jp_jicfs4.h dat/tutorial_jp_jicfs6.h dat/tutorial_en_dat.h dat/tutorial_en_cust.h dat/tutorial_en_syo.h dat/tutorial_en_jicfs1.h dat/tutorial_en_jicfs2.h dat/tutorial_en_jicfs4.h dat/tutorial_en_jicfs6.h 
+mdata_SOURCES = mdata.cpp 
 mdata_LDADD = $(top_srcdir)/src/kgmod/libkgmod@CORE_MAJOR_VERSION@.la $(top_builddir)/src/mod/libmcmd@MOD_MAJOR_VERSION@.la
 
 mdelnull_SOURCES = mdelnull.cpp
@@ -239,8 +239,8 @@ mrand_LDADD = $(top_srcdir)/src/kgmod/libkgmod@CORE_MAJOR_VERSION@.la $(top_buil
 mrjoin_SOURCES = mrjoin.cpp
 mrjoin_LDADD = $(top_srcdir)/src/kgmod/libkgmod@CORE_MAJOR_VERSION@.la $(top_builddir)/src/mod/libmcmd@MOD_MAJOR_VERSION@.la
 
-mscrn_SOURCES = mscrn.cpp
-mscrn_LDADD = $(top_srcdir)/src/kgmod/libkgmod@CORE_MAJOR_VERSION@.la $(top_builddir)/src/mod/libmcmd@MOD_MAJOR_VERSION@.la
+mminput_SOURCES = mminput.cpp
+mminput_LDADD = $(top_srcdir)/src/kgmod/libkgmod@CORE_MAJOR_VERSION@.la $(top_builddir)/src/mod/libmcmd@MOD_MAJOR_VERSION@.la
 
 msed_SOURCES = msed.cpp
 msed_LDADD = $(top_srcdir)/src/kgmod/libkgmod@CORE_MAJOR_VERSION@.la $(top_builddir)/src/mod/libmcmd@MOD_MAJOR_VERSION@.la

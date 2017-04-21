@@ -20,7 +20,7 @@
 // mscrn : 入力画面表示
 // ============================================================================
 #include <kgEnv.h>
-#include <kgscrn.h>
+#include <kgminput.h>
 
 using namespace kgmod;
 using namespace kglib;
@@ -28,7 +28,7 @@ using namespace kglib;
 int main(int argc, const char *argv[]) try
 {
   kgEnv    env;
-  kgScrn kgmod;
+  kgMinput kgmod;
   
   for(int i=1; i<argc; i++){
     if(0==strcmp("--help",argv[i]) || 0==strcmp("-help",argv[i])){

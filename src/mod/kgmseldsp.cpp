@@ -54,6 +54,9 @@ void kgMseldsp::setArgs(void)
 
 	_x_val =  atoi(_args.toString("x=",true).c_str());
 	_y_val =  atoi(_args.toString("y=",true).c_str());
+	if(_x_val<=0) { _x_val=1; } 
+	if(_y_val<=0) { _y_val=1; } 
+
 
 	kgstr_t h = _args.toString("height=",false);
 	_height=-1;

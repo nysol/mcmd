@@ -36,6 +36,7 @@ kgcsv2arff.cpp \
 kgcsv2json.cpp \
 kgcsv2tex.cpp \
 kgcut.cpp \
+kgdata.cpp \
 kgdformat.cpp \
 kgdelnull.cpp \
 kgdsp.cpp \
@@ -66,7 +67,7 @@ kgpaste.cpp \
 kgproduct.cpp \
 kgrand.cpp \
 kgrjoin.cpp \
-kgscrn.cpp \
+kgminput.cpp \
 kgsed.cpp \
 kgsel.cpp \
 kgseldsp.cpp \
@@ -126,6 +127,7 @@ kgdformat.h \
 kgdelnull.h \
 kgdsp.h \
 kgduprec.h \
+kgdata.h \
 kgfldname.h \
 kgfsort.h \
 kghashavg.h \
@@ -152,7 +154,7 @@ kgpaste.h \
 kgproduct.h \
 kgrand.h \
 kgrjoin.h \
-kgscrn.h \
+kgminput.h \
 kgsed.h \
 kgsel.h \
 kgseldsp.h \
@@ -208,6 +210,7 @@ kgxml2csv.h \
 ../help/en/kgcsv2jsonHelp.h \
 ../help/en/kgcsv2texHelp.h \
 ../help/en/kgcutHelp.h \
+../help/en/kgdataHelp.h \
 ../help/en/kgdelnullHelp.h \
 ../help/en/kgdformatHelp.h \
 ../help/en/kgdspHelp.h \
@@ -239,7 +242,7 @@ kgxml2csv.h \
 ../help/en/kgproductHelp.h \
 ../help/en/kgrandHelp.h \
 ../help/en/kgrjoinHelp.h \
-../help/en/kgscrnHelp.h \
+../help/en/kgminputHelp.h \
 ../help/en/kgsedHelp.h \
 ../help/en/kgselHelp.h \
 ../help/en/kgseldspHelp.h \
@@ -327,7 +330,7 @@ kgxml2csv.h \
 ../help/jp/kgproductHelp.h \
 ../help/jp/kgrandHelp.h \
 ../help/jp/kgrjoinHelp.h \
-../help/jp/kgscrnHelp.h \
+../help/jp/kgminputHelp.h \
 ../help/jp/kgsedHelp.h \
 ../help/jp/kgselHelp.h \
 ../help/jp/kgseldspHelp.h \
@@ -363,6 +366,25 @@ kgxml2csv.h \
 ../help/jp/kgvsortHelp.h \
 ../help/jp/kgvuniqHelp.h \
 ../help/jp/kgwindowHelp.h \
-../help/jp/kgxml2csvHelp.h
+../help/jp/kgxml2csvHelp.h \
+dat/iris_dat.h \
+dat/abalone_dat.h \
+dat/man0.h \
+dat/man1.h \
+dat/tutorial_jp_dat.h \
+dat/tutorial_jp_cust.h \
+dat/tutorial_jp_syo.h \
+dat/tutorial_jp_jicfs1.h \
+dat/tutorial_jp_jicfs2.h \
+dat/tutorial_jp_jicfs4.h \
+dat/tutorial_jp_jicfs6.h \
+dat/tutorial_en_dat.h \
+dat/tutorial_en_cust.h \
+dat/tutorial_en_syo.h \
+dat/tutorial_en_jicfs1.h \
+dat/tutorial_en_jicfs2.h \
+dat/tutorial_en_jicfs4.h \
+dat/tutorial_en_jicfs6.h 
+
 pkgconfigdir = $(libdir)/pkgconfig
 

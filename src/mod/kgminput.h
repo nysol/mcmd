@@ -16,28 +16,32 @@
  * for more details.
 
  ////////// LICENSE INFO ////////////////////*/
-// =============================================================================
-/// kgscrnHelp.h : kgscrn help
-// =============================================================================
-_title="入力処理プログラム";
-_doc="\
-\n\
-mscrn 入力処理プログラム\n\
-\n\
-i=で指定したファイル内容をもとに入力画面を表示し、\n\
-入力した内容をo=指定したファイルに出力する\n\
-f=を指定するとヘッダ行としてして出力する\n\
-\n\
-書式\n\
-\n\
-mscrn i= o= [f=] \n\
-[--help] [--helpl] [--version]\n\
-\n\
-パラメータ\n\
-\n\
-  i=   入力画面イメージファイル\n\
-  f= 項目名\n\
-  o= 出力ファイル\n\
-\n\
-";
+#include <kgmod.h>
+#include <kgCSVout.h>
+using namespace std;
+using namespace kglib;
+
+namespace kgmod { ////////////////////////////////////////////// start namespace
+
+class kgMinput : public kgMod
+{
+	#define MAX_ITMCNT 512
+	#define MAX_LINESIZE 4096
+
+	vector<kgstr_t> _f_str; // f=
+	kgCSVout _oFile;  // o=
+	kgstr_t _i_s;		// i=
+	// 引数セット
+	void setArgs(void);
+public:
+	// コンストラクタ
+	kgMinput(void);
+	~kgMinput(void){}
+	//実行メソッド
+	int run(void);
+
+
+};
+}
+
 

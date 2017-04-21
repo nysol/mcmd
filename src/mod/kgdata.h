@@ -19,6 +19,10 @@
 // ============================================================================
 // msample.h : sampleの表示用データ
 // ============================================================================
+#include <vector>
+#include <kgConfig.h>
+#include <kgmod.h>
+
 #include "dat/iris_dat.h"
 #include "dat/abalone_dat.h"
 
@@ -49,16 +53,6 @@ const char * helpMsg_ =
 3.1) mdata tutorial_en/dat|cust|syo|jicfs1|jicfs2|jicfs4|jicfs6 : output each data used in English tutorial to STDOUT\n\
 ";
 
-/*
-const char* grpidx_[][2]={
-{"etc","iris"}
-//追加する場合は以下に",{grup,name}"で追加する
-,{"tutorial","dat"}
-,{"tutorial","cust"}
-//ここ以下に追加しない
-,{"",""}
-};
-*/
 // sampleデータ
 const char* dsample_[][3]={
 
@@ -88,3 +82,34 @@ const char* dsample_[][3]={
 //ここ以下に追加しない
 {"",""}
 };
+
+
+using namespace kglib;
+
+namespace kgmod { ////////////////////////////////////////////// start namespace
+
+class kgData:public kgMod 
+{
+	bool _dic;
+	vector<string> _vals;
+	string _val;
+	string _outinfo;
+	
+	void setArgs(void);
+	void output_file(void);
+	void output_dic(void);
+
+public:
+	// コンストラクタ
+	kgData(void);
+	~kgData(void){}
+	void init(size_t argc, const char* argv[], kgEnv* env);
+	//実行メソッド
+	int run(void);
+
+};
+
+}
+
+
+

@@ -55,6 +55,9 @@ void kgInput::setArgs(void)
 	_x_val =  atoi(_args.toString("x=",true).c_str());
 	_y_val =  atoi(_args.toString("y=",true).c_str());
 	_len   =  atoi(_args.toString("len=",true).c_str());
+	if(_x_val<=0) { _x_val=1; } 
+	if(_y_val<=0) { _y_val=1; } 
+	if(_len<=0) { _len=1; } 
 	// f= 項目引数のセット
 	_f_str = _args.toString("f=",false);
   _oFile.open(_args.toString("o=",true), _env,_f_str.size()==0);
