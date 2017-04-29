@@ -29,6 +29,9 @@
 #include "dat/man0.h"
 #include "dat/man1.h"
 
+#include "dat/yakiniku_en.h"
+#include "dat/yakiniku_jp.h"
+
 #include "dat/tutorial_jp_dat.h"
 #include "dat/tutorial_jp_cust.h"
 #include "dat/tutorial_jp_syo.h"
@@ -62,6 +65,9 @@ const char* dsample_[][3]={
 
 {"man0","",man0},
 {"man1","",man1},
+
+{"yakiniku_jp","",yakiniku_jp},
+{"yakiniku_en","",yakiniku_en},
 
 {"tutorial_jp","dat"   ,tutorial_jp_dat   },
 {"tutorial_jp","cust"  ,tutorial_jp_cust  },

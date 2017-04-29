@@ -371,6 +371,8 @@ dat/iris_dat.h \
 dat/abalone_dat.h \
 dat/man0.h \
 dat/man1.h \
+dat/yakiniku_en.h \
+dat/yakiniku_jp.h \
 dat/tutorial_jp_dat.h \
 dat/tutorial_jp_cust.h \
 dat/tutorial_jp_syo.h \
