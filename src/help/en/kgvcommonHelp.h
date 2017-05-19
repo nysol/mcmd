@@ -32,6 +32,8 @@ mvcommon vf= [A=] K= [-r] m= | i= [o=] [delim=] [-assert_diffSize]\n\
 [-assert_nullin] [-assert_nullout] [-nfn] [-nfno] [-x] [-q] [tmpPath=]\n\
 [--help] [--helpl] [--version]\n\
 \n\
+Parameters\n\
+\n\
   vf=   Specify the field name(s) of vector (from i= input file) for matching.\n\
         Multiple fields can be specified. Sorting on vectors is not required.\n\
         Output of vector series can be defined with colon followed after the vector name.\n\

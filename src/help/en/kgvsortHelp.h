@@ -33,6 +33,8 @@ Format\n\
 mvsort vf= [-A]  [i=] [o=] [delim=] [-assert_diffSize] [-assert_nullin]\n\
 [-assert_nullout] [-nfn] [-nfno] [-x] [-q] [tmpPath=] [--help] [--helpl][--version]\n\
 \n\
+Parameters\n\
+\n\
   vf=   Specify the field name(s) of vectors for sorting. Multiple fields can be specified.\n\
         Add n after % after field name to sort in ascending numerical order.\n\
         Add r after % after field name to sort in reverse order.\n\

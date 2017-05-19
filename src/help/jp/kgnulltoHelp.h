@@ -36,8 +36,10 @@ mnullto f= [v=|-p] [O=] [-A] [i=] [o=] [-assert_diffSize] [-nfn] [-nfno]\n\
 \n\
   f=   ここで指定した項目(複数項目指定可)のNULL値が置換される。\n\
   v=   ここで指定した文字列にNULL値を置換する。\n\
-  -p   前の行のNULL値で置換する。\n\
+  -p   前の行の値で置換する。\n\
        v=パラメータと同時に指定できない。\n\
+  k=   -pを指定した時にのみ意味があり、ここで指定した項目値の単位で置換処理を行なう。\n\
+  s=   -pを指定した時にのみ意味があり、k=項目内での並び順を指定する。\n\
   O=   NULL値以外を置換したい場合は、ここで値を指定する。 指定しなければNULL値以外は置換しない。\n\
   -A   このオプションにより、指定した項目を置き換えるのではなく、 新たに項目が追加される。\n\
        -Aオプションを指定した場合は必ず、\n\
@@ -97,21 +99,33 @@ birthday項目がNULL値の場合は\"no value\"、値がある場合は\"value\
 \n\
 例4: 前行の値に置換\n\
 \n\
-    $ more dat2.csv\n\
-    id,date\n\
-    A,19690103\n\
-    B,\n\
-    C,19500501\n\
-    D,\n\
-    E,\n\
-    $ mnullto f=date -p i=dat2.csv o=rsl4.csv\n\
-    #END# kgnullto -p f=date i=dat2.csv o=rsl4.csv\n\
+    $ more dat3.csv\n\
+    id,seq,val\n\
+    A,1,1\n\
+    A,3,2\n\
+    A,2,\n\
+    B,2,3\n\
+    B,1,\n\
+    $ mnullto f=val -p i=dat3.csv o=rsl4.csv\n\
+    #END# kgnullto -p f=val i=dat3.csv o=rsl4.csv\n\
     $ more rsl4.csv\n\
-    id,date\n\
-    A,19690103\n\
-    B,19690103\n\
-    C,19500501\n\
-    D,19500501\n\
-    E,19500501\n\
+    id,seq,val\n\
+    A,1,1\n\
+    A,3,2\n\
+    A,2,2\n\
+    B,2,3\n\
+    B,1,3\n\
+\n\
+例5: キー項目を指定した場合の例\n\
+\n\
+    $ mnullto k=id s=seq f=val -p i=dat3.csv o=rsl5.csv\n\
+    #END# kgnullto -p f=val i=dat3.csv k=id o=rsl5.csv s=seq\n\
+    $ more rsl5.csv\n\
+    id%0,seq%1,val\n\
+    A,1,1\n\
+    A,2,1\n\
+    A,3,2\n\
+    B,1,\n\
+    B,2,3\n\
 ";
 

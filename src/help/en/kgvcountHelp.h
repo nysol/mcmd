@@ -26,37 +26,32 @@ MVCOUNT - CALCULATE VECTOR SIZE\n\
 \n\
 Calculate the size of vector (number of elements in a vector) .\n\
 \n\
-An example is shown in Table - .\n\
-\n\
-in.csv\n\
-\n\
-   no  items\n\
-\n\
-   1   a b c\n\
-   2   a d\n\
-   3   b f e f\n\
-   4   \n\
-\n\
-  : Basic example\n\
-\n\
-mvcount vf=items:size i=in.csv\n\
-\n\
-  no   items     size\n\
-  ---- --------- ------\n\
-  1    a b c     3\n\
-  2    a d       2\n\
-  3    b f e f   4\n\
-  4              0\n\
-\n\
-  : Basic example\n\
-\n\
 Format\n\
 \n\
 mvcount vf= [i=] [o=] [delim=] [-assert_diffSize] [-assert_nullin]\n\
 [-nfn] [-nfno] [-x] [-q] [tmpPath=] [--help] [--helpl] [--version]\n\
 \n\
+Parameters\n\
+\n\
   vf=   Specify the field names (from input file i=) of vectors to count the number of elements.\n\
         Field name(s) of result(s) can be defined with : followed after the vector name.\n\
         Multiple vectors can be specified.\n\
+\n\
+Examples\n\
+\n\
+Example 1: Count multiple vectors\n\
+\n\
+    $ more dat1.csv\n\
+    items1,items2\n\
+    b a c,b\n\
+    c c,\n\
+    e a a,a a a\n\
+    $ mvcount vf=items1:size1,items2:size2 i=dat1.csv o=rsl1.csv\n\
+    #END# kgVcount i=dat1.csv o=rsl1.csv vf=items1:size1,items2:size2\n\
+    $ more rsl1.csv\n\
+    items1,items2,size1,size2\n\
+    b a c,b,3,1\n\
+    c c,,2,0\n\
+    e a a,a a a,3,3\n\
 ";
 

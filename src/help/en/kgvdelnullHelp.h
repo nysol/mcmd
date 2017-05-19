@@ -39,6 +39,8 @@ Format\n\
 mvdelnull vf= [-A]  i= [o=] [delim=] [-assert_diffSize] [-assert_nullin]\n\
 [-assert_nullout] [-nfn] [-nfno] [-x] [-q] [tmpPath=] [--help] [--helpl][--version]\n\
 \n\
+Parameters\n\
+\n\
   vf=   Specify the field name (from input file i= ) which contains NULL element for removal.\n\
         Multiple files can be specified.\n\
   -A    Instead of replacing the specified item, this option\n\

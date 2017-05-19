@@ -40,6 +40,8 @@ mvnullto vf= [v=|-p] [O=] [-A]  i= [o=] [delim=] [-assert_diffSize]\n\
 [-assert_nullin] [-assert_nullout] [-nfn] [-nfno] [-x] [-q] [tmpPath=]\n\
 [--help] [--helpl] [--version]\n\
 \n\
+パラメータ\n\
+\n\
   vf=   NULL置換の対象となる項目名(i=ファイル上)を指定する。\n\
         複数項目指定可能。\n\
         結果の項目名を変更したいときは、:(コロン)に続けて新項目名を指定する。\n\

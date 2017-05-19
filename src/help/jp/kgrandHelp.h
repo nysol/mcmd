@@ -68,11 +68,11 @@ mrand [k=] a= [max=] [min=] [S=] [-int] [i=] [o=] [-assert_diffSize]\n\
     #END# kgrand a=rand i=dat1.csv o=rsl1.csv\n\
     $ more rsl1.csv\n\
     顧客,rand\n\
-    A,0.4437843889\n\
-    B,0.9708944166\n\
-    C,0.9070266788\n\
-    D,0.2014217607\n\
-    E,0.1456905885\n\
+    A,0.05056004506\n\
+    B,0.5912564802\n\
+    C,0.8582792655\n\
+    D,0.9130602113\n\
+    E,0.1935953016\n\
 \n\
 例2: 基本例2\n\
 \n\
@@ -82,11 +82,11 @@ mrand [k=] a= [max=] [min=] [S=] [-int] [i=] [o=] [-assert_diffSize]\n\
     #END# kgrand -int a=rand i=dat1.csv o=rsl2.csv\n\
     $ more rsl2.csv\n\
     顧客,rand\n\
-    A,177177984\n\
-    B,623270010\n\
-    C,1193244802\n\
-    D,1595101870\n\
-    E,1061154371\n\
+    A,1914956170\n\
+    B,127938271\n\
+    C,1793744235\n\
+    D,334816752\n\
+    E,1197767906\n\
 \n\
 例3: 最小値、最大値を決めた乱数の生成\n\
 \n\
@@ -124,11 +124,11 @@ mrand [k=] a= [max=] [min=] [S=] [-int] [i=] [o=] [-assert_diffSize]\n\
     A,1\n\
     A,1\n\
     A,1\n\
-    B,1\n\
-    B,1\n\
-    C,1\n\
-    D,1\n\
-    D,1\n\
-    D,1\n\
+    B,0\n\
+    B,0\n\
+    C,0\n\
+    D,0\n\
+    D,0\n\
+    D,0\n\
 ";
 

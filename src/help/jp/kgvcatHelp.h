@@ -31,6 +31,8 @@ MVCAT ベクトルの併合\n\
 mvcat vf= a= [-A] [i=] [o=] [delim=] [-assert_diffSize] [-assert_nullin]\n\
 [-assert_nullout] [-nfn] [-nfno] [-x] [-q] [tmpPath=] [--help] [--helpl][--version]\n\
 \n\
+パラメータ\n\
+\n\
   vf=   併合する複数のベクトル項目名(i=ファイル上)を指定する。\n\
         項目名にワイルドカードを使うことができる。\n\
   a=    併合後の項目名を指定する。\n\

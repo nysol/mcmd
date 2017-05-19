@@ -48,54 +48,6 @@ command.\n\
 -   Use AND logical operator to select records based on the key value\n\
     with the -R option.\n\
 \n\
-Typical examples are shown in to .\n\
-\n\
-   key   val\n\
-\n\
-    a     1\n\
-    a    -3\n\
-    b     3\n\
-    b     6\n\
-\n\
-  : Select rows if the values in the val column falls on the range of 1\n\
-  to 3\n\
-\n\
-mselnum f=val c='[1,3]' \n\
-\n\
-   key   val  \n\
-  ----- ----- --\n\
-    a     1   \n\
-    b     3   \n\
-\n\
-  : Select rows if the values in the val column falls on the range of 1\n\
-  to 3\n\
-\n\
-mselnum f=val c='[1,3)'\n\
-\n\
-   key   val  \n\
-  ----- ----- --\n\
-    a     1   \n\
-\n\
-  : Select rows with values greater than or equal to 5\n\
-\n\
-mselnum f=val c='[5,)'\n\
-\n\
-   key   val  \n\
-  ----- ----- --\n\
-    b     6   \n\
-\n\
-  : Select rows with values greater than or equal to 5\n\
-\n\
-mselnum f=val c='(,1],[5,)'\n\
-\n\
-   key   val  \n\
-  ----- ----- --\n\
-    a     1   \n\
-    a    -3   \n\
-    b     6   \n\
-\n\
-  : Select rows less than or equal to 1 or greater than or equal to 5\n\
-\n\
 Format\n\
 \n\
 mselnum f= c= [k=] [u=] [-F] [-r] [-R] [i=] [o=] [bufcount=]\n\

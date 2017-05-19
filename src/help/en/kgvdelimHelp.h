@@ -28,82 +28,48 @@ Change delimiter used to separate between string of characters in a\n\
 vector. However, the delimiter will be removed if an empty string is\n\
 specified as the delimiter.\n\
 \n\
-Some examples are shown in Table - . When comma is used as delimiter, a\n\
-pair of double quotation marks is added to the vector (Table). If a null\n\
-character is specified as delimiter at v=, the delimiter between\n\
-characters will be removed (Table ).\n\
-\n\
-Alphabet and chinese characters can be used as delimiter as shown in\n\
-Table . Since the character type delimiter is read as character string\n\
-as part of the vector by other commands such as mvsort, character type\n\
-delimiter can be specified in delim=.\n\
-\n\
-ll\n\
-\n\
-in.csv\n\
-\n\
-   no  items     \n\
-  ---- --------- --\n\
-   1   b a a     \n\
-   2   a a b b   \n\
-   3   a b b a   \n\
-   4   a b c     \n\
-\n\
-  : Use comma as a delimiter.\n\
-\n\
-vf=items v=- i=in.csv\n\
-\n\
-  no   items\n\
-\n\
-  1    b-a-a\n\
-  2    a-a-b-b\n\
-  3    a-b-b-a\n\
-  4    a-b-c\n\
-\n\
-  : Use comma as a delimiter.\n\
-\n\
-vf=items v=, i=in.csv\n\
-\n\
-  no   items\n\
-\n\
-  1    “b,a,a”\n\
-  2    “a,a,b,b”\n\
-  3    “a,b,b,a”\n\
-  4    “a,b,c”\n\
-\n\
-  : Use comma as a delimiter.\n\
-\n\
-ll\n\
-\n\
-vf=items v= i=in.csv\n\
-\n\
-  no   items\n\
-\n\
-  1    baa\n\
-  2    aabb\n\
-  3    abba\n\
-  4    abc\n\
-\n\
-  : Specify more than one character\n\
-\n\
-vf=items v=xx i=in.csv\n\
-\n\
-  no   items\n\
-\n\
-  1    bxxaxxa\n\
-  2    axxaxxbxxb\n\
-  3    axxbxxbxxa\n\
-  4    axxbxxc\n\
-\n\
-  : Specify more than one character\n\
-\n\
 Format\n\
 \n\
 mvdelim vf= v= [-A]  [i=] [o=] [delim=] [-assert_diffSize]\n\
 [-assert_nullin] [-assert_nullout] [-nfn] [-nfno] [-x] [-q] [tmpPath=]\n\
 [--help] [--helpl] [--version]\n\
 \n\
+Parameters\n\
+\n\
   vf=   Field name of vector to replace the delimiter. Multiple fields can be specified.\n\
   v=    Define new delimiter. If the parameter is not defined, the delimiter is treated as an empty character.\n\
+\n\
+Examples\n\
+\n\
+Example 1: Basic Example\n\
+\n\
+Replace the default space delimiter to _(underscore).\n\
+\n\
+    $ more dat1.csv\n\
+    item1\n\
+    b a c\n\
+    c c\n\
+    e a a\n\
+    $ mvdelim vf=item1 v=_ i=dat1.csv o=rsl1.csv\n\
+    #END# kgvdelim i=dat1.csv o=rsl1.csv v=_ vf=item1\n\
+    $ more rsl1.csv\n\
+    item1\n\
+    b_a_c\n\
+    c_c\n\
+    e_a_a\n\
+\n\
+Example 2: Comma\n\
+\n\
+In CSV data with comma delimited characters, when the delimiter of\n\
+vector is replaced as comma, the entire vector is enclosed in double\n\
+quotes to differentiate from the delimiter of CSV.\n\
+\n\
+    $ mvdelim vf=item1 v=, i=dat1.csv o=rsl2.csv\n\
+    #END# kgvdelim i=dat1.csv o=rsl2.csv v=, vf=item1\n\
+    $ more rsl2.csv\n\
+    item1\n\
+    \"b,a,c\"\n\
+    \"c,c\"\n\
+    \"e,a,a\"\n\
 ";
 

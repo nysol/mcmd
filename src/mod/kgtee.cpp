@@ -288,6 +288,7 @@ kgTee::kgTee(void){
 	_version = "###VERSION###";
 	incnt_=0;
 	_oRecCnt=0;
+	_ifin =false;
 
 	#include <help/en/kgteeHelp.h>
 	_titleL = _title;
@@ -340,19 +341,23 @@ void kgTee::setArgs(void){
 ////////////////////////////////////////////////
 void kgTee::tee_write(kgstr_t  ifname,int no){
 	ifstream   inp_file;
-	int ocnt=0;
+	size_t ocnt=0;
 	kgAutoPtr2<char> buf_ap_;
 	char* buf;
 	buf_ap_.set( new char[KG_MaxRecLen] );
 	buf = buf_ap_.get();
 	inp_file.open(ifname.c_str());
-	while(!inp_file.eof()){
-		if(ocnt<incnt_){ 
-			inp_file.read(buf, KG_MaxRecLen);
-			if(! inp_file.good() && ! inp_file.eof()) {break; }
-			csvOut_[no].write(buf, inp_file.gcount());
-			ocnt++;
-		}
+	while(1){
+		if(_ifin && inp_file.eof()){ break; }
+		//if(ocnt<incnt_){ ////futere work
+		inp_file.read(buf, KG_MaxRecLen);
+//			if(! inp_file.good() && inp_file.eof()) {
+//				break; 
+//			}
+		if(inp_file.gcount()==0){ continue;}
+		csvOut_[no].write(buf, inp_file.gcount());
+		ocnt++; ////futere work
+		//}
 	}
 	inp_file.close();
 	csvOut_[no].close();
@@ -363,13 +368,16 @@ void kgTee::tee_read(){
 	char* buf;
 	buf_ap_.set( new char[KG_MaxRecLen] );
 	buf = buf_ap_.get();
+	//いきなりEOFはなにもせずに終了
 	while(!_iFile.eof()){
 		_iFile.read(buf, KG_MaxRecLen);
 		otmpfile_.write(buf, _iFile.gcount());
 		otmpfile_.flush();
-			incnt_++;
+		incnt_++; //futere work
 	}
+
 	otmpfile_.close();
+	_ifin = true;
 }
 
 void* kgTee::tee_writeTH(void *arg){
@@ -418,6 +426,8 @@ int kgTee::run(void) try {
 		if( pthread_create( &th_st_p[0], NULL, kgTee::tee_readTH ,this ) ){
 			throw kgError("can't create read_thread");
 		}
+		int rtn = pthread_join(th_st_p[0],NULL);
+		if(rtn!=0) { cerr << "waring  fail thread join : " << rtn << endl; }
 
 		for(int i=0; i<size_; i++){
 			data[i].otmpname = otmpname;
@@ -427,14 +437,13 @@ int kgTee::run(void) try {
 			 	throw kgError("can't create write_thread");
 			}
 		}
-		for(int i=0; i<size_+1; i++){
+		for(int i=1; i<size_+1; i++){
 			int rtn = pthread_join(th_st_p[i],NULL);
 			if(rtn!=0) { cerr << "waring  fail thread join : " << rtn << endl; }
 		}
 	}
 		
 	// 全ファイルクローズ
-	_iFile.close();
 
 	// 終了処理(メッセージ出力,thread pipe終了通知)
 	successEnd();

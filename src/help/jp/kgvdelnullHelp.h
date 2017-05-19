@@ -39,6 +39,8 @@ MVDELNULL ベクトルのNULL要素の削除\n\
 mvdelnull vf= [-A]  i= [o=] [delim=] [-assert_diffSize] [-assert_nullin]\n\
 [-assert_nullout] [-nfn] [-nfno] [-x] [-q] [tmpPath=] [--help] [--helpl][--version]\n\
 \n\
+パラメータ\n\
+\n\
   vf=   NULL要素を削除する対象となる項目名(i=ファイル上)を指定する。\n\
         複数項目指定可能。\n\
         結果の項目名を変更したいときは、:(コロン)に続けて新項目名を指定する。\n\

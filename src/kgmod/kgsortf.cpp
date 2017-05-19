@@ -236,7 +236,22 @@ void kgSortf::setArgs(void)
 	}
 
 	// f= 項目引数のセット
-	vector< vector<kgstr_t> > vvs = _args.toStringVecVec("f=","%:",2,true);
+	vector< vector<kgstr_t> > vvsf = _args.toStringVecVec("f=","%:",2,true);
+	vector< vector<kgstr_t> > vvs(2);
+	for(size_t i=0;i<vvsf[0].size();i++){
+		bool add = true;
+		for(size_t j=0;j<vvs[0].size();j++){
+			if(vvsf[0][i]==vvsf[0][j]){
+				add = false;
+				break;
+			}
+		}
+		if(add){
+			vvs[0].push_back(vvsf[0][i]);
+			vvs[1].push_back(vvsf[1][i]);
+		}
+	}
+
 	//_fField.set(vvs, &_iFile,_fldByNum, false); // 項目名展開は行わない
 	_fField.set(vvs, &_iFile,_fldByNum); // 項目名展開は行わない
 

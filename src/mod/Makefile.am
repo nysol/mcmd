@@ -34,7 +34,7 @@ kgcross.cpp \
 kg2cross.cpp \
 kgcsv2arff.cpp \
 kgcsv2json.cpp \
-kgcsv2tex.cpp \
+kgcsvconv.cpp \
 kgcut.cpp \
 kgdata.cpp \
 kgdformat.cpp \
@@ -121,7 +121,7 @@ kgcross.h \
 kg2cross.h \
 kgcsv2arff.h \
 kgcsv2json.h \
-kgcsv2tex.h \
+kgcsvconv.h \
 kgcut.h \
 kgdformat.h \
 kgdelnull.h \
@@ -208,7 +208,7 @@ kgxml2csv.h \
 ../help/en/kgcrossHelp.h \
 ../help/en/kgcsv2arffHelp.h \
 ../help/en/kgcsv2jsonHelp.h \
-../help/en/kgcsv2texHelp.h \
+../help/en/kgcsvconvHelp.h \
 ../help/en/kgcutHelp.h \
 ../help/en/kgdataHelp.h \
 ../help/en/kgdelnullHelp.h \
@@ -296,7 +296,7 @@ kgxml2csv.h \
 ../help/jp/kgcrossHelp.h \
 ../help/jp/kgcsv2arffHelp.h \
 ../help/jp/kgcsv2jsonHelp.h \
-../help/jp/kgcsv2texHelp.h \
+../help/jp/kgcsvconvHelp.h \
 ../help/jp/kgcutHelp.h \
 ../help/jp/kgdataHelp.h \
 ../help/jp/kgdelnullHelp.h \

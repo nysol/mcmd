@@ -17,12 +17,12 @@
 
  ////////// LICENSE INFO ////////////////////*/
 // =============================================================================
-// kgCsv2tex.cpp 行集計(合計)クラス
+// kgCsvconv.cpp 行集計(合計)クラス
 // =============================================================================
 #include <cstdio>
 #include <vector>
 #include <kgConfig.h>
-#include <kgcsv2tex.h>
+#include <kgcsvconv.h>
 #include <kgError.h>
 #include <kgVal.h>
 
@@ -103,7 +103,7 @@ void kgtexFormatInfoTTL::set(char *dt,FILE * wfp,kgArgFld& kfld){
 						p++;
 					}
 				}
-				if(keynum>_kmax){ throw kgError("format error on csv2tex"); }
+				if(keynum>_kmax){ throw kgError("format error on csvconv"); }
 				if(keynum==0) keynum=_kmax;
 				p = skip(p,"\n");
 				stset(p+1-_formatData,pos,keynum);
@@ -123,16 +123,16 @@ void kgtexFormatInfoTTL::set(char *dt,FILE * wfp,kgArgFld& kfld){
 // -----------------------------------------------------------------------------
 // コンストラクタ(モジュール名，バージョン登録)
 // -----------------------------------------------------------------------------
-kgCsv2tex::kgCsv2tex(void)
+kgCsvconv::kgCsvconv(void)
 {
-	_name    = "kgcsv2tex";
+	_name    = "kgcsvconv";
 	_version = "###VERSION###";
 
-	#include <help/en/kgcsv2texHelp.h>
+	#include <help/en/kgcsvconvHelp.h>
 	_titleL = _title;
 	_docL   = _doc;
 	#ifdef JPN_FORMAT
-		#include <help/jp/kgcsv2texHelp.h>
+		#include <help/jp/kgcsvconvHelp.h>
 	#endif
 	_wfp=NULL;
 }
@@ -146,7 +146,7 @@ kgCsv2tex::kgCsv2tex(void)
 // -----------------------------------------------------------------------------
 // 入出力ファイルオープン
 // -----------------------------------------------------------------------------
-void kgCsv2tex::setArgs(void)
+void kgCsvconv::setArgs(void)
 {
 
 	// パラメータチェック
@@ -161,7 +161,7 @@ void kgCsv2tex::setArgs(void)
 	else{
 		_wfp =fopen(ostr.c_str(),"wb");
 		if(!_wfp){
-			throw kgError("can't open write file on csv2tex");
+			throw kgError("can't open write file on csvconv");
 		}
 	}
 
@@ -169,23 +169,23 @@ void kgCsv2tex::setArgs(void)
 
 	struct stat st;
 	if( stat(formatNM.c_str(),&st) ){
-		throw kgError("can't get file size format file on csv2tex");
+		throw kgError("can't get file size format file on csvconv");
 	}
 	try {
 		_ap.set( new char[st.st_size +1] );
 	} catch(...) {
-		throw kgError("memory allocation error on csv2tex");
+		throw kgError("memory allocation error on csvconv");
 	}
 	_formatData = _ap.get();
 	
 	// format読み込み
 	FILE *fp;
 	if( !(fp = fopen(formatNM.c_str(),"rb")) ){ 
-		throw kgError("can't open format file on csv2tex");
+		throw kgError("can't open format file on csvconv");
 	}
 	/* ファイルを全件一度に読込み */
 	if( fread(_formatData,st.st_size,1,fp) != 1 ){
-		throw kgError("can't read format file on csv2tex");
+		throw kgError("can't read format file on csvconv");
 	}
 	fclose(fp);
 	_formatData[st.st_size] = '\0';
@@ -215,7 +215,7 @@ void kgCsv2tex::setArgs(void)
 // -----------------------------------------------------------------------------
 // 実行
 // -----------------------------------------------------------------------------
-int kgCsv2tex::run(void) try 
+int kgCsvconv::run(void) try 
 {
 	// パラメータセット＆入出力ファイルオープン
 	setArgs();

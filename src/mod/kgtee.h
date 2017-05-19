@@ -95,12 +95,14 @@ class kgTee : public kgMod {
 	vector<kgstr_t> _ofNames; // o=
 	bool            _nostdout; // -nostdout
 
+	bool            _ifin; // -nostdout
+
 	kgAutoPtr2<kgOFP> ap_;
 	kgOFP*  csvOut_;   // i=
 	
 	ofstream otmpfile_;
 	int                  size_;
-	volatile int incnt_;
+	volatile size_t incnt_;
 
 	size_t _oRecCnt;
 

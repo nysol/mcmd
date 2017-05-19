@@ -2225,13 +2225,13 @@ class kgFunction_berrand : public kgFunction
 // -----------------------------------------------------------------------------
 class kgFunction_binomdist : public kgFunction
 {
-	size_t ub_;
+	//size_t ub_;
 	vector< vector<int> > pascal_;
 	public:
 	kgFunction_binomdist(void)
 	{_result.type('N');_name="binomdist";_minArgc=3;_maxArgc=3;}
 	virtual void run(void);
-	virtual void preprocess(void);
+	//virtual void preprocess(void);
 };
 // ============================================================================
 // 三角関数関連クラス

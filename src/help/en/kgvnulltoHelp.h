@@ -41,13 +41,15 @@ mvnullto vf= [v=|-p] [O=] [-A]  i= [o=] [delim=] [-assert_diffSize]\n\
 [-assert_nullin] [-assert_nullout] [-nfn] [-nfno] [-x] [-q] [tmpPath=]\n\
 [--help] [--helpl] [--version]\n\
 \n\
+Parameters\n\
+\n\
   vf=   Specify the field name (i=on file) to replace NULL.\n\
         Multiple items can be specified.\n\
+  -A    Instead of replacing the specified item, this option adds output as a new field.\n\
   v=    Specify the replacement string.\n\
   -p    Replace NULL with the previous element. It can not be specified with v=.\n\
   O=    Replace all non-NULL elements with the string specified here.\n\
         Non-NULL value will not be replaced unless specified.\n\
-  -A    Instead of replacing the specified item, this option adds output as a new field.\n\
         When -A open is specified, the new field name must be specified after :(colon).\n\
         Example: f=quantity:substitution field name\n\
 \n\

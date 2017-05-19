@@ -25,6 +25,7 @@
 #include <ctime>
 #include <kgFunction.h>
 #include <kgError.h>
+#include <boost/math/distributions.hpp>
 
 
 using namespace std;
@@ -33,6 +34,7 @@ using namespace boost::xpressive;
 using namespace boost::gregorian;
 using namespace boost::posix_time;
 using namespace boost;
+//using namespace boost::math;
 
 // static function
 namespace 
@@ -3155,6 +3157,7 @@ void kgFunction_berrand::run(void){
 // -----------------------------------------------------------------------------
 // binomdist(数値[成功回数],数値[試行回数],数値[確率]) => 数値 : 二項分布の確率?
 // -----------------------------------------------------------------------------
+/*
 void kgFunction_binomdist::preprocess(void)
 {
 	ub_=200;
@@ -3171,28 +3174,43 @@ void kgFunction_binomdist::preprocess(void)
 		}
 	}
 }
+*/
 void kgFunction_binomdist::run(void)
 {	
-	double accum=0.0;
+	//double accum=0.0;
 	if( _args.at(0)->null() || _args.at(1)->null() || _args.at(2)->null() ){
 		_result.null(true);
 	}else{
 		size_t x = static_cast<int>(_args.at(0)->r());
 		size_t n = static_cast<int>(_args.at(1)->r());
 		double p = _args.at(2)->r();
-		double q = 1-p;
+		//double q = 1-p;
+		try {
+			boost::math::binomial b(n,p);
+			_result.r(boost::math::cdf(b,x));
+		}catch(...){
+			_result.null(true);
+		}
+
+		//_result.r(0.0);
 		// 試行回数が多い時は正規分布で近似する
+/*
 		if(x > ub_){
 			double xd    = static_cast<double>(x);
 			double mean = static_cast<double>(n)*p;
 			double sd   = sqrt(static_cast<double>(n)*p*q);
-			accum = 1.0 - (1+erf((xd - mean)/(sd * sqrt(2)))) * 0.5;
+			//accum = 1.0 - (1+erf((xd - mean)/(sd * sqrt(2)))) * 0.5;
+			accum = (1+erf((xd - mean)/(sd * sqrt(2)))) * 0.5;
+			//accum = (1+erf((xd - mean + 0.5)/sd;
+			end
 		}else{
-			for(size_t i=x; i<=n; i++){
+			//for(size_t i=x; i<=n; i++){
+			for(size_t i=0; i<=x; i++){
 				accum += pascal_.at(n).at(i) * pow(p,static_cast<double>(i))*pow(q,static_cast<double>(n-i));
 			}
 		}
 		_result.r(accum);
+*/
 	}
 }
 // ============================================================================
@@ -4333,7 +4351,7 @@ kgFuncMap::kgFuncMap(void){
   _func_map["matchas_SS*" ]= lambda::bind(lambda::new_ptr<kgFunction_matchas   >());
   _func_map["hasspace_S"  ]= lambda::bind(lambda::new_ptr<kgFunction_hasspace  >());
   _func_map["hasspacew_S" ]= lambda::bind(lambda::new_ptr<kgFunction_hasspacew >());
-  _func_map["strchr_SS"   ]= lambda::bind(lambda::new_ptr<kgFunction_strchr    >());
+//  _func_map["strchr_SS"   ]= lambda::bind(lambda::new_ptr<kgFunction_strchr    >());
 
 	_func_vecREG.push_back("cat_SS*");
 	_func_vecREG.push_back("match_SS*");

@@ -28,62 +28,13 @@ Join vector elements with corresponding taxonomy elements from reference\n\
 file with the same key. A vector field is shown in Table where the\n\
 column item includes multiple elements separated by a space delimiter.\n\
 \n\
-Table - highlights some examples.\n\
-\n\
-in.csv\n\
-\n\
-   no  items\n\
-\n\
-   1   a b c\n\
-   2   a d\n\
-   3   b f e f\n\
-   4   f c d\n\
-\n\
-  : Reference file\n\
-\n\
-ref.csv\n\
-\n\
-   item   taxo\n\
-\n\
-    a      X\n\
-    b      Y\n\
-    c      Z\n\
-    e      X\n\
-    f      Z\n\
-\n\
-  : Reference file\n\
-\n\
-vf=items m=ref.csv K=item f=taxo\n\
-\n\
-  no   items\n\
-\n\
-  1    a b c X Y Z\n\
-  2    a d X\n\
-  3    b f e f Y Z X Z\n\
-  4    f c d Z Z\n\
-\n\
-  : An example defining unmatched taxonomy elements\n\
-\n\
-vf=items m=ref.csv K=item f=taxo n=* \n\
-\n\
-  no   items\n\
-\n\
-  1    a b c X Y Z\n\
-  2    a d X *\n\
-  3    b f e f Y Z X Z\n\
-  4    f c d Z Z *\n\
-\n\
-  : An example defining unmatched taxonomy elements\n\
-\n\
-Take note that the mvjoin common read the whole reference file at once\n\
-into memory, thus huge reference file may consume massive amounts of\n\
-memory.\n\
-\n\
 Format\n\
 \n\
 mvjoin vf= [-A] K= f= [n=] m=| i= [o=] [delim=] [-assert_diffSize]\n\
 [-assert_nullin] [-assert_nullout] [-nfn] [-nfno] [-x] [-q] [tmpPath=]\n\
 [--help] [--helpl] [--version]\n\
+\n\
+Parameters\n\
 \n\
   vf=   Field name of vector (from i= input file) for joining.\n\
         Multiple fields can be specified. Sorting of the vectors is not required.\n\

@@ -19,7 +19,7 @@ mcross \
 m2cross \
 mcsv2arff \
 mcsv2json \
-mcsv2tex \
+mcsvconv \
 mcut \
 mdata \
 mdelnull \
@@ -144,8 +144,8 @@ mcsv2arff_LDADD = $(top_srcdir)/src/kgmod/libkgmod@CORE_MAJOR_VERSION@.la $(top_
 mcsv2json_SOURCES = mcsv2json.cpp
 mcsv2json_LDADD = $(top_srcdir)/src/kgmod/libkgmod@CORE_MAJOR_VERSION@.la $(top_builddir)/src/mod/libmcmd@MOD_MAJOR_VERSION@.la
 
-mcsv2tex_SOURCES = mcsv2tex.cpp
-mcsv2tex_LDADD = $(top_srcdir)/src/kgmod/libkgmod@CORE_MAJOR_VERSION@.la $(top_builddir)/src/mod/libmcmd@MOD_MAJOR_VERSION@.la
+mcsvconv_SOURCES = mcsvconv.cpp
+mcsvconv_LDADD = $(top_srcdir)/src/kgmod/libkgmod@CORE_MAJOR_VERSION@.la $(top_builddir)/src/mod/libmcmd@MOD_MAJOR_VERSION@.la
 
 
 mcut_SOURCES = mcut.cpp

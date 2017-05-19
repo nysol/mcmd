@@ -31,6 +31,8 @@ MVCOUNT ベクトルサイズの計算\n\
 mvcount vf= [i=] [o=] [delim=] [-assert_diffSize] [-assert_nullin]\n\
 [-nfn] [-nfno] [-x] [-q] [tmpPath=] [--help] [--helpl] [--version]\n\
 \n\
+パラメータ\n\
+\n\
   vf=   要素数をカウントするベクトルの項目名(i=ファイル上)を指定する。\n\
         結果項目を:に続けて複数項目指定可能。\n\
         複数項目指定可能。\n\

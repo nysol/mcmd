@@ -34,6 +34,8 @@ MWINDOW スライド窓の生成\n\
 mwindow wk= t= [k=key] [-r] [-n] [i=] [o=] [-assert_diffSize]\n\
 [-assert_nullkey] [-nfn] [-nfno] [-x] [-q] [tmpPath=] [--help] [--helpl][--version]\n\
 \n\
+パラメータ\n\
+\n\
   wk=    出力データにおいて、窓をユニークに識別する値となる入力データ上の項目を指定する。\n\
          ここで指定した項目で並べ替えられたのちスライド窓を生成していくが、\n\
          降順で並べ替えるときは%r、数値として並べ替えるときは%nと追加する。\n\

@@ -28,62 +28,13 @@ Replace vector data with corresponding taxonomy character in the\n\
 reference file joined by key. Table shows items in a vector with\n\
 sequential elements separated by a space.\n\
 \n\
-The examples are highlighted in Table - .\n\
-\n\
-in.csv\n\
-\n\
-   no  items\n\
-\n\
-   1   a b c\n\
-   2   a d\n\
-   3   b f e f\n\
-   4   f c d\n\
-\n\
-  : Reference file\n\
-\n\
-ref.csv\n\
-\n\
-   item   taxo\n\
-\n\
-    a      X\n\
-    b      Y\n\
-    c      Z\n\
-    e      X\n\
-    f      Z\n\
-\n\
-  : Reference file\n\
-\n\
-vf=items m=ref.csv K=item f=taxo\n\
-\n\
-  no   items\n\
-\n\
-  1    X Y Z\n\
-  2    X d\n\
-  3    Y Z X Z\n\
-  4    Z Z d\n\
-\n\
-  : Define unmatched elements\n\
-\n\
-vf=items m=ref.csv K=item f=taxo n=* \n\
-\n\
-  no   items\n\
-\n\
-  1    X Y Z\n\
-  2    X *\n\
-  3    Y Z X Z\n\
-  4    Z Z *\n\
-\n\
-  : Define unmatched elements\n\
-\n\
-Since the mvreplace command reads the whole reference file at once in\n\
-memory, note that huge reference file may consume massive amount of\n\
-memory, .\n\
-\n\
 Format\n\
 \n\
 mvreplace vf= K= f= [n=] m= [-A]  i= [o=] [delim=] [-assert_diffSize]\n\
 [-assert_nullin] [-assert_nullout] [-nfn] [-nfno] [-x] [-q] [tmpPath=]\n\
 [--help] [--helpl] [--version]\n\
+\n\
+Parameters\n\
 \n\
   vf=   Specify the field name of vector (from input file i=).\n\
         Multiple fields can be specified. Sorting on vectors is not required.\n\

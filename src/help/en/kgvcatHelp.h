@@ -26,45 +26,12 @@ MVCAT - COMBINE VECTORS\n\
 \n\
 Merge multiple vectors into one vector.\n\
 \n\
-Examples are shown in Table , and .\n\
-\n\
-in.csv\n\
-\n\
-   no  items1,items2   \n\
-  ---- --------------- --\n\
-   1   a c,b           \n\
-   2   a d,a e         \n\
-   3   b f,            \n\
-   4   e,e             \n\
-\n\
-  : Basic example\n\
-\n\
-mvcat vf=item1,items2 a=catItems i=in.csv\n\
-\n\
-  no   catItems   \n\
-  ---- ---------- --\n\
-  1    a c b      \n\
-  2    a d a e    \n\
-  3    b f        \n\
-  4    e e        \n\
-\n\
-  : Basic example\n\
-\n\
-mvcat vf=item1,items2 -A i=in.csv\n\
-\n\
-  no   items1,items2,new   \n\
-  ---- ------------------- --\n\
-  1    a c,b,a c b         \n\
-  2    a d,a e,a d a e     \n\
-  3    b f,,b f            \n\
-  4    e,e,e e             \n\
-\n\
-  : Retain original vectors before merging\n\
-\n\
 Format\n\
 \n\
 mvcat vf= a= [-A] [i=] [o=] [delim=] [-assert_diffSize] [-assert_nullin]\n\
 [-assert_nullout] [-nfn] [-nfno] [-x] [-q] [tmpPath=] [--help] [--helpl][--version]\n\
+\n\
+Parameters\n\
 \n\
   vf=   Merge specified field names of vectors (from the input file i=).\n\
         Wildcard can be substituted for a character within the field name.\n\

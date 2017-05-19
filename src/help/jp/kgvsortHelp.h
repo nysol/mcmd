@@ -33,6 +33,8 @@ MVSORT ベクトル要素のソート\n\
 mvsort vf= [-A] [i=] [o=] [delim=] [-assert_diffSize] [-assert_nullin]\n\
 [-assert_nullout] [-nfn] [-nfno] [-x] [-q] [tmpPath=] [--help] [--helpl][--version]\n\
 \n\
+パラメータ\n\
+\n\
   vf=   ソーティングするベクトル項目名を指定する。複数項目指定可能。\n\
         %に続けてnを指定すれば数値ソートに、\n\
         %に続けてrを指定すれば逆順ソートに、\n\

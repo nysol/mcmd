@@ -33,6 +33,8 @@ mvdelim vf= v= [-A]  [i=] [o=] [delim=] [-assert_diffSize]\n\
 [-assert_nullin] [-assert_nullout] [-nfn] [-nfno] [-x] [-q] [tmpPath=]\n\
 [--help] [--helpl] [--version]\n\
 \n\
+パラメータ\n\
+\n\
   vf=   区切り文字を変更するベクトル項目名を指定する。複数項目指定可能。\n\
         結果の項目名を変更したいときは、:(コロン)に続けて新項目名を指定する。\n\
   v=    新しい区切り文字を指定する。何も指定しなければ空文字として扱われる。\n\

@@ -37,6 +37,8 @@ Format\n\
 mwindow wk= t= [k=key] [-r] [-n] [i=] [o=] [-assert_diffSize]\n\
 [-assert_nullkey] [-nfn] [-nfno] [-x] [-q] [tmpPath=] [--help] [--helpl][--version]\n\
 \n\
+Parameters\n\
+\n\
   wk=    Specify an unique value from the field name in the input data that identifies the window.\n\
          After the specified field is sorted, the sliding window is created,\n\
          %r is added for descending sort order, %n is added for numeric sorting.\n\

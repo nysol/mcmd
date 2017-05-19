@@ -17,7 +17,7 @@
 
  ////////// LICENSE INFO ////////////////////*/
 // =============================================================================
-// kgcsv2tex.h tex変換
+// kgCsvconv.h tex変換
 // =============================================================================
 #pragma once
 #include <sys/stat.h>
@@ -200,7 +200,7 @@ char const *kgtexFormatInfoTTL::_tag[] = {"KEYHEAD","KEYLINEDATA","LINEDATA","KE
 //END
 
 
-class kgCsv2tex : public kgModIncludeSort 
+class kgCsvconv : public kgModIncludeSort 
 {
 	// 引数
 	kgArgFld _kField; // k=
@@ -218,8 +218,8 @@ class kgCsv2tex : public kgModIncludeSort
 
 public:
   // コンストラクタ
-	kgCsv2tex(void);
-	~kgCsv2tex(void){}
+	kgCsvconv(void);
+	~kgCsvconv(void){}
 
 	// 処理行数取得メソッド
 	size_t iRecNo(void) const { return _iFile.recNo(); }
