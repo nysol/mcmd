@@ -41,6 +41,11 @@ kgstr_t kgTimeparser::extraction(char * cstr , bool err )
 		int l =  length[i];
 		char* bpos=_buf+start[i];
 		if(l!=0 && strncmp(bpos,cpos,l)){
+			if(*bpos==' ' && ( (cpos!=cstr) && *(cpos-1)==' ') ){ //先頭がspaceの場合は特殊処理
+				cpos--;
+				i--;
+				continue;
+			}
 			return "";	
 		}
 		cpos+=l;
