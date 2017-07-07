@@ -6,7 +6,7 @@
 #  or
 #  autoreconf -i ; automake --add-missing
 
-AC_PREREQ([2.69])
+#AC_PREREQ([2.69])
 AC_INIT(nysol_mcmd, 3.0, info@nysol.jp)
 AM_INIT_AUTOMAKE
 AC_CONFIG_SRCDIR([src/cmd/m2cross.cpp])
@@ -45,6 +45,17 @@ XML2HEAD=`xml2-config --cflags`
 XML2LIB=`xml2-config --libs`
 AC_SUBST(XML2HEAD)
 AC_SUBST(XML2LIB)
+
+# BOOST PATH　指定
+AC_ARG_WITH([boost],
+  AC_HELP_STRING(
+    [--with-boost=PATH],[PATH is path to boost library]),
+  [BOOSTPATH=$with_boost],[BOOSTPATH=/usr/local])
+
+CXXFLAGS="-I $BOOSTPATH/include $CXXFLAGS"
+
+AC_SUBST([BOOSTPATH], [$BOOSTPATH])
+
 
 AC_CHECK_LIB(pthread, pthread_create)
 AC_CHECK_LIB([boost_regex], [main], [], [echo "Error. You need to have libboost";exit -1])
