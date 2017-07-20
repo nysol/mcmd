@@ -4,7 +4,7 @@
 * [Installation](#Installation)
 * [Tutorial](#Tutorial)
 * [Reference](#Reference)
-* [Reference manual](https://docs.google.com/viewer?a=v&pid=sites&srcid=bnlzb2wuanB8cHViMnxneDo3NjIyODMzMDI2NDk3YjM3)
+* [Reference manual(under construction:previous version is abalable at](http://www.nysol.sakura.ne.jp/mcmd2/en/index.html)
 * [Acknowledgement](#Acknowledgement)
 
 # News
@@ -122,7 +122,7 @@ Let’s start with a simple example.
  confirm the following example by typing the same
  at the command line.
  Sample data is required in order to proceed with the tutorial.
- For MCMD, mdata command can be used to create different kinds
+ For MCMD, **mdata** command can be used to create different kinds
  of data set.
  In the following example, the data is saved to the file
  **man0.csv** by redirection.
@@ -144,12 +144,12 @@ After MCMD command is executed successfully,
  at a time which allows forward navigation of the file.
 
 Input data is a CSV text file consisting of five records,
- and each record consist of two fields namely "customer" and "amount". 
+ and each record consist of two fields namely **customer** and **amount**. 
 The next example below shows summarization of **amount** field
- by a key field **customer**. The **customer** fields has a suffix
- of "%0", which means the output data is sorted by this field
- (the number followed by % represents priority of sorting
- for multi-fields sort.
+ by a key field **customer**. The **customer** field has a suffix
+ of "%0", which means that the output data is sorted by this field
+ (the number followed by **%** represents priority
+ in multi-fields sorting.
 
     $ msum k=customer f=amount i=man0.csv o=output.csv
     #END# kgsum f=amount k=customer o=output.csv
@@ -164,7 +164,7 @@ Let’s explore a more complex example below.
  Line comments begin with “#”.
  The function of **mcut** command only extract the specified field,
  the **mcount** command counts the number of rows,
- and mcross command performs cross tabulation on the data.
+ and **mcross** command performs cross tabulation on the data.
  Rather than dictating detailed processes of each command,
  the following example shows how the input data is processed
  in each command.
@@ -244,7 +244,7 @@ The above example, each command outputs the result to the workfiles
 
 
 # References
-## paper
+## papers
 * [T. Nakahara,M. Nakamoto,Y.Hamuro, NYSOL: Data Analysis Tool for Big Data - performance evaluation, parallel processing and business applications, Operations Research, vol.61, No1, pp.11-18 (in Japanese).](http://www.orsj.or.jp/archive2/or61-1/or61_1_11.pdf)
 * [Stephane Cheung, Masakazu Nakamoto, and Yukinobu Hamuro, "NYSOL: A User-Centric Framework for Knowledge Discovery in Big Data," International Journal of Knowledge Engineering vol. 1, no. 3, pp. 214-218, 2015.](http://www.ijke.org/show-39-75-1.html)
 
