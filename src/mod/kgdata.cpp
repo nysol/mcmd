@@ -135,7 +135,7 @@ void kgData::output_file(void){
 void kgData::setArgs(void)
 {
 	// パラメータチェック
-	_args.paramcheck("O=,-man0,-man1,-iris,-yakiniku_jp,-yakiniku_en,-tutorial_jp,-tutorial_en",kgArgs::NOADD);
+	_args.paramcheck("O=,-man0,-man1,-man0_en,-man1_en,-iris,-yakiniku_jp,-yakiniku_en,-tutorial_jp,-tutorial_en",kgArgs::NOADD);
 	
 	// 出力ファイルオープン
 	_outinfo = _args.toString("O=",false);
