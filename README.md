@@ -1,29 +1,29 @@
 # MCMD (M-Command): a set of commands for handling large scale CSV data
-* [news](#news)
-* [abstract](#abstract)
-* [install](#install)
-* [tutorial](#tutorial)
-* [reference](#reference)
-* [reference manual](https://docs.google.com/viewer?a=v&pid=sites&srcid=bnlzb2wuanB8cHViMnxneDo3NjIyODMzMDI2NDk3YjM3)
-* [acknowledgement](#acknowledgement)
+* [News](#News)
+* [Abstract](#Abstract)
+* [Installation](#Installation)
+* [Tutorial](#Tutorial)
+* [Reference](#Reference)
+* [Reference manual](https://docs.google.com/viewer?a=v&pid=sites&srcid=bnlzb2wuanB8cHViMnxneDo3NjIyODMzMDI2NDk3YjM3)
+* [Acknowledgement](#Acknowledgement)
 
-# news
+# News
 * Apr. 2017: release version 3.0
 
-# abstract
-MCMD (called as M-Command) is a set of commands that are developed
- for the purpose of high-speed processing (CSV) of
- large-scale structured data tables.
+# Abstract
+**MCMD** (called as M-Command) is a set of commands that are developed
+ for the purpose of high-speed processing of
+ large-scale structured tabular data in CSV format.
 It is possible to efficiently process large scale data
  with hundred millions row of records on a standard PC
- with M-Command using a standard PC.
+ with MCMD using a standard PC.
  Its origin can be traced back to the early 1990s.
  Y. Matsuda developed this data processing methodology
  and commands for large-scale system development projects
  which was implemented in big companies.
  The “M” in M-Command stands for his initial.
 
-M-Command provides about 70 different commands
+MCMD provides about 70 different commands
  where each command is specific to a single function
  (For example, sort or join tables).
  The basic tenets of what all commands have in common
@@ -35,10 +35,10 @@ M-Command provides about 70 different commands
  called "pipe", thus the output of each process feeds directly
  as input to the next one.
  These features are the same as the UNIX philosophy.
- With M-Command, an information system can be created
- based solely using M-Command and UNIX utilities on a UNIX platform.
+ With MCMD, an information system can be created
+ based solely using MCMD and UNIX utilities on a UNIX platform.
 
-# install
+# Installation
 
 ## requirements
 ### target OS
@@ -168,7 +168,7 @@ Let’s explore a more complex example below.
  Rather than dictating detailed processes of each command,
  the following example shows how the input data is processed
  in each command.
- M-Command consist of over 70 commands,
+ MCMD consist of over 70 commands,
  a variety of data processing can be carried out flexibly
  by combining multiple commands.
 
@@ -243,7 +243,7 @@ The above example, each command outputs the result to the workfiles
     B,1,0,2,0,1
 
 
-# references
+# References
 ## paper
 * [T. Nakahara,M. Nakamoto,Y.Hamuro, NYSOL: Data Analysis Tool for Big Data - performance evaluation, parallel processing and business applications, Operations Research, vol.61, No1, pp.11-18 (in Japanese).](http://www.orsj.or.jp/archive2/or61-1/or61_1_11.pdf)
 * [Stephane Cheung, Masakazu Nakamoto, and Yukinobu Hamuro, "NYSOL: A User-Centric Framework for Knowledge Discovery in Big Data," International Journal of Knowledge Engineering vol. 1, no. 3, pp. 214-218, 2015.](http://www.ijke.org/show-39-75-1.html)
@@ -252,7 +252,7 @@ The above example, each command outputs the result to the workfiles
 * <a href="http://www.nysol.jp" target="_blank">NYSOL web page(nysol.jp)</a>
 * <a href="http://www.nysol.biz/" target="_blank">NYSOL for business</a>
 
-## Acknowledgements
+# Acknowledgements
 The project was partially carried out under the following research fund.
 * JST CREST Grant Number JPMJCR1401, Japan
 * JST ERATO Minato Discrete Structure Manipulation System Project, Japan
