@@ -1,12 +1,12 @@
 # MCMD (M-Command): a set of commands for handling large scale CSV data
-<div style="text-align: right"> <a/ url="https://github.com/nysol/mcmd/wiki"> [in japanese]</div>
+<div style="text-align: right"> <a/ url="https://github.com/nysol/mcmd/wiki"> [in japanese]</a></div>
 
 * [News](#News)
 * [Abstract](#Abstract)
 * [Installation](#Installation)
 * [Tutorial](#Tutorial)
 * [Reference](#Reference)
-* [Reference manual(under construction:previous version is abalable at](http://www.nysol.sakura.ne.jp/mcmd2/en/index.html)
+* [Reference manual(under construction:previous version is available](http://www.nysol.sakura.ne.jp/mcmd2/en/index.html)
 * [Acknowledgement](#Acknowledgement)
 
 # News
