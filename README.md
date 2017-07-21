@@ -1,4 +1,6 @@
 # MCMD (M-Command): a set of commands for handling large scale CSV data
+<div style="text-align: right"> [in Japanese](https://github.com/nysol/mcmd/wiki) </div>
+
 * [News](#News)
 * [Abstract](#Abstract)
 * [Installation](#Installation)
@@ -56,65 +58,71 @@ We confirmed that MCMD run on the following operating systems.
 
 ## compile and install
 ### MacOS X
-    ## install autotools and boost if not installed
-    $ brew install autoconf
-    $ brew install automake
-    $ brew install libtool
-    $ brew install boost
+```sh
+## install autotools and boost if not installed
+$ brew install autoconf
+$ brew install automake
+$ brew install libtool
+$ brew install boost
 
-    ## download the sources
-    $ git clone https://github.com/nysol/mcmd.git
-    $ cd mcmd
+## download the sources
+$ git clone https://github.com/nysol/mcmd.git
+$ cd mcmd
 
-    ## compile and install
-    $ aclocal
-    $ autoreconf -i
-    $ automake --add-mising
-    $ ./configure
-    $ make
-    $ sudo make install
+## compile and install
+$ aclocal
+$ autoreconf -i
+$ automake --add-mising
+$ ./configure
+$ make
+$ sudo make install
+```
 
 ### CentOS
-    ## install autotools,boost,libxml2 if not installed
-    $ sudo yum update
-    $ sudo yum groupinstall "Development Tools"
-    $ sudo yum install boost-devel
-    $ sudo yum install libxml2-devel
+```sh
+## install autotools,boost,libxml2 if not installed
+$ sudo yum update
+$ sudo yum groupinstall "Development Tools"
+$ sudo yum install boost-devel
+$ sudo yum install libxml2-devel
 
-    ## compile and install
-    $ git clone https://github.com/nysol/mcmd.git
-    $ cd mcmd
+## compile and install
+$ git clone https://github.com/nysol/mcmd.git
+$ cd mcmd
 
-    ## compile and install
-    $ aclocal
-    $ autoreconf -i
-    $ ./configure
-    $ make
-    $ sudo make install
+## compile and install
+$ aclocal
+$ autoreconf -i
+$ ./configure
+$ make
+$ sudo make install
+```
 
 ### Ubuntu,Bash on Windows
-    ## install autotools,boost,libxml2 if not installed
-    $ sudo apt-get update
-    $ sudo apt-get upgrade
-    $ sudo apt-get install build-essential
-    $ sudo apt-get install git
-    $ sudo apt-get install libboost-all-dev
-    $ sudo apt-get install libxml2-dev
+```sh
+## install autotools,boost,libxml2 if not installed
+$ sudo apt-get update
+$ sudo apt-get upgrade
+$ sudo apt-get install build-essential
+$ sudo apt-get install git
+$ sudo apt-get install libboost-all-dev
+$ sudo apt-get install libxml2-dev
 
-    ## download the sources
-    $ git clone https://github.com/nysol/mcmd.git
-    $ cd mcmd/
+## download the sources
+$ git clone https://github.com/nysol/mcmd.git
+$ cd mcmd/
 
-    ## compile and install
-    $ aclocal
-    $ autoreconf -i
-    $ ./configure
-    $ make
-    $ sudo make install
+## compile and install
+$ aclocal
+$ autoreconf -i
+$ ./configure
+$ make
+$ sudo make install
 
-    # setting a shared library path
-    # write it in .bash_profile if you like to activated it automatically.
-    $ export LD_LIBRARY_PATH=/usr/local/lib
+# setting a shared library path
+# write it in .bash_profile if you like to activated it automatically.
+$ export LD_LIBRARY_PATH=/usr/local/lib
+```
 
 # Tutorial
 Let’s start with a simple example.
@@ -127,15 +135,17 @@ Let’s start with a simple example.
  In the following example, the data is saved to the file
  **man0.csv** by redirection.
 
-    $ mdata -man0_en >man0.csv
-    #END# kgData -man0_en; ; 2017/07/20 14:57:15
-    $ more man0.csv
-    customer,amount
-    A,5200
-    B,4000
-    B,3500
-    A,2000
-    B,800
+```sh
+$ mdata -man0_en >man0.csv
+#END# kgData -man0_en; ; 2017/07/20 14:57:15
+$ more man0.csv
+customer,amount
+A,5200
+B,4000
+B,3500
+A,2000
+B,800
+```
 
 After MCMD command is executed successfully,
  it returns a status message starting with #END#.
@@ -151,12 +161,14 @@ The next example below shows summarization of **amount** field
  (the number followed by **%** represents priority
  in multi-fields sorting.
 
-    $ msum k=customer f=amount i=man0.csv o=output.csv
-    #END# kgsum f=amount k=customer o=output.csv
-    $ more output.csv
-    customer%0,amount
-    A,7200
-    B,8300
+```sh
+$ msum k=customer f=amount i=man0.csv o=output.csv
+#END# kgsum f=amount k=customer o=output.csv
+$ more output.csv
+customer%0,amount
+A,7200
+B,8300
+```
 
 Let’s explore a more complex example below.
  It displays the product and corresponding quantity
@@ -172,58 +184,57 @@ Let’s explore a more complex example below.
  a variety of data processing can be carried out flexibly
  by combining multiple commands.
 
-    $ mdata -man1_en >man1.csv
-    #END# mdata man1
-    $ more man1.csv
-    customer,date,item
-    A,20130916,a
-    A,20130916,c
-    A,20130917,a
-    A,20130917,e
-    B,20130916,d
-    B,20130917,a
-    B,20130917,d
-    B,20130917,f
-    
-	$ mcut f=customer,item i=man1.csv o=xxa
-    #END# kgcut f=customer,item i=man1.csv o=xxa; IN=8 OUT=8
-    $ more xxa
-    customer,item
-    A,a
-    A,c
-    A,a
-    A,e
-    B,d
-    B,a
-    B,d
-    B,f
-
-    # Count the number of rows by customer and product.
-    $ mcount k=customer,item a=freq i=xxa o=xxb
-    #END# kgcount a=freq i=xxa k=customer,item o=xxb; IN=8 OUT=6
-    $ more xxb
-    customer%0,item%1,freq
-    A,a,2
-    A,c,1
-    A,e,1
-    B,a,1
-    B,d,2
-    B,f,1
-
-    # Perform a cross tabulation by the item of product. The number of the item that is not purchased gives 0.
-    $ mcross k=customer s=item f=freq v=0 i=xxb o=xxc
-    #END# kgcross f=freq i=xxb k=customer o=xxc s=item v=0; IN=6 OUT=2
-    $ more xxc
-    customer%0,fld,a,c,d,e,f
-    A,freq,2,1,0,1,0
-    B,freq,1,0,2,0,1
-    # remove extra field "fld".
-    $ mcut f=fld -r i=xxc o=output.csv
-    #END# kgcut -r f=fld i=xxc o=output.csv; IN=2 OUT=2
-    $ more output.csv 
-    customer%0,a,c,d,e,f
-    A,2,1,0,1,0
-    B,1,0,2,0,1
+```sh
+$ mdata -man1_en >man1.csv
+#END# mdata man1
+$ more man1.csv
+customer,date,item
+A,20130916,a
+A,20130916,c
+A,20130917,a
+A,20130917,e
+B,20130916,d
+B,20130917,a
+B,20130917,d
+B,20130917,f
+$ mcut f=customer,item i=man1.csv o=xxa
+#END# kgcut f=customer,item i=man1.csv o=xxa; IN=8 OUT=8
+$ more xxa
+customer,item
+A,a
+A,c
+A,a
+A,e
+B,d
+B,a
+B,d
+B,f
+# Count the number of rows by customer and product.
+$ mcount k=customer,item a=freq i=xxa o=xxb
+#END# kgcount a=freq i=xxa k=customer,item o=xxb; IN=8 OUT=6
+$ more xxb
+customer%0,item%1,freq
+A,a,2
+A,c,1
+A,e,1
+B,a,1
+B,d,2
+B,f,1
+# Perform a cross tabulation by the item of product. The number of the item that is not purchased gives 0.
+$ mcross k=customer s=item f=freq v=0 i=xxb o=xxc
+#END# kgcross f=freq i=xxb k=customer o=xxc s=item v=0; IN=6 OUT=2
+$ more xxc
+customer%0,fld,a,c,d,e,f
+A,freq,2,1,0,1,0
+B,freq,1,0,2,0,1
+# remove extra field "fld".
+$ mcut f=fld -r i=xxc o=output.csv
+#END# kgcut -r f=fld i=xxc o=output.csv; IN=2 OUT=2
+$ more output.csv 
+customer%0,a,c,d,e,f
+A,2,1,0,1,0
+B,1,0,2,0,1
+```
 
 The above example, each command outputs the result to the workfiles
  (xxa,xxb,xxc), but it can be run it without them
@@ -231,17 +242,18 @@ The above example, each command outputs the result to the workfiles
  with "|" in that order).
  Using pipe, the output of one command become the input for the next command.
 
-    $ mdata man1_en | mcut f=customer,item | mcount k=customer,item a=freq | mcross k=customer s=item f=freq v=0 | mcut f=fld -r o=output.csv
-    #END# kgData -man1_en; ; 2017/07/20 15:20:30
-    #END# kgcut f=customer,item; IN=8 OUT=8; 2017/07/20 15:20:30
-    #END# kgcount a=freq k=customer,item; IN=8 OUT=6; 2017/07/20 15:20:30
-    #END# kgcross f=freq k=customer s=item v=0; IN=6 OUT=2; 2017/07/20 15:20:30
-    #END# kgcut -r f=fld o=output.csv; IN=2 OUT=2; 2017/07/20 15:20:30
-    $ more output.csv
-    顧客%0,a,c,d,e,f
-    A,2,1,0,1,0
-    B,1,0,2,0,1
-
+```sh
+$ mdata man1_en | mcut f=customer,item | mcount k=customer,item a=freq | mcross k=customer s=item f=freq v=0 | mcut f=fld -r o=output.csv
+#END# kgData -man1_en; ; 2017/07/20 15:20:30
+#END# kgcut f=customer,item; IN=8 OUT=8; 2017/07/20 15:20:30
+#END# kgcount a=freq k=customer,item; IN=8 OUT=6; 2017/07/20 15:20:30
+#END# kgcross f=freq k=customer s=item v=0; IN=6 OUT=2; 2017/07/20 15:20:30
+#END# kgcut -r f=fld o=output.csv; IN=2 OUT=2; 2017/07/20 15:20:30
+$ more output.csv
+顧客%0,a,c,d,e,f
+A,2,1,0,1,0
+B,1,0,2,0,1
+```
 
 # References
 ## papers
