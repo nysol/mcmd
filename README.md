@@ -17,12 +17,11 @@
  for the purpose of high-speed processing of
  large-scale structured tabular data in CSV format.
 It is possible to efficiently process large scale data
- with hundred millions row of records on a standard PC
- with MCMD using a standard PC.
+ with hundred millions row of records on a standard PC.
  Its origin can be traced back to the early 1990s.
  Y. Matsuda developed this data processing methodology
  and commands for large-scale system development projects
- which was implemented in big companies.
+ which was implemented in some companies.
  The “M” in M-Command stands for his initial.
 
 MCMD provides about 70 different commands
@@ -36,9 +35,9 @@ MCMD provides about 70 different commands
  by connecting individual commands with an inter-process stream
  called "pipe", thus the output of each process feeds directly
  as input to the next one.
- These features are the same as the UNIX philosophy.
- With MCMD, an information system can be created
- based solely using MCMD and UNIX utilities on a UNIX platform.
+ These features are the same as the UNIX philosophy,
+ and an information system can be created
+ solely using commands on a UNIX platform.
 
 # Installation
 
