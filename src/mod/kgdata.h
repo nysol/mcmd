@@ -28,6 +28,8 @@
 
 #include "dat/man0.h"
 #include "dat/man1.h"
+#include "dat/man0_en.h"
+#include "dat/man1_en.h"
 
 #include "dat/yakiniku_en.h"
 #include "dat/yakiniku_jp.h"
@@ -49,11 +51,13 @@
 #include "dat/tutorial_en_jicfs6.h"
 
 const char * helpMsg_ =
-"1) mdata iris : output iris dataset to STDOUT\n\
-2) mdata tutorial_jp : output all files used in Japanese tutorial\n\
-2.1) mdata tutorial_jp/dat|cust|syo|jicfs1|jicfs2|jicfs4|jicfs6 : output each data used in Japanese tutorial to STDOUT\n\
-3) mdata tutorial_en : output all files used in English tutorial\n\
-3.1) mdata tutorial_en/dat|cust|syo|jicfs1|jicfs2|jicfs4|jicfs6 : output each data used in English tutorial to STDOUT\n\
+"1) mdata iris : output the iris dataset\n\
+2) mdata man0|man1 : output a small dataset in Japanese\n\
+3) mdata man0_en|man1_en : output a small dataset in English\n\
+4) mdata tutorial_jp : output all files used in Japanese tutorial\n\
+   mdata tutorial_jp/dat|cust|syo|jicfs1|jicfs2|jicfs4|jicfs6 : output each data used in Japanese tutorial to STDOUT\n\
+5) mdata tutorial_en : output all files used in English tutorial\n\
+   mdata tutorial_en/dat|cust|syo|jicfs1|jicfs2|jicfs4|jicfs6 : output each data used in English tutorial to STDOUT\n\
 ";
 
 // sampleデータ
@@ -65,6 +69,8 @@ const char* dsample_[][3]={
 
 {"man0","",man0},
 {"man1","",man1},
+{"man0_en","",man0_en},
+{"man1_en","",man1_en},
 
 {"yakiniku_jp","",yakiniku_jp},
 {"yakiniku_en","",yakiniku_en},
