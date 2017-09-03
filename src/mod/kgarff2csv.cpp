@@ -111,9 +111,12 @@ int kgArff2csv::run(void) try
 	bool dataflg=false;
 	int fldcnt=0;
 	char** sepstr=0;
+	kgAutoPtr2<char> buf_ap;
 	kgAutoPtr2<char*> ap;
 	vector<kgstr_t> outfld;
-	char strtmp[KG_MaxRecLen];
+	buf_ap.set( new char[KG_MaxRecLen] );
+	char *strtmp = buf_ap.get();
+	char *recstr;
 
 	// arff -> csv変換処理
 	while( EOF != _iFile.read() ){
