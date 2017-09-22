@@ -170,7 +170,10 @@ void kgMod::init(void) try
 	// -------------------------------------
 	// 一時ファイル出力先
 	kgstr_t k = _args.toString("tmpPath=",false);
-	if(! k.empty() ) _tmpPath=k;
+	if(! k.empty() ) {
+		_tmpPath=k;
+		_env->setTmpPath(_tmpPath);
+	}
 
 	// エンコーディング
 	string s = _args.toString("encoding=",false);

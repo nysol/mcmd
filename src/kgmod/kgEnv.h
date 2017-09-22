@@ -76,6 +76,7 @@ public:
 	// シグナル状況登録
 	void sigact(bool b=true){sigact_=b;}
 	void verblvl(int veb){ verboseLevel=veb; }
+	void setTmpPath(kgstr_t tp){ tmpPath=tp; }
 	
 	// 乱数文字作成
 	string  randStr(size_t size);

@@ -120,6 +120,8 @@ int kgFldBuffer::getFld(char ** pnt, int fldcnt)
 {
 	// データ読み込み
 	char * page;
+	//cerr << "pas info " << w_page_ << " " << r_page_ << " "	<< r_pos_ << " " << end_pos_[r_page_]<< endl;
+
 	if(r_page_==w_page_+flist_.size()){ return EOF;}
 	if(end_pos_[r_page_]==r_pos_){
 		r_pos_=0;
@@ -132,7 +134,16 @@ int kgFldBuffer::getFld(char ** pnt, int fldcnt)
 	int fldno=0;
 	size_t bgn = r_pos_;
 	while(1){
-		while(*(page+r_pos_)){ r_pos_++;}
+		while(*(page+r_pos_)){ 
+			r_pos_++;
+			if(end_pos_[r_page_]==r_pos_){
+				r_pos_=0;
+				r_page_++;
+				bgn = r_pos_;
+				page = pageSet();	
+				if (page ==NULL) { return EOF;}	
+			}
+		}
 		pnt[fldno++] = page+bgn;
 		r_pos_++;
 		if(fldno==fldcnt){ break;}
