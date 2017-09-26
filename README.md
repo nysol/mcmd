@@ -5,8 +5,8 @@
 * [Abstract](#Abstract)
 * [Installation](#Installation)
 * [Tutorial](#Tutorial)
-* [Japanese Reference Manual (Supported version NYSOL:Ver. 3.0)](https://github.com/nysol/mcmd/files/1332817/mcmd.pdf)
-* [English Reference Manual (Supported version NYSOL:Ver. 3.0)](https://github.com/nysol/mcmd/files/1332834/mcmd2.pdf)
+* [Japanese Reference Manual (NYSOL Package Current Release: Ver. 3.0)](https://github.com/nysol/mcmd/files/1332817/mcmd.pdf)
+* [English Reference Manual (NYSOL Package Current Release: Ver. 3.0)](https://github.com/nysol/mcmd/files/1332834/mcmd2.pdf)
 * [Acknowledgement](#Acknowledgement)
 
 # News
