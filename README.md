@@ -5,8 +5,8 @@
 * [Abstract](#Abstract)
 * [Installation](#Installation)
 * [Tutorial](#Tutorial)
-* [Reference](#Reference)
-* [Reference manual(under construction:previous version is available](http://www.nysol.sakura.ne.jp/mcmd2/en/index.html)
+* [Japanese Reference Manual (Supported version NYSOL:Ver. 3.0)](https://github.com/nysol/mcmd/files/1332817/mcmd.pdf)
+* [English Reference Manual (Supported version NYSOL:Ver. 3.0)](https://github.com/nysol/mcmd/files/1332834/mcmd2.pdf)
 * [Acknowledgement](#Acknowledgement)
 
 # News
