@@ -75,7 +75,7 @@ $ cd mcmd
 ## compile and install
 $ aclocal
 $ autoreconf -i
-$ automake --add-mising
+$ automake --add-missing
 $ ./configure
 $ make
 $ sudo make install
