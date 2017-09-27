@@ -4,9 +4,8 @@
 * [News](#News)
 * [Abstract](#Abstract)
 * [Installation](#Installation)
+* [Reference Manual](#Reference Manual)
 * [Tutorial](#Tutorial)
-* [Japanese Reference Manual (NYSOL Package Current Release: Ver. 3.0)](https://github.com/nysol/mcmd/files/1332817/mcmd.pdf)
-* [English Reference Manual (NYSOL Package Current Release: Ver. 3.0)](https://github.com/nysol/mcmd/files/1332834/mcmd2.pdf)
 * [Acknowledgement](#Acknowledgement)
 
 # News
@@ -38,6 +37,10 @@ MCMD provides about 70 different commands
  These features are the same as the UNIX philosophy,
  and an information system can be created
  solely using commands on a UNIX platform.
+
+# Reference Manual
+* [Japanese Reference Manual (NYSOL Package Current Release: Ver. 3.0)](https://github.com/nysol/mcmd/files/1332817/mcmd.pdf)
+* [English Reference Manual (NYSOL Package Current Release: Ver. 3.0)](https://github.com/nysol/mcmd/files/1332834/mcmd2.pdf)
 
 # Installation
 
