@@ -140,7 +140,7 @@ Let’s start with a simple example.
 
 ```sh
 $ mdata -man0_en >man0.csv
-#END# kgData -man0_en; ; 2017/07/20 14:57:15
+#END# kgData -man0_en; ;
 $ more man0.csv
 customer,amount
 A,5200
@@ -189,7 +189,7 @@ Let’s explore a more complex example below.
 
 ```sh
 $ mdata -man1_en >man1.csv
-#END# mdata man1
+#END# kgData -man1_en; ;
 $ more man1.csv
 customer,date,item
 A,20130916,a
@@ -247,13 +247,13 @@ The above example, each command outputs the result to the workfiles
 
 ```sh
 $ mdata man1_en | mcut f=customer,item | mcount k=customer,item a=freq | mcross k=customer s=item f=freq v=0 | mcut f=fld -r o=output.csv
-#END# kgData -man1_en; ; 2017/07/20 15:20:30
-#END# kgcut f=customer,item; IN=8 OUT=8; 2017/07/20 15:20:30
-#END# kgcount a=freq k=customer,item; IN=8 OUT=6; 2017/07/20 15:20:30
-#END# kgcross f=freq k=customer s=item v=0; IN=6 OUT=2; 2017/07/20 15:20:30
-#END# kgcut -r f=fld o=output.csv; IN=2 OUT=2; 2017/07/20 15:20:30
+#END# kgData -man1_en; ;
+#END# kgcut f=customer,item; IN=8 OUT=8;
+#END# kgcount a=freq k=customer,item; IN=8 OUT=6;
+#END# kgcross f=freq k=customer s=item v=0; IN=6 OUT=2;
+#END# kgcut -r f=fld o=output.csv; IN=2 OUT=2;
 $ more output.csv
-顧客%0,a,c,d,e,f
+customer%0,a,c,d,e,f
 A,2,1,0,1,0
 B,1,0,2,0,1
 ```
