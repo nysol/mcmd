@@ -4,7 +4,7 @@
 * [News](#News)
 * [Abstract](#Abstract)
 * [Installation](#Installation)
-* [Reference Manual](#Reference Manual)
+* [Reference Manual](#ReferenceManual)
 * [Tutorial](#Tutorial)
 * [Acknowledgement](#Acknowledgement)
 
