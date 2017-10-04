@@ -589,8 +589,26 @@ ${pfxc}mcal      c='diffday(s2t($s{date1}+$s{time1}),s2t($s{date2}+$s{time2}))' 
 ${pfxc}mcal      c='diffhour(s2t($s{date1}+$s{time1}),s2t($s{date2}+$s{time2}))' a=x i=./indat/dat_cal.csv    o=./outdat/out335.csv
 ${pfxc}mcal      c='diffminute(s2t($s{date1}+$s{time1}),s2t($s{date2}+$s{time2}))' a=x i=./indat/dat_cal.csv    o=./outdat/out336.csv
 ${pfxc}mcal      c='diffsecond(s2t($s{date1}+$s{time1}),s2t($s{date2}+$s{time2}))' a=x i=./indat/dat_cal.csv    o=./outdat/out337.csv
-
 ${pfxc}mcal      c='tseconds($t{time1})' a=x i=./indat/dat_cal.csv    o=./outdat/out338.csv
+
+
+${pfxc}mcal      c='diffyear(s2t($s{date1}+$s{time1}),s2t($s{date2}+$s{time2}))' a=x i=./indat/dat_calx.csv    o=./outdat/out500.csv
+${pfxc}mcal      c='diffmonth(s2t($s{date1}+$s{time1}),s2t($s{date2}+$s{time2}))' a=x i=./indat/dat_calx.csv    o=./outdat/out501.csv
+${pfxc}mcal      c='diffday(s2t($s{date1}+$s{time1}),s2t($s{date2}+$s{time2}))' a=x i=./indat/dat_calx.csv    o=./outdat/out502.csv
+${pfxc}mcal      c='diffhour(s2t($s{date1}+$s{time1}),s2t($s{date2}+$s{time2}))' a=x i=./indat/dat_calx.csv    o=./outdat/out503.csv
+${pfxc}mcal      c='diffminute(s2t($s{date1}+$s{time1}),s2t($s{date2}+$s{time2}))' a=x i=./indat/dat_calx.csv    o=./outdat/out504.csv
+${pfxc}mcal      c='diffsecond(s2t($s{date1}+$s{time1}),s2t($s{date2}+$s{time2}))' a=x i=./indat/dat_calx.csv    o=./outdat/out505.csv
+${pfxc}mcal      c='tseconds($t{time1})' a=x i=./indat/dat_calx.csv    o=./outdat/out506.csv
+
+
+${pfxc}mcal      c='diffusecond(s2t($s{date1}+$s{time1}),s2t($s{date2}+$s{time2}))' a=x i=./indat/dat_calx.csv    o=./outdat/out507.csv
+${pfxc}mcal      c='tuseconds($t{time1})' a=x i=./indat/dat_calx.csv    o=./outdat/out508.csv
+${pfxc}mcal      c='usecond($t{time1})' a=x i=./indat/dat_calx.csv    o=./outdat/out509.csv
+${pfxc}mcal      c='useconds($t{time1})' a=x i=./indat/dat_calx.csv    o=./outdat/out510.csv
+${pfxc}mcal      c='unow()' a=x i=./indat/dat_calx.csv    o=./outdat/out511.csv
+
+
+
 
 ${pfxc}mcal      c='avg(${num1},${num2},"-n")'     a=x i=./indat/dat_cal.csv    o=./outdat/out339.csv
 ${pfxc}mcal      c='sqsum(${num1},${num2},"-n")'  a=x i=./indat/dat_cal.csv    o=./outdat/out340.csv
@@ -621,8 +639,9 @@ ${pfxc}mcal c='hasspacew("abcdef")' i=./indat/dat_cal.csv a=x o=./outdat/out356.
 ${pfxc}mcal c='hasspacew("abc def")' i=./indat/dat_cal.csv a=x o=./outdat/out357.csv
 ${pfxc}mcal c='hasspacew("abc　def")' i=./indat/dat_cal.csv a=x o=./outdat/out358.csv
 
-${pfxc}mcal c='strchr($s{str},"c")' i=./indat/dat_cal.csv a=x o=./outdat/out359.csv
-${pfxc}mcal c='strchr($s{str},"e")' i=./indat/dat_cal.csv a=x o=./outdat/out360.csv
+#停止
+#${pfxc}mcal c='strchr($s{str},"c")' i=./indat/dat_cal.csv a=x o=./outdat/out359.csv
+#${pfxc}mcal c='strchr($s{str},"e")' i=./indat/dat_cal.csv a=x o=./outdat/out360.csv
 
 ${pfxc}mcal c='regexlenw($s{wstr},"あ")' i=./indat/dat_cal.csv a=x o=./outdat/out361.csv
 ${pfxc}mcal c='regexlenw($s{wstr},"し.*$")' i=./indat/dat_cal.csv a=x o=./outdat/out362.csv

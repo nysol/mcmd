@@ -69,10 +69,11 @@ size_t kglib::cntFldToken(char *str, size_t maxRecLen,bool fmtErrSkip)
 				} else if( *str=='\n' || *str=='\r' || *str=='\0'){
 					return fldCnt+1;
 				}
-				str++; if(str>=border) kgError::recLenErr(maxRecLen);
+				str++; if(str>=border){ kgError::recLenErr(maxRecLen);}
 			}
 		}
 	}
+	return fldCnt;
 }
 // ----------------------------------------------------------------------------
 // 行分割（DQ考慮しない）
@@ -1065,7 +1066,7 @@ bool kglib::chkFldName(kgstr_t str)
 	// path:検索する検索するデイレクトリ
 	static	void kgFilesearch_sub(vector<kgstr_t>& ptn, kgstr_t path,vector<kgstr_t>& rtn,unsigned int lvl){
 		bool out_flg = false;
-		kgWildCard wc(path+"/"+ptn[lvl]);
+		kgWildCard *wc = new kgWildCard(path+"/"+ptn[lvl]);
 		
 		if(ptn.size()==lvl+1) { out_flg = true;}
 
@@ -1074,7 +1075,7 @@ bool kglib::chkFldName(kgstr_t str)
 		filesystem::directory_iterator end;
 		for(; it!=end; ++it){
 			filesystem::path p = *it;
-			if( wc.match( p.string() ) ){
+			if( wc->match( p.string() ) ){
 				if( is_directory(p) && !out_flg ){
 					kgFilesearch_sub(ptn,p.string(),rtn,lvl+1);
 				}
@@ -1083,6 +1084,7 @@ bool kglib::chkFldName(kgstr_t str)
 				}
 			}
 		}
+		delete wc;
 	}
 	
 	static kgstr_t tildeReplace(kgstr_t& str)
