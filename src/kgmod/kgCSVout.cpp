@@ -61,10 +61,10 @@ static string int2alpha(int val,bool lower)
 			if(div){ div--;}
 			sub=26;
 		}
-		str.insert(0,1,base+sub-1);
+		str.insert(str.begin(),(char)base+sub-1);
 		if(div>26){ val=div; }
 		else{
-			if(div){ str.insert(0,1,base+div-1); }	
+			if(div){ str.insert(str.begin(),(char)base+div-1); }	
 			break;
 		}
 	}

@@ -40,8 +40,17 @@ AC_SUBST([MOD_MAJOR_VERSION], ["3"])
 AC_SUBST([MOD_SO_VERSION], ["1:0:0"])
 
 
-XML2HEAD=`xml2-config --cflags`
-XML2LIB=`xml2-config --libs`
+
+AC_ARG_WITH([libxml2],
+  AC_HELP_STRING(
+    [--with-libxml2=PATH],[PATH is path to libxml2 library]),
+  [XML2LIB="-L$with_libxml2 -lxml2"],[XML2LIB=`xml2-config --libs`])
+
+AC_ARG_WITH([libxml2header],
+  AC_HELP_STRING(
+    [--with-libxml2header=PATH],[PATH is path to libxml2 header]),
+  [XML2HEAD="-I$with_libxml2header"],[XML2HEAD=`xml2-config --cflags`])
+
 AC_SUBST(XML2HEAD)
 AC_SUBST(XML2LIB)
 
@@ -54,6 +63,8 @@ AC_ARG_WITH([boost],
 CXXFLAGS="-I $BOOSTPATH/include $CXXFLAGS"
 
 AC_SUBST([BOOSTPATH], [$BOOSTPATH])
+
+
 
 
 AC_CHECK_LIB(pthread, pthread_create)
