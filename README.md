@@ -41,7 +41,7 @@ MCMD provides about 70 different commands
 
 # Reference_Manual
 * [Japanese Reference Manual (NYSOL Package Current Release: Ver. 3.0)](https://github.com/nysol/mcmd/files/1332817/mcmd.pdf)　Last Updated;2017/09/27
-* [English Reference Manual (NYSOL Package Current Release: Ver. 3.0)](https://github.com/nysol/mcmd/files/1375755/mcmd2.pdf)    Last Updated;2017/10/11
+* [English Reference Manual (NYSOL Package Current Release: Ver. 3.0)](https://github.com/nysol/mcmd/files/1378240/mcmd2.pdf)    Last Updated;2017/10/12
 
 # Installation
 
