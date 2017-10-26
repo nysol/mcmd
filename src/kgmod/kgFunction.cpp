@@ -3369,6 +3369,34 @@ void kgFunction_tanh::run(void)
 		else 							_result.null(true);
 	}
 }
+
+// -----------------------------------------------------------------------------
+// hashval(文字列,数値) => 数値
+// -----------------------------------------------------------------------------
+void kgFunction_hashval::preprocess(void)
+{
+	if( _args.at(1)->null() ){
+		throw kgError("hashval must be a constant number");
+	}else{
+		_hashval = static_cast<unsigned int>(_args.at(1)->r());
+		if(_hashval==0){ throw kgError("hashval must not be zero"); }
+
+	}
+}
+
+void kgFunction_hashval::run(void)
+{	
+	if( _args.at(0)->null() ){
+		_result.null(true);
+	}else{
+		unsigned int v=0;
+		char* key=_args.at(0)->s();
+		while(*key != '\0') v+=v*137+static_cast<unsigned int>(*key++);
+		_result.r( v % _hashval );
+	}
+}
+
+
 // ============================================================================
 // 文字列関数クラス
 // ============================================================================
@@ -4250,6 +4278,7 @@ kgFuncMap::kgFuncMap(void){
 	_func_map["usecond_T"  ]= lambda::bind(lambda::new_ptr<kgFunction_usecond_t  >());
 	_func_map["useconds_T" ]= lambda::bind(lambda::new_ptr<kgFunction_useconds_t >());
 	_func_map["tuseconds_T"]= lambda::bind(lambda::new_ptr<kgFunction_tuseconds_t>());
+	_func_map["hashval_SN"]= lambda::bind(lambda::new_ptr<kgFunction_hashval>());
 
 	// 数学関数
 	_func_map["sum_N*"       ]= lambda::bind(lambda::new_ptr<kgFunction_sum       >());

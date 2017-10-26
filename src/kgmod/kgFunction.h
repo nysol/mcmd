@@ -415,6 +415,7 @@ class kgFunction_pow_real : public kgFunction
 	{_result.type('N');_name="^";_minArgc=2;_maxArgc=2;}
 	virtual void run(void);
 };
+
 // ============================================================================
 // 比較演算子関係クラス
 // ============================================================================
@@ -2356,6 +2357,20 @@ class kgFunction_tanh : public kgFunction
 	{_result.type('N');_name="tanh";_minArgc=1;_maxArgc=1;}
 	virtual void run(void);
 };
+
+// -----------------------------------------------------------------------------
+// hashval(文字列,数値) => 数値
+// -----------------------------------------------------------------------------
+class kgFunction_hashval: public kgFunction
+{
+	unsigned int _hashval;
+	public:
+	kgFunction_hashval(void)
+	{_result.type('N');_name="hashval";_minArgc=2;_maxArgc=2;}
+	virtual void run(void);
+	virtual void preprocess(void);
+};
+
 // ============================================================================
 // 文字列関数クラス
 // ============================================================================
