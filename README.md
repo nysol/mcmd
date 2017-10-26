@@ -41,7 +41,7 @@ MCMD provides about 70 different commands
 
 # Reference_Manual
 * [Japanese Reference Manual (NYSOL Package Current Release: Ver. 3.0)](https://github.com/nysol/mcmd/files/1332817/mcmd.pdf)　Last Updated;2017/09/27
-* [English Reference Manual (NYSOL Package Current Release: Ver. 3.0)](https://github.com/nysol/mcmd/files/1332834/mcmd2.pdf)    Last Updated;2017/09/27
+* [English Reference Manual (NYSOL Package Current Release: Ver. 3.0)](https://github.com/nysol/mcmd/files/1381427/mcmd2.pdf)    Last Updated;2017/10/13
 
 # Installation
 
@@ -263,9 +263,9 @@ B,1,0,2,0,1
 * [T. Nakahara,M. Nakamoto,Y.Hamuro, NYSOL: Data Analysis Tool for Big Data - performance evaluation, parallel processing and business applications, Operations Research, vol.61, No1, pp.11-18 (in Japanese).](http://www.orsj.or.jp/archive2/or61-1/or61_1_11.pdf)
 * [Stephane Cheung, Masakazu Nakamoto, and Yukinobu Hamuro, "NYSOL: A User-Centric Framework for Knowledge Discovery in Big Data," International Journal of Knowledge Engineering vol. 1, no. 3, pp. 214-218, 2015.](http://www.ijke.org/show-39-75-1.html)
 
-## web cite
-* <a href="http://www.nysol.jp" target="_blank">NYSOL web page(nysol.jp)</a>
-* <a href="http://www.nysol.biz/" target="_blank">NYSOL for business</a>
+## web site
+* <a href="http://www.nysol.jp/en/home">NYSOL web page for the old versions</a>
+* <a href="http://www.nysol.biz/" target="_blank">NYSOL for business (in Japanese)</a>
 
 # Acknowledgements
 The project was partially carried out under the following research fund.
