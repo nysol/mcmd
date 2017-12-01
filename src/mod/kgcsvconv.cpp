@@ -137,12 +137,6 @@ kgCsvconv::kgCsvconv(void)
 	_wfp=NULL;
 }
 
-
-
-
-
-
-
 // -----------------------------------------------------------------------------
 // 入出力ファイルオープン
 // -----------------------------------------------------------------------------
@@ -150,7 +144,7 @@ void kgCsvconv::setArgs(void)
 {
 
 	// パラメータチェック
-	_args.paramcheck("i=,o=,k=,m=,s=,-q",kgArgs::ALLPARAM);
+	_args.paramcheck("i=,o=,k=,m=,s=,-q",kgArgs::COMMON|kgArgs::NULL_KEY);
 
 	// 入出力ファイルオープン
 	_iFile.open(_args.toString("i=",false), _env,_nfn_i);

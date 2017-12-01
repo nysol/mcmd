@@ -53,7 +53,7 @@ kgCommon::kgCommon(void)
 void kgCommon::setArgs(void)
 {
 	// パラメータチェック
-	_args.paramcheck("i=,o=,m=,k=,K=,u=,-r,q",kgArgs::COMMON|kgArgs::IODIFF|kgArgs::NULL_KEY);
+	_args.paramcheck("i=,o=,m=,k=,K=,u=,-r,-q",kgArgs::COMMON|kgArgs::IODIFF|kgArgs::NULL_KEY);
 
 	// 入出力ファイルオープン
 	kgstr_t ifile = _args.toString("i=",false);

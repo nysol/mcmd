@@ -55,7 +55,7 @@ kgNullto::kgNullto(void)
 void kgNullto::setArgs(void)
 {
 	// パラメータチェック
-	_args.paramcheck("k=,s=,f=,i=,o=,O=,v=,-A,-p",kgArgs::COMMON|kgArgs::IODIFF);
+	_args.paramcheck("k=,s=,f=,i=,o=,O=,v=,-A,-p,-q",kgArgs::COMMON|kgArgs::IODIFF);
 
 	// 入出力ファイルオープン
 	_iFile.open(_args.toString("i=",false), _env, _nfn_i);

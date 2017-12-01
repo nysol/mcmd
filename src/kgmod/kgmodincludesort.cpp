@@ -139,6 +139,7 @@ void kgModIncludeSort::sortingRun(kgCSVfld* csv,vector<int>  fldnum,bool sortF)
 void kgModIncludeSort::init(kgArgs args, kgEnv* env)
 {
 	kgMod::init(args,env);
+	_env_sort.apply(env);
 	if(_env->getVerboseLevel() == KG_VerboseLevel){_env_sort.verblvl(2);}
 	else{_env_sort.verblvl(_env->getVerboseLevel());}		
 	_sortingFile.init(&_env_sort);
@@ -147,6 +148,7 @@ void kgModIncludeSort::init(kgArgs args, kgEnv* env)
 void kgModIncludeSort::init(size_t argc, const char* argv[], kgEnv* env)
 {
 	kgMod::init(argc,argv,env);		
+	_env_sort.apply(env);
 	if(_env->getVerboseLevel() == KG_VerboseLevel){_env_sort.verblvl(2);}
 	else{_env_sort.verblvl(_env->getVerboseLevel());}		
 	_sortingFile.init(&_env_sort);

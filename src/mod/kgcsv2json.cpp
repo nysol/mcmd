@@ -54,7 +54,7 @@ kgCsv2json::kgCsv2json(void)
 void kgCsv2json::setArgs(void)
 {
 	// パラメータチェック
-	_args.paramcheck("i=,o=,k=,p=,f=,h=,s=,-q,-flat",kgArgs::ALLPARAM);
+	_args.paramcheck("i=,o=,k=,p=,f=,h=,s=,-q,-flat",kgArgs::COMMON|kgArgs::NULL_IN|kgArgs::NULL_KEY);
 
 	// 入出力ファイルオープン
 	_iFile.open(_args.toString("i=",false), _env,_nfn_i);
@@ -192,6 +192,9 @@ int kgCsv2json::run(void) try
 				if(!_fltFlg){ _oFile.writeStrNdq("[");}
 				for(vector<kgstr_t>::size_type i=0; i<_fField.size(); i++){
 					_oFile.writeStrNdq("\"");
+					if(_assertNullIN && *(_iFile.getNewVal(_fField.num(i)))=='\0' ) {
+						 _existNullIN  = true;
+					}
 					_oFile.writeStrForJson(_iFile.getNewVal(_fField.num(i)));
 					_oFile.writeStrNdq("\"");
 					if (_fField.size()-1!=i){ _oFile.writeStrNdq(",");}
@@ -204,6 +207,9 @@ int kgCsv2json::run(void) try
 					_oFile.writeStrNdq("\"");
 					_oFile.writeStrForJson(_iFile.fldName(_hField.num(i)).c_str());
 					_oFile.writeStrNdq("\":\"");
+					if(_assertNullIN && *(_iFile.getNewVal(_hField.num(i)))=='\0' ) {
+						 _existNullIN  = true;
+					}
 					_oFile.writeStrForJson(_iFile.getNewVal(_hField.num(i)));
 					_oFile.writeStrNdq("\"");
 					if (_hField.size()-1!=i){ _oFile.writeStrNdq(",");}
@@ -216,8 +222,14 @@ int kgCsv2json::run(void) try
 				if(!_fltFlg){ _oFile.writeStrNdq("{");}
 				for(vector<kgstr_t>::size_type i=0; i<_pFieldk.size(); i++){
 					_oFile.writeStrNdq("\"");
+					if(_assertNullIN && *(_iFile.getNewVal(_pFieldk.num(i)))=='\0' ) {
+						 _existNullIN  = true;
+					}
 					_oFile.writeStrForJson(_iFile.getNewVal(_pFieldk.num(i)));
 					_oFile.writeStrNdq("\":\"");
+					if(_assertNullIN && *(_iFile.getNewVal(_pFieldv.num(i)))=='\0' ) {
+						 _existNullIN  = true;
+					}
 					_oFile.writeStrForJson(_iFile.getNewVal(_pFieldv.num(i)));
 					_oFile.writeStrNdq("\"");
 					if (_pFieldk.size()-1!=i){ _oFile.writeStrNdq(",");}

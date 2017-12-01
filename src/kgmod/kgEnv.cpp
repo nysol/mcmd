@@ -182,3 +182,23 @@ string kgEnv::randStr(size_t size){
 	return s;
 }
 
+
+
+void kgEnv::apply(kgEnv * baseENV){
+
+	iSize_ = baseENV->iSize();
+	oSize_ = baseENV->oSize();
+	maxRecLen= baseENV->getMaxRecLen();
+	blockCount_ = baseENV->getBlockCount();
+	verboseLevel = baseENV->getVerboseLevel();
+	msgTimebyfsec_ = baseENV->msgTimebyfsec();
+	tmpPath =baseENV->getTmpPath();
+	encoding=baseENV->getEncoding();
+	noFldName=baseENV->getNoFldName();
+	_precision=baseENV->precision();
+	_fldByNum=baseENV->fldByNum();
+	recursiveMsg_=baseENV->recursiveMsg();
+	sigact_ = baseENV->sigactcheck();
+
+}
+
