@@ -89,6 +89,7 @@ mvreplace \
 mvsort \
 mvuniq \
 mwindow \
+mgridindex \
 mxml2csv
 
 ### excmd command end ###
@@ -359,6 +360,9 @@ msummary_LDADD = $(top_srcdir)/src/kgmod/libkgmod@CORE_MAJOR_VERSION@.la $(top_b
 
 mtab2csv_SOURCES = mtab2csv.cpp
 mtab2csv_LDADD = $(top_srcdir)/src/kgmod/libkgmod@CORE_MAJOR_VERSION@.la $(top_builddir)/src/mod/libmcmd@MOD_MAJOR_VERSION@.la
+
+mgridindex_SOURCES = mgridindex.cpp
+mgridindex_LDADD = $(top_srcdir)/src/kgmod/libkgmod@CORE_MAJOR_VERSION@.la $(top_builddir)/src/mod/libmcmd@MOD_MAJOR_VERSION@.la
 
 
 install-exec-hook:

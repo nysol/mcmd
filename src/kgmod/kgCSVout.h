@@ -109,6 +109,7 @@ public:
 	// ファイルのオープンとクローズ
 	void initialset(kgEnv *env, bool noFldName, size_t cnt) throw(kgError);
 	void open(kgstr_t fileName, kgEnv *env=NULL, bool noFldName=false, size_t cnt=4) throw(kgError);
+	void aopen(kgstr_t fileName, kgEnv *env=NULL, bool noFldName=false, size_t cnt=4) throw(kgError);
 	void popen(int fd, kgEnv *env=NULL, bool noFldName=false, size_t cnt=4) throw(kgError);
 
 

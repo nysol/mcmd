@@ -159,6 +159,33 @@ void kgCSVout::open(kgstr_t fileName, kgEnv *env, bool noFldName, size_t cnt) th
 	}
 	opened_= true;
 }
+
+// -----------------------------------------------------------------------------
+// 書き込みファイルを追記オープンする。
+// ファイル名がないの場合は標準出力としてオープンする。
+// -----------------------------------------------------------------------------
+void kgCSVout::aopen(kgstr_t fileName, kgEnv *env, bool noFldName, size_t cnt) throw(kgError) 
+{
+
+	initialset(env,noFldName,cnt);
+
+	// オープン処理
+	try {
+		if(fileName.size()==0){
+			fname_ = "STDOUT";
+			fd_=1;
+		}else{
+			fname_ = fileName;
+			fd_ = ::open(fname_.c_str(), KG_AOPEN_FLG , S_IRWXU);
+			if(fd_ == -1 ){ throw kgError();}
+		}
+	} catch(...) {
+		ostringstream ss;
+		ss << "file write open error: " << fname_;
+		throw kgError(ss.str());
+	}
+	opened_= true;
+}
 // -----------------------------------------------------------------------------
 //  有効桁数セット
 // -----------------------------------------------------------------------------

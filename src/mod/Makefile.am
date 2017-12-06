@@ -104,6 +104,8 @@ kgvsort.cpp \
 kgvuniq.cpp \
 kgwindow.cpp \
 kgxml2csv.cpp \
+kggridindex.cpp \
+kggridindex.h \
 kgaccum.h \
 kgarff2csv.h \
 kgavg.h \

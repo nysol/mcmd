@@ -95,6 +95,6 @@ typedef std::string  kgstr_t;
 // OPEN　FLG
 #define KG_IOPEN_FLG O_RDONLY
 #define KG_OOPEN_FLG O_WRONLY|O_TRUNC|O_CREAT|O_APPEND
-
+#define KG_AOPEN_FLG O_WRONLY|O_CREAT|O_APPEND
 
 
