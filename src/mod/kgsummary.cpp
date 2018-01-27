@@ -53,175 +53,151 @@ kgSummary::kgSummary(void)
 // -----------------------------------------------------------------------------
 // 統計関数
 // -----------------------------------------------------------------------------
-bool PreCal1;
-vector<double> Sum;
-vector<double> Cnt;
-vector<double> Dv2;
-vector<double> Min;
-vector<double> Max;
-bool PreCal2;
-vector<double> Uct;
-vector<double> Qt1;
-vector<double> Qt2;
-vector<double> Qt3;
-vector<double> Mod;
-vector<int>    Mdc;
-bool PreCal3;
-vector<double> Dv3;
-vector<double> Dv4;
 
-vector<bool> NulF;
 
 namespace kgsummary_ {/////////////////////////////////////////////////////////////////////////////
 	// ---------------------------------------------------------------------------
 	// sum
 	// ---------------------------------------------------------------------------
-	void sum(vector<kgVal>& result,bool nullF )
+	void sum(kgSummary* m,vector<kgVal>& result,bool nullF )
 	{
 		for(std::size_t i=0; i<result.size(); i++){
-			if(NulF.at(i)&&nullF){ result.at(i).null(true); }
-			else if(Cnt.at(i)>0) { result.at(i).r(Sum.at(i));}
-			else                 { result.at(i).null(true); }
+			if(m->atNulF(i)&&nullF){ result.at(i).null(true); }
+			else if(m->atCnt(i)>0) { result.at(i).r(m->atSum(i));}
+			else                   { result.at(i).null(true); }
 		}
 	}
 	// ---------------------------------------------------------------------------
 	// count
 	// ---------------------------------------------------------------------------
-	void count(vector<kgVal>& result,bool nullF )
+	void count(kgSummary* m,vector<kgVal>& result,bool nullF )
 	{
 		for(std::size_t i=0; i<result.size(); i++){
-			if(NulF.at(i)&&nullF){ result.at(i).null(true); }
-			else                 { result.at(i).r(Cnt.at(i));}
+			if(m->atNulF(i)&&nullF){ result.at(i).null(true); }
+			else                   { result.at(i).r(m->atCnt(i));}
 		}
 	}
 	// ---------------------------------------------------------------------------
 	// mean
 	// ---------------------------------------------------------------------------
-	void mean(vector<kgVal>& result,bool nullF )
+	void mean(kgSummary* m,vector<kgVal>& result,bool nullF )
 	{
 		for(std::size_t i=0; i<result.size(); i++){
-			if(NulF.at(i)&&nullF){ result.at(i).null(true); }
-			else if(Cnt.at(i)>0) { result.at(i).r(Sum.at(i)/Cnt.at(i));}
-			else                 { result.at(i).null(true);}
+			if(m->atNulF(i)&&nullF){ result.at(i).null(true); }
+			else if(m->atCnt(i)>0) { result.at(i).r(m->atSum(i)/m->atCnt(i));}
+			else                   { result.at(i).null(true);}
 		}
 	}
 	// ---------------------------------------------------------------------------
 	// max
 	// ---------------------------------------------------------------------------
-	void maximum(vector<kgVal>& result,bool nullF )
+	void maximum(kgSummary* m,vector<kgVal>& result,bool nullF )
 	{
 		for(std::size_t i=0; i<result.size(); i++){
-			if(NulF.at(i)&&nullF){ result.at(i).null(true); }
-			else if(Cnt.at(i)>0) { result.at(i).r(Max.at(i));}
-			else                 { result.at(i).null(true);}
+			if(m->atNulF(i)&&nullF){ result.at(i).null(true); }
+			else if(m->atCnt(i)>0) { result.at(i).r(m->atMax(i));}
+			else                   { result.at(i).null(true);}
 		}
 	}
 	// ---------------------------------------------------------------------------
 	// min
 	// ---------------------------------------------------------------------------
-	void minimum(vector<kgVal>& result,bool nullF )
+	void minimum(kgSummary* m,vector<kgVal>& result,bool nullF )
 	{
 		for(std::size_t i=0; i<result.size(); i++){
-			if(NulF.at(i)&&nullF){ result.at(i).null(true); }
-			else if(Cnt.at(i)>0) { result.at(i).r(Min.at(i)); }
-			else                 { result.at(i).null(true); }
+			if(m->atNulF(i)&&nullF){ result.at(i).null(true); }
+			else if(m->atCnt(i)>0) { result.at(i).r(m->atMin(i)); }
+			else                   { result.at(i).null(true); }
 		}
 	}
 	// ---------------------------------------------------------------------------
 	// range
 	// ---------------------------------------------------------------------------
-	void range(vector<kgVal>& result,bool nullF )
+	void range(kgSummary* m,vector<kgVal>& result,bool nullF )
 	{
 		for(std::size_t i=0; i<result.size(); i++){
-			if(NulF.at(i)&&nullF){ result.at(i).null(true); }
-			else if(Cnt.at(i)>0) { result.at(i).r(Max.at(i)-Min.at(i)); }
-			else                 { result.at(i).null(true); }
+			if(m->atNulF(i)&&nullF){ result.at(i).null(true); }
+			else if(m->atCnt(i)>0) { result.at(i).r(m->atMax(i)-m->atMin(i)); }
+			else                   { result.at(i).null(true); }
 		}
 	}
 	// ---------------------------------------------------------------------------
 	// devsq
 	// ---------------------------------------------------------------------------
-	void devsq(vector<kgVal>& result,bool nullF )
+	void devsq(kgSummary* m,vector<kgVal>& result,bool nullF )
 	{
 		for(std::size_t i=0; i<result.size(); i++){
-			if(NulF.at(i)&&nullF){ result.at(i).null(true); }
-			else if(Cnt.at(i)>1) { result.at(i).r(Dv2.at(i)); }
-			else                 { result.at(i).null(true); }
+			if(m->atNulF(i)&&nullF){ result.at(i).null(true); }
+			else if(m->atCnt(i)>1) { result.at(i).r(m->atDv2(i)); }
+			else                   { result.at(i).null(true); }
 		}
 	}
 	// ---------------------------------------------------------------------------
 	// var
 	// ---------------------------------------------------------------------------
-	void var(vector<kgVal>& result,bool nullF )
+	void var(kgSummary* m,vector<kgVal>& result,bool nullF )
 	{
 		for(std::size_t i=0; i<result.size(); i++){
-			if(NulF.at(i)&&nullF){ result.at(i).null(true); }
-			else if(Cnt.at(i)>0) { result.at(i).r(Dv2.at(i)/(Cnt.at(i)));}
-			else                 { result.at(i).null(true); }
+			if(m->atNulF(i)&&nullF){ result.at(i).null(true); }
+			else if(m->atCnt(i)>0) { result.at(i).r(m->atDv2(i)/(m->atCnt(i)));}
+			else                   { result.at(i).null(true); }
 		}
 	}
 	// ---------------------------------------------------------------------------
 	// uvar
 	// ---------------------------------------------------------------------------
-	void uvar(vector<kgVal>& result,bool nullF )
+	void uvar(kgSummary* m,vector<kgVal>& result,bool nullF )
 	{
 		for(std::size_t i=0; i<result.size(); i++){
-			if(NulF.at(i)&&nullF){ result.at(i).null(true); }
-			else if(Cnt.at(i)>1) { result.at(i).r(Dv2.at(i)/(Cnt.at(i)-1));}
-			else                 { result.at(i).null(true); }
+			if(m->atNulF(i)&&nullF){ result.at(i).null(true); }
+			else if(m->atCnt(i)>1) { result.at(i).r(m->atDv2(i)/(m->atCnt(i)-1));}
+			else                   { result.at(i).null(true); }
 		}
 	}
 	// ---------------------------------------------------------------------------
 	// sd
 	// ---------------------------------------------------------------------------
-	void sd(vector<kgVal>& result,bool nullF )
+	void sd(kgSummary* m,vector<kgVal>& result,bool nullF )
 	{
 		for(std::size_t i=0; i<result.size(); i++){
-			if(NulF.at(i)&&nullF){ result.at(i).null(true); }
-			else if(Cnt.at(i)>1) { result.at(i).r(sqrt(Dv2.at(i)/(Cnt.at(i))));}
-			else                 { result.at(i).null(true); }
+			if(m->atNulF(i)&&nullF){ result.at(i).null(true); }
+			else if(m->atCnt(i)>1) { result.at(i).r(sqrt(m->atDv2(i)/(m->atCnt(i))));}
+			else                   { result.at(i).null(true); }
 		}
 	}
 	// ---------------------------------------------------------------------------
 	// usd
 	// ---------------------------------------------------------------------------
-	void usd(vector<kgVal>& result,bool nullF )
+	void usd(kgSummary* m,vector<kgVal>& result,bool nullF )
 	{
 		for(std::size_t i=0; i<result.size(); i++){
-			if(NulF.at(i)&&nullF){ result.at(i).null(true); }
-			else if(Cnt.at(i)>1) { result.at(i).r(sqrt(Dv2.at(i)/(Cnt.at(i)-1)));}
-			else                 { result.at(i).null(true); }
+			if(m->atNulF(i)&&nullF){ result.at(i).null(true); }
+			else if(m->atCnt(i)>1) { result.at(i).r(sqrt(m->atDv2(i)/(m->atCnt(i)-1)));}
+			else                   { result.at(i).null(true); }
 		}
 	}
 	// ---------------------------------------------------------------------------
 	// cv
 	// ---------------------------------------------------------------------------
-	void cv(vector<kgVal>& result,bool nullF )
+	void cv(kgSummary* m,vector<kgVal>& result,bool nullF )
 	{
 		for(std::size_t i=0; i<result.size(); i++){
-			if(NulF.at(i)&&nullF){ result.at(i).null(true); }
-			else if(Cnt.at(i)>1) { result.at(i).r(100.0*sqrt(Dv2.at(i)/(Cnt.at(i)))/
-                                    (Sum.at(i)/Cnt.at(i))); }
-			else                 { result.at(i).null(true); }
+			if(m->atNulF(i)&&nullF){ result.at(i).null(true); }
+			else if(m->atCnt(i)>1) { result.at(i).r(100.0*sqrt(m->atDv2(i)/(m->atCnt(i)))/
+                                    (m->atSum(i)/m->atCnt(i))); }
+			else                   { result.at(i).null(true); }
 		}
 	}
 	// ---------------------------------------------------------------------------
 	// preCal1
 	// ---------------------------------------------------------------------------
-	void preCal1(kgCSVblk& csv, kgArgFld& fld,bool _null)
+	void preCal1(kgSummary* m,kgCSVblk& csv, kgArgFld& fld,bool _null)
 	{
 		// 集計用変数領域確保＆初期化
 		int fldCnt=fld.size();
 		vector<double> sx(fldCnt,0);
 
-		for(std::size_t i=0; i<fld.size(); i++){
-			Cnt.at(i)=0;
-			Sum.at(i)=0;
-			Dv2.at(i)=0;
-			Min.at(i)= DBL_MAX;
-			Max.at(i)=-DBL_MAX;
-			NulF.at(i)=false;
-		}
+		m->pre1Clr();
 
 		csv.seekBlkTop();
 
@@ -231,83 +207,84 @@ namespace kgsummary_ {//////////////////////////////////////////////////////////
 				char* str=csv.getBlkVal(fld.num(i));
 
 				// データがnullの場合は何もしない
-				if(*str=='\0') { NulF.at(i)=true; continue; }
+				if(*str=='\0') { m->atNulF(i,true); continue; }
 
 				double dx = atof(str);
-				Sum.at(i)+=dx;
-				if(Min.at(i)>dx) Min.at(i)=dx;
-				if(Max.at(i)<dx) Max.at(i)=dx;
+				m->adSum(i,dx);
+				m->adMin(i,dx);
+				m->adMax(i,dx);
+
 				dx -= sx.at(i);
-				sx.at(i) += dx / (Cnt.at(i)+1); 
-				Dv2.at(i) += Cnt.at(i) * dx * dx / (Cnt.at(i)+1); 
-				Cnt.at(i) += 1;
+				sx.at(i) += dx /(m->atCnt(i)+1); 
+				m->adDv2(i, m->atCnt(i) * dx * dx / (m->atCnt(i)+1) ); 
+				m->adCnt(i);
 			}
 		}
 	}
 	// ---------------------------------------------------------------------------
 	// median
 	// ---------------------------------------------------------------------------
-	void median(vector<kgVal>& result,bool nullF )
+	void median(kgSummary* m,vector<kgVal>& result,bool nullF )
 	{
 		for(std::size_t i=0; i<result.size(); i++){
-			if(NulF.at(i)&&nullF){ result.at(i).null(true); }
-			else if(Cnt.at(i)>0) { result.at(i).r(Qt2.at(i)); }
-			else                 { result.at(i).null(true); }
+			if(m->atNulF(i)&&nullF){ result.at(i).null(true); }
+			else if(m->atCnt(i)>0) { result.at(i).r(m->atQt2(i)); }
+			else                   { result.at(i).null(true); }
 		}
 	}
 	// ---------------------------------------------------------------------------
 	// qtile1
 	// ---------------------------------------------------------------------------
-	void qtile1(vector<kgVal>& result,bool nullF )
+	void qtile1(kgSummary* m,vector<kgVal>& result,bool nullF )
 	{
 		for(std::size_t i=0; i<result.size(); i++){
-			if(NulF.at(i)&&nullF){ result.at(i).null(true); }
-			else if(Cnt.at(i)>0) { result.at(i).r(Qt1.at(i));}
-			else                 { result.at(i).null(true);}
+			if(m->atNulF(i)&&nullF){ result.at(i).null(true); }
+			else if(m->atCnt(i)>0) { result.at(i).r(m->atQt1(i));}
+			else                   { result.at(i).null(true);}
 		}
 	}
 	// ---------------------------------------------------------------------------
 	// qtile3
 	// ---------------------------------------------------------------------------
-	void qtile3(vector<kgVal>& result,bool nullF )
+	void qtile3(kgSummary* m,vector<kgVal>& result,bool nullF )
 	{
 		for(std::size_t i=0; i<result.size(); i++){
-			if(NulF.at(i)&&nullF){ result.at(i).null(true); }
-			else if(Cnt.at(i)>0) { result.at(i).r(Qt3.at(i));}
-			else                 { result.at(i).null(true);}
+			if(m->atNulF(i)&&nullF){ result.at(i).null(true); }
+			else if(m->atCnt(i)>0) { result.at(i).r(m->atQt3(i));}
+			else                   { result.at(i).null(true);}
 		}
 	}
 	// ---------------------------------------------------------------------------
 	// qrange
 	// ---------------------------------------------------------------------------
-	void qrange(vector<kgVal>& result,bool nullF )
+	void qrange(kgSummary* m,vector<kgVal>& result,bool nullF )
 	{
 		for(std::size_t i=0; i<result.size(); i++){
-			if(NulF.at(i)&&nullF){ result.at(i).null(true); }
-			else if(Cnt.at(i)>0) { result.at(i).r(Qt3.at(i)-Qt1.at(i));}
-			else                 { result.at(i).null(true);}
+			if(m->atNulF(i)&&nullF){ result.at(i).null(true); }
+			else if(m->atCnt(i)>0) { result.at(i).r(m->atQt3(i)-m->atQt1(i));}
+			else                   { result.at(i).null(true);}
 		}
 	}
 	// ---------------------------------------------------------------------------
 	// mode
 	// ---------------------------------------------------------------------------
-	void mode(vector<kgVal>& result,bool nullF )
+	void mode(kgSummary* m,vector<kgVal>& result,bool nullF )
 	{
 		for(std::size_t i=0; i<result.size(); i++){
-			if(NulF.at(i)&&nullF){ result.at(i).null(true); }
-			else if(Mdc.at(i)>1) { result.at(i).r(Mod.at(i)); }
-			else                 { result.at(i).null(true); }
+			if(m->atNulF(i)&&nullF){ result.at(i).null(true); }
+			else if(m->atMdc(i)>1) { result.at(i).r(m->atMod(i)); }
+			else                   { result.at(i).null(true); }
 		}
 	}
 	// ---------------------------------------------------------------------------
 	// uniqcount
 	// ---------------------------------------------------------------------------
-	void ucount(vector<kgVal>& result,bool nullF )
+	void ucount(kgSummary* m,vector<kgVal>& result,bool nullF )
 	{
 		for(std::size_t i=0; i<result.size(); i++){
-			if(NulF.at(i)&&nullF){ result.at(i).null(true); }
-			else if(Cnt.at(i)>0) { result.at(i).r(Uct.at(i));}
-			else                 { result.at(i).null(true);}
+			if(m->atNulF(i)&&nullF){ result.at(i).null(true); }
+			else if(m->atCnt(i)>0) { result.at(i).r(m->atUct(i));}
+			else                   { result.at(i).null(true);}
 		}
 	}
 	// ---------------------------------------------------------------------------
@@ -357,21 +334,11 @@ namespace kgsummary_ {//////////////////////////////////////////////////////////
 	// ---------------------------------------------------------------------------
 	// 前処理2
 	// ---------------------------------------------------------------------------
-	void preCal2( kgCSVblk& csv, kgArgFld& fld,bool _null)
+	void preCal2(kgSummary* m,kgCSVblk& csv, kgArgFld& fld,bool _null)
 	{
-		for(std::size_t i=0; i<fld.size(); i++){
-			Qt1.at(i)=0;
-			Qt2.at(i)=0;
-			Qt3.at(i)=0;
-			Mod.at(i)=0;
-			Mdc.at(i)=0;
-			Uct.at(i)=0;
 
-			if(!PreCal1 && !PreCal3 ){
-				Cnt.at(i) = 0;
-				NulF.at(i) = false;
-			}
-		}
+		m->pre2Clr();
+
 		csv.seekBlkTop();
 
 		//値=>出現回数
@@ -381,9 +348,9 @@ namespace kgsummary_ {//////////////////////////////////////////////////////////
 			// f=指定した項目のNULLを除いた件数
 			for(std::size_t i=0; i<fld.size(); i++){
 				char* str=csv.getBlkVal(fld.num(i));
-				if(*str=='\0'){ NulF.at(i) =true; continue; }
-				if(!PreCal1 && !PreCal3){
-					Cnt.at(i) += 1;
+				if(*str=='\0'){ m->atNulF(i,true); continue; }
+				if(!m->has_PreCal1() && !m->has_PreCal3()){
+					m->adCnt(i,1);
 				}
 				double v_d = atof(str);
 				if ( ctables.at(i).find(v_d) != ctables.at(i).end()){
@@ -399,9 +366,9 @@ namespace kgsummary_ {//////////////////////////////////////////////////////////
 			int preC=0,nowC;
 			double maxModeVal=0;
 			int maxModeCnt = 0; 
-			Qtile q25(0.25,Cnt.at(i));
-			Qtile q50(0.50,Cnt.at(i));
-			Qtile q75(0.75,Cnt.at(i));
+			Qtile q25(0.25,m->atCnt(i));
+			Qtile q50(0.50,m->atCnt(i));
+			Qtile q75(0.75,m->atCnt(i));
 
 			for(map<double,int>::iterator j=ctables.at(i).begin();j!=ctables.at(i).end();j++)	{
 
@@ -412,7 +379,7 @@ namespace kgsummary_ {//////////////////////////////////////////////////////////
 				if( q50.t2() > preC && nowC >= q50.t1() )  q50.x2(j->first);
 				if( q75.t1() > preC && nowC >= q75.t1() )  q75.x1(j->first);
 				if( q75.t2() > preC && nowC >= q75.t1() )  q75.x2(j->first);
-				Uct.at(i)+=1;
+				m->adUct(i,1);
 
 				if ( j->second > maxModeCnt ){
 					maxModeCnt = j->second;
@@ -424,23 +391,23 @@ namespace kgsummary_ {//////////////////////////////////////////////////////////
 			q25.cal();
 			q50.cal();
 			q75.cal();
-			Qt1.at(i)=q25.Qq();
-			Qt2.at(i)=q50.Qq();
-			Qt3.at(i)=q75.Qq();
-			Mod.at(i)=maxModeVal;
-			Mdc.at(i)=maxModeCnt;
+			m->atQt1(i,q25.Qq());
+			m->atQt2(i,q50.Qq());
+			m->atQt3(i,q75.Qq());
+			m->atMod(i,maxModeVal);
+			m->atMdc(i,maxModeCnt);
 		}
 	}
 	// ---------------------------------------------------------------------------
 	// skew
 	// ---------------------------------------------------------------------------
-	void skew(vector<kgVal>& result,bool nullF )
+	void skew(kgSummary* m,vector<kgVal>& result,bool nullF )
 	{
 		for(std::size_t i=0; i<result.size(); i++){
-			if(NulF.at(i)&&nullF){ result.at(i).null(true); }		
-			else if(Cnt.at(i)>0 && Dv2.at(i)>0){
-				double var15=pow(Dv2.at(i)/(Cnt.at(i)),1.5);
-				result.at(i).r( Dv3.at(i) / (var15*(Cnt.at(i))) );
+			if(m->atNulF(i)&&nullF){ result.at(i).null(true); }		
+			else if(m->atCnt(i)>0 && m->atDv2(i)>0){
+				double var15=pow(m->atDv2(i)/(m->atCnt(i)),1.5);
+				result.at(i).r( m->atDv3(i) / (var15*(m->atCnt(i))) );
 			}else{
 				result.at(i).null(true);
 			}
@@ -449,14 +416,14 @@ namespace kgsummary_ {//////////////////////////////////////////////////////////
 	// ---------------------------------------------------------------------------
 	// uskew
 	// ---------------------------------------------------------------------------
-	void uskew(vector<kgVal>& result,bool nullF )
+	void uskew(kgSummary* m,vector<kgVal>& result,bool nullF )
 	{
 		for(std::size_t i=0; i<result.size(); i++){
-			if(NulF.at(i)&&nullF){ result.at(i).null(true); }
-			else if(Cnt.at(i)>2 && Dv2.at(i)>0){
-				double c=Cnt.at(i);
-				double var15=pow(Dv2.at(i)/(c-1),1.5);
-				result.at(i).r( c/((c-1)*(c-2)) * Dv3.at(i) / var15 );
+			if(m->atNulF(i)&&nullF){ result.at(i).null(true); }
+			else if(m->atCnt(i)>2 && m->atDv2(i)>0){
+				double c=m->atCnt(i);
+				double var15=pow(m->atDv2(i)/(c-1),1.5);
+				result.at(i).r( c/((c-1)*(c-2)) * m->atDv3(i) / var15 );
 			}else{
 				result.at(i).null(true);
 			}
@@ -465,13 +432,13 @@ namespace kgsummary_ {//////////////////////////////////////////////////////////
 	// ---------------------------------------------------------------------------
 	// kurt
 	// ---------------------------------------------------------------------------
-	void kurt(vector<kgVal>& result,bool nullF )
+	void kurt(kgSummary* m,vector<kgVal>& result,bool nullF )
 	{
 		for(std::size_t i=0; i<result.size(); i++){
-			if(NulF.at(i)&&nullF){ result.at(i).null(true); }
-			else if(Cnt.at(i)>0 && Dv2.at(i)>0){
-				double var2=pow(Dv2.at(i)/(Cnt.at(i)),2);
-				result.at(i).r( Dv4.at(i) / (var2*(Cnt.at(i))) - 3.0 );
+			if(m->atNulF(i)&&nullF){ result.at(i).null(true); }
+			else if(m->atCnt(i)>0 && m->atDv2(i)>0){
+				double var2=pow(m->atDv2(i)/(m->atCnt(i)),2);
+				result.at(i).r( m->atDv4(i) / (var2*(m->atCnt(i))) - 3.0 );
 			}else{
 				result.at(i).null(true);
 			}
@@ -480,14 +447,14 @@ namespace kgsummary_ {//////////////////////////////////////////////////////////
 	// ---------------------------------------------------------------------------
 	// ukurt
 	// ---------------------------------------------------------------------------
-	void ukurt(vector<kgVal>& result,bool nullF )
+	void ukurt(kgSummary* m,vector<kgVal>& result,bool nullF )
 	{
 		for(std::size_t i=0; i<result.size(); i++){
-			if(NulF.at(i)&&nullF){ result.at(i).null(true); }
-			else if(Cnt.at(i)>3 && Dv2.at(i)>0){
-				double c=Cnt.at(i);
-				double var2=pow(Dv2.at(i)/(c-1),2);
-				result.at(i).r( c*(c+1)/(c-1)/(c-2)/(c-3) * Dv4.at(i) / var2 - 3.0 * (c-1)*(c-1)/(c-2)/(c-3) );
+			if(m->atNulF(i)&&nullF){ result.at(i).null(true); }
+			else if(m->atCnt(i)>3 && m->atDv2(i)>0){
+				double c=m->atCnt(i);
+				double var2=pow(m->atDv2(i)/(c-1),2);
+				result.at(i).r( c*(c+1)/(c-1)/(c-2)/(c-3) * m->atDv4(i) / var2 - 3.0 * (c-1)*(c-1)/(c-2)/(c-3) );
 			}else{
 				result.at(i).null(true);
 			}
@@ -496,18 +463,16 @@ namespace kgsummary_ {//////////////////////////////////////////////////////////
 	// ---------------------------------------------------------------------------
 	// preCal3
 	// ---------------------------------------------------------------------------
-	void preCal3(kgCSVblk& csv, kgArgFld& fld,bool _null)
+	void preCal3(kgSummary* m,kgCSVblk& csv, kgArgFld& fld,bool _null)
 	{
-		for(std::size_t i=0; i<fld.size(); i++){
-			Dv3.at(i)=0;
-			Dv4.at(i)=0;
-		}
+		m->pre3Clr();
+
 		// 集計用変数領域確保＆初期化
 		int fldCnt=fld.size();
 		vector<double> sx(fldCnt,0);
 
 		// 平均値を求める
-		if(!PreCal1) preCal1(csv, fld,_null);
+		if(!m->has_PreCal1()) preCal1(m,csv, fld,_null);
 
 		csv.seekBlkTop();
 
@@ -517,9 +482,9 @@ namespace kgsummary_ {//////////////////////////////////////////////////////////
 				char* str=csv.getBlkVal(fld.num(i));
 				if(*str=='\0') continue;
 
-				double dx = atof(str)-Sum.at(i)/Cnt.at(i); //偏差
-				Dv3.at(i)+=dx*dx*dx;
-				Dv4.at(i)+=dx*dx*dx*dx;
+				double dx = atof(str)- m->atSum(i)/m->atCnt(i); //偏差
+				m->adDv3(i,dx*dx*dx);
+				m->adDv4(i,dx*dx*dx*dx);
 			}
 		}
 	}
@@ -553,31 +518,31 @@ void kgSummary::setArgs(void)
 	// c= 計算方法のセット
 	_c_types = _args.toStringVecVec("c=", ':', 2, true);
 
-	PreCal1=false; PreCal2=false; PreCal3=false;
+	_PreCal1=false; _PreCal2=false; _PreCal3=false;
 	for(std::size_t i=0; i<_c_types.at(0).size();i++){
 		kgstr_t kw=_c_types.at(0).at(i);
-	     	 if(kw=="sum"   ){_functions.push_back(&kgsummary_::sum)    ; PreCal1=true; }
-	  else if(kw=="mean"  ){_functions.push_back(&kgsummary_::mean)   ; PreCal1=true; }
-		else if(kw=="count" ){_functions.push_back(&kgsummary_::count)  ; PreCal1=true; }
-		else if(kw=="devsq" ){_functions.push_back(&kgsummary_::devsq)  ; PreCal1=true; }
-		else if(kw=="var"   ){_functions.push_back(&kgsummary_::var)    ; PreCal1=true; }
-		else if(kw=="uvar"  ){_functions.push_back(&kgsummary_::uvar)   ; PreCal1=true; }
-		else if(kw=="sd"    ){_functions.push_back(&kgsummary_::sd)     ; PreCal1=true; }
-		else if(kw=="usd"   ){_functions.push_back(&kgsummary_::usd)    ; PreCal1=true; }
-		else if(kw=="cv"    ){_functions.push_back(&kgsummary_::cv)     ; PreCal1=true; }
-		else if(kw=="min"   ){_functions.push_back(&kgsummary_::minimum); PreCal1=true; }
-		else if(kw=="qtile1"){_functions.push_back(&kgsummary_::qtile1) ; PreCal2=true; }
-		else if(kw=="median"){_functions.push_back(&kgsummary_::median) ; PreCal2=true; }
-		else if(kw=="qtile3"){_functions.push_back(&kgsummary_::qtile3) ; PreCal2=true; }
-		else if(kw=="max"   ){_functions.push_back(&kgsummary_::maximum); PreCal1=true; }
-		else if(kw=="range" ){_functions.push_back(&kgsummary_::range)  ; PreCal1=true; }
-		else if(kw=="qrange"){_functions.push_back(&kgsummary_::qrange) ; PreCal2=true; }
-		else if(kw=="mode"  ){_functions.push_back(&kgsummary_::mode)   ; PreCal2=true; }
-		else if(kw=="ucount"){_functions.push_back(&kgsummary_::ucount) ; PreCal2=true; }
-		else if(kw=="skew"  ){_functions.push_back(&kgsummary_::skew)   ; PreCal3=true; }
-		else if(kw=="kurt"  ){_functions.push_back(&kgsummary_::kurt)   ; PreCal3=true; }
-		else if(kw=="uskew" ){_functions.push_back(&kgsummary_::uskew)  ; PreCal3=true; }
-		else if(kw=="ukurt" ){_functions.push_back(&kgsummary_::ukurt)  ; PreCal3=true; }
+	     	 if(kw=="sum"   ){_functions.push_back(&kgsummary_::sum)    ; _PreCal1=true; }
+	  else if(kw=="mean"  ){_functions.push_back(&kgsummary_::mean)   ; _PreCal1=true; }
+		else if(kw=="count" ){_functions.push_back(&kgsummary_::count)  ; _PreCal1=true; }
+		else if(kw=="devsq" ){_functions.push_back(&kgsummary_::devsq)  ; _PreCal1=true; }
+		else if(kw=="var"   ){_functions.push_back(&kgsummary_::var)    ; _PreCal1=true; }
+		else if(kw=="uvar"  ){_functions.push_back(&kgsummary_::uvar)   ; _PreCal1=true; }
+		else if(kw=="sd"    ){_functions.push_back(&kgsummary_::sd)     ; _PreCal1=true; }
+		else if(kw=="usd"   ){_functions.push_back(&kgsummary_::usd)    ; _PreCal1=true; }
+		else if(kw=="cv"    ){_functions.push_back(&kgsummary_::cv)     ; _PreCal1=true; }
+		else if(kw=="min"   ){_functions.push_back(&kgsummary_::minimum); _PreCal1=true; }
+		else if(kw=="qtile1"){_functions.push_back(&kgsummary_::qtile1) ; _PreCal2=true; }
+		else if(kw=="median"){_functions.push_back(&kgsummary_::median) ; _PreCal2=true; }
+		else if(kw=="qtile3"){_functions.push_back(&kgsummary_::qtile3) ; _PreCal2=true; }
+		else if(kw=="max"   ){_functions.push_back(&kgsummary_::maximum); _PreCal1=true; }
+		else if(kw=="range" ){_functions.push_back(&kgsummary_::range)  ; _PreCal1=true; }
+		else if(kw=="qrange"){_functions.push_back(&kgsummary_::qrange) ; _PreCal2=true; }
+		else if(kw=="mode"  ){_functions.push_back(&kgsummary_::mode)   ; _PreCal2=true; }
+		else if(kw=="ucount"){_functions.push_back(&kgsummary_::ucount) ; _PreCal2=true; }
+		else if(kw=="skew"  ){_functions.push_back(&kgsummary_::skew)   ; _PreCal3=true; }
+		else if(kw=="kurt"  ){_functions.push_back(&kgsummary_::kurt)   ; _PreCal3=true; }
+		else if(kw=="uskew" ){_functions.push_back(&kgsummary_::uskew)  ; _PreCal3=true; }
+		else if(kw=="ukurt" ){_functions.push_back(&kgsummary_::ukurt)  ; _PreCal3=true; }
 		else {
 			ostringstream ss;
 			ss << "unknown keyword: " << kw << ": c=sum|mean|count|ucount|devsq|var|uvar|sd|usd|cv|min|qtile1|median|qtile3|max|range|qrange|mode|skew|kurt|uskew|ukurt" << _c_type;
@@ -597,7 +562,22 @@ void kgSummary::setArgs(void)
 	if(!seqflg && !vs.empty()){ sortingRun(&_iFile,vs);}
 	_kField.set(vs,  &_iFile,_fldByNum);
 	_fField.set(vs_f, &_iFile,_fldByNum);
-
+	
+	size_t s=_fField.size();
+	_Cnt.resize(s,0);
+	_Uct.resize(s,0);
+	_Sum.resize(s,0);
+	_Dv2.resize(s,0);
+	_Dv3.resize(s,0);
+	_Dv4.resize(s,0);
+	_Min.resize(s,0);
+	_Max.resize(s,0);
+	_Qt1.resize(s,0);
+	_Qt2.resize(s,0);
+	_Qt3.resize(s,0);
+	_Mod.resize(s,0);
+	_Mdc.resize(s,0);
+	_NulF.resize(s,0);
 }
 // -----------------------------------------------------------------------------
 // 実行
@@ -626,20 +606,6 @@ int kgSummary::run(void) try
 
 	// グローバル変数(計算部品)の初期化
 	int fldSize=_fField.size();
-	Cnt.resize(fldSize,0);
-	Uct.resize(fldSize,0);
-	Sum.resize(fldSize,0);
-	Dv2.resize(fldSize,0);
-	Dv3.resize(fldSize,0);
-	Dv4.resize(fldSize,0);
-	Min.resize(fldSize,0);
-	Max.resize(fldSize,0);
-	Qt1.resize(fldSize,0);
-	Qt2.resize(fldSize,0);
-	Qt3.resize(fldSize,0);
-	Mod.resize(fldSize,0);
-	Mdc.resize(fldSize,0);
-	NulF.resize(fldSize,0);
 
 	// 結果格納変数の領域確保
 	vector<vector<kgVal> > result;
@@ -654,22 +620,22 @@ int kgSummary::run(void) try
 	while(_iFile.blkset()!=EOF){
 
 		// 前計算(sum,mean等)
-		if(PreCal1) kgsummary_::preCal1(_iFile, _fField,_null);
+		if(_PreCal1) kgsummary_::preCal1(this,_iFile, _fField,_null);
 
 		// 前計算(median,qtile1等)
-		if(PreCal2) kgsummary_::preCal2(_iFile, _fField,_null);
+		if(_PreCal2) kgsummary_::preCal2(this,_iFile, _fField,_null);
 
 		// 前計算(偏差の３乗和，４乗和)
-		if(PreCal3) kgsummary_::preCal3(_iFile, _fField,_null);
+		if(_PreCal3) kgsummary_::preCal3(this,_iFile, _fField,_null);
 
 		// 計算の実行本体
 		for(std::size_t k=0; k<_functions.size(); k++){
-			_functions.at(k)(result.at(k),_null );
+			_functions.at(k)(this,result.at(k),_null );
 		}
 
 		// 結果出力
 		for(int i=0; i<fldSize; i++){
-			if(_assertNullIN && NulF.at(i) ) { _existNullIN  = true;}
+			if(_assertNullIN && _NulF.at(i) ) { _existNullIN  = true;}
 			// k=項目出力
 			for(std::size_t j=0; j<_kField.size(); j++){
 				_oFile.writeStr(_iFile.getOldVal(_kField.num(j)),false);
