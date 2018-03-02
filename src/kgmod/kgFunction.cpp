@@ -3815,6 +3815,17 @@ void kgFunction_strchr::run(void)
 	}
 	_result.r(static_cast<double>(cnt));
 }
+// -----------------------------------------------------------------------------
+// strcmp(文字列,文字列) => 数値 : 文字列の比較
+// -----------------------------------------------------------------------------
+void kgFunction_strcmp::run(void)
+{	
+	int cmp = strcmp(_args.at(0)->s(),_args.at(1)->s());
+
+	     if(cmp == 0) { _result.r(0); }
+	else if(cmp <  0) { _result.r(-1);}
+	else              { _result.r(1); }
+}
 // ============================================================================
 // 正規表現関連クラス
 // ============================================================================
@@ -4380,7 +4391,7 @@ kgFuncMap::kgFuncMap(void){
   _func_map["matchas_SS*" ]= lambda::bind(lambda::new_ptr<kgFunction_matchas   >());
   _func_map["hasspace_S"  ]= lambda::bind(lambda::new_ptr<kgFunction_hasspace  >());
   _func_map["hasspacew_S" ]= lambda::bind(lambda::new_ptr<kgFunction_hasspacew >());
-//  _func_map["strchr_SS"   ]= lambda::bind(lambda::new_ptr<kgFunction_strchr    >());
+  _func_map["strcmp_SS"   ]= lambda::bind(lambda::new_ptr<kgFunction_strcmp    >());
 
 	_func_vecREG.push_back("cat_SS*");
 	_func_vecREG.push_back("match_SS*");

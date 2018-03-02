@@ -2608,6 +2608,18 @@ class kgFunction_strchr : public kgFunction
 	{_result.type('N');_name="strchr";_minArgc=2;_maxArgc=2;}
 	virtual void run(void);
 };
+// -----------------------------------------------------------------------------
+// strcmp(文字列,文字列) => 数値 : 文字列の文字がある位置を調べる
+// -----------------------------------------------------------------------------
+class kgFunction_strcmp : public kgFunction
+{
+	public:
+	kgFunction_strcmp(void)
+	{_result.type('N');_name="strcmp";_minArgc=2;_maxArgc=2;}
+	virtual void run(void);
+};
+
+
 // ============================================================================
 // 正規表現関連クラス
 // ============================================================================
