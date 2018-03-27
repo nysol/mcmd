@@ -38,16 +38,36 @@ using namespace boost::spirit::classic;
 namespace kgmod { ////////////////////////////////////////////// start namespace
 
 class kgCal_PreRSL{
+	size_t _fldSize;
 	vector<kgVal>   _prvResults;
 	vector< kgAutoPtr1<ptime> > _prvtimeRsls;
 	vector< kgAutoPtr1<date> >  _prvdateRsls;
-	vector< kgAutoPtr2<char> >  _prvcharRsls;
+	//vector< kgAutoPtr2<char> >  _prvcharRsls;
+	char ** _prvcharRsls;
+
 	public:
+		kgCal_PreRSL(void){
+			_fldSize=0;
+			_prvcharRsls=NULL;
+		}
+
+		~kgCal_PreRSL(void){
+			if(_fldSize>0){
+				for(size_t i=0;i<_fldSize;i++){
+					delete [] _prvcharRsls[i];
+				}
+				delete [] _prvcharRsls;
+			}
+		}
 		void resize(size_t i){
-			_prvResults.resize(i);
-			_prvtimeRsls.resize(i);
-			_prvdateRsls.resize(i);
-			_prvcharRsls.resize(i);
+			_fldSize=i;
+			_prvResults.resize(_fldSize);
+			_prvtimeRsls.resize(_fldSize);
+			_prvdateRsls.resize(_fldSize);
+			_prvcharRsls = new char* [_fldSize];
+			for(size_t j=0;j<_fldSize;j++){
+				_prvcharRsls[j] = new char[KG_MAX_STR_LEN];
+			}
 			for(size_t j=0;j<_prvResults.size();j++){
 				_prvResults[j].null(true);
 			}
@@ -63,10 +83,8 @@ class kgCal_PreRSL{
 					// 文字列,時間,日付の場合はデータを複製しておく
 					switch(_prvResults[pos].type()){
 					case 'S':
-						_prvcharRsls[pos].set(new char[KG_MAX_STR_LEN]);
-						p = _prvcharRsls[pos].get();
-						strcpy(p,rls->s());
-						_prvResults[pos].s(p);
+						strcpy(_prvcharRsls[pos],rls->s());
+						_prvResults[pos].s(_prvcharRsls[pos]);
 						break;
 					case 'D':
 						_prvdateRsls[pos].set( new date(*(rls->d())) );
