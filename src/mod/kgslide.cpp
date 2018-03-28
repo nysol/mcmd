@@ -45,6 +45,9 @@ kgSlide::kgSlide(void)
 		#include <help/jp/kgslideHelp.h>
 	#endif
 
+	_d_stock_ap = NULL;
+	_stock_cnt =0;
+
 }
 // -----------------------------------------------------------------------------
 // 入出力ファイルオープン
@@ -110,7 +113,7 @@ void kgSlide::output(int s_pos,int e_pos)
 
 	// 既存データ
 	for(unsigned int i=0;i<_iFile.fldSize();i++){
-		*( _o_stock_ap.get() + i) = _d_stock_ap.at(s_pos*_iFile.fldSize()+i).get();
+		*( _o_stock_ap.get() + i) = _d_stock_ap[s_pos*_iFile.fldSize()+i];
 	}
 
 	// 追加データ
@@ -119,7 +122,7 @@ void kgSlide::output(int s_pos,int e_pos)
 		int cnt =0;
 		if(_last){
 			if(s_pos == e_pos){
-				*( _onew_stock_ap.get()+i) = _d_stock_ap.at(pos_proceed(s_pos,!_reverse)*_iFile.fldSize()+fnum).get(); ;			
+				*( _onew_stock_ap.get()+i) = _d_stock_ap[pos_proceed(s_pos,!_reverse)*_iFile.fldSize()+fnum];			
 				if(_assertNullIN && *(_onew_stock_ap.get()+i)=='\0' ) { _existNullIN  = true;}
 			}
 			else{
@@ -129,7 +132,7 @@ void kgSlide::output(int s_pos,int e_pos)
 		}
 		else{
 			for(int tpos=pos_proceed(s_pos,_reverse); tpos!=e_pos; tpos=pos_proceed(tpos,_reverse),cnt++){
-				*( _onew_stock_ap.get() + i*_interval + cnt ) = _d_stock_ap.at(tpos*_iFile.fldSize()+fnum).get();
+				*( _onew_stock_ap.get() + i*_interval + cnt ) = _d_stock_ap[tpos*_iFile.fldSize()+fnum];
 				if(_assertNullIN && *( _onew_stock_ap.get() + i*_interval + cnt ) =='\0' ) { _existNullIN  = true;}
 			}
 			for(;cnt<_interval;cnt++){
@@ -180,11 +183,23 @@ int kgSlide::run(void) try
 	_oFile.writeFldName(_iFile,outfld);
 
 	// データストック領域確保:項目数*(num+1)分
-	_d_stock_ap.resize(_iFile.fldSize()*(_interval+1));
+	_stock_cnt = _iFile.fldSize()*(_interval+1);
+	try{
+		_d_stock_ap = new char*[_iFile.fldSize()*(_interval+1)];
+	} catch(...) {
+		_d_stock_ap=NULL;
+		throw kgError("memory allocation error ");
+	}
+	
 	for(unsigned int i=0;i<_iFile.fldSize()*(_interval+1);i++){
 		try {
-			_d_stock_ap.at(i).set( new char[KG_MAX_STR_LEN] );
+			_d_stock_ap[i] = new char[KG_MAX_STR_LEN];
 		} catch(...) {
+			for(size_t j=0;j<i;j++){
+				delete [] _d_stock_ap[j];
+			}
+			delete [] _d_stock_ap;
+			_d_stock_ap = NULL;
 			throw kgError("memory allocation error ");
 		}
 	}	
@@ -206,7 +221,7 @@ int kgSlide::run(void) try
 
 		// oldデータをセット
 		for(unsigned int i=0;i<_iFile.fldSize();i++){
-			strcpy(_d_stock_ap.at(pos*_iFile.fldSize()+i).get(),_iFile.getOldVal(i));
+			strcpy(_d_stock_ap[pos*_iFile.fldSize()+i],_iFile.getOldVal(i));
 		}
 
 		pos = pos_proceed(pos);

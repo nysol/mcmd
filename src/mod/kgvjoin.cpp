@@ -142,17 +142,6 @@ int kgVjoin::run(void) try
 		_itmSet[item]=taxo;
 	}
 
-	//文字列生成用領域
-	vector<kgAutoPtr2<char> > rls_ap;
-	rls_ap.resize(_vfField.size());
-	for(unsigned int i=0;i<_vfField.size();i++){
-		try {
-			rls_ap.at(i).set(new char[KG_MAX_STR_LEN]);
-		} catch(...) {
-			throw kgError("memory allocation error ");
-		}
-	}	
-
 	//出力項目名出力 追加 or 置換
 	if(_add_flg) { _oFile.writeFldName(_iFile,_vfField,true);}
 	else				 { _oFile.writeFldName(_vfField, true);}

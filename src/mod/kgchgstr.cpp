@@ -177,63 +177,96 @@ int kgChgstr::run(void) try
 	char** constr = ap1.get();
 
 	// 部分文字列置換の場合の置換後文字列領域の確保
-	vector<char*> buf;
-	vector<kgAutoPtr2<char> > ap2;
+	//vector<char*> buf;
+	//vector<kgAutoPtr2<char> > ap2;
+	char **buf = NULL;
+	size_t fcnt =_fField.size();
+
 	if(_substr){
-		ap2.resize(_fField.size());
-		for(size_t i=0;i<_fField.size();i++){
+		try{
+			buf = new char*[_fField.size()];
+		} catch(...) {
+			buf=NULL;
+			throw kgError("memory allocation error ");
+		}	
+
+		for(unsigned int i=0;i<fcnt;i++){
 			try {
-				ap2.at(i).set( new char[KG_MAX_STR_LEN] );
+				buf[i] = new char[KG_MAX_STR_LEN];
 			} catch(...) {
+				for(size_t j=0;j<i;j++){
+					delete [] buf[j];
+				}
+				delete [] buf;
+				buf = NULL;
 				throw kgError("memory allocation error ");
 			}
-			buf.push_back( ap2.at(i).get() );
 		}
-	}
-
-	// データ出力
-	while(EOF != _iFile.read() ){
-		for(size_t  i=0;i<_fField.size();i++){
-			bool match=false;	
-			if(*( _iFile.getVal(_fField.num(i)) ) == '\0'){ 
-				*(constr+i)=const_cast<char*>("");
-				if(_assertNullIN) { _existNullIN  = true;}
-				if(_assertNullOUT){ _existNullOUT = true;}
-			}
-			else{
-				if(_substr){
-					if(_widechr){
-						match=chgstrSub(buf.at(i),_iFile.getVal(_fField.num(i)),_cFieldSubw);
+	}	
+	try{
+		// データ出力
+		while(EOF != _iFile.read() ){
+			for(size_t  i=0;i<_fField.size();i++){
+				bool match=false;	
+				if(*( _iFile.getVal(_fField.num(i)) ) == '\0'){ 
+					*(constr+i)=const_cast<char*>("");
+					if(_assertNullIN) { _existNullIN  = true;}
+					if(_assertNullOUT){ _existNullOUT = true;}
+				}
+				else{
+					if(_substr){
+						if(_widechr){
+							match=chgstrSub(buf[i],_iFile.getVal(_fField.num(i)),_cFieldSubw);
+						}else{
+							match=chgstrSub(buf[i],_iFile.getVal(_fField.num(i)),_cFieldSub );
+						}
+						*(constr+i)=buf[i];
 					}else{
-						match=chgstrSub(buf.at(i),_iFile.getVal(_fField.num(i)),_cFieldSub );
+						map<string,string>::iterator k
+							= _cField.find(_iFile.getVal(_fField.num(i)));
+						//条件に一致するかチェック
+						if( k != _cField.end() ){//一致した場合
+							*(constr+i)=const_cast<char*>((k->second).c_str());
+							match=true;
+						}
 					}
-					*(constr+i)=buf.at(i);
-				}else{
-					map<string,string>::iterator k
-						= _cField.find(_iFile.getVal(_fField.num(i)));
-					//条件に一致するかチェック
-					if( k != _cField.end() ){//一致した場合
-						*(constr+i)=const_cast<char*>((k->second).c_str());
-						match=true;
-					}
-				}
-				//一致しなかった場合	 O=:指定文字列,F:項目値,デフォルト:NULL
-				if(!match){
-					if   (_estrflg) { *(constr+i) = const_cast<char*>(_elsestr.c_str());}
-					else if(_F_flg) { *(constr+i) = _iFile.getVal(_fField.num(i));}
-					else            { 
-						*(constr+i) = const_cast<char*>("");
-						if(_assertNullOUT){ _existNullOUT = true;}
+					//一致しなかった場合	 O=:指定文字列,F:項目値,デフォルト:NULL
+					if(!match){
+						if   (_estrflg) { *(constr+i) = const_cast<char*>(_elsestr.c_str());}
+						else if(_F_flg) { *(constr+i) = _iFile.getVal(_fField.num(i));}
+						else            { 
+							*(constr+i) = const_cast<char*>("");
+							if(_assertNullOUT){ _existNullOUT = true;}
+						}
 					}
 				}
 			}
+			if(_add_flg)	{ _oFile.writeFld(_iFile.getFld(),_iFile.fldSize(),constr,_fField.size());}
+			else					{ _oFile.writeFld(_iFile.getFld(),_fField.getFlg_p(),constr);		}		
 		}
-		if(_add_flg)	{ _oFile.writeFld(_iFile.getFld(),_iFile.fldSize(),constr,_fField.size());}
-		else					{ _oFile.writeFld(_iFile.getFld(),_fField.getFlg_p(),constr);		}		
+
+		_iFile.close();
+		_oFile.close();
+
+	}catch(kgError& err){
+		if(buf!=NULL){
+			for(size_t i=0;i<fcnt;i++){
+				delete [] buf[i];
+			}
+			delete [] buf;
+		}
+		throw err;
+	}
+	catch(...) {
+		if(buf!=NULL){
+			for(size_t i=0;i<fcnt;i++){
+				delete [] buf[i];
+			}
+			delete [] buf;
+		}
+		throw kgError("memory alloc error ");
 	}
 
-	_iFile.close();
-	_oFile.close();
 
 	// 終了処理(メッセージ出力,thread pipe終了通知)
 	successEnd();

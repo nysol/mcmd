@@ -44,10 +44,11 @@ class kgSlide : public kgModIncludeSort
 	bool 		 _reverse;	//-r
 	bool 		 _last;			//-l
 	int			 _interval;	//t=
+	size_t 	 _stock_cnt;
 
 	// データ確保用、出力用
 	void output(int spos,int epos);
-	vector<kgAutoPtr2<char> > _d_stock_ap;
+	char ** _d_stock_ap;
 	kgAutoPtr2<char*> _o_stock_ap;
 	kgAutoPtr2<char*> _onew_stock_ap;
 
@@ -63,7 +64,14 @@ class kgSlide : public kgModIncludeSort
 public:
   // コンストラクタ
 	kgSlide(void);
-	~kgSlide(void){}
+	~kgSlide(void){
+		if(_d_stock_ap!=NULL){
+			for(size_t j=0;j<_stock_cnt;j++){
+				delete [] _d_stock_ap[j];
+			}
+			delete [] _d_stock_ap;
+		}
+	}
 
 	// 処理行数取得メソッド
 	size_t iRecNo(void) const { return _iFile.recNo(); }

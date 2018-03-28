@@ -45,7 +45,8 @@ kgWindow::kgWindow(void)
 	#ifdef JPN_FORMAT
 		#include <help/jp/kgwindowHelp.h>
 	#endif
-
+	_d_stock_ap =NULL;
+	_stock_cnt=0;
 
 }
 // -----------------------------------------------------------------------------
@@ -106,10 +107,10 @@ void kgWindow::output(int s_pos,int e_pos, int nkpos)
 	int tpos = s_pos;
 	do {
 		for(unsigned int i=0;i<_wkField.size();i++){
-			*( _o_stock_ap.get() + i) = _d_stock_ap.at(nkpos*_iFile.fldSize()+_wkField.num(i)).get();
+			*( _o_stock_ap.get() + i) = _d_stock_ap[nkpos*_iFile.fldSize()+_wkField.num(i)];
 		}
 		for(unsigned int i=0;i<_iFile.fldSize();i++){
-			*( _o_stock_ap.get() + _wkField.size() + i) = _d_stock_ap.at(tpos*_iFile.fldSize()+i).get();
+			*( _o_stock_ap.get() + _wkField.size() + i) = _d_stock_ap[tpos*_iFile.fldSize()+i];
 		}
 		_oFile.writeFld(_iFile.fldSize()+_wkField.size(),_o_stock_ap.get());	
 
@@ -144,11 +145,22 @@ int kgWindow::run(void) try
 	}
 
 	// データストック領域確保:項目数*(num)分
-	_d_stock_ap.resize(_iFile.fldSize()*(_interval));
-	for(unsigned int i=0;i<_iFile.fldSize()*_interval;i++){
+	_stock_cnt = _iFile.fldSize()*(_interval);
+	try{
+		_d_stock_ap = new char*[_stock_cnt];
+	} catch(...) {
+		_d_stock_ap=NULL;
+		throw kgError("memory allocation error ");
+	}	
+	for(unsigned int i=0;i<_stock_cnt;i++){
 		try {
-			_d_stock_ap.at(i).set( new char[KG_MAX_STR_LEN] );
+			_d_stock_ap[i] = new char[KG_MAX_STR_LEN];
 		} catch(...) {
+			for(size_t j=0;j<i;j++){
+				delete [] _d_stock_ap[j];
+			}
+			delete [] _d_stock_ap;
+			_d_stock_ap = NULL;
 			throw kgError("memory allocation error ");
 		}
 	}
@@ -168,7 +180,7 @@ int kgWindow::run(void) try
 
 		// oldデータをセット
 		for(unsigned int i=0;i<_iFile.fldSize();i++){
-			strcpy(_d_stock_ap.at(pos*_iFile.fldSize()+i).get(),_iFile.getOldVal(i));
+			strcpy(_d_stock_ap[pos*_iFile.fldSize()+i],_iFile.getOldVal(i));
 		}
 		pos = pos_inc(pos);
 
