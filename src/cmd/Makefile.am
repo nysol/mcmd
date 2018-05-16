@@ -78,6 +78,7 @@ mtra \
 mtrafld \
 mtraflg \
 muniq \
+municat \
 mvcat \
 mvcount \
 mvcommon \
@@ -312,6 +313,9 @@ mtraflg_LDADD = $(top_srcdir)/src/kgmod/libkgmod@CORE_MAJOR_VERSION@.la $(top_bu
 
 muniq_SOURCES = muniq.cpp
 muniq_LDADD = $(top_srcdir)/src/kgmod/libkgmod@CORE_MAJOR_VERSION@.la $(top_builddir)/src/mod/libmcmd@MOD_MAJOR_VERSION@.la
+
+municat_SOURCES = municat.cpp
+municat_LDADD = $(top_srcdir)/src/kgmod/libkgmod@CORE_MAJOR_VERSION@.la $(top_builddir)/src/mod/libmcmd@MOD_MAJOR_VERSION@.la
 
 mvcat_SOURCES = mvcat.cpp
 mvcat_LDADD = $(top_srcdir)/src/kgmod/libkgmod@CORE_MAJOR_VERSION@.la $(top_builddir)/src/mod/libmcmd@MOD_MAJOR_VERSION@.la

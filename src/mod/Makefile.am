@@ -92,6 +92,7 @@ kgtra.cpp \
 kgtrafld.cpp \
 kgtraflg.cpp \
 kguniq.cpp \
+kgunicat.cpp \
 kgvcat.cpp \
 kgvcommon.cpp \
 kgvcount.cpp \
@@ -181,6 +182,7 @@ kgtra.h \
 kgtrafld.h \
 kgtraflg.h \
 kguniq.h \
+kgunicat.h \
 kgvcat.h \
 kgvcommon.h \
 kgvcount.h \
