@@ -40,6 +40,7 @@ class kgUnicat:public kgModIncludeSort
 	kgCSVkey _mFile;   // m=
 	kgCSVout _oFile;   // o=
 
+	bool _nouniq;
 	// 引数セット
 	void setArgs(void);
 

@@ -52,7 +52,7 @@ kgUnicat::kgUnicat(void)
 void kgUnicat::setArgs(void)
 {
 	// パラメータチェック
-	_args.paramcheck("i=,o=,m=,k=,K=,-q",kgArgs::ALLPARAM);
+	_args.paramcheck("i=,o=,m=,k=,K=,-q,-nouniq",kgArgs::ALLPARAM);
 
 	// 入出力ファイルオープン
 	kgstr_t ifile = _args.toString("i=",false);
@@ -80,6 +80,8 @@ void kgUnicat::setArgs(void)
 
 	_iFile.read_header();
 	_mFile.read_header();
+	
+	_nouniq = _args.toBool("-nouniq");
 	
 	bool seqflg = _args.toBool("-q");
 	if(_nfn_i) { seqflg = true; }
@@ -177,6 +179,9 @@ int kgUnicat::run(void) try
 		if(cmpflg==0){
 			// 一致
 			_oFile.writeFld(_iFile.fldSize(),_iFile.getOldFld());
+			if(_nouniq&& !wflg){
+				_oFile.writeFld(_mFile.fldSize(),_mFile.getOldFld());
+			}
 			wflg=true;
 
 		}else if( cmpflg>0 && !wflg ){
