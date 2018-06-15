@@ -142,6 +142,8 @@ int kgUnicat::run(void) try
 		if(cmpflg<=0){
 			while(true){
 				if( _iFile.read() == EOF){ traEnd=true;}
+				if( _iFile.begin() ){ continue;}
+				if(_nouniq){ break;}
 				if( _iFile.keybreak() ){ break;}
 			}
 		}
@@ -150,6 +152,12 @@ int kgUnicat::run(void) try
 		if(cmpflg> 0 || begin){
 			while(true){
 				if( _mFile.read() == EOF){ mstEnd=true;}
+				if( _mFile.begin() ){ continue;}
+				if(_nouniq){ 
+					wflg=false;
+					begin=false;
+					break;
+				}
 				if( _mFile.keybreak() ){ 
 					wflg=false;
 					begin=false;
