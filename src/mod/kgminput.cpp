@@ -103,8 +103,10 @@ int kgMinput::run(void) try
 		}
 		x+=mv;
 	}
-	clearerr(ffp);
-	fseek(ffp,0,SEEK_SET);
+	fclose(ffp);
+	ffp = fopen(_i_s.c_str(),"r");
+	//clearerr(ffp);
+	//fseek(ffp,0,SEEK_SET);
 
 	if(_f_str.size()!=0&&_f_str.size()!=item){
 		throw kgError("unmatch size of f=");
