@@ -103,6 +103,7 @@ int kgMinput::run(void) try
 		}
 		x+=mv;
 	}
+	clearerr(ffp);
 	fseek(ffp,0,SEEK_SET);
 
 	if(_f_str.size()!=0&&_f_str.size()!=item){
