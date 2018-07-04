@@ -32,6 +32,7 @@ kgcommon.cpp \
 kgcount.cpp \
 kgcross.cpp \
 kg2cross.cpp \
+kg2tee.cpp \
 kgcsv2arff.cpp \
 kgcsv2json.cpp \
 kgcsvconv.cpp \
@@ -42,6 +43,7 @@ kgdelnull.cpp \
 kgdsp.cpp \
 kgduprec.cpp \
 kgfldname.cpp \
+kgfifo.cpp \
 kgfsort.cpp \
 kghashavg.cpp \
 kghashsum.cpp \
@@ -122,6 +124,7 @@ kgcommon.h \
 kgcount.h \
 kgcross.h \
 kg2cross.h \
+kg2tee.h \
 kgcsv2arff.h \
 kgcsv2json.h \
 kgcsvconv.h \
@@ -132,6 +135,7 @@ kgdsp.h \
 kgduprec.h \
 kgdata.h \
 kgfldname.h \
+kgfifo.h \
 kgfsort.h \
 kghashavg.h \
 kghashsum.h \

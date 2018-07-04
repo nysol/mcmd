@@ -27,6 +27,7 @@ mdformat \
 mdsp \
 mduprec \
 mfldname \
+mfifo \
 mfsort \
 mhashavg \
 mhashsum \
@@ -73,6 +74,7 @@ msum \
 msummary \
 mtab2csv \
 mtee \
+m2tee \
 mtonull \
 mtra \
 mtrafld \
@@ -364,6 +366,13 @@ msummary_LDADD = $(top_srcdir)/src/kgmod/libkgmod@CORE_MAJOR_VERSION@.la $(top_b
 
 mtab2csv_SOURCES = mtab2csv.cpp
 mtab2csv_LDADD = $(top_srcdir)/src/kgmod/libkgmod@CORE_MAJOR_VERSION@.la $(top_builddir)/src/mod/libmcmd@MOD_MAJOR_VERSION@.la
+
+m2tee_SOURCES = m2tee.cpp
+m2tee_LDADD = $(top_srcdir)/src/kgmod/libkgmod@CORE_MAJOR_VERSION@.la $(top_builddir)/src/mod/libmcmd@MOD_MAJOR_VERSION@.la
+
+mfifo_SOURCES = mfifo.cpp
+mfifo_LDADD = $(top_srcdir)/src/kgmod/libkgmod@CORE_MAJOR_VERSION@.la $(top_builddir)/src/mod/libmcmd@MOD_MAJOR_VERSION@.la
+
 
 mgridindex_SOURCES = mgridindex.cpp
 mgridindex_LDADD = $(top_srcdir)/src/kgmod/libkgmod@CORE_MAJOR_VERSION@.la $(top_builddir)/src/mod/libmcmd@MOD_MAJOR_VERSION@.la
