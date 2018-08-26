@@ -290,7 +290,7 @@ kgxml2csv.h \
 ../help/en/kgwindowHelp.h \
 ../help/en/kgxml2csvHelp.h \
 ../help/jp/kgfifoHelp.h \
-../help/en/kgunicatHelp.h \
+../help/jp/kgunicatHelp.h \
 ../help/jp/kg2crossHelp.h \
 ../help/jp/kgaccumHelp.h \
 ../help/jp/kgarff2csvHelp.h \
