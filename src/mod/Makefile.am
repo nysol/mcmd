@@ -378,7 +378,9 @@ kgxml2csv.h \
 dat/iris_dat.h \
 dat/abalone_dat.h \
 dat/man0.h \
+dat/man0_en.h \
 dat/man1.h \
+dat/man1_en.h \
 dat/yakiniku_en.h \
 dat/yakiniku_jp.h \
 dat/tutorial_jp_dat.h \
