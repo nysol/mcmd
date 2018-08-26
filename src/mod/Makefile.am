@@ -199,6 +199,8 @@ kgvsort.h \
 kgvuniq.h \
 kgwindow.h \
 kgxml2csv.h \
+../help/en/kgfifoHelp.h \
+../help/en/kgunicatHelp.h \
 ../help/en/kg2crossHelp.h \
 ../help/en/kgaccumHelp.h \
 ../help/en/kgarff2csvHelp.h \
@@ -287,6 +289,8 @@ kgxml2csv.h \
 ../help/en/kgvuniqHelp.h \
 ../help/en/kgwindowHelp.h \
 ../help/en/kgxml2csvHelp.h \
+../help/jp/kgfifoHelp.h \
+../help/en/kgunicatHelp.h \
 ../help/jp/kg2crossHelp.h \
 ../help/jp/kgaccumHelp.h \
 ../help/jp/kgarff2csvHelp.h \
