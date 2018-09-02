@@ -52,7 +52,7 @@ kgNrcommon::kgNrcommon(void)
 void kgNrcommon::setArgs(void)
 {
 	// パラメータチェック
-	_args.paramcheck("i=,o=,m=,k=,K=,r=,R=,u=,-r,-q",kgArgs::COMMON|kgArgs::IODIFF|kgArgs::NULL_KEY);
+	_args.paramcheck("i=,o=,m=,k=,K=,r=,rf=,R=,u=,-r,-q",kgArgs::COMMON|kgArgs::IODIFF|kgArgs::NULL_KEY);
 
 	// 入出力ファイルオープン
 	kgstr_t ifile = _args.toString("i=",false);
@@ -88,7 +88,15 @@ void kgNrcommon::setArgs(void)
 	}
 
 	// v= 項目引数のセット(指定するのは１項目)
-	vector< vector<kgstr_t> >  vvs_rs = _args.toStringVecVec("r=","%:",2,true);
+	vector< vector<kgstr_t> >  vvs_rs = _args.toStringVecVec("r=","%:",2,false);
+	if(!vvs_rs[0].empty()){
+		kgMsg asertmsg(kgMsg::WAR, _env);
+		asertmsg.output("r= is deprecated,use rf= parameter");	
+	}
+	else{
+		vvs_rs = _args.toStringVecVec("rf=","%:",2,true);
+	}
+
 	// R= 項目引数のセット(指定するのは２項目)
 	vector< vector<kgstr_t> >  vvs_r = _args.toStringVecVec("R=","%:",2,true);
 

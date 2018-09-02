@@ -45,4 +45,5 @@ sudo /sbin/ldconfig
 %{_prefix}/bin/m*
 %{_prefix}/lib/libkgmod*
 %{_prefix}/lib/libmcmd*
+%{_prefix}/include/kg*.h
 

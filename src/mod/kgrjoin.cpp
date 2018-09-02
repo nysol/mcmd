@@ -52,7 +52,7 @@ kgRjoin::kgRjoin(void)
 void kgRjoin::setArgs(void)
 {
 	// パラメータチェック
-	_args.paramcheck("f=,i=,o=,m=,k=,K=,r=,R=,-n,-lo,-q",kgArgs::ALLPARAM);
+	_args.paramcheck("f=,i=,o=,m=,k=,K=,r=,rf=,R=,-n,-lo,-q",kgArgs::ALLPARAM);
 
 	//ファイル指定チェック
 	kgstr_t ifile = _args.toString("i=",false);
@@ -85,12 +85,22 @@ void kgRjoin::setArgs(void)
 	vector< vector<kgstr_t> >  vvs = _args.toStringVecVec("f=",':',2,false);
 
 	// r= 項目引数のセット(指定するのは１項目)
-	vector< vector<kgstr_t> >  vvs_r = _args.toStringVecVec("r=","%:",2,true);
+	vector< vector<kgstr_t> >  vvs_r  = _args.toStringVecVec("r=","%:",2,false);
+	
+	if(!vvs_r[0].empty()){
+		kgMsg asertmsg(kgMsg::WAR, _env);
+		asertmsg.output("r= is deprecated,use rf= parameter");	
+	}
+	else{
+		vvs_r = _args.toStringVecVec("rf=","%:",2,true);
+	}
 	if( vvs_r[0].size()!=1){
 		ostringstream ss;
-		ss << "r= must take just one item : r= size:" << _rField.size() ;
+		ss << "rf=(r=) must take just one item : rf=(r=) size:" << vvs_r[0].size();
 		throw kgError(ss.str());
 	}
+
+
 	//比較タイプセット(nがあるとtrueをセット(数字ソートになる))
 	if( vvs_r[1][0].find("n") == kgstr_t::npos){
 		_cmp_type = false;
