@@ -5,6 +5,7 @@
 #include <vector>
 #include <queue>
 #include <csignal>
+#include <cerrno>
 #include <fcntl.h>
 #include <sys/stat.h>
 
