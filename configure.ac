@@ -60,7 +60,8 @@ AC_ARG_WITH([boost],
     [--with-boost=PATH],[PATH is path to boost library]),
   [BOOSTPATH=$with_boost],[BOOSTPATH=/usr/local])
 
-CXXFLAGS="-I $BOOSTPATH/include $CXXFLAGS"
+CXXFLAGS="-I$BOOSTPATH/include -L$BOOSTPATH/lib $CXXFLAGS"
+CFLAGS="-I$BOOSTPATH/include -L$BOOSTPATH/lib $CFLAGS"
 
 AC_SUBST([BOOSTPATH], [$BOOSTPATH])
 
