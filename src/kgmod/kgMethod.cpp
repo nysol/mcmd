@@ -42,36 +42,17 @@ size_t kglib::cntFldToken(char *str, size_t maxRecLen,bool fmtErrSkip)
 	char* border=str+maxRecLen;
 	unsigned int fldCnt=0;
 	while(1){
-		if(*str=='"'){
-			while(1){
-				str++; if(str>=border) kgError::recLenErr(maxRecLen);
-				if(*str=='"'){
-					str++; if(str>=border) kgError::recLenErr(maxRecLen);
-					if(*str==','){
-						fldCnt++;
-						str++; if(str>=border) kgError::recLenErr(maxRecLen);
-						break;
-					} else if( *str=='\n' || *str=='\r' || *str=='\0'){
-						return fldCnt+1;
-					} else if(*str!='"' && !fmtErrSkip){ 
-						throw kgError("csv format error"); 
-					}
-				}else if(*str=='\0'){
-					return fldCnt+1;
-				}
-			}
-		}else{
-			while(1){
-				if(*str==','){
-					fldCnt++;
-					str++; if(str>=border) kgError::recLenErr(maxRecLen);
-					break;
-				} else if( *str=='\n' || *str=='\r' || *str=='\0'){
-					return fldCnt+1;
-				}
-				str++; if(str>=border){ kgError::recLenErr(maxRecLen);}
-			}
+		if(*str=='\t'){
+			fldCnt++;
+			str++; 
 		}
+		else if( *str=='\n' || *str=='\r' || *str=='\0'){
+			return fldCnt+1;
+		}
+		else{
+			str++; 
+		}
+		if(str>=border){ kgError::recLenErr(maxRecLen);}
 	}
 	return fldCnt;
 }
@@ -102,31 +83,14 @@ char* kglib::sepRecTokenNdq(char* str)
 char* kglib::sepRecToken(char *str, size_t maxRecLen)
 {
 	char *border=str+maxRecLen;
-	while(1){
-		if(*str=='"'){
-			str++;
-			for( ; str<border; str++){
-				// DQの判定
-				if(*str=='"'){
-					str++; if(str>=border) kgError::recLenErr();
-							 if(*str==',' ){          ; str++; break;     }  
-					else if(*str=='\n'){ *str='\0';        return str;}  
-					else if(*str=='\r'){ *str='\0';        return str;}  
-					else if(*str!='"') { throw kgError("csv format error"); } 
-				}
-			}
-			if(str>=border) kgError::recLenErr();
-		}else{
-			for( ; str<border; str++){
-						 if(*str==',' ){	        ; str++; break;     }
-				else if(*str=='\n'){
-					*str='\0';
-					return str;
-				}	//UNIX
-			} 
-			if(str>=border) kgError::recLenErr();
-		}
-	}
+	for( ; str<border; str++){
+		if(*str=='\n'){
+			*str='\0';
+			return str;
+		}	
+	} 
+	if(str>=border) kgError::recLenErr();
+	return NULL;
 }
 // ----------------------------------------------------------------------------
 // 項目分割（DQ考慮しない）
@@ -144,7 +108,7 @@ char* kglib::sepFldTokenNdq(char **pnt, size_t fldCnt, char *str)
 		if(j>=fldCnt){ kgError::fldCntErr(fldCnt,j+1); }
 		*(pnt+j)=str; j++;
 		for( ; str<border; str++){
-					 if(*str==',' ){ *str='\0'; str++; break;		 }  
+					 if(*str=='\t' ){ *str='\0'; str++; break;		 }  
 			else if(*str=='\n'){
 				*str='\0';
 				if(j==fldCnt){ return str;}
@@ -166,39 +130,22 @@ char* kglib::sepFldToken(char **pnt, size_t fldCnt, char *str, size_t maxRecLen)
 {
 	size_t j=0;
 	char *border=str+maxRecLen;
-	char *rpt;
+
 	while(1){
 		if(j>=fldCnt){ kgError::fldCntErr(fldCnt,j+1);}
-		rpt=str;
-		if(*str=='"'){
-			str++;rpt++;
-			*(pnt+j)=str; j++;
-			for( ; rpt<border; *(++str)=*(++rpt)){
-				if(*str=='"'){
-					*(++str)=*(++rpt); if(str>=border) kgError::recLenErr();
-							 if(*str==',' ){ *(str-1)='\0'; str=rpt+1; break; }
-					else if(*str=='\n'){
-						*(str-1)='\0';
-						if(j==fldCnt){ return rpt;}
-						else{ kgError::fldCntErr(fldCnt,j);}
-					}
-					else if(*str=='"' ){ str--		    ;                   }
-					else{ throw kgError("csv format error"); }
-				}
+		*(pnt+j)=str;	j++;
+		for( ; str<border; str++){
+			if(*str=='\t' ){
+				*str='\0'; str++; 
+				break;	    
 			}
-			if(str>=border) kgError::recLenErr();
-		}else{
-			*(pnt+j)=str;	j++;
-			for( ; str<border; str++){
-						 if(*str==',' ){ *str='\0'; str++; break;	    }
-				else if(*str=='\n'){
-					*str='\0';
-					if(j==fldCnt){ return str;}
-					else{ kgError::fldCntErr(fldCnt,j);}
-				}
+			else if(*str=='\n'){
+				*str='\0';
+				if(j==fldCnt){ return str;}
+				else{ kgError::fldCntErr(fldCnt,j);}
 			}
-			if(str>=border) kgError::recLenErr();
 		}
+		if(str>=border) kgError::recLenErr();
 	}
 }
 
@@ -213,48 +160,7 @@ char* kglib::sepFldToken(char **pnt, size_t fldCnt, char *str)
 		if(j>=fldCnt){
 			kgError::fldCntErr(fldCnt,j+1);
 		}
-		rpt=str;
-		// ダブルクオーツあり
-		if(*str=='"'){
-			str++;rpt++;
-			*(pnt+j)=str; j++;
-			for( ; rpt<border; *(++str)=*(++rpt)){
-				// DQの判定
-				if(*str=='"'){
-					*(++str)=*(++rpt); if(str>=border) kgError::recLenErr();
-							 if(*str==',' ){*(str-1)='\0'; str=rpt+1; break; } //Comma
-					else if(*str=='\0'){
-						*(str-1)='\0';return rpt; 
-						//項目数のチェック
-						if(j==fldCnt){ return rpt;}
-						else{ 	kgError::fldCntErr(fldCnt,j);}
-					}//'\0'
-					else if(*str=='"' ){ str--		    ;                   } // DQ("")
-				}
-			}
-			if(str>=border) kgError::recLenErr();
-		// シングルクオーツあり
-		}else if(*str=='\''){
-			str++;rpt++;
-			*(pnt+j)=str; j++;
-			for( ; rpt<border; *(++str)=*(++rpt)){
-				// DQの判定
-				if(*str=='\''){
-					*(++str)=*(++rpt); if(str>=border) kgError::recLenErr();
-							 if(*str==',' ){ *(str-1)='\0'; str=rpt+1; break; } //Comma
-					else if(*str=='\0'){
-						*(str-1)='\0';
-						//項目数のチェック
-						if(j==fldCnt){ return rpt;}
-						else{ 	kgError::fldCntErr(fldCnt,j);}
-						return rpt;
-					}//'\0'
-					else if(*str=='\'' ){ str--		    ;                   } // SQ('')
-				}
-			}
-			if(str>=border) kgError::recLenErr();
-		}
-		else if(*str==' '){//先頭がスペースは読み飛ばす
+		if(*str==' '){//先頭がスペースは読み飛ばす
 			str++;
 			for( ; str<border; str++){
 				if(*str!=' ') break;
@@ -263,7 +169,10 @@ char* kglib::sepFldToken(char **pnt, size_t fldCnt, char *str)
 		else{
 			*(pnt+j)=str;	j++;
 			for( ; str<border; str++){
-						 if(*str==',' ){ *str='\0'; str++; break;	    } //Comma
+				if(*str=='\t' ){ 
+						 *str='\0'; str++; 
+						 break;	    
+				}
 				else if(*str=='\0'){
 					if(j==fldCnt){ return str;}
 					else{ kgError::fldCntErr(fldCnt,j);}
@@ -285,32 +194,13 @@ char* kglib::sepFldToken(char **pnt, size_t fldCnt, char *str,vector<bool> &sngD
 		if(j>=fldCnt){
 			kgError::fldCntErr(fldCnt,j);
 		}
-		rpt=str;
-		// ダブルクオーツあり
-		if(*str=='"'){
-			dqflg[j]=true;
-			str++;rpt++;
-			*(pnt+j)=str; j++;
-			for( ; rpt<border; *(++str)=*(++rpt)){
-				// DQの判定
-				if(*str=='"'){
-					*(++str)=*(++rpt); if(str>=border) kgError::recLenErr();
-							 if(*str==',' ){ *(str-1)='\0'; str=rpt+1; break; } //Comma
-					else if(*str=='"' ){ str--		    ;                   } // DQ("")
-					else if(*str=='\0' ){  *(str-1)='\0'; rpt++; return rpt;} //EOLなし\0
-					else {sngDQ[j-1]=true;} //DQに囲われた中での単一DQ
-				}
-			}
-			if(str>=border) kgError::recLenErr();
-		// ダブルクオーツなし
-		}else{
-			*(pnt+j)=str;	j++;
-			for( ; str<border; str++){
-						 if(*str==',' ){ *str='\0'; str++; break;	    } //Comma
+
+		*(pnt+j)=str;	j++;
+		for( ; str<border; str++){
+			 if(*str=='\t' ){ *str='\0'; str++; break;	    } //Comma
        else if(*str=='\0'){             str++; return str; } //EOLなし
-			}
-			if(str>=border) kgError::recLenErr();
 		}
+		if(str>=border) kgError::recLenErr();
 	}
 }
 // -----------------------------------------------------------------------------

@@ -250,7 +250,7 @@ public:
 	void writeFldName(vector<kgstr_t> newFld) throw(kgError);
 
 	//区切り文字出力(コンマ、改行、改行[出力行数カウント有り])
-	void writeDlm(void){ *_curPnt++ = ','; }
+	void writeDlm(void){ *_curPnt++ = '\t'; }
 	void writeEolNC(void){ *_curPnt++ = '\n'; }
 	void writeEol(void){
 		_recNo++;

@@ -886,42 +886,41 @@ int kgCSVblk::blkread(void){
 
 	if(_fldbuf->getFld(_blkFld,fldSize_)==EOF){
 		if(_pos == _end) { return EOF;}
-		if(*_pos =='"' && (_pos+1) == _end) { return EOF;}
+		//if(*_pos =='"' && (_pos+1) == _end) { return EOF;}
 		size_t i=0;
-		bool DQflg=false;
-		int DQcnt=0; 
-		if(*_pos=='"'){ _pos++; DQflg=true;}
+		//bool DQflg=false;
+		//int DQcnt=0; 
+		//if(*_pos=='"'){ _pos++; DQflg=true;}
 
 		for(char *p=_pos; p<_end && i<fldSize_ ;p++){
-			if(*p=='"'){DQcnt++;}
+			//if(*p=='"'){DQcnt++;}
 			if(!*p){
 				_blkFld[i]=_pos; 
-				if(DQflg){
-					if(p<_end){ p=p+1+DQcnt; }
-					DQflg=false;
-				}
-				if(p<_end && *(p+1)=='"'&& i+1!=fldSize_){ 
-					//最終項目以外次回読み込み位置セット
-					DQflg=true;
-					p++; 
-				}
+				//if(DQflg){
+				//	if(p<_end){ p=p+1+DQcnt; }
+				//	DQflg=false;
+				//}
+				//if(p<_end && *(p+1)=='"'&& i+1!=fldSize_){ 
+				//	//最終項目以外次回読み込み位置セット
+				//	DQflg=true;
+				//	p++; 
+				//}
 				_pos=p+1; 
-				DQcnt=0;
+				//DQcnt=0;
 				i++;
 			}
 		}
 		if(i<fldSize_){ fldCntErr(fldSize_,i);}
 	}
 	else {
-		int DQcnt=0; 
-
+		//int DQcnt=0; 
 		for (size_t i=0;i<fldSize_;i++){
-			char *p = _blkFld[i]+DQcnt;
+			char *p = _blkFld[i];
 			_blkFld[i] =p;
-			DQcnt =0;
-			if(*p=='"'){ _blkFld[i]++; p++; DQcnt++; }
+			//DQcnt =0;
+			//if(*p=='"'){ _blkFld[i]++; p++; DQcnt++; }
 			while(*p){
-				if(*p=='"'){DQcnt++;}
+				//if(*p=='"'){DQcnt++;}
 				p++;
 			}
 		}

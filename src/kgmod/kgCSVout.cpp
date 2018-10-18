@@ -308,38 +308,21 @@ void kgCSVout::writeStrNdq(const char *str, bool eol)
 // -----------------------------------------------------------------------------
 void kgCSVout::writeStr(const char *str)
 {
-	char *top=_curPnt;
-	char *cpp;
-	int dq=0;
-	while(1){
-		if(dq){
-			while(*str!='\0'){
-				if(_curPnt>=_end) recLenErr();
-				if(*str=='"'){
-					*_curPnt++ = '"';
-					if(_curPnt>=_end) recLenErr();
-				}
-				*_curPnt++ = *str++;
-			}
-			*_curPnt++ = '"';
-		}else{
-			while(*str!='\0'){
-				if(_curPnt>=_end) recLenErr();
-				if(*str=='\n' || *str=='"' || *str==','){
-					for(cpp=_curPnt ; cpp>top; cpp--){
-						*cpp=*(cpp-1);
-					}
-					*top='"';
-					_curPnt++;
-					dq=1;
-					break;
-				}
-				*_curPnt++ = *str++;
-			}
-		}
-		if(*str=='\0') break;
+	while(*str!='\0'){
+		if(_curPnt>=_end) recLenErr();
+		*_curPnt++ = *str++;
+ 	}
+ 	if(_curPnt >= _border) flush();
+/*
+	size_t len = strlen(str);
+
+	if(_curPnt+len>=_end)recLenErr();
+
+	for(size_t i=0;i<len;i++){
+		*_curPnt++ = *str++;
 	}
 	if(_curPnt >= _border) flush();
+*/
 }
 // -----------------------------------------------------------------------------
 // 文字列項目の出力(DQUOTE自動付加):区切り文字付加
