@@ -85,7 +85,7 @@ void kgData::output_dic(void){
 	}
 	::mkdir(dicname,0777);
 
-	for(size_t i=0;dsample_[i][0]!='\0';i++){ 
+	for(size_t i=0;*dsample_[i][0]!='\0';i++){ 
 		if(!strcmp(dsample_[i][0],_vals[0].c_str())){
 			output2(dicname,dsample_[i][1],dsample_[i][2]);
 		}
@@ -96,7 +96,7 @@ void kgData::output_dic(void){
 void kgData::output_file(void){
 
 	int found=0;
-	for(size_t i=0;dsample_[i][0]!='\0';i++){ 
+	for(size_t i=0;*dsample_[i][0]!='\0';i++){ 
 		if( _vals.size() == 1 ){
 			if( !strcmp(dsample_[i][0],_vals[0].c_str()) ){
 				if(_outinfo.empty()){
