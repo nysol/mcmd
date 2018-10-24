@@ -210,9 +210,19 @@ bool kgCSV::sortFldchk(vector<kgstr_t>& fld ,bool fldbynum)
 	vector<kgstr_t> attr;
 	for(kgstr_t::size_type i=0; i<fld.size(); i++){
 		vector <kgstr_t> spfld = splitToken(fld[i],'%');
-		name.push_back(spfld[0]);
-		if(spfld.size()>1){ attr.push_back(spfld[1]); }
-		else {attr.push_back("");}
+
+		if(spfld.size()>0){
+			name.push_back(spfld[0]);
+		}
+		else{
+			name.push_back("");		
+		}
+		if(spfld.size()>1){ 
+			attr.push_back(spfld[1]); 
+		}
+		else {
+			attr.push_back("");
+		}
 	}
 	vector<int> numv = evalFldName(name, attr, this ,fldbynum);
 	
@@ -230,7 +240,7 @@ bool kgCSV::sortFldchk(vector<kgstr_t>& fld ,bool fldbynum)
 			else           { fld.push_back(name[i]); }
 		}
 	}
-	
+
 	for(kgstr_t::size_type i=0; i<name.size(); i++){
 		int num;
 		if(fldbynum){	num = numv[i];}
