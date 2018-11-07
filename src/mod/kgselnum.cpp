@@ -33,7 +33,6 @@ using namespace std;
 using namespace kglib;
 using namespace kgmod;
 
-
 // -----------------------------------------------------------------------------
 // コンストラクタ(モジュール名，バージョン登録)
 // -----------------------------------------------------------------------------
@@ -123,7 +122,7 @@ bool kgSelnum::lineCheck(vector<int>& cnt,char** str)
 {
 	bool rtn=false;
 	for(vector<int>::size_type i=0;i<cnt.size();i++){
-		if(_assertNullIN && *(str+cnt[i])=='\0') { _existNullIN  = true;}
+		if(_assertNullIN && (**(str+cnt[i]))=='\0') { _existNullIN  = true;}
 		double tmpval = atof( *(str+cnt[i]) );
 		if(_reverse){//条件反転
 			if(_sel_flg){//すべて不一致

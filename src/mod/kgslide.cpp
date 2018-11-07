@@ -123,7 +123,7 @@ void kgSlide::output(int s_pos,int e_pos)
 		if(_last){
 			if(s_pos == e_pos){
 				*( _onew_stock_ap.get()+i) = _d_stock_ap[pos_proceed(s_pos,!_reverse)*_iFile.fldSize()+fnum];			
-				if(_assertNullIN && *(_onew_stock_ap.get()+i)=='\0' ) { _existNullIN  = true;}
+				if(_assertNullIN && **(_onew_stock_ap.get()+i)=='\0' ) { _existNullIN  = true;}
 			}
 			else{
 				*( _onew_stock_ap.get()+i) = const_cast<char*>("");
@@ -133,7 +133,7 @@ void kgSlide::output(int s_pos,int e_pos)
 		else{
 			for(int tpos=pos_proceed(s_pos,_reverse); tpos!=e_pos; tpos=pos_proceed(tpos,_reverse),cnt++){
 				*( _onew_stock_ap.get() + i*_interval + cnt ) = _d_stock_ap[tpos*_iFile.fldSize()+fnum];
-				if(_assertNullIN && *( _onew_stock_ap.get() + i*_interval + cnt ) =='\0' ) { _existNullIN  = true;}
+				if(_assertNullIN && **( _onew_stock_ap.get() + i*_interval + cnt ) =='\0' ) { _existNullIN  = true;}
 			}
 			for(;cnt<_interval;cnt++){
 				*( _onew_stock_ap.get() + i*_interval + cnt ) = const_cast<char*>("");
