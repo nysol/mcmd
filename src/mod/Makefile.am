@@ -1,4 +1,4 @@
-AM_CXXFLAGS = -I. -I../ -I ../kgmod @XML2HEAD@
+AM_CXXFLAGS = -O3 -I. -I../ -I ../kgmod @XML2HEAD@
 
 
 ## Define a libtool archive target "libexample-@EXAMPLE_API_VERSION@.la", with
@@ -50,6 +50,7 @@ kghashsum.cpp \
 kginput.cpp \
 kgjoin.cpp \
 kgkeybreak.cpp \
+kgmaketra.cpp \
 kgmbucket.cpp \
 kgmseldsp.cpp \
 kgmvavg.cpp \
@@ -142,6 +143,7 @@ kghashsum.h \
 kginput.h \
 kgjoin.h \
 kgkeybreak.h \
+kgmaketra.h \
 kgmbucket.h \
 kgmseldsp.h \
 kgmvavg.h \

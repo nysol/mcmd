@@ -26,6 +26,7 @@
 #include <kgConfig.h>
 #include <kgError.h>
 #include <kgCSV.h>
+#include <set>
 
 using namespace std;
 
@@ -45,6 +46,8 @@ class kgArgFld
 	// _name,_attrから_num,_flgへのデータセット(set関数で使用)
 	void _num_flg_Set(kgCSV* csv ,bool fldno,bool attrEval=true);
 
+	void _num_flg_SetR(kgCSV* csv ,bool fldno,std::set<int>& exfld);
+
 public:
 
 	// コンストラクタ
@@ -54,6 +57,8 @@ public:
 	void set(vector< vector<kgstr_t> >& vvs, kgCSV* csv ,bool fldno, bool attrEval=true) throw(kgError);
 	void set(vector<kgstr_t>& vs, kgCSV* csv,bool fldno) throw(kgError);
 	void set(kgstr_t& s, kgCSV* csv,bool fldno) throw(kgError);
+
+	void setR(vector<kgstr_t>& vs, kgCSV* csv,bool fldno, std::set<int>& exfld) throw(kgError);
 
 	// 登録されている項目名数
 	size_t size(void)			const { return _name.size();}

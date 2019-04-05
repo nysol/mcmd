@@ -162,7 +162,7 @@ void kg2Cross::setFldName(string tName)
 void kg2Cross::setArgs(void)
 {
 	// パラメータチェック
-	_args.paramcheck("f=,s=,a=,k=,v=,i=,o=,fixfld=,-q",kgArgs::ALLPARAM);
+	_args.paramcheck("f=,s=,a=,k=,v=,i=,o=,fixfld=,-q,-r",kgArgs::ALLPARAM);
 
 	// 入出力ファイルオープン
 	_iFile.open(_args.toString("i=",false), _env,_nfn_i);
@@ -189,13 +189,30 @@ void kg2Cross::setArgs(void)
 	else								 { _n_flg=true;	 }
 
 	bool seqflg = _args.toBool("-q");
+
+	bool _r_flg = _args.toBool("-r");
+
 	if(_nfn_i) { seqflg = true; }
 
 	if(!seqflg&&!vk.empty()){ sortingRun(&_iFile,vk);}
 
 	_kField.set(vk, &_iFile, _fldByNum);
-	_fField.set(vf, &_iFile, _fldByNum);
 	_sField.set(vs, &_iFile, _fldByNum);
+
+	if(_r_flg){
+		set <int> exfld;
+		for(size_t i=0 ; i < _kField.size() ;i++){
+			exfld.insert(_kField.num(i));
+		}
+		for(size_t i=0 ; i < _sField.size() ;i++){
+			exfld.insert(_sField.num(i));
+		}
+		_fField.setR(vf, &_iFile, _fldByNum ,exfld);
+	}
+	else{
+		_fField.set(vf, &_iFile, _fldByNum);
+	}
+
 
 	// ー => |　:: a=必須 f=必須             v=オプション
 	// | => ー　:: s=必須 f=必須 k=オプション  v=オプション

@@ -45,6 +45,7 @@ class kg2Cross : public kgModIncludeSort
 	kgCSVout _oFile;    // o=
 	kgstr_t  _v_str;		// v=null値置換文字列
 	bool     _n_flg;    // 
+	bool     _r_flg;    // f reverse
 	bool _t_type; 			//変換パターン 
 	bool _reverse ;			//逆順(trueなら逆順ソート)
 	bool _numsort ;			//数値(trueなら数値ソート)

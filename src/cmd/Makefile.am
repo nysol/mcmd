@@ -1,4 +1,4 @@
-AM_CXXFLAGS = -I$(top_srcdir)/src/mod -I$(top_srcdir)/src/kgmod @XML2HEAD@
+AM_CXXFLAGS = -O3 -I$(top_srcdir)/src/mod -I$(top_srcdir)/src/kgmod @XML2HEAD@
 
 
 bin_PROGRAMS = \
@@ -34,6 +34,7 @@ mhashsum \
 minput \
 mjoin \
 mkeybreak \
+mmaketra \
 mmbucket \
 mmvavg \
 mmvsim \
@@ -190,6 +191,9 @@ mjoin_LDADD = $(top_srcdir)/src/kgmod/libkgmod@CORE_MAJOR_VERSION@.la $(top_buil
 
 mkeybreak_SOURCES = mkeybreak.cpp
 mkeybreak_LDADD = $(top_srcdir)/src/kgmod/libkgmod@CORE_MAJOR_VERSION@.la $(top_builddir)/src/mod/libmcmd@MOD_MAJOR_VERSION@.la
+
+mmaketra_SOURCES = mmaketra.cpp
+mmaketra_LDADD = $(top_srcdir)/src/kgmod/libkgmod@CORE_MAJOR_VERSION@.la $(top_builddir)/src/mod/libmcmd@MOD_MAJOR_VERSION@.la
 
 mmbucket_SOURCES = mmbucket.cpp
 mmbucket_LDADD = $(top_srcdir)/src/kgmod/libkgmod@CORE_MAJOR_VERSION@.la $(top_builddir)/src/mod/libmcmd@MOD_MAJOR_VERSION@.la

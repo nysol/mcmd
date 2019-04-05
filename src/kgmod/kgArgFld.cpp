@@ -67,6 +67,54 @@ void kgArgFld::_num_flg_Set(kgCSV* csv,bool fldByNum,bool attrEval)
 	}
 }
 
+void kgArgFld::_num_flg_SetR(kgCSV* csv,bool fldByNum,std::set<int>& exfld)
+{
+	// 項目展開＆_numへのセット
+	vector<kgstr_t> nametmp = _name;
+	vector<int>	num = evalFldName(nametmp, csv,fldByNum);	
+	
+	// _flgへのセット
+	if(_csv->fldSize()==0){ 
+		// -nfnで0バイトファイルの場合
+		int max=0;
+		for(unsigned int i=0; i<_num.size(); i++){
+			if(max<_num.at(i))max=_num.at(i);
+		}
+		_flg.resize(max+1, -1); 
+	}else{
+		_flg.resize(_csv->fldSize(), -1); 
+	}
+	for(unsigned int i=0; i<num.size(); i++){
+		_flg.at(num.at(i))=i;
+	}
+
+	// 反転
+	int fcnt=0;
+	for(unsigned int i=0; i< _flg.size(); i++){
+		if(_flg.at(i) == -1 ){
+			if( exfld.find(i) == exfld.end() ){
+				_num.push_back(fcnt);
+				_flg.at(i) = fcnt;
+				fcnt++;
+			}
+		}else{
+			_flg.at(i) = -1;
+		}
+	}
+
+	_name.clear();
+
+	for(unsigned int i=0; i<num.size(); i++){
+		if(!csv->noFldName()){
+			_name.push_back( csv->fldName(num.at(i)));
+		}
+		else{
+			ostringstream ss;
+			ss << i ;
+			_name.push_back( ss.str() );
+		}
+	}
+}
 // =============================================================================
 // public
 // =============================================================================
@@ -95,6 +143,16 @@ void kgArgFld::set(vector<kgstr_t>& vs, kgCSV* csv, bool fldByNum) throw(kgError
 	_csv=csv;
 	_name=vs;
 	_num_flg_Set(csv,fldByNum);
+}
+
+void kgArgFld::setR( vector<kgstr_t>& vs, kgCSV* csv, bool fldByNum,std::set<int>& exfld) throw(kgError) 
+{
+	if(csv==NULL){
+    throw kgError("internal error on fields augument");
+	}
+	_csv=csv;
+	_name=vs;
+	_num_flg_SetR(csv,fldByNum,exfld);
 }
 
 // -----------------------------------------------------------------------------
