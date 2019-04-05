@@ -208,6 +208,9 @@ void kg2Cross::setArgs(void)
 			exfld.insert(_sField.num(i));
 		}
 		_fField.setR(vf, &_iFile, _fldByNum ,exfld);
+		if(_fField.size() == 0){
+			throw kgError("f= is empty for using -r");	
+		}
 	}
 	else{
 		_fField.set(vf, &_iFile, _fldByNum);
@@ -217,8 +220,12 @@ void kg2Cross::setArgs(void)
 	// ー => |　:: a=必須 f=必須             v=オプション
 	// | => ー　:: s=必須 f=必須 k=オプション  v=オプション
 	if(_a_str.size()==0){
+
+		if(_r_flg){ throw kgError("not use -r without a="); }
+
 		if(_sField.size()!=1){ throw kgError("s= takes just one field name."); }
 		if(_fField.size()!=1){ throw kgError("f= takes just one field name."); }
+
 
 		//比較タイプセット(nがあるとtrueをセット(数字ソートになる)r)
 		_reverse = _sField.attr(0).find("r") != kgstr_t::npos ;
@@ -226,6 +233,8 @@ void kg2Cross::setArgs(void)
 		_t_type = true;
 	}
 	else{	
+		
+
 		if(_a_str.size()!=2){ throw kgError("a= takes just two field name."); }
 		if(_fixfld.size()>0){ throw kgError("fixfld= must be specified with s="); }
 		_reverse = false;

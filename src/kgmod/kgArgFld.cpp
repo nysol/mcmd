@@ -71,7 +71,7 @@ void kgArgFld::_num_flg_SetR(kgCSV* csv,bool fldByNum,std::set<int>& exfld)
 {
 	// 項目展開＆_numへのセット
 	vector<kgstr_t> nametmp = _name;
-	vector<int>	num = evalFldName(nametmp, csv,fldByNum);	
+	vector<int>	num = evalFldName(nametmp, csv,fldByNum,true);	
 	
 	// _flgへのセット
 	if(_csv->fldSize()==0){ 
@@ -93,7 +93,7 @@ void kgArgFld::_num_flg_SetR(kgCSV* csv,bool fldByNum,std::set<int>& exfld)
 	for(unsigned int i=0; i< _flg.size(); i++){
 		if(_flg.at(i) == -1 ){
 			if( exfld.find(i) == exfld.end() ){
-				_num.push_back(fcnt);
+				_num.push_back(i);
 				_flg.at(i) = fcnt;
 				fcnt++;
 			}
@@ -104,9 +104,9 @@ void kgArgFld::_num_flg_SetR(kgCSV* csv,bool fldByNum,std::set<int>& exfld)
 
 	_name.clear();
 
-	for(unsigned int i=0; i<num.size(); i++){
+	for(unsigned int i=0; i<_num.size(); i++){
 		if(!csv->noFldName()){
-			_name.push_back( csv->fldName(num.at(i)));
+			_name.push_back( csv->fldName(_num.at(i)));
 		}
 		else{
 			ostringstream ss;
