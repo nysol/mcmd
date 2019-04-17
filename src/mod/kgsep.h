@@ -37,6 +37,7 @@ class kgSep : public kgModIncludeSort
 	vector<kgstr_t> _dField_str; 	// d=の文字列部分
 	vector<int> 		_dField; 			// d=の項目番号
 	kgArgFld 				_fField;   // f=
+	kgArgFld 				_sField;   // f=
 	kgCSVkey				_iFile;  			// i=
 	kgCSVout				_oFile;  			// 出力用
 	bool 						_mkdir_flg;		//-p

@@ -60,6 +60,7 @@ public:
 	static const int fieldIDutime  = 17;
 	static const int pfieldIDutime = 18;
 
+	static const int constIDstr2   =  1;
 
 
 	template<typename ScannerT> struct definition{
@@ -81,7 +82,8 @@ public:
 		rule<ScannerT, parser_context<>, parser_tag<pfieldIDutime> > pfield_utime;
 
 		// 定数値用(文字列,整数,実数,日付,時刻,bool)
-		rule<ScannerT, parser_context<>, parser_tag<constIDstr > > const_str;
+		rule<ScannerT, parser_context<>, parser_tag<constIDstr > >  const_str;
+		rule<ScannerT, parser_context<>, parser_tag<constIDstr2 > > const_str2;
 		rule<ScannerT, parser_context<>, parser_tag<constIDreal> > const_real;
 		rule<ScannerT, parser_context<>, parser_tag<constIDdate> > const_date;
 		rule<ScannerT, parser_context<>, parser_tag<constIDtime> > const_time;
@@ -185,6 +187,10 @@ public:
 			const_str  = discard_node_d[*space_p >> ch_p('\"')]
 	  		>> lexeme_d[leaf_node_d[*(c_escape_ch_p-'\"')]]
 				>> discard_node_d[ch_p('\"') >> *space_p];
+
+			const_str2  = discard_node_d[*space_p >> ch_p('\'')]
+	  		>> lexeme_d[leaf_node_d[*(c_escape_ch_p-'\'')]]
+				>> discard_node_d[ch_p('\'') >> *space_p];
 
 			// 数値の指定
 			const_real = discard_node_d[*space_p]
@@ -298,7 +304,7 @@ public:
 			               ];
 
 			fctr = function2  | function1  | const_date | const_utime | const_time  |
- 			       const_bool | const_real | const_str  | 
+ 			       const_bool | const_real | const_str  | const_str2  | 
 			       field_str  | field_real | field_date | field_time | field_bool | field_utime |
 						 pfield_str |pfield_real |pfield_date |pfield_time |pfield_bool |pfield_utime |
 			       inner_node_d[discard_node_d[*space_p]>>'('>>discard_node_d[*space_p]>>expr>>')'>>discard_node_d[*space_p]>>discard_node_d[*space_p]];		

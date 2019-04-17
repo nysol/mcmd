@@ -173,12 +173,13 @@ public:
 		return -1;
 	}
 
-	kgstr_t sortParaStr(size_t pos){
+	kgstr_t sortParaStr(size_t pos,int lim=0){
 		kgstr_t rtn;
-		int snum = sortNumber(pos);
+		int snum = sortNumber(pos)-lim;
 		if(snum<0){ return rtn;}
 		rtn = "%";
-		rtn.append(toString(sortNumber(pos)));
+		//rtn.append(toString(sortNumber(pos)));
+		rtn.append(toString(snum));
 		switch(fldSInfo_.at(pos)._type){
 			case SortInfo::CharSort:
 				return rtn;

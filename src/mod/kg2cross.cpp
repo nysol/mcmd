@@ -190,7 +190,7 @@ void kg2Cross::setArgs(void)
 
 	bool seqflg = _args.toBool("-q");
 
-	bool _r_flg = _args.toBool("-r");
+	_r_flg = _args.toBool("-r");
 
 	if(_nfn_i) { seqflg = true; }
 

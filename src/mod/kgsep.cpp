@@ -54,7 +54,7 @@ kgSep::kgSep(void)
 void kgSep::setArgs(void)
 {
 	// パラメータチェック
-	_args.paramcheck("d=,i=,-p,-q,f=",kgArgs::COMMON|kgArgs::NULL_IN);
+	_args.paramcheck("d=,i=,-p,-q,f=,s=",kgArgs::COMMON|kgArgs::NULL_IN);
 
 	// 入出力ファイルオープン
 	_iFile.open(_args.toString("i=",false), _env,_nfn_i);
@@ -66,26 +66,77 @@ void kgSep::setArgs(void)
 
 	vector<kgstr_t> vf = _args.toStringVector("f=",false);
 
+	// s= 項目引数のセット
+	vector< vector<kgstr_t> > vs_s = _args.toStringVecVec("s=","%",2,false);
+
 	bool seqflg = _args.toBool("-q");
+
+
 	if(_nfn_i) { seqflg = true; }
 	if(!seqflg){ 
-		sortingRun(&_iFile,_dField);
+
+		vector<kgstr_t> vsk;
+		for(size_t i=0;i<_dField.size();i++){
+			vsk.push_back( _iFile.fldName(_dField[i]) );
+		}
+		vector<kgstr_t> vs_ss = _args.toStringVector("s=",false);
+		vsk.insert(vsk.end(),vs_ss.begin(),vs_ss.end());
+
+		//sortingRun(&_iFile,_dField);
+		sortingRun(&_iFile,vsk);
 	}
 
 	_fField.set(vf, &_iFile,_fldByNum);
+
+	_sField.set(vs_s, &_iFile,_fldByNum);
 
 	// -p
 	_mkdir_flg = _args.toBool("-p");
 	
 }
+
 void kgSep::writeFldName() throw(kgError)
 {
 	if( _oFile.noFldName( ) ) return;
 	if (_fField.size()==0){
-		_oFile.writeFldName(_iFile);
+		if(_sField.size()!=0){
+			_oFile.writeFldName(_sField,kgstr_t("%"));
+		}
+		else{		
+			_oFile.writeFldName(_iFile);
+		}
 	}else{
-		vector<kgstr_t> outfld = _fField.getName();
-		_oFile.writeFldName(outfld);
+		if(_sField.size()!=0){
+			/*
+			vector<kgstr_t> outfld;
+			for(size_t i=0; i<_fField;i++){
+			 = _fField.getName();
+			kgstr_t oName;
+			*/
+			vector<kgstr_t> outfld;
+			for(size_t i=0; i<_fField.size();i++){
+				kgstr_t oName;
+				oName = _iFile.fldName(_fField.num(i));
+				oName.append(_iFile.sortParaStr(_fField.num(i),_dField.size()));
+				outfld.push_back(oName);
+			}
+			_oFile.writeFldName(outfld);
+
+		}
+		else{
+
+			//vector<kgstr_t> outfld = _fField.getName();
+			//_oFile.writeFldName(outfld);
+			vector<kgstr_t> outfld;
+			for(size_t i=0; i<_fField.size();i++){
+				kgstr_t oName;
+				oName = _iFile.fldName(_fField.num(i));
+				oName.append(_iFile.sortParaStr(_fField.num(i)));
+				outfld.push_back(oName);
+			}
+			_oFile.writeFldName(outfld);
+		
+		}
 	}
 } 
 
