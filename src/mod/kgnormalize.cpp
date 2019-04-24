@@ -109,6 +109,62 @@ namespace kgnormalize_
 			}
 		}
 	}
+	void zscorep(kgCSVblk& csv, kgArgFld& fld, kgCSVout& csvOut,
+			bool a_Nin ,bool a_Nout ,bool* e_Nin ,bool* e_Nout )
+	{
+		// 集計用変数領域確保＆初期化
+		int fldSize=fld.size();
+
+		// 合計,件数,偏差平方和を求める
+		vector<double> sum(fldSize,0);
+		vector<double> cnt(fldSize,0);
+		vector<double> dv2(fldSize,0);
+		vector<double> sx(fldSize,0);
+
+		while(csv.blkread() != EOF){
+			for(int i=0; i<fldSize; i++){
+				char* str=csv.getBlkVal(fld.num(i));
+				// データがnullの場合は何もしない
+				if(*str=='\0'){
+					if(a_Nin) { *e_Nin  = true;}
+					continue;
+				}
+				double dx = atof(str);
+				sum.at(i)+=dx;
+				dx -= sx.at(i);
+				sx.at(i) += dx / (cnt.at(i)+1); 
+				dv2.at(i) += cnt.at(i) * dx * dx / (cnt.at(i)+1); 
+				cnt.at(i) += 1;
+			}
+		}
+		// 平均と標準偏差(不偏)
+		vector<double> avg(fldSize,0);
+		vector<double> std(fldSize,0);
+		for(int i=0; i<fldSize; i++){
+			if(cnt.at(i)>1){
+				avg.at(i)=sum.at(i)/cnt.at(i);
+				std.at(i)=sqrt(dv2.at(i)/cnt.at(i));
+			}
+		}
+		// 出力
+		csv.seekBlkTop();
+		while(csv.blkread() != EOF){
+			csvOut.writeFld(csv.fldSize(), csv.getBlkFld(), false);
+			for(int i=0; i<fldSize; i++){
+				bool eol=false;
+				if(i==fldSize-1) eol=true;
+				char* str=csv.getBlkVal(fld.num(i));
+				if(*str=='\0' || cnt.at(i)<2 || std.at(i)==0){
+					if(a_Nout) { *e_Nout  = true;}
+					csvOut.writeStr("",eol);
+				}else{
+					double dx = atof(str);
+					csvOut.writeDbl( (dx-avg.at(i))/std.at(i), eol );
+				}
+			}
+		}
+	}
+
 	// ---------------------------------------------------------------------------
 	// Zscore
 	// ---------------------------------------------------------------------------
@@ -167,6 +223,62 @@ namespace kgnormalize_
 			}
 		}
 	}
+	void Zscorep(kgCSVblk& csv, kgArgFld& fld, kgCSVout& csvOut,
+			bool a_Nin ,bool a_Nout ,bool* e_Nin ,bool* e_Nout )
+	{
+		// 集計用変数領域確保＆初期化
+		int fldSize=fld.size();
+
+		// 合計,件数,偏差平方和を求める
+		vector<double> sum(fldSize,0);
+		vector<double> cnt(fldSize,0);
+		vector<double> dv2(fldSize,0);
+		vector<double> sx(fldSize,0);
+
+		while(csv.blkread() != EOF){
+			for(int i=0; i<fldSize; i++){
+				char* str=csv.getBlkVal(fld.num(i));
+				// データがnullの場合は何もしない
+				if(*str=='\0'){
+					if(a_Nin) { *e_Nin  = true;}
+					continue;
+				}
+				double dx = atof(str);
+				sum.at(i)+=dx;
+				dx -= sx.at(i);
+				sx.at(i) += dx / (cnt.at(i)+1); 
+				dv2.at(i) += cnt.at(i) * dx * dx / (cnt.at(i)+1); 
+				cnt.at(i) += 1;
+			}
+		}
+		// 平均と標準偏差(不偏)
+		vector<double> avg(fldSize,0);
+		vector<double> std(fldSize,0);
+		for(int i=0; i<fldSize; i++){
+			if(cnt.at(i)>1){
+				avg.at(i)=sum.at(i)/cnt.at(i);
+				std.at(i)=sqrt(dv2.at(i)/cnt.at(i));
+			}
+		}
+		// 出力
+		csv.seekBlkTop();
+		while(csv.blkread() != EOF){
+			csvOut.writeFld(csv.fldSize(), csv.getBlkFld(), false);
+			for(int i=0; i<fldSize; i++){
+				bool eol=false;
+				if(i==fldSize-1) eol=true;
+				char* str=csv.getBlkVal(fld.num(i));
+				if(*str=='\0' || cnt.at(i)<2 || std.at(i)==0){
+					if(a_Nout) { *e_Nout  = true;}
+					csvOut.writeStr("",eol);
+				}else{
+					double dx = atof(str);
+					csvOut.writeDbl( 50.0+10.0*(dx-avg.at(i))/std.at(i), eol );
+				}
+			}
+		}
+	}
+
 	// ---------------------------------------------------------------------------
 	// range
 	// ---------------------------------------------------------------------------
@@ -261,6 +373,8 @@ void kgNormalize::setArgs(void)
 	_c_type = _args.toString("c=", true);
      	 if(_c_type=="z"     ){_function=&kgnormalize_::zscore;}
   else if(_c_type=="Z"     ){_function=&kgnormalize_::Zscore;}
+  else if(_c_type=="zp"     ){_function=&kgnormalize_::zscorep;}
+  else if(_c_type=="Zp"     ){_function=&kgnormalize_::Zscorep;}
 	else if(_c_type=="range" ){_function=&kgnormalize_::range; }
 	else {	throw kgError("c= takes one of `z',`Z' and `range'");	}
 
