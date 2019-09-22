@@ -149,7 +149,9 @@ void kgCSVout::open(kgstr_t fileName, kgEnv *env, bool noFldName, size_t cnt) th
 			fd_=1;
 		}else{
 			fname_ = fileName;
-			fd_ = ::open(fname_.c_str(), KG_OOPEN_FLG , S_IRWXU);
+			//fd_ = ::open(fname_.c_str(), KG_OOPEN_FLG , S_IRWXU);
+			fd_ = ::open(fname_.c_str(), KG_OOPEN_FLG , S_IRUSR | S_IWUSR | S_IRGRP | S_IROTH);
+
 			if(fd_ == -1 ){ throw kgError();}
 		}
 	} catch(...) {
@@ -176,7 +178,8 @@ void kgCSVout::aopen(kgstr_t fileName, kgEnv *env, bool noFldName, size_t cnt) t
 			fd_=1;
 		}else{
 			fname_ = fileName;
-			fd_ = ::open(fname_.c_str(), KG_AOPEN_FLG , S_IRWXU);
+			//fd_ = ::open(fname_.c_str(), KG_OOPEN_FLG , S_IRWXU);
+			fd_ = ::open(fname_.c_str(), KG_OOPEN_FLG , S_IRUSR | S_IWUSR | S_IRGRP | S_IROTH);
 			if(fd_ == -1 ){ throw kgError();}
 		}
 	} catch(...) {
