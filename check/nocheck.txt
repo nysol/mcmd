@@ -21,6 +21,7 @@ mcal out318x.csv # 同上
 mcal out318nfn.csv # 同上
 mcal out347.csv # 時刻依存の乱数
 mcal out379.csv # 時刻依存の乱数
+mcal out511.csv # 実行日に依存する
 mmerge out5.csv # thread
 mmerge out5x.csv # thread
 mmerge out5nfn.csv # thread

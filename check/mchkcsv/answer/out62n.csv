@@ -1,0 +1,92 @@
+#===================================================
+# diagnosis for the CSV file 
+# file name : ./indat/dat14.csv
+#---------------------------------------------------
+# meaning of the first charactor on each line
+# # : commnet or resutl with no error
+#   : that is, mcmd can handle the CSV file if all lines begin with '#'
+# ? : error that mcmd cannot handle
+#   : refer the 'explanation' section for the meaning of the alphabet next of '?'
+#===================================================
+############################ CSV header for field names(first line) ###
+# the number of fields : 1
+# fieldNo.  name
+# 1   
+#
+############## about EOL(End Of Line) (including a CSV header) ##
+# the number of lines with LF : 3 (LineNo: 0 1 2 )
+#
+################# about data lines (no including a CSV header) ###
+# the number of lines : 2
+# data volume in byte : 2
+# the average number of lines : 1
+# the maximum number of lines : 1 (LineNo:2)
+# the maximum number of lines : 1 (LineNo:2)
+# note: EOL charactor is counted in the numbers
+#
+################################# aoubt the number of fields ###
+# all lines have same number of fields:1
+#
+####################################### about field ###
+#  fieldNo[1] name[]
+#    # of lines in NULL : 2 (LineNo: 1 2 )
+#    # of lines not enclosed with double quotation : 2 (LineNo: 1 2 )
+#    # of lines enclosed with double quotation : 0 
+#
+################################### explanation ###
+# ?a : It cannot assign the field if there are duplicat name of fields.
+#  [how to] Specify a complete set of field names like 'mchkcsv a=x,y,z'
+# ?b : MCMD has a valid set of charactors for a field name.
+#  [how to]Specify a complete set of field names like 'mchkcsv a=x,y,z'
+# ?c : MCMD can handle only lines with LF as a EOL.
+#      This is MCMD original restriction, conforming to RFC4180.
+#  [how to] Run mchkcsv command that convert CR,CRLF to LF.
+#
+# ?d : The last line does not have a EOL charactor.
+#      It does not conform to RFC4180.
+#  [how to] Run mchkcsv command add LF at the end.
+#
+# ?e : Data file has '\0' charactor.
+#      The data may not be a text.
+#      It does not conform to RFC4180.
+#  [how to] Run mchkcsv that convert the charactor to "&#x00;".
+#           Run mchkcsv command with '-r' option that delete '\0' characotr.
+#
+# ?f : The number of charactors per line exceed the limit MCMD can handle.
+#      MCMD can handle a line less than or equal to 1024000 bytes of charactors.
+#  [how to] Change a enviroment variable KG_MaxRecLen.
+#        ex) export KG_MaxRecLen=2048000
+#      You cannot specify the number greater than 10240000 bytes.
+#      This is MCMD original restriction, conforming to RFC4180.
+#
+# ?g : MCMD can handle only a CSV data that all lines have same number of fields.
+#      This is MCMD original restriction, conforming to RFC4180.
+#  [how to]
+#       1) Use mchkcsv command that aligns all lines with same number of the field name header.
+#            Exceeded field value will be cut off, and it will add a NULL value for missing field.
+#       2) Use mchkcsv command with a= parameter.
+#            It uses the field names on a= parameter just as a header line (the header line will be skipped).
+#
+# ?h : Field value include a control charactors (0x01~0x1F,0x7F).
+#      The data may not be a text.
+#      It does not conform to RFC4180.
+#  [how to] Run mchkcsv that convert the charactor to text like "&#x01;".
+#           Run mchkcsv command with '-r' option that delete the control characotrs.
+#
+# ?i : TAB cannot be used.
+#      It does not conform to RFC4180.
+#  [how to] Run mchkcsv that convert the TAB to "&#x09;".
+#           Run mchkcsv command with '-r' option that delete the TAB.
+#
+# ?j : Double quotation charactor is found in a value not enclosed by double quotation.
+#        ex) NG: xxx,oo"oo,xxx  -> OK: xxx,"oo""oo",xxx
+#      It does not conform to RFC4180.
+#  [how to] Run mchkcsv that makes convertion in the above example.
+#
+# ?k : Double quotation charactor is found in a value enclosed by double quotation.
+#      ex) NG: xxx,"oo"oo",xxx  -> OK: xxx,"oo""oo",xxx
+#      It does not conform to RFC4180.
+#  [how to] Run mchkcsv that makes convertion in the above example.
+# ?l : It has BOM (Bite Order Mark) at the beginning of data.
+#  [how to] Run mchkcsv command that remove the BOM.
+#-------------------------------------------------------------
