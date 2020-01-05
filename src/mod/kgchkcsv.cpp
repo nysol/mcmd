@@ -63,20 +63,14 @@ void kgChkcsv::setArgs(void)
 	_iFileName = _args.toString("i=",false);
 	if( _iFileName.empty() ){ _fp=&cin; }
 	else{
-		try{ 
-			_ffp.open( _iFileName.c_str() );
-			if(!_ffp.is_open()){ 
-				ostringstream ss;
-				ss << "file read open error: " << _iFileName;
-				throw kgError(ss.str());
-			}
-			_fp=&_ffp;	
-			_fp->exceptions(ios_base::badbit);
-		} catch(...) {
+		_ffp.open( _iFileName.c_str() );
+		if(!_ffp){ 
 			ostringstream ss;
 			ss << "file read open error: " << _iFileName;
 			throw kgError(ss.str());
 		}
+		_fp=&_ffp;	
+		_fp->exceptions(ios_base::badbit);
 	}
 
 	// -diag チェック内容表示フラグセット
@@ -89,16 +83,14 @@ void kgChkcsv::setArgs(void)
 			_ofp=&cout;
 		}
 		else{
-			try{ 
-				_offp.open(v.c_str());
-				if(!_offp.is_open()){ throw; }
-				_ofp=&_offp;	
-				_ofp->exceptions(ios_base::badbit);
-			} catch(...) {
+			_offp.open(v.c_str());
+			if(!_offp){ 
 				ostringstream ss;
 				ss << "file write open error: " << v;
 				throw kgError(ss.str());
 			}
+			_ofp=&_offp;	
+			_ofp->exceptions(ios_base::badbit);
 		}
 	}
 	else{
@@ -653,181 +645,201 @@ int kgChkcsv::getRec(char* buf, istream *fp, unsigned char* prevc)
 // -----------------------------------------------------------------------------
 // 実行
 // -----------------------------------------------------------------------------
-int kgChkcsv::run(void) try 
+int kgChkcsv::run(void)  
 {
-	// パラメータセット＆入出力ファイルオープン
-	setArgs();
-  vector<FldInfo>  fldInfo;
-  RecInfo recInfo;
-	int fistlinefcnt=0;
-	//レコード情報の初期設定
-	recInfo.maxRecLen=_env->getMaxRecLen();
-	recInfo.minLen=KG_LimitRecLen;
-	//行単位領域確保
-  kgAutoPtr2<char> ap1;
-  try {
-    ap1.set( new char[KG_LimitRecLen] ); // 行数×csv項目数
-  } catch(...) {
-    throw kgError("memory allocation error ");
-  }
-  char* rec = ap1.get();
 
-	unsigned char prevc='\0';
-  while(1){
-  	// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  	//record(行)関連情報の設定
-  	// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-		size_t recLen = getRec(rec,_fp,&prevc);
-		if(recLen == 0){ break; }
+	try{
 
-		if(_in_rec==1 && recLen >= 3){//BOMチェック
-			if((unsigned char)*rec==0xEF && (unsigned char)*(rec+1)==0xBB && (unsigned char)*(rec+2) == 0xBF){ _bominc	= true; }
-		}
-    if(_diag){ setRecStat(rec,recLen,recInfo);}
-  	// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  	//fld(項目)関連情報の設定
-  	// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-		rmEol(rec,recLen);
-		size_t fldCnt;
-    try{
-	    fldCnt=cntFldToken(rec,recInfo.maxRecLen,true);
-	  } catch(kgError& err) {
-			ostringstream ss;
-			ss << "at line #" << _in_rec;
-	  	err.addMessage(ss.str());
-	  	throw err;
-	  }
+		setArgs();
 
-		kgAutoPtr2<char*> ap2;
+		vector<FldInfo>  fldInfo;
+		RecInfo recInfo;
+		int fistlinefcnt=0;
+
+		//レコード情報の初期設定
+		recInfo.maxRecLen=_env->getMaxRecLen();
+		recInfo.minLen=KG_LimitRecLen;
+
+		//行単位領域確保
+	  kgAutoPtr2<char> ap1;
 		try {
-			ap2.set( new char*[fldCnt] );
+			ap1.set( new char[KG_LimitRecLen] ); // 行数×csv項目数
 		} catch(...) {
-			throw kgError("memory allocation error2");
+			throw kgError("memory allocation error ");
 		}
-		char** strdata =ap2.get();
-		vector<bool> sngDQ(fldCnt ,false);
-		vector<bool> dqflg(fldCnt ,false);
-		if(_in_rec==1){ fistlinefcnt=fldCnt;}
-    if(_diag){
-			setFldCntCnt(fistlinefcnt,fldCnt,recInfo);
-			if(fldCnt>recInfo.maxFldCnt){
-				for(size_t i=recInfo.maxFldCnt; i<fldCnt; i++){
-					FldInfo fldInfoadd;
-					fldInfo.push_back(fldInfoadd);
-        }
-        recInfo.maxFldCnt=fldCnt;
-      }
-    }
-		sepFldToken(strdata, fldCnt, rec,sngDQ,dqflg);
-  	// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  	//header(ヘッダ項目)関連情報の設定
-  	// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-		if(_in_rec==1){
-			recInfo.fldNameCnt=fldCnt;
+	
+	  char* rec = ap1.get();
+	  unsigned char prevc='\0';
+ 
+  	while(1){
+			// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+			//record(行)関連情報の設定
+			// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+			size_t recLen = getRec(rec,_fp,&prevc);
+			if(recLen == 0){ break; }
+
+			if(_in_rec==1 && recLen >= 3){//BOMチェック
+				if( (unsigned char)*rec==0xEF && 
+						(unsigned char)*(rec+1)==0xBB && 
+						(unsigned char)*(rec+2) == 0xBF ){ 
+					_bominc	= true; 
+				}
+			}
+
+			if(_diag){ setRecStat(rec,recLen,recInfo);}
+			// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+			//fld(項目)関連情報の設定
+			// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+			rmEol(rec,recLen);
+			
+			size_t fldCnt;
+			try{
+				fldCnt=cntFldToken(rec,recInfo.maxRecLen,true);
+			} catch(kgError& err) {
+				ostringstream ss;
+				ss << "at line #" << _in_rec;
+				err.addMessage(ss.str());
+				throw err;
+			}
+
+			kgAutoPtr2<char*> ap2;
+			try {
+				ap2.set( new char*[fldCnt] );
+			} catch(...) {
+				throw kgError("memory allocation error2");
+			}
+			char** strdata =ap2.get();
+
+			vector<bool> sngDQ(fldCnt ,false);
+			vector<bool> dqflg(fldCnt ,false);
+			if(_in_rec==1){ fistlinefcnt=fldCnt;}
+
 			if(_diag){
-				if(!_nfn_i){
-					for(unsigned int i=0; i<fldCnt; i++){
-						string s=string(strdata[i]);
-						recInfo.fldName.push_back(s);
+				setFldCntCnt(fistlinefcnt,fldCnt,recInfo);
+				if(fldCnt>recInfo.maxFldCnt){
+					for(size_t i=recInfo.maxFldCnt; i<fldCnt; i++){
+						FldInfo fldInfoadd;
+						fldInfo.push_back(fldInfoadd);
         	}
-        }
-        continue;
-      }else{
+	        recInfo.maxFldCnt=fldCnt;
+  	    }
+   		}
+
+			sepFldToken(strdata, fldCnt, rec,sngDQ,dqflg);
+		
+			// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+			//header(ヘッダ項目)関連情報の設定
+			// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+			if(_in_rec==1){
+				recInfo.fldNameCnt=fldCnt;
+				
+				if(_diag){
+					if(!_nfn_i){
+						for(unsigned int i=0; i<fldCnt; i++){
+							string s=string(strdata[i]);
+							recInfo.fldName.push_back(s);
+						}
+					}
+					continue;
+				}
 				if(_fldname.size()){
-					recInfo.fldNameCnt=_fldname.size();
-					_oFile.writeFldName(_fldname);
-					if(!_nfn_i){ continue; }
+						recInfo.fldNameCnt=_fldname.size();
+						_oFile.writeFldName(_fldname);
+						if(!_nfn_i){ continue; }
 				}
 				else{
 					if(!_nfn_i){//１行目が項目名
 						if(!_nfn_o){
 							for(unsigned int i=0; i<fldCnt; i++){
 								char *p = strdata[i];
-								if(i==0 && _bominc){ p = p+3; }
-								if(i<fldCnt-1){
-									_oFile.writeStr(p, false);
-								}
-								else{
-									_oFile.writeStr(p);
-								}
+								if(i==0 && _bominc){ p = p+3; }									
+								if(i<fldCnt-1){ _oFile.writeStr(p, false); }
+								else          { _oFile.writeStr(p); }
 							}
 							_oFile.writeEolNC();
 						}
 						continue;
 					}
 				}
-      }
-		}
-  	// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-		// data(データ項目)関連情報の設定
-  	// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-		if(_diag){
-			for(unsigned int i=0; i<fldCnt; i++){
-				setFldStat(strdata[i],strlen(strdata[i]),dqflg[i],sngDQ[i],fldInfo[i]);
-			}     
-		}else{// データの出力
-			if(recInfo.fldNameCnt>fldCnt){//項目名の数が多い場合
-				size_t i=0;
-				for(i=0; i<fldCnt; i++){ 
-					if(_assertNullOUT){ if(*strdata[i]=='\0') { _existNullOUT = true;} }
-					if(_in_rec==1 && _bominc && i==0){
-						_oFile.writeStr( strdata[i]+3, false); 
-					}
-					else{
-						_oFile.writeStr( strdata[i], false); 
-					}
-				}
-				for(; i<recInfo.fldNameCnt-1; i++){ _oFile.writeDlm(); }
-				_oFile.writeEol();
 			}
-			else{
-				for(size_t i=0; i<recInfo.fldNameCnt; i++){
-					if(_assertNullOUT){ if(*strdata[i]=='\0') { _existNullOUT = true;} }
+
+	  	// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+			// data(データ項目)関連情報の設定
+  		// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+			if(_diag){
+				for(unsigned int i=0; i<fldCnt; i++){
+					setFldStat(strdata[i],strlen(strdata[i]),dqflg[i],sngDQ[i],fldInfo[i]);
+				}     
+			}else{// データの出力
+
+				if(recInfo.fldNameCnt>fldCnt){//項目名の数が多い場合
+
+					size_t i=0;
+					for(i=0; i<fldCnt; i++){ 
+
+						if(_assertNullOUT){ 
+							if(*strdata[i]=='\0') { _existNullOUT = true;} 
+						}
+
+						if(_in_rec==1 && _bominc && i==0){
+							_oFile.writeStr( strdata[i]+3, false); 
+						}
+						else{
+							_oFile.writeStr( strdata[i], false); 
+						}
+					}
+					for(; i<recInfo.fldNameCnt-1; i++){ _oFile.writeDlm(); }
+					_oFile.writeEol();
+				}
+				else{
+					for(size_t i=0; i<recInfo.fldNameCnt; i++){
+						if(_assertNullOUT){ if(*strdata[i]=='\0') { _existNullOUT = true;} }
 					
-					if(_in_rec==1 && _bominc && i==0){
-						_oFile.writeStr( strdata[i]+3, i==recInfo.fldNameCnt-1);
-					}
-					else{					
-						_oFile.writeStr( strdata[i], i==recInfo.fldNameCnt-1);
+						if(_in_rec==1 && _bominc && i==0){
+							_oFile.writeStr( strdata[i]+3, i==recInfo.fldNameCnt-1);
+						}
+						else{					
+							_oFile.writeStr( strdata[i], i==recInfo.fldNameCnt-1);
+						}
 					}
 				}
-			}
-    }		
-	}
-  // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-	// final(最終結果)出力
-  // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  if(_diag){
-    //recInfo.lineCnt=_in_rec;
-		recInfo.ave_cal();
-    for(size_t i=0; i<recInfo.maxFldCnt; i++){
-			fldInfo[i].summary_cal();
+	    }		
 		}
-		if(_args.toBool("-diagl")){	
-	    showInfol(recInfo,fldInfo);
-	  }else{
-	    showInfo(recInfo,fldInfo);
-	  }
-  }
-	// 終了処理
-	if(_ffp.is_open()){ _ffp.close();}
-	_oFile.close();
-	successEnd();
-	return 0;
+  	// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+		// final(最終結果)出力
+  	// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  	if(_diag){
+			recInfo.ave_cal();
+  	  for(size_t i=0; i<recInfo.maxFldCnt; i++){
+				fldInfo[i].summary_cal();
+			}
+			if(_args.toBool("-diagl")){	
+	   	 showInfol(recInfo,fldInfo);
+	  	}else{
+	   	 showInfo(recInfo,fldInfo);
+	  	}
+  	}
+
+		// 終了処理
+		if(_ffp.is_open()){ _ffp.close();}
+		_oFile.close();
+		successEnd();
 	
-}catch(kgError& err){
-	errorEnd(err);
-	return 1;
-}catch (const exception& e) {
-	kgError err(e.what());
-	errorEnd(err);
-	return 1;
-}catch(char * er){
-	kgError err(er);
-	errorEnd(err);
-	return 1;
-}catch(...){
-	kgError err("unknown error" );
-	errorEnd(err);
-	return 1;
+	}catch(kgError& err){
+		errorEnd(err);
+		return 1;
+	}catch (const exception& e) {
+		kgError err(e.what());
+		errorEnd(err);
+		return 1;
+	}catch(char * er){
+		kgError err(er);
+		errorEnd(err);
+		return 1;
+	}catch(...){
+		kgError err("unknown error" );
+		errorEnd(err);
+		return 1;
+	}
+	return 0;
 }
