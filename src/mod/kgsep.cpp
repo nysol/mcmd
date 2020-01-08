@@ -76,13 +76,20 @@ void kgSep::setArgs(void)
 	if(!seqflg){ 
 
 		vector<kgstr_t> vsk;
-		for(size_t i=0;i<_dField.size();i++){
-			vsk.push_back( _iFile.fldName(_dField[i]) );
+		if(_fldByNum){
+			for(size_t i=0;i<_dField.size();i++){
+				vsk.push_back( toString(_dField[i]) );
+			}
+		}
+		else{
+			for(size_t i=0;i<_dField.size();i++){
+				vsk.push_back( _iFile.fldName(_dField[i]) );
+			}
+		
 		}
 		vector<kgstr_t> vs_ss = _args.toStringVector("s=",false);
 		vsk.insert(vsk.end(),vs_ss.begin(),vs_ss.end());
 
-		//sortingRun(&_iFile,_dField);
 		sortingRun(&_iFile,vsk);
 	}
 
