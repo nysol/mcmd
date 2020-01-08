@@ -81,6 +81,7 @@ void kgPadding::setArgs(void)
 	     if(vvs[1][0].find('n')!=string::npos)	{ _typeC='i';}
 	else if(vvs[1][0].find('d')!=string::npos)	{ _typeC='d';}
 	else if(vvs[1][0].find('t')!=string::npos)	{ _typeC='t';}
+	else if(vvs[1][0].find('m')!=string::npos)	{ _typeC='m';}
 	else																				{ _typeC='i';}
 	
 	//開始終了値
@@ -206,6 +207,16 @@ void kgPadding::writePading(ptime& val,int outtype)
 	sprintf(buf,"%02d%02d%02d",td.hours(),td.minutes(),td.seconds());
 	writePading(buf,outtype);
 }
+
+void kgPadding::writePading(kgMonthForPadding& val,int outtype)
+{
+	char buf[128];
+	sprintf(buf,"%d%02d",val.year(),val.month());
+	writePading(buf,outtype);
+}
+
+
+
 // -----------------------------------------------------------------------------
 // output (int)
 // outtype: 1:最終行~E
@@ -333,6 +344,48 @@ void kgPadding::writePading_time(const char *from,const char *to ,int directv,in
 	return ;
 }
 // -----------------------------------------------------------------------------
+// output (month)
+// -----------------------------------------------------------------------------	
+void kgPadding::writePading_month(const char *from,const char *to ,int direct,int outtype)
+{
+	kgMonthForPadding st,ed;	
+
+	if(outtype<0){
+		if(!kgMonthForPadding::parseMonth(from,st)){return;}
+		if(!kgMonthForPadding::parseMonth(to,ed)){
+			writePading(st,-1);
+			return;
+		}
+		// date_duration direct= date_duration(directv);
+		while(1){
+			if( (direct>0 && st >= ed ) || (direct<0 && st <= ed )) { break; }
+			writePading(st,-1);
+			st+=direct;
+		}
+	}else{
+		bool val_check=false;
+		bool fr_ok=kgMonthForPadding::parseMonth(from,st);
+		bool to_ok=kgMonthForPadding::parseMonth(to,ed);
+		if(!fr_ok){ writePading(from,1); } // format エラー時
+		else{
+			writePading(st,1);
+			if(to_ok){
+				//date_duration direct= date_duration(directv);
+				if( (direct>0 && st >= ed ) || (direct<0 && st <= ed )) { val_check=true; }
+				while(1){
+					st+=direct;
+					if( (direct>0 && st >= ed ) || (direct<0 && st <= ed )) { break; }
+					writePading(st,0);
+				}
+			}
+		}
+		if(outtype==1 && to_ok && !val_check){
+			writePading(ed,0);
+		}
+	}
+	return ;
+}
+// -----------------------------------------------------------------------------
 // output (all->int,date,time)
 // outtype: 1:最終行~E
 // outtype: 0:old~new
@@ -349,6 +402,9 @@ void kgPadding::writePading(const char *from ,const char *to,int dir,int outtype
 			break;
 		case 't':
 			writePading_time(from ,to,dir, outtype);
+			break;
+		case 'm':
+			writePading_month(from ,to,dir, outtype);
 			break;
 	}
 }

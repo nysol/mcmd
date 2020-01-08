@@ -34,6 +34,68 @@ using namespace kglib;
 
 namespace kgmod { ////////////////////////////////////////////// start namespace
 
+class kgMonthForPadding{ // (4:2)
+	int _y;
+	int _m; // (0-11)
+	
+	public:
+
+	kgMonthForPadding(int y=0,int m=1){//m(1-12) // 内部的には0-11
+		if( 0 > _y || _y > 9999 ){ throw; }
+		if( 0 > _m || _m > 12 )  { throw; }
+		_y = y;
+		_m = m-1;
+	}
+	
+	static bool parseMonth(const char * monthStr, kgMonthForPadding &val){
+		size_t len = strlen(monthStr) ;
+		if( len < 2 || len > 6 ){ return false ; }
+		int y=0;
+		for(size_t i = 0 ; i < len-2 ;i++){
+			y = y*10 + (monthStr[i]-'0');
+		}
+		int m = (monthStr[len-2]-'0') * 10 + (monthStr[len-1]-'0');
+		try {
+			val = kgMonthForPadding(y,m);
+		}catch(...){
+			return false;
+		}
+		return true;
+	}
+
+	kgMonthForPadding operator +=(int add) {
+
+		if( _m+add >=12 ){
+			_y = _y + (_m+add)/12;
+			_m = (_m+add)%12;
+		} 
+		else if(_m+add < 0 ){
+			_y = _y - 1 + (_m+add)/12 ;
+			_m = 12+((_m+add)%12);
+		
+		}
+		else{
+			_m += add;
+		}
+		return *this;
+	}
+
+
+	bool operator >= (const kgMonthForPadding& val) const{
+		if(_y != val._y){ return (_y >= val._y); }
+		return (_m >= val._m); 
+	
+	}
+	bool operator <= (const kgMonthForPadding& val) const{
+		if(_y != val._y){ return (_y <= val._y); }
+		return (_m <= val._m); 
+	
+	}
+	int year(void){ return _y;}
+	int month(void){ return _m+1;}
+
+};
+
 // =============================================================================
 // kgpadding 行補完クラス
 // =============================================================================
@@ -61,11 +123,14 @@ class kgPadding : public kgModIncludeSort
 	void writePading(int val,int outtype);
 	void writePading(date& val,int outtype);
 	void writePading(ptime& val,int outtype);
+	void writePading(kgMonthForPadding& val,int outtype);
 
 	void writePading(const char *from,const char *to ,int direct,int outtype);
 	void writePading_int(const char *from,const char *to ,int direct,int outtype);
 	void writePading_date(const char *from,const char *to ,int direct,int outtype);
 	void writePading_time(const char *from,const char *to ,int direct,int outtype);	
+	void writePading_month(const char *from,const char *to ,int direct,int outtype);	
+
 
 public:
   // コンストラクタ
