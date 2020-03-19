@@ -588,7 +588,7 @@ int kgChkcsv::getRec(char* buf, istream *fp, unsigned char* prevc)
 		}else{
 			int c = fp->get();
 			if(c==EOF && i==0) return 0;
-			if(c==EOF) break;
+			if(c==EOF) { buf[i] = '\0'; break; }
 			cc=static_cast<unsigned char>(c);
 		}
 		//-------------------------------------
