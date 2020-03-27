@@ -73,6 +73,7 @@ AC_CHECK_LIB(pthread, pthread_create)
 AC_CHECK_LIB([boost_regex], [main], [], [echo "Error. You need to have libboost";exit -1])
 AC_CHECK_LIB([boost_system], [main], [], [echo "Error. You need to have libboost";exit -1])
 AC_CHECK_LIB([boost_filesystem], [main], [], [echo "Error. You need to have libboost";exit -1])
+AC_CHECK_LIB([boost_thread-mt], [main], [], [echo "Error. You need to have libboost";exit -1])
 
 
 #OSチェック

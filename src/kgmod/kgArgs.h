@@ -51,9 +51,9 @@ public:
 		ALLPARAM = 31
 	};
 	// 引数登録
-	void add(size_t c, const char **v) throw(kgError);
-	void add(string str) throw(kgError);
-	void add(const string& key, const kgstr_t& val) throw(kgError);
+	void add(size_t c, const char **v);
+	void add(string str);
+	void add(const string& key, const kgstr_t& val);
 
 	// 引数サイズ＆イテレーター	
 	map<string,kgstr_t>::size_type      size (void) const{ return keyVal_.size();  }
@@ -61,7 +61,7 @@ public:
 	map<string,kgstr_t>::const_iterator end  (void) const{ return keyVal_.end();   }
 	
 	// keywordに対応する値を返す
-	kgstr_t get(const string& keyWord, bool mandatory=false, bool nullNG=false) const throw(kgError);
+	kgstr_t get(const string& keyWord, bool mandatory=false, bool nullNG=false) const;
 	bool find(const string& keyWord);
 	// 登録された引数を，様々なデータ型に変換する関数群
 	bool 						toBool(const string& keyWord) const;

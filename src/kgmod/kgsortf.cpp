@@ -30,6 +30,7 @@
 #include <kgCSVout.h>
 #include <kgEnv.h>
 #include <kgArgFld.h>
+#include <boost/thread.hpp>
 
 
 
@@ -551,7 +552,7 @@ void* kgSortf::run_sort_thread(void *obj){
 // 入力: CSV file
 // 出力: sort済みのoCnt個のCSV file , ファイル番号 0?oCnt(返値)
 // -----------------------------------------------------------------------------
-int kgSortf::sort(kgCSVfld& csv) throw(kgError) 
+int kgSortf::sort(kgCSVfld& csv)
 {
 	int fldCnt = csv.fldSize();
 
@@ -600,15 +601,19 @@ int kgSortf::sort(kgCSVfld& csv) throw(kgError)
 			}else{
 				// thread データ構造作成速度チェックすること　
 				kgAutoPtr2<sortArgST> aps;
-				kgAutoPtr2<pthread_t> aps_pth;
+				//kgAutoPtr2<pthread_t> aps_pth;
+				kgAutoPtr2<boost::thread*> aps_pth;
 				try {
 					aps.set    ( new sortArgST[_threadCnt] );
-					aps_pth.set( new pthread_t[_threadCnt] );
+					//aps_pth.set( new pthread_t[_threadCnt] );
+					aps_pth.set( new boost::thread*[_threadCnt] );
 				} catch(...) {
 					throw kgError("memory allocation error on CSVin");
 				}
+
 				sortArgST* data    = aps.get();
-				pthread_t* th_st_p = aps_pth.get();
+				//pthread_t* th_st_p = aps_pth.get();
+				boost::thread** th_st_p = aps_pth.get();
 
 				// バッファのデータを_threadCnt個に分割しthreadでsort
 				int blkSize  = recCnt / _threadCnt; // 1ブロックの件数
@@ -621,14 +626,20 @@ int kgSortf::sort(kgCSVfld& csv) throw(kgError)
 					data[i].start=start;
 					data[i].ofName = newTmpName(0,oCnt++);
 					data[i].blkSize=blkSize;
+					
+					th_st_p[i] = new boost::thread(boost::bind(kgSortf::run_sort_thread,&data[i]));
+/*
 					if( pthread_create( &th_st_p[i], NULL,
   			      kgSortf::run_sort_thread ,(void *)&data[i] )){
   			      throw kgError("cant't create thread on kgModIncludeSort");
   				}
+*/  				
   			}
 				for(int i=0; i<_threadCnt; i++){
-					int rtn = pthread_join(th_st_p[i],NULL);
-					if(rtn!=0) { cerr << "waring  fail thread join : " << rtn << endl; }
+					th_st_p[i]->join();
+					delete th_st_p[i];
+					//int rtn = pthread_join(th_st_p[i],NULL);
+					//if(rtn!=0) { cerr << "waring  fail thread join : " << rtn << endl; }
 				}
 			}
 			recCnt=0;

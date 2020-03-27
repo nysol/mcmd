@@ -33,7 +33,7 @@ using namespace std;
 // key,valを引数として追加 ex. key="f=" val="a,b,c" ,  key="--quiet" val=""
 // 同じkeywordがなければ登録，あればエラー
 // -----------------------------------------------------------------------------
-void kgArgs::add(const string& key, const kgstr_t& val) throw(kgError) 
+void kgArgs::add(const string& key, const kgstr_t& val) 
 {
 	if(keyVal_.find(key)==keyVal_.end()){
 		keyVal_[key]=val;
@@ -47,7 +47,7 @@ void kgArgs::add(const string& key, const kgstr_t& val) throw(kgError)
 // 引数strをkeywordとvalを分けて引数として追加 str="f=a,b,c" , str="--quiet"
 //  実際の登録は add(const string& key, const kgstr_t& val)
 // -----------------------------------------------------------------------------
-void kgArgs::add(string str) throw(kgError) 
+void kgArgs::add(string str) 
 {
 	string key;
 	string::size_type pos;
@@ -74,7 +74,7 @@ void kgArgs::add(string str) throw(kgError)
 //  keywordとその値をmapクラス(連想配列)に格納する
 //  実際の登録は add(const string& key, const kgstr_t& val)
 // -----------------------------------------------------------------------------
-void kgArgs::add(size_t argc, const char *argv[]) throw(kgError) 
+void kgArgs::add(size_t argc, const char *argv[])
 {
 	for(size_t i=1; i<argc; i++){
 		if(strlen(argv[i])> KG_ARGLEN_MAX){
@@ -90,7 +90,7 @@ void kgArgs::add(size_t argc, const char *argv[]) throw(kgError)
 // 見つからなければ""を返す．
 // f=a,b,c  get("f=") -> a,b,c
 // -----------------------------------------------------------------------------
-kgstr_t kgArgs::get(const string& keyWord, bool mandatory, bool nullNG) const throw(kgError)
+kgstr_t kgArgs::get(const string& keyWord, bool mandatory, bool nullNG) const 
 {
 	map<string,kgstr_t>::const_iterator it=keyVal_.find(keyWord);
 	if(it!=keyVal_.end()){
@@ -205,12 +205,14 @@ vector< vector<kgstr_t> > kgArgs::toStringVecVec(const string& keyWord, const kg
 void kgArgs::paramcheck(const char *cstr, int addCommonArgs) 
 {
 	/*使用可能パラメータを分割してセット*/
+	/*
 	string str(cstr);
 	if(! str.empty()){
   	string::size_type prv=0;
   	string::size_type pos=0;
+  	string::size_type end=str.size();
   	while(1){
-    	if(str[pos] == '\0'){
+    	if(end==pos || str[pos] == '\0'){
       	_available.insert(str.substr(prv, pos-prv));
  				break;
 			}
@@ -221,7 +223,20 @@ void kgArgs::paramcheck(const char *cstr, int addCommonArgs)
 				pos++;
 			}
 		}
+  }*/
+  
+  const char *p = cstr;
+  const char *prv = cstr;
+  while(*p){
+  	if(*p == ','){
+      _available.insert(string(prv, p - prv));
+      prv = p+1;
+  	}
+  	p++;
   }
+  if(p>prv){ _available.insert(string(prv, p - prv)); }
+  
+  
 
 	// 共通項目のセット
 	// tmpPath(tempディレクトリ), nfn(1行目が項目行でないflag)

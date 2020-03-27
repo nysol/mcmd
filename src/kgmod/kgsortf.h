@@ -28,7 +28,7 @@
 #include <kgCSV.h>
 #include <kgCSVout.h>
 #include <kgTempfile.h>
-#include <pthread.h>
+//#include <pthread.h>
 
 using namespace kglib;
 
@@ -76,7 +76,7 @@ class kgSortf :public kgMod{
 	void writeBuf(char ***index, int recCnt, int fldCnt, kgstr_t& ofName); // indexの内容をofNameに出力
 	void do_sort(char*** index, int recCnt, kgstr_t ofName); // qsort5+writeBuf
 
-	int sort(kgCSVfld& csv) throw(kgError);
+	int sort(kgCSVfld& csv);
 	void merge(int level, int iBgn, int iEnd, int oNum, bool final);
 	int mergeOneLevel(int level, int iCnt);
 

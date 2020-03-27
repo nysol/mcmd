@@ -604,8 +604,9 @@ vector<string> kglib::splitToken(string& str, char delim,bool skip)
 	if(! str.empty()){
   	string::size_type prv=0;
   	string::size_type pos=0;
+  	string::size_type end=str.size();
   	while(1){
-    	if(str[pos] == L'\0'){
+    	if(pos==end || str[pos] == L'\0'){
 				if(skip && prv == pos ){
 					break;
 				}
@@ -656,8 +657,9 @@ vector<wstring> kglib::splitToken(wstring& str, wchar_t delim){
 	if(! str.empty()){
   	wstring::size_type prv=0;
   	wstring::size_type pos=0;
+  	wstring::size_type end=str.size();
   	while(1){
-    	if(str[pos] == L'\0'){
+    	if(pos == end || str[pos] == L'\0'){
       	vs.push_back(str.substr(prv, pos-prv));
  				break;
 			}
