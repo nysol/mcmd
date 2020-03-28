@@ -71,7 +71,7 @@ class kgMod
 	bool _existNullOUT;
 	bool _existNullKEY;
 
-	static void signalHandler(int sigNo, siginfo_t* info, void* ctx);
+	//static void signalHandler(int sigNo, siginfo_t* info, void* ctx);
 
 	void AssertWarnig(void);
 

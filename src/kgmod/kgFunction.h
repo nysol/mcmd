@@ -20,8 +20,10 @@
 // kgFunction.h 演算に使用する関数のクラス
 // ============================================================================
 #pragma once
+#define _USE_MATH_DEFINES
 #include <vector>
 #include <string>
+#include <cmath>
 #include <cfloat>
 #include <cstdio>
 #include <kgCSV.h>

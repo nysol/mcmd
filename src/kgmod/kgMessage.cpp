@@ -26,7 +26,10 @@
 #include <kgMessage.h>
 #include <boost/date_time/posix_time/posix_time.hpp>
 #include <fcntl.h>
-
+#ifdef WIN
+#include<io.h>
+#include<sys/locking.h>
+#endif
 using namespace std;
 using namespace kglib;
 using namespace boost::posix_time;

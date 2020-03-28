@@ -830,7 +830,7 @@ static void cleanup_handler(void *arg)
 void kgSortf::run_noargs() try 
 {
 	// thread cleanup 登録
-	pthread_cleanup_push(&cleanup_handler, this);	
+	//pthread_cleanup_push(&cleanup_handler, this);	
 	 
 	_blocks=10;
 	_pways=32;
@@ -870,7 +870,7 @@ void kgSortf::run_noargs() try
 	_oFile.close();
 	successEnd();
 	// thread cleanup 解除
-  pthread_cleanup_pop(0);
+  //pthread_cleanup_pop(0);
   
 }catch(kgError& err){
 	tempFile_.remove_all();

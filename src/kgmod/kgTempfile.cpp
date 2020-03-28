@@ -37,9 +37,8 @@ using namespace boost;
 
 
 #ifdef WIN
-
-int getpid(void){ return _getpid();}
-
+#include <process.h>
+#include <io.h>
 #endif 
 
 
@@ -58,7 +57,12 @@ string kgTempfile::create(bool pipe, string prefix)
 		for(; tryCnt<10; tryCnt++){ // あり得ないが、ファイル名が重複する場合を考慮し10回tryする。
  			ostringstream ss;
 			ss << env_->getTmpPath() << "/__KGTMP_" << getpid() << "_" << prefix << "_" << env_->randStr(14);
+#ifdef win
+			int fd = _open(ss.str().c_str(),O_CREAT | O_EXCL, _S_IREAD | _S_IWRITE);
+#else
 			int fd = mkfifo(ss.str().c_str(),0600);
+#endif
+
       if(fd==-1 && errno!=EINVAL)	{ continue;}
       else												{ ret=ss.str(); break;}
 		}
@@ -67,9 +71,21 @@ string kgTempfile::create(bool pipe, string prefix)
 		for(; tryCnt<10; tryCnt++){
  			ostringstream ss;
 			ss << env_->getTmpPath() << "/__KGTMP_" << getpid() << "_" << prefix << "_" << env_->randStr(14);
+#ifdef win
+			int fd = _open(ss.str().c_str(),O_CREAT | O_EXCL, _S_IREAD | _S_IWRITE );
+#else
 			int fd = open(ss.str().c_str(),O_CREAT | O_EXCL, S_IRWXU);
+#endif
 			if(fd==-1){ continue;}
-			else			{	close(fd); ret=ss.str(); break;}
+			else			{	
+#ifdef win
+				::close(fd); 
+#else
+				close(fd); 
+#endif
+				ret=ss.str(); 
+				break;
+			}
 		}
 	}
 	if(tryCnt>=10){ throw kgError("internal error: cannot create temp file"); }

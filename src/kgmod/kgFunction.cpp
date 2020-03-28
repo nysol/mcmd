@@ -41,7 +41,7 @@ bool isfinite(double v){ return _finite(v);}
 double tgamma(double v){ //dmy階乗計算
 	int vv = v-1;
 	double tt = 1;
-	for(int i=0 i<vv;i++){
+	for(int i=0 ;i<vv;i++){
 		tt *= (i+1);
 	}
 	return tt;
