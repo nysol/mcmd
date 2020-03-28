@@ -35,6 +35,14 @@ using namespace std;
 using namespace kglib;
 using namespace boost;
 
+
+#ifdef WIN
+
+int getpid(void){ return _getpid();}
+
+#endif 
+
+
 // -----------------------------------------------------------------------------
 // 一時ファイル(パイプor実ファイル)を作成し、そのファイル名を返す
 // 一時ファイル名の命名規則 : tmpPath/__KGTMP_pid_乱数文字10文字

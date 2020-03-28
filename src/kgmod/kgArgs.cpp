@@ -24,6 +24,7 @@
 #include <kgMethod.h>
 #include <string.h>
 #include <cstdlib>
+#include <unistd.h>
 
 
 using namespace kglib;
@@ -272,7 +273,8 @@ void kgArgs::paramcheck(const char *cstr, int addCommonArgs)
 		for(i=_available.begin(); i!=_available.end(); i++){
 			cout << *i << endl;
 		}
-		_Exit(0);
+		_exit(0); 
+
 	}
 	// セットされたパラメータと使用可能パラメータにあるかチェック
 	for(map<string,kgstr_t>::const_iterator i=keyVal_.begin() ;i!=keyVal_.end();i++){

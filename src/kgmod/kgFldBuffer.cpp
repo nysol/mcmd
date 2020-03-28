@@ -28,6 +28,9 @@
 #include <sys/stat.h>
 #include <kgFldBuffer.h>
 #include <kgError.h>
+#ifdef WIN
+#include <io.h>
+#endif
 
 using namespace std;
 using namespace kglib;
@@ -44,18 +47,30 @@ void kgFldBuffer::write(char * start,size_t size)
 		string tmpname = tempFile_.create();
 		flist_.push_back(tmpname);
 		try {
-			int fd = ::open(tmpname.c_str(), O_WRONLY | O_TRUNC | O_CREAT | O_APPEND, S_IRWXU);
+#ifdef WIN
+			int fd = ::_open(tmpname.c_str(), O_WRONLY | O_TRUNC | O_CREAT | O_APPEND , _S_IREAD|_S_IWRITE);
+			if(fd == -1 ){ throw kgError("");}
+			int wsize = ::_write(fd, start, size);
+#else
+			int fd = ::open(tmpname.c_str(), O_WRONLY | O_TRUNC | O_CREAT | O_APPEND , S_IRWXU);
 			if(fd == -1 ){ throw kgError("");}
 			int wsize = ::write(fd, start, size);
+#endif
 			if( wsize<0 ){
 				ostringstream ss;
 				ss << "file write error(" << strerror(errno) << "):" << tmpname;
 				throw kgError(ss.str());
 			}
 			if( (size_t)wsize!= size){ throw kgError("file write size error");}
+
+#ifdef WIN
+			::_close(fd);
+#else
 			::close(fd);
+#endif
+
 			end_pos_.push_back(wsize);
-		}catch(kgError& err){
+		}catch(...){
 			ostringstream ss;
 			ss << "file write or close error: " << tmpname;
 			throw kgError(ss.str());
@@ -80,14 +95,25 @@ void kgFldBuffer::fileload(int fno)
 {
 	try {
 		if(fno==0){ fpage_p_.set( new char[page_size_] );}
+
+#ifdef WIN
+		int fd = ::_open(flist_[fno].c_str(), O_RDONLY);
+		if(fd == -1 ){ throw kgError("");}
+		int rsize = ::_read(fd, fpage_p_.get(), page_size_);		
+#else
 		int fd = ::open(flist_[fno].c_str(), O_RDONLY);
 		if(fd == -1 ){ throw kgError("");}
 		int rsize = ::read(fd, fpage_p_.get(), page_size_);		
+#endif
 		if( rsize < 0 ){	throw kgError();}
 		if( (size_t)rsize != end_pos_[r_page_]){ throw kgError();}
+#ifdef WIN
+		::_close(fd);
+#else
 		::close(fd);
+#endif
 		r_pos_=0;
-	}catch(kgError& err){
+	}catch(...){
 		ostringstream ss;
 		ss << "file write close error: ";
 		throw kgError(ss.str());
@@ -120,7 +146,6 @@ int kgFldBuffer::getFld(char ** pnt, int fldcnt)
 {
 	// データ読み込み
 	char * page;
-	//cerr << "pas info " << w_page_ << " " << r_page_ << " "	<< r_pos_ << " " << end_pos_[r_page_]<< endl;
 
 	if(r_page_==w_page_+flist_.size()){ return EOF;}
 	if(end_pos_[r_page_]==r_pos_){

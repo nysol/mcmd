@@ -23,7 +23,8 @@
 #include <kgmod.h>
 #include <kgMessage.h>
 #include <kgsortf.h>
-#include <pthread.h>
+//#include <pthread.h>
+#include <boost/thread.hpp>
 #include <fcntl.h>
 
 using namespace kglib;
@@ -39,11 +40,13 @@ class kgModIncludeSort : public kgMod
 protected:
 	kgTempfile _sortingFile;
 	kgSortf *_inner_sort;
-	pthread_t *_th_st_p;
 	size_t _sortModSize;
   kgEnv    _env_sort;
 	kgAutoPtr2<kgSortf> _aps;
-	kgAutoPtr2<pthread_t> _aps_pth;
+	//pthread_t *_th_st_p;
+	//kgAutoPtr2<pthread_t> _aps_pth;
+	kgAutoPtr2<boost::thread*> _aps_pth;
+	boost::thread** _th_st_p;
 
 	kgModIncludeSort(void){ _sortModSize=0; }
 	size_t getSmod(void){ return _sortModSize;}

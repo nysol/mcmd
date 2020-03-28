@@ -36,6 +36,19 @@ using namespace boost::posix_time;
 using namespace boost;
 //using namespace boost::math;
 
+#ifdef WIN
+bool isfinite(double v){ return _finite(v);} 
+double tgamma(double v){ //dmy階乗計算
+	int vv = v-1;
+	double tt = 1;
+	for(int i=0 i<vv;i++){
+		tt *= (i+1);
+	}
+	return tt;
+}
+#endif
+
+
 // static function
 namespace 
 {	
@@ -3157,24 +3170,6 @@ void kgFunction_berrand::run(void){
 // -----------------------------------------------------------------------------
 // binomdist(数値[成功回数],数値[試行回数],数値[確率]) => 数値 : 二項分布の確率?
 // -----------------------------------------------------------------------------
-/*
-void kgFunction_binomdist::preprocess(void)
-{
-	ub_=200;
-	pascal_.resize(ub_+1);
-	for(size_t i=0; i<=ub_; i++){
-		pascal_.at(i).resize(ub_+1);
-	}
-	pascal_.at(0).at(0)=1;
-	for(size_t i=1; i<=ub_; i++){
-		pascal_.at(i).at(0)=1;
-		pascal_.at(i).at(1)=i;
-		for(size_t j=2; j<=i; j++){
-			pascal_.at(i).at(j)=pascal_.at(i-1).at(j-1)+pascal_.at(i-1).at(j);
-		}
-	}
-}
-*/
 void kgFunction_binomdist::run(void)
 {	
 	//double accum=0.0;
@@ -3191,26 +3186,6 @@ void kgFunction_binomdist::run(void)
 		}catch(...){
 			_result.null(true);
 		}
-
-		//_result.r(0.0);
-		// 試行回数が多い時は正規分布で近似する
-/*
-		if(x > ub_){
-			double xd    = static_cast<double>(x);
-			double mean = static_cast<double>(n)*p;
-			double sd   = sqrt(static_cast<double>(n)*p*q);
-			//accum = 1.0 - (1+erf((xd - mean)/(sd * sqrt(2)))) * 0.5;
-			accum = (1+erf((xd - mean)/(sd * sqrt(2)))) * 0.5;
-			//accum = (1+erf((xd - mean + 0.5)/sd;
-			end
-		}else{
-			//for(size_t i=x; i<=n; i++){
-			for(size_t i=0; i<=x; i++){
-				accum += pascal_.at(n).at(i) * pow(p,static_cast<double>(i))*pow(q,static_cast<double>(n-i));
-			}
-		}
-		_result.r(accum);
-*/
 	}
 }
 // ============================================================================

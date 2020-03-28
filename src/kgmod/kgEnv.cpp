@@ -150,7 +150,7 @@ kgEnv::kgEnv(void)
 	}
 
 	// シグナルトラップ起動なし
-	sigact_=false;
+	//sigact_=false;
 
 	// 乱数初期化
   unsigned long seed= static_cast<unsigned long>(boost::posix_time::microsec_clock::local_time().time_of_day().fractional_seconds());
@@ -198,7 +198,7 @@ void kgEnv::apply(kgEnv * baseENV){
 	_precision=baseENV->precision();
 	_fldByNum=baseENV->fldByNum();
 	recursiveMsg_=baseENV->recursiveMsg();
-	sigact_ = baseENV->sigactcheck();
+	//sigact_ = baseENV->sigactcheck();
 
 }
 

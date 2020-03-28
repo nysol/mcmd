@@ -37,13 +37,17 @@ void kgModIncludeSort::th_cancel(void){
 	vector<int> chk(_sortModSize);
 
 	for(size_t i=0 ;i<_sortModSize;i++){ 
-		chk[i] = pthread_cancel(_th_st_p[i]);
-		if (chk[i]!=0&&chk[i]!=3){ cerr << "waring destruct fail thread cancel : " << chk[i] << endl;}
+		//chk[i] = pthread_cancel(_th_st_p[i]);
+		//if (chk[i]!=0&&chk[i]!=3){ cerr << "waring destruct fail thread cancel : " << chk[i] << endl;}
+		_th_st_p[i]->interrupt();
+
 	}
 	for(size_t i=0 ;i<_sortModSize;i++){ 
 		if(chk[i]==0||chk[i]==3){
-			int rtn = pthread_join(_th_st_p[i],NULL);
-			if(rtn!=0) { cerr << "waring destruct fail thread join : " << rtn << endl; }
+			//int rtn = pthread_join(_th_st_p[i],NULL);
+			//if(rtn!=0) { cerr << "waring destruct fail thread join : " << rtn << endl; }
+			_th_st_p[i]->join();
+	
 		}
 	}
 }
@@ -53,8 +57,8 @@ void kgModIncludeSort::setSortMod(size_t num){
 	_sortModSize=num;
 	try {
 		_aps.set    ( new kgSortf[_sortModSize] );
-		_aps_pth.set( new pthread_t[_sortModSize] );
-		
+		//_aps_pth.set( new pthread_t[_sortModSize] );
+		_aps_pth.set( new boost::thread*[_sortModSize] );
 	} catch(...) {
 		throw kgError("memory allocation error on CSVin");
 	}
@@ -68,6 +72,11 @@ void kgModIncludeSort::sortingRunMain(kgCSVfld* csv ,kgstr_t fldname ,size_t num
 		throw kgError("sort module allocation error on kgModIncludeSort");
 	}
 	int piped[2];
+#ifdef WIN
+	if( _pipe(piped,4096,_O_TEXT) < 0){
+		throw kgError("sort pipe open error on kgModIncludeSort");		
+	}
+#else
 	if( pipe(piped) < 0){
 		throw kgError("sort pipe open error on kgModIncludeSort");		
 	}
@@ -75,6 +84,10 @@ void kgModIncludeSort::sortingRunMain(kgCSVfld* csv ,kgstr_t fldname ,size_t num
 	int flags1 = fcntl(piped[1], F_GETFD);
 	fcntl(piped[0], F_SETFD, flags0 | FD_CLOEXEC);
 	fcntl(piped[1], F_SETFD, flags1 | FD_CLOEXEC);
+#endif
+
+
+
 	kgArgs newArgs;// 引数
 	newArgs.add("i=",csv->fileName());
 	newArgs.add("f=",fldname);
@@ -85,9 +98,12 @@ void kgModIncludeSort::sortingRunMain(kgCSVfld* csv ,kgstr_t fldname ,size_t num
 	csv->clear();
 	csv->popen(piped[0], _env,_nfn_i);
 	kgMsg(kgMsg::DEB, _env).output("O sorting 0 " );
-	int rtn = pthread_create( &_th_st_p[num], NULL, 
-			kgModIncludeSort::run_noargs_pth ,(void *)&_inner_sort[num]);
-	if(rtn){ throw kgError("cant't create thread onxx kgModIncludeSort");}
+
+	//int rtn = pthread_create( &_th_st_p[num], NULL, 
+	//		kgModIncludeSort::run_noargs_pth ,(void *)&_inner_sort[num]);
+	//if(rtn){ throw kgError("cant't create thread onxx kgModIncludeSort");}
+
+	_th_st_p[num] = new boost::thread(boost::bind(kgModIncludeSort::run_noargs_pth , &_inner_sort[num]));
 
 	kgMsg(kgMsg::DEB, _env).output("O sorting 1 " );
 }

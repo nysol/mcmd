@@ -26,8 +26,6 @@
 #include <kgMessage.h>
 #include <boost/date_time/posix_time/posix_time.hpp>
 #include <fcntl.h>
-#define LIMIT_OUT 100000
-#define LIMIT_MSG "#ERROR# It exceeds processing limit of 10K records in free license.Please contact NYSOL (http://www.nysol.jp) about a commercial license."
 
 using namespace std;
 using namespace kglib;
@@ -38,19 +36,29 @@ using namespace boost::posix_time;
 // -----------------------------------------------------------------------------
 void kgMsg::WriteMsg(string v ,string t)
 {
-		struct flock lock;
-	  lock.l_type = F_WRLCK;
-	  lock.l_whence = SEEK_SET;
-	  lock.l_start = 0;
-	  lock.l_len = 0;
-		if( fcntl(2,F_SETLKW, &lock) >=0 ){
-			cerr << v << "; " <<t << endl;
-			lock.l_type = F_UNLCK;
-			fcntl(2,F_SETLKW, &lock);
-		}
-		else{
-			cerr << v << "; " <<t << endl;
-		}
+
+#ifdef WIN
+
+	if( _locking( 2, LK_NBLCK, 30L ) != -1 ){
+		cerr << v << "; " <<t << endl;
+		_locking( 2, LK_UNLCK, 30L );
+	}
+#else
+	struct flock lock;
+	lock.l_type = F_WRLCK;
+	lock.l_whence = SEEK_SET;
+	lock.l_start = 0;
+	lock.l_len = 0;
+
+	if( fcntl(2,F_SETLKW, &lock) >=0 ){
+		cerr << v << "; " <<t << endl;
+		lock.l_type = F_UNLCK;
+		fcntl(2,F_SETLKW, &lock);
+	}
+#endif
+	else{
+		cerr << v << "; " <<t << endl;
+	}
 }
 // -----------------------------------------------------------------------------
 // 出力要否チェック
@@ -151,7 +159,6 @@ void kgMsg::output(const vector<string>& vv, const string& comment)
 // -----------------------------------------------------------------------------
 void kgMsg::output(kgMod* kgmod, string msg, const string& comment)
 {	
-	//if(kgmod->oRecNo()>LIMIT_OUT){WriteMsg(LIMIT_MSG,getTime());}
 	if(isOn()){
 		ostringstream ss;
 		ss << header() << " ";
@@ -176,7 +183,6 @@ void kgMsg::output(kgMod* kgmod, string msg, const string& comment)
 // -----------------------------------------------------------------------------
 void kgMsg::output(kgMod* kgmod, vector<string> vv, const string& comment){
 	
-	//if(kgmod->oRecNo()>LIMIT_OUT){WriteMsg(LIMIT_MSG,getTime());}
 	if(isOn()){
 		ostringstream ss;
 		ss << header() << " ";

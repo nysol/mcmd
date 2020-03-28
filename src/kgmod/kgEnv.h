@@ -45,7 +45,7 @@ class kgEnv {
 
 	bool    msgTimebyfsec_; // fractional_secondsによる時刻表示
 	
-	bool    sigact_;       // シグナルトラップ起動中かどうか(true:起動中, false:なし)
+	//bool    sigact_;       // シグナルトラップ起動中かどうか(true:起動中, false:なし)
 	int     blockCount_;   // キー単位ごとに処理する際に使用するバッファ数
 
   kgAutoPtr1<boost::variate_generator< boost::mt19937,boost::uniform_int<>  > > randStrAP_;
@@ -67,14 +67,14 @@ public:
 	bool    fldByNum(void)				const{ return _fldByNum; }
 	bool    recursiveMsg(void)		const{ return recursiveMsg_; }
 	int     getBlockCount(void)		const{ return blockCount_; }
-	bool    sigactcheck(void)			const{ return sigact_; }
+	//bool    sigactcheck(void)			const{ return sigact_; }
 	bool    msgTimebyfsec(void)			const{ return msgTimebyfsec_; }
 
 	// 有効桁数セット
 	void    precision(int p);
 
 	// シグナル状況登録
-	void sigact(bool b=true){sigact_=b;}
+	//void sigact(bool b=true){sigact_=b;}
 	void verblvl(int veb){ verboseLevel=veb; }
 	void setTmpPath(kgstr_t tp){ tmpPath=tp; }
 

@@ -20,6 +20,11 @@
 // kgCSVout.h KGMODで用いられる入力CSVクラス
 // =============================================================================
 #pragma once
+
+#ifdef WIN
+	#include <io.h>
+#endif
+
 #include <iostream>
 #include <kgConfig.h>
 #include <kgError.h>
@@ -29,7 +34,7 @@
 #include <kgVal.h>
 #include <boost/date_time/gregorian/gregorian.hpp>
 #include <boost/date_time/posix_time/posix_time.hpp>
-#define LIMIT_OUT 2
+
 using namespace std;
 
 namespace kglib  ////////////////////////////////////////////// start namespace
@@ -107,13 +112,13 @@ public:
 	~kgCSVout(){ close();}
 	
 	// ファイルのオープンとクローズ
-	void initialset(kgEnv *env, bool noFldName, size_t cnt) throw(kgError);
-	void open(kgstr_t fileName, kgEnv *env=NULL, bool noFldName=false, size_t cnt=4) throw(kgError);
-	void aopen(kgstr_t fileName, kgEnv *env=NULL, bool noFldName=false, size_t cnt=4) throw(kgError);
-	void popen(int fd, kgEnv *env=NULL, bool noFldName=false, size_t cnt=4) throw(kgError);
+	void initialset(kgEnv *env, bool noFldName, size_t cnt);
+	void open(kgstr_t fileName, kgEnv *env=NULL, bool noFldName=false, size_t cnt=4);
+	void aopen(kgstr_t fileName, kgEnv *env=NULL, bool noFldName=false, size_t cnt=4);
+	void popen(int fd, kgEnv *env=NULL, bool noFldName=false, size_t cnt=4);
 
 
-	void close(void) throw(kgError);
+	void close(void);
 	void forceclose(void);
 	// 有効桁数セット
 	void    setPrecision(int precision);
@@ -208,15 +213,15 @@ public:
 	//  項目名の出力関数群
 	// --------------------
 	//同じものがないことを確認してから出力する
-	void writeFldNameCHK(vector<kgstr_t>& outfld ) throw(kgError);
+	void writeFldNameCHK(vector<kgstr_t>& outfld );
 
 	// csv項目名を出力する．
 	// 使用= 汎用
-	void writeFldName(kgCSV& csv,bool org=true) throw(kgError);
+	void writeFldName(kgCSV& csv,bool org=true);
 
 	// csv項目名を出力する．FLGを追加して出力
 	// 使用= 汎用
-	void writeFldName(kgArgFld& fld,kgstr_t addstr) throw(kgError);
+	void writeFldName(kgArgFld& fld,kgstr_t addstr);
 
 
 	// csv項目名を出力する． (利用mod: kgsum)
@@ -224,39 +229,36 @@ public:
 	// ただし，second=tureの場合，fldに指定された項目のみattr名に変えて出力
 	//   ex1. CSV a,b,c : f=a:A,c : A,b,c
 	// 使用= 汎用
-	void writeFldName(kgArgFld& fld, bool second,bool org=true) throw(kgError);
+	void writeFldName(kgArgFld& fld, bool second,bool org=true);
 
 	// csv項目+fld項目を出力．or fld項目+csv項目 (利用mod: kgjoin or mwindow)
 	//   ex. CSV a,b,c  fld x,y : a,b,c,x,y
 	// ただし，second=tureの場合，fldに指定された項目はattr名に変えて出力
 	//   ex. CSV a,b,c  fld x:X,y:Y : a,b,c,X,Y
 	// 使用= 汎用
-	void writeFldName(kgCSV& csv,kgArgFld& fld,bool second,bool back=true) throw(kgError);
+	void writeFldName(kgCSV& csv,kgArgFld& fld,bool second,bool back=true);
 
 	// csv項目+newFldを出力
 	// 使用= rand, cal, count, number
-	void writeFldName(kgCSV& csv, kgstr_t newFld) throw(kgError);
+	void writeFldName(kgCSV& csv, kgstr_t newFld);
 
 	// csv項目+newFld(vector)を出力
 	// 使用= combi, setstr
-	void writeFldName(kgCSV& csv, vector<kgstr_t> newFld) throw(kgError);
+	void writeFldName(kgCSV& csv, vector<kgstr_t> newFld);
 
 	// 新規項目の項目名を出力
 	// 使用= newrand, newstr, newnumber
-	void writeFldName(kgstr_t newFld) throw(kgError);
+	void writeFldName(kgstr_t newFld);
 
 	// 新規項目の項目名(複数)を出力
 	// 使用= cat、chkcsv、fldname, sep2, cm
-	void writeFldName(vector<kgstr_t> newFld) throw(kgError);
+	void writeFldName(vector<kgstr_t> newFld);
 
 	//区切り文字出力(コンマ、改行、改行[出力行数カウント有り])
 	void writeDlm(void){ *_curPnt++ = ','; }
 	void writeEolNC(void){ *_curPnt++ = '\n'; }
 	void writeEol(void){
 		_recNo++;
-		//if(_recNo>LIMIT_OUT){
-		//	throw kgError("limit line over");
-		//}
 		*_curPnt++ = '\n';
 	}
 

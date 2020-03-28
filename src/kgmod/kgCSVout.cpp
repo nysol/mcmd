@@ -77,7 +77,7 @@ kgCSVout::kgCSVout(kgstr_t fn, kgEnv *env, bool noFldName)
 {
 	open(fn, env, noFldName);
 }
-void kgCSVout::initialset(kgEnv *env, bool noFldName, size_t cnt) throw(kgError) 
+void kgCSVout::initialset(kgEnv *env, bool noFldName, size_t cnt)
 {
 	env_ = env;
 	_noFldName = noFldName;
@@ -116,7 +116,7 @@ void kgCSVout::initialset(kgEnv *env, bool noFldName, size_t cnt) throw(kgError)
 // 書き込みファイルをオープンする。
 // ファイル名がないの場合は標準出力としてオープンする。
 // -----------------------------------------------------------------------------
-void kgCSVout::popen(int fd, kgEnv *env, bool noFldName, size_t cnt) throw(kgError) 
+void kgCSVout::popen(int fd, kgEnv *env, bool noFldName, size_t cnt)
 {
 
 	initialset(env,noFldName,cnt);
@@ -137,7 +137,7 @@ void kgCSVout::popen(int fd, kgEnv *env, bool noFldName, size_t cnt) throw(kgErr
 // 書き込みファイルをオープンする。
 // ファイル名がないの場合は標準出力としてオープンする。
 // -----------------------------------------------------------------------------
-void kgCSVout::open(kgstr_t fileName, kgEnv *env, bool noFldName, size_t cnt) throw(kgError) 
+void kgCSVout::open(kgstr_t fileName, kgEnv *env, bool noFldName, size_t cnt)
 {
 
 	initialset(env,noFldName,cnt);
@@ -149,9 +149,12 @@ void kgCSVout::open(kgstr_t fileName, kgEnv *env, bool noFldName, size_t cnt) th
 			fd_=1;
 		}else{
 			fname_ = fileName;
+#ifdef WIN
+			fd_ = ::_open(fname_.c_str(), KG_OOPEN_FLG ,_S_IREAD|_S_IWRITE);
+#else
 			//fd_ = ::open(fname_.c_str(), KG_OOPEN_FLG , S_IRWXU);
 			fd_ = ::open(fname_.c_str(), KG_OOPEN_FLG , S_IRUSR | S_IWUSR | S_IRGRP | S_IROTH);
-
+#endif
 			if(fd_ == -1 ){ throw kgError();}
 		}
 	} catch(...) {
@@ -166,7 +169,7 @@ void kgCSVout::open(kgstr_t fileName, kgEnv *env, bool noFldName, size_t cnt) th
 // 書き込みファイルを追記オープンする。
 // ファイル名がないの場合は標準出力としてオープンする。
 // -----------------------------------------------------------------------------
-void kgCSVout::aopen(kgstr_t fileName, kgEnv *env, bool noFldName, size_t cnt) throw(kgError) 
+void kgCSVout::aopen(kgstr_t fileName, kgEnv *env, bool noFldName, size_t cnt)
 {
 
 	initialset(env,noFldName,cnt);
@@ -178,8 +181,14 @@ void kgCSVout::aopen(kgstr_t fileName, kgEnv *env, bool noFldName, size_t cnt) t
 			fd_=1;
 		}else{
 			fname_ = fileName;
+#ifdef WIN
+			fd_ = ::_open(fname_.c_str(), KG_OOPEN_FLG ,_S_IREAD|_S_IWRITE);
+#else
 			//fd_ = ::open(fname_.c_str(), KG_OOPEN_FLG , S_IRWXU);
 			fd_ = ::open(fname_.c_str(), KG_OOPEN_FLG , S_IRUSR | S_IWUSR | S_IRGRP | S_IROTH);
+#endif
+
+
 			if(fd_ == -1 ){ throw kgError();}
 		}
 	} catch(...) {
@@ -199,19 +208,27 @@ void kgCSVout::setPrecision(int precision){
 }
 void kgCSVout::forceclose(void){
 	if(!opened_) return;
+#ifdef WIN
+	::_close(fd_);
+#else
 	::close(fd_);
+#endif
 	opened_ = false;
 }
 // -----------------------------------------------------------------------------
 // 書き込みファイルをクローズする。
 // -----------------------------------------------------------------------------
-void kgCSVout::close(void) throw(kgError) 
+void kgCSVout::close(void)
 {
 	if(!opened_) return;
 	flush();
 	try {
-		::close(fd_);
-	}catch(kgError& err){
+#ifdef WIN
+	::_close(fd_);
+#else
+	::close(fd_);
+#endif
+	}catch(...){
 		ostringstream ss;
 		ss << "file write close error: " << fname_;
 		throw kgError(ss.str());
@@ -235,7 +252,11 @@ void kgCSVout::flush(void)
 		size_t wsize_ttl=0;
 		int wsize =0;
 		while(wsize_ttl<size){
+#ifdef WIN
+			wsize = ::_write(fd_, start+wsize_ttl, size-wsize_ttl);
+#else
 			wsize = ::write(fd_, start+wsize_ttl, size-wsize_ttl);
+#endif
 			if(wsize<0){
 				if(errno==11){continue;}
 				break;
@@ -828,7 +849,7 @@ void kgCSVout::writeFld(char** fld,size_t size,vector<string> *newFld)
 // 項目名が正当かどうか
 // を確認してから出力する
 // -----------------------------------------------------------------------------
-void kgCSVout::writeFldNameCHK(vector<kgstr_t>& outfld ) throw(kgError)
+void kgCSVout::writeFldNameCHK(vector<kgstr_t>& outfld )
 {
 	int fsize = outfld.size();
 	//ソート情報チェック
@@ -877,7 +898,7 @@ void kgCSVout::writeFldNameCHK(vector<kgstr_t>& outfld ) throw(kgError)
 // -----------------------------------------------------------------------------
 // csv項目名を出力する．
 // -----------------------------------------------------------------------------
-void kgCSVout::writeFldName(kgCSV& csv,bool org) throw(kgError)
+void kgCSVout::writeFldName(kgCSV& csv,bool org)
 {
 	if( _noFldName ) return;
 	int size=csv.fldSize();
@@ -894,7 +915,7 @@ void kgCSVout::writeFldName(kgCSV& csv,bool org) throw(kgError)
 // csv項目名を出力する．
 // ソート情報追加VERSION
 // -----------------------------------------------------------------------------
-void kgCSVout::writeFldName(kgArgFld& fld,kgstr_t addstr) throw(kgError)
+void kgCSVout::writeFldName(kgArgFld& fld,kgstr_t addstr)
 {
 	if( _noFldName ) return;
 	int size=fld.csv()->fldSize();
@@ -924,7 +945,7 @@ void kgCSVout::writeFldName(kgArgFld& fld,kgstr_t addstr) throw(kgError)
 // ただし，second=tureの場合，fldに指定された項目のみattr名に変えて出力
 //   ex2. CSV a,b,c : f=a:A,c : A,b,c
 // -----------------------------------------------------------------------------
-void kgCSVout::writeFldName(kgArgFld& fld, bool second,bool org) throw(kgError)
+void kgCSVout::writeFldName(kgArgFld& fld, bool second,bool org)
 {
 	if( _noFldName ) return;
 	int size=fld.csv()->fldSize();
@@ -961,7 +982,7 @@ void kgCSVout::writeFldName(kgArgFld& fld, bool second,bool org) throw(kgError)
 // -----------------------------------------------------------------------------
 // csv項目+fld項目を出力(利用mod: kgjoin,mwindow)
 // -----------------------------------------------------------------------------
-void kgCSVout::writeFldName(kgCSV& csv, kgArgFld& fld, bool second,bool back) throw(kgError)
+void kgCSVout::writeFldName(kgCSV& csv, kgArgFld& fld, bool second,bool back)
 {
 	if( _noFldName ) return;
 
@@ -998,7 +1019,7 @@ void kgCSVout::writeFldName(kgCSV& csv, kgArgFld& fld, bool second,bool back) th
 // -----------------------------------------------------------------------------
 // csv項目+newFldを出力
 // -----------------------------------------------------------------------------
-void kgCSVout::writeFldName(kgCSV& csv, kgstr_t newFld) throw(kgError)
+void kgCSVout::writeFldName(kgCSV& csv, kgstr_t newFld)
 {
 	if( _noFldName ) return;
 	int size=csv.fldSize();
@@ -1016,7 +1037,7 @@ void kgCSVout::writeFldName(kgCSV& csv, kgstr_t newFld) throw(kgError)
 // -----------------------------------------------------------------------------
 // csv項目+newFld(vector)を出力
 // -----------------------------------------------------------------------------
-void kgCSVout::writeFldName(kgCSV& csv, vector<kgstr_t> newFld) throw(kgError)
+void kgCSVout::writeFldName(kgCSV& csv, vector<kgstr_t> newFld)
 {
 	if( _noFldName ) return;
 	int size=csv.fldSize();
@@ -1036,7 +1057,7 @@ void kgCSVout::writeFldName(kgCSV& csv, vector<kgstr_t> newFld) throw(kgError)
 // -----------------------------------------------------------------------------
 // newFldを出力
 // -----------------------------------------------------------------------------
-void kgCSVout::writeFldName(kgstr_t newFld) throw(kgError)
+void kgCSVout::writeFldName(kgstr_t newFld)
 {
 	if( _noFldName ) return;
 
@@ -1048,7 +1069,7 @@ void kgCSVout::writeFldName(kgstr_t newFld) throw(kgError)
 // -----------------------------------------------------------------------------
 // newFld(vector)を出力
 // -----------------------------------------------------------------------------
-void kgCSVout::writeFldName(vector<kgstr_t> newFld) throw(kgError)
+void kgCSVout::writeFldName(vector<kgstr_t> newFld)
 {
 	if( _noFldName ) return;
 

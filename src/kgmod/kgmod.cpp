@@ -39,7 +39,7 @@
 #endif
 
 
-
+/*
 // -----------------------------------------------------------------------------
 //　Terminate設定
 // -----------------------------------------------------------------------------
@@ -57,7 +57,7 @@ namespace
 		_exit(1);
 	}
 }
-
+*/
 // -----------------------------------------------------------------------------
 // コンストラクタ
 // -----------------------------------------------------------------------------
@@ -79,6 +79,7 @@ kgMod::kgMod(void) :  _status( 0 ){
 // -----------------------------------------------------------------------------
 // シグナルハンドラー設定
 // -----------------------------------------------------------------------------
+/*
 static kgMod* g_mod_=NULL;
 void kgMod::signalHandler( int sigNo, siginfo_t* info, void* ctx )
 {
@@ -114,6 +115,7 @@ void kgMod::signalHandler( int sigNo, siginfo_t* info, void* ctx )
 	}
 }
 
+
 //　signal　設定を別にする
 void kgMod::signalset(void) try {
 	if(g_mod_==NULL){ g_mod_= this; }
@@ -128,6 +130,7 @@ void kgMod::signalset(void) try {
 }catch(kgError& err){
   errorEnd(err);
 }
+*/
 
 
 // -----------------------------------------------------------------------------
@@ -138,10 +141,12 @@ void kgMod::init(void) try
 	// -------------------------------------
 	// terminate用関数の登録
 	// -------------------------------------
+	/*
 	if(g_mod_==NULL){
 		set_terminate(kgTerminate);
 		mod=this;
 	}
+	*/
 	// -------------------------------------
 	// 各種メンバー変数の設定
 	// -------------------------------------
@@ -234,7 +239,7 @@ void kgMod::init(size_t argc, const char* argv[], kgEnv* env) try
 	_env=env;
 	_args.add(argc, argv);
 	init();
-	signalset();
+	//signalset();
 	
 }catch(kgError& err){
   errorEnd(err);
@@ -245,7 +250,7 @@ void kgMod::init(kgArgs args, kgEnv* env)try
 	_env=env;
 	_args = args;
 	init();
-	signalset();
+	//signalset();
 	
 }catch(kgError& err){
   errorEnd(err);
@@ -305,7 +310,9 @@ void kgMod::errorEnd(kgError& err)
 		msg.output(this,err.message(0));
 	}
 	_status = 1;
-	if(!_env->sigactcheck()){ throw(err);}
+	//if(!_env->sigactcheck()){ throw(err);}
+	if(true){ throw(err);}
+
 }
 // -----------------------------------------------------------------------------
 // error終了メッセージの出力（コメント付き）
@@ -320,7 +327,9 @@ void kgMod::errorEnd(kgError& err, const string& comment)
 		msg.output(this,err.message(0),comment);
 	}
 	_status = 1;
-	if(!_env->sigactcheck()){ throw(err); }
+	//if(!_env->sigactcheck()){ throw(err); }
+	if(true){ throw(err); }
+
 }
 // -----------------------------------------------------------------------------
 // error終了メッセージの出力（kgErrorを伴わないerror）なくなる予定
@@ -333,8 +342,12 @@ void kgMod::errorEnd(void)
 	kgMsg msg(kgMsg::ERR, _env);
 	msg.output(this,err.message());
 	_status = 1;
-	if(!_env->sigactcheck()){ throw(err); }
+	//if(!_env->sigactcheck()){ throw(err); }
+	if(true){ throw(err); }
+
 }
+
+
 // -----------------------------------------------------------------------------
 // error終了メッセージの出力（kgErrorを伴わないerror）（コメント付き）なくなる予定
 // -----------------------------------------------------------------------------
@@ -346,7 +359,8 @@ void kgMod::errorEnd(const string& comment)
 	kgMsg msg(kgMsg::ERR, _env);
 	msg.output(this, err.message(), comment);
 	_status = 1;
-	if(!_env->sigactcheck()){ throw(err); }
+	//if(!_env->sigactcheck()){ throw(err); }
+	if(true){ throw(err); }
 }
 // -----------------------------------------------------------------------------
 // コマンドライン文字列

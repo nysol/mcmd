@@ -124,7 +124,8 @@ void kgOFP::open(kgstr_t fn, size_t queSize, kgEnv* env) throw(kgError) {
 size_t kgOFP::write(char* buf, int size) throw(kgError) {
 	if(! opened_){
 		// シグナルトラップが起動していない場合、エラーとする
-		if( !env_->sigactcheck( ) ) {	throw kgError("internal error: write file not opened"); }
+		//if( !env_->sigactcheck( ) ) {	throw kgError("internal error: write file not opened"); }
+		if( true ) {	throw kgError("internal error: write file not opened"); }
 	}
 	try {
 		int wsize=0;
@@ -162,8 +163,9 @@ size_t kgOFP::write(char* buf, int size) throw(kgError) {
 		}
 		return wsize;
 	}catch(kgError& err){
-		if( env_->sigactcheck( ) )	{ return 0; }
-		else 												{ throw err;}
+		//if( env_->sigactcheck( ) )	{ return 0; }
+		if( false )	{ return 0; }
+		else 				{ throw err;}
 	// 書き込みエラー 
 	}catch(...){
 		close();

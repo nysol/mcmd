@@ -28,7 +28,7 @@ using namespace kglib;
 // -----------------------------------------------------------------------------
 // コンストラクタ
 // -----------------------------------------------------------------------------
-kgWildCard::kgWildCard(const kgstr_t& pat) throw(kgError) 
+kgWildCard::kgWildCard(const kgstr_t& pat)
 {
 	_pat=pat;
   _patLen = pat.length();
@@ -46,7 +46,7 @@ kgWildCard::kgWildCard(const kgstr_t& pat) throw(kgError)
 // -----------------------------------------------------------------------------
 // txtがワイルドカードにマッチすればtrueを返す
 // -----------------------------------------------------------------------------
-bool kgWildCard::match(const kgstr_t& txt) throw(kgError)
+bool kgWildCard::match(const kgstr_t& txt)
 {
   // FSAの初期化
 	_state[0] = true;

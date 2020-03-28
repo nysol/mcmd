@@ -41,9 +41,9 @@ class kgWildCard
 	bool     _state[KG_MAX_STR_LEN];
 
 public:
-	kgWildCard(const kgstr_t& p) throw(kgError);
+	kgWildCard(const kgstr_t& p);
 	~kgWildCard(void){}
-	bool match(const kgstr_t& txt) throw(kgError);
+	bool match(const kgstr_t& txt);
 	bool hasWildCard(void){ return _hasWildCard; }
 };
 
