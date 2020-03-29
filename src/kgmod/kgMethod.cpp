@@ -695,8 +695,9 @@ vector<vector <kgstr_t> > kglib::splitToken2(kgstr_t& str, kgchr_t delim1, kgchr
 	if(! str.empty()){
   	kgstr_t::size_type prv=0;
   	kgstr_t::size_type pos=0;
+  	string::size_type end=str.size();
   	while(1){
-    	if(str[pos] == L'\0'){
+    	if(pos == end || str[pos] == L'\0'){
       	vs.push_back(str.substr(prv, pos-prv));
 				vvs.push_back(vs);
  				break;
@@ -742,8 +743,9 @@ vector<vector <kgstr_t> > kglib::splitToken2(kgstr_t& str, kgchr_t delim1, kgstr
 	if(! str.empty()){
   	kgstr_t::size_type prv=0;
   	kgstr_t::size_type pos=0;
+  	wstring::size_type end=str.size();
   	while(1){
-    	if(str[pos] == L'\0'){
+    	if(pos == end || str[pos] == L'\0'){
       	vs.push_back(str.substr(prv, pos-prv));
 				vvs.push_back(vs);
  				break;
