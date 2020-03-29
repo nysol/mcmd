@@ -399,8 +399,9 @@ string kglib::toMbs(const wstring& wcs){
 // -----------------------------------------------------------------------------
 void kglib::evalEscape(kgstr_t& str){
   kgstr_t::size_type pos=0;
+  kgstr_t::size_type end=str.size();
   while(1){
-    if(str[pos] == '\0') break;
+    if(pos==end || str[pos] == '\0') break;
     if(str[pos] == '\\'){
     	str.erase(pos,1);
     	if(str[pos] != '\0'){
