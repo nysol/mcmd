@@ -759,6 +759,45 @@ namespace {
 		return result;
 
 	}
+	// ---------------------------------------------------------------------------
+	// confidence
+	// ---------------------------------------------------------------------------
+	kgVal confidence(kgCSVblk& csv, kgArgFld& fld, int x, int y, kgstr_t& tmpfName2,bool nullF,bool a_Nin ,bool a_Nout ,bool* e_Nin ,bool* e_Nout )
+	{
+		kgVal result('N');
+
+		struct Matrix01 mtx=calMatrix01(csv,fld,x,y,nullF,a_Nin,e_Nin);
+
+		if(mtx.c1x==0){
+			result.null(true);
+			if(a_Nout) {*e_Nout=true;}
+		}else{
+			result.r(mtx.cp_ba);
+		}  
+		return result;
+
+	}
+	// ---------------------------------------------------------------------------
+	// conviction 
+	// ---------------------------------------------------------------------------
+	kgVal conviction(kgCSVblk& csv, kgArgFld& fld, int x, int y, kgstr_t& tmpfName2,bool nullF,bool a_Nin ,bool a_Nout ,bool* e_Nin ,bool* e_Nout )
+	{
+		kgVal result('N');
+
+		struct Matrix01 mtx=calMatrix01(csv,fld,x,y,nullF,a_Nin,e_Nin);
+
+
+		if(mtx.cxx > 0){
+			result.r(mtx.p_a*mtx.p_nb/mtx.p_anb);
+		}
+		else{
+			result.null(true);
+			if(a_Nout) {*e_Nout=true;}
+		}
+
+		return result;
+
+	}
 
 	// ---------------------------------------------------------------------------
 	// phi係数
@@ -1081,11 +1120,13 @@ void kgSim::setArgs(void)
 		else if(kw=="oddsRatio"){_functions.push_back(&oddsRatio);}
 		else if(kw=="convMax"  ){_functions.push_back(&convMax);  }
 		else if(kw=="convMin"  ){_functions.push_back(&convMin);  }
+		else if(kw=="confidence"){_functions.push_back(&confidence);  }	
+		else if(kw=="conviction"){_functions.push_back(&conviction);  }
 		else {
 			ostringstream ss;
 			ss << "unknown keyword: " << kw 
 				<< ": c=covar|ucovar|pearson|spearman|kendall|euclid|cosine|cityblock|hamming|chi|phi|jaccard|lift|support" 
-				<< "|confMax|confMin|yuleQ|yuleY|kappa|oddsRatio|convMax|convMin : "
+				<< "|confMax|confMin|yuleQ|yuleY|kappa|oddsRatio|convMax|convMin|confidence|conviction: "
 				<< _c_type;
 			throw kgError(ss.str());	
 		}
