@@ -115,7 +115,7 @@ void kgShuffle::setArgs(void)
 			if (! dirname.empty()){
 				create_directories(dirname);
 			}
-	 	 	(csvOut+i)->open(fstr, _env,_nfn_o);
+	 	 	(csvOut+i)->open(fstr, _env,_nfn_o,_rp);
 			_oFile.push_back(csvOut+i);
 		}
 	}catch (boost::filesystem::filesystem_error& ex) {

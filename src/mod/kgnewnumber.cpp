@@ -53,7 +53,7 @@ void kgNewnumber::setArgs(void)
 	_args.paramcheck("a=,o=,S=,I=,l=");
 
 	// 出力ファイルオープン
-  _oFile.open(_args.toString("o=",false), _env,_nfn_o);
+  _oFile.open(_args.toString("o=",false), _env,_nfn_o,_rp);
 
 	// a= 追加項目名
 	_addstr = _args.toString("a=",false);

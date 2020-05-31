@@ -62,7 +62,7 @@ void kgUnicat::setArgs(void)
 	}
 	_iFile.open(ifile, _env,_nfn_i);
 	_mFile.open(mfile, _env,_nfn_i);
-  _oFile.open(_args.toString("o=",false), _env,_nfn_o);
+  _oFile.open(_args.toString("o=",false), _env,_nfn_o,_rp);
 
 	// k= 項目引数のセット
 	vector<kgstr_t> vs_k = _args.toStringVector("k=",true);

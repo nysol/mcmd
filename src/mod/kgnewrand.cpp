@@ -55,7 +55,7 @@ void kgNewrand::setArgs(void)
 	_args.paramcheck("S=,min=,max=,a=,o=,l=,-int");
 
 	// 出力ファイルオープン
-	_oFile.open(_args.toString("o=",false), _env, _nfn_o);
+	_oFile.open(_args.toString("o=",false), _env, _nfn_o,_rp);
 
 	// a= 項目引数のセット
 	_aField = _args.toString("a=",false);

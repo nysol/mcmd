@@ -33,6 +33,10 @@ ${pfxc}msep -x   d=./outdat/'outr${1}x.csv'   i=./indat/dat1.csv
 ${pfxc}msep -nfn d=./outdat/'outr${1}nfn.csv' i=./indat/dat1nfn.csv
 ${pfxc}msep -q     d=./outdat/'outr${日付}q.csv' i=./indat/dat1.csv
 ${pfxc}msep -q -x   d=./outdat/'outr${1}qx.csv'   i=./indat/dat1.csv
+${pfxc}msep -rp  d=./outdat/'outrp${日付}.csv' i=./indat/dat1.csv
+
+
+
 
 ${pfxc}msep      d=./outdat/'outr-${商品}-${日付}.csv' i=./indat/dat2.csv
 ${pfxc}msep -x   d=./outdat/'outr-${0}-${1}x.csv'      i=./indat/dat2.csv

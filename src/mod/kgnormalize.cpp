@@ -352,7 +352,7 @@ void kgNormalize::setArgs(void)
 
 	// 入出力ファイルオープン&バッファセット
 	_iFile.open(_args.toString("i=",false), _env,_nfn_i);
-  _oFile.open(_args.toString("o=",false), _env,_nfn_o);
+  _oFile.open(_args.toString("o=",false), _env,_nfn_o,_rp);
 	kgstr_t s=_args.toString("bufcount=",false);
 	int bcnt = 10;
 	if(!s.empty()){ 

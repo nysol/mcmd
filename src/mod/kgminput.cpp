@@ -60,7 +60,7 @@ void kgMinput::setArgs(void)
 
 	_i_s   =  _args.toString("i=",true);
 	_f_str = _args.toStringVector("f=",false);
-  _oFile.open(_args.toString("o=",true), _env,_f_str.size()==0);
+  _oFile.open(_args.toString("o=",true), _env,_f_str.size()==0,_rp);
 
 }
 

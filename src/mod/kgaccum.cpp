@@ -57,7 +57,7 @@ void kgAccum::setArgs(void)
 
 	// 入出力ファイルオープン
 	_iFile.open(_args.toString("i=",false), _env,_nfn_i);
-	_oFile.open(_args.toString("o=",false), _env,_nfn_o);
+	_oFile.open(_args.toString("o=",false), _env,_nfn_o,_rp);
 	_iFile.read_header();
 	// f= 項目引数のセット
 	vector< vector<kgstr_t> > vvs = _args.toStringVecVec("f=",':',2,true);

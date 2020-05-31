@@ -178,7 +178,7 @@ int kgSep::run(void) try
 				create_directories(dirname);
 			}
 			// ファイルオープン
-			_oFile.open(fstr, _env,_nfn_o);
+			_oFile.open(fstr, _env,_nfn_o,_rp);
 			writeFldName();
 
 		}

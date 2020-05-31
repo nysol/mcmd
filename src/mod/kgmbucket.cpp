@@ -584,7 +584,7 @@ void kgMbucket::setArgs(void)
 
 	// 入出力ファイルオープン&バッファッサイズ設定
 	_iFile.open(_args.toString("i=",false), _env,_nfn_i);
-  _oFile.open(_args.toString("o=",false), _env,_nfn_o);
+  _oFile.open(_args.toString("o=",false), _env,_nfn_o,_rp);
 	_oFile.setPrecision(_precision);
 	kgstr_t s=_args.toString("bufcount=",false);
 	int bcnt = 10;
@@ -596,7 +596,7 @@ void kgMbucket::setArgs(void)
 	if(rFile.empty()){ _rangefile=false; }
 	else {
 		_rangefile=true;
-		_rFile.open(rFile,_env,_nfn_o);
+		_rFile.open(rFile,_env,_nfn_o,_rp);
 		_rFile.setPrecision(_precision);
 	}		
 	_iFile.setbufsize(bcnt);

@@ -68,14 +68,14 @@ void kgSel::setArgs(void)
 
 	// 入出力ファイルオープン
 	_iFile.open(_args.toString("i=",false), _env, _nfn_i);
-	_oFile.open(_args.toString("o=",false), _env, _nfn_o);
+	_oFile.open(_args.toString("o=",false), _env, _nfn_o,_rp);
 	_iFile.read_header();
 	kgstr_t str = _args.toString("u=",false);
 	if(str.empty()){
 		_uFlg=false;
 	}else{
 		_uFlg=true;
-		_uFile.open(str, _env, _nfn_o);
+		_uFile.open(str, _env, _nfn_o,_rp);
 	}
 
 	// -r 反転フラグ

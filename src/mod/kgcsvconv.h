@@ -211,7 +211,7 @@ class kgCsvconv : public kgModIncludeSort
 	kgtexFormatInfoTTL texInfo;
 	FILE *_wfp;
 
-	kgCSVout _oFile;  // o=
+	//kgCSVout _oFile;  // o=
 
 	// 引数セット
   void setArgs(void);

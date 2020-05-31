@@ -133,14 +133,14 @@ void kgSelstr::setArgs(void)
 
 	// 入出力ファイルオープン
 	_iFile.open(_args.toString("i=",false),_env,_nfn_i);
-	_oFile.open(_args.toString("o=",false),_env,_nfn_o);
+	_oFile.open(_args.toString("o=",false),_env,_nfn_o,_rp);
 	kgstr_t ufile = _args.toString("u=",false);
 	if(ufile.empty()){
 		_elsefile=false;
 	}
 	else {
 		_elsefile=true;
-		_uFile.open(ufile,_env,_nfn_o);
+		_uFile.open(ufile,_env,_nfn_o,_rp);
 	}		
 	kgstr_t s=_args.toString("bufcount=",false);
 	int bcnt = 10;

@@ -271,7 +271,7 @@ void kgXml2csv::setArgs(void)
 	_args.paramcheck("f=,i=,o=,k=");
 
 	// 入出力ファイルオープン
-  _oFile.open(_args.toString("o=",false), _env,_nfn_o);
+  _oFile.open(_args.toString("o=",false), _env,_nfn_o,_rp);
 	_oFile.setPrecision(_precision);
 
 	// SAXのイベントハンドラーの登録(NULLは何もしない)

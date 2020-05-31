@@ -101,7 +101,7 @@ void kgCat::setArgs(void)
 	if(_iFilename.empty()){ throw kgError("all files on i= are not found");	}
 
 	// o= 出力ファイルオープン
-	_oFile.open(_args.toString("o=",false), _env, _nfn_o);
+	_oFile.open(_args.toString("o=",false), _env, _nfn_o,_rp);
 
 	vector<kgstr_t> vskv = _args.toStringVector("kv=",false);
 	if (vskv.size()!=0) {

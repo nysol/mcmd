@@ -59,7 +59,7 @@ void kgPaste::setArgs(void)
 		throw kgError("Either i= or m= must be specified.");
 	}
 	_iFile.open(ifile,_env,_nfn_i);
-	_oFile.open(_args.toString("o=",false),_env,_nfn_o);
+	_oFile.open(_args.toString("o=",false),_env,_nfn_o,_rp);
 	_mFile.open(mfile,_env,_nfn_i);
 	_iFile.read_header();
 	_mFile.read_header();

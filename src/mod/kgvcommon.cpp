@@ -67,7 +67,7 @@ void kgVcommon::setArgs(void)
 	}
 	_iFile.open(ifile, _env,_nfn_i);
 	_mFile.open(mfile, _env,_nfn_i);
-	_oFile.open(_args.toString("o=",false),_env,_nfn_o);
+	_oFile.open(_args.toString("o=",false),_env,_nfn_o,_rp);
 
 	// 入力ファイルから項目名行を読み込む
 	_iFile.read_header();

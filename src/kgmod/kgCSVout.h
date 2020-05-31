@@ -89,7 +89,7 @@ private:
 
 	bool             _noFldName; // １行目が項目名行でないフラグ
 	char             _dblFmt[256]; // double型出力フォーマット
-
+	bool 						 _rp;        // remove %
 	char*            _curPnt;    // 現在の書き込み位置
 	char*            _border;    // buf配列の境界アドレス(ここを越えるとflash)
 	char*            _end;       // buf配列の最終アドレス(ここを越えるとerror)
@@ -107,10 +107,10 @@ public:
 	~kgCSVout(){ close();}
 	
 	// ファイルのオープンとクローズ
-	void initialset(kgEnv *env, bool noFldName, size_t cnt) throw(kgError);
-	void open(kgstr_t fileName, kgEnv *env=NULL, bool noFldName=false, size_t cnt=4) throw(kgError);
-	void aopen(kgstr_t fileName, kgEnv *env=NULL, bool noFldName=false, size_t cnt=4) throw(kgError);
-	void popen(int fd, kgEnv *env=NULL, bool noFldName=false, size_t cnt=4) throw(kgError);
+	void initialset(kgEnv *env, bool noFldName, size_t cnt,bool rp) throw(kgError);
+	void open(kgstr_t fileName, kgEnv *env=NULL, bool noFldName=false, bool rp=false, size_t cnt=4) throw(kgError);
+	void aopen(kgstr_t fileName, kgEnv *env=NULL, bool noFldName=false,bool rp=false, size_t cnt=4) throw(kgError);
+	void popen(int fd, kgEnv *env=NULL, bool noFldName=false, bool rp=false, size_t cnt=4) throw(kgError);
 
 
 	void close(void) throw(kgError);

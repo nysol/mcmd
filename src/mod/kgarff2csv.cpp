@@ -94,7 +94,7 @@ void kgArff2csv::setArgs(void)
 	// 入出力ファイルオープン
 	// (入力ファイルオープンヘッダ無パターンで読み込む)
 	_iFile.open(_args.toString("i=",false), _env, true);
-	_oFile.open(_args.toString("o=",false), _env, _nfn_o);
+	_oFile.open(_args.toString("o=",false), _env, _nfn_o,_rp);
 	_iFile.read_header();
 }
 

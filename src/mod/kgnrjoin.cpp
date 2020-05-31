@@ -65,7 +65,7 @@ void kgNrjoin::setArgs(void)
 	}
 	_iFile.open(ifile,_env,_nfn_i);
 	_mFile.open(mfile,_env,_nfn_i);
-	_oFile.open(_args.toString("o=",false),_env,_nfn_o);
+	_oFile.open(_args.toString("o=",false),_env,_nfn_o,_rp);
 	_iFile.read_header();
 	_mFile.read_header();
 

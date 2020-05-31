@@ -77,11 +77,12 @@ kgCSVout::kgCSVout(kgstr_t fn, kgEnv *env, bool noFldName)
 {
 	open(fn, env, noFldName);
 }
-void kgCSVout::initialset(kgEnv *env, bool noFldName, size_t cnt) throw(kgError) 
+void kgCSVout::initialset(kgEnv *env, bool noFldName, size_t cnt,bool rp) throw(kgError) 
 {
 	env_ = env;
 	_noFldName = noFldName;
 	_recNo	= 0;
+	_rp = rp;
 	if(env_==NULL){
 		_maxRecLen = KG_MaxRecLen;
 		ioSize_    = KG_oSize;
@@ -116,10 +117,10 @@ void kgCSVout::initialset(kgEnv *env, bool noFldName, size_t cnt) throw(kgError)
 // 書き込みファイルをオープンする。
 // ファイル名がないの場合は標準出力としてオープンする。
 // -----------------------------------------------------------------------------
-void kgCSVout::popen(int fd, kgEnv *env, bool noFldName, size_t cnt) throw(kgError) 
+void kgCSVout::popen(int fd, kgEnv *env, bool noFldName,bool rp, size_t cnt) throw(kgError) 
 {
 
-	initialset(env,noFldName,cnt);
+	initialset(env,noFldName,cnt,rp);
 	// オープン処理
 	try {
 		fname_ = "STDOUT";
@@ -137,10 +138,10 @@ void kgCSVout::popen(int fd, kgEnv *env, bool noFldName, size_t cnt) throw(kgErr
 // 書き込みファイルをオープンする。
 // ファイル名がないの場合は標準出力としてオープンする。
 // -----------------------------------------------------------------------------
-void kgCSVout::open(kgstr_t fileName, kgEnv *env, bool noFldName, size_t cnt) throw(kgError) 
+void kgCSVout::open(kgstr_t fileName, kgEnv *env, bool noFldName,bool rp, size_t cnt) throw(kgError) 
 {
 
-	initialset(env,noFldName,cnt);
+	initialset(env,noFldName,cnt,rp);
 
 	// オープン処理
 	try {
@@ -166,10 +167,10 @@ void kgCSVout::open(kgstr_t fileName, kgEnv *env, bool noFldName, size_t cnt) th
 // 書き込みファイルを追記オープンする。
 // ファイル名がないの場合は標準出力としてオープンする。
 // -----------------------------------------------------------------------------
-void kgCSVout::aopen(kgstr_t fileName, kgEnv *env, bool noFldName, size_t cnt) throw(kgError) 
+void kgCSVout::aopen(kgstr_t fileName, kgEnv *env, bool noFldName,bool rp, size_t cnt) throw(kgError) 
 {
 
-	initialset(env,noFldName,cnt);
+	initialset(env,noFldName,cnt,rp);
 
 	// オープン処理
 	try {
@@ -850,6 +851,8 @@ void kgCSVout::writeFldNameCHK(vector<kgstr_t>& outfld ) throw(kgError)
 	for(lim=0 ;lim<fsize ;lim++){
 		if(scheck[lim]==false){ break; }
 	}
+	if(_rp){ lim=0; }
+
 	//出力項目再セット
 	vector<kgstr_t> newfld(fsize);
 	for(int i=0; i<fsize; i++){

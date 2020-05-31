@@ -64,7 +64,7 @@ void kgMseldsp::setArgs(void)
 
 	// f= 項目引数のセット
 	_f_str = _args.toString("f=",false);
-  _oFile.open(_args.toString("o=",true), _env,_f_str.size()==0);
+  _oFile.open(_args.toString("o=",true), _env,_f_str.size()==0,_rp);
 
 	_str_s =  _args.toString("seldata=",false);
 	_i_s   =  _args.toString("i=",false);

@@ -60,7 +60,7 @@ void kgTrafld::setArgs(void)
 	_args.paramcheck("f=,i=,o=,a=,delim=,delim2=,-r,-valOnly",kgArgs::COMMON|kgArgs::IODIFF|kgArgs::NULL_IN|kgArgs::NULL_OUT);
 
 	// 入出力ファイルオープン
-  _oFile.open(_args.toString("o=",false), _env,_nfn_o);
+  _oFile.open(_args.toString("o=",false), _env,_nfn_o,_rp);
 	ifname_ = _args.toString("i=",false);
 	_iFile.open(ifname_, _env,_nfn_i);
 	_iFile.read_header();

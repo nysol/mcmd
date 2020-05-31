@@ -60,7 +60,7 @@ void kgSep2::setArgs(void)
 
 	// 入力ファイルオープン
 	_iFile.open(_args.toString("i=",false), _env,_nfn_i);
-  _oFile.open(_args.toString("o=",false), _env,_nfn_o);
+  _oFile.open(_args.toString("o=",false), _env,_nfn_o,_rp);
 	_iFile.read_header();
 
 	// -p
@@ -136,7 +136,7 @@ int kgSep2::run(void) try
 			_oFile.writeStr(fstr.string().c_str(),true);
 
 			//ファイルオープン&出力
-			sepFile.open(fstr.string(), _env,_nfn_o);
+			sepFile.open(fstr.string(), _env,_nfn_o,_rp);
 			sepFile.writeFldName(_iFile);
 		}
 		//通常処理

@@ -153,13 +153,13 @@ void kgBucket::setArgs(void){
 	_args.paramcheck("f=,i=,o=,k=,O=,n=,F=,-r,-rng,bufcount=,-q",kgArgs::ALLPARAM);
 	// 入出力ファイルオープン
 	_iFile.open(_args.toString("i=",false), _env,_nfn_i);
-  _oFile.open(_args.toString("o=",false), _env,_nfn_o);
+  _oFile.open(_args.toString("o=",false), _env,_nfn_o,_rp);
   _oFile.setPrecision(_precision);
 	kgstr_t rFile = _args.toString("O=",false);
 	if(rFile.empty()){ _rangefile=false; }
 	else {
 		_rangefile=true;
-		_rFile.open(rFile,_env,_nfn_o);
+		_rFile.open(rFile,_env,_nfn_o,_rp);
   	_rFile.setPrecision(_precision);
 	}	
 	//バッファサイズ変更

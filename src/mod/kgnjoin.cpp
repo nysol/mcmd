@@ -58,7 +58,7 @@ void kgNjoin::setArgs(void)
 	// 入出力ファイルオープン&バッファ設定
 	kgstr_t ifile = _args.toString("i=",false);
 	kgstr_t mfile = _args.toString("m=",false);
-	_oFile.open(_args.toString("o=",false),_env,_nfn_o);
+	_oFile.open(_args.toString("o=",false),_env,_nfn_o,_rp);
 	if(ifile.empty() && mfile.empty()){
 		throw kgError("Either i= or m= must be specified.");
 	}

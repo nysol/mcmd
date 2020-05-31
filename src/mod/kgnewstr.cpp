@@ -53,7 +53,7 @@ void kgNewstr::setArgs(void)
 	_args.paramcheck("v=,o=,a=,l=");
 
 	// 出力ファイルオープン
-	_oFile.open(_args.toString("o=",false), _env, _nfn_o);
+	_oFile.open(_args.toString("o=",false), _env, _nfn_o,_rp);
 
 	// a=,v= 項目引数のセット
 	_aField = _args.toStringVector("a=",false);
