@@ -206,6 +206,7 @@ char kgSel::setFuncType( tree_node_iter_t const &iter )
 	kgf->_csv=&_iFile;
 	kgf->_fldno=_fldByNum;
 	kgf->_prvRsl=&_prvRsl;
+	kgf->_dseed= -1;
 
 	// 関数の初期化(返値タイプのセット,定数,変数のセット)
 	kgf->initialize(str);
