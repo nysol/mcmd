@@ -115,7 +115,10 @@ class kgCal:public kgMod {
 	kgVal     _prvRsl;// 前行の結果:初期値はNULL
 	kgAutoPtr1 <ptime> _prv_t_ap;
 	kgAutoPtr1 <date> _prv_d_ap;
+
 //	char  _prv_s_p[KG_MAX_STR_LEN];
+
+	kgstr_t _seed;
 
 	vector<kgstr_t> _exprs;   // c=
 	vector<kgstr_t> _newFlds;   // c=

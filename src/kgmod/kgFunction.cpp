@@ -3007,12 +3007,19 @@ void kgFunction_rand::preprocess(void)
 	int end   = INT_MAX;
 	unsigned long seed = 0;
 	if(_args.size()==2){
-		start = static_cast<int>(_args.at(0)->r());
-		end   = static_cast<int>(_args.at(1)->r());
-		// 乱数の種生成（時間）
-		posix_time::ptime now = posix_time::microsec_clock::local_time();
-		posix_time::time_duration nowt = now.time_of_day();
-		seed = static_cast<unsigned long>(nowt.total_microseconds());
+		if(_dseed == -1){
+			start = static_cast<int>(_args.at(0)->r());
+			end   = static_cast<int>(_args.at(1)->r());
+			// 乱数の種生成（時間）
+			posix_time::ptime now = posix_time::microsec_clock::local_time();
+			posix_time::time_duration nowt = now.time_of_day();
+			seed = static_cast<unsigned long>(nowt.total_microseconds());
+		}
+		else{
+			start = static_cast<int>(_args.at(0)->r());
+			end   = static_cast<int>(_args.at(1)->r());
+			seed  = static_cast<unsigned long>(_dseed);
+		}
 	}
 	else { //arg = 3
 		start = static_cast<int>(_args.at(0)->r());
@@ -3046,11 +3053,15 @@ void kgFunction_rand_real::preprocess(void)
 {
 	unsigned long seed = 0;
 	if( _args.size()==0 ){
-		// 乱数の種生成（時間）
-		posix_time::ptime now = posix_time::microsec_clock::local_time();
-		posix_time::time_duration nowt = now.time_of_day();
-		seed = static_cast<unsigned long>(nowt.total_microseconds());
-	
+		if(_dseed == -1){
+			// 乱数の種生成（時間）
+			posix_time::ptime now = posix_time::microsec_clock::local_time();
+			posix_time::time_duration nowt = now.time_of_day();
+			seed = static_cast<unsigned long>(nowt.total_microseconds());
+		}
+		else{
+			seed  = static_cast<unsigned long>(_dseed);
+		}
 	}else{
 		if( _args.at(0)->null() ){
 			_result.null(true);
@@ -3089,10 +3100,15 @@ void kgFunction_nrand::preprocess(void)
 	double std  = _args.at(1)->r();
 	unsigned long seed;
 	if(_args.size()==2){
-		// 乱数の種生成（時間）
-		posix_time::ptime now = posix_time::microsec_clock::local_time();
-		posix_time::time_duration nowt = now.time_of_day();
-		seed = static_cast<unsigned long>(nowt.total_microseconds());
+		if(_dseed == -1){
+			// 乱数の種生成（時間）
+			posix_time::ptime now = posix_time::microsec_clock::local_time();
+			posix_time::time_duration nowt = now.time_of_day();
+			seed = static_cast<unsigned long>(nowt.total_microseconds());
+		}
+		else{
+			seed  = static_cast<unsigned long>(_dseed);
+		}
 	}else{
 		seed = static_cast<unsigned long>(_args.at(2)->r());
 	}
@@ -3132,10 +3148,15 @@ void kgFunction_berrand::preprocess(void)
 	unsigned long seed;
 	
 	if(_args.size()==1){
-		// 乱数の種生成（時間）
-		posix_time::ptime now = posix_time::microsec_clock::local_time();
-		posix_time::time_duration nowt = now.time_of_day();
-		seed = static_cast<unsigned long>(nowt.total_microseconds());
+		if(_dseed == -1){
+			// 乱数の種生成（時間）
+			posix_time::ptime now = posix_time::microsec_clock::local_time();
+			posix_time::time_duration nowt = now.time_of_day();
+			seed = static_cast<unsigned long>(nowt.total_microseconds());
+		}
+		else{
+			seed  = static_cast<unsigned long>(_dseed);
+		}
 	}else{
 		seed = static_cast<unsigned long>(_args.at(1)->r());
 	}

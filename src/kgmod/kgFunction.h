@@ -52,6 +52,7 @@ class kgFunction {
 		kgCSVkey*      _csv;    // 入力ファイル
 		kgVal*         _prvRsl; // 前行の計算結果
 		bool			      _fldno;  // 項目番号指定
+		long			      _dseed;  // 項目番号指定
 
 		// 指定された引数の数をチェックするために以下の2つの変数を導入
 		vector<int>::size_type _minArgc;  // 最小引数数

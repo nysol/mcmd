@@ -56,13 +56,14 @@ kgCal::kgCal(void)
 void kgCal::setArgs(void)
 {
 	// unknown parameter check
-	_args.paramcheck("c=,i=,o=,a=",kgArgs::COMMON|kgArgs::IODIFF|kgArgs::NULL_OUT);
+	_args.paramcheck("c=,i=,o=,a=,S=",kgArgs::COMMON|kgArgs::IODIFF|kgArgs::NULL_OUT);
 
 	// 入出力ファイルオープン
 	_iFile.open(_args.toString("i=",false), _env, _nfn_i);
 	_oFile.open(_args.toString("o=",false), _env, _nfn_o,_rp);
   _oFile.setPrecision(_precision);
 	_iFile.read_header();
+	_seed = _args.toString("S=",false);
 
 	// c= 式を文字列として取得
 	_expr    = _args.toString("c=",true);
@@ -214,6 +215,14 @@ char kgCal::setFuncType( tree_node_iter_t const &iter ,kgVal* pre)
 	kgf->_csv=&_iFile;
 	kgf->_fldno=_fldByNum;
 	kgf->_prvRsl= pre;
+
+	if(_seed.empty()){
+		kgf->_dseed= -1;
+	}
+	else{
+		kgf->_dseed= atol(_seed.c_str());
+	}
+
 
 	// 関数の初期化(返値タイプのセット,定数,変数のセット)
 	kgf->initialize(str);
