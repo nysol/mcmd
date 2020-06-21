@@ -387,6 +387,22 @@ void kgFunction_pfield::initialize(kgstr_t& str)
 		_fld.set(str,_csv,_fldno);
 	}
 }
+// -----------------------------------------------------------------------------
+// 型チェック
+// -----------------------------------------------------------------------------
+void kgFunction_pfield::preprocess(void)
+{
+	if(_rsl){
+		if(_result.type()!=_prvRsl->type()){
+			ostringstream ss;
+			ss << "unmatch type : result(" <<  _result.type() << ")" ;
+			ss << ",pre result(" << _prvRsl->type() << ")";
+			throw kgError(ss.str());
+		}
+	}
+}
+
+
 // -------------------------------------------------------------------------
 // 文字列前行項目値セット
 // -------------------------------------------------------------------------

@@ -175,6 +175,7 @@ class kgFunction_field_real : public kgFunction_field
 	public:
 	kgFunction_field_real(void) {_result.type('N');}
 	virtual void run(void);
+
 };
 // -------------------------------------------------------------------------
 // 日付
@@ -219,6 +220,8 @@ class kgFunction_pfield : public kgFunction
 	public:
 	kgFunction_pfield(void){_name="pfield";_minArgc=0;_maxArgc=0;}
 	virtual void initialize(kgstr_t& str);
+	virtual void preprocess(void);
+
 };
 // -------------------------------------------------------------------------
 // 文字列

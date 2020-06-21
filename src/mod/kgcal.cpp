@@ -279,7 +279,8 @@ int kgCal::run(void) try
 		// 引数を割り合て、引数チェック、前処理を行う
 		// 	最終結果_resultのアドレスはtopノードの_result
 		// 前行結果の初期値はNull
-		setFuncType(infos[i].trees.begin(),_prvRsls.getVal(i));
+		char ii =setFuncType(infos[i].trees.begin(),_prvRsls.getVal(i));
+		_prvRsls.getVal(i)->type(ii);
 		setFuncArg(infos[i].trees.begin());
 		chkFuncArgc(infos[i].trees.begin());
 		runPreProcess(infos[i].trees.begin());
