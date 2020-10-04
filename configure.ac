@@ -8,8 +8,11 @@
 
 #AC_PREREQ([2.69])
 AC_INIT(nysol_mcmd, 3.0, info@nysol.jp)
-AM_INIT_AUTOMAKE
+
 AC_CONFIG_SRCDIR([src/cmd/m2cross.cpp])
+AC_CONFIG_AUX_DIR([build])
+
+AM_INIT_AUTOMAKE
 
 # Checks for programs.
 AC_PROG_AWK
