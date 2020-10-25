@@ -1,4 +1,4 @@
-const char* tutorial_jp_jicfs2=\
+﻿const char* tutorial_jp_jicfs2=\
 "中分類,中分類名\n\
 11,加工食品\n\
 12,生鮮食品\n\

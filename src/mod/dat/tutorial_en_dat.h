@@ -1,4 +1,4 @@
-const char* tutorial_en_dat=\
+﻿const char* tutorial_en_dat=\
 "shop,date,time,receipt,customer,product,CategoryCode1,CategoryCode2,CategoryCode4,CategoryCode6,manufacturer,brand,unitCost,unitPrice,quantity,amount,costAmount,profit\n\
 A,20010108,142748,1000000,00245A,0000311,1,11,1116,111603,1776,177601,339,441,1,441,339,102\n\
 A,20010108,142748,1000000,00245A,0000384,1,14,1402,140205,0556,055600,286,372,1,372,286,86\n\

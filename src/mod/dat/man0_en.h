@@ -1,4 +1,4 @@
-const char* man0_en=\
+﻿const char* man0_en=\
 "customer,amount\n\
 A,5200\n\
 B,4000\n\

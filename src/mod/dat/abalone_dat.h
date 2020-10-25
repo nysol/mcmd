@@ -1,4 +1,4 @@
-const char* abalon_dat=\
+﻿const char* abalon_dat=\
 "Sex,Length,Diameter,Height,Whole,Shucked,Viscera,Shell,Rings\n\
 M,0.455,0.365,0.095,0.514,0.2245,0.101,0.15,15\n\
 M,0.35,0.265,0.09,0.2255,0.0995,0.0485,0.07,7\n\

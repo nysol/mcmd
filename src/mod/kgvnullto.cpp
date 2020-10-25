@@ -1,4 +1,4 @@
-/* ////////// LICENSE INFO ////////////////////
+﻿/* ////////// LICENSE INFO ////////////////////
 
  * Copyright (C) 2013 by NYSOL CORPORATION
  *
@@ -107,7 +107,7 @@ void kgVnullto::output_n(char *str,bool eol)
 	bool d_out=false;
 	
 	vector<char*> eachItem = splitToken( str ,_delim);
-	char *prv;
+	char *prv=0;
 	int len=0;
 	if(eachItem.size()>0){ prv =eachItem[0];}
 

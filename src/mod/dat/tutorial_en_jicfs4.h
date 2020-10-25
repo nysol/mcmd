@@ -1,4 +1,4 @@
-const char* tutorial_en_jicfs4=\
+﻿const char* tutorial_en_jicfs4=\
 "CategoryCode4,Category4\n\
 1101,Seasoning\n\
 1102,Edible_Oil\n\

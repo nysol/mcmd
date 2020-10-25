@@ -1,4 +1,4 @@
-/* ////////// LICENSE INFO ////////////////////
+﻿/* ////////// LICENSE INFO ////////////////////
 
  * Copyright (C) 2013 by NYSOL CORPORATION
  *
@@ -61,6 +61,7 @@ class kgMod
 	bool    _fldByNum;  // 項目の番号指定フラグ
 	int 		_status;		// exitステータス
 	bool    _localhelp;  // 項目の番号指定フラグ
+	bool    _rp;  // remove percent
 
 	// ASSERT
 	bool _assertDIff; // in-out-check
@@ -101,7 +102,8 @@ class kgMod
 	const char* title(void)		 const{ return _title; }
 
 	const char* doc(void)	 		 const{ 
-		char *envStr = getenv("KG_LOCALHELP");
+	char *envStr = getenv("KG_LOCALHELP");
+
 		if(envStr!=NULL && *envStr !='\0') { return _docL;} 
 		else						 { return _doc;} 
 	}

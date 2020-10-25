@@ -1,4 +1,4 @@
-const char* man1_en=\
+﻿const char* man1_en=\
 "customer,date,item\n\
 A,20130916,a\n\
 A,20130916,c\n\

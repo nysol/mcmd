@@ -1,4 +1,4 @@
-const char* tutorial_jp_cust=\
+﻿const char* tutorial_jp_cust=\
 "顧客,生年月日,性別\n\
 00000A,19711107,女\n\
 00000B,19461025,女\n\

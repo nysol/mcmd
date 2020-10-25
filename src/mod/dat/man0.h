@@ -1,4 +1,4 @@
-const char* man0=\
+﻿const char* man0=\
 "顧客,金額\n\
 A,5200\n\
 B,4000\n\

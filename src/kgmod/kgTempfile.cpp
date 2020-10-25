@@ -1,4 +1,4 @@
-/* ////////// LICENSE INFO ////////////////////
+﻿/* ////////// LICENSE INFO ////////////////////
 
  * Copyright (C) 2013 by NYSOL CORPORATION
  *
@@ -56,10 +56,11 @@ string kgTempfile::create(bool pipe, string prefix)
 	if(pipe){
 		for(; tryCnt<10; tryCnt++){ // あり得ないが、ファイル名が重複する場合を考慮し10回tryする。
  			ostringstream ss;
-			ss << env_->getTmpPath() << "/__KGTMP_" << getpid() << "_" << prefix << "_" << env_->randStr(14);
-#ifdef win
+#ifdef WIN
+			ss << env_->getTmpPath() << "/__KGTMP_" << _getpid() << "_" << prefix << "_" << env_->randStr(14);
 			int fd = _open(ss.str().c_str(),O_CREAT | O_EXCL, _S_IREAD | _S_IWRITE);
 #else
+			ss << env_->getTmpPath() << "/__KGTMP_" << getpid() << "_" << prefix << "_" << env_->randStr(14);
 			int fd = mkfifo(ss.str().c_str(),0600);
 #endif
 
@@ -71,17 +72,17 @@ string kgTempfile::create(bool pipe, string prefix)
 		for(; tryCnt<10; tryCnt++){
  			ostringstream ss;
 			ss << env_->getTmpPath() << "/__KGTMP_" << getpid() << "_" << prefix << "_" << env_->randStr(14);
-#ifdef win
+#ifdef WIN
 			int fd = _open(ss.str().c_str(),O_CREAT | O_EXCL, _S_IREAD | _S_IWRITE );
 #else
 			int fd = open(ss.str().c_str(),O_CREAT | O_EXCL, S_IRWXU);
 #endif
 			if(fd==-1){ continue;}
 			else			{	
-#ifdef win
-				::close(fd); 
+#ifdef WIN
+				_close(fd); 
 #else
-				close(fd); 
+				::close(fd); 
 #endif
 				ret=ss.str(); 
 				break;
@@ -122,7 +123,13 @@ kgTempfile::~kgTempfile(void)
 // 強制削除 __KGTMP_pid を強制削除
 void kgTempfile::interrupt_clean(kgstr_t path){
  	ostringstream ss;
+#ifdef WIN
+	ss << path << "/__KGTMP_" << _getpid() << "*";
+#else
 	ss << path << "/__KGTMP_" << getpid() << "*";
+#endif
+
+
 	vector<kgstr_t> fn(1,ss.str());
 	vector<kgstr_t> fnL = kgFilesearch(fn);
   vector<kgstr_t>::const_iterator i;

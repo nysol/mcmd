@@ -1,4 +1,4 @@
-/* ////////// LICENSE INFO ////////////////////
+﻿/* ////////// LICENSE INFO ////////////////////
 
  * Copyright (C) 2013 by NYSOL CORPORATION
  *
@@ -29,6 +29,10 @@
 #include <kgMethod.h>
 #include <kgdata.h>
 #include <sys/stat.h>
+#if WIN
+#include <direct.h>
+#endif WIN
+
 
 using namespace std;
 using namespace kglib;
@@ -83,8 +87,12 @@ void kgData::output_dic(void){
 	}else{
 		dicname = _outinfo.c_str();
 	}
+#if WIN
+	_mkdir(dicname);
+#else
 	::mkdir(dicname,0777);
 
+#endif
 	for(size_t i=0;*dsample_[i][0]!='\0';i++){ 
 		if(!strcmp(dsample_[i][0],_vals[0].c_str())){
 			output2(dicname,dsample_[i][1],dsample_[i][2]);

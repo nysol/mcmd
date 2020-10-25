@@ -1,4 +1,4 @@
-const char* tutorial_en_syo=\
+﻿const char* tutorial_en_syo=\
 "product,productName,CategoryCode1,CategoryCode2,CategoryCode4,CategoryCode6,manufacturer,brand,unitCost\n\
 0000000,Processed_Seafood_2,1,11,1197,119705,0495,049502,310\n\
 0000001,Other_Yogurt_Drink_2,1,14,1404,140497,1658,165801,215\n\

@@ -1,4 +1,4 @@
-const char* man1=\
+﻿const char* man1=\
 "顧客,日付,商品\n\
 A,20130916,a\n\
 A,20130916,c\n\

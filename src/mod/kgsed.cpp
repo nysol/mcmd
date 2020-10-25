@@ -1,4 +1,4 @@
-/* ////////// LICENSE INFO ////////////////////
+﻿/* ////////// LICENSE INFO ////////////////////
 
  * Copyright (C) 2013 by NYSOL CORPORATION
  *

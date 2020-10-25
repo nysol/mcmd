@@ -1,4 +1,4 @@
-/* ////////// LICENSE INFO ////////////////////
+﻿/* ////////// LICENSE INFO ////////////////////
 
  * Copyright (C) 2013 by NYSOL CORPORATION
  *
@@ -106,7 +106,7 @@ private:
 public:
 	// コンストラクタ
 	kgCSVout() : opened_(false),_recNo(0){}
-	kgCSVout(kgstr_t fileName, kgEnv *env=NULL, bool noFldName=false);
+	//kgCSVout(kgstr_t fileName, kgEnv *env=NULL, bool noFldName=false);
 
 	// デストラクタ 
 	~kgCSVout(){ close();}
@@ -213,7 +213,7 @@ public:
 	//  項目名の出力関数群
 	// --------------------
 	//同じものがないことを確認してから出力する
-	void writeFldNameCHK(vector<kgstr_t>& outfld );
+	void writeFldNameCHK(vector<kgstr_t>& outfld ,bool rp=false);
 
 	// csv項目名を出力する．
 	// 使用= 汎用
@@ -252,7 +252,7 @@ public:
 
 	// 新規項目の項目名(複数)を出力
 	// 使用= cat、chkcsv、fldname, sep2, cm
-	void writeFldName(vector<kgstr_t> newFld);
+	void writeFldName(vector<kgstr_t> newFld,bool rp=false);
 
 	//区切り文字出力(コンマ、改行、改行[出力行数カウント有り])
 	void writeDlm(void){ *_curPnt++ = ','; }

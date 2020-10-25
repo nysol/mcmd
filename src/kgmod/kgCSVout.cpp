@@ -1,4 +1,4 @@
-/* ////////// LICENSE INFO ////////////////////
+﻿/* ////////// LICENSE INFO ////////////////////
 
  * Copyright (C) 2013 by NYSOL CORPORATION
  *
@@ -73,10 +73,10 @@ static string int2alpha(int val,bool lower)
 // -----------------------------------------------------------------------------
 //コンストラクタ
 // -----------------------------------------------------------------------------
-kgCSVout::kgCSVout(kgstr_t fn, kgEnv *env, bool noFldName) 
-{
-	open(fn, env, noFldName);
-}
+//kgCSVout::kgCSVout(kgstr_t fn, kgEnv *env, bool noFldName) 
+//{
+//	open(fn, env, noFldName);
+//}
 void kgCSVout::initialset(kgEnv *env, bool noFldName, size_t cnt)
 {
 	env_ = env;
@@ -139,7 +139,6 @@ void kgCSVout::popen(int fd, kgEnv *env, bool noFldName, size_t cnt)
 // -----------------------------------------------------------------------------
 void kgCSVout::open(kgstr_t fileName, kgEnv *env, bool noFldName, size_t cnt)
 {
-
 	initialset(env,noFldName,cnt);
 
 	// オープン処理
@@ -849,7 +848,7 @@ void kgCSVout::writeFld(char** fld,size_t size,vector<string> *newFld)
 // 項目名が正当かどうか
 // を確認してから出力する
 // -----------------------------------------------------------------------------
-void kgCSVout::writeFldNameCHK(vector<kgstr_t>& outfld )
+void kgCSVout::writeFldNameCHK(vector<kgstr_t>& outfld ,bool rp)
 {
 	int fsize = outfld.size();
 	//ソート情報チェック
@@ -871,6 +870,7 @@ void kgCSVout::writeFldNameCHK(vector<kgstr_t>& outfld )
 	for(lim=0 ;lim<fsize ;lim++){
 		if(scheck[lim]==false){ break; }
 	}
+	if(rp){ lim=0; }
 	//出力項目再セット
 	vector<kgstr_t> newfld(fsize);
 	for(int i=0; i<fsize; i++){
@@ -1069,7 +1069,7 @@ void kgCSVout::writeFldName(kgstr_t newFld)
 // -----------------------------------------------------------------------------
 // newFld(vector)を出力
 // -----------------------------------------------------------------------------
-void kgCSVout::writeFldName(vector<kgstr_t> newFld)
+void kgCSVout::writeFldName(vector<kgstr_t> newFld,bool rp)
 {
 	if( _noFldName ) return;
 

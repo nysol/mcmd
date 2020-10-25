@@ -1,4 +1,4 @@
-/* ////////// LICENSE INFO ////////////////////
+﻿/* ////////// LICENSE INFO ////////////////////
 
  * Copyright (C) 2013 by NYSOL CORPORATION
  *
@@ -24,7 +24,7 @@
 #include <kgMethod.h>
 #include <string.h>
 #include <cstdlib>
-#include <unistd.h>
+//#include <unistd.h>
 
 
 using namespace kglib;
@@ -248,6 +248,7 @@ void kgArgs::paramcheck(const char *cstr, int addCommonArgs)
   	_available.insert("-nfno");
   	_available.insert("precision=");
   	_available.insert("-x");
+  	_available.insert("-rp");
 	}
 	// ASSERT関係
 		if(addCommonArgs & IODIFF){

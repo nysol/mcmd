@@ -1,4 +1,4 @@
-/* ////////// LICENSE INFO ////////////////////
+﻿/* ////////// LICENSE INFO ////////////////////
 
  * Copyright (C) 2013 by NYSOL CORPORATION
  *
@@ -127,7 +127,7 @@ void kgSep::writeFldName() throw(kgError)
 				oName.append(_iFile.sortParaStr(_fField.num(i),_dField.size()));
 				outfld.push_back(oName);
 			}
-			_oFile.writeFldName(outfld);
+			_oFile.writeFldName(outfld,_rp);
 
 		}
 		else{
@@ -141,7 +141,7 @@ void kgSep::writeFldName() throw(kgError)
 				oName.append(_iFile.sortParaStr(_fField.num(i)));
 				outfld.push_back(oName);
 			}
-			_oFile.writeFldName(outfld);
+			_oFile.writeFldName(outfld,_rp);
 		
 		}
 	}

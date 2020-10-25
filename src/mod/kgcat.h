@@ -1,4 +1,4 @@
-/* ////////// LICENSE INFO ////////////////////
+﻿/* ////////// LICENSE INFO ////////////////////
 
  * Copyright (C) 2013 by NYSOL CORPORATION
  *
@@ -41,6 +41,10 @@ class kgCat : public kgMod
 	vector<kgstr_t> _fvstr;			// f=:項目名
 	kgArgFld _fField;						// f=:kgargfldクラス
 	vector<size_t> _kv;			// f=:項目名
+
+	vector<int> _k1;
+	vector<kgstr_t> _v1;
+	size_t _dicinfoSize;
 
 	vector<kgstr_t> _fldNames;
 	size_t _fldSize;

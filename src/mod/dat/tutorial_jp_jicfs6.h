@@ -1,4 +1,4 @@
-const char* tutorial_jp_jicfs6=\
+﻿const char* tutorial_jp_jicfs6=\
 "細分類,細分類名\n\
 110101,醤油\n\
 110103,砂糖\n\
