@@ -73,6 +73,7 @@ void kgCal::setArgs(void)
 	for(size_t i=0; i<_expr.size();i++){
 		if(_expr[i]=='(')			 {brackets++;}
 		else if (_expr[i]==')'){brackets--;}
+		else if (_expr[i]=='\\'){i++;}
 		else if (_expr[i]==',' && brackets==0){
 			_exprs.push_back(kgstr_t(_expr,pos,i-pos));
 			pos=i+1;
