@@ -21,6 +21,7 @@
 // =============================================================================
 #pragma once
 #include <vector>
+#include <cfloat>
 #include <kgConfig.h>
 #include <kgVal.h>
 #include <kgmodincludesort.h>
