@@ -102,7 +102,7 @@ void kgSep::setArgs(void)
 	
 }
 
-void kgSep::writeFldName() throw(kgError)
+void kgSep::writeFldName() 
 {
 	if( _oFile.noFldName( ) ) return;
 	if (_fField.size()==0){
@@ -173,8 +173,8 @@ int kgSep::run(void) try
 			}
 			fstr = fstr+_dField_str[i];
 			if(_mkdir_flg){
-				filesystem::path filename=filesystem::path(fstr);
-				filesystem::path dirname =filename.branch_path();
+				boost::filesystem::path filename=boost::filesystem::path(fstr);
+				boost::filesystem::path dirname =filename.branch_path();
 				create_directories(dirname);
 			}
 			// ファイルオープン

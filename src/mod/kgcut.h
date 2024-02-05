@@ -42,7 +42,7 @@ class kgCut : public kgMod {
 	void setArgs(void);
 
 	// CSV項目名出力
-	void writeFldName(const vector<int>& fld ,bool reverse) throw(kgError);
+	void writeFldName(const vector<int>& fld ,bool reverse) ;
 
 public:
 	// コンストラクタ

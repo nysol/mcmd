@@ -30,8 +30,8 @@ class kgFifo : public kgMod {
 
 	int runMain(void);
 
-	void iClose(void) throw(kgError);
-	void oClose(void) throw(kgError);
+	void iClose(void) ;
+	void oClose(void) ;
 
 public:
 	// コンストラクタ

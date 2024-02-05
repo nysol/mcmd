@@ -53,7 +53,7 @@ void kgOFP::clear(void){
 // -----------------------------------------------------------------------------
 // kgOFPをクローズする
 // -----------------------------------------------------------------------------
-void kgOFP::close(void) throw(kgError) {
+void kgOFP::close(void) {
 	if( !opened_ ) return;
 
 	try {
@@ -84,7 +84,7 @@ const char* kgOFP::fname(void){
 // -----------------------------------------------------------------------------
 // kgOFPをオープンする
 // -----------------------------------------------------------------------------
-void kgOFP::open(kgstr_t fn, size_t queSize, kgEnv* env) throw(kgError) {
+void kgOFP::open(kgstr_t fn, size_t queSize, kgEnv* env) {
 	// 既にopenしていたらエラー
 	if( opened_ ){
 		ostringstream ss;
@@ -121,7 +121,7 @@ void kgOFP::open(kgstr_t fn, size_t queSize, kgEnv* env) throw(kgError) {
 
 // bufのsizeバイトをファイルに書き込む
 // 返値: 書き込んだバイト数, eof,pipe broken時は0を返す
-size_t kgOFP::write(char* buf, int size) throw(kgError) {
+size_t kgOFP::write(char* buf, int size)  {
 	if(! opened_){
 		// シグナルトラップが起動していない場合、エラーとする
 		if( !env_->sigactcheck( ) ) {	throw kgError("internal error: write file not opened"); }
@@ -176,7 +176,7 @@ size_t kgOFP::write(char* buf, int size) throw(kgError) {
 // -----------------------------------------------------------------------------
 // クローズ
 // -----------------------------------------------------------------------------
-void kgTeeIFP::close(void) throw(kgError) {
+void kgTeeIFP::close(void) {
 	if( !opened_ ) return;
 	try {
 		switch(type_){
@@ -203,7 +203,7 @@ const char* kgTeeIFP::fname(void){
 // -----------------------------------------------------------------------------
 // オープン
 // -----------------------------------------------------------------------------
-void kgTeeIFP::open(kgstr_t fn, kgEnv* env) throw(kgError) {
+void kgTeeIFP::open(kgstr_t fn, kgEnv* env)  {
 	env_   = env;
 	// 既にopenしていたらエラー
 	if( opened_ ){
@@ -246,7 +246,7 @@ void kgTeeIFP::open(kgstr_t fn, kgEnv* env) throw(kgError) {
 // -----------------------------------------------------------------------------
 // 読み込み
 // -----------------------------------------------------------------------------
-void kgTeeIFP::read(char* buf, int size) throw(kgError) {
+void kgTeeIFP::read(char* buf, int size)  {
 	try {
 		rsize_=0;
 		switch(type_){

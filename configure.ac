@@ -87,6 +87,7 @@ case $host_os in
 		AS_IF([test "x$(security find-identity -p codesigning -v | grep nysol-cert | head -n 1)" != x],
 			[AM_CONDITIONAL(DARWIN_CERT, true)]
 		)
+		CXXFLAGS="-I$BOOSTPATH/include -std=c++11"
 		;;
   cygwin)
 		AC_LIBTOOL_WIN32_DLL

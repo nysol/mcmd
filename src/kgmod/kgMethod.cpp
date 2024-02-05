@@ -1070,11 +1070,11 @@ bool kglib::chkFldName(kgstr_t str)
 		
 		if(ptn.size()==lvl+1) { out_flg = true;}
 
-		filesystem::path dir=filesystem::path(path+"/");
-		filesystem::directory_iterator it(dir);
-		filesystem::directory_iterator end;
+		boost::filesystem::path dir=boost::filesystem::path(path+"/");
+		boost::filesystem::directory_iterator it(dir);
+		boost::filesystem::directory_iterator end;
 		for(; it!=end; ++it){
-			filesystem::path p = *it;
+			boost::filesystem::path p = *it;
 			if( wc->match( p.string() ) ){
 				if( is_directory(p) && !out_flg ){
 					kgFilesearch_sub(ptn,p.string(),rtn,lvl+1);
@@ -1113,7 +1113,7 @@ bool kglib::chkFldName(kgstr_t str)
 			kgstr_t::size_type pos =vs[i].find_first_of("*?");
 			//含まなければファイルが存在することをチェックしてファイル名を格納(glob展開しない場合も)
 			if(!glob || pos == kgstr_t::npos){
-				filesystem::path filename=filesystem::path(tildeReplace(vs[i]));
+				boost::filesystem::path filename=boost::filesystem::path(tildeReplace(vs[i]));
 				if( exists(filename) && !is_directory(filename) ){
 					r_vs.push_back(filename.string());
 				}else{

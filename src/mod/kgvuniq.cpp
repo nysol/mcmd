@@ -33,7 +33,7 @@ using namespace kglib;
 using namespace kgmod;
 namespace {////////////////////////////////////////////////////////////
 	struct strComp {
- 	 bool operator() (char* a,char* b){
+ 	 bool operator() ( const char * a, const char * b)const{
 			while(true){
 			       if(*a < *b) return  true;
 				else if(*a > *b) return  false;

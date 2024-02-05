@@ -118,7 +118,7 @@ protected:
 
 	void setSortInfo(const kgstr_t& fileName);
 
-	void initialSet(const kgstr_t& fileName, kgEnv* env, bool noFldName,size_t cnt=4)throw(kgError);
+	void initialSet(const kgstr_t& fileName, kgEnv* env, bool noFldName,size_t cnt=4);
 
 public:
 	// コンストラクタ,デストラクタ
@@ -126,14 +126,14 @@ public:
 	virtual ~kgCSV(void){close();};
 
 	// ファイル操作
-	void open(const kgstr_t& fname, kgEnv* env, bool noFldName, size_t readCnt=4) throw(kgError);
-	void popen(int fd, kgEnv* env, bool noFldName, size_t readCnt=4) throw(kgError);
+	void open(const kgstr_t& fname, kgEnv* env, bool noFldName, size_t readCnt=4);
+	void popen(int fd, kgEnv* env, bool noFldName, size_t readCnt=4);
 	void clear(void);
 
 	virtual int read(void)=0;
 	virtual void   read_header(void)=0;
-	void seekTop(void) throw(kgError);
-	void close(void) throw(kgError);
+	void seekTop(void);
+	void close(void) ;
 
 	// アクセッサ
 	kgstr_t fileName(void) const				{ return fname_;}
@@ -157,8 +157,8 @@ public:
 	bool isFifo(void) const;
 	
   // 項目名関連（項目名<->項目番号）
-	kgstr_t fldName(const size_t,bool org=false) const throw(kgError);
-	int fldNum(const kgstr_t& str,bool rtn=false) const throw(kgError);
+	kgstr_t fldName(const size_t,bool org=false) const ;
+	int fldNum(const kgstr_t& str,bool rtn=false) const ;
 	
 	// データコピー（ruby mtable 専用）
 	size_t bufCpy(char* to, bool toEnd) const;
@@ -195,7 +195,7 @@ public:
 
 protected:
 	void set_fields(size_t cpSize);
-	void readCSVfile(void) throw(kgError);
+	void readCSVfile(void) ;
 };
 // ==============================================================================
 // 継承クラス関連 

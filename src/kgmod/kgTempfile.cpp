@@ -80,8 +80,8 @@ bool kgTempfile::empty(void)
 void kgTempfile::remove_all(void){
   vector<string>::const_iterator i;
   for(i=names_.begin(); i!=names_.end(); i++){
-		filesystem::path file = filesystem::path(i->c_str());
-		filesystem::remove(file);
+	  boost::filesystem::path file = boost::filesystem::path(i->c_str());
+	  boost::filesystem::remove(file);
 	}
 }
 // 登録された全ての一時ファイルを削除する
@@ -90,8 +90,8 @@ kgTempfile::~kgTempfile(void)
 	if(env_==0){ return;}
   vector<string>::const_iterator i;
   for(i=names_.begin(); i!=names_.end(); i++){
-		filesystem::path file = filesystem::path(i->c_str());
-		filesystem::remove(file);
+	  boost::filesystem::path file = boost::filesystem::path(i->c_str());
+	  boost::filesystem::remove(file);
 	}
 }
 
@@ -103,8 +103,8 @@ void kgTempfile::interrupt_clean(kgstr_t path){
 	vector<kgstr_t> fnL = kgFilesearch(fn);
   vector<kgstr_t>::const_iterator i;
   for(i=fnL.begin(); i!=fnL.end(); i++){
-		filesystem::path file = filesystem::path(i->c_str());
-		filesystem::remove(file);
+	  boost::filesystem::path file = boost::filesystem::path(i->c_str());
+	  boost::filesystem::remove(file);
 	}
 }
 

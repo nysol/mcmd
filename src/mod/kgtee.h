@@ -52,9 +52,9 @@ public:
 	int gcount(void){return rsize_;}
 	bool eof(void){return eof_;}
 	const char* fname(void);
-	void open(kgstr_t fname, kgEnv* env) throw(kgError) ;
-	void read(char* buf, int size) throw(kgError) ;
-	void close(void) throw(kgError) ;
+	void open(kgstr_t fname, kgEnv* env)  ;
+	void read(char* buf, int size) ;
+	void close(void) ;
 
 	int type(void) const {return type_;}
 };
@@ -77,10 +77,10 @@ public:
 
 	bool opened(void){return opened_;}
 	const char* fname(void);
-	void open(kgstr_t fn, size_t queSize, kgEnv* env) throw(kgError);
-	size_t write(char* buf, int size) throw(kgError) ;
+	void open(kgstr_t fn, size_t queSize, kgEnv* env) ;
+	size_t write(char* buf, int size) ;
 	void clear(void);
-	void close(void) throw(kgError) ;
+	void close(void) ;
 
 	int type(void) const {return type_;}
 };

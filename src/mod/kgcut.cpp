@@ -74,7 +74,7 @@ void kgCut::setArgs(void)
 
 // -----------------------------------------------------------------------------
 // -----------------------------------------------------------------------------
-void kgCut::writeFldName(const vector<int>& fld,bool reverse) throw(kgError)
+void kgCut::writeFldName(const vector<int>& fld,bool reverse) 
 {
 	if( _oFile.noFldName( ) ) return;
 	if(fld.size()<=0){ throw kgError("no output fields"); }

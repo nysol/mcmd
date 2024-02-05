@@ -39,7 +39,7 @@ using namespace kglib;
 // ----------------------------------------------------------------------------
 // 項目数が異なるerrorメッセージの表示&終了
 // ----------------------------------------------------------------------------
-static void fldCntErr(int fldCnt, int j) throw(kgError) {
+static void fldCntErr(int fldCnt, int j)  {
 	ostringstream ss;
 	ss << "detected different number of fields (header has " << fldCnt << " but the record has " << j<< ")";
 	throw kgError(ss.str());
@@ -80,7 +80,7 @@ void kgCSV::clear(void)
 //  データのバッファへの読み込み
 //	バッファ最後のmaxRecLen_文字をbuffer先頭緩衝領域にコピー
 // ----------------------------------------------------------------------------
-void kgCSV::readCSVfile() throw(kgError) 
+void kgCSV::readCSVfile()  
 {
 	if(! begin()){ memcpy(buf_, dupTop_, dupSize_); }
 	curPnt_ = curPnt_ - queSize_;
@@ -111,7 +111,7 @@ void kgCSV::readCSVfile() throw(kgError)
 	*(buf_+dupSize_+accSize) = '\0';
 }
 
-void kgCSV::initialSet(const kgstr_t& fileName, kgEnv* env, bool noFldName,size_t cnt)throw(kgError) {
+void kgCSV::initialSet(const kgstr_t& fileName, kgEnv* env, bool noFldName,size_t cnt) {
 	// 初期値セット
 	noFldName_   = noFldName;
 	buf_         = 0;
@@ -140,7 +140,7 @@ void kgCSV::initialSet(const kgstr_t& fileName, kgEnv* env, bool noFldName,size_
 
 }
 
-void kgCSV::popen(int fd, kgEnv* env, bool noFldName,size_t cnt) throw(kgError) 
+void kgCSV::popen(int fd, kgEnv* env, bool noFldName,size_t cnt)  
 {
 	initialSet("",env, noFldName,cnt);
 
@@ -161,7 +161,7 @@ void kgCSV::popen(int fd, kgEnv* env, bool noFldName,size_t cnt) throw(kgError)
 // ioSize_ : read関数で一回に読込むサイズ
 // ioCnt_ : 一回のkgIFP::readでread関数を何回呼ぶか(= queSize_/ioSize_)
 // ----------------------------------------------------------------------------
-void kgCSV::open(const kgstr_t& fileName, kgEnv* env, bool noFldName,size_t cnt) throw(kgError) 
+void kgCSV::open(const kgstr_t& fileName, kgEnv* env, bool noFldName,size_t cnt)  
 {
 	initialSet(fileName,env, noFldName,cnt);
 
@@ -343,7 +343,7 @@ void kgCSV::set_fields(size_t dupSize)
 // 読み込みファイルのクローズ
 //  ファイル入力の場合(stdinでない場合)にclose処理
 // ----------------------------------------------------------------------------
-void kgCSV::close(void) throw(kgError) 
+void kgCSV::close(void)  
 {
 	if(!opened_) return;
 	try {
@@ -358,7 +358,7 @@ void kgCSV::close(void) throw(kgError)
 // ----------------------------------------------------------------------------
 // num番目の項目名を返す
 // ----------------------------------------------------------------------------
-kgstr_t kgCSV::fldName(const size_t num,bool org) const throw(kgError) 
+kgstr_t kgCSV::fldName(const size_t num,bool org) const  
 {
 	if(num < fldSize_){
 		if(org){ return fldNameOrg_.at(num);}
@@ -373,7 +373,7 @@ kgstr_t kgCSV::fldName(const size_t num,bool org) const throw(kgError)
 // 項目名から番号を返す。
 // 項目名が見つからない時は rtnがtrueなら-1 rtnがfalseならエラー デフォルトはfalse
 // ----------------------------------------------------------------------------
-int kgCSV::fldNum(const kgstr_t& str,bool rtn) const throw(kgError) 
+int kgCSV::fldNum(const kgstr_t& str,bool rtn) const  
 {
 	map<kgstr_t,int>::const_iterator i = fldNum_.find(str);
 	if( i != fldNum_.end() ){
@@ -414,7 +414,7 @@ bool kgCSV::isFifo(void) const
 // データ部の先頭の位置へ戻す処理
 // 標準入力あるいはパイプの場合はエラーとする
 // ----------------------------------------------------------------------------
-void kgCSV::seekTop(void)throw(kgError) 
+void kgCSV::seekTop(void) 
 {
 	// 先頭シーク
 	try {

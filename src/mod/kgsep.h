@@ -44,7 +44,7 @@ class kgSep : public kgModIncludeSort
 
 	// 引数セット 
 	void setArgs(void);
-	void writeFldName(void) throw(kgError);
+	void writeFldName(void) ;
 public:
 
   // コンストラクタ

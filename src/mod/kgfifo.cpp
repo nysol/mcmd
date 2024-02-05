@@ -381,7 +381,7 @@ void kgFifo::setArgs(void){
 }
 
 
-void kgFifo::oClose(void) throw(kgError) {
+void kgFifo::oClose(void)  {
 	//flush();
 	try {
 		::close(_oFD);
@@ -392,7 +392,7 @@ void kgFifo::oClose(void) throw(kgError) {
 	}
 }
 
-void kgFifo::iClose(void) throw(kgError) {
+void kgFifo::iClose(void)  {
 	try {
 		::close(_iFD);
 	}catch(kgError& err){

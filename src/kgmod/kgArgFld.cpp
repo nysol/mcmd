@@ -122,7 +122,7 @@ void kgArgFld::_num_flg_SetR(kgCSV* csv,bool fldByNum,std::set<int>& exfld)
 // -----------------------------------------------------------------------------
 // set 2次元配列(項目名とその属性)の場合 ex f=a:b,c:d , k=a%nr
 // -----------------------------------------------------------------------------
-void kgArgFld::set(vector< vector<kgstr_t> >& vvs, kgCSV* csv,bool fldByNum, bool attrEval) throw(kgError) 
+void kgArgFld::set(vector< vector<kgstr_t> >& vvs, kgCSV* csv,bool fldByNum, bool attrEval)  
 {
 	if(csv==NULL || vvs.empty()){
     throw kgError("internal error on fields augument");
@@ -136,7 +136,7 @@ void kgArgFld::set(vector< vector<kgstr_t> >& vvs, kgCSV* csv,bool fldByNum, boo
 // -----------------------------------------------------------------------------
 // set 1次元配列(項目名とその属性)の場合 ex f=a,b,c , k=a%nr
 // -----------------------------------------------------------------------------
-void kgArgFld::set(vector<kgstr_t>& vs, kgCSV* csv, bool fldByNum) throw(kgError) 
+void kgArgFld::set(vector<kgstr_t>& vs, kgCSV* csv, bool fldByNum)  
 {
 	if(csv==NULL){
     throw kgError("internal error on fields augument");
@@ -146,7 +146,7 @@ void kgArgFld::set(vector<kgstr_t>& vs, kgCSV* csv, bool fldByNum) throw(kgError
 	_num_flg_Set(csv,fldByNum);
 }
 
-void kgArgFld::setR( vector<kgstr_t>& vs, kgCSV* csv, bool fldByNum,std::set<int>& exfld) throw(kgError) 
+void kgArgFld::setR( vector<kgstr_t>& vs, kgCSV* csv, bool fldByNum,std::set<int>& exfld)  
 {
 	if(csv==NULL){
     throw kgError("internal error on fields augument");
@@ -159,7 +159,7 @@ void kgArgFld::setR( vector<kgstr_t>& vs, kgCSV* csv, bool fldByNum,std::set<int
 // -----------------------------------------------------------------------------
 // set 文字列の場合 ex a* 1_4
 // -----------------------------------------------------------------------------
-void kgArgFld::set(kgstr_t& s, kgCSV* csv, bool fldByNum) throw(kgError)
+void kgArgFld::set(kgstr_t& s, kgCSV* csv, bool fldByNum) 
 {
 	vector<kgstr_t> vs;
 	vs.push_back(s);
