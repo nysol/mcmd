@@ -123,8 +123,8 @@ $ make
 $ sudo make install
 
 # setting a shared library path
-# write it in .bash_profile if you like to activated it automatically.
-$ export LD_LIBRARY_PATH=/usr/local/lib
+$ echo "/usr/local/lib" | sudo tee /etc/ld.so.conf.d/mcmd.conf
+$ sudo ldconfig 
 ```
 
 # Tutorial
