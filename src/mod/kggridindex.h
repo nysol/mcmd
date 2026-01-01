@@ -30,7 +30,7 @@
 #include <kgArgFld.h>
 #include <kgCSV.h>
 #include <kgCSVout.h>
-#include <boost/filesystem.hpp>
+#include <filesystem>
 
 using namespace kglib;
 
@@ -44,7 +44,7 @@ class kgGridindex : public kgModIncludeSort
 	kgArgFld _nField;   // n=
 	kgstr_t  _mode;			// mode=
 	kgCSVfld _iFile;    // i=
-	boost::filesystem::path oPath_; // O=
+	std::filesystem::path oPath_; // O=
 	bool _forceFlg;			//-p
 
 	size_t _bufSize; // bufSize=

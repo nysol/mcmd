@@ -42,14 +42,16 @@
 #include <kgMethod.h>
 #include <kgTempfile.h>
 #include <boost/date_time/posix_time/posix_time.hpp>
-#include <boost/filesystem.hpp>
+#include <filesystem>
+#include <system_error>
+
 
 using namespace std;
 using namespace kglib;
 using namespace kgmod;
 using namespace boost::posix_time;
 
-namespace fs = boost::filesystem;
+namespace fs = std::filesystem;
 
 // -----------------------------------------------------------------------------
 // コンストラクタ(モジュール名，バージョン登録)
@@ -100,13 +102,14 @@ void kgGridindex::setArgs(void)
 		ss << "O= is mandatory:";
 		throw kgError(ss.str());	
 	}
-	oPath_=boost::filesystem::path(str);
+	oPath_=std::filesystem::path(str);
 
 	//cerr << "forceFlg=" << _forceFlg << " oPath=" << oPath_.string() << endl;
 
 	// O= ディレクトリ作成
 	if(_forceFlg){
-		boost::system::error_code error;
+		// boost::system::error_code error;
+		std::error_code error;
 		const bool status = fs::create_directories(oPath_, error);
 		if (!status || error) {
 			ostringstream ss;
@@ -114,7 +117,8 @@ void kgGridindex::setArgs(void)
 			throw kgError(ss.str());	
 		}
 	}else{
-		boost::system::error_code error;
+		//boost::system::error_code error;
+		std::error_code error;
 		const bool status = fs::create_directory(oPath_, error);
 		if (!status || error) {
 			ostringstream ss;
@@ -176,7 +180,7 @@ class Node;
 class Tree {
 	//kgCSVfld& iFile;
 	//kgArgFld& fField;
-	boost::filesystem::path& oPath_;
+	std::filesystem::path& oPath_;
 	Node* top;
 
 	vector<Node*> updNodes_; // 追加されたnodeへのインデックス(出力時に利用)
@@ -191,7 +195,7 @@ class Tree {
 	string addTime_;
 
 public:
-	Tree(kgGridindex *gi, kgCSVfld& iFile, kgArgFld& fField, kgArgFld& hField, kgArgFld& nField, boost::filesystem::path& oPath, kgEnv* env, bool nfn_o);
+	Tree(kgGridindex *gi, kgCSVfld& iFile, kgArgFld& fField, kgArgFld& hField, kgArgFld& nField, std::filesystem::path& oPath, kgEnv* env, bool nfn_o);
 	~Tree();
 
 	void outCountUp(size_t n){_gi->outCountUp(n);}
@@ -207,13 +211,13 @@ public:
 	void clearUpdNodes();
 
 	void show(void);
-	boost::filesystem::path& oPath(void){return oPath_;}
+	std::filesystem::path& oPath(void){return oPath_;}
 	kgEnv* env(void){return _env;}
 	bool nfn_o(void){return _nfn_o;}
 };
 
 class Node {
-	boost::filesystem::path path;
+	std::filesystem::path path;
 	string _oFile;
 	bool isLeaf;
 
@@ -244,7 +248,7 @@ public:
 // -----------------------------------------------------------------------------
 // Tree
 // -----------------------------------------------------------------------------
-Tree::Tree(kgGridindex *gi, kgCSVfld& iFile, kgArgFld& fField, kgArgFld& hField, kgArgFld& nField, boost::filesystem::path& oPath, kgEnv* env, bool nfn_o) : _gi(gi), oPath_(oPath), _env(env), _nfn_o(nfn_o){
+Tree::Tree(kgGridindex *gi, kgCSVfld& iFile, kgArgFld& fField, kgArgFld& hField, kgArgFld& nField, std::filesystem::path& oPath, kgEnv* env, bool nfn_o) : _gi(gi), oPath_(oPath), _env(env), _nfn_o(nfn_o){
 	top=new Node(this);
 
 	// 現在時刻を取得 => leafのファイル名: addTime_yyyymmddHHMMSS.xxxxxxx

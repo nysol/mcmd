@@ -375,8 +375,12 @@ void kgSortf::qsort5(char*** base, int nel)
 	#define SET_lr      {l++; if ((--r) != m) M(m,r);} // 右に空の要素を作る
 	#define THREASHOLD  10 // 挿入ソートに切り替える要素数
 
- 	register char ***l, ***r, ***m;    // l,r:左右の集団の端　m:配列の中央の位置
- 	register int t, eq_l, eq_r;        // eq_l:左の集団が全てsに等しいことを示す
+ 	// register char ***l, ***r, ***m;    // l,r:左右の集団の端　m:配列の中央の位置
+ 	// register int t, eq_l, eq_r;        // eq_l:左の集団が全てsに等しいことを示す
+
+ 	char ***l, ***r, ***m;    // l,r:左右の集団の端　m:配列の中央の位置
+ 	int t, eq_l, eq_r;        // eq_l:左の集団が全てsに等しいことを示す
+
 	char** ss;
  	char*** s=&ss;                     // 分割要素を保存する所　SWAPにも使用
  	char*** L = base;                  // 現在分割している区間の左端の要素の先頭

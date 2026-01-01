@@ -25,7 +25,7 @@
 #include <kgArgFld.h>
 #include <kgCSV.h>
 #include <kgCSVout.h>
-#include <boost/filesystem.hpp>
+#include <filesystem>
 
 using namespace kglib;
 
@@ -40,7 +40,7 @@ class kgSep2 : public kgModIncludeSort {
 	bool forceFlg_;			//-p
 	kgArgFld _kField;		// k=
 	kgstr_t  _newFld;		// a=
-	boost::filesystem::path  oPath_;   // O=
+	std::filesystem::path  oPath_;   // O=
 
 	// 引数セット
 	void setArgs(void);

@@ -26,11 +26,10 @@
 #include <kgError.h>
 #include <kgConfig.h>
 #include <kgWildcard.h>
-#include <boost/filesystem.hpp>
+#include <filesystem>
 
 using namespace std;
 using namespace kglib;
-using namespace boost;
 
 // -----------------------------------------------------------------------------
 // 項目数のカウント
@@ -1070,11 +1069,11 @@ bool kglib::chkFldName(kgstr_t str)
 		
 		if(ptn.size()==lvl+1) { out_flg = true;}
 
-		boost::filesystem::path dir=boost::filesystem::path(path+"/");
-		boost::filesystem::directory_iterator it(dir);
-		boost::filesystem::directory_iterator end;
+		std::filesystem::path dir=std::filesystem::path(path+"/");
+		std::filesystem::directory_iterator it(dir);
+		std::filesystem::directory_iterator end;
 		for(; it!=end; ++it){
-			boost::filesystem::path p = *it;
+			std::filesystem::path p = *it;
 			if( wc->match( p.string() ) ){
 				if( is_directory(p) && !out_flg ){
 					kgFilesearch_sub(ptn,p.string(),rtn,lvl+1);
@@ -1113,7 +1112,7 @@ bool kglib::chkFldName(kgstr_t str)
 			kgstr_t::size_type pos =vs[i].find_first_of("*?");
 			//含まなければファイルが存在することをチェックしてファイル名を格納(glob展開しない場合も)
 			if(!glob || pos == kgstr_t::npos){
-				boost::filesystem::path filename=boost::filesystem::path(tildeReplace(vs[i]));
+				std::filesystem::path filename=std::filesystem::path(tildeReplace(vs[i]));
 				if( exists(filename) && !is_directory(filename) ){
 					r_vs.push_back(filename.string());
 				}else{
@@ -1131,7 +1130,7 @@ bool kglib::chkFldName(kgstr_t str)
 				kgstr_t fname = tildeReplace(vs[i]);
 				//絶対パスでなければ絶対パス変更する
 				if (fname[0]!='/'){
-					fname = boost::filesystem::current_path().string() + '/' + vs[i];			
+					fname = std::filesystem::current_path().string() + '/' + vs[i];			
 				}
 				vector<kgstr_t> vss = splitToken(fname,'/');
 				vector<kgstr_t> vsss;

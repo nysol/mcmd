@@ -24,7 +24,7 @@
 #include <kgshuffle.h>
 #include <kgError.h>
 #include <kgTempfile.h>
-#include <boost/filesystem.hpp>
+#include <filesystem>
 
 
 using namespace std;
@@ -110,15 +110,15 @@ void kgShuffle::setArgs(void)
 	  for(size_t i=0; i<outnum ; i++){
  	   sprintf(buf,"_%zu",i);
 	    kgstr_t fstr = dname+buf;
-			boost::filesystem::path filename=boost::filesystem::path(fstr);
-			boost::filesystem::path dirname =filename.branch_path();
+			std::filesystem::path filename=std::filesystem::path(fstr);
+			std::filesystem::path dirname =filename.parent_path();
 			if (! dirname.empty()){
 				create_directories(dirname);
 			}
 	 	 	(csvOut+i)->open(fstr, _env,_nfn_o,_rp);
 			_oFile.push_back(csvOut+i);
 		}
-	}catch (boost::filesystem::filesystem_error& ex) {
+	}catch (std::filesystem::filesystem_error& ex) {
 		throw kgError(ex.what());
   }
 

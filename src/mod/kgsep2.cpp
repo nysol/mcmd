@@ -27,7 +27,7 @@
 #include <kgCSVout.h>
 #include <kgError.h>
 #include <kgMethod.h>
-#include <boost/filesystem.hpp>
+#include <filesystem>
 
 using namespace boost;
 using namespace std;
@@ -70,9 +70,9 @@ void kgSep2::setArgs(void)
 	{
 		kgstr_t str = _args.toString("O=",false);
 		if(str.empty()){
-			oPath_=boost::filesystem::path("./");
+			oPath_=std::filesystem::path("./");
 		}else{
-			oPath_=boost::filesystem::path(str);
+			oPath_=std::filesystem::path(str);
 		}
 		if(forceFlg_) create_directory  (oPath_);
 		else          create_directories(oPath_);
@@ -126,7 +126,7 @@ int kgSep2::run(void) try
 			// sepファイル名(連番)生成
 			ostringstream ss;
 			ss << fno++;
-			boost::filesystem::path fstr=oPath_ / ss.str();
+			std::filesystem::path fstr=oPath_ / ss.str();
 
 			// k=とファイル名の対応表出力
 			for(vector<kgstr_t>::size_type i=0; i<_kField.size(); i++){

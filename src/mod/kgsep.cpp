@@ -25,7 +25,7 @@
 #include <kgsep.h>
 #include <kgCSVutils.h>
 #include <kgError.h>
-#include <boost/filesystem.hpp>
+#include <filesystem>
 
 using namespace boost;
 using namespace std;
@@ -173,8 +173,9 @@ int kgSep::run(void) try
 			}
 			fstr = fstr+_dField_str[i];
 			if(_mkdir_flg){
-				boost::filesystem::path filename=boost::filesystem::path(fstr);
-				boost::filesystem::path dirname =filename.branch_path();
+				std::filesystem::path filename=std::filesystem::path(fstr);
+				//std::filesystem::path dirname =filename.branch_path();
+				std::filesystem::path dirname =filename.parent_path();
 				create_directories(dirname);
 			}
 			// ファイルオープン

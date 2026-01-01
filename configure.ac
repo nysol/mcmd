@@ -65,17 +65,15 @@ AC_ARG_WITH([boost],
 
 CXXFLAGS="-I$BOOSTPATH/include $CXXFLAGS"
 CFLAGS="-I$BOOSTPATH/include $CFLAGS"
-LDFLAGS="-L$BOOSTPATH/lib $LDFLAGS"
+#LDFLAGS="-L$BOOSTPATH/lib $LDFLAGS"
+LDFLAGS="$LDFLAGS"
  
 AC_SUBST([BOOSTPATH], [$BOOSTPATH])
 
-
-
-
 AC_CHECK_LIB(pthread, pthread_create)
-AC_CHECK_LIB([boost_regex], [main], [], [echo "Error. You need to have libboost";exit -1])
-AC_CHECK_LIB([boost_system], [main], [], [echo "Error. You need to have libboost";exit -1])
-AC_CHECK_LIB([boost_filesystem], [main], [], [echo "Error. You need to have libboost";exit -1])
+#AC_CHECK_LIB([boost_regex], [main], [], [echo "Error. You need to have libboost";exit -1])
+#AC_CHECK_LIB([boost_system], [main], [], [echo "Error. You need to have libboost";exit -1])
+#AC_CHECK_LIB([boost_filesystem], [main], [], [echo "Error. You need to have libboost";exit -1])
 
 
 #OSチェック
@@ -87,7 +85,7 @@ case $host_os in
 		AS_IF([test "x$(security find-identity -p codesigning -v | grep nysol-cert | head -n 1)" != x],
 			[AM_CONDITIONAL(DARWIN_CERT, true)]
 		)
-		CXXFLAGS="-I$BOOSTPATH/include -std=c++11"
+		CXXFLAGS="-I$BOOSTPATH/include -std=c++17 -Wregister"
 		;;
   cygwin)
 		AC_LIBTOOL_WIN32_DLL
